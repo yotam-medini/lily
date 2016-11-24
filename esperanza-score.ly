@@ -1,25 +1,4 @@
-\include "english.ly"
-
-global = {
-  \key a \major
-  \time 6/8
-}
-
-sopMusic = \relative c'' {
-  fs4 fs8 fs8.[ fs8 fs16]
-}
-
-altMusic = \relative c' {
-  fs4 fs8 fs8.[ fs8 fs16]
-}
-
-tenMusic = \relative c' {
-  a4 a8 a8.[ a8 a16]
-}
-
-bassMusic = \relative c {
-  d4 d8 d8.[ d8 d16]
-}
+\include "esperanza-music.ly"
 
 \score {
   <<
@@ -29,11 +8,8 @@ bassMusic = \relative c {
         \new Voice = "sopranos" { 
           \set Staff.instrumentName = "Sopran/Alt" 
           << 
-          % \override Stem.di\override Stem.direction = #UPrection = #UP
              \stemUp
-             \new Voice = "Sopran"
                \global \sopMusic 
-             \new Voice = "Alt"
                \global \altMusic 
           >> 
         }
@@ -43,9 +19,7 @@ bassMusic = \relative c {
         \new Voice = "basses" { 
           \set Staff.instrumentName = "Tenor/Bass" 
           << 
-             \new Voice = "Tenor"
                \global \tenMusic
-             \new Voice = "Bas"
                \global \bassMusic 
           >> 
         }
@@ -57,12 +31,6 @@ bassMusic = \relative c {
   \layout {
     \context {
       \Staff
-    }
-  }
-  \midi { 
-    \context {
-      \Score
-      midiChannelMapping = #'instrument
     }
   }
 }
