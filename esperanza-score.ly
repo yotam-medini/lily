@@ -15,7 +15,7 @@
           << 
              \stemUp
                \global \sopFiveMusic 
-               \global \altMusic 
+               \global \altFiveMusic 
           >> 
         }
       \addlyrics { \origlyric }
@@ -25,8 +25,8 @@
         \new Voice = "basses" { 
           \set Staff.instrumentName = "T+B" 
           << 
-               \global \tenMusic
-               \global \bassMusic 
+               \global \tenFiveMusic
+               \global \basFiveMusic
           >> 
         }
       >>
@@ -34,7 +34,7 @@
     >>
   >>
 
-  \header {}
+  \header { }
 
   \layout {
     \context {

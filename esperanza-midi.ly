@@ -5,25 +5,25 @@
     \new Staff = "sopranos" <<
       \set Staff.instrumentName = #"Soprano"
       % \new Voice = "sopranos" {
-	\global	\sopMusic
+	\global	\sopFiveMusic
       % }
     >>
     \new Staff = "altos" <<
       \set Staff.instrumentName = #"Alto"
       % \new Voice = "altos" {
-	\global \altMusic
+	\global \altFiveMusic
       % }
     >>
     \new Staff = "tenors" <<
       \set Staff.instrumentName = #"Tenor"
       % \new Voice = "tenors" {
-	\global \tenMusic
+	\global \tenFiveMusic
       % }
     >>
     \new Staff = "basses" <<
       \set Staff.instrumentName = #"Bass"
       % \new Voice = "basses" {
-	\global \bassMusic
+	\global \basFiveMusic
       % }
     >>
   >>  % end ChoirStaff
