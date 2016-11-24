@@ -28,7 +28,7 @@ ZIPFILES = \
 	esperanza-midi.ly \
 	${TARGETS}
 
-esperanza.pdf: esperanza-score.ly esperanza-music.ly
+esperanza.pdf: esperanza-score.ly esperanza-music.ly esperanza-lyrics.ly
 	lilypond esperanza-score.ly
 	mv esperanza-score.pdf $@
 	rm -f esperanza-score.midi
