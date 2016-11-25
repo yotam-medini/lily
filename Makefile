@@ -19,7 +19,12 @@ TARGETS = \
 	esperanza-sop.midi \
 	esperanza-alt.midi \
 	esperanza-ten.midi \
-	esperanza-bas.midi
+	esperanza-bas.midi \
+	esperanza-upbeat.midi \
+	esperanza-upbeat-sop.midi \
+	esperanza-upbeat-alt.midi \
+	esperanza-upbeat-ten.midi \
+	esperanza-upbeat-bas.midi
 
 ZIPFILES = \
 	Makefile \
@@ -31,23 +36,22 @@ ZIPFILES = \
 esperanza.pdf: esperanza-score.ly esperanza-music.ly esperanza-lyrics.ly
 	lilypond esperanza-score.ly
 	mv esperanza-score.pdf $@
-	rm -f esperanza-score.midi
 
-esperanza.midi: esperanza-midi.ly esperanza-music.ly
+esperanza.midi esperanza-upbeat.midi: esperanza-midi.ly esperanza-music.ly
 	lilypond esperanza-midi.ly
 	mv esperanza-midi.midi esperanza.midi
-	rm -f esperanza-midi.pdf
+	mv esperanza-midi-1.midi esperanza-upbeat.midi
 
-esperanza-sop.midi: esperanza.midi
+%-sop.midi: %.midi
 	midiconv.py -tv 1 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
-esperanza-alt.midi: esperanza.midi
+%-alt.midi: %.midi
 	midiconv.py -tv 2 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
-esperanza-ten.midi: esperanza.midi
+%-ten.midi: %.midi
 	midiconv.py -tv 3 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
-esperanza-bas.midi: esperanza.midi
+%-bas.midi: %.midi
 	midiconv.py -tv 4 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
 ${ZIP}: ${ZIPFILES}
