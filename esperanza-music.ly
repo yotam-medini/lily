@@ -34,13 +34,13 @@ basMusic = \relative c {
   cs2 r4 \bar "|."
 }
 
-PsopMusic = \relative c'' { r4. r4 a8 | }
+PsopMusic = \relative c'' { r2 r8 a8 | }
 
-PaltMusic = \relative c' { r4. r4 g'8 | }
+PaltMusic = \relative c' { r2 r8 g'8 | }
 
-PtenMusic = \relative c' { r4. r4 a8 | }
+PtenMusic = \relative c' { r2 r8 a8 | }
 
-PbasMusic = \relative c' { r4. r4 cs8 | }
+PbasMusic = \relative c' { r2 r8 cs8 | }
 
 sopFiveMusic = { 
   \sopMusic \break
