@@ -3,6 +3,9 @@
 
 \header {
   title = "De Mi Esperanza"
+  composer = "folk"
+  % Do not display the tagline for this book
+  tagline = ##f
 }
 
 \score {
@@ -35,7 +38,9 @@
     >>
   >>
 
-  \header { }
+  \header {
+    pieace = "Folklore"
+  }
 
   \layout {
     \context {

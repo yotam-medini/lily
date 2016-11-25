@@ -40,7 +40,7 @@ PaltMusic = \relative c' { r2 r8 g'8 | }
 
 PtenMusic = \relative c' { r2 r8 a8 | }
 
-PbasMusic = \relative c' { r2 r8 cs8 | }
+PbasMusic = \relative c { r2 r8 cs8 | }
 
 sopFiveMusic = {
   \sopMusic \break
