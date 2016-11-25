@@ -15,7 +15,7 @@ sopMusic = \relative c'' {
 
 altMusic = \relative c' {
   fs4 fs8 fs8.[ fs16 fs8] |
-  a8[ e cs] e[ a gs~] |
+  a8[ e cs] e[ a gs?~] |
   gs[ gs e] d4 d8 |
   cs2 r4 \bar "|."
 }
@@ -42,35 +42,34 @@ PtenMusic = \relative c' { r2 r8 a8 | }
 
 PbasMusic = \relative c' { r2 r8 cs8 | }
 
-sopFiveMusic = { 
+sopFiveMusic = {
   \sopMusic \break
   \PsopMusic \sopMusic \break
   \PsopMusic \sopMusic \break
   \PsopMusic \sopMusic \break
-  \sopMusic 
+  \sopMusic
 }
 
-altFiveMusic = { 
+altFiveMusic = {
   \altMusic \break
   \PaltMusic \altMusic \break
   \PaltMusic \altMusic \break
   \PaltMusic \altMusic \break
-  \altMusic 
+  \altMusic
 }
 
-tenFiveMusic = { 
+tenFiveMusic = {
   \tenMusic \break
   \PtenMusic \tenMusic \break
   \PtenMusic \tenMusic \break
   \PtenMusic \tenMusic \break
-  \tenMusic 
+  \tenMusic
 }
 
-basFiveMusic = { 
+basFiveMusic = {
   \basMusic \break
   \PbasMusic \basMusic \break
   \PbasMusic \basMusic \break
   \PbasMusic \basMusic \break
-  \basMusic 
+  \basMusic
 }
-
