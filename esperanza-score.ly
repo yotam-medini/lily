@@ -18,7 +18,8 @@
                \global \altFiveMusic 
           >> 
         }
-      \addlyrics { \origlyric }
+        \addlyrics { \origlyric }
+        \addlyrics { \hebrewlyric }
       >>
       \new Staff = "bas" <<
         \clef bass
