@@ -28,7 +28,9 @@ sopMusic = \relative c'' {
   a4.( d8 cs[ b a gs)] | fs8[( gs a)] b8 b4 e | r1 | r1 |
     a,4.( fs'8 e[ d cs d]) |
   e4.( a8 gs[ fs e d]) | cs[( d e fs] e4 d8.) cs16 | cs4( b) a r4 |
-    cs4.^\p cs8  e8[( d)] b4 | cs4. a8 cs[( b)] gs[( e)] | 
+    % ^\markup "dulce"
+    cs4.^\markup {{\italic \large \bold p} \italic dulce} cs8  e8[( d)] b4 | 
+    cs4. a8 cs[( b)] gs[( e)] | 
 }
 
 altMusic = \relative c' {
