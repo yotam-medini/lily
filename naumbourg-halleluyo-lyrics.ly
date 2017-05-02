@@ -11,6 +11,9 @@ wlyricsText = \lyricmode {
 % bar 16
   ne -- vel ve -- chin -- nor  ha -- le -- lu -- hu  be -- sof u -- ma -- chol
     ha -- le -- lu -- hu be -- mi -- nim -- ve -- u -- gov     
+  ha -- le -- lu -- hu be --   tzil -- ze -- le scho -- ma  
+    ha -- le -- lu -- hu be --  tzil -- ze -- le   se -- ru -- oh 
+    kol han -- ne scho moh te
 }
 
 whlyricsText = \lyricmode {
@@ -26,6 +29,10 @@ whlyricsText = \lyricmode {
 
 נֵ -- בֻל וְ -- כִ -- נּוֹר  הַ -- לְ -- לוּ -- הוּ בְּ -- תֹף  וּ -- מָ -- חוֹל 
   הַ -- לְ -- לוּ -- הוּ בְּ -- מִ -- נִּים  וְ -- עֻ -- גָב
+הַ -- לְ -- לוּ -- הוּ בְּ -- צִלְ --צְ -- לֵי  שָׁ -- מַע 
+  הַ -- לְ -- לוּ -- הוּ בְּ -- צִלְ --צְ -- לֵי  תְ -- רוּ עָה
+  כֹּל -- הַ נְּ -- שָׁ -- מָה  תְּ
+
 
 % L2R
 }
@@ -42,6 +49,9 @@ tenlyricsText = \lyricmode {
 % bar 16
   ne -- vel ve -- chin -- nor 
     ha -- le -- lu -- hu be -- mi -- nim -- ve -- u -- gov     
+  ha -- le -- lu -- hu be --   tzil -- ze -- le scho -- ma  
+    ha -- le -- lu -- hu be --  tzil -- ze -- le   se -- ru -- oh 
+    kol han -- ne scho moh te
 }
 
 tenhlyricsText = \lyricmode {
@@ -59,6 +69,9 @@ tenhlyricsText = \lyricmode {
 
 נֵ -- בֻל וְ -- כִ -- נּוֹר
   הַ -- לְ -- לוּ -- הוּ בְּ -- מִ -- נִּים  וְ -- עֻ -- גָב
+הַ -- לְ -- לוּ -- הוּ בְּ -- צִלְ --צְ -- לֵי  שָׁ -- מַע 
+  הַ -- לְ -- לוּ -- הוּ בְּ -- צִלְ --צְ -- לֵי  תְ -- רוּ עָה
+  כֹּל -- הַ נְּ -- שָׁ -- מָה  תְּ
 
 % L2R
 }
@@ -76,6 +89,9 @@ baslyricsText = \lyricmode {
 % bar 16
   ne -- vel ve -- chin -- nor 
     ha -- le -- lu -- hu be -- mi -- nim -- ve -- u -- gov     
+  ha -- le -- lu -- hu be --   tzil -- ze -- le scho -- ma  
+    ha -- le -- lu -- hu be --  tzil -- ze -- le   se -- ru -- oh 
+    kol han -- ne scho moh te
 }
 
 bashlyricsText = \lyricmode {
@@ -95,6 +111,9 @@ bashlyricsText = \lyricmode {
 
 נֵ -- בֻל וְ -- כִ -- נּוֹר
   הַ -- לְ -- לוּ -- הוּ בְּ -- מִ -- נִּים  וְ -- עֻ -- גָב
+הַ -- לְ -- לוּ -- הוּ בְּ -- צִלְ --צְ -- לֵי  שָׁ -- מַע 
+  הַ -- לְ -- לוּ -- הוּ בְּ -- צִלְ --צְ -- לֵי  תְ -- רוּ עָה
+  כֹּל -- הַ נְּ -- שָׁ -- מָה  תְּ
 
 % L2R
 }
