@@ -4,10 +4,12 @@
 global = {
   \key a \major
   \time 4/4
+  \tempo "Andante"
 }
 
 sopMusic = \relative c'' {
-  r1^\markup "Andante" | a4. a8 a8[( e']) cs4 | r1 | gs8. gs16 g4 g2^\fermata |
+  r1 | a4. a8 a8[( e']) cs4 | r1 |
+    gs8. gs16 gs4 gs2^\fermata |
     a4.^\p a8 a4 b8. cs16 |
   b4( a) gs fs8. fs16 | e4( fs) gs a8. a16 | b4 cs b a | 
     e'8.^\<  e16 cs4 a b8. cs16  | b4 a gs b8.^\ff b16 |
@@ -35,10 +37,12 @@ sopMusic = \relative c'' {
  % bar 47
   cs4. cs8 e8[( d]) b4 | cs4. a8 cs8[( d]) gs[( e]) | a4.^\pp a8 fs4 a |
     a4. a8 fs4 a |
+  a4.^\markup{{\italic \large \bold ppp} \italic dim.} fs8 a4( fs) |
+    a1( | a4) r4 r2 | r2 r4 cs8.^\ff cs16 | b4 a  r2 \bar "|."
 }
 
 altMusic = \relative c' {
-  r1 | e4. e8 c8[( e]) a4 | r1 | e8. e16 e4 e2^\fermata |
+  r1 | e4. e8 cs8[( e]) a4 | r1 | e8. e16 e4 e2^\fermata |
     e4.^\p e8 e4 e8. e16 |
   gs4( a) e d8. d16 | b4( cs) e e8. e16 | e4 e e e | a8. a16 e4 e e8. e16 |
     gs4 a e gs8.^\ff gs16 |
@@ -62,10 +66,12 @@ altMusic = \relative c' {
 
  % bar 47
   a4. e8 a4 e | e4. e8 e4 d | cs4. cs8 d4 cs | cs4. cs8 d4 cs |
+  cs4.^\ppp d8 cs4( d) | cs1( | cs4) r4 r2 | 
+    r2 r4 a8.^\ff a16 | gs4 a r2 \bar "|."
 }
 
 tenMusic = \relative c' {
-  r1 | cs4. cs8 e8[( c]) e4 | r1 |  b8. b16 b4 b2^\fermata |
+  r1 | cs4. cs8 e8[( cs]) e4 | r1 |  b8. b16 b4 b2^\fermata |
     cs4.^\p cs8 cs4 d8. e16 |
   d4( cs) b a8. a16 | gs4( a) b cs8. cs16 | d4 e d cs | 
     cs8. cs16 a4 cs d8. e16 | d4 es b e8.^\ff e16 |
@@ -79,7 +85,7 @@ tenMusic = \relative c' {
     fs8. fs16 e8. d16 d4 cs | g'4 fs8. e16 fs4 d8. d16 |
 
  % bar 26
-  d4 a a2 | gs8. gs16 g4 a a8. a16 | gs2 a4 r4 | r1 | r1 |
+  d4 a a2 | gs8. gs16 gs4 a a8. a16 | gs2 a4 r4 | r1 | r1 |
     cs!4 cs8. cs16 cs4 cs8. cs16 | e4 cs e2 | r1 | r1 | b4. b8 b2 |
     b1^\fermata |
 
@@ -92,6 +98,8 @@ tenMusic = \relative c' {
  % bar 47
   cs8( a4) a8 gs4 b8([ d]) |   cs8( a4) a8 gs4 b8([ gs]) | 
     a4.^\pp <e a>8 <fs a>4 <e a> | <e a>4. <e a>8 <fs a>4 <e a>4 |
+  <e a>4.^\ppp <fs a>8 <<{e4( fs)} {a2}>> | <e a>1( | <e a>4) r4 r2 | 
+    r2 r4 e'8.^\ff e16 | e4 cs r2  \bar "|."
 }
 
 basMusic = \relative c' {
@@ -126,5 +134,5 @@ basMusic = \relative c' {
     a4( a,8) cs8 e4 e4 
     \autoBeamOff | 
     a,4.^\pp a8 d4 a | a4. a8 d4 a |
-
+  a4.^\ppp d8 a4( d) | a1( | a4) r4 r2 | r2 r4 a'8.^\ff a16 | e4 a r2 \bar "|."
 }
