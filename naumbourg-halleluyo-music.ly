@@ -14,10 +14,15 @@ sopMusic = \relative c'' {
   e2 cs4. cs8 | ds4( b8) b8 e4  r4 | r1 | r1  | e8.^\ff e16 b4 e4. b8 |
 
  % bar 16
-  cs4 b8. a16 gs8([ fs)] e4 | e'8. e16 e4 d4. d8 | f8([ e d)] e8 f4 e |
+  cs4 b8. a16 gs8([ fs)] e4 | e'8.^\mp e16 e4 d4. d8 | f8([ e d)] e8 f4 e |
     e8. e16 b4 e4. b8 | cs4 b8. a16 a8([ fs)] e4 | 
   a8. a16 a4 a4. a8 | b8. b16  cs8([ d)] d4 cs | cs8.^\< cs16 cs4 cs4. cs8 |
     d8. d16 e8. fs16  fs4 e | e4^\f  d8. cs16 d4 a8. a16 |
+
+ % bar 26
+  a4 d cs2 | cs8. cs16 b4 a b8. b16 | b2 a4 r4 | r1 | r1 |
+  a4^\ff a8. a16 a4 a8. a16 | a4 e'4 cs2 | r1 | r1 | gs4. gs8 gs2 |
+    gs1^\fermata |
 }
 
 altMusic = \relative c' {
@@ -32,6 +37,10 @@ altMusic = \relative c' {
     gs8. gs16 e'4 b4. gs8 | ds4 ds8. ds16 e4 e |
   e8. e16 e4 e4. e8 | e8. e16 e4 e e | a8. a16 a4 a4. a8 | 
     a8. a16 a8. a16 a4 a | a4 a8. a16 a4 fs8. fs16 |
+
+ % bar 26
+  fs4 d e2 | es8. es16 cs4 cs fs8. fs16 | e4( d) cs r | r1 | r1 |
+   e4 e8. e16 e4 e8. e16 | cs4 e a2 | r1 | r1 | d,4. e8 e2 | e1^\fermata |
 }
 
 tenMusic = \relative c' {
@@ -47,6 +56,11 @@ tenMusic = \relative c' {
     a4 b8. cs16 b8([ a)] gs4 |
   cs8. cs16 cs4 cs4. a8 | gs8. gs16 a8([ b)] b4 a | e'8. e16 e4 e4. e8 |
     fs8. fs16 e8. d16 d4 cs | g'4 fs8. e16 fs4 d8. d16 |
+
+ % bar 26
+  d4 a a2 | gs8. gs16 g4 a a8. a16 | gs2 a4 r4 | r1 | r1 |
+    cs!4 cs8. cs16 cs4 cs8. cs16 | e4 cs e2 | r1 | r1 | b4. b8 b2 |
+    b1^\fermata |
 }
 
 basMusic = \relative c' {
@@ -61,4 +75,10 @@ basMusic = \relative c' {
   b4 b8. b16 e4 e | r1 | r1 | e8. e16 e4 gs4. e8 | b4 b8. b16 e4 e |
   a,8. a16 a4 a4. cs8 | e8. e16 e4 gs4 a | a8. a16 a4 a,4. a8 | 
     a8. a16 a8. a16 a4 a | a'4 a8. a16 d,4 d8. d16 |
+
+ % bar 26
+  d4 fs a2 | cs,8. cs16 es4 d d8. d16 | e2 a,4 r4 |
+    fs'4^\ff fs8. fs16 fs4 fs8. fs16 | f4 c' a2( | 
+  a1 | a1) | a2. a4 | f4( c') a2 | e4. e8 e2 | e1^\fermata |
+
 }
