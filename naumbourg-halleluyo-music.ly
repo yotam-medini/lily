@@ -31,6 +31,10 @@ sopMusic = \relative c'' {
     % ^\markup "dulce"
     cs4.^\markup {{\italic \large \bold p} \italic dulce} cs8  e8[( d)] b4 | 
     cs4. a8 cs[( b)] gs[( e)] | 
+
+ % bar 47
+  cs4. cs8 e8[( d]) b4 | cs4. a8 cs8[( d]) gs[( e]) | a4.^\pp a8 fs4 a |
+    a4. a8 fs4 a |
 }
 
 altMusic = \relative c' {
@@ -56,6 +60,8 @@ altMusic = \relative c' {
   e4. a8 gs8[( fs  e d]) | cs8[( d e fs] e4 fs8.) fs16 | e4( d) cs r4 | 
     e4. e8 e4 e | e4. e8 e4 e4 | 
 
+ % bar 47
+  a4. e8 a4 e | e4. e8 e4 d | cs4. cs8 d4 cs | cs4. cs8 d4 cs |
 }
 
 tenMusic = \relative c' {
@@ -82,6 +88,10 @@ tenMusic = \relative c' {
     a4.( d8 cs[ b a b]) | 
   cs4.( fs8 e8[ d cs b]) | a[( b cs d]) cs4( a8.) a16 | a4( gs) a r4 | 
     a4.^\p a8 gs8[( b)] d8[( b]) | a4. a8 gs4 b8[( d]) |
+
+ % bar 47
+  cs8( a4) a8 gs4 b8([ d]) |   cs8( a4) a8 gs4 b8([ gs]) | 
+    a4.^\pp <e a>8 <fs a>4 <e a> | <e a>4. <e a>8 <fs a>4 <e a>4 |
 }
 
 basMusic = \relative c' {
@@ -109,4 +119,12 @@ basMusic = \relative c' {
     a4( a,8) 
     \autoBeamOn
     cs8 e4 e |
+
+ % bar 47
+  a4. a8 e4 e8[( gs]) | 
+    \autoBeamOff
+    a4( a,8) cs8 e4 e4 
+    \autoBeamOff | 
+    a,4.^\pp a8 d4 a | a4. a8 d4 a |
+
 }
