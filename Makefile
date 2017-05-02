@@ -51,19 +51,24 @@ midis: ${MIDIS}
 /tmp/${BASE}-${NOW}.pdf: ${BASE}.pdf
 	cp -uv $< $@
 
-SRCS: Makefile \
+SRCS = Makefile \
 	${BASE}-score.ly \
 	${BASE}-music.ly \
 	${BASE}-lyrics.ly \
 	${BASE}-midi.ly
 
 ${ZIPSRC}: ${SRCS}
-	zip -a $@ ${SRCS}
+	zip $@ ${SRCS}
 	unzip -l $@; ls -lGt $@
 
 ${ZIPMIDIS}: ${MIDIS}
-	zip -a $@ ${MIDIS}
+	zip $@ ${MIDIS}
 	unzip -l $@; ls -lGt $@
+
+zipsrc: ${ZIPSRC}
+zipmidis: ${ZIPMIDIS}
+
+zips: ${ZIPSRC} ${ZIPMIDIS}
 
 release: ${RELFILES}
 	ls -lGt ${RELFILES}
