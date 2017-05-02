@@ -15,10 +15,12 @@ wlyricsText = \lyricmode {
     ha -- le -- lu -- hu be --  tzil -- ze -- le   se -- ru -- oh 
     kol han -- ne scho moh te --
   
-% abar 26
+% bar 26
   hal -- lel joh  hal -- lel -- lu -- joh  hal -- lel -- lu -- joh
   kol han -- ne scho moh te --hal -- lel joh   hal -- lel -- lu -- joh
   
+% bar 37
+  hal -- lel -- lu -- joh   ha
 }
 
 whlyricsText = \lyricmode {
@@ -39,10 +41,13 @@ whlyricsText = \lyricmode {
   כֹּל -- הַ נְּ -- שָׁ -- מָה  תְּ --
 
   
-% abar 26
+% bar 26
 
 הַ -- לֵּל  יָהּ  הַ -- לְ -- לוּ --  יָהּ  הַ -- לְ -- לוּ --  יָהּ
 כֹּל -- הַ נְּ -- שָׁ -- מָה  תְּ --  הַ -- לֵּל  יָהּ  הַ -- לְ -- לוּ --  יָהּ
+
+  
+% bar 37
 
 % L2R
 }
@@ -66,6 +71,9 @@ tenlyricsText = \lyricmode {
 % bar 26
   hal -- lel joh  hal -- lel -- lu -- joh  hal -- lel -- lu -- joh
   kol han -- ne scho moh te --hal -- lel joh  hal -- lel -- lu -- joh
+  
+% bar 37
+  hal -- lel -- lu -- joh  ha
 }
 
 tenhlyricsText = \lyricmode {
@@ -93,6 +101,9 @@ tenhlyricsText = \lyricmode {
 הַ -- לֵּל  יָהּ  הַ -- לְ -- לוּ --  יָהּ  הַ -- לְ -- לוּ --  יָהּ
 כֹּל -- הַ נְּ -- שָׁ -- מָה  תְּ --  הַ -- לֵּל  יָהּ  הַ -- לְ -- לוּ --  יָהּ
 
+  
+% bar 37
+
 
 % L2R
 }
@@ -118,6 +129,10 @@ baslyricsText = \lyricmode {
   hal -- lel -- joh  hal -- lel -- lu -- joh  hal -- lel -- lu -- joh
     kol han -- ne scho moh te --  hal -- lel  joh
   hal -- le -- lu -- joh   hal -- le -- lu -- joh  
+
+  
+% bar 37
+  hal -- _ -- lel -- lu -- joh   ha
 
 }
 
@@ -147,6 +162,9 @@ bashlyricsText = \lyricmode {
 הַ -- לֵּל  יָהּ  הַ -- לְ -- לוּ --  יָהּ  הַ -- לְ -- לוּ --  יָהּ
   כֹּל -- הַ נְּ -- שָׁ -- מָה  תְּ הַ -- לֵּל  יָהּ
 הַ -- לְ -- לוּ --  יָהּ  הַ -- לְ -- לוּ --  יָהּ
+
+  
+% bar 37
 
 
 
