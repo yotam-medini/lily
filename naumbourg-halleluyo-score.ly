@@ -61,6 +61,8 @@
     % \override LyricText #'font-size = #-1
     % \override LyricText #'font-size = #3
     % \override LyricText #'font-size = #1.2
+    % \override LyricText #'font-name = #"David CLM"
+    \override LyricText #'font-size = #4
   } 
 }
 
