@@ -39,18 +39,6 @@
     #'((basic-distance . 8) 
       (minimum-distance . 6) 
       (padding . 0)) 
-    \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = 
-    #'((basic-distance . 4) 
-      (minimum-distance . 2) 
-      (padding . 0)) 
-    \override VerticalAxisGroup #'nonstaff-nonstaff-spacing = 
-    #'((basic-distance . 3) 
-      (minimum-distance . 1) 
-      (padding . 0)) 
-    \override VerticalAxisGroup #'nonstaff-unrelatedstaff-spacing = 
-    #'((basic-distance . 4) 
-      (minimum-distance . 2) 
-      (padding . 0)) 
   } 
 }
 
@@ -63,6 +51,18 @@
     % \override LyricText #'font-size = #1.2
     \override LyricText #'font-name = #"David CLM"
     % \override LyricText #'font-size = #4
+    \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing = 
+    #'((basic-distance . 4) 
+      (minimum-distance . 2) 
+      (padding . 0)) 
+    \override VerticalAxisGroup #'nonstaff-nonstaff-spacing = 
+    #'((basic-distance . 1) 
+      (minimum-distance . 0) 
+      (padding . 0)) 
+    \override VerticalAxisGroup #'nonstaff-unrelatedstaff-spacing = 
+    #'((basic-distance . 4) 
+      (minimum-distance . 2) 
+      (padding . 0)) 
   } 
 }
 
@@ -112,8 +112,8 @@
         }
       >>
 
-      \new Lyrics = "tenlyrics"
-      \new Lyrics = "tenhlyrics"
+      \new Lyrics = "baslyrics"
+      \new Lyrics = "bashlyrics"
 
       \context Lyrics = "wlyrics" {
         \lyricsto "sopranos" {
@@ -154,7 +154,8 @@
   \header { }
 
   \layout {
-    $(layout-set-staff-size 15)
+    $(layout-set-staff-size 17)
+    % \override LyricText #'font-size = #1.81
     \context {
       \Staff
     }
