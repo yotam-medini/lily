@@ -14,7 +14,11 @@ ZIP = /tmp/${BASE}-${NOW}.zip
 ZIPSRC = /tmp/${BASE}-src-${NOW}.zip
 ZIPMIDIS = /tmp/${BASE}-midis-${NOW}.zip
 
-RELFILES = /tmp/${BASE}-${NOW}.pdf ${ZIPSRC} ${ZIPMIDIS}
+RELFILES = \
+	/tmp/${BASE}-${NOW}.pdf \
+	/tmp/${BASE}-4p-${NOW}.pdf \
+	${ZIPSRC} \
+	${ZIPMIDIS}
 
 MIDIMORE=1.3
 MIDILESS=0.7
@@ -25,10 +29,17 @@ MIDIS = ${BASE}.midi \
 	${BASE}-ten.midi \
 	${BASE}-bas.midi \
 
+pdfs: ${BASE}.pdf ${BASE}-4p.pdf
 
 ${BASE}.pdf: ${BASE}-score.ly ${BASE}-music.ly ${BASE}-lyrics.ly
-	lilypond ${BASE}-score.ly
+	lilypond -I./layout-default ${BASE}-score.ly
 	mv ${BASE}-score.pdf $@
+	pdfinfo $@ | grep Pages:
+
+${BASE}-4p.pdf: ${BASE}-score.ly ${BASE}-music.ly ${BASE}-lyrics.ly
+	lilypond -I./layout-4p  ${BASE}-score.ly
+	mv ${BASE}-score.pdf $@
+	pdfinfo $@ | grep Pages:
 
 ${BASE}.midi: ${BASE}-midi.ly ${BASE}-music.ly
 	lilypond ${BASE}-midi.ly
@@ -49,6 +60,9 @@ ${BASE}.midi: ${BASE}-midi.ly ${BASE}-music.ly
 midis: ${MIDIS}
 
 /tmp/${BASE}-${NOW}.pdf: ${BASE}.pdf
+	cp -uv $< $@
+
+/tmp/${BASE}-4p-${NOW}.pdf: ${BASE}-4p.pdf
 	cp -uv $< $@
 
 SRCS = Makefile \
