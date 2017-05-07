@@ -93,6 +93,9 @@
         }
       >>
 
+      \new Lyrics = "tlyrics"
+      \new Lyrics = "tHlyrics"
+
       \new Staff = "bas" <<
         \clef bass
         \new Voice = "basses" {
@@ -114,6 +117,17 @@
       \context Lyrics = "saHlyrics" {
         \lyricsto "sopalt" {
           \saHLyricsText
+        }
+      }
+
+      \context Lyrics = "tlyrics" {
+        \lyricsto "tenors" {
+          \tLyricsText
+        }
+      }
+      \context Lyrics = "tHlyrics" {
+        \lyricsto "tenors" {
+          \tHLyricsText
         }
       }
 
