@@ -16,7 +16,7 @@ sopMusic = \relative c'' {
   e2 cs4. cs8 | ds4( b8) b8 e4  r4 | r1 | r1  | e8.^\ff e16 b4 e4. b8 |
 
  % bar 16
-  cs4 b8. a16 gs8[( fs)] e4 | e'8.^\mp e16 e4 d4. d8 | f8[( e d)] e8 f4 e |
+  cs4 b8. a16 gs8[( fs)] e4 | e'8.^\mp e16 e4 e4. e8 | f8[( e d)] e8 f4 e |
     e8. e16 b4 e4. b8 | cs4 b8. a16 a8[( fs)] e4 | 
   a8. a16 a4 a4. a8 | b8. b16  cs8[( d)] d4 cs | cs8.^\< cs16 cs4 cs4. cs8 |
     d8. d16 e8. fs16  fs4 e | e4^\f  d8. cs16 d4 a8. a16 |
