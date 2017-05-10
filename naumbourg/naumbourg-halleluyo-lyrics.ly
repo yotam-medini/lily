@@ -72,7 +72,7 @@ whlyricsText = \lyricmode {
 tenlyricsText = \lyricmode {
   ha -- le -- lu -- joh
   ha -- le -- lu -- joh
-  ha -- le -- lu -- joh be --
+  ha -- le -- lu  el  be --
   kod -- scho ha -- le -- lu __ -- hu  bi -- re -- ki -- a  u -- zo
     ha -- le -- lu -- hu bi -- ge -- vu -- ro -- sov ha -- le  
   lu -- hu  ke -- rov gud -- lo  ha -- le -- lu -- hu be -- 
@@ -105,7 +105,7 @@ tenhlyricsText = \lyricmode {
 
 הַ -- לְ -- לוּ -- יָהּ
 הַ -- לְ -- לוּ -- יָהּ
-הַ -- לְ -- לוּ -- יָהּ בְּ -- 
+הַ -- לְ -- לוּ אֵל  בְּ -- 
 קָדְ -- שׁוֹ הַ -- לְ -- לוּ -- הוּ בְּ -- רְ  -- קּּי -- עַ עֻ -- זוֹ 
   הַ -- לְ -- לוּ -- הוּ בִּ -- גְ -- בוּ -- רֹ -- תָיו הַ -- לְ --
 לוּ -- הוּ  כְּ -- רֹב גֻּדְ -- לוֹ  הַ -- לְ -- לוּ -- הוּ בְּ --
@@ -148,7 +148,7 @@ baslyricsText = \lyricmode {
    ha -- le -- lu -- joh
    ha -- le -- lu -- joh
    ha -- le -- lu -- joh
-   ha -- le -- lu -- joh be -- 
+   ha -- le -- lu  el  be -- 
    kod -- scho ha -- le -- lu __ -- hu  bi -- re -- ki -- a  u -- zo
      ha -- le -- lu -- hu bi -- ge -- vu -- ro -- sov ha -- le  
    lu -- hu  ke -- rov gud -- lo  ha -- le -- lu -- hu be -- 
@@ -184,7 +184,7 @@ bashlyricsText = \lyricmode {
 הַ -- לְ -- לוּ -- יָהּ
 הַ -- לְ -- לוּ -- יָהּ
 הַ -- לְ -- לוּ -- יָהּ
-הַ -- לְ -- לוּ -- יָהּ בְּ --
+הַ -- לְ -- לוּ אֵל  בְּ --
 קָדְ -- שׁוֹ הַ -- לְ -- לוּ -- הוּ בְּ -- רְ  -- קּּי -- עַ עֻ -- זוֹ 
   הַ -- לְ -- לוּ -- הוּ בִּ -- גְ -- בוּ -- רֹ -- תָיו הַ -- לְ  --
 לוּ -- הוּ  כְּ -- רֹב גֻּדְ -- לוֹ  הַ -- לְ -- לוּ -- הוּ בְּ --
