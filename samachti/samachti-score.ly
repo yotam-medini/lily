@@ -35,6 +35,7 @@
 \layout { 
   \context { 
     \Staff 
+    \RemoveEmptyStaves
     \override VerticalAxisGroup #'staff-staff-spacing = 
     #'((basic-distance . 8) 
       (minimum-distance . 6) 
@@ -146,7 +147,11 @@
 
     \new PianoStaff <<
       \new Staff = "rh" <<
-	\set Staff.instrumentName = "Piano" 
+	% \override Staff.InstrumentName.self-alignment-X = #CENTER
+	\set Staff.instrumentName = \markup \center-column {
+	  Harp+
+	  "Piano"
+	}
 	\set Staff.printPartCombineTexts = ##f
 	<< \global \rightHand >>
       >>
