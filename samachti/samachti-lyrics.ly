@@ -18,8 +18,13 @@ saLyricsText = \lyricmode {
   ki scho -- moh jo -- sche -- vu  chis -- os  le -- misch -- pot
     kis -- os  le -- ves  do -- vid
   % bar 31
+  schaa -- lu  sche -- lom  je -- ru -- scho -- la -- jim  jisch -- 
+    loy  o -- ha -- va  -- 
   % bar 38
+  jich  je -- hi  scho -- lom  be -- che -- lech   
+    schal -- voh  be -- ar -- me -- no -- so -- juch  le -- ma -- an  a --
   % bar 44
+  chai  a -- chai  ve -- re -- oi  a -- dab -- roh  no  scho -- lom  boch
   % bar 51
   % bar 55
   % bar 61
@@ -61,12 +66,18 @@ saHLyricsText = \lyricmode {
 
   % bar 31
 
+שַׁאֲ -- לוּ  שְׁ -- לוֹם  יְ -- רוּ -- שָׁ -- לָ -- יִם  יִשְׁ -- לָיוּ
+  אֹ -- הֲ -- בָ --
+
 
   % bar 38
 
+יִךְ   יְ -- הִי  שָׁ -- לוֹם  בְּ -- חֵי -- לֵךְ   שַׁלְ -- וָה 
+  בְּ -- אַרְ -- מְ -- נוֹ -- תָ -- יִךְ  לְ -- מַ -- עַן 
 
   % bar 44
 
+אַ -- חַי  אַ -- חַי  וְ -- רֵ -- עָי  אַ -- דַבְּ -- רָה  נָּא  שָׁ -- לוֹם  בָּךְ
 
   % bar 51
 
@@ -90,6 +101,12 @@ tLyricsText = \lyricmode {
   % bar 12
   joh  ke -- ir  sche -- chub -- rah  loh jach dov sche schom o -- lu
     sche -- vo -- tim schiv -- te
+
+  \repeat unfold 73 {\skip 1}
+  % bar 43
+  le -- ma -- an  a --
+  % bar 44
+  chai
 }
 
 tHLyricsText = \lyricmode {
@@ -98,6 +115,14 @@ tHLyricsText = \lyricmode {
 
 יָה  כְּ -- עִיר שְׁ -- חֻבְּ -- רָה לָּה יַחְ -- דָּו שְׁ -- שָּׁם עָ -- לוּ שְׁ -- בַ -- טִים
   שְׁבְ -- טֵי  
+
+  \repeat unfold 73 {\skip 1}
+
+ לְ -- מַ -- עַן  אַ --
+
+  % bar 44
+
+חַי
 
 % L2R
 }
@@ -118,8 +143,13 @@ bLyricsText = \lyricmode {
   ki scho -- moh jo -- sche -- vu  chis -- os  le -- misch -- pot
     kis -- os  le -- ves  do -- vid
   % bar 31
+  schaa -- lu  sche -- lom  je -- ru -- scho -- la -- jim  jisch -- 
+    loy  o -- ha -- va  -- 
   % bar 38
+  jich  je -- hi  scho -- lom  be -- che -- lech   
+    schal -- voh  be -- ar -- me -- no -- so -- juch  le -- ma -- an  a --
   % bar 44
+  chai  a -- chai  ve -- re -- oi  a -- dab -- roh  no  scho -- lom  boch
   % bar 51
   % bar 55
   % bar 61
@@ -159,11 +189,18 @@ bHLyricsText = \lyricmode {
   % bar 31
 
 
+שַׁאֲ -- לוּ  שְׁ -- לוֹם  יְ -- רוּ -- שָׁ -- לָ -- יִם  יִשְׁ -- לָיוּ
+  אֹ -- הֲ -- בָ --
+
+
   % bar 38
 
+יִךְ   יְ -- הִי  שָׁ -- לוֹם  בְּ -- חֵי -- לֵךְ   שַׁלְ -- וָה 
+  בְּ -- אַרְ -- מְ -- נוֹ -- תָ -- יִךְ  לְ -- מַ -- עַן
 
   % bar 44
 
+אַ -- חַי  אַ -- חַי  וְ -- רֵ -- עָי  אַ -- דַבְּ -- רָה  נָּא  שָׁ -- לוֹם  בָּךְ
 
   % bar 51
 

@@ -39,13 +39,15 @@ saMusic = \relative c'' {
   \break
   \set Score.currentBarNumber = #31
   \key c \major
-  c2. b8. b16 | a2.( g8) f | e2 fs | g4.( a8) b4( d) | c2.( b4) | a2. g8. f16 |
+  c2.^\markup{ \italic Soli} b8. b16 | 
+    a2.( g8) f | e2 fs | g4.( a8) b4( d) | c2.( b4) | a2. g8. f16 |
     g2.( f4) |
   % bar 38
-  e2. r8 bf'8 | bf4. bf8 bf4. bf8 | a2 a4 r4 | cs4 cs8. cs16 d4 d8. d16 |
+  e2. r8 bf'8^\markup{ \italic Tutti} | 
+    bf4. bf8 bf4. bf8 | a2 a4 r4 | cs4 cs8. cs16 d4 d8. d16 |
     cs2 a4 r8. f16 | f2. g8. g16 |
   % bar 44
-  bf2.( a8.) g16 | f2.( e8.) d16 | e4. d8 c4 r8 c8 | f2. g4 | bf2.( a8[ g8]) |
+  bf2.( a8.) g16 | f2.( e8.) d16 | e4.( d8) c4 r8 c8 | f2. g4 | bf2.( a8[ g8]) |
     a2. g4 | f2. r4 |
   % bar 51
   \bar "||"
