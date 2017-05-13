@@ -52,10 +52,14 @@ saMusic = \relative c'' {
   % bar 51
   \bar "||"
   \break
-  c2. d8. d16 |
+  c'2. d8. d16 | f2.( e8) d | c2. b!8[( a]) | b4.( a8) g4 r4 |
   % bar 55
+  c2.( d4) | f2. e8 d8 | e2.( d4) | c2 r4 r8. bf16 | bf4.. bf16 bf4.. bf16 |
+    a2 a4 r4 |
   % bar 61
+  c4 c8. c16 d8. d16 <d f>4 | <cs e>2 a4 r4 | r1 r1 |
   % bar 65
+  R1*4 |
   % bar 77
 }
 
@@ -104,10 +108,14 @@ tenMusic = \relative c' {
   % bar 51
   \bar "||"
   \break
-  c2. d8. d16 |
+  c2. d8. d16 | f2.( e8) d | c2. b!8[( a]) | b4.( a8) g4 r4 |
   % bar 55
+  c2.( d4) | f2. e8 d8 | e2.( d4) | c2 r4 r8. bf16 | bf4.. bf16 bf4.. bf16 |
+    a2 a4 r4 |
   % bar 61
+  e'4 e8. e16 f8. f16 <d f>4 | <cs e>2 <a cs>4 r4 | r1 r1 |
   % bar 65
+  R1*4 |
   % bar 77
 }
 
@@ -142,10 +150,13 @@ basMusic = \relative c' {
   % bar 51
   \bar "||"
   \break
-  r1 |
+  R1*7
   % bar 55
+    r2 r4 r8. bf16 | bf4.. bf16 bf4.. bf16 | a2 a4 r4 |
   % bar 61
+  a4 a8. a16 a8. a16 a4 | a2 a4 r8. f16 | f2. g8. g16 | bf2.( a8) g8 |
   % bar 65
+  f2.( e!8) d8 | e4.( d8) c4 r8. c16 | f2. e4 | bf2.( a8[ g8]) |
   % bar 77
 }
 
@@ -194,10 +205,30 @@ rightHand = \relative c' {
   % bar 38
   % bar 44
   % bar 51
-  <c, c'>2. <d d'>4 |
+  <c, c'>2.\( <d d'>4 | <f f'>2. <e e'>8[ <d d'>8]\) | <c c'>2.
+    << { \voiceOne bf'8[( a]) }
+       \new Voice { \voiceTwo <c, d f>4 }
+    >> | \oneVoice
+    % <b d b'>4. <c a'>8 <b g'>4 r4 |
+    <b d b'>4. <c a'>8 \times 2/3 { g'8( a e) } \times 2/3 { g( f! d) } |
   % bar 55
+  <c c'>2.( <d d'>4 | <f f'>2. <e e'>8[ <d d'>8]) |
+    <e g b d>2. <f d'>8[ <d b'>8] | <e b'>2. r8. bf'16 | bf2 bf2 | a2. r4 |
   % bar 61
+  a,16[ cs e a] cs[ e a cs] d,,16[ f a d] f[ a d f] |
+    r16 e16[ cs a] e[ c' a e] cs!16[ a' e cs] a[ e' cs a] |
+    \times 4/6 {f8[( a bf c! d e]} f4 e | 
+    \times 2/3 {d8 bf a} \times 2/3 {g8 bf c} d4 c8[ b8]
   % bar 65
+  \times 4/6 {a8[ bf b! c d e]} f4)
+    << { \voiceOne  e8[( d]) }
+      \new Voice { \voiceTwo <f, b>4 }
+    >> |
+    % \times 4/6 {<e c'>8[( e' f g a b!]} c4) r4 |
+    \times 4/6 {<e c'>8[ e' f g a b!]}
+      \times 2/3 { \stemDown c8 d, a} \stemNeutral \times 2/3 { c8 bf g}
+    \times 4/6 {f8[ a bf c d e]} f4 e4 |
+   \times 2/3 {d8 bf g}  \times 2/3 {g bf c} d4 c8[ bf] |
   % bar 77
 }
 
@@ -228,11 +259,43 @@ leftHand = \relative c {
   <bf bf'>2 <bf bf'>2 | <bf bf'>2. r8. <bf bf'>16 | 
     <bf bf'>2 <bf bf'>2 | <b b'>2. r8. <b b'>16 | <b b'>2 <b b'>2 | <c c'>1
   % bar 31
+  \key c \major
+  R1*20
   % bar 38
   % bar 44
   % bar 51
+  << { 
+      \voiceOne \times 2/3 { c8( e f } \times 2/3 { a8 g e } c'4) b4( |
+      \times 2/3 { a8 f e } \times 2/3 { d8 f a } a4) e8[( f] |
+      \times 4/6 { d8[ f fs g a b] } c4) d,4 |
+      \times 4/6 { g8[( b, c d e f!] } g4) r4 
+    }
+    \new Voice { \voiceTwo 
+       c,2 r2 | c2 r2 | c2 r4 d4 | g,2 r2 }
+  >> |
   % bar 55
+  << {
+      \voiceOne \times 2/3 {c8( e f} \times 2/3 {a8 g e} a4 g4) |
+      \times 2/3 {a8( f e} \times 2/3 {d8 f g} a4 g8[ f8]) |
+      \times 4/6 {g8[ a b c d e]} g,4 g | 
+      \times 4/6 {c,8[ e f g a b]} c4 r8. 
+    }
+    \new Voice { \voiceTwo
+      c,2 r2 | c2 r2 | c2. g4 | c2. r8. 
+    }
+  >>
+  <bf bf'>16 | <bf bf'>2 <bf bf'>2 | <a a'>2. r4 |
   % bar 61
+  <a a'>2 <a a'>2 | <a a'>1
+  << {
+     \voiceOne f'2. g4 | bf2. a8[ g8]
+    }
+    \new Voice { \voiceTwo f,1 | f1 }
+  >>
   % bar 65
+  <f f'>2. <g g'>4 | <c e g>2. r4 | 
+  << { \voiceOne { \stemDown f2. g4 | bf2. a8[ g8] \stemNeutral } }
+     \new Voice { \voiceOne f,1 | f1 }
+  >>
   % bar 77
 }
