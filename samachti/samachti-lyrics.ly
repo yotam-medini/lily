@@ -32,13 +32,17 @@ saLyricsText = \lyricmode {
    je -- hi  scho -- lom be -- che -- lech   
   % bar 61
   schal -- voh  be -- ar -- me -- no -- so -- jich
-  % bar 65
+  % bar 69
+  l'ma -- an  bes  a -- do -- noi  e -- lo --
+  % bar 73
+  he -- nu  a -- vak -- schoh  tov  loch  a --
   % bar 77
+  vak -- scho  tov  loch      so -- mach
 }
 
 saHLyricsText = \lyricmode {
 
-שָׂ -- מַחְ תִּי בְּ -- אֹמְ -- רִים לִי בֵּית אַ דוֹ נַי נֵ --
+שָׂ -- מַחְ -- תִּי בְּ -- אֹמְ -- רִים לִי בֵּית אַ דוֹ נַי נֵ --
 
 
   % bar  6
@@ -97,9 +101,18 @@ saHLyricsText = \lyricmode {
 שַׁלְ וָה  בְּ -- אַרְ -- מְ -- נוֹ -- תָ -- יִךְ
 
   % bar 65
+  % bar 69
 
+לְמַ -- עַן  בּית  אַ -- דוֹ -- נָי  אֱ -- לֹ --
+
+  % bar 73
+
+הֵי -- נו  אֲ -- בַקְ  -- שָׁה  טוֹב  לָךְ  אֲ --
 
   % bar 77
+
+ בַקְ  -- שָׁה  טוֹב  לָךְ
+שָׂ -- מַחְ
 
 % L2r
 }
@@ -166,7 +179,13 @@ bLyricsText = \lyricmode {
     le -- ma -- an  a -- chai  a --
   % bar 65
   chai  ve -- re -- oi  a -- deb -- roh  no
+  % bar 69
+  scho -- lom  boch
+    l'ma -- an  bes  a -- do -- noi  e -- lo
+  % bar 73
+  he -- nu  a -- vak -- schoh  tov  loch  a -- 
   % bar 77
+  vak -- scho  tov  loch 
 }
 
 bHLyricsText = \lyricmode {
@@ -230,8 +249,20 @@ bHLyricsText = \lyricmode {
 
   % bar 65
 
+חַי  וְ -- רֵ עַי  אֲ -- דַבְּ -- רָה  נָּא 
 
+  % bar 69
+
+שָׁ -- לום  בָּךְ
+  לְמַ -- עַן  בּית  אַ -- דוֹ -- נָי  אֱ -- לֹ 
+
+  % bar 73
+
+הֵי -- נו  אֲ -- בַקְ  -- שָׁה  טוֹב  לָךְ  אֲ --
+  
   % bar 77
+
+ בַקְ  -- שָׁה  טוֹב  לָךְ
 
 
 % L2R

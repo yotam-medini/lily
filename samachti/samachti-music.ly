@@ -59,8 +59,16 @@ saMusic = \relative c'' {
   % bar 61
   c4 c8. c16 d8. d16 <d f>4 | <cs e>2 a4 r4 | r1 r1 |
   % bar 65
-  R1*4 |
+  R1*6 |
+  % bar 69
+  \bar "||"
+  \break
+  \key bf \major
+  a2 a8 a8 a8 a8 | a2. a8 a8 |
+  % bar 73
+  d2.( bf4) | g2. r8. g16 | a4. a8 bf2 | c2. r8. c16 |
   % bar 77
+  c4.. c16 d2 | ef!1^\f | r1 | r4 r8. bf16 bf4.( c8)  \bar "||"
 }
 
 tenMusic = \relative c' {
@@ -115,8 +123,16 @@ tenMusic = \relative c' {
   % bar 61
   e'4 e8. e16 f8. f16 <d f>4 | <cs e>2 <a cs>4 r4 | r1 r1 |
   % bar 65
-  R1*4 |
+  R1*6 |
+  % bar 69
+  \bar "||"
+  \break
+  \key bf \major
+  a2 a8 a8 a8 a8 | a2. a8 a8 |
+  % bar 73
+  d2.( bf4) | g2. r8. g16 | a4. a8 bf2 | a2. r8. a16 |
   % bar 77
+  a4.. a16 bf2 | <a c>1 | r1 | r4 r8. bf16 bf4.( c8)  \bar "||"
 }
 
 basMusic = \relative c' {
@@ -156,8 +172,17 @@ basMusic = \relative c' {
   % bar 61
   a4 a8. a16 a8. a16 a4 | a2 a4 r8. f16 | f2. g8. g16 | bf2.( a8) g8 |
   % bar 65
-  f2.( e!8) d8 | e4.( d8) c4 r8. c16 | f2. e4 | bf2.( a8[ g8]) |
+  f2.( e!8) d8 | e4.( d8) c4 r8. c16 | f2. g4 | bf2.( a8[ g8]) |
+  % bar 69
+  a2.\( g4\) | f2. r 4
+  \bar "||"
+  \break
+  \key bf \major
+    a2 a8 a8 a8 a8 | a2. a8 a8 |
+  % bar 73
+  d2.( bf4) | g2. r8. g16 | a4. a8 bf2 | f2. r8. f16 |
   % bar 77
+  f4.. f16 f2 | f1 | r1 | r1  \bar "||"
 }
 
 rightHand = \relative c' {
@@ -229,7 +254,36 @@ rightHand = \relative c' {
       \times 2/3 { \stemDown c8 d, a} \stemNeutral \times 2/3 { c8 bf g}
     \times 4/6 {f8[ a bf c d e]} f4 e4 |
    \times 2/3 {d8 bf g}  \times 2/3 {g bf c} d4 c8[ bf] |
+  % bar 69
+  \times 4/6 { a8[( bf c d e! f] } c4) bf'8[( e,8]) |
+    \times 4/6 { f8[( a, bf c d e!] } f4) r4
+
+  \bar "||"
+  \break
+  \key bf \major
+    \times 2/3 { c,8[( ef fs] } \times 2/3 { a8[ c ef] } 
+      \times 2/3 { fs8[ ef c] } \times 2/3 { a8[ fs ef]) } 
+    \times 2/3 { r8 d[( fs] } \times 2/3 { a c d }
+      \times 2/3 { fs d c } \times 2/3 { a fs d) } |
+  % bar 73
+  {\tweak #'direction #DOWN
+    \times 2/3 {  r8 g( bf } }
+   \times 2/3 { d g bf) }
+    \times 2/3 { d( bf g)} \times 2/3 { bf( g d) } |
+
+  \times 2/3 { g( d bf) }  \times 2/3 { d( bf g) }
+    \times 2/3 {bf( g d) }  \times 2/3 {g( d bf) } |
+
+    f16[ a c f] a[ c f a] f,,[ bf d f] bf[ d f bf] |
+    f16[ f' c a] f[ c' a f] c[ a' f c] a[ f c a] |
   % bar 77
+  f16[ a c f] c[ f a c] f,[ bf d f] d[ f bf d] |
+  ef,8[( a g f] ef[ d c bf]) |
+  <<
+    { \voiceOne a8[ <g bf> <a c> <bf d>] ef[ f g a] }
+    \new Voice {\voiceTwo f,8[ e ef d] <c g'>8[ d ef c] }
+  >> | \oneVoice
+  <d bf' bf'>4 r8. bf'16 bf4.( c8)  \bar "||"
 }
 
 leftHand = \relative c {
@@ -297,5 +351,20 @@ leftHand = \relative c {
   << { \voiceOne { \stemDown f2. g4 | bf2. a8[ g8] \stemNeutral } }
      \new Voice { \voiceOne f,1 | f1 }
   >>
+  % bar 69
+  << { \voiceOne  f'2( a4 g4) }
+    \new Voice { \voiceTwo f,4 a  c2 }
+  >>
+    <f, f'>2. r4 
+
+  \bar "||"
+  \break
+  \key bf \major
+
+    <ef ef'>1 | <d d'>1 |
+  % bar 73
+  <bf bf'>1( | <bf bf'>2.) r8. <g' g'>16 | <f! f'!>2( <f f'>2 | <f f'>1) |
   % bar 77
+  <f f'>2^\< <f f'>2 | <f f' c' f>1^\f | f'2. f4 |
+    <bf, f'>4 r8. bf'16 bf4.( c8)_\markup{\italic "D.S al Fine"}  \bar "||"
 }
