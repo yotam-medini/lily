@@ -11,10 +11,10 @@ saMusic = \relative c'' {
   r1 | r4 r8. bf16 bf4.( c8)
     \mark \markup { \musicglyph #"scripts.segno" } |
     d4. d8 d8[( ef]) bf[( c]) | c2 g4. bf8 |
-    f4 bf <a c>2 | 
+    f4^\< bf <a c>2^\f | 
   % bar  6
-  < bf d>2 bf4 bf8 c | d2 d8[( ef]) bf[( c]) | c4. bf8 g4. bf8 | 
-    f8 bf c d d4.( c8) | bf4 r8. d16 d4.. ef16 | f4 f8 f f4( ef8[ c]) |
+  < bf d>2 bf4^\p bf8 c | d2 d8[( ef]) bf[( c]) | c4. bf8 g4. bf8^\< | 
+    f8 bf^\f c d d4.( c8) | bf4 r8. d16 d4.. ef16 | f4 f8 f f4( ef8[ c]) |
   % bar 12
   c4. c8 c4.. d16 | ef4 ef4 ef4 d8[( c]) | bf4 r8. g16 g4.. a16 | 
     bf4. bf8 bf4( a8[ g]) | 
@@ -23,16 +23,16 @@ saMusic = \relative c'' {
        >> | \oneVoice
   % bar 17
   <f d'>4. <bf d>8 <a d>8. <a d>16 <bf d>8 <c ef> |
-    <bf f'>4. <bf f'>8 <bf f'>4 <a ef'>8 <a d> |
-    <bf d>2 <bf c>4. <bf d>8 |
+    <bf f'>4. <bf f'>8^\mf <bf f'>4 <a ef'>8 <a d> |
+    <bf d>2 <bf c>4. <bf d>8^\< |
     <bf ef>4. <bf ef>8 <bf ef>4 <bf d>8 <bf c> | bf4( d) c4. bf8 |
   % bar 22
-  bf2. r4 | <a f'>2. <a f'>4 | <bf d>1 ~ | <bf d>2 r4\fermata 
+  bf2. r4 | <a f'>2.^\f <a f'>4 | <bf d>1 ~ | <bf d>2 r4\fermata 
   % \markup{Fine}
-  \mark \markup{ \italic "Fine"} bf4 |
+  \mark \markup{ \italic "Fine"} bf4^\f |
   |
   % bar 26
-  bf4.. bf16  bf4.. bf16 | bf2. r8. bf16 | bf4. bf8bf2 | b2. r8. b16 |
+  bf4.. bf16  bf4.. bf16 | bf2. r8. bf16 | bf4. bf8 bf2 | b2. r8. b16 |
     b4. b8 b4 b4 | c1
   % bar 31
   \bar "||"
@@ -54,17 +54,17 @@ saMusic = \relative c'' {
   \break
   c'2. d8. d16 | f2.( e8) d | c2. b!8[( a]) | b4.( a8) g4 r4 |
   % bar 55
-  c2.( d4) | f2. e8 d8 | e2.( d4) | c2 r4 r8. bf16 | bf4.. bf16 bf4.. bf16 |
+  c2.( d4) | f2. e8 d8 | e2.( d4) | c2 r4 r8. bf16^\f | bf4.. bf16 bf4.. bf16 |
     a2 a4 r4 |
   % bar 61
-  c4 c8. c16 d8. d16 <d f>4 | <cs e>2 a4 r4 | r1 r1 |
+  c4^\ff c8. c16 d8. d16 <d f>4 | <cs e>2 a4 r4 | r1 r1 |
   % bar 65
   R1*6 |
   % bar 69
   \bar "||"
   \break
   \key bf \major
-  a2 a8 a8 a8 a8 | a2. a8 a8 |
+  a2^\f a8 a8 a8 a8 | a2. a8 a8 |
   % bar 73
   d2.( bf4) | g2. r8. g16 | a4. a8 bf2 | c2. r8. c16 |
   % bar 77
