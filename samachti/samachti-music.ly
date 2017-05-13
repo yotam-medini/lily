@@ -8,7 +8,7 @@ global = {
 }
 
 saMusic = \relative c'' {
-  r1 | r4 r8. bf16 bf4.( c8)
+  r1 | r4 r8. bf16^\mf bf4.( c8)
     \mark \markup { \musicglyph #"scripts.segno" } |
     d4. d8 d8[( ef]) bf[( c]) | c2 g4. bf8 |
     f4^\< bf <a c>2^\f | 
@@ -136,7 +136,7 @@ tenMusic = \relative c' {
 }
 
 basMusic = \relative c' {
-  r1 | r1 | r1 | r1 | r2 d2\f |
+  r1 | r1 | r1 | r1 | r2 d2^\f |
   % bar  6
   bf2 r2 | r1 | r1 | r8 f8 f f f2 | bf,4 r8. bf'16 bf4.. bf16 |
     bf4 a8 g f4( g) |
@@ -263,7 +263,9 @@ rightHand = \relative c' {
   \key bf \major
     \times 2/3 { c,8[( ef fs] } \times 2/3 { a8[ c ef] } 
       \times 2/3 { fs8[ ef c] } \times 2/3 { a8[ fs ef]) } 
-    \times 2/3 { r8 d[( fs] } \times 2/3 { a c d }
+    {\tweak #'direction #DOWN
+      \times 2/3 { r8 d[( fs] } }
+      \times 2/3 { a c d }
       \times 2/3 { fs d c } \times 2/3 { a fs d) } |
   % bar 73
   {\tweak #'direction #DOWN
