@@ -54,8 +54,7 @@ midis: ${MIDIS}
 SRCS = Makefile \
 	${BASE}.ly \
 	${BASE}-music.ly \
-	${BASE}-lyrics.ly \
-	${BASE}-midi.ly
+	${BASE}-lyrics.ly
 
 ${ZIPSRC}: ${SRCS}
 	zip $@ ${SRCS}
