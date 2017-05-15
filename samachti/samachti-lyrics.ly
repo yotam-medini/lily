@@ -1,13 +1,13 @@
 %
 
 saLyricsText = \lyricmode {
-  sa -- mach -- ti be -- om -- rim  li  bes  -- a -- do -- noi  ne -- 
+  so -- mach -- ti be -- om -- rim  li  bes  -- a -- do -- noi  ne -- 
   % bar  6
-  lech om -- dos ha || ju rag -- le -- nu bi scho ra -- jich
+  lech om -- dos ho || ju rag -- le -- nu bi scho ra -- jich
     je -- ru -- scho -- la -- jum je -- ru -- scho -- la -- jim
     ha -- bbn' --
   % bar 12
-  joh  ke -- ir  sche -- chub -- rah  loh jach dov sche schom o -- lu
+  joh  ke -- ir  sche -- chub -- roh  loh jach dov sche schom o -- lu
     sche -- vo -- tim schiv -- te
   % bar 17
   joh e -- dus le -- jis -- ro -- el le -- ho -- dos le -- schem  a -- do -- 
@@ -118,7 +118,7 @@ saHLyricsText = \lyricmode {
 }
 
 tLyricsText = \lyricmode {
-  \repeat unfold 36 {\skip 1}
+  \repeat unfold 37 {\skip 1}
   % bar 12
   joh  ke -- ir  sche -- chub -- rah  loh jach dov sche schom o -- lu
     sche -- vo -- tim schiv -- te
@@ -131,7 +131,7 @@ tLyricsText = \lyricmode {
 }
 
 tHLyricsText = \lyricmode {
-  \repeat unfold 36 {\skip 1}
+  \repeat unfold 37 {\skip 1}
   % bar 12
 
 יָה  כְּ -- עִיר שְׁ -- חֻבְּ -- רָה לָּה יַחְ -- דָּו שְׁ -- שָּׁם עָ -- לוּ שְׁ -- בַ -- טִים

@@ -48,6 +48,8 @@ ${BASE}.pdf ${BASE}.midi: ${BASE}.ly ${BASE}-music.ly ${BASE}-lyrics.ly
 
 midis: ${MIDIS}
 
+all: ${BASE}.pdf midis
+
 /tmp/${BASE}-${NOW}.pdf: ${BASE}.pdf
 	cp -uv $< $@
 

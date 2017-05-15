@@ -11,23 +11,38 @@ saMusic = \relative c'' {
   r1 | r4 r8. bf16^\mf bf4.( c8)
     \mark \markup { \musicglyph #"scripts.segno" } |
     d4. d8 d8[( ef]) bf[( c]) | c2 g4. bf8 |
-    f4^\< bf <a c>2^\f | 
-  % bar  6
-  < bf d>2 bf4^\p bf8 c | d2 d8[( ef]) bf[( c]) | c4. bf8 g4. bf8^\< | 
+    f4^\< bf << {\voiceOne c2^\f d2} \new Voice {\voiceTwo a2 bf2}>> \oneVoice
+  % bar  6 ...
+    bf4^\p bf8 c | d2 d8[( ef]) bf[( c]) | c4. bf8 g4. bf8^\< | 
     f8 bf^\f c d d4.( c8) | bf4 r8. d16 d4.. ef16 | f4 f8 f f4( ef8[ d]) |
   % bar 12
   c4. c8 c4.. d16 | ef4 ef4 ef4 d8[( c]) | bf4 r8. g16 g4.. a16 | 
     bf4. bf8 bf4( a8[ g]) | 
-    f2 << { \voiceOne g8[( a]) bf[( c]) } 
-          \new Voice { \voiceTwo g4. g8 } 
-       >> | \oneVoice
-  % bar 17
-  <f d'>4. <bf d>8 <a c>8. <a c>16 <bf d>8 <c ef> |
-    <bf f'>4. <bf f'>8^\mf <bf f'>4 <a ef'>8 <a d> |
-    <bf c>2 <bf c>4. <bf d>8^\< |
-    <bf ef>4. <bf ef>8 <bf ef>4 <bf d>8 <bf c> | bf4( d) c4. bf8 |
+    f2 << { \voiceOne 
+      g8[( a]) bf[( c]) | 
+      d4. d8  c8. c16 d8  ef 
+      % bar 17
+      f4. f8^\mf f4 ef8 d |
+      c2 c4. d8^\< |
+      ef4. ef8 ef4 d8 c | 
+    } \new Voice { \voiceTwo 
+      g4. g8 | f4. bf8 a8. a16 bf8 c 
+      % bar 17
+      bf4. bf8 bf4 a8 a |
+      bf2 bf4. bf8 |
+      bf4. bf8 bf4 bf8 bf
+    } 
+    >> | \oneVoice
+    bf4( d) c4. bf8 |
   % bar 22
-  bf2. r4 | <a f'>2.^\f <a f'>4 | <bf d>1 ~ | <bf d>2 r4\fermata 
+  bf2. r4 | 
+    << { \voiceOne
+      f'2.^\f f4 | d1 ~ | d2 
+    } \new Voice { \voiceTwo
+      a2. a4 | bf1 ~ | bf2 
+    }
+    >>
+    r4\fermata 
   % \markup{Fine}
   \mark \markup{ \italic "Fine"} bf4^\f |
   |
@@ -57,14 +72,23 @@ saMusic = \relative c'' {
   c2.( d4) | f2. e8 d8 | e2.( d4) | c2 r4 r8. bf16^\f | bf4.. bf16 bf4.. bf16 |
     a2 a4 r4 |
   % bar 61
-  cs4^\ff cs8. cs16 d8. d16 <d f>4 | <cs e>2 a4 r4 | r1 r1 |
+  cs4^\ff cs8. cs16 d8. d16 
+  << { \voiceOne
+    f4 | e2 a,4 
+  } \new Voice { \voiceTwo
+    d4 | cs2 a4 
+  } 
+  >> \oneVoice
+    r4 | r1 r1 |
   % bar 65
   R1*6 |
   % bar 69
   \bar "||"
   \break
   \key bf \major
-  a2^\f a8 a8 a8 a8 | a2. a8 a8 |
+  \autoBeamOff
+  a2^\f a8 a8 a8 a8 | a2. a8 a8 |  % 71,72
+  \autoBeamOn
   % bar 73
   d2.( bf4) | g2. r8. g16 | a4. a8 bf2 | c2. r8. c16 |
   % bar 77
@@ -73,30 +97,43 @@ saMusic = \relative c'' {
 
 tenMusic = \relative c' {
   r1 | r4 r8. bf16 bf4.( c8) | d4. d8 d8[( ef]) bf[( c]) | c2 g4. bf8 |
-    f4 bf <a c>2 | 
-  % bar  6
-  < bf d>2 bf4 bf8 c | d2 d8[( ef]) bf[( c]) | c4. bf8 g4. bf8 | 
-    f8 <bf d>8 <c ef> <d f> << {d4.( c8)} {f4. ef8} >> |
-    <bf d>4 r8. d16 d4.. d16 | d4 c8 bf a4( bf) |
+    f4 bf << {\voiceOne c2 d2} \new Voice {\voiceTwo a2 bf2} >> \oneVoice
+  % bar 6 ,,
+    bf4 bf8 c | d2 d8[( ef]) bf[( c]) | 
+    c4. bf8 g4. bf8 | 
+    % f8 <bf d>8 <c ef> <d f> << {d4.( c8)} {f4. ef8} >> |
+    f8 << { \voiceOne d'8[ ef f] f4. ef8 | d4} 
+          \new Voice{ \voiceTwo bf8[ c d] d4.( c8) | bf4} >>
+       \oneVoice
+       r8. d16 d4.. d16 | d4 c8 bf a4( bf) |
   % bar 12
-%  c4. c8_"ke"_"כְּ" c2_"ir"_"עִיר" ~ | 
-%    c8 c8_"sche"_"שְׁ" bf_"chub"_"חֻבְּ" a_"ro"_"רָה" g4_"lo"_"לָּה" a_"jach"_"יַחְ" | 
-%    bf4_"dov"_"דָּו" r8. g16_"sche"_"שְׁ" g2_"schom"_"שָׁם" ~ | 
-%    g4 f8[(_"o"_"עָ" ef]) d8._"lu"_"לוּ" d16_"sche"_"שְׁ" ef4_"vo"_"בַ" |
   c4. c8 c2 ~ | 
     c8 c8 bf a g4 a | 
     bf4 r8. g16 g2 ~ | 
     g4 f8[( ef]) d8. d16 ef4 |
-    f2 << { \voiceOne g8[( a]) bf[( c]) } 
-          \new Voice { \voiceTwo g4. g8 } 
-       >> | \oneVoice
-  % bar 17
-  <bf d>4. <bf d>8 <a c>8. <a c>16 <bf d>8 <c ef> |
-    <d f>4. <bf f'>8 <bf f'>4 <bf ef>8 <bf c> |
-    <bf c>2 <bf c>4. <bf d>8 | <bf ef>4. <bf ef>8 <bf ef>4 <bf d>8 <bf c> |
-    <bf d>2 <a ef'>4. <bf d>8 |
-  % bar 22
-  <bf d>2. r4 | <a c>2. <a c>4 | <bf d>1 ~ | <bf d>2 r4\fermata bf4 |
+    % bar 16
+    f2 << { \voiceOne 
+      g8[( a]) bf[( c]) |
+      d4. d8 c8. c16 d8 ef |
+      f4. f8 f4 ef8 d |
+      c2 c4. d8 | % 19 
+      ef4. ef8 ef4 d8 c | % 20
+      d2 ef4. d8 |
+      d2. r4 | 
+      c2. c4 | 
+      d1 ~ | d2 
+    } \new Voice { \voiceTwo 
+      g,4. g8 |
+      bf4. bf8 a8. a16 bf8 c |
+      d4. bf8 bf4 bf8 bf |
+      bf2 bf4. bf8 | % 19
+      bf4. bf8 bf4 bf8 bf | % 20
+      bf2 a4. bf8 |
+      bf2. r4 | 
+      a2. a4 | 
+      bf1 ~ | bf2
+    } >>  \oneVoice
+    r4\fermata bf4 |
   % bar 26
   bf4.. bf16  bf4.. bf16 | bf2. r8. bf16 | bf4. bf8bf2 | b2. r8. b16 |
     b4. b8 b4 b4 | c1
@@ -121,14 +158,23 @@ tenMusic = \relative c' {
   c2.( d4) | f2. e8 d8 | e2.( d4) | c2 r4 r8. bf16 | bf4.. bf16 bf4.. bf16 |
     a2 a4 r4 |
   % bar 61
-  e'4 e8. e16 f8. f16 <d f>4 | <cs e>2 <a cs>4 r4 | r1 r1 |
+  e'4 e8. e16 f8. f16 
+  << { \voiceOne
+    f4 | e2 cs4 
+  } \new Voice { \voiceTwo
+    d4 | cs2 a4 
+  }
+  >> \oneVoice
+    r4 | r1 r1 |
   % bar 65
   R1*6 |
   % bar 69
   \bar "||"
   \break
   \key bf \major
-  a2 a8 a8 a8 a8 | a2. a8 a8 |
+  \autoBeamOff
+  a2 a8 a8 a8 a8 | a2. a8 a8 | % 71,72
+  \autoBeamOn
   % bar 73
   d2.( bf4) | g2. r8. g16 | a4. a8 bf2 | a2. r8. a16 |
   % bar 77
@@ -178,7 +224,9 @@ basMusic = \relative c {
   \bar "||"
   \break
   \key bf \major
-    a2 a8 a8 a8 a8 | a2. a8 a8 |
+    \autoBeamOff
+    a2 a8 a8 a8 a8 | a2. a8 a8 | % 71,72
+    \autoBeamOn
   % bar 73
   d2.( bf4) | g2. r8. g16 | a4. a8 bf2 | f2. r8. f16 |
   % bar 77
@@ -197,7 +245,7 @@ rightHand = \relative c' {
     <f f'>4. <f f'>8 <f f'>4( <ef ef'>8 <d d'>) |
   % bar 12
   <c c'>4. <c c'>8 <c c'>4.. <d d'>16 |
-    <d d'>4. <ef ef'>8 <ef ef'>4( <d d'>8[ <c c'>]) |
+    <ef ef'>4. <ef ef'>8 <ef ef'>4( <d d'>8[ <c c'>]) | % 13
     <bf bf'>4 r8. <g g'>16 <g g'>4.. <a a'>16 |
     <bf bf'>4. <bf bf'>8 <bf bf'>4( <a a'>8[ <g g'>]) |
     <f f'>4. <bf f'>8 
@@ -232,7 +280,7 @@ rightHand = \relative c' {
   % bar 51
   <c, c'>2.\( <d d'>4 | <f f'>2. <e e'>8[ <d d'>8]\) | <c c'>2.
     << { \voiceOne b'8[( a]) }
-       \new Voice { \voiceTwo <c, d f>4 }
+       \new Voice { \voiceTwo <c, d fs>4 }
     >> | \oneVoice
     % <b d b'>4. <c a'>8 <b g'>4 r4 |
     <b d b'>4. <c a'>8 \times 2/3 { g'8( a e) } \times 2/3 { g( f! d) } |
@@ -248,7 +296,7 @@ rightHand = \relative c' {
   \times 4/6 {a8[ bf b! c d e]} f4)
     << { \voiceOne  e8[( d]) }
       \new Voice { \voiceTwo <f, b!>4 }
-    >> |
+    >> \oneVoice |
     % \times 4/6 {<e c'>8[( e' f g a b!]} c4) r4 |
     \times 4/6 {<e c'>8[ e' f g a b!]}
       \times 2/3 { \stemDown c8 d, a} \stemNeutral \times 2/3 { c8 bf g}
@@ -324,7 +372,7 @@ leftHand = \relative c {
       \voiceOne \times 2/3 { c8( e f } \times 2/3 { a8 g e } c'4) b4( |
       \times 2/3 { a8 f e } \times 2/3 { d8 f a } a4) e8[( f] |
       \times 4/6 { d8[ f fs g a b] } c4) d,4 |
-      \times 4/6 { g8[( b, c d e f!] } g4) r4 
+      \times 4/6 { g8[( b, c d e fs] } g4) r4 
     }
     \new Voice { \voiceTwo 
        c,2 r2 | c2 r2 | c2 r4 d4 | g,2 r2 }
