@@ -151,7 +151,7 @@ tHLyricsText = \lyricmode {
 bLyricsText = \lyricmode {
   ne -- lech
   % bar  6
-  je -- ru -- schu -- la -- jim  je -- ru -- scho -- la -- jim   ha -- bbn' --
+  je -- ru -- scho -- la -- jim  je -- ru -- scho -- la -- jim   ha -- bbn' --
   % bar 12
   joh  ke -- ir  sche -- chub -- rah  loh jach dov sche schom o -- lu
     sche -- vo -- tim schiv -- te
