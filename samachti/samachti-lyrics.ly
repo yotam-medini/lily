@@ -3,9 +3,9 @@
 saLyricsText = \lyricmode {
   so -- mach -- ti be -- om -- rim  li  bes  -- a -- do -- noi  ne -- 
   % bar  6
-  lech om -- dos ho || ju rag -- le -- nu bi scho ra -- jich
-    je -- ru -- scho -- la -- jum je -- ru -- scho -- la -- jim
-    ha -- bbn' --
+  lech om -- dos ho | ju rag -- le -- nu bi scho ra -- jich
+    je -- ru -- scho -- la -- jim  je -- ru -- scho -- la -- jim
+    ha -- bnu --
   % bar 12
   joh  ke -- ir  sche -- chub -- roh  loh jach dov sche schom o -- lu
     sche -- vo -- tim schiv -- te
@@ -151,7 +151,7 @@ tHLyricsText = \lyricmode {
 bLyricsText = \lyricmode {
   ne -- lech
   % bar  6
-  je -- ru -- scho -- la -- jim  je -- ru -- scho -- la -- jim   ha -- bbn' --
+  je -- ru -- scho -- la -- jim  je -- ru -- scho -- la -- jim   ha -- bnu --
   % bar 12
   joh  ke -- ir  sche -- chub -- rah  loh jach dov sche schom o -- lu
     sche -- vo -- tim schiv -- te
