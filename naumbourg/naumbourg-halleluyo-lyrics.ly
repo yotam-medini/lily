@@ -9,7 +9,7 @@ wlyricsText = \lyricmode {
   lu -- hu  ke -- rov gud -- lo  ha -- le -- lu -- hu be --
 
 % bar 16
-  ne -- vel ve -- chin -- nor  ha -- le -- lu -- hu  be -- sof u -- ma -- chol
+  ne -- vel ve -- chin -- nor  ha -- le -- lu -- hu  be -- sof u -- mo -- chol
     ha -- le -- lu -- hu be -- mi -- nim -- ve -- u -- gov     
   ha -- le -- lu -- hu be --   tzil -- ze -- le scho -- ma  
     ha -- le -- lu -- hu be --  tzil -- ze -- le   se -- ru -- oh 
@@ -17,7 +17,7 @@ wlyricsText = \lyricmode {
   
 % bar 26
   hal -- lel joh  hal -- lel -- lu -- joh  hal -- lel -- lu -- joh
-  kol han -- ne scho moh te --hal -- lel joh   hal -- lel -- lu -- joh
+  kol han -- ne scho moh te -- hal -- lel joh   hal -- lel -- lu -- joh
   
 % bar 37
   hal -- _ lel -- lu -- joh   ha --
@@ -87,7 +87,7 @@ tenlyricsText = \lyricmode {
   
 % bar 26
   hal -- lel joh  hal -- lel -- lu -- joh  hal -- lel -- lu -- joh
-  kol han -- ne scho moh te --hal -- lel joh  hal -- lel -- lu -- joh
+  kol han -- ne scho moh te -- hal -- lel joh  hal -- lel -- lu -- joh
   
 % bar 37
   hal -- lel -- lu -- joh  ha --
