@@ -56,7 +56,7 @@ altMusic = \relative c' {
 
  % bar 26
   fs4 d e2 | es8. es16 cs4 cs fs8. fs16 | e4( d) cs r | r1 | r1 |
-   e4 e8. e16 e4 e8. e16 | cs4 e a2 | r1 | r1 | d,4. e8 e2 | e1^\fermata |
+   e4 e8. e16 e4 e8. e16 | cs4 e a2 | r1 | r1 | e4. e8 e2 | e1^\fermata |
 
  % bar 37
   a4.( d8 cs[ b a gs)] | fs8[( gs a)] b8 b4 e, | r1 | r1 |
