@@ -32,6 +32,7 @@
   \context { 
     \Staff 
     \RemoveEmptyStaves
+    \override VerticalAxisGroup #'remove-first = ##t
     \override VerticalAxisGroup #'staff-staff-spacing = 
     #'((basic-distance . 10) 
       (minimum-distance . 7) 
