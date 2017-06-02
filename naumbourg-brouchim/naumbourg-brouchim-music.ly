@@ -4,7 +4,8 @@
 global = {
   \key g \major
   \time 4/4
-  \tempo "di Marcia"
+  % \tempo "di Marcia"
+  \tempo \markup { \hspace #-6.0 \huge "Tempo di marcia" } 4=120
 }
 
 sopMusic = \relative c'' {
