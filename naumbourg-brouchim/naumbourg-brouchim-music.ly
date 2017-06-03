@@ -12,24 +12,88 @@ sopMusic = \relative c'' {
   \partial 4 r4 |
   R1*8 |
   d2 b2 |
+  a4. a8 g4 r4 |
+  a4( b a) g8. g16 |
+  d'2 d4 r4 |
+  e2 c2 |
+  b4. b8 c4 r4 |
+  c4( a g) \autoBeamOff fs8. fs16 \autoBeamOn |
+  e2 d4 r8 d8 |
+
+  g4.( b8) a4.( c8) |
+  b4. d8 c4. e8 |
+  d4( g) d b |
+  d8[( c]) b[( c]) a4 r8 d,8 |
+  g4.( b8) a4.( c8) |
+  b4.( d8) c4. e8 |
+  d4 g d \autoBeamOff b8. b16 \autoBeamOn |
+  b4 a g r8 g8 |
 }
 
 altMusic = \relative c'' {
   \partial 4 r4 |
   R1*8 |
   d2 b2 |
+  a4. a8 g4 r4 |
+  a4( b a) g8. g16 |
+  d'2 d4 r4 |
+  e2 c2 |
+  b4. b8 c4 r4 |
+  c4( a g) \autoBeamOff fs8. fs16 \autoBeamOn |
+  e2 d4 r8 d8 |
+
+  r2 r4. d8 |
+  g4. b8 a4. c8 |
+  b2 b4 g |
+  b8[( a]) g![( a]) fs4 r4 |
+  r2 r4. d8 |
+  g4. b8 a4. c8 |
+  b4 b g \autoBeamOff g8. g16 \autoBeamOn |
+  g4 fs g r8 g8 |
 }
 
 tenMusic = \relative c' {
   \partial 4 r4 |
   R1*8 |
   d2 b2 |
+  a4. a8 g4 r4 |
+  a4( b a) g8. g16 |
+  d'2 d4 r4 |
+  e2 c2 |
+  b4. b8 c4 r4 |
+  c4( a g) \autoBeamOff fs8. fs16 \autoBeamOn |
+  e2 d4 r8 d8 |
+
+  g4.( b8) a4.( c8) |
+  b4. d8 c4. e8 |
+  d4( g) d b |
+  d4 d d8[( e d]) c8 |
+  b8[( d b g]) d'2 ~ |
+  d2 d4. d8 |
+  d4 d d \autoBeamOff d8. d16 \autoBeamOn
+  d4 d8[( c]) b4 r4 |
 }
 
 basMusic = \relative c {
   \partial 4 r4 |
   R1*8 |
-  d2 b2 |
+  d'2 b2 |
+  a4. a8 g4 r4 |
+  a4( b a) g8. g16 |
+  d'2 d4 r4 |
+  e2 c2 |
+  b4. b8 c4 r4 |
+  c4( a g) \autoBeamOff fs8. fs16 \autoBeamOn |
+  e2 d4 r4 |
+
+  r2 r4. d8 |
+  g4. b8 a4. c8 |
+  b4( g) g g |
+  d4 d d r8 d8 |
+  g,4( g') fs8[( d e fs]) |
+  g8[( d b g]) d'[( e fs]) d |
+  g4 g, b d8. d16 |
+  d4 d g r8 g8 |
 }
 
 rightHand = \relative c' {

@@ -120,7 +120,7 @@
         }
       }
       \context Lyrics = "sHlyrics" {
-        \lyricsto "alt" {
+        \lyricsto "sop" {
           \sHLyricsText
         }
       }
