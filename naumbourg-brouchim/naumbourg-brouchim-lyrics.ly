@@ -7,10 +7,10 @@ sLyricsText = \lyricmode {
   B'rou -- chim  yi he -- you cho -- son  ve -- cha lloh
   b'rou -- chim  yi he -- you cho -- son  ve -- cha lloh be --
 
-  chou __ _ -- po -- _ -- som
+  chou __ _  po __ _ som
   be -- chou -- po -- som
   yee -- rav kol  be --  
-  chou __ _ -- po -- som  be -- 
+  chou __ _ po -- som  be -- 
   chou  -- po -- som  jee -- rav  kol  gi -- loh  se
   
 }
@@ -21,10 +21,10 @@ sHLyricsText = \lyricmode {
 בְּרוּ -- כִים   יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
 בְּרוּ -- כִים   יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
 
-בְּ -- חֻ __ _ -- פָּ __ _ -- תָם
+בְּ -- חֻ __ _  פָּ __ _  תָם
 בְּ -- חֻ -- פָּ -- תָם
 יֶעֱ -- רַב  קוֹל
-בְּ -- חֻ __ _ -- פָּ -- תָם
+בְּ -- חֻ __ _  פָּ -- תָם
 בְּ -- חֻ -- פָּ -- תָם
 יֶעֱ -- רַב  קוֹל  גִּי -- לָה 
 
@@ -67,7 +67,7 @@ tLyricsText = \lyricmode {
   B'rou -- chim  yi he -- you cho -- son  ve -- cha lloh
   b'rou -- chim  yi he -- you cho -- son  ve -- cha lloh be --
 
-  chou -- _ -- po -- _ -- som
+  chou __ _ po __ _ som
   be -- chou -- po -- som
   yee -- rav kol  be --  
   chou  -- po -- som  be -- 
@@ -79,7 +79,7 @@ tHLyricsText = \lyricmode {
 
 בְּרוּ -- כִים   יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
 בְּרוּ -- כִים   יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
-בְּ -- חֻ __ _ -- פָּ __ _ -- תָם
+בְּ -- חֻ __ _ פָּ __ _ תָם
 בְּ -- חֻ -- פָּ -- תָם
 יֶעֱ -- רַב  קוֹל
 בְּ -- חֻ -- פָּ -- תָם
@@ -97,7 +97,7 @@ bLyricsText = \lyricmode {
   be -- chou -- po -- som
   be -- chou -- po -- som
   yee -- rav kol  be --  
-  chou -- po __ _ -- som  be -- 
+  chou -- po __ _ som  be -- 
   chou  -- po -- som  jee -- rav  kol  gi -- loh  se
 }
 
@@ -109,7 +109,7 @@ bHLyricsText = \lyricmode {
 בְּ -- חֻ -- פָּ -- תָם
 בְּ -- חֻ -- פָּ -- תָם
 יֶעֱ -- רַב  קוֹל
-בְּ -- חֻ -- פָּ __ _ -- תָם
+בְּ -- חֻ -- פָּ __ _ תָם
 בְּ -- חֻ -- פָּ -- תָם
 יֶעֱ -- רַב  קוֹל   גִּי -- לָה 
 

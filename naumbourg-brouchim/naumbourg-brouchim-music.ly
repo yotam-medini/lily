@@ -1,6 +1,8 @@
 \include "english.ly"
 \version "2.16.2"
 
+% ORPG = original page
+
 global = {
   \key g \major
   \time 4/4
@@ -9,6 +11,7 @@ global = {
 }
 
 sopMusic = \relative c'' {
+  % ORPG-1
   \partial 4 r4 |
   R1*8 |
   d2 b2 |
@@ -28,9 +31,15 @@ sopMusic = \relative c'' {
   b4.( d8) c4. e8 |
   d4 g d \autoBeamOff b8. b16 \autoBeamOn |
   b4 a g r8 g8 |
+  
+  \bar "||"
+  \break
+  % ORPG-2
+  \key c \major
 }
 
 altMusic = \relative c'' {
+  % ORPG-1
   \partial 4 r4 |
   R1*8 |
   d2 b2 |
@@ -50,9 +59,15 @@ altMusic = \relative c'' {
   g4. b8 a4. c8 |
   b4 b g \autoBeamOff g8. g16 \autoBeamOn |
   g4 fs g r8 g8 |
+  
+  \bar "||"
+  \break
+  % ORPG-2
+  \key c \major
 }
 
 tenMusic = \relative c' {
+  % ORPG-1
   \partial 4 r4 |
   R1*8 |
   d2 b2 |
@@ -72,9 +87,15 @@ tenMusic = \relative c' {
   d2 d4. d8 |
   d4 d d \autoBeamOff d8. d16 \autoBeamOn
   d4 d8[( c]) b4 r4 |
+  
+  \bar "||"
+  \break
+  % ORPG-2
+  \key c \major
 }
 
 basMusic = \relative c {
+  % ORPG-1
   \partial 4 r4 |
   R1*8 |
   d'2 b2 |
@@ -94,9 +115,15 @@ basMusic = \relative c {
   g8[( d b g]) d'[( e fs]) d |
   g4 g, b d8. d16 |
   d4 d g r8 g8 |
+  
+  \bar "||"
+  \break
+  % ORPG-2
+  \key c \major
 }
 
 rightHand = \relative c' {
+  % ORPG-1
   \partial 4 d4 |
   <b g'>2. d4 |
   <b g'>4 <fs' a> <g b> <a c> |
@@ -161,9 +188,15 @@ rightHand = \relative c' {
     }
   >> | \oneVoice
   <d g b>4 <c d fs a> <b d g> r4 |
+  
+  \bar "||"
+  \break
+  % ORPG-2
+  \key c \major
 }
 
 leftHand = \relative c {
+  % ORPG-1
  \partial 4 r4 |
  r4 d4 <g, g'>2~ |
  <g g'>1~ |
@@ -191,4 +224,9 @@ leftHand = \relative c {
   g8[( d b g]) d'[( e fs d]) |
   g4 g, b d |
   d2 <g, g'>4 r4 |
+  
+  \bar "||"
+  \break
+  % ORPG-2
+  \key c \major
 }
