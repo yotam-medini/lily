@@ -55,6 +55,12 @@ sopMusic = \relative c'' {
   d4 cs d a |
   a4. a8 \autoBeamOff g8 g g c \autoBeamOn |
   b2 c4 r4 |
+
+  \bar "||"
+  \break
+  % ORPG-2
+  \key g \major
+
 }
 
 altMusic = \relative c'' {
@@ -107,6 +113,12 @@ altMusic = \relative c'' {
   ds4. ds8 \autoBeamOff e d e g \autoBeamOn |
   f2 e4 r4 |
 
+
+  \bar "||"
+  \break
+  % ORPG-2
+  \key g \major
+
 }
 
 tenMusic = \relative c' {
@@ -154,6 +166,12 @@ tenMusic = \relative c' {
   d4 e f a,8.[( b16]) |
   c4. b8 \autoBeamOff c8 b c e \autoBeamOn |
   e4( d) c r4 |
+
+  \bar "||"
+  \break
+  % ORPG-2
+  \key g \major
+
 }
 
 basMusic = \relative c {
@@ -201,6 +219,12 @@ basMusic = \relative c {
   f4 e d f |
   \autoBeamOff f4( fs8) fs8 g8 g g g \autoBeamOn |
   g,2 c4 r4 |
+
+  \bar "||"
+  \break
+  % ORPG-2
+  \key g \major
+
 }
 
 rightHand = \relative c' {
@@ -316,6 +340,12 @@ rightHand = \relative c' {
     }
   >> \oneVoice r4 |
 
+
+  \bar "||"
+  \break
+  % ORPG-2
+  \key g \major
+
 }
 
 leftHand = \relative c {
@@ -393,6 +423,12 @@ leftHand = \relative c {
 % f2 d |
 % c4 g' f e |
 % <a, d>4 <a cs e> <a d f> <a d> |
+
+
+  \bar "||"
+  \break
+  % ORPG-2
+  \key g \major
 
 
 }
