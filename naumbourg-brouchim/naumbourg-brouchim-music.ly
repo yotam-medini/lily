@@ -84,6 +84,16 @@ sopMusic = \relative c'' {
   b4 a g r |
   r2  r8 b c d |
   e4( d8[ c8]) b4 b4 |
+
+  % ORPG-4
+
+  b4. b8  b4. b8 |
+  b4. b8 c2 |
+  b4 d b( a) |
+  g4 r4 r2 |
+  r1 |
+  r1 |
+
 }
 
 altMusic = \relative c'' {
@@ -165,6 +175,14 @@ altMusic = \relative c'' {
   r2 r8 g a b |
   c4( b8[ a8]) g4 b4 |
  
+  % ORPG-4
+
+  a4. a8 g4. g8 |
+  g4. g8 g2 |
+  g4 b g( fs) |
+  g4 r4 r2 |
+  r4 d' g, f |
+  e2. e4 |
 }
 
 tenMusic = \relative c' {
@@ -242,6 +260,14 @@ tenMusic = \relative c' {
   g8 a b c d2( |
   d2) d4 d4 |
 
+  % ORPG-4
+
+  ds4. ds8 e4. e8 |
+  f4. f8 e2 |
+  d4 d d4.( c8) |
+  b4 r4 r2 |
+  r1 |
+  r4 e c b |
 }
 
 basMusic = \relative c {
@@ -317,6 +343,15 @@ basMusic = \relative c {
   d4 d g r |
   r1 |
   r8 d8 d8[( fs8]) g4 g4 |
+
+  % ORPG-4
+
+  fs4. fs8 e4. e8 |
+  d4. d8 c2 |
+  d4 d d2 |
+  g,4 g' d c |
+  b2. b4 |
+  c2. c4 |
 }
 
 rightHand = \relative c' {
@@ -475,6 +510,14 @@ rightHand = \relative c' {
   r2 r8 <g b>8[ <a c> <b d>] |
   <e g>4( <b d>8[) <a c>8] <g b>4 <g b> |
 
+  % ORPG-4
+
+  <a b>2 <g b>2 |
+  <f g b>2 <e g c>2 |
+  <g b>4( <b d> <g c> <f a>) |
+  g4 r4 r2 |
+  r4 d' g, f |
+  g1 |
 }
 
 leftHand = \relative c {
@@ -546,14 +589,6 @@ leftHand = \relative c {
   <f, f'>4( <fs fs'>) <g g'>2 |
   <g g'>2 <c g'>4 r4 |
 
-% <c e>1 ~ |
-% <c e>1  |
-% f1 ~ |
-% f2 d |
-% c4 g' f e |
-% <a, d>4 <a cs e> <a d f> <a d> |
-
-
   \bar "||"
   \break
   % ORPG-3
@@ -584,4 +619,13 @@ leftHand = \relative c {
   g8[ a b c] d2( |
   d8[) d,( e fs]) g4 <g d'> |
 
+
+  % ORPG-4
+
+  <fs ds'>2 <e e'>2 |
+  <d d'> <c c'> |
+  <d d'>1
+  g4 g( d c) |
+  b2. b4 |
+  c2. c'4 |
 }
