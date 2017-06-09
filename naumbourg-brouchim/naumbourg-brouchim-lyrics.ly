@@ -4,8 +4,8 @@
 
 sLyricsText = \lyricmode {
   % ORPG-1
-  B'rou -- chim  yi he -- you cho -- son  ve -- cha lloh
-  b'rou -- chim  yi he -- you cho -- son  ve -- cha lloh be --
+  B'rou -- chim  yi -- he -- you cho -- son  ve -- cha lloh
+  b'rou -- chim  yi -- he -- you cho -- son  ve -- cha lloh be --
 
   chou -- _  po -- _ som
   be -- chou -- po -- som
@@ -21,8 +21,8 @@ sLyricsText = \lyricmode {
     oul -- chol  a -- das  jis -- ro -- el
 
   % ORPG-3
-  b'rou -- chim  yi he -- you cho -- son  ve -- chal -- loh
-    b'rou -- chim  yi he -- you    chou -- son  ve  -- 
+  b'rou -- chim  yi -- he -- you cho -- son  ve -- chal -- loh
+    b'rou -- chim  yi -- he -- you    chou -- son  ve  -- 
   chal -- loh  be -- chou -- _  po -- som 
     be -- chou -- po -- som 
     yee -- rav  kol  be -- chou --  _
@@ -39,7 +39,6 @@ sHLyricsText = \lyricmode {
 
 בְּרוּ -- כִים   יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
 בְּרוּ -- כִים   יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
-
 בְּ -- חֻ -- _  פָּ -- _  תָם
 בְּ -- חֻ -- פָּ -- תָם
 יֶעֱ -- רַב  קוֹל
@@ -63,6 +62,15 @@ sHLyricsText = \lyricmode {
 
   % ORPG-3
 
+בְּרוּ -- כִים יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
+בְּרוּ -- כִים יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
+ בְּ -- חֻ -- _ פָּ -- תָם
+ בְּ -- חֻ --  פָּ -- תָם
+יֶעֱ -- רַב קוֹל בְּ -- חֻ -- _ פָּ -- תָם
+ בְּ -- חֻ --  פָּ -- תָם
+יֶעֱ -- רַב קוֹל גִּי -- לָה 
+עֲ -- דַת יִשְׂ -- רָ -- אֵל  לַ
+
   % ORPG-4
   
  
@@ -71,8 +79,8 @@ sHLyricsText = \lyricmode {
 
 aLyricsText = \lyricmode {
   % ORPG-1
-  B'rou -- chim  yi he -- you cho -- son  ve -- cha lloh
-  b'rou -- chim  yi he -- you cho -- son  ve -- cha lloh be --
+  B'rou -- chim  yi -- he -- you cho -- son  ve -- cha lloh
+  b'rou -- chim  yi -- he -- you cho -- son  ve -- cha lloh be --
 
   be -- chou -- po -- som
   be -- chou -- po -- som
@@ -90,9 +98,9 @@ aLyricsText = \lyricmode {
     oul -- chol  a -- das  jis -- ro -- el
 
   % ORPG-3
-  b'rou -- chim  yi he -- you cho -- son  ve -- chal -- loh
-    b'rou -- chim  yi he -- you    chou -- son  ve  -- 
-  chal -- loh  be -- chou --  po -- som~be -- chou -- po -- som 
+  b'rou -- chim  yi -- he -- you cho -- son  ve -- chal -- loh
+    b'rou -- chim  yi -- he -- you    chou -- son  ve  -- 
+  chal -- loh  be -- chou --  po -- som be -- chou -- po -- som 
     yee -- rav  kol  be -- chou --
   po -- som  be -- chou --  po -- som    yee -- rav  kol  gi -- loh
     a -- das  yis -- ro -- el  lo
@@ -127,6 +135,15 @@ aHLyricsText = \lyricmode {
 
   % ORPG-3
 
+בְּרוּ -- כִים יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
+בְּרוּ -- כִים יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
+ בְּ -- חֻ --  פָּ -- תָם
+ בְּ -- חֻ --  פָּ -- תָם
+יֶעֱ -- רַב קוֹל בְּ -- חֻ --  פָּ -- תָם
+ בְּ -- חֻ --  פָּ -- תָם
+יֶעֱ -- רַב קוֹל גִּי -- לָה 
+עֲ -- דַת יִשְׂ -- רָ -- אֵל  לַ
+`4
   % ORPG-4
   
 % L2R
@@ -134,8 +151,8 @@ aHLyricsText = \lyricmode {
 
 tLyricsText = \lyricmode {
   % ORPG-1
-  B'rou -- chim  yi he -- you cho -- son  ve -- cha lloh
-  b'rou -- chim  yi he -- you cho -- son  ve -- cha lloh be --
+  B'rou -- chim  yi -- he -- you cho -- son  ve -- cha lloh
+  b'rou -- chim  yi -- he -- you cho -- son  ve -- cha lloh be --
 
   chou -- _ po -- _ som
   be -- chou -- po -- som
@@ -153,9 +170,9 @@ lo -- hem  oul  -- chol  a -- das
     oul -- chol  a -- das  jis -- ro -- el
   
   % ORPG-3
-  b'rou -- chim  yi he -- you cho -- son  ve -- chal -- loh
-    b'rou -- chim  yi he -- you    chou -- son  ve  -- 
-  chal -- loh  be -- chou -- _  po -- som~be -- chou -- po -- som 
+  b'rou -- chim  yi -- he -- you cho -- son  ve -- chal -- loh
+    b'rou -- chim  yi -- he -- you    chou -- son  ve  -- 
+  chal -- loh  be -- chou -- _  po -- som be -- chou -- po -- som 
     yee -- rav  kol  be -- chou -- po -- 
   som  be -- chou --  po -- som    yee -- rav  kol gi -- loh  loh -- hem
     oul -- chol  a -- das  yis -- ro -- el  lo
@@ -193,6 +210,15 @@ tHLyricsText = \lyricmode {
 
   % ORPG-3
 
+בְּרוּ -- כִים יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
+בְּרוּ -- כִים יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
+ בְּ -- חֻ -- _  פָּ -- תָם
+ בְּ -- חֻ --  פָּ -- תָם
+יֶעֱ -- רַב קוֹל בְּ -- חֻ --  פָּ -- תָם
+ בְּ -- חֻ --  פָּ -- תָם
+יֶעֱ -- רַב קוֹל גִּי -- לָה  לָ -- הֵם  וּלְ -- כָל
+עֲ -- דַת יִשְׂ -- רָ -- אֵל  לַ
+
   % ORPG-4
   
 
@@ -201,8 +227,8 @@ tHLyricsText = \lyricmode {
 
 bLyricsText = \lyricmode {
   % ORPG-1
-  B'rou -- chim  yi he -- you cho -- son  ve -- cha lloh
-  b'rou -- chim  yi he -- you cho -- son  ve -- cha lloh
+  B'rou -- chim  yi -- he -- you cho -- son  ve -- cha lloh
+  b'rou -- chim  yi -- he -- you cho -- son  ve -- cha lloh
 
   be -- chou -- po -- som
   be -- chou -- po -- som
@@ -218,8 +244,8 @@ bLyricsText = \lyricmode {
     oul -- chol  a -- das  jis -- ro -- el
 
   % ORPG-3
-  b'rou -- chim  yi he -- you cho -- son  ve -- chal -- loh
-    b'rou -- chim  yi he -- you    chou -- son  ve  -- 
+  b'rou -- chim  yi -- he -- you cho -- son  ve -- chal -- loh
+    b'rou -- chim  yi -- he -- you    chou -- son  ve  -- 
   chal -- loh  be -- chou --  po -- som be -- chou -- po -- som 
     yee -- rav  kol  be -- chou -- po --
   _ som __ _ _ be -- chou --  po -- som    yee -- rav  kol gi -- loh
@@ -254,6 +280,15 @@ bHLyricsText = \lyricmode {
 
 
   % ORPG-3
+
+בְּרוּ -- כִים יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
+בְּרוּ -- כִים יִ -- הְ -- יוּ חָ -- תָן וְ -- כַ -- לָּה
+ בְּ -- חֻ --  פָּ -- תָם
+ בְּ -- חֻ --  פָּ -- תָם
+יֶעֱ -- רַב קוֹל בְּ -- חֻ -- פָּ -- _ תָם __ _ _
+ בְּ -- חֻ --  פָּ -- תָם
+יֶעֱ -- רַב קוֹל גִּי -- לָה
+ יִשְׂ -- רָ -- אֵל  לַ
 
   % ORPG-4
   

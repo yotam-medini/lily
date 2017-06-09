@@ -154,7 +154,7 @@ altMusic = \relative c'' {
 
   e2 d4 r |
   r2 r4 r8 d8 | 
-  g4. b8 a4.( c8) |
+  g4. b8 a4.\( c8\) |
   b2 b4 g |
   b8[( a]) g[( a]) fs4 r |
   r2 r4 r8 d8 | 
@@ -231,7 +231,7 @@ tenMusic = \relative c' {
 
   e2 d4 r8 d8 |
   g4.( b8) a4.( c8) |
-  b4.( d8) c4.( e8) |
+  b4.( d8) c4.\( e8\) |
   d2 d4 d |
   d4 d d8[( e d]) c8 |
   b8[( d b g]) d'2( |
