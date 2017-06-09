@@ -13,6 +13,7 @@ global = {
 sopMusic = \relative c'' {
   % ORPG-1
   \partial 4 r4 |
+  \autoBeamOff
   R1*8 |
   d2 b2 |
   a4. a8 g4 r4 |
@@ -20,7 +21,7 @@ sopMusic = \relative c'' {
   d'2 d4 r4 |
   e2 c2 |
   b4. b8 c4 r4 |
-  c4( a g) \autoBeamOff fs8. fs16 \autoBeamOn |
+  c4( a g) fs8. fs16 |
   e2 d4 r8 d8 |
 
   g4.( b8) a4.( c8) |
@@ -29,7 +30,7 @@ sopMusic = \relative c'' {
   d8[( c]) b[( c]) a4 r8 d,8 |
   g4.( b8) a4.( c8) |
   b4.( d8) c4. e8 |
-  d4 g d \autoBeamOff b8. b16 \autoBeamOn |
+  d4 g d  b8. b16  |
   b4 a g r8 g8 |
 
   \bar "||"
@@ -37,30 +38,52 @@ sopMusic = \relative c'' {
   % ORPG-2
   \key c \major
 
-  c4.( e8) \autoBeamOff d8 c b a |
+  c4.( e8)  d8 c b a |
   g2. r8 g8 |
   d'4.( cs8) e8[( d b g]) |
   g2. r4 |
   c4( g') f e |
   d e f a,8[( b]) |
 
-  c4. b8 \autoBeamOff c b c e \autoBeamOn |
+  c4. b8  c b c e  |
   e4( d) c r |
   r2 r4 r8 g8 |
-  c4.( e8) \autoBeamOff d8 c b a \autoBeamOn |
+  c4.( e8)  d8 c b a  |
   g2. r8 g8 |
 
   d'4.( cs8) e8[( d]) b[( g]) |
   g2 b4 c |
   d4 cs d a |
-  a4. a8 \autoBeamOff g8 g g c \autoBeamOn |
+  a4. a8  g8 g g c  |
   b2 c4 r4 |
 
   \bar "||"
   \break
-  % ORPG-2
+  % ORPG-3
   \key g \major
 
+  d2 b |
+  a4. a8 g4 r |
+  
+  a4( b a) g8. g16 |
+  d'2 d4 r |
+  e2 c |
+  b4. b8 a4 r |
+  c4( a g) fs8. fs16 |
+  
+
+  e2 d4 r8 d8 |
+  g4.( b8) a4.( c8) |
+  b4.( d8) c4. e8 |
+  d4( g) d b |
+  d8[( c]) b[( c]) a4 r8 d, |
+  g4.( b8) a4.( c8)
+
+  b4.( d8) c4. e8 |
+  d4 g d b8. b16 |
+  b4 a g r |
+  r2  r8 b c d |
+  e4( d8[ c8]) b4 b4 |
 }
 
 altMusic = \relative c'' {
@@ -116,14 +139,38 @@ altMusic = \relative c'' {
 
   \bar "||"
   \break
-  % ORPG-2
+  % ORPG-3
   \key g \major
 
+  d'2 b |
+  a4. a8 g4 r |
+  \autoBeamOff
+  a4( b a) g8. g16 |
+  d'2 d4 r |
+  e2 c |
+  b4. b8 a4 r |
+  c4( a g) fs8. fs16 |
+  \autoBeamOn
+
+  e2 d4 r |
+  r2 r4 r8 d8 | 
+  g4. b8 a4.( c8) |
+  b2 b4 g |
+  b8[( a]) g[( a]) fs4 r |
+  r2 r4 r8 d8 | 
+
+  g4. b8 a4. d8 |
+  b4 b g g8. g16 |
+  g4 fs g r |
+  r2 r8 g a b |
+  c4( b8[ a8]) g4 b4 |
+ 
 }
 
 tenMusic = \relative c' {
   % ORPG-1
   \partial 4 r4 |
+  \autoBeamOff
   R1*8 |
   d2 b2 |
   a4. a8 g4 r4 |
@@ -131,7 +178,7 @@ tenMusic = \relative c' {
   d'2 d4 r4 |
   e2 c2 |
   b4. b8 c4 r4 |
-  c4( a g) \autoBeamOff fs8. fs16 \autoBeamOn |
+  c4( a g)  fs8. fs16  |
   e2 d4 r8 d8 |
 
   g4.( b8) a4.( c8) |
@@ -140,7 +187,7 @@ tenMusic = \relative c' {
   d4 d d8[( e d]) c8 |
   b8[( d b g]) d'2 ~ |
   d2 d4. d8 |
-  d4 d d \autoBeamOff d8. d16 \autoBeamOn
+  d4 d d  d8. d16 
   d4 d8[( c]) b4 r4 |
 
   \bar "||"
@@ -149,28 +196,51 @@ tenMusic = \relative c' {
   \key c \major
 
   r2 r4 r8 g8 |
-  c4.( e8) \autoBeamOff d8 c b a |
+  c4.( e8)  d8 c b a |
   g2. r8 g8 |
   d'4.( cs8) e8[( d]) b[( g]) |
   g2 b4 c |
   d4 cs d d |
 
-  ds4. ds8 \autoBeamOff e e e e\autoBeamOn |
+  ds4. ds8  e e e e |
   f2 e4 r8 g,8 |
-  c4.( e8)  \autoBeamOff d8 c b a \autoBeamOn |
+  c4.( e8)   d8 c b a  |
   g2. r8 g8 |
   d'4.( cs8) e8[( d b g]) |
 
   g2. r4 |
   c4( g') f e |
   d4 e f a,8.[( b16]) |
-  c4. b8 \autoBeamOff c8 b c e \autoBeamOn |
+  c4. b8  c8 b c e  |
   e4( d) c r4 |
 
   \bar "||"
   \break
-  % ORPG-2
+  % ORPG-3
   \key g \major
+
+  d2 b |
+  a4. a8 g4 r |
+  
+  a4( b a) g8. g16 |
+  d'2 d4 r |
+  e2 c |
+  b4. b8 a4 r |
+  c4( a g) fs8. fs16 |
+  
+
+  e2 d4 r8 d8 |
+  g4.( b8) a4.( c8) |
+  b4.( d8) c4.( e8) |
+  d2 d4 d |
+  d4 d d8[( e d]) c8 |
+  b8[( d b g]) d'2( |
+
+  d2) d4. d8 |
+  d4 d d d8. d16 |
+  d4.\( c8\) b8 d, e fs |
+  g8 a b c d2( |
+  d2) d4 d4 |
 
 }
 
@@ -222,9 +292,31 @@ basMusic = \relative c {
 
   \bar "||"
   \break
-  % ORPG-2
+  % ORPG-3
   \key g \major
 
+  d'2 b |
+  a4. a8 g4 r |
+  \autoBeamOff
+  a4( b a) g8. g16 |
+  d'2 d4 r |
+  e2 c |
+  b4. b8 a4 r |
+  c4( a g) fs8. fs16 |
+  \autoBeamOn
+
+  e2 d8 r8 r4 | 
+  r2 r4 r8 d8 |
+  g4. b8  a4. c8 |
+  b2 g4 g |
+  d4 d d r8 d8 |
+  g,4( g') fs8[( d e fs]) |
+
+  g8[( d b g ]) d'[\( e fs d]\) |
+  g4 g, b d8. d16 |
+  d4 d g r |
+  r1 |
+  r8 d8 d8[( fs8]) g4 g4 |
 }
 
 rightHand = \relative c' {
@@ -343,8 +435,45 @@ rightHand = \relative c' {
 
   \bar "||"
   \break
-  % ORPG-2
+  % ORPG-3
   \key g \major
+
+  <b' d>2 <g b> |
+  <fs a>2 g4 r4 |
+  <fs a>4( <g b> <fs a> <e g>) |
+  <d a' d>2 <d a' d>4 r4 |
+  <e g d'>2 <e a c> |
+  <d e gs b>2 <c e a>4 r4 |
+  c'4( a g fs) |
+
+  e2 d4 r8 d8 |
+  << 
+    { \voiceOne g4.( b8) a4.( c8)  }
+    \\
+    \new Voice { \voiceTwo d,1 }
+  >> | \oneVoice
+  <g b>4.( <b d>8) <a c>4.( <c e>8) |
+  << 
+    { \voiceOne d4 g d b }
+    \\
+    \new Voice { \voiceTwo <g b>2 b4 g }
+  >> | \oneVoice
+  <b d>8.[( <a c>16 <g b>8 <a c>]) <fs a>4 r8 d8
+  << 
+    { \voiceOne g4.( b8) a4.( c8)  }
+    \\
+    \new Voice { \voiceTwo d,1 }
+  >> | \oneVoice
+  
+
+  <g b>4.( <b d>8) <a c>4.( <c e>8) |
+  << { \voiceOne  d4 g d b}
+    \\
+    \new Voice { \voiceTwo g2 g4 g  }
+  >> | \oneVoice
+  <g b>4 <fs a> g r |
+  r2 r8 <g b>8[ <a c> <b d>] |
+  <e g>4( <b d>8[) <a c>8] <g b>4 <g b> |
 
 }
 
@@ -427,8 +556,32 @@ leftHand = \relative c {
 
   \bar "||"
   \break
-  % ORPG-2
+  % ORPG-3
   \key g \major
 
+  <g' d'>1 |
+  <d d'>2 <g b>4 r4 |
+  <d, d'>2. <e d'>4 |
+  <fs fs'>2 <g g'>4 r4 |
+  <c c'>2 <a a'> |
+  <e e'>2 a4 r4 |
+  <c c'>1 |
+
+  <c g' c>2 <d fs c'>4 r4 |
+  b'4.( g8) fs2 |
+  <g, g'>1 |
+  <g g'>1 |
+  <d' d'>2 d'8[( e d c]) |
+  b8[( c b g]) fs[( d e fs])
+
+  g8[( d b g]) d'[( e fs d]) |
+  g4 g, b d |
+  <d d'>2 
+  << { \voiceOne b'4 r4 }
+    \\
+    \new Voice { \voiceTwo  g8[ d  e fs] }
+  >> | \oneVoice
+  g8[ a b c] d2( |
+  d8[) d,( e fs]) g4 <g d'> |
 
 }
