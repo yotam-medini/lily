@@ -20,7 +20,7 @@ sopMusic = \relative c'' {
   a4( b a) g8. g16 |
   d'2 d4 r4 |
   e2 c2 |
-  b4. b8 c4 r4 |
+  b4. b8 a4 r4 |
   c4( a g) fs8. fs16 |
   e2 d4 r8 d8 |
 
@@ -112,7 +112,7 @@ altMusic = \relative c'' {
   a4( b a) g8. g16 |
   d'2 d4 r4 |
   e2 c2 |
-  b4. b8 c4 r4 |
+  b4. b8 a4 r4 |
   c4( a g) \autoBeamOff fs8. fs16 \autoBeamOn |
   e2 d4 r8 d8 |
 
@@ -210,7 +210,7 @@ tenMusic = \relative c' {
   a4( b a) g8. g16 |
   d'2 d4 r4 |
   e2 c2 |
-  b4. b8 c4 r4 |
+  b4. b8 a4 r4 |
   c4( a g)  fs8. fs16  |
   e2 d4 r8 d8 |
 
@@ -302,7 +302,7 @@ basMusic = \relative c {
   a4( b a) g8. g16 |
   d'2 d4 r4 |
   e2 c2 |
-  b4. b8 c4 r4 |
+  b4. b8 a4 r4 |
   c4( a g) \autoBeamOff fs8. fs16 \autoBeamOn |
   e2 d4 r4 |
 
@@ -545,7 +545,7 @@ rightHand = \relative c' {
 
   <a b>2 <g b>2 |
   <f g b>2 <e g c>2 |
-  <g b>4( <b d> <g c> <f a>) |
+  \slurDown <g b>4( <b d> <g c> <f a>) \slurNeutral  |
   g4 r4 r2 |
   r4 d' g, f |
   g1 |

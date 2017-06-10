@@ -21,6 +21,7 @@ MIDILESS=0.7
 
 MIDIS = ${BASE}.midi \
 	${BASE}-sop.midi \
+	${BASE}-alt.midi \
 	${BASE}-ten.midi \
 	${BASE}-bas.midi \
 	${BASE}-rh.midi \
@@ -34,17 +35,20 @@ ${BASE}.pdf ${BASE}.midi: ${BASE}.ly ${BASE}-music.ly ${BASE}-lyrics.ly
 %-sop.midi: %.midi
 	midiconv.py -tv 1 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
-%-ten.midi: %.midi
+%-alt.midi: %.midi
 	midiconv.py -tv 2 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
-%-bas.midi: %.midi
+%-ten.midi: %.midi
 	midiconv.py -tv 3 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
-%-lh.midi: %.midi
+%-bas.midi: %.midi
 	midiconv.py -tv 4 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
-%-rh.midi: %.midi
+%-lh.midi: %.midi
 	midiconv.py -tv 5 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
+
+%-rh.midi: %.midi
+	midiconv.py -tv 6 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
 midis: ${MIDIS}
 
