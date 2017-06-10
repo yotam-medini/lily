@@ -94,6 +94,13 @@ sopMusic = \relative c'' {
   r1 |
   r1 |
 
+  r4 d' b( a) |
+  g4 d' b a |
+  g4 d' b( a) |
+  g2. g4 |
+  a1 |
+  g1 ~ |
+  g2 r2 |
 }
 
 altMusic = \relative c'' {
@@ -183,6 +190,14 @@ altMusic = \relative c'' {
   g4 r4 r2 |
   r4 d' g, f |
   e2. e4 |
+
+  fs!1 | 
+  g4 g fs fs |
+  g4 g fs2 |
+  g2. g4 |
+  fs1 |
+  g1 ~ |
+  g2 r2 |
 }
 
 tenMusic = \relative c' {
@@ -268,6 +283,14 @@ tenMusic = \relative c' {
   b4 r4 r2 |
   r1 |
   r4 e c b |
+
+  a2( d4 c) |
+  b4 b c c |
+  b4 b c2 |
+  b2. b4 |
+  c4( a d c) |
+  b1 ~ |
+  b2 r2 |
 }
 
 basMusic = \relative c {
@@ -352,6 +375,14 @@ basMusic = \relative c {
   g,4 g' d c |
   b2. b4 |
   c2. c4 |
+
+  d1 |
+  g,4 g d' d |
+  g,4 g d'2 |
+  g4( d b') g |
+  d1 |
+  g,1 ~ |
+  g2 r2 |
 }
 
 rightHand = \relative c' {
@@ -518,6 +549,37 @@ rightHand = \relative c' {
   g4 r4 r2 |
   r4 d' g, f |
   g1 |
+
+  << {
+      \voiceOne 
+      r4 d' b a |
+      g4( d') b( a) |
+      g4( d') b( a)
+    }
+    \\
+    \new Voice { \voiceTwo
+       fs1 |
+       g2 fs2 |
+       g2 fs2
+    }
+  >> | \oneVoice
+  g1 |
+  <fs a>1 |
+  <d g>1 ~ |
+  <d g>2 r2 |
+
+  \break
+
+  r4 d'( g, f) |
+  e2 <b ds fs>2 |
+  <b e g>2 <c fs a> |
+  <c d fs a>1 ~ |
+  <c d fs a>1 |
+  <b d g>1 ~ |
+  <b d g>1\fermata
+
+  \bar "|,"
+  \mark "Fin."
 }
 
 leftHand = \relative c {
@@ -628,4 +690,27 @@ leftHand = \relative c {
   g4 g( d c) |
   b2. b4 |
   c2. c'4 |
+
+    << {
+      \voiceOne  a2( d4 c)
+    }
+    \\
+    \new Voice { \voiceTwo d,1 }
+  >> | \oneVoice
+  <g b>2 <d c'>2 |
+  <g b>2 <d c'>2 |
+  <g b>1 |
+  <d d'>1 |  
+  <g b>1 ~ |
+  <g b>4  g4( d c) |
+
+  b1 |
+  c2 b |
+  e2 d |
+  <g, g'>1 ~ |
+  <g g'>1 
+  <g g'>1 ~ |
+  <g g'>1\fermata
+
+  \bar "|."
 }

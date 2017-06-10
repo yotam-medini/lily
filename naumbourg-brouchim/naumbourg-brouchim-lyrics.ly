@@ -1,4 +1,4 @@
-%
+% -*- fundamental -*-
 
 % ORPG = original page
 
@@ -9,29 +9,31 @@ sLyricsText = \lyricmode {
 
   chou -- _  po -- _ som
   be -- chou -- po -- som
-  yee -- rav kol  be --  
-  chou -- _ po -- som  be -- 
+  yee -- rav kol  be --
+  chou -- _ po -- som  be --
   chou  -- po -- som  jee -- rav  kol  gi -- loh  se --
 
   % ORPG-2
-  mo -- chos rav ron vo os  y zav ho -- el  lo -- hem  oul  -- chol  a -- das 
-  lo -- hem oul -- chol a -- das  jis -- ro -- el   se -- mo -- chos rav ron 
-    vo  -- oz  je -- 
-  tzav  ho -- el  lo -- hem  oul -- chol  a -- das  lo -- hem 
-    oul -- chol  a -- das  jis -- ro -- el
+  mo -- chos rav ron vo os  y zav ho -- el  lo -- hem  oul  -- chol  a -- das
+  lo -- hem oul -- chol a -- das  yis -- ro -- el   se -- mo -- chos rav ron
+    vo  -- oz  je --
+  tzav  ho -- el  lo -- hem  oul -- chol  a -- das  lo -- hem
+    oul -- chol  a -- das  yis -- ro -- el
 
   % ORPG-3
   b'rou -- chim  yi -- he -- you cho -- son  ve -- chal -- loh
-    b'rou -- chim  yi -- he -- you    chou -- son  ve  -- 
-  chal -- loh  be -- chou -- _  po -- som 
-    be -- chou -- po -- som 
+    b'rou -- chim  yi -- he -- you    chou -- son  ve  --
+  chal -- loh  be -- chou -- _  po -- som
+    be -- chou -- po -- som
     yee -- rav  kol  be -- chou --  _
   po -- som  be -- chou --  po -- som    yee -- rav  kol  gi -- loh
     a -- das  yis -- ro -- el  lo
- 
+
 
   % ORPG-4
-  
+  -- hem   oul -- chol  a -- das  yis -- ro -- el   yis -- ro -- el
+  yis -- ro -- el  oul -- chol  a -- das  yis -- ro -- el   yis -- ro -- el
+
 }
 
 sHLyricsText = \lyricmode {
@@ -68,12 +70,14 @@ sHLyricsText = \lyricmode {
  בְּ -- חֻ --  פָּ -- תָם
 יֶעֱ -- רַב קוֹל בְּ -- חֻ -- _ פָּ -- תָם
  בְּ -- חֻ --  פָּ -- תָם
-יֶעֱ -- רַב קוֹל גִּי -- לָה 
+יֶעֱ -- רַב קוֹל גִּי -- לָה
 עֲ -- דַת יִשְׂ -- רָ -- אֵל  לַ
 
   % ORPG-4
-  
- 
+
+ -- הֵם וּלְ -- כָל עֲ -- דַת  יִשְׂ -- רָ -- אֵל  יִשְׂ -- רָ -- אֵל 
+יִשְׂ -- רָ -- אֵל  וּלְ -- כָל עֲ -- דַת  יִשְׂ -- רָ -- אֵל  יִשְׂ -- רָ -- אֵל 
+
 % L2R
 }
 
@@ -84,29 +88,32 @@ aLyricsText = \lyricmode {
 
   be -- chou -- po -- som
   be -- chou -- po -- som
-  yee -- rav kol  
-  be --  chou -- po -- som 
-  be --  chou -- po -- som 
+  yee -- rav kol
+  be --  chou -- po -- som
+  be --  chou -- po -- som
   yee -- rav kol  gi -- loh  se --
 
   % ORPG-2
 
-  mo -- chos  rav  ron  lo -- hem  oul  -- chol  a -- das 
-  lo -- hem oul -- chol a -- das  jis -- ro -- el 
+  mo -- chos  rav  ron  lo -- hem  oul  -- chol  a -- das
+  lo -- hem oul -- chol a -- das  yis -- ro -- el
     s -- mo -- chos  rav
-  ron    lo -- hem  oul -- chol  a -- das  lo -- hem 
-    oul -- chol  a -- das  jis -- ro -- el
+  ron    lo -- hem  oul -- chol  a -- das  lo -- hem
+    oul -- chol  a -- das  yis -- ro -- el
 
   % ORPG-3
   b'rou -- chim  yi -- he -- you cho -- son  ve -- chal -- loh
-    b'rou -- chim  yi -- he -- you    chou -- son  ve  -- 
-  chal -- loh  be -- chou --  po -- som be -- chou -- po -- som 
+    b'rou -- chim  yi -- he -- you    chou -- son  ve  --
+  chal -- loh  be -- chou --  po -- som be -- chou -- po -- som
     yee -- rav  kol  be -- chou --
   po -- som  be -- chou --  po -- som    yee -- rav  kol  gi -- loh
     a -- das  yis -- ro -- el  lo
 
   % ORPG-4
-  
+  -- hem   oul -- chol  a -- das  yis -- ro -- el   yis -- ro -- el
+  oul -- chol  a -- das  yis -- ro -- el
+    oul -- chol  a -- das  yis -- ro -- el   yis -- ro -- el
+
 }
 
 aHLyricsText = \lyricmode {
@@ -119,7 +126,7 @@ aHLyricsText = \lyricmode {
 יֶעֱ -- רַב  קוֹל
 בְּ -- חֻ -- פָּ -- תָם
 בְּ -- חֻ -- פָּ -- תָם
-יֶעֱ -- רַב  קוֹל   גִּי -- לָה 
+יֶעֱ -- רַב  קוֹל   גִּי -- לָה
 
   % ORPG-2
 
@@ -141,11 +148,16 @@ aHLyricsText = \lyricmode {
  בְּ -- חֻ --  פָּ -- תָם
 יֶעֱ -- רַב קוֹל בְּ -- חֻ --  פָּ -- תָם
  בְּ -- חֻ --  פָּ -- תָם
-יֶעֱ -- רַב קוֹל גִּי -- לָה 
+יֶעֱ -- רַב קוֹל גִּי -- לָה
 עֲ -- דַת יִשְׂ -- רָ -- אֵל  לַ
-`4
+
+
   % ORPG-4
-  
+
+ -- הֵם וּלְ -- כָל עֲ -- דַת  יִשְׂ -- רָ -- אֵל  יִשְׂ -- רָ -- אֵל 
+ וּלְ -- כָל עֲ -- דַת  יִשְׂ -- רָ -- אֵל 
+   וּלְ -- כָל עֲ -- דַת  יִשְׂ -- רָ -- אֵל  יִשְׂ -- רָ -- אֵל 
+
 % L2R
 }
 
@@ -156,29 +168,32 @@ tLyricsText = \lyricmode {
 
   chou -- _ po -- _ som
   be -- chou -- po -- som
-  yee -- rav kol  be --  
-  chou  -- po -- som  be -- 
-  chou  -- po -- som  jee -- rav  kol  gi -- loh 
+  yee -- rav kol  be --
+  chou  -- po -- som  be --
+  chou  -- po -- som  jee -- rav  kol  gi -- loh
 
   % ORPG-2
 
-  se -- mo -- chos rav ron vo -- os  ye -- zav  ho -- el 
-lo -- hem  oul  -- chol  a -- das 
-  lo -- hem oul -- chol a -- das  jis -- ro -- el   se -- mo -- chos rav ron 
-    vo  -- oz  je -- 
-  tzav  ho -- el  lo -- hem  oul -- chol  a -- das  lo -- hem 
-    oul -- chol  a -- das  jis -- ro -- el
-  
+  se -- mo -- chos rav ron vo -- os  ye -- zav  ho -- el
+lo -- hem  oul  -- chol  a -- das
+  lo -- hem oul -- chol a -- das  yis -- ro -- el   se -- mo -- chos rav ron
+    vo  -- oz  je --
+  tzav  ho -- el  lo -- hem  oul -- chol  a -- das  lo -- hem
+    oul -- chol  a -- das  yis -- ro -- el
+
   % ORPG-3
   b'rou -- chim  yi -- he -- you cho -- son  ve -- chal -- loh
-    b'rou -- chim  yi -- he -- you    chou -- son  ve  -- 
-  chal -- loh  be -- chou -- _  po -- som be -- chou -- po -- som 
-    yee -- rav  kol  be -- chou -- po -- 
+    b'rou -- chim  yi -- he -- you    chou -- son  ve  --
+  chal -- loh  be -- chou -- _  po -- som be -- chou -- po -- som
+    yee -- rav  kol  be -- chou -- po --
   som  be -- chou --  po -- som    yee -- rav  kol gi -- loh  loh -- hem
     oul -- chol  a -- das  yis -- ro -- el  lo
 
   % ORPG-4
-  
+  -- hem   oul -- chol  a -- das  yis -- ro -- el   yis -- ro -- el
+  a -- das  yis -- ro -- el 
+    oul -- chol  a -- das  yis -- ro -- el   yis -- ro -- el
+
 }
 
 tHLyricsText = \lyricmode {
@@ -192,7 +207,7 @@ tHLyricsText = \lyricmode {
 יֶעֱ -- רַב  קוֹל
 בְּ -- חֻ --  פָּ -- תָם
 בְּ -- חֻ -- פָּ -- תָם
-יֶעֱ -- רַב  קוֹל  גִּי -- לָה 
+יֶעֱ -- רַב  קוֹל  גִּי -- לָה
 
   % ORPG-2
 
@@ -220,7 +235,11 @@ tHLyricsText = \lyricmode {
 עֲ -- דַת יִשְׂ -- רָ -- אֵל  לַ
 
   % ORPG-4
-  
+
+ -- הֵם וּלְ -- כָל עֲ -- דַת  יִשְׂ -- רָ -- אֵל  יִשְׂ -- רָ -- אֵל 
+ עֲ -- דַת  יִשְׂ -- רָ -- אֵל 
+   וּלְ -- כָל עֲ -- דַת  יִשְׂ -- רָ -- אֵל  יִשְׂ -- רָ -- אֵל 
+
 
 % L2R
 }
@@ -232,27 +251,30 @@ bLyricsText = \lyricmode {
 
   be -- chou -- po -- som
   be -- chou -- po -- som
-  yee -- rav kol  be --  
-  chou -- po -- _ som  be -- 
+  yee -- rav kol  be --
+  chou -- po -- _ som  be --
   chou  -- po -- som  jee -- rav  kol  gi -- loh  se --
 
   % ORPG-2
 
   mo -- chos  rav  ron lo -- hem  oul  -- chol  a -- das  lo --
-  hem oul -- chol a -- das  jis -- ro -- el  se -- mo -- chos  rov
-  ron  lo -- hem  oul -- chol  a -- das  lo -- hem 
-    oul -- chol  a -- das  jis -- ro -- el
+  hem oul -- chol a -- das  yis -- ro -- el  se -- mo -- chos  rov
+  ron  lo -- hem  oul -- chol  a -- das  lo -- hem
+    oul -- chol  a -- das  yis -- ro -- el
 
   % ORPG-3
   b'rou -- chim  yi -- he -- you cho -- son  ve -- chal -- loh
-    b'rou -- chim  yi -- he -- you    chou -- son  ve  -- 
-  chal -- loh  be -- chou --  po -- som be -- chou -- po -- som 
+    b'rou -- chim  yi -- he -- you    chou -- son  ve  --
+  chal -- loh  be -- chou --  po -- som be -- chou -- po -- som
     yee -- rav  kol  be -- chou -- po --
   _ som __ _ _ be -- chou --  po -- som    yee -- rav  kol gi -- loh
     yis -- ro -- el  lo
 
   % ORPG-4
-  
+  -- hem   oul -- chol  a -- das  yis -- ro -- el   yis -- ro -- el
+  lo -- hem  oul -- chol  a -- das
+    yis -- ro -- el  oul -- chol  a -- das  yis -- ro -- el   yis -- ro -- el
+
 }
 
 bHLyricsText = \lyricmode {
@@ -265,7 +287,7 @@ bHLyricsText = \lyricmode {
 יֶעֱ -- רַב  קוֹל
 בְּ -- חֻ -- פָּ -- _ תָם
 בְּ -- חֻ -- פָּ -- תָם
-יֶעֱ -- רַב  קוֹל   גִּי -- לָה 
+יֶעֱ -- רַב  קוֹל   גִּי -- לָה
 
   % ORPG-2
 
@@ -291,6 +313,11 @@ bHLyricsText = \lyricmode {
  יִשְׂ -- רָ -- אֵל  לַ
 
   % ORPG-4
-  
+
+
+ -- הֵם וּלְ -- כָל עֲ -- דַת  יִשְׂ -- רָ -- אֵל  יִשְׂ -- רָ -- אֵל 
+ לָ -- הֵם וּלְ -- כָל עֲ -- דַת  יִשְׂ -- רָ -- אֵל 
+  יִשְׂ -- רָ -- אֵל    וּלְ -- כָל עֲ -- דַת  יִשְׂ -- רָ -- אֵל  יִשְׂ -- רָ -- אֵל 
+
 % L2R
 }
