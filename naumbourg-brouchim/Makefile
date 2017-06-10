@@ -19,11 +19,13 @@ RELFILES = /tmp/${BASE}-${NOW}.pdf ${ZIPSRC} ${ZIPMIDIS}
 MIDIMORE=1.3
 MIDILESS=0.7
 
-MIDIS = ${BASE}.midi \
+REL_MIDIS = ${BASE}.midi \
 	${BASE}-sop.midi \
 	${BASE}-alt.midi \
 	${BASE}-ten.midi \
 	${BASE}-bas.midi \
+
+MIDIS = ${REL_MIDIS} \
 	${BASE}-rh.midi \
 	${BASE}-lh.midi \
 
@@ -66,8 +68,8 @@ ${ZIPSRC}: ${SRCS}
 	zip $@ ${SRCS}
 	unzip -l $@; ls -lGt $@
 
-${ZIPMIDIS}: ${MIDIS}
-	zip $@ ${MIDIS}
+${ZIPMIDIS}: ${REL_MIDIS}
+	zip $@ ${REL_MIDIS}
 	unzip -l $@; ls -lGt $@
 
 zipsrc: ${ZIPSRC}
