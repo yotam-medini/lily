@@ -19,7 +19,7 @@ sopMusic = \relative c'' {
   a4. a8 g4 r4 |
   a4( b a) g8. g16 |
   d'2 d4 r4 |
-  e2 c2 |
+  e2^\markup {\italic \large \bold cresc.} c2 |
   b4. b8 a4 r4 |
   c4( a g) fs8. fs16 |
   e2 d4 r8 d8 |
@@ -62,7 +62,7 @@ sopMusic = \relative c'' {
   % ORPG-3
   \key g \major
 
-  d2 b |
+  d2^\ff b |
   a4. a8 g4 r |
   
   a4( b a) g8. g16 |
@@ -106,6 +106,7 @@ sopMusic = \relative c'' {
 altMusic = \relative c'' {
   % ORPG-1
   \partial 4 r4 |
+  \autoBeamOff
   R1*8 |
   d2 b2 |
   a4. a8 g4 r4 |
@@ -113,7 +114,7 @@ altMusic = \relative c'' {
   d'2 d4 r4 |
   e2 c2 |
   b4. b8 a4 r4 |
-  c4( a g) \autoBeamOff fs8. fs16 \autoBeamOn |
+  c4( a g) fs8. fs16 |
   e2 d4 r8 d8 |
 
   r2 r4. d8 |
@@ -122,7 +123,7 @@ altMusic = \relative c'' {
   b8[( a]) g![( a]) fs4 r4 |
   r2 r4. d8 |
   g4. b8 a4. c8 |
-  b4 b g \autoBeamOff g8. g16 \autoBeamOn |
+  b4 b g  g8. g16  |
   g4 fs g r8 g8 |
 
   \bar "||"
@@ -137,7 +138,7 @@ altMusic = \relative c'' {
   g2 g4 g |
   a4 a a a |
 
-  a4. a8 \autoBeamOff g g g g \autoBeamOn |
+  a4. a8  g g g g  |
   b2 c4 r8 <e, g>8 |
   <e g>1 |
   <e g>1 |
@@ -150,7 +151,7 @@ altMusic = \relative c'' {
   >> | \oneVoice
   g2 g4 g |
   a4 a a c,8.[( d16]) |
-  ds4. ds8 \autoBeamOff e d e g \autoBeamOn |
+  ds4. ds8  e d e g  |
   f2 e4 r4 |
 
 
@@ -167,7 +168,6 @@ altMusic = \relative c'' {
   e2 c |
   b4. b8 a4 r |
   c4( a g) fs8. fs16 |
-  \autoBeamOn
 
   e2 d4 r |
   r2 r4 r8 d8 | 
@@ -296,6 +296,7 @@ tenMusic = \relative c' {
 basMusic = \relative c {
   % ORPG-1
   \partial 4 r4 |
+  \autoBeamOff
   R1*8 |
   d'2 b2 |
   a4. a8 g4 r4 |
@@ -303,7 +304,7 @@ basMusic = \relative c {
   d'2 d4 r4 |
   e2 c2 |
   b4. b8 a4 r4 |
-  c4( a g) \autoBeamOff fs8. fs16 \autoBeamOn |
+  c4( a g) fs8. fs16  |
   e2 d4 r4 |
 
   r2 r4. d8 |
@@ -327,7 +328,7 @@ basMusic = \relative c {
   e2 d4 c |
   f4 e d f |
 
-  fs4. fs8 \autoBeamOff g g g g \autoBeamOn |
+  fs4. fs8  g g g g |
   g,2 c4 r8 c8 |
   c1 |
   c1 |
@@ -336,7 +337,7 @@ basMusic = \relative c {
   g'2.( f!4) |
   e2 d4 c |
   f4 e d f |
-  \autoBeamOff f4( fs8) fs8 g8 g g g \autoBeamOn |
+  f4( fs8) fs8 g8 g g g  |
   g,2 c4 r4 |
 
   \bar "||"
@@ -346,13 +347,11 @@ basMusic = \relative c {
 
   d'2 b |
   a4. a8 g4 r |
-  \autoBeamOff
   a4( b a) g8. g16 |
   d'2 d4 r |
   e2 c |
   b4. b8 a4 r |
   c4( a g) fs8. fs16 |
-  \autoBeamOn
 
   e2 d8 r8 r4 | 
   r2 r4 r8 d8 |
