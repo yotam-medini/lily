@@ -258,7 +258,7 @@ bLyricsText = \lyricmode {
   % ORPG-2
 
   mo -- chos  rav  ron lo -- hem  oul  -- chol  a -- das  lo --
-  hem oul -- chol a -- das  yis -- ro -- el  se -- mo -- chos  rov
+  hem oul -- chol a -- das  yis -- ro -- el  se -- mo -- chos  rav
   ron  lo -- hem  oul -- chol  a -- das  lo -- hem
     oul -- chol  a -- das  yis -- ro -- el
 
