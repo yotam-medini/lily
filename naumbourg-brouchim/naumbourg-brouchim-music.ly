@@ -43,7 +43,7 @@ sopMusic = \relative c'' {
   d'4.( cs8) e8[( d b g]) |
   g2. r4 |
   c4( g') f e |
-  d e f a,8[( b]) |
+  d e f a,8.[( b16]) |
 
   c4. b8  c b c e  |
   e4( d) c r |
@@ -131,7 +131,7 @@ altMusic = \relative c'' {
   % ORPG-2
   \key c \major
 
-  <e g>1 |
+  <e g>1^\pp |
   <e g>1 |
   <f g>1 |
   g1 |
@@ -151,7 +151,7 @@ altMusic = \relative c'' {
   >> | \oneVoice
   g2 g4 g |
   a4 a a c,8.[( d16]) |
-  ds4. ds8  e d e g  |
+  ds4. ds8  e ds e g  |
   f2 e4 r4 |
 
 
@@ -321,7 +321,7 @@ basMusic = \relative c {
   % ORPG-2
   \key c \major
 
-  c,1 |
+  c,1^\pp |
   c1 |
   g1 |
   g'2.( f!4) |
@@ -360,7 +360,7 @@ basMusic = \relative c {
   d4 d d r8 d8 |
   g,4( g') fs8[( d e fs]) |
 
-  g8[( d b g ]) d'[\( e fs d]\) |
+  g8[( d b g ]) d'[( e fs]) d |
   g4 g, b d8. d16 |
   d4 d g r |
   r1 |
@@ -391,7 +391,7 @@ rightHand = \relative c' {
   <b g'>4 <fs' a> <g b> <a c> |
   <b d>2 <g b> |
   <fs a>2 <fs a>8[( <g b> <a c> <b d>]) |
-  <c d>4( <b d>) <a c>( <g b>) |
+  <c e>4( <b d>) <a c>( <g b>) |
   << {
       \voiceOne
       a4 <gs b> <a c> <g b> |
@@ -446,7 +446,7 @@ rightHand = \relative c' {
     }
     \\
     \new Voice { \voiceTwo
-      g2 g4 g4
+      <g b>2 g4 g4
     }
   >> | \oneVoice
   <d g b>4 <c d fs a> <b d g> r4 |
@@ -547,7 +547,7 @@ rightHand = \relative c' {
   \slurDown <g b>4( <b d> <g c> <f a>) \slurNeutral  |
   g4 r4 r2 |
   r4 d' g, f |
-  g1 |
+  e1 |
 
   << {
       \voiceOne 
@@ -595,7 +595,7 @@ leftHand = \relative c {
 
  <g' d'>1 |
  <d d'>2 <g b> |
- <d, d'>2 <d d'>4 <d d'> |
+ <d, d'>2 <d d'>4 <e e'> |
  <fs fs'>2 <g g'>4 r4 |
  <c c'>2 <a a'> |
  <e e'>2 a |
@@ -616,7 +616,7 @@ leftHand = \relative c {
   % ORPG-2
   \key c \major
 
-  <c g'>1 ~ |
+  <c g'>1^\pp ~ |
   <c g'>1 |
   <g g' b> |
   << {
