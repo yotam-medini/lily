@@ -4,7 +4,7 @@ saLyricsText = \lyricmode {
   so -- mach -- ti be -- om -- rim  li  bes  -- a -- do -- noi  ne -- 
   % bar  6
   lech om -- dos ho | ju rag -- le -- nu bi scho ra -- jich
-    je -- ru -- scho -- la -- jim  je -- ru -- scho -- la -- jim
+    je -- ru -- scho -- lo -- jim  je -- ru -- scho -- la -- jim
     ha -- bnu --
   % bar 12
   joh  ke -- ir  sche -- chub -- roh  loh jach dov sche schom o -- lu
@@ -18,8 +18,8 @@ saLyricsText = \lyricmode {
   ki scho -- moh jo -- sche -- vu  chis -- os  le -- misch -- pot
     kis -- os  le -- ves  do -- vid
   % bar 31
-  schaa -- lu  sche -- lom  je -- ru -- scho -- la -- jim  jisch -- 
-    loy  o -- ha -- va  -- 
+  schaa -- lu  sche -- lom  je -- ru -- scho -- lo -- jim  jisch -- 
+    loy  o -- ha -- vo  -- 
   % bar 38
   jich  je -- hi  scho -- lom  be -- che -- lech   
     schal -- voh  be -- ar -- me -- no -- so -- juch  le -- ma -- an  a --
@@ -151,7 +151,7 @@ tHLyricsText = \lyricmode {
 bLyricsText = \lyricmode {
   ne -- lech
   % bar  6
-  je -- ru -- scho -- la -- jim  je -- ru -- scho -- la -- jim   ha -- bnu --
+  je -- ru -- scho -- lo -- jim  je -- ru -- scho -- la -- jim   ha -- bnu --
   % bar 12
   joh  ke -- ir  sche -- chub -- rah  loh jach dov sche schom o -- lu
     sche -- vo -- tim schiv -- te
@@ -164,8 +164,8 @@ bLyricsText = \lyricmode {
   ki scho -- moh jo -- sche -- vu  chis -- os  le -- misch -- pot
     kis -- os  le -- ves  do -- vid
   % bar 31
-  schaa -- lu  sche -- lom  je -- ru -- scho -- la -- jim  jisch -- 
-    loy  o -- ha -- va  -- 
+  schaa -- lu  sche -- lom  je -- ru -- scho -- lo -- jim  jisch -- 
+    loy  o -- ha -- vo  -- 
   % bar 38
   jich  je -- hi  scho -- lom  be -- che -- lech   
     schal -- voh  be -- ar -- me -- no -- so -- juch  le -- ma -- an  a --
