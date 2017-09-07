@@ -19,6 +19,7 @@ sopMusic = \relative c'' {
   a4. a8 g4 r4 |
   a4( b a) g8. g16 |
   d'2 d4 r4 |
+  \break % just to be compatible with 2017-07-01 version
   e2^\markup {\italic \large \bold cresc.} c2 |
   b4. b8 a4 r4 |
   c4( a g) fs8. fs16 |
@@ -176,7 +177,7 @@ altMusic = \relative c'' {
   b8[( a]) g[( a]) fs4 r |
   r2 r4 r8 d8 | 
 
-  g4. b8 a4. d8 |
+  g4. b8 a4. c8 |
   b4 b g g8. g16 |
   g4 fs g r |
   r2 r8 g a b |
@@ -364,7 +365,7 @@ basMusic = \relative c {
   g4 g, b d8. d16 |
   d4 d g r |
   r1 |
-  r8 d8 d8[( fs8]) g4 g4 |
+  r8 d8 e8[( fs8]) g4 g4 |
 
   % ORPG-4
 
@@ -410,7 +411,7 @@ rightHand = \relative c' {
   <fs a>4( <g b> <fs a> <e g>) |
   <d a' d>2 <d g b d>4 r4 |
   <e g e'>2 <e a c> |
-  <d e gs b d>2 <c e a> |
+  <d e gs b>2 <c e a> |
   \slurUp
   c'4( a g fs) |
   e2 d4 r8 d8 |
@@ -419,7 +420,7 @@ rightHand = \relative c' {
   << {
       \voiceOne % \stemUp % \slurUp
       g4.( b8) a4.( c8) |
-      b4.( <b d>8) c4.( <c e>8) |
+      b4.( <b d>8) <a c>4.( <c e>8) |
       d4 g d b |
     }
     \\
@@ -472,9 +473,10 @@ rightHand = \relative c' {
     }
     \\
     \new Voice { \voiceTwo
-      e4( c8) e8[( d b a])
+      d4.( cs8) e8[( d b a])
     }
   >> | \oneVoice
+  \break % just to be compatible with 2017-07-01 version
 
   g4 <d' d'>8[ <cs cs'>] <e e'>8[( <d d'> <b b'> <g g'>]) |
   <c c'>4( <g g'> <g d' f> <g c e>) |
@@ -484,7 +486,7 @@ rightHand = \relative c' {
     \\
     \new Voice { \voiceTwo a,2 a4  }
   >> \oneVoice
-   <c, a'>8. <d b>16 |
+   <c, a'>8. <d b'>16 |
   << {
       \voiceOne
         c'4. b8 c8[( b c e] ) |
@@ -492,7 +494,7 @@ rightHand = \relative c' {
     }
     \\
     \new Voice {
-      \voiceTwo ds,2 e2 |
+      \voiceTwo <ds, a'>2 e2 |
       <f b>2 e4
     }
   >> \oneVoice r4 |
@@ -506,8 +508,8 @@ rightHand = \relative c' {
   <b' d>2 <g b> |
   <fs a>2 g4 r4 |
   <fs a>4( <g b> <fs a> <e g>) |
-  <d a' d>2 <d a' d>4 r4 |
-  <e g d'>2 <e a c> |
+  <d a' d>2 <d b' d>4 r4 |
+  <e g e'>2 <e a c> |
   <d e gs b>2 <c e a>4 r4 |
   c'4( a g fs) |
 
@@ -538,13 +540,13 @@ rightHand = \relative c' {
   >> | \oneVoice
   <g b>4 <fs a> g r |
   r2 r8 <g b>8[ <a c> <b d>] |
-  <e g>4( <b d>8[) <a c>8] <g b>4 <g b> |
+  <c e>4( <b d>8[) <a c>8] <g b>4 <g b> |
 
   % ORPG-4
 
   <a b>2 <g b>2 |
   <f g b>2 <e g c>2 |
-  \slurDown <g b>4( <b d> <g c> <f a>) \slurNeutral  |
+  \slurDown <g b>4( <b d> <g b> <fs a>) \slurNeutral  |
   g4 r4 r2 |
   r4 d' g, f |
   e1 |
@@ -657,7 +659,7 @@ leftHand = \relative c {
 
   <g' d'>1 |
   <d d'>2 <g b>4 r4 |
-  <d, d'>2. <e d'>4 |
+  <d, d'>2. <e e'>4 |
   <fs fs'>2 <g g'>4 r4 |
   <c c'>2 <a a'> |
   <e e'>2 a4 r4 |
@@ -668,7 +670,7 @@ leftHand = \relative c {
   <g, g'>1 |
   <g g'>1 |
   <d' d'>2 d'8[( e d c]) |
-  b8[( c b g]) fs[( d e fs])
+  b8[( d b g]) fs[( d e fs])
 
   g8[( d b g]) d'[( e fs d]) |
   g4 g, b d |
