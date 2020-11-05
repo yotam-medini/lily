@@ -7,8 +7,12 @@ global = {
   \tempo 4. = 66
 }
 
+dolce = \markup { \italic \bold dolce }
+pdolce = \markup { \dynamic p \italic \bold dolce }
+
 sopMusic = \relative c'' {
-  \partial 4. r8 g g | d'2.( d4. d8) \breathe c[ d] |
+  \dynamicUp
+  \partial 4. r8^\pdolce g g | d'2.( d4. d8) \breathe c[ d] |
   e8[ d c] d[ c b] c[ b a] b[ a g] | a2.( a4. a8) r8 r8 |
   r8 
     << { \voiceOne
@@ -20,7 +24,7 @@ sopMusic = \relative c'' {
 }
 
 altMusic = \relative c'' {
-  \partial 4. r4. | r8 a a g2.( g8) r8 r8 |
+  \partial 4. r4. | r8^\pdolce a a g2.( g8) r8 r8 |
   r1. | r8 e[ e] fs[ g fs] fs[ e ef] d[ d d] |
   << { \voiceOne
      g2.( g8) r8 r8
@@ -32,7 +36,7 @@ altMusic = \relative c'' {
 
 tenMusic = \relative c' {
   \partial 4. r4. | 
-    r4. r8 e8[ e]
+    r4. r8^\pdolce e8[ e]
     << { \voiceOne
       d4.( d8)
     } \new Voice { \voiceTwo 
