@@ -10,7 +10,7 @@ cer % |
 origlyricII = \lyricmode {
 Ca -- |
 ri -- cia de tu pa -- |
-ñu -- elo Que va~en- -- vol -- 
+ñue -- lo Que va~en- -- vol -- 
 vien -- do mi co -- ra -- |
 zón % |
 }
@@ -32,7 +32,7 @@ rá
 
 origlyricV = \lyricmode {
 Zam -- ba, ya no me |
-de -- jes yo, sin tu can -- 
+de -- jes jo, sin tu can -- 
 to no vi -- vo |
 más
 
@@ -41,7 +41,7 @@ más
 hebrewlyricI = \lyricmode {
 
 סוּאֶ -- נִיוֹ, סוּאֶ -- נִיוֹ דֶל
-אַל -- מַה קֶ~אַ וֶ -- סֶס מוּאֶ --
+אַל -- מַה קֶ~אַ בֶּ -- סֶס מוּאֶ --
 רֶ סִין פלוֹ -- רֶ --
 סֶר  
 
@@ -51,15 +51,15 @@ hebrewlyricI = \lyricmode {
 hebrewlyricII = \lyricmode {
 
 קַ -- רי -- סִיהַ דֶה טוּ פַּ --
-ניוּ -- אֶלוֹ קֶה וַ~אֶנ -- בוֹל --
-בִיאֶנְ -- דוֹ מִי קוֹ -- רַ -- סוֹן
+ניוּאֶ -- לוֹ קֶה בַּ~אֶנ -- בוֹל --
+בְּיאֶנְ -- דוֹ מִי קוֹ -- רַ -- סוֹן
 
 % l2r
 }
 
 hebrewlyricIII = \lyricmode {
 
-אֶס -- טרֶ -- שָׁה דֶ -- חַה קֶה
+אֶס -- טרֶ -- זָ'ה דֶ -- חַה קֶה
 קַנ -- טֶה דֶ -- חַה קֶה קִיאֶ -- רַה קוֹ -- מוֹ ז'וֹ
 סֶה
 
@@ -68,7 +68,7 @@ hebrewlyricIII = \lyricmode {
 
 hebrewlyricIV = \lyricmode {
 
-אֶל טִיאֶמ  -- פּוֹ מֶה וַה מַ --
+אֶל טִיאֶמ  -- פּוֹ מֶה בַּה מַ --
 טַנְ -- דוֹ אִי טוּ קַ -- רִי -- נִיוֹ  סֶ -- רַה סֶ --
 רַה
 
@@ -77,9 +77,9 @@ hebrewlyricIV = \lyricmode {
 
 hebrewlyricV = \lyricmode {
 
-סַמְ -- בַה זַ'ה נוֹ מֶ
+סַמְ -- בַּה זַ'ה נוֹ מֶ
 דֶ -- חֶס ז'וֹ סִין טוּ קַנְ --
-טוֹ נוֹ וִי -- ווֹ מָס  
+טוֹ נוֹ בִּי -- בּוֹ מָס  
 
 %l2r
 }

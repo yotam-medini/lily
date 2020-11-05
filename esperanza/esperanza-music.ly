@@ -10,28 +10,28 @@ sopMusic = \relative c'' {
   fs4 fs8 fs8.[ fs8 fs16] |
   e8[ cs e,] a[ e' d~] |
   d[ b gs] fs4 gs8 |
-  a2   \bar "|."
+  a2.  \bar "|."
 }
 
 altMusic = \relative c' {
   fs4 fs8 fs8.[ fs8 fs16] |
   a8[ e cs] e[ a gs?~] |
   gs[ gs e] d4 d8 |
-  cs2   \bar "|."
+  cs2.  \bar "|."
 }
 
 tenMusic = \relative c' {
   a4 a8 a8.[ a8 a16] |
   a8[ e e] a[ cs b~] |
   b[ gs gs] gs4 b8 |
-  a2   \bar "|."
+  a2.  \bar "|."
 }
 
 basMusic = \relative c {
   d4 d8 d8.[ d8 d16] |
   cs8[ a a] cs[ e e~] |
   e[ e b] b4 b8 |
-  cs2   \bar "|."
+  cs2.  \bar "|."
 }
 
 PsopMusic = \relative c'' { \partial 8 a8 |  \sopMusic }
