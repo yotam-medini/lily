@@ -28,6 +28,15 @@ sopMusic = \relative c'' {
   e2.( e8)[ d  e] d[ c b] |
   d2.( d8)[ b c] d[ c b] |
   f'2.( f8)[ ef f] ef[ d c] |
+  d2.( d8)[ \breathe g, a] b[ a g] |
+  \time 9/8
+  c4.( c8)[ b c] b[ a g] |
+  a2.( a8)[ \breathe b c] |
+  d8[ c b] c[ b a] b[ a g] |
+  a2. \tuplet 2/3 {d,8[ d]} |
+  \time 12/8
+  g2.( g4. g4) r8 |
+  R1*3/2 |
 }
 
 altMusic = \relative c'' {
@@ -65,6 +74,15 @@ altMusic = \relative c'' {
   r8 c8[ d] ef[ fs g] a2.( |
   a8)[ b c] b[ a b] g2. |
   af4. af af \tuplet 2/3 {a8[ a]} |
+  g2.( g8)[ \breathe d d] d[ d d] |
+  % \time 9/8
+  g2. \tuplet 2/3 {g8[ g]} |
+  e8[ d g] fs4.( fs8)[ \breathe fs fs] |
+  g8[ g g] g[ g g]  g[ g g] |
+  e8[ c d] e[ d c] d4.( |
+  % times 12/8
+  d4. d8[) b c] b4.( b4) r8 |
+  R1*3/2 |
 }
 
 tenMusic = \relative c' {
@@ -102,6 +120,37 @@ tenMusic = \relative c' {
   R1*3/2 |
   r8 g8[\mf a] b[ c d] f[ f ef] d[ e d] |
   c2.( c4.) \tuplet 2/3 {c8[ c]} |
+  c2.( c8)[ \breathe b c] d[ c b] |
+  % \time 9/8
+  c2. \tuplet 2/3 {cf8[ cf]} |
+  c!2.( 
+  << { \voiceOne
+     c8)[ \breathe d d]
+  } \new Voice { \voiceTwo
+     c8[ a a]
+  } 
+  >> | 
+  << { \voiceOne
+    d8[ e d] c[ c c] cs[ cs cs] 
+  } \new Voice { \voiceTwo
+    b[ g g] g[ g g] g[ g g]
+  } 
+  >> | 
+  << { \voiceOne
+    c!2. \tuplet 2/3 {c8[ c]}
+  } \new Voice { \voiceTwo
+    g2. \tuplet 2/3 {g8[ g]}
+  } 
+  >> | 
+  % times 12/8
+  << { \voiceOne
+    e'4. d4.( d8)[ \breathe d e]
+  } \new Voice { \voiceTwo
+    g,8[ g a] g4.( g8)[ d' e]
+  } 
+  >> 
+  d8[ b d] | 
+  e4. e4.( e8)[ fs( g)] fs[ e d] |  
 }
 
 basMusic = \relative c {
@@ -130,4 +179,19 @@ basMusic = \relative c {
   R1*3/2 |
   R1*3/2 |
   b4. ef f \tuplet 2/3 {fs8[ fs]} |
+  g2.( g8)[ \breathe g g] g[ g g] |
+  % \time 9/8
+  e2. \tuplet 2/3 {e8[ e]} |
+  g8[ fs e] d4.( d8)[ \breathe c c] |
+  b8[ c d] e[ e e] e[ e e] |
+  d2. \tuplet 2/3 {d8[ d]}
+  % times 12/8
+  c4.( c8)[ b a] g4.( g4) r8 |
+  r8
+  << { \voiceOne
+    g'8[ a] b[ a b] c4. c4.
+  } \new Voice { \voiceTwo
+    e,8[ fs] fs[ fs g] a4. a4.
+  } 
+  >> |
 }
