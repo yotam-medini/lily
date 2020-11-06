@@ -59,8 +59,8 @@ ${ZIPSRC}: ${SRCS}
 	zip $@ ${SRCS}
 	unzip -l $@; ls -lGt $@
 
-${ZIPMIDIS}: ${REL_MIDIS}
-	zip $@ ${REL_MIDIS}
+${ZIPMIDIS}: ${MIDIS}
+	zip $@ ${MIDIS}
 	unzip -l $@; ls -lGt $@
 
 zipsrc: ${ZIPSRC}
@@ -73,5 +73,3 @@ release: ${RELFILES}
 
 clean:
 	rm -f ${BASE}.pdf ${MIDIS}
-
-
