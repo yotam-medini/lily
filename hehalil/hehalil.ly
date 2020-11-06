@@ -10,6 +10,23 @@
   % tagline = ##f
 }
 
+\paper{
+  #(set-paper-size "a4")
+
+    system-system-spacing #'basic-distance = #18
+
+  oddFooterMarkup = \markup {
+      \hspace #60
+      \on-the-fly #last-page { (typeset via \italic "LilyPond"
+      \small \typewriter
+      \hspace #2
+      \small
+      \simple #(strftime "%Y-%m-%d %H:%M:%S)" (localtime (current-time)))
+      }
+  }
+  evenFooterMarkup = \oddFooterMarkup
+}
+
 \layout { 
   \context { 
     \Lyrics
