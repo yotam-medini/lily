@@ -106,7 +106,7 @@ altMusic = \relative c'' {
   b8\rest c,[ d] e[ g e] fs![ e ef] d[ d d] |
   d8[ d d] d[ d d] g[ a g] g[ g g]
   << { \voiceOne
-    a2.( a4. a8[ a) e8]
+    a2.( a4. a8)[ a e8]
   } \new Voice { \voiceTwo
     e2.( e4. e8)[ d e]
   }
@@ -241,7 +241,7 @@ basMusic = \relative c {
   \partial 4. r4. |
   r1. |
   r1. |
-  r1. |
+  r2. r4. r8 e8[ d] |
   << { \voiceOne
      d2.( d8) r8 r8
   } \new Voice { \voiceTwo
@@ -278,10 +278,10 @@ basMusic = \relative c {
   r8
   << { \voiceOne
     g8[ a] b[ a b] c4. c4.( |
-    c8)[ b d] c[ b a] b4.
+    c8)[ b( d)] c[ b a] b4.
   } \new Voice { \voiceTwo
     e,8[ fs] fs[ fs g] a4. a4.( |
-    a8)[ g b] a[ g fs] g4.
+    a8)[ g( b)] a[ g fs] g4.
   }
   >>
   \breathe \tuplet 2/3 {gs8[ gs]} |

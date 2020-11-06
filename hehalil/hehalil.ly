@@ -1,5 +1,5 @@
 \include "hehalil-music.ly"
-% \include "hehalil-lyrics.ly"
+\include "hehalil-lyrics.ly"
 
 \header {
   title = "הֶחַלִיל"
@@ -47,7 +47,7 @@
           >>
         }
       >>
-      % \new Lyrics = "soplyrics"
+      \new Lyrics = "soplyrics"
 
       \new Staff = "alt" <<
         \new Voice = "altos" {
@@ -58,7 +58,7 @@
           >>
         }
       >>
-      % \new Lyrics = "altlyrics"
+      \new Lyrics = "altlyrics"
 
       \new Staff = "ten" <<
         \clef "G_8"
@@ -69,7 +69,7 @@
           >>
         }
       >>
-      % \new Lyrics = "tenlyrics"
+      \new Lyrics = "tenlyrics"
 
       \new Staff = "bas" <<
         \clef bass
@@ -80,8 +80,28 @@
           >>
         }
       >>
-      % \new Lyrics = "baslyrics"
+      \new Lyrics = "baslyrics"
 
+      \context Lyrics = "soplyrics" {
+        \lyricsto "sopranos" {
+          \soplyricsText
+        }
+      }
+      \context Lyrics = "altlyrics" {
+        \lyricsto "altos" {
+          \altlyricsText
+        }
+      }
+      \context Lyrics = "tenlyrics" {
+        \lyricsto "tenors" {
+          \tenlyricsText
+        }
+      }
+      \context Lyrics = "baslyrics" {
+        \lyricsto "basses" {
+          \baslyricsText
+        }
+      }
     >>
   >>
 
@@ -111,7 +131,6 @@
           >>
         }
       >>
-      % \new Lyrics = "soplyrics"
 
       \new Staff = "alt" <<
 	\set Staff.midiInstrument = #"oboe"
@@ -135,10 +154,9 @@
           >>
         }
       >>
-      % \new Lyrics = "tenlyrics"
 
       \new Staff = "bas" <<
-	\set Staff.midiInstrument = #"basson"
+	\set Staff.midiInstrument = #"bassoon"
         \clef bass
         \new Voice = "basses" {
           \set Staff.instrumentName = "B"
@@ -147,7 +165,6 @@
           >>
         }
       >>
-      % \new Lyrics = "baslyrics"
 
     >>
   >>
