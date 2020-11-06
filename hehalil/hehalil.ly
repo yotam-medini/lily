@@ -102,6 +102,7 @@
     \new ChoirStaff <<
 
       \new Staff = "sop" <<
+	% \set Staff.midiInstrument = #"piccolo"
         \new Voice = "sopranos" {
           \set Staff.instrumentName = "S"
           <<
@@ -113,6 +114,7 @@
       % \new Lyrics = "soplyrics"
 
       \new Staff = "alt" <<
+	\set Staff.midiInstrument = #"oboe"
         \new Voice = "altos" {
           \set Staff.instrumentName = "A"
           <<
@@ -124,6 +126,7 @@
       % \new Lyrics = "altlyrics"
 
       \new Staff = "ten" <<
+	\set Staff.midiInstrument = #"cello"
         \clef "G_8"
         \new Voice = "tenors" {
           \set Staff.instrumentName = "T"
@@ -135,6 +138,7 @@
       % \new Lyrics = "tenlyrics"
 
       \new Staff = "bas" <<
+	\set Staff.midiInstrument = #"basson"
         \clef bass
         \new Voice = "basses" {
           \set Staff.instrumentName = "B"

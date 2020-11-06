@@ -19,14 +19,13 @@ RELFILES = /tmp/${BASE}-${NOW}.pdf ${ZIPSRC} ${ZIPMIDIS}
 MIDIMORE=1.3
 MIDILESS=0.7
 
-REL_MIDIS = ${BASE}.midi \
+MIDIS = ${BASE}.midi \
 	${BASE}-sop.midi \
 	${BASE}-alt.midi \
 	${BASE}-ten.midi \
 	${BASE}-bas.midi \
 
-# ${BASE}.pdf ${BASE}.midi: ${BASE}.ly ${BASE}-music.ly ${BASE}-lyrics.ly
-${BASE}.pdf: ${BASE}.ly ${BASE}-music.ly ${BASE}-lyrics.ly
+${BASE}.pdf ${BASE}.midi: ${BASE}.ly ${BASE}-music.ly ${BASE}-lyrics.ly
 	lilypond ${BASE}.ly
 	ls -lG ${BASE}.pdf
 

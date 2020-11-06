@@ -130,9 +130,9 @@ tenMusic = \relative c' {
     }
     >>
     \oneVoice \breathe a8[ b] |
-  c[ b a] b[ a g] a[ g fs] g[ fs e] |
+  c[ b a] b[ e d] e[ d c] cs[ cs cs] |
   << { \voiceOne
-    c'!8 r8 r8 r4. r4. r8 c[ c]
+    c!8 r8 r8 r4. r4. r8 c[ c]
   } \new Voice { \voiceTwo
     r8 c8[ c] c[ a c] d[ c c] c[ g g]
   }
@@ -158,7 +158,7 @@ tenMusic = \relative c' {
   c2.( c4.) \tuplet 2/3 {c8[ c]} |
   c2.( c8)[ \breathe b c] d[ c b] |
   % \time 9/8
-  c2. \tuplet 2/3 {cf8[ cf]} |
+  c2. \tuplet 2/3 {cs8[ cs]} |
   c!2.(
   << { \voiceOne
      c8)[ \breathe d d]
@@ -212,7 +212,7 @@ tenMusic = \relative c' {
       << { \voiceOne
         c8)[ c c]
       } \new Voice { \voiceTwo
-        c8[ c f,]
+        c8[ c fs,]
       }
       >> |
   }
@@ -266,7 +266,7 @@ basMusic = \relative c {
   \repeat volta 2 {
   R1*3/2 |
   R1*3/2 |
-  b4. ef f \tuplet 2/3 {fs8[ fs]} |
+  d'4. ef f \tuplet 2/3 {fs8[ fs]} |
   g2.( g8)[ \breathe g g] g[ g g] |
   % \time 9/8
   e2. \tuplet 2/3 {e8[ e]} |
@@ -284,7 +284,7 @@ basMusic = \relative c {
     a8)[ g b] a[ g fs] g4.
   }
   >>
-  \breathe \tuplet 2/3 {g!8[ g]} |
+  \breathe \tuplet 2/3 {gs8[ gs]} |
   b4.( a4. gs4.) \tuplet 2/3 {g8[ g]}
   f[ e d] c[ e c] d[ e f] fs[ \breathe d' c] |
   b[ b a] g[ a b] b,[ c d] e[ ef ef] |
