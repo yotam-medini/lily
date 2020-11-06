@@ -82,22 +82,6 @@
       >>
       % \new Lyrics = "baslyrics"
 
-%     \context Lyrics = "wlyrics" {
-%       \lyricsto "sopranos" {
-%         \wlyricsText
-%       }
-%     }
-%     \context Lyrics = "tenlyrics" {
-%       \lyricsto "tenors" {
-%         \tenlyricsText
-%       }
-%     }
-%     \context Lyrics = "baslyrics" {
-%       \lyricsto "basses" {
-%         \baslyricsText
-%       }
-%     }
-
     >>
   >>
 
@@ -108,6 +92,67 @@
     % \override LyricText #'font-size = #1.81
     \context {
       \Staff
+    }
+  }
+}
+
+\score {
+  \unfoldRepeats
+  <<
+    \new ChoirStaff <<
+
+      \new Staff = "sop" <<
+        \new Voice = "sopranos" {
+          \set Staff.instrumentName = "S"
+          <<
+             % \stemUp
+               \global \sopMusic
+          >>
+        }
+      >>
+      % \new Lyrics = "soplyrics"
+
+      \new Staff = "alt" <<
+        \new Voice = "altos" {
+          \set Staff.instrumentName = "A"
+          <<
+             % \stemUp
+               \global \altMusic
+          >>
+        }
+      >>
+      % \new Lyrics = "altlyrics"
+
+      \new Staff = "ten" <<
+        \clef "G_8"
+        \new Voice = "tenors" {
+          \set Staff.instrumentName = "T"
+          <<
+               \global \tenMusic
+          >>
+        }
+      >>
+      % \new Lyrics = "tenlyrics"
+
+      \new Staff = "bas" <<
+        \clef bass
+        \new Voice = "basses" {
+          \set Staff.instrumentName = "B"
+          <<
+               \global \basMusic
+          >>
+        }
+      >>
+      % \new Lyrics = "baslyrics"
+
+    >>
+  >>
+
+  \header { }
+
+  \midi {
+    \context {
+      \Score
     }
   }
 }
