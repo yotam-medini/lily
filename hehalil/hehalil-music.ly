@@ -160,7 +160,7 @@ tenMusic = \relative c' {
   %% bar 10
   \repeat volta 2 {
   R1*3/2 |
-  b8\rest g8[\mf a]  b[ c d] { \stemDown f[ \< f ef] d[ e d] \! } |
+  b8\rest g8[\mf a]  b[ c d] { \stemDown f[ \< f ef] d[ ef d] \! } |
   c2.~\f c4. \tuplet 2/3 {c8[ c]} |
   c2.~ c8[ \breathe b c] d[ c b] |
   % \time 9/8
