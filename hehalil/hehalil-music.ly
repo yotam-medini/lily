@@ -62,13 +62,16 @@ sopMusic = \relative c'' {
 altMusic = \relative c'' {
   \dynamicUp
   \partial 4. r4. | r8^\pdolce a a g2.~ g8 r8 r8 |
-  r1. | r8 e[ e] fs[ g fs] fs[ e ef] d[ d d] |
+  r1. |
+  r8 e[ e] e[ g e] fs[ e ef] d[ d d] |
   << { \voiceOne
      g2.~ g8 r8 r8
   } \new Voice { \voiceTwo
      d2.~ d8 r8 r8
   }
-  >> c4.\rest | r8 c[ d] e[ g e] d2.~
+  >> c4.\rest | 
+  %% bar 5
+  r8 c[ d] e[ g e] d2.~ |
   % \time 9/8
   d8[ c d] e[ d c] d[ d\cresc d] |
   % \time 12/8
@@ -80,7 +83,7 @@ altMusic = \relative c'' {
   }
   >> |
   << { \voiceOne
-      g'2.(\mf fs!4. f8)[ d b']
+      g'2.(\mf fs!4.~) fs8[ d b']
   } \new Voice { \voiceTwo
       c,!2.~ c4.~ c8[ c c] |
   }
@@ -92,6 +95,7 @@ altMusic = \relative c'' {
   }
   >> |
 
+  %% bar 10
   \repeat volta 2 {
   b'8\rest c,8[ d] ef[ fs g] a2.~ |
   a8[ b c] b[ a b] g2. |
@@ -148,10 +152,11 @@ tenMusic = \relative c' {
      a2.~ a8 r8 r8
   }
   >> c4.\rest |
+  %% bar 5
   \override MultiMeasureRest.staff-position = #2
   R1*3/2 |
   % \time 9/8
-  b2.\rest r8 d[\cresc c] \decresc|
+  b2.\rest r8 d[\cresc c] |
   % \time 12/8
   b[ b c] d[ c b] e[ e d] c[ b bf] |
   a2.~\mf a4.~ a8 a a] |
@@ -182,7 +187,7 @@ tenMusic = \relative c' {
   << { \voiceOne
     c!2. \tuplet 2/3 {c8[\> c] \!}
   } \new Voice { \voiceTwo
-    g2. \tuplet 2/3 {g8[ g]}
+    g2. \tuplet 2/3 {fs8[ fs]}
   }
   >> |
   % times 12/8
@@ -194,6 +199,7 @@ tenMusic = \relative c' {
   >>
   d8[ b d] |
   e4. e4.~ e8[ fs( g)] fs[ e d] |
+  %% bar 20
   e2.~ e4.
   << { \voiceOne
     \tuplet 2/3 {f8[ f]}
@@ -224,6 +230,7 @@ tenMusic = \relative c' {
       }
       >> |
   }
+  %%  bar 25
   \alternative {
     {
       << { \voiceOne
