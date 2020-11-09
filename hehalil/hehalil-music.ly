@@ -98,8 +98,8 @@ altMusic = \relative c'' {
   %% bar 10
   \repeat volta 2 {
   b'8\rest c,8[ d] ef[ fs g] a2.~ |
-  a8[ b c] b[ a b] g2. |
-  af4. af af \tuplet 2/3 {a8[ a]} |
+  a8[ b c] b[ a b]  g2.\< | 
+  af4.\f af af \tuplet 2/3 {a8[ a]} |
   g2.~ g8[ \breathe d d] d[ d d] |
   % \time 9/8
   g2. \tuplet 2/3 {g8[ g]} |
@@ -115,7 +115,7 @@ altMusic = \relative c'' {
   b8\rest c,[ d] e[ g e] fs![ e ef] d[ d\cresc d] |
   d8[ d d] d[ d d] g[ a g] g[ g g]
   << { \voiceOne
-    a2.~\mf a4.~ a8[ a e8]
+    a2.~\mf a4.~ a8[ d, e]
   } \new Voice { \voiceTwo
     e2.~ e4.~ e8[ d e]
   }
@@ -283,7 +283,7 @@ basMusic = \relative c {
   \repeat volta 2 {
   R1*3/2 |
   R1*3/2 |
-  d'4. ef f \tuplet 2/3 {fs8[ fs]} |
+  d'4.\f ef f \tuplet 2/3 {fs8[ fs]} |
   g2.~ g8[ \breathe g g] g[ g g] |
   % \time 9/8
   e2. \tuplet 2/3 {e8[ e]} |
@@ -299,13 +299,13 @@ basMusic = \relative c {
     g8[ a] b[ a b] c4. c4.~ |
     c8[ b( d)] c[ b a] b4.
   } \new Voice { \voiceTwo
-    e,8[ fs] fs[ fs g] a4. a4.~ |
+    e,8[ fs] g[ fs g] a4. a4.~ |
     a8[ g( b)] a[ g fs] g4.
   }
   >>
   \breathe \tuplet 2/3 {gs8[ gs]} |
   b4.( a4. gs4.) \tuplet 2/3 {g8[ g]}
-  f[ e d] c[ e c] d[ e f] { \stemDown fs[ \breathe d' \cresc c] } |
+  fs[ e d] c[ e c] d[ e f] { \stemDown fs[ \breathe d' \cresc c] } |
   b[ b a] g[ a b] { \stemUp b,[ c d] e[ ef ef] } |
   << { \voiceOne
     g2.~\mf g4.~ g8[ fs fs]
