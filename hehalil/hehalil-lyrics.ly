@@ -54,11 +54,30 @@ altlyricsText = \lyricmode {
 
 tenlyricsText = \lyricmode {
 
-הֶ -- חָ -- לִיל
+הֶ -- חָ --
+
+% latin
+\set associatedVoice = tenNullMusic 
+
+ לִיל
+הֶ -- חָ --
+
+\unset associatedVoice
+
+ לִיל
 %% הֶ --  ח -- לִיל
 הוּא פּ -- שׁוּט  וְ -- עָ -- דִין
-וְ -- קוֹ -- לוֹ  כְּ -- מוֹ  קוֹל   שֶׁל  הַ -- לֵּב
+וְ -- קוֹ -- לוֹ  כְּ -- מוֹ  קוֹל   שֶׁל  הַ --
 
+% latin
+\set associatedVoice = tenNullMusic 
+
+ לֵּב
+וְ -- קוֹ -- לוֹ  כְּ -- מוֹ  קוֹל   שֶׁל  הַ --
+
+\unset associatedVoice
+
+ לֵּב
 הֶ -- חָ -- לִיל
 
 כְּ -- מַ -- שַּׁק הָ -- רוּ -- חוֹת בְּ -- פַרְ -- דֵּס מְ -- לַבְ -- לֵ

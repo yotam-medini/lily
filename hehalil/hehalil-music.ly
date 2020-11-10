@@ -252,6 +252,14 @@ tenMusic = \relative c' {
   \bar "|."
 }
 
+tenNullMusic = \relative c' {
+  \partial 4. r4. |
+  r4. r4. r8 c8 c8 c8 r8 r8 |
+  R1*3/2 |
+  c8 c c c c c c c c c 
+  % ....
+}
+
 basMusic = \relative c {
   \dynamicUp
   \partial 4. r4. |
@@ -292,7 +300,7 @@ basMusic = \relative c {
   b8[ c d] e[ e e] e[ e e] |
   d2. \tuplet 2/3 {d8[\> d] \!}
   % times 12/8
-  c4.~\mp c8[ b a] g4.~ g4 d'8\rest |
+  c4.\mp \tuplet 2/3 {b8[ a]} g4.~ g4 d'8\rest |
   %% bar 19
   r8
   << { \voiceOne

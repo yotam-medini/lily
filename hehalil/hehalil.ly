@@ -68,6 +68,7 @@
                \global \tenMusic
           >>
         }
+        \new NullVoice = "tenNullMusic" \tenNullMusic
       >>
       \new Lyrics = "tenlyrics"
 
