@@ -13,6 +13,10 @@ pdolce = \markup { \dynamic p \italic \bold dolce }
 unpocopiumoso = \markup { \italic \bold un poco piu moso }
 mfunpocopiumoso = \markup { \dynamic mf \italic \bold un poco piu moso }
 
+unis = \markup { \italic  unis. }
+div = \markup { \italic  div. }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {
   \dynamicUp
   \partial 4. r8^\pdolce g g | d'2.~ d4.~ d8 \breathe c[ d] |
@@ -59,10 +63,11 @@ sopMusic = \relative c'' {
   \bar "|."
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 altMusic = \relative c'' {
   \dynamicUp
   \partial 4. r4. | r8^\pdolce a a g2.~ g8 r8 r8 |
-  r1. |
+  R1*12/8 |
   r8 e[ e] e[ g e] fs[ e ef] d[ d d] |
   << { \voiceOne
      g2.~ g8 r8 r8
@@ -110,6 +115,7 @@ altMusic = \relative c'' {
   d4.~\mp d8[ b c] b4.~ b4 b'8\rest |
   \override MultiMeasureRest.staff-position = #2
   R1*3/2 |
+  %% bar 20
   R1*3/2 |
   R1*3/2 |
   b8\rest c,[ d] e[ g e] fs![ e ef] d[ d\cresc d] |
@@ -128,6 +134,7 @@ altMusic = \relative c'' {
   \bar "|."
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 tenMusic = \relative c' {
   \dynamicUp
   \partial 4. r4. |
@@ -173,7 +180,7 @@ tenMusic = \relative c' {
   %% bar 15
   c!2.~
   << { \voiceOne
-     c8[ \breathe d d]
+     c8[^\div \breathe d d]
   } \new Voice { \voiceTwo
      c8[ a a]
   }
@@ -192,7 +199,7 @@ tenMusic = \relative c' {
   >> |
   % times 12/8
   << { \voiceOne
-    e'4.\mp d4.~ d8[ \breathe d e]
+    e'4.\mp d4.~ d8[ \breathe d^\unis e]
   } \new Voice { \voiceTwo
     g,8[ g a] g4.~ g8[ d' e]
   }
@@ -260,11 +267,12 @@ tenNullMusic = \relative c' {
   % ....
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 basMusic = \relative c {
   \dynamicUp
   \partial 4. r4. |
-  r1. |
-  r1. |
+  R1*12/8 |
+  R1*12/8 |
   r2. r4. r8 e8[ d] |
   << { \voiceOne
      d2.~ d8 r8 r8
@@ -272,6 +280,7 @@ basMusic = \relative c {
      g,2.~ g8 r8 r8
   }
   >> e'4.\rest |
+  %% bar 5
   \override MultiMeasureRest.staff-position = #2
   R1*3/2 |
   % \time 9/8
@@ -281,7 +290,7 @@ basMusic = \relative c {
   r8 e[\mf e] g[ e c] d[ d d] d[ d d] |
   g8[ e e]
   << { \voiceOne
-     d4.~ d2.
+     d4.~^\div d2.
   } \new Voice { \voiceTwo
      d8[ a a] g2.
   }
