@@ -140,7 +140,7 @@ tenMusic = \relative c' {
   \partial 4. r4. |
     r4. r8^\pdolce e8[ e]
     << { \voiceOne
-      d4.~ d8
+      d4.^\div~ d8
     } \new Voice { \voiceTwo
       d8 c c b
     }
