@@ -60,6 +60,7 @@
         }
       >>
       \new Lyrics = "altlyrics"
+      \new Lyrics = "altlyricsTwo"
 
       \new Staff = "ten" <<
         \clef "G_8"
@@ -71,6 +72,7 @@
         }
       >>
       \new Lyrics = "tenlyrics"
+      \new Lyrics = "tenlyricsTwo"
 
       \new Staff = "bas" <<
         \clef bass
@@ -82,6 +84,7 @@
         }
       >>
       \new Lyrics = "baslyrics"
+      \new Lyrics = "baslyricsTwo"
 
       \context Lyrics = "soplyrics" {
         \lyricsto "sopranos" {
@@ -98,14 +101,29 @@
           \altlyricsText
         }
       }
+      \context Lyrics = "altlyricsTwo" {
+        \lyricsto "altos" {
+          \altlyricsTextTwo
+        }
+      }
       \context Lyrics = "tenlyrics" {
         \lyricsto "tenors" {
           \tenlyricsText
         }
       }
+      \context Lyrics = "tenlyricsTwo" {
+        \lyricsto "tenors" {
+          \tenlyricsTextTwo
+        }
+      }
       \context Lyrics = "baslyrics" {
         \lyricsto "basses" {
           \baslyricsText
+        }
+      }
+      \context Lyrics = "baslyricsTwo" {
+        \lyricsto "basses" {
+          \baslyricsTextTwo
         }
       }
     >>
