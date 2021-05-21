@@ -13,29 +13,35 @@ dimerit = \markup { \italic \bold {dim. & rit.} }
 unis = \markup { \italic  unis. }
 div = \markup { \italic  div. }
 
+melon = { \set melismaBusyProperties = #'() }
+meloff = { \unset melismaBusyProperties }
+slurnomesh = { \slurDashed \set melismaBusyProperties = #'() }
+slurnomeshoff = { \slurSolid \unset melismaBusyProperties }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {
   % page 1
   \dynamicUp
-  d4^\andanteconmoto d e e2 e4 |
-  \slurDashed e4( fs e) \slurSolid d( cs b |
+  d4^\andanteconmoto^\f d e e2 e4 |
+    \slurnomesh e4( fs e) \slurnomeshoff
+    d( cs b |
   a2.) d4 d d |
   % page 2
   d2  d4 \<  d8[( \! g~]) g4 \> fs \! |
-  e4 e( fs d e2~ |
-  << e1.) { s4\> s2 s2 s4\mp } >> |
+  e4 \melon e( fs d e2~ |
+  << e1.) \meloff { s4\> s2 s2 s4\mp } >> |
   a,4 a b b4.( cs16[ b] a4) |
   d4( cs) e b2. |
   b8[( c b c) d( c)] c[( b) b( d b d)] | 
   % page 3
-  a4 a g( \tuplet 3/2 { a8[ b a] } b2~) |
+  a4 a g( \tuplet 3/2 { a8[ b a]) } b2~) |
   %% a4 a g( b b2~) |
   \numericTimeSignature
   \time 4/4 
   b1\> |
-  b8[^\p e] b4 b\< b\! | 
+  b8[^\p( e] b4) b\< b\! | 
   \time 6/4
-  b8[(\< e] b4) b\> a( g) a |
+  b8[(\< e] b4) b\> \melon a( g) \meloff a |
   b2.^\p d4(\< cs) d |
   e4( b)\! b a8[(\> b16 a] g!4) a\! |
   % page 4

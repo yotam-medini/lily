@@ -48,6 +48,7 @@
         }
       >>
       \new Lyrics = "soplyrics"
+      \new Lyrics = "soplyricsTwo"
 
       \new Staff = "alt" <<
         \new Voice = "altos" {
@@ -85,6 +86,11 @@
       \context Lyrics = "soplyrics" {
         \lyricsto "sopranos" {
           \soplyricsText
+        }
+      }
+      \context Lyrics = "soplyricsTwo" {
+        \lyricsto "sopranos" {
+          \soplyricsTextTwo
         }
       }
       \context Lyrics = "altlyrics" {
