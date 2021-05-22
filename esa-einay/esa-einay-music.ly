@@ -33,7 +33,7 @@ sopMusic = \relative c'' {
   << e1.) \meloff { s4\> s2 s2 s4\mp } >> |
   a,4 a b b4.( cs16[ b] a4) |
   d4( cs) e b2. |
-  b8[( c! b c) d( c)] c[( b) b( d b d)] | 
+  b8[( c! b c) d( c)] c[( b) b( c b c)] | 
   % page 3
   a4 a g( \tuplet 3/2 { a8[ b a]) } b2~ |
   %% a4 a g( b b2~) |
@@ -52,7 +52,7 @@ sopMusic = \relative c'' {
   g4( a g)\< fs e a~ |
   a2. g4(^\f fs) e( |
   g4 fs a) e2.~ |
-  << e1. { s2. s2.^\dimerit } >> |
+  << e1.~ { s2. s2.^\dimerit } >> |
   << e1. { s1 s4 s4^\p } >> |
   % \bar "|."
 }
@@ -101,7 +101,7 @@ tenMusic = \relative c' {
   a2.) b4 cs d |
   % page 2
   d4( cs) d b( cs) d |
-  d4( cs2) fs2 e4 |
+  d4( cs2) d2 e4 |
   fs4( e d)( \slurnomel e2.) \slurnomeloff |
   r2 r4 d4^\p d d |
   %% NEEDS WORK !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
