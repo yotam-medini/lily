@@ -33,14 +33,14 @@ sopMusic = \relative c'' {
   << e1.) \meloff { s4\> s2 s2 s4\mp } >> |
   a,4 a b b4.( cs16[ b] a4) |
   d4( cs) e b2. |
-  b8[( c b c) d( c)] c[( b) b( d b d)] | 
+  b8[( c! b c) d( c)] c[( b) b( d b d)] | 
   % page 3
   a4 a g( \tuplet 3/2 { a8[ b a]) } b2~ |
   %% a4 a g( b b2~) |
   \numericTimeSignature
   \time 4/4 
   b1\> |
-  b8[^\p( e] b4) b\< b\! | 
+  b8[^\p^\cresc( e] b4) b\< b\! | 
   \time 6/4
   b8[(\< e] b4) b\> \melon a( g) \meloff a |
   b2.^\p d4(\< cs) d |
@@ -62,11 +62,11 @@ altMusic = \relative c'' {
   \dynamicUp
   r2 r4 a4 a b |
   b2 b4 b cs b |
-  a( g fs) g2( a4) |
+  a( g fs) \slurnomel g2( a4) \slurnomeloff |
   % page 2
   b4 a << {b g2 a4} { s4\< s4\! s4\> s4\!} >> |
-  b4( a2~ a2) gs4 |
-  a4( b cs b2.) |
+  \slurnomel b4( a2~ a2) \slurnomeloff gs4 |
+  a4( b cs)( \slurnomel b2.) \slurnomeloff |
   r2 r4 fs4^\p fs fs|
   \slurnomel fs2( fs4) \slurnomeloff fs4( g) fs |
   fs2\< fs4\! fs e2 |
@@ -75,7 +75,7 @@ altMusic = \relative c'' {
   \numericTimeSignature
   \time 4/4
   fs1(\> |
-  fs2)^\p fs8[\< a] fs4 |
+  fs2)^\p^\cresc fs8[\< a] fs4 |
   \time 6/4
   fs4\< fs8[(\! a]) fs4\> e2 fs4 |
   fs4(^\p e d) d(\< fs) d |
@@ -85,10 +85,10 @@ altMusic = \relative c'' {
   d4 d e d2 e4^\cresc |
   c2. c2 d4 |
   d2.~(\< d4 c d) |
-  e4 d fs\! d2(^\f c4) |
-  d2( e4) e( d cs) |
-  d4( cs) b cs2(^\dimerit d4~ |
-  d2 cs4) << b2. { s2 s4^\p} >> |
+  e4 d fs\! \slurnomel d2(^\f c4) \slurnomeloff |
+  \slurnomel d2( e4) e( d cs) \slurnomeloff |
+  d4( cs) b \slurnomel cs2(^\dimerit d4~ |
+  d2 cs4) \slurnomeloff << b2. { s2 s4^\p} >> |
   % \bar "|."
 }
 
@@ -131,7 +131,7 @@ tenMusic = \relative c' {
   \time 6/4
   b4\< b2\! b2\> a4\! |
   a2.^\p g4( a2\<) |
-  \slurnomel gs4( a)\! \slurnomeloff g fs(\> e) fs\! |
+  \slurnomel gs4( a)\! \slurnomeloff gs fs(\> e) fs\! |
   % page 4
   gs4( a gs fs2) g!4 |
   fs4( g) a fs4.(^\cresc g16[ fs]) e4 |
