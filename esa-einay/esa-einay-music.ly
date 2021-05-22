@@ -141,15 +141,15 @@ tenMusic = \relative c' {
   a b c) b( a g) \slurnomeloff |
   fs( e) fs \slurnomel g^\dimerit(  a b |
   a4 g fs) \slurnomeloff g2. |
-  % \bar "|."
+  % \bar "|."x
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 basMusic = \relative c {
   \dynamicUp
   r2 r4 a'4 a b
-  b2 b4 \slurDashed b( cs b) \slurSolid |
-  a( g fs) e2( fs4) |
+  b2 b4  b( \slurDashed cs)( \slurnomel b) \slurnomeloff |
+  a( g fs) \slurnomel e2( fs4) \slurnomeloff |
   % page 2
   g2 g4 e2 fs4 |
   g4( a) fs2 e |
@@ -167,15 +167,15 @@ basMusic = \relative c {
   \time 6/4
   e4( fs) g c,2 c4 |
   b2.^\p b2.\< |
-  b2 b4\! b2\> b4\! |
+  b2 b4\! \slurnomel b2(\> b4)\! \slurnomeloff |
   % page 4
   b2. b2. |
   a4 b c a4.(^\cresc b16[ a]) g4 |
   g4 a b g2( g'4) |
-  e4( fs g\<) a( a,2~) |
+  e4( fs) g\< a( a,2~) |
   a2. b2\! a4 |
-  d2. e2. |
-  e2. e2.^\dimerit |
+  d2. \slurnomel e2.( |
+  e2.) \slurnomeloff e2.^\dimerit |
   e,1. |
   % \bar "|."
 }
