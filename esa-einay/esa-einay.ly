@@ -1,5 +1,6 @@
 \include "esa-einay-music.ly"
 \include "esa-einay-lyrics.ly"
+\include "esa-einay-lyrics-latin.ly"
 
 \header {
   title = "אשא עיני"
@@ -13,7 +14,7 @@
 \paper{
   #(set-paper-size "a4")
 
-    system-system-spacing #'basic-distance = #18
+  system-system-spacing #'basic-distance = #18
 
   oddFooterMarkup = \markup {
       \hspace #60
@@ -47,8 +48,7 @@
           >>
         }
       >>
-      \new Lyrics = "soplyrics"
-      \new Lyrics = "soplyricsTwo"
+      \include "soplyrics.ly"
 
       \new Staff = "alt" <<
         \new Voice = "altos" {
@@ -59,8 +59,7 @@
           >>
         }
       >>
-      \new Lyrics = "altlyrics"
-      \new Lyrics = "altlyricsTwo"
+      \include "altlyrics.ly"
 
       \new Staff = "ten" <<
         \clef "G_8"
@@ -71,8 +70,7 @@
           >>
         }
       >>
-      \new Lyrics = "tenlyrics"
-      \new Lyrics = "tenlyricsTwo"
+      \include "tenlyrics.ly"
 
       \new Staff = "bas" <<
         \clef bass
@@ -83,49 +81,9 @@
           >>
         }
       >>
-      \new Lyrics = "baslyrics"
-      \new Lyrics = "baslyricsTwo"
+      \include "baslyrics.ly"
+      \include "lyrics-context.ly"
 
-      \context Lyrics = "soplyrics" {
-        \lyricsto "sopranos" {
-          \soplyricsText
-        }
-      }
-      \context Lyrics = "soplyricsTwo" {
-        \lyricsto "sopranos" {
-          \soplyricsTextTwo
-        }
-      }
-      \context Lyrics = "altlyrics" {
-        \lyricsto "altos" {
-          \altlyricsText
-        }
-      }
-      \context Lyrics = "altlyricsTwo" {
-        \lyricsto "altos" {
-          \altlyricsTextTwo
-        }
-      }
-      \context Lyrics = "tenlyrics" {
-        \lyricsto "tenors" {
-          \tenlyricsText
-        }
-      }
-      \context Lyrics = "tenlyricsTwo" {
-        \lyricsto "tenors" {
-          \tenlyricsTextTwo
-        }
-      }
-      \context Lyrics = "baslyrics" {
-        \lyricsto "basses" {
-          \baslyricsText
-        }
-      }
-      \context Lyrics = "baslyricsTwo" {
-        \lyricsto "basses" {
-          \baslyricsTextTwo
-        }
-      }
     >>
   >>
 
@@ -166,7 +124,6 @@
           >>
         }
       >>
-      % \new Lyrics = "altlyrics"
 
       \new Staff = "ten" <<
 	\set Staff.midiInstrument = #"cello"
