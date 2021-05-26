@@ -28,7 +28,7 @@ soplyricsLatinTextTwo = \lyricmode {
   Tsi -- le -- cha
   Al yad ye -- mi -- ne -- cha
   Yo -- mam ha -- she -- mesh
-  lo -- yich -- be
+  lo -- ya -- ke
   ve -- ya -- re -- ach
   ba -- lay -- la
   A -- do -- nay
@@ -51,7 +51,7 @@ altlyricsLatinText = \lyricmode {
   ez -- ri __ _ _
   ez -- ri __ _
   ez -- ri me -- im __ _
-  a -- do -- nay
+  a _ -- do -- nay
   O -- se sha -- ma -- yim
   va -- a -- retz
   Al __ _ yi -- ten
@@ -73,7 +73,7 @@ altlyricsLatinTextTwo = \lyricmode {
   Tsi -- le -- cha
   Al yad ye -- mi __ _ -- ne -- cha
   Yo -- mam ha -- she -- mesh
-  lo -- yich -- be
+  lo -- ya -- ke -- ka
   ve -- ya -- re -- ach __ _
   ba -- lay -- la
   A _ -- do -- nay
@@ -99,7 +99,7 @@ tenlyricsLatinText = \lyricmode {
   ez -- ri
   ez -- ri __ _ 
   Ez -- ri  me -- im __ _
-  a -- do -- nay
+  a __ _ -- do -- nay
   o -- se sha -- ma -- yim
   va -- a -- retz
   Al yi -- ten
@@ -109,9 +109,9 @@ tenlyricsLatinText = \lyricmode {
   Hi -- ne lp
   ya -- num ve -- lo yi -- shan
   sho -- mer
-  Is -- ra -- el
-  sho -- mer
-  Is -- ra -- el
+  Is -- ra -- el __ _ _ _ _ _ 
+  sho __ _ _ -- mer
+  Is -- ra __ _ _ _ _ _  -- el
 }
 
 tenlyricsLatinTextTwo = \lyricmode {
@@ -123,7 +123,7 @@ tenlyricsLatinTextTwo = \lyricmode {
   Yo -- mam
   ha --
   she -- mesh
-  lo -- yich -- be
+  lo -- ya -- ke -- ka
   ve -- ya -- re -- ach __ _
   ba -- lay -- la
   A -- do -- nay
@@ -148,7 +148,7 @@ baslyricsLatinText = \lyricmode {
   ez -- ri
   ez -- ri
   ez -- ri me -- im __ _
-  a -- do -- nay
+  a __ _ -- do -- nay
   O -- se sha -- ma -- yim
   va -- a -- retz
   Al yi -- ten
@@ -169,7 +169,7 @@ baslyricsLatinTextTwo = \lyricmode {
   Tsil -- cha
   Al yad ye -- min -- cha
   Yo -- mam ha -- she -- mesh
-  lo -- yich -- be
+  lo -- ya -- ke -- ka
   ve -- ya -- re -- ach __ _
   ba -- lay -- la
   A -- do -- nay

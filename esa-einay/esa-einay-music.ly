@@ -68,7 +68,7 @@ altMusic = \relative c'' {
   \slurnomel b4( a2~ a2) \slurnomeloff gs4 |
   a4( b cs)( \slurnomel b2.) \slurnomeloff |
   r2 r4 fs4^\p fs fs|
-  \slurnomel fs2( fs4) \slurnomeloff fs4( g) fs |
+  \slurnomel fs2( fs4) fs4( g) \slurnomeloff fs |
   fs2\< fs4\! fs e2 |
   % page 3
   e4 d2~ d4 d4 \tuplet 3/2 { e8[( fs e]) } |
@@ -119,8 +119,7 @@ tenMusic = \relative c' {
   %%       \oneVoice
   %%     }
   %% >>
-  \slurnomel d2( d4) \slurnomeloff
-  d4( e) d |
+  \slurnomel d2( d4) d4( e) \slurnomeloff d |
   d2\< d4\! d c!2 |
   % page 3
   c4(  b2)( \slurnomel a2) \slurnomeloff g4
@@ -156,7 +155,7 @@ basMusic = \relative c {
   e1. |
   r2 r4 a4^\p a b |
   %% missing ... !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  b4.( cs16[ b]) a4 b2 b4 |
+  b4.( cs16[ b]) a4 \slurnomel b4( b4) \slurnomeloff b4 |
   a2\< b4\! g2 a4 |
   % page 3
   fs2( e2) e2 |
