@@ -71,7 +71,7 @@ altlyricsLatinTextTwo = \lyricmode {
   sho -- me -- re __ _ _ -- cha
   A -- do -- nay
   Tsi -- le -- cha
-  Al yad ye -- mi __ _ -- ne -- cha
+  Al yad ye _ -- mi -- ne -- cha
   Yo -- mam ha -- she -- mesh
   lo -- ya -- ke -- ka
   ve -- ya -- re -- ach __ _
