@@ -35,58 +35,58 @@ soplyricsLatinTextTwo = \lyricmode {
   Yish -- mor -- cha
   mi -- kol
   ra
-  Yish __ _ -- mor
+  Yish  _ -- mor
   et naf -- sh -- cha
-  Yish -- mor tset -- cha __ _
+  Yish -- mor tset -- cha  _
   u -- vo -- a -- cha
-  Me __ _ -- a -- ta __ _
+  Me  _ -- a -- ta  _
   ve -- ad o -- _ lam
 }
 
 altlyricsLatinText = \lyricmode {
   E -- sa ey -- nai el
-  he __ _ -- ha -- rim
-  Me __ _ -- a -- yin
+  he  _ -- ha -- rim
+  Me  _ -- a -- yin
   ya -- vo
-  ez -- ri __ _ _
-  ez -- ri __ _
-  ez -- ri me -- im __ _
+  ez -- ri  _ _
+  ez -- ri  _
+  ez -- ri me -- im  _
   a _ -- do -- nay
   O -- se sha -- ma -- yim
   va -- a -- retz
-  Al __ _ yi -- ten
+  Al  _ yi -- ten
   la -- mot tag -- le -- cha
   Al Ya -- num
   sho -- me -- re -- cha
   Hi -- ne lo
   ya -- num ve -- lo yi -- shan
   sho -- mer
-  Is -- ra __ _ -- el __ _
-  sho __ _ _ -- mer
-  Is -- ra __ _ _ _ -- el
+  Is -- ra  _ -- el  _
+  sho  _ _ -- mer
+  Is -- ra  _ _ _ -- el
 }
 
 altlyricsLatinTextTwo = \lyricmode {
   A -- do -- nay
-  sho -- me -- re __ _ _ -- cha
+  sho -- me -- re  _ _ -- cha
   A -- do -- nay
   Tsi -- le -- cha
   Al yad ye _ -- mi -- ne -- cha
   Yo -- mam ha -- she -- mesh
   lo -- ya -- ke -- ka
-  ve -- ya -- re -- ach __ _
+  ve -- ya -- re -- ach  _
   ba -- lay -- la
   A _ -- do -- nay
   Yish -- mor
   mi -- kol
   ra
-  Yish __ _ -- mor
+  Yish  _ -- mor
   et naf -- sh -- cha
   Yish -- mor tset -- cha
-  u -- vo -- a __ _ -- cha
-  Me __ _ -- a -- ta
-  ve -- ad o -- lam __ _
-  Me -- a __ _ -- ta
+  u -- vo -- a  _ -- cha
+  Me  _ -- a -- ta
+  ve -- ad o -- lam  _
+  Me -- a  _ -- ta
   ve -- ad o -- lam
 }
 
@@ -97,9 +97,9 @@ tenlyricsLatinText = \lyricmode {
   ya -- vo
   ya -- vo
   ez -- ri
-  ez -- ri __ _ 
-  Ez -- ri  me -- im __ _
-  a __ _ -- do -- nay
+  ez -- ri  _ 
+  Ez -- ri  me -- im  _
+  a  _ -- do -- nay
   o -- se sha -- ma -- yim
   va -- a -- retz
   Al yi -- ten
@@ -109,14 +109,14 @@ tenlyricsLatinText = \lyricmode {
   Hi -- ne lp
   ya -- num ve -- lo yi -- shan
   sho -- mer
-  Is -- ra -- el __ _ _ _ _ _ 
-  sho __ _ _ -- mer
-  Is -- ra __ _ _ _ _ _  -- el
+  Is -- ra -- el  _ _ _ _ _ 
+  sho  _ _ -- mer
+  Is -- ra  _ _ _ _ _  -- el
 }
 
 tenlyricsLatinTextTwo = \lyricmode {
   A -- do -- nay
-  sho -- me -- re __ -- _ cha
+  sho -- me -- re  -- _ cha
   A -- do -- nay
   Tsi -- le -- cha
   Al yad ye -- mi -- ne -- cha
@@ -124,31 +124,31 @@ tenlyricsLatinTextTwo = \lyricmode {
   ha --
   she -- mesh
   lo -- ya -- ke -- ka
-  ve -- ya -- re -- ach __ _
+  ve -- ya -- re -- ach  _
   ba -- lay -- la
   A -- do -- nay
   Yish -- mor
   mi -- kol
   ra
-  Yish __ -- mor __ _
+  Yish  -- mor  _
   et naf -- sh -- cha
   Yish -- mor tset -- cha
-  u -- vo __ _ _ -- a -- cha
-  Me __ _ -- a -- ta __ _
-  ve -- ad __ _ o -- lam  __ _
-  Me -- a -- _ ta __ _
-  ve -- ad __ _ o -- lam  __ _
+  u -- vo  _ _ -- a -- cha
+  Me  _ -- a -- ta  _
+  ve -- ad  _ o -- lam   _
+  Me -- a -- _ ta  _
+  ve -- ad  _ o -- lam   _
 }
 
 baslyricsLatinText = \lyricmode {
   E -- sa ey -- nai el
   he -- ha -- rim
-  Me __ _ -- a -- yin
+  Me  -- _ a -- yin
   ya -- vo
   ez -- ri
   ez -- ri
-  ez -- ri me -- im __ _
-  a __ _ -- do -- nay
+  ez -- ri me -- im  _
+  a  -- _ do -- nay
   O -- se sha -- ma -- yim
   va -- a -- retz
   Al yi -- ten
@@ -157,29 +157,29 @@ baslyricsLatinText = \lyricmode {
   sho -- me -- re -- cha
   Hi -- ne lo
   ya -- num ve -- lo yi -- shan
-  sho _ -- mer
+  sho -- _ mer
   Is -- ra -- el 
-  Is __ _ -- ra -- el
+  Is -- _  ra -- el
 }
 
 baslyricsLatinTextTwo = \lyricmode {
   A -- do -- nay
-  sho -- me -- re __ _ -- cha
+  sho -- me -- re  -- _ cha
   A -- do -- nay
   Tsil -- cha
   Al yad ye -- min -- cha
   Yo -- mam ha -- she -- mesh
   lo -- ya -- ke -- ka
-  ve -- ya -- re -- ach __ _
+  ve -- ya -- re -- ach  _
   ba -- lay -- la
   A -- do -- nay
   Yish -- mor
   mi -- kol
   ra
   Yish -- mor
-  et naf __ _ -- sh -- cha
+  et naf  -- _ sh -- cha
   Yish -- mor tset -- cha
-  u -- vo -- a __ _ -- cha
+  u -- vo -- a  -- _ cha
   Me -- a -- ta
   Me -- a -- ta
   ve -- ad o -- lam
