@@ -21,10 +21,20 @@ soloNotes = \relative c {
   \time 5/4 R1*5/4 |
   \time 6/4 R1*6/4 |
   % Page 5
-  \time 6/4 R1*6/4 |
+  R1*6/4 |
   \time 3/4 r4 r4 r8. a'16 |
   \time 5/4 bf8 a8( a4) r8. g16 c16[ bf!16] a4 a8 |
   \time 4/4 a8. g32 a32 bf8 a16 bf16 c4 \times 2/3 { d8 c d } |
+  % Page 6
+  \time 3/4 ef8 d8( d4) \times 2/3 { c8 bf c8 } |
+  f4( \times 2/3 { f8[ ef c] } d8.[ c16]) | 
+  \time 2/4 af16[ g] f8 r4 |
+  \time 5/4 R1*5/4 |
+  \time 4/4 R1*3/4 |
+  % Page 7
+  % Page 8
+  % Page 9
+  
   
 }
 
@@ -39,60 +49,95 @@ sopMusic = \relative c'' {
   \time 5/4 c4. bf8 ef4. d8 c8 bf8 |
   \time 6/4 c2( c8) d8 ef4. d8 c8. bf16 |
   % page 5
-  \time 6/4 f'!4( ef8.) d16 c8 bf \times 2/3 { c8[( bf g] } a2)( |
+  f'!4( ef8.) d16 c8 bf \times 2/3 { c8[( bf g] } a2)( |
   \time 3/4 a2 a8) r8 |
-  \time 5/4 R1*5/4
-  \time 4/4 R1
-}
+  \time 5/4 R1*5/4 |
+  \time 4/4 R1 |
+  % page 6
+  \time 3/4 R1*3/4 |
+  \time 3/4 R1*3/4 |
+  \time 2/4 r4 r8. f16 |
+  \time 5/4 g16[( f]) g8( g4..) f16 bf16[( af]) g4 f8 |
+  \time 3/4 g8. g32 g32 \times 2/3 { af8 g af } g8 f |
+  % page 7
+  % Page 7
+  % Page 8
+  % Page 9
+} % end-of sopMusic
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 altMusic = \relative c'' {
   \dynamicUp \numericTimeSignature
   
-  \time 6/4 R1*6/4 | \time 5/4 R1*5/4 | \time 6/4 R1*6/4 | \time 6/4 R1*6/4 |
+  \time 6/4 R1*6/4 | \time 5/4 R1*5/4 | \time 6/4 R1*6/4 | R1*6/4 |
   \time 5/4 R1*5/4 |
   | R1*5/4 |
   \time 4/4 d,8 e8 f[( g)] \times 2/3 { f[ e f] } g8 f |
   \time 5/4 g4. f8 ef2 g4
   \time 6/4 g2 g4 fs8[( g] af4) g4 |
   % page 5
-  \time 6/4 fs2 g4 g2( g8) g8 |
+  fs2 g4 g2( g8) g8 |
   \time 3/4 g8( f4 ef8) d8 r8 |
-  \time 5/4 R1*5/4
-  \time 4/4 R1
+  \time 5/4 R1*5/4 |
+  \time 4/4 R1 |
+  % page 6
+  \time 3/4 R1*3/4 |
+  \time 3/4 R1*3/4 |
+  \time 2/4 r4 r8. f16 |
+  \time 5/4 d16[( c]) d8( d4..) c16 f16[( af]) f4 c8 |
+  \time 3/4 d8. c32 d32 \times 2/3 { ef8 d ef } d8 c |
+  % Page 7
+  % Page 8
+  % Page 9
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 tenMusic = \relative c' {
   \dynamicUp \numericTimeSignature
-  \time 6/4 R1*6/4 | \time 5/4 R1*5/4 | \time 6/4 R1*6/4 | \time 6/4 R1*6/4 |
+  \time 6/4 R1*6/4 | \time 5/4 R1*5/4 | \time 6/4 R1*6/4 | R1*6/4 |
   \time 5/4 R1*5/4 |
   R1*5/4 | \time 4/4 R1
   \time 5/4 g8 a8 bf[( g]) \times 2/3 { bf8[ (a bf]) } c4 d |
   \time 6/4 ef4. d8 c f d2 c4 |
   % page 5
-  \time 6/4 d4( c) d e( \times 2/3 { d8[) c] a } bf4( |
+  d4( c) d e( \times 2/3 { d8[) c] a } bf4( |
   \time 3/4 bf8) g a bf a r |
   \time 5/4 R1*5/4
-  \time 4/4 R1
+  \time 4/4 R1 |
   % page 6
+  \time 3/4 R1*3/4 |
+  \time 3/4 R1*3/4 |
+  \time 2/4 r4 r8. f16 |
+  \time 5/4 g16[( f]) g8( g4..) f16 bf16[( af]) g4 f8 |
+  \time 3/4 g8. g32 g32 \times 2/3 { af8 g af } g8 f |
+  % Page 7
+  % Page 8
+  % Page 9
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 basMusic = \relative c {
   \dynamicUp \numericTimeSignature
-  \time 6/4 R1*6/4 | \time 5/4 R1*5/4 | \time 6/4 R1*6/4 | \time 6/4 R1*6/4 |
+  \time 6/4 R1*6/4 | \time 5/4 R1*5/4 | \time 6/4 R1*6/4 | R1*6/4 |
   \time 5/4 R1*5/4 |
   R1*5/4 |
   \time 4/4 R1 | 
   \time 5/4 R1*5/4 |
   \time 6/4 a8 b c[ d] \times 2/3 { ef[ d ef] } af2 af4 |
   % page 5
-  \time 6/4 a2 bf4 a2( \times 2/3 { a8[) g] f } |
+  a2 bf4 a2( \times 2/3 { a8[) g] f } |
   \time 3/4 ef2( d8) r8 |
-  \time 5/4 R1*5/4
-  \time 4/4 R1
+  \time 5/4 R1*5/4 |
+  \time 4/4 R1 |
   % page 6
+  \time 3/4 R1*3/4 |
+  \time 3/4 R1*3/4 |
+  \time 2/4 r4 r8. f16 |
+  \time 5/4 g16[( f]) g8( g4..) f16 bf16[( af]) g4 f8 |
+  \time 3/4 g8. g32 g32 \times 2/3 { af8 g af } g8 f |
+  % Page 7
+  % Page 8
+  % Page 9
 }
 
 
@@ -122,14 +167,18 @@ basMusic = \relative c {
 
 \score {
   <<
+    \new Staff {
+      \set Staff.midiInstrument = "clarinet"
     \new Voice = "SoloVoice" << 
       \set Staff.instrumentName = "Solo"
       \autoBeamOff
       \global \soloNotes 
     >>
+    }
     \new ChoirStaff <<
 
       \new Staff = "sop" <<
+      \set Staff.midiInstrument = "flute"
         \new Voice = "sopranos" {
           \set Staff.instrumentName = "S"
           <<
@@ -140,6 +189,7 @@ basMusic = \relative c {
       >>
 
       \new Staff = "alt" <<
+	\set Staff.midiInstrument = #"oboe"
         \new Voice = "altos" {
           \set Staff.instrumentName = "A"
           <<
@@ -150,6 +200,8 @@ basMusic = \relative c {
       >>
 
       \new Staff = "ten" <<
+	% \set Staff.midiInstrument = #"cello"
+	\set Staff.midiInstrument = #"tenor sax"
         \clef "G_8"
         \new Voice = "tenors" {
           \set Staff.instrumentName = "T"
@@ -161,6 +213,7 @@ basMusic = \relative c {
       >>
 
       \new Staff = "bas" <<
+	\set Staff.midiInstrument = #"bassoon"
         \clef bass
         \new Voice = "basses" {
           \set Staff.instrumentName = "B"
