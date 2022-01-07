@@ -17,7 +17,7 @@ soloNotes = \relative c {
   \time 6/4 c4. bf8 a g a2 r8 a8 |
   bf4 a4. g8 c8[( bf]) a4 g8.[ g16] |
 \break
-  \time 5/4 ef'4. c8 bf af g4( f8[ ef] | 
+  \time 5/4 ef'4. c8 bf af g4( f8[ ef] |
   bf4) r4 r2 r4 |
   \time 4/4 R1 |
 \break
@@ -33,7 +33,7 @@ soloNotes = \relative c {
 \break
   % Page 6
   \time 3/4 ef8 d8( d4) \times 2/3 { c8 bf c8 } |
-  f4( \times 2/3 { f8[ ef c] } d8.[ c16]) | 
+  f4( \times 2/3 { f8[ ef c] } d8.[ c16]) |
   \time 2/4 af16[ g] f8 r4 |
 \break
   \time 5/4 R1*5/4 |
@@ -47,10 +47,18 @@ soloNotes = \relative c {
   \time 2/4 R1*2/4 |
   \time 3/4 R1*3/4 |
   \time 5/4 r4 gs8 a \times 2/3 { g8[( fs g]) } a4( gs8) fs |
+\break
   % Page 8
+  e2 \times 2/3 { fs8[ e] fs } gs8( a4) a8 |
+  \time 4/4 b8[( a16 gs16]) a2 fs8 c16[ b] |
+\break
+  \time 5/4 e4. d8 e d16 cs16 b4. d8 |
+  \time 4/4 cs4. r8 r2 |
+  r4 cs8[( d]) e[( d] d[) d] |
+\break
   % Page 9
-  
-  
+
+
 } % end of soloNotes
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -82,13 +90,19 @@ sopMusic = \relative c'' {
   \time 3/4 c8 d!8( e4.) r8 |
   \time 5/4 R1*5/4 |
   % Page 8
+  R1*5/4 |
+  \time 4/4 R1 |
+  \time 5/4 R1*5/4 |
+  \time 4/4 r8 gs,8 gs8 gs8 gs8 gs16 fs16 gs8 gs8 |
+            r8 gs8 gs8 gs16 fs16 gs8 fs gs8 gs8 |
+
   % Page 9
 } % end-of sopMusic
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 altMusic = \relative c'' {
   \dynamicUp \numericTimeSignature
-  
+
   \time 6/4 R1*6/4 | \time 5/4 R1*5/4 | \time 6/4 R1*6/4 | R1*6/4 |
   \time 5/4 R1*5/4 |
   | R1*5/4 |
@@ -114,6 +128,11 @@ altMusic = \relative c'' {
   \time 3/4 af8 g8( g4.) r8 |
   \time 5/4 R1*5/4 |
   % Page 8
+  R1*5/4 |
+  \time 4/4 R1 |
+  \time 5/4 R1*5/4 |
+  \time 4/4 r8 cs,8 cs8 cs8 cs8 cs16 b16 cs8 cs8 |
+            r8 cs8 cs8 cs16 b16 cs8 b cs8 cs8 |
   % Page 9
 } % end of altMusic
 
@@ -144,6 +163,11 @@ tenMusic = \relative c' {
   \time 3/4 d4 d4. r8 |
   \time 5/4 R1*5/4 |
   % Page 8
+  R1*5/4 |
+  \time 4/4 R1 |
+  \time 5/4 R1*5/4 |
+  \time 4/4 r8 gs,8 gs8 gs8 gs8 gs16 f16 gs8 gs8 |
+            r8 gs8 gs8 gs16 fs16 gs8 a gs8 gs8 |
   % Page 9
 }
 
@@ -153,7 +177,7 @@ basMusic = \relative c {
   \time 6/4 R1*6/4 | \time 5/4 R1*5/4 | \time 6/4 R1*6/4 | R1*6/4 |
   \time 5/4 R1*5/4 |
   R1*5/4 |
-  \time 4/4 R1 | 
+  \time 4/4 R1 |
   \time 5/4 R1*5/4 |
   \time 6/4 a8 b c[ d] \times 2/3 { ef[ d ef] } af2 af4 |
   % page 5
@@ -175,7 +199,13 @@ basMusic = \relative c {
   \time 3/4 g4 g4. r8 |
   \time 5/4 R1*5/4 |
   % Page 8
+  R1*5/4 |
+  \time 4/4 R1 |
+  \time 5/4 R1*5/4 |
+  \time 4/4 r8 cs,8 cs8 cs8 cs8 cs16 b16 cs8 cs8 |
+            r8 cs8 cs8 cs16 b16 cs8 d cs8 cs8 |
   % Page 9
+  % Page 10
 } % end of basMusic
 
 
@@ -187,7 +217,7 @@ basMusic = \relative c {
   % tagline = ##f
 }
 
-\layout {   
+\layout {
   #(layout-set-staff-size 14)
   \context {
     \Staff
@@ -197,20 +227,20 @@ basMusic = \relative c {
     \ChoirStaff
     \RemoveEmptyStaves
   }
-  % \context { 
+  % \context {
   %   \Lyrics
-  %   \override  LyricHyphen #'minimum-distance = #0.8 
-  % } 
+  %   \override  LyricHyphen #'minimum-distance = #0.8
+  % }
 }
 
 \score {
   <<
     \new Staff {
       \set Staff.midiInstrument = "clarinet"
-    \new Voice = "SoloVoice" << 
+    \new Voice = "SoloVoice" <<
       \set Staff.instrumentName = "Solo"
       \autoBeamOff
-      \global \soloNotes 
+      \global \soloNotes
     >>
     }
     \new ChoirStaff <<
