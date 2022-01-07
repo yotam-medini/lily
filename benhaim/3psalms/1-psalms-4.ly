@@ -62,7 +62,15 @@ soloNotes = \relative c {
 \break
   \time 4/4 gs8 a b16[( a]) gs8 r4 r8 cs8 |
   \time 5/4 cs4( b8) a8 b8[( a16 gs]) fs8 gs r8 fs16 gs16 |
+\break
   % Page 10
+  \time 3/4 a4( gs8[ fs]) fs8 e16 d16 |
+  cs2 r4 |
+  R1*3/4 |
+\break
+  \time 5/4 R1*5/4 |
+  e8 fs g8[( a]) \times 2/3 { g8[ fs! g] } a4 d,8 d8 |
+  \time 6/4  \times 2/3 { e8[( d e] } fs4) e8  d d4. r8 d8 e8 |
   % Page 11
 
 
@@ -102,12 +110,22 @@ sopMusic = \relative c'' {
   \time 5/4 R1*5/4 |
   \time 4/4 r8 gs,8 gs8 gs8 gs8 gs16 fs16 gs8 gs8 |
             r8 gs8 gs8 gs16 fs16 gs8 fs gs8 gs8 |
+\break
   % Page 9
   r8 gs8 gs gs gs4 fs8 gs |
   \time 3/4 r8 gs16 fs gs gs gs a gs4 |
+\break
   \time 4/4 fs8 gs gs gs gs16 a16 b16[ a16] gs4 |
   \time 5/4 r8 gs8 gs gs16 fs16 gs8 gs8 fs gs r4 |
+\break
   % Page 10
+  \time 3/4 r8 a8 b4( a4) |
+  r8 gs8 gs4 fs8 gs8 |
+  r8 gs16 gs16 gs8 fs gs a |
+\break
+  \time 5/4 b16[( a] gs4 fs8 gs2) r4 |
+  R1*5/4 |
+  \time 6/4 R1*6/4 |
   % Page 11
 
 } % end-of sopMusic
@@ -152,6 +170,12 @@ altMusic = \relative c'' {
   \time 4/4 b8 cs cs cs cs16 d16 c16[ d16] cs4 |
   \time 5/4 r8 cs8 cs cs16 b16 cs8 cs8 b cs r4 |
   % Page 10
+  \time 3/4 r8 d8 fs4( d4) |
+  r8 cs8 cs4 b8 cs8 |
+  r8 cs16 cs16 cs8 b cs d |
+  \time 5/4 e16[( d] cs4 b8 cs2) r4 |
+  R1*5/4 |
+  \time 6/4 R1*6/4 |
   % Page 11
 } % end of altMusic
 
@@ -193,6 +217,12 @@ tenMusic = \relative c' {
   \time 4/4 a8 gs gs b b16 a16 gs16[ gs16] gs4 |
   \time 5/4 r8 gs8 gs gs16 a16 gs8 a8 a gs r4 |
   % Page 10
+  \time 3/4 r8 a8 a4( fs4) |
+  r8 gs8 gs4 a8 gs8 |
+  r8 gs16 gs16 gs8 a gs fs |
+  \time 5/4 gs4.( a8 gs2) r4 |
+  R1*5/4 |
+  \time 6/4 R1*6/4 |
   % Page 11
 } % end of tenMusic
 
@@ -235,6 +265,12 @@ basMusic = \relative c {
   \time 4/4 d8 cs cs e e16 d16 c16[ b16] cs4 |
   \time 5/4 r8 cs8 cs cs16 d16 cs8 d8 d cs r4 |
   % Page 10
+  \time 3/4 r8 d8 d4( b4) |
+  r8 cs8 cs4 c8 cs8 |
+  r8 cs16 cs16 cs8 d cs b |
+  \time 5/4 cs4.( d8 cs2) r4 |
+  R1*5/4 |
+  \time 6/4 R1*6/4 |
   % Page 11
 } % end of basMusic
 
