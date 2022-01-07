@@ -43,11 +43,15 @@ soloNotes = \relative c {
   R1 |
   \time 3/4 R1*3/4 |
   R1*3/4 |
+\break
+  \time 2/4 R1*2/4 |
+  \time 3/4 R1*3/4 |
+  \time 5/4 r4 gs8 a \times 2/3 { g8[( fs g]) } a4( gs8) fs |
   % Page 8
   % Page 9
   
   
-}
+} % end of soloNotes
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {
@@ -74,6 +78,9 @@ sopMusic = \relative c'' {
   \time 4/4 g8. f32 g32 \times 2/3 { af8 g af } bf4 \times 2/3 { c8 bf c } |
   \time 3/4 df8 c8( c4) \times 2/3 {d8 c d } |
             df8 c8( c4) \times 2/3 {d8 c d } |
+  \time 2/4 ef4( df8[ c]) |
+  \time 3/4 c8 d!8( e4.) r8 |
+  \time 5/4 R1*5/4 |
   % Page 8
   % Page 9
 } % end-of sopMusic
@@ -103,10 +110,12 @@ altMusic = \relative c'' {
   \time 4/4 d8. c32 d32 \times 2/3 { ef8 d ef } f4 \times 2/3 { g8 f g } |
   \time 3/4 af8 bf( bf4) \times 2/3 {af8 bf af } |
             af8 bf( bf4) \times 2/3 {af8 bf af } |
-
+  \time 2/4 g8[( af bf af]) |
+  \time 3/4 af8 g8( g4.) r8 |
+  \time 5/4 R1*5/4 |
   % Page 8
   % Page 9
-}
+} % end of altMusic
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 tenMusic = \relative c' {
@@ -131,6 +140,9 @@ tenMusic = \relative c' {
   \time 4/4 g8. f32 g32 \times 2/3 { af8 g af } bf4 \times 2/3 { c8 bf c } |
   \time 3/4 df8 c8( c4) \times 2/3 {bf8 c bf } |
             df8 c8( c4) \times 2/3 {bf8 c bf } |
+  \time 2/4 bf4( c8[ d!]) |
+  \time 3/4 d4 d4. r8 |
+  \time 5/4 R1*5/4 |
   % Page 8
   % Page 9
 }
@@ -159,6 +171,9 @@ basMusic = \relative c {
   \time 4/4 g8. f32 g32 \times 2/3 { f8 g f } bf4 \times 2/3 { g8 af g } |
   \time 3/4 af8 g8( g4) \times 2/3 {a8 g a } |
             af8 g8( g4) \times 2/3 {f8 g f } |
+  \time 2/4 c8[ df ef f] |
+  \time 3/4 g4 g4. r8 |
+  \time 5/4 R1*5/4 |
   % Page 8
   % Page 9
 } % end of basMusic
