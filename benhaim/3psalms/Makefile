@@ -15,8 +15,14 @@ BASES = 1-psalms-4
 MIDIS1 = 1-psalms-4.midi
 MIDIS1 += $(foreach voice, sop alt ten bas, 1-psalms-4-${voice}.midi)
 
+MIDIS2 = 2-psalms-23.midi
+MIDIS2 += $(foreach voice, sop alt ten bas, 2-psalms-23-${voice}.midi)
+
 
 1-psalms-4.pdf 1-psalms-4.midi : 1-psalms-4.ly
+	lilypond --pdf $<
+
+2-psalms-23.pdf 2-psalms-23.midi : 2-psalms-23.ly
 	lilypond --pdf $<
 
 MIDIMORE=1.2 10
