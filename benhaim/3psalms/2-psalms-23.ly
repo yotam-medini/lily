@@ -38,7 +38,17 @@ sopMusic = \relative c'' {
   R1*3/4 |
   R1*3/4 |
   r4 r4 r8 a8 |
+\break
   % page 15
+  b4 b8. a16 b16[( a]) a[( g]) |
+  c4 b a8. a16 |
+  b16[( a g8] a4) b8 c |
+  b2 r8 a8 |
+\break
+  b4 b8. a16 b16[( a]) a[( g]) |
+  c4 b a8. a16 |
+  b16( a g8] a4) b8 c |
+  d2. |
   % page 16
   % page 17
   % page 18
@@ -76,6 +86,15 @@ altMusic = \relative c'' {
   R1*3/4 |
   r4 r4 r8 e8
   % page 15
+  fs4 b,4.( fs'8) |
+  e4 fs8 fs g4 |
+  fs4 e2 |
+  fs4 b, r8 a'8 |
+
+  fs2 d8 d8 |
+  c4 d e |
+  d e( d8[ e]) |
+  d2 a'4 |
   % page 16
   % page 17
   % page 18
@@ -113,6 +132,15 @@ tenMusic = \relative c' {
   R1*3/4 |
   R1*3/4 |
   % page 15
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  r4 r4 r8 a8 |
+
+  b2 g8 g8 |
+  g4 f g |
+  fs8[( g]) g4( a8[ g]) |
+  fs4( g) c |
   % page 16
   % page 17
   % page 18
@@ -150,6 +178,15 @@ basMusic = \relative c {
   R1*3/4 |
   R1*3/4 |
   % page 15
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  r4 r4 r8 a8 |
+
+  g2 e'8 e8 |
+  a,4 b c |
+  g c( b8 a8) |
+  b2 a4 |
   % page 16
   % page 17
   % page 18
