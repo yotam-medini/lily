@@ -29,12 +29,12 @@ soloNotes = \relative c {
   R1*6/4 |
   \time 3/4 r4 r4 r8. a'16 |
 \break
-  \time 5/4 bf8 a8( a4) r8. g16 c16[ bf!16] a4 a8 |
+  \time 5/4 bf8 a8~ a4 r8. g16 c16[ bf!16] a4 a8 |
   \time 4/4 a8. g32 a32 bf8 a16 bf16 c4 \times 2/3 { d8 c d } |
 \break
   % Page 6
-  \time 3/4 ef8 d8( d4) \times 2/3 { c8 bf c8 } |
-  f4( \times 2/3 { f8[ ef c] } d8.[ c16]) |
+  \time 3/4 ef8 d8~ d4 \times 2/3 { c8 bf c8 } |
+  f4~( \times 2/3 { f8[ ef c] } d8.[ c16]) |
   \time 2/4 af16[ g] f8 r4 |
 \break
   \time 5/4 R1*5/4 |
@@ -77,7 +77,7 @@ soloNotes = \relative c {
   g4.( fs8) e8 d e4( fs) d8 e8 |
   g4( fs4.) e8 a8[( g8]) fs4 d8 d8 | 
   \time 4/4 fs2( e8[ d8] e4) |
-  \time 5/4 d2( d8) r8 r2 |
+  \time 5/4 d2~ d8 r8 r2 |
 \break
   \time 3/4 R1*3/4 |
   \time 4/4 R1 |
@@ -184,7 +184,7 @@ altMusic = \relative c'' {
   % Page 9
   r8 cs8 cs cs cs4 b8 cs |
   \time 3/4 r8 cs16 b cs cs cs d cs4 |
-  \time 4/4 b8 cs cs cs cs16 d16 c16[ d16] cs4 |
+  \time 4/4 b8 cs cs cs cs16 d16 e16[ d16] cs4 |
   \time 5/4 r8 cs8 cs cs16 b16 cs8 cs8 b cs r4 |
   % Page 10
   \time 3/4 r8 d8 fs4( d4) |
@@ -211,8 +211,8 @@ tenMusic = \relative c' {
   \time 6/4 R1*6/4 | \time 5/4 R1*5/4 | \time 6/4 R1*6/4 | R1*6/4 |
   \time 5/4 R1*5/4 |
   R1*5/4 | \time 4/4 R1
-  \time 5/4 g8 a8 bf[( g]) \times 2/3 { bf8[ (a bf]) } c4 d |
-  \time 6/4 ef4. d8 c f d2 c4 |
+  \time 5/4 g8 a8 bf[( c]) \times 2/3 { bf8[ (a bf]) } c4 d |
+  \time 6/4 ef4. d8 c b! d2 c4 |
   % page 5
   d4( c) d e( \times 2/3 { d8[) c] a } bf4~ |
   \time 3/4 bf8 g a bf a r |
@@ -235,12 +235,12 @@ tenMusic = \relative c' {
   R1*5/4 |
   \time 4/4 R1 |
   \time 5/4 R1*5/4 |
-  \time 4/4 r8 gs,8 gs8 gs8 gs8 gs16 f16 gs8 gs8 |
+  \time 4/4 r8 gs,8 gs8 gs8 gs8 gs16 fs16 gs8 gs8 |
             r8 gs8 gs8 gs16 fs16 gs8 a gs8 gs8 |
   % Page 9
   r8 gs8 gs gs gs4 a8 gs |
   \time 3/4 r8 gs16 a gs gs gs fs gs4 |
-  \time 4/4 a8 gs gs b b16 a16 gs16[ gs16] gs4 |
+  \time 4/4 a8 gs gs b b16 a16 gs16[ fs16] gs4 |
   \time 5/4 r8 gs8 gs gs16 a16 gs8 a8 a gs r4 |
   % Page 10
   \time 3/4 r8 a8 a4( fs4) |
@@ -280,7 +280,7 @@ basMusic = \relative c {
   \time 3/4 R1*3/4 |
   \time 2/4 r4 r8. f16 |
   \time 5/4 g16[( f]) g8~ g4.. f16 bf16[( af]) g4 f8 |
-  \time 3/4 g8. g32 g32 \times 2/3 { af8 g af } g8 f |
+  \time 3/4 g8. f32 g32 \times 2/3 { af8 g af } g8 f |
   % Page 7
   \time 4/4 g8. f32 g32 \times 2/3 { f8 g f } bf4 \times 2/3 { g8 af g } |
   \time 3/4 af8 g8~ g4 \times 2/3 {a8 g a } |
@@ -297,7 +297,7 @@ basMusic = \relative c {
   % Page 9
   r8 cs8 cs cs cs4 a8 cs |
   \time 3/4 r8 cs16 d cs cs cs b cs4 |
-  \time 4/4 d8 cs cs e e16 d16 c16[ b16] cs4 |
+  \time 4/4 d8 cs cs e e16 d16 cs16[ b16] cs4 |
   \time 5/4 r8 cs8 cs cs16 d16 cs8 d8 d cs r4 |
   % Page 10
   \time 3/4 r8 d8 d4( b4) |

@@ -42,6 +42,6 @@ release: ${MIDIS1}
 	for f in 1-psalms-4.pdf ${MIDIS1}; do \
            tgt=$$(echo $${f} | cut -d. -f1)-${NOW}.$$(echo $${f} | cut -d. -f2); \
 	   tgtmid=$$(echo $${tgt} | sed -e s/midi/mid/); \
-	   echo cp $${f} release.d/$${tgtmid}; \
+	   cp $${f} release.d/$${tgtmid}; \
         done
 
