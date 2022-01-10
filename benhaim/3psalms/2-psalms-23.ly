@@ -61,6 +61,10 @@ sopMusic = \relative c'' {
   g2 r4 |
   R1*3/4 |
   % page 17
+  R1*3/4 | R1*3/4 | R1*3/4 | R1*3/4 |
+\break
+  R1*3/4 | R1*3/4 | R1*3/4 |
+  \time 2/4 r4 d8 d |
   % page 18
   % page 19
   % page 20
@@ -116,6 +120,10 @@ altMusic = \relative c'' {
   g2 r4 |
   R1*3/4 |
   % page 17
+  R1*3/4 | R1*3/4 | R1*3/4 | R1*3/4 |
+
+  R1*3/4 | R1*3/4 | R1*3/4 |
+  \time 2/4 r4 d8 d |
   % page 18
   % page 19
   % page 20
@@ -171,6 +179,10 @@ tenMusic = \relative c' {
   d2 r4 |
   R1*3/4 |
   % page 17
+  R1*3/4 | R1*3/4 | R1*3/4 | R1*3/4 |
+
+  R1*3/4 | R1*3/4 | R1*3/4 |
+  \time 2/4 r2 |
   % page 18
   % page 19
   % page 20
@@ -226,6 +238,10 @@ basMusic = \relative c {
   g,2 r4 |
   R1*3/4 |
   % page 17
+  R1*3/4 | R1*3/4 | R1*3/4 | R1*3/4 |
+
+  R1*3/4 | R1*3/4 | R1*3/4 |
+  \time 2/4 r2 |
   % page 18
   % page 19
   % page 20
