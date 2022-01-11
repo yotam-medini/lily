@@ -75,9 +75,20 @@ sopMusic = \relative c'' {
   \time 4/4 b16[( a g8]) g4. r8 g8 g |
   \time 3/4 e'4 d16[( c) d( c]) b8 c |
   c16[( b a8]) a8( b) c d |
-  % page 19
-  % page 20
-  % page 21
+\break
+  % page 19, bar 54
+  \time 2/4 b4 a16[( g a8]) |
+  \time 3/4 b2 r8 g8 |
+  \time 4/4 b4 c8. c16 b16[( a]) a[( g]) a[( b c8]) |
+\break % bar 57
+  \time 3/4 b2 r8 a8 |
+  b16[( a g8] a4) b8 c! |
+  d2. |
+  d4 e fs |
+  % page 20, bar 61
+\break % bar 64
+  % page 21 % bar 68
+\break % bar 72
 } % end-of sopMusic
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,9 +152,19 @@ altMusic = \relative c'' {
   \time 4/4 g4 e4. r8 g8 g |
   \time 3/4 g4 g8 g g4 |
   g4 g g8 g |
-  % page 19
-  % page 20
-  % page 21
+  % page 19, bar 54
+  \time 2/4 fs4 g |
+  \time 3/4 fs2 r8 g8 |
+  \time 4/4 e4 fs g g8[ f] |
+  % bar 57
+  \time 3/4 fs2 r8 f8 |
+  e2  e8 e |
+  fs2. |
+  fs4 g b8[( a]) |
+  % page 20, bar 61
+   % bar 64
+  % page 21 % bar 68
+  % bar 72
 } % end of altMusic
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -207,10 +228,19 @@ tenMusic = \relative c' {
   \time 4/4 r2 r4 g,8 g8 |
   \time 3/4 c4 c8 d e4 |
   c4 e e8 e |
-  
-  % page 19
-  % page 20
-  % page 21
+  % page 19, bar 54
+  \time 2/4 ds4 cs |
+  \time 3/4 ds2 r8 b8 |
+  \time 4/4 c2 e4 e |
+  % bar 57
+  \time 3/4 ds2 r8 e8 |
+  d!4( cs) b8 a |
+  b4( c!) d |
+  d4 c d |
+  % page 20, bar 61
+  % bar 64
+  % page 21 % bar 68
+  % bar 72
 } % end of tenMusic
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -274,9 +304,19 @@ basMusic = \relative c {
   \time 4/4 r2 r4 g8 g8 |
   \time 3/4 c,4 c8 c c4 |
   a4 c a8 a |
-  % page 19
-  % page 20
-  % page 21
+  % page 19, bar 54
+  \time 2/4 b4 e |
+  \time 3/4 b2 r8 b8 |
+  \time 4/4 a2 b4 c4 |
+  % bar 57
+  \time 3/4 b2 r8 fs8 |
+  g4 a4. a8 |
+  b2 a4 |
+  b4( a) d, |
+  % page 20, bar 61
+   % bar 64
+  % page 21 % bar 68
+  % bar 72
 } % end of basMusic
 
 LHMusic = \relative c {
@@ -336,6 +376,13 @@ LHMusic = \relative c {
   a2. |
   e2.~ |
   \time 2/4 e2 |
+
+  % page 19, bar 54
+  % bar 57
+  % page 20, bar 61
+  % bar 64
+  % page 21 % bar 68
+  % bar 72
 }
 
 
