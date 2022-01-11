@@ -85,10 +85,26 @@ sopMusic = \relative c'' {
   b16[( a g8] a4) b8 c! |
   d2. |
   d4 e fs |
+\break
   % page 20, bar 61
+  g4.( fs16[ e] d4) |
+  d16[( c]) c[( b]) a4 b |
+  c8 d16[( c]) c[( b]) b[( a]) b8. b16 |
 \break % bar 64
+  \time 4/4 c8.[( b16]) c16[( b]) b[( a]) b8( c) d! e |
+  \time 2/4 d4. c8 |
+  \time 3/4 e4 << d4. fs4. >> <<d8 g8>> |
+  <<d2 g2>> r4 |
   % page 21 % bar 68
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
 \break % bar 72
+  r4 << e,4. b'4. >> << fs8 b8 >> |
+  << { fs4( g4) } b2 >> << a4 b4 >> |
+  << a2.~ b2.~ >> |
+  << a2. b2. >> |
 } % end-of sopMusic
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -162,9 +178,24 @@ altMusic = \relative c'' {
   fs2. |
   fs4 g b8[( a]) |
   % page 20, bar 61
-   % bar 64
+  g2 fs4 |
+  g2~ g8 fs |
+  e2 ds4 |
+  % bar 64
+  \time 4/4 g4 g g b8( c) |
+  \time 2/4 fs2 |
+  \time 3/4 b4 a4. g8 |
+  g2 r4 |
   % page 21 % bar 68
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
   % bar 72
+  r4 << g,,4. e'4. >> << a,8 d8 >> |
+  << { a4( b4) } d2 >> << cs4 e4 >> |
+  << d2.~ e2.~ >> |
+  << d2. e2. >> |
 } % end of altMusic
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -238,9 +269,26 @@ tenMusic = \relative c' {
   b4( c!) d |
   d4 c d |
   % page 20, bar 61
+  d4.( cs8) d4 |
+  e2 ds4 |
+  e2 ds4 |
   % bar 64
+  \time 4/4 e4 ds d4. g8 |
+  \time 2/4 fs2~ |
+  \time 3/4 fs4 e2 |
+  <<d2 g2>> r4
   % page 21 % bar 68
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
   % bar 72
+  R1*3/4 |
+  r4 <<e,4. b'4.>> <<e,8 b'8>> |
+  << { \times 2/3 { e4 e8 } } { \times 2/3 { b8 a8 b8 } }>>
+    <<e,2~ b'2~>> |
+  <<e,2. b'2.>> |
+ 
 } % end of tenMusic
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -309,14 +357,30 @@ basMusic = \relative c {
   \time 3/4 b2 r8 b8 |
   \time 4/4 a2 b4 c4 |
   % bar 57
-  \time 3/4 b2 r8 fs8 |
+  \time 3/4 b2 r8 fs'8 |
   g4 a4. a8 |
   b2 a4 |
   b4( a) d, |
   % page 20, bar 61
-   % bar 64
+  e2 b'4 |
+  a8 b c4 b |
+  a2 b4 |
+  % bar 64
+  \time 4/4 a4( b~ b4.) a8 |
+  \time 2/4 b4 a |
+  \time 3/4 d4 d4. d,8 |
+  g2 r4 |
   % page 21 % bar 68
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
   % bar 72
+  R1*3/4 |
+  r4 <<g,4. d'4.>> <<g,8 d'8>> |
+  << { \times 2/3 { g4 g8 } } { \times 2/3 { d8 c8 d8 } }>>
+    <<g,2~ d'2~>> |
+  <<g,2. d'2.>> |
 } % end of basMusic
 
 LHMusic = \relative c {
@@ -361,7 +425,7 @@ LHMusic = \relative c {
   R1*3/4 |
   R1*3/4 |
   R1*3/4 |
-  % bar 36 
+  % bar 36
   R1*3/4 |
   R1*3/4 |
   g,8 r8 g'2 |
@@ -376,14 +440,44 @@ LHMusic = \relative c {
   a2. |
   e2.~ |
   \time 2/4 e2 |
-
-  % page 19, bar 54
-  % bar 57
+  % page 18
+  \time 3/4 R1*3/4 |
+  \time 4/4 R1 |
+  \time 3/4 R1*3/4 |
+% % bar 51
+  \time 4/4 R1 |
+  \time 3/4 R1*3/4 |
+  \time 3/4 R1*3/4 |
+% % page 19, bar 54
+  \time 2/4 R1*2/4 |
+  \time 3/4 R1*3/4 |
+  \time 4/4 R1 |
+% % bar 57
+  \time 3/4 R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
   % page 20, bar 61
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
   % bar 64
+  \time 4/4 R1 |
+  \time 2/4 R1*2/4 |
+  \time 3/4 R1*3/4 |
+  g2 e4 |
   % page 21 % bar 68
+  cs2  b4 |
+  a4 b c! |
+  d4 e fs |
+  g4 a b |
+ \break
   % bar 72
-}
+  g4. r8 r4 |
+  R1*3/4 |
+  r4 r4 r8 g,8~ |
+  g2. |
+} % end of LHMusic
 
 
 \header {
