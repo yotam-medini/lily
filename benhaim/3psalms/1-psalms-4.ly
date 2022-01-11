@@ -11,7 +11,7 @@ global = {
 soloNotes = \relative c {
   \dynamicUp \numericTimeSignature
   \clef "bass"
-  \time 6/4 r4 d8 e f[( g]) \times 2/3 { d8[ c d] } e4 d |
+  \time 6/4 r4 d8 e f[( g]) \times 2/3 { f8[ e f] } g4 d |
   \set Score.currentBarNumber = #7
   \time 5/4 \times 2/3 { a'8[ g a] } bf4. a8 g4. a8 |
 \break
@@ -19,7 +19,7 @@ soloNotes = \relative c {
   bf4 a4. g8 c8[( bf]) a4 g8.[ g16] |
 \break
   \time 5/4 ef'4. c8 bf af g4( f8[ ef] |
-  bf4) r4 r2 r4 |
+  d4) r4 r2 r4 |
   \time 4/4 R1 |
 \break
   \time 5/4 R1*5/4 |
@@ -40,29 +40,29 @@ soloNotes = \relative c {
   \time 5/4 R1*5/4 |
   \time 4/4 R1*3/4 |
 \break
-  % Page 7
+  % Page 7, bar 24
   R1 |
   \time 3/4 R1*3/4 |
   R1*3/4 |
-\break
+\break % bar 27
   \time 2/4 R1*2/4 |
   \time 3/4 R1*3/4 |
-  \time 5/4 r4 gs8 a \times 2/3 { g8[( fs g]) } a4( gs8) fs |
+  \time 5/4 r4 gs8 a \times 2/3 { gs8[( fs gs]) } a4( gs!8) fs! |
 \break
-  % Page 8
+  % Page 8, bar 30
   e2 \times 2/3 { fs8[ e] fs } gs8( a4) a8 |
   \time 4/4 b8[( a16 gs16]) a2 fs8 e16[( d]) |
-\break
+\break % bar 32
   \time 5/4 e4. d8 e d16 cs16 b4. d8 |
   \time 4/4 cs4. r8 r2 |
-  r4 cs8[( d]) e[( d] d[) d] |
+  r4 cs8[( d]) e[( d] c[) c] |
 \break
-  % Page 9
-  cs8 cs16 d16 e8[ d] c4 r4 |
+  % Page 9, bar 35
+  cs8 cs16 d16 e8[ d] cs4 r4 |
   \time 3/4 r8 cs8 gs'4 gs8 fs |
 \break
-  \time 4/4 gs8 a b16[( a]) gs8 r4 r8 cs8 |
-  \time 5/4 cs4( b8) a8 b8[( a16 gs]) fs8 gs r8 fs16 gs16 |
+  \time 4/4 gs8 a b16[( a]) gs8 r4 r8 cs,8 |
+  \time 5/4 cs'4( b8) a8 b8[( a16 gs]) fs8 gs r8 fs16 gs16 |
 \break
   % Page 10
   \time 3/4 a4( gs8[ fs]) fs8 e16 d16 |
@@ -106,12 +106,12 @@ sopMusic = \relative c'' {
   \time 2/4 r4 r8. f16 |
   \time 5/4 g16[( f]) g8~ g4.. f16 bf16[( af]) g4 f8 |
   \time 3/4 g8. f32 g32 \times 2/3 { af8 g af } g8 f |
-  % page 7
+  % page 7, bar 24
   \time 4/4 g8. f32 g32 \times 2/3 { af8 g af } bf4 \times 2/3 { c8 bf c } |
-  \time 3/4 df8 c8~ c4 \times 2/3 {d8 c d } |
-            df8 c8~ c4 \times 2/3 {d8 c d } |
+  \time 3/4 df8 c8~ c4 \times 2/3 {df8 c df } |
+            df8 c8~ c4 \times 2/3 {df8 c df } |
   \time 2/4 ef4( df8[ c]) |
-  \time 3/4 c8 d!8( e4.) r8 |
+  \time 3/4 c8 d!8~ d4. r8 |
   \time 5/4 R1*5/4 |
   % Page 8
   R1*5/4 |
@@ -120,12 +120,12 @@ sopMusic = \relative c'' {
   \time 4/4 r8 gs,8 gs8 gs8 gs8 gs16 fs16 gs8 gs8 |
             r8 gs8 gs8 gs16 fs16 gs8 fs gs8 gs8 |
 \break
-  % Page 9
+  % Page 9, bar 35
   r8 gs8 gs gs gs4 fs8 gs |
   \time 3/4 r8 gs16 fs gs gs gs a gs4 |
 \break
   \time 4/4 fs8 gs gs gs gs16 a16 b16[ a16] gs4 |
-  \time 5/4 r8 gs8 gs gs16 fs16 gs8 gs8 fs gs r4 |
+  \time 5/4 r8 gs8 gs gs16 fs16 gs!8 fs!8 fs gs r4 |
 \break
   % Page 10
   \time 3/4 r8 a8 b4( a4) |
@@ -143,7 +143,7 @@ sopMusic = \relative c'' {
 
   \time 3/4 d8 d16 d16 d8 c d d |
   \time 4/4 r8 d8 d c d4 d8 d8 |
-  \time 3/4 r16 d16 c8 d c d c |
+  \time 3/4 r8 d16 c16 d8 c d c |
   d2. |
 } % end-of sopMusic
 
@@ -166,9 +166,9 @@ altMusic = \relative c'' {
   \time 3/4 R1*3/4 |
   \time 3/4 R1*3/4 |
   \time 2/4 r4 r8. f16 |
-  \time 5/4 d16[( c]) d8~ d4.. c16 f16[( af]) f4 c8 |
+  \time 5/4 d16[( c]) d8~ d4.. c16 f16[( ef]) d4 c8 |
   \time 3/4 d8. c32 d32 \times 2/3 { ef8 d ef } d8 c |
-  % Page 7
+  % Page 7, bar 22
   \time 4/4 d8. c32 d32 \times 2/3 { ef8 d ef } f4 \times 2/3 { g8 f g } |
   \time 3/4 af8 bf~ bf4 \times 2/3 {af8 bf af } |
             af8 bf~ bf4 \times 2/3 {af8 bf af } |
@@ -181,11 +181,11 @@ altMusic = \relative c'' {
   \time 5/4 R1*5/4 |
   \time 4/4 r8 cs,8 cs8 cs8 cs8 cs16 b16 cs8 cs8 |
             r8 cs8 cs8 cs16 b16 cs8 b cs8 cs8 |
-  % Page 9
+  % Page 9, bar 35
   r8 cs8 cs cs cs4 b8 cs |
   \time 3/4 r8 cs16 b cs cs cs d cs4 |
   \time 4/4 b8 cs cs cs cs16 d16 e16[ d16] cs4 |
-  \time 5/4 r8 cs8 cs cs16 b16 cs8 cs8 b cs r4 |
+  \time 5/4 r8 cs8 cs cs16 b16 cs!8 b8 b cs r4 |
   % Page 10
   \time 3/4 r8 d8 fs4( d4) |
   r8 cs8 cs4 b8 cs8 |
@@ -201,7 +201,7 @@ altMusic = \relative c'' {
 
   \time 3/4 d8 d16 d16 d8 c d d |
   \time 4/4 r8 d8 d c d4 d8 d8 |
-  \time 3/4 r16 d16 c8 d c d c |
+  \time 3/4 r8 d16 c16 d8 c d c |
   d2. |
 } % end of altMusic
 
@@ -213,8 +213,8 @@ tenMusic = \relative c' {
   R1*5/4 | \time 4/4 R1
   \time 5/4 g8 a8 bf[( c]) \times 2/3 { bf8[ (a bf]) } c4 d |
   \time 6/4 ef4. d8 c b! d2 c4 |
-  % page 5
-  d4( c) d e( \times 2/3 { d8[) c] a } bf4~ |
+  % page 5 , bar 15
+  d4( c) d d~ \times 2/3 { d8[( c]) a } bf4~ |
   \time 3/4 bf8 g a bf a r |
   \time 5/4 R1*5/4
   \time 4/4 R1 |
@@ -224,10 +224,10 @@ tenMusic = \relative c' {
   \time 2/4 r4 r8. f16 |
   \time 5/4 g16[( f]) g8 ~ g4.. f16 bf16[( af]) g4 f8 |
   \time 3/4 g8. f32 g32 \times 2/3 { af8 g af } g8 f |
-  % Page 7
+  % Page 7, bar 24
   \time 4/4 g8. f32 g32 \times 2/3 { af8 g af } bf4 \times 2/3 { c8 bf c } |
-  \time 3/4 df8 c8~ c4 \times 2/3 {bf8 c bf } |
-            df8 c8~ c4 \times 2/3 {bf8 c bf } |
+  \time 3/4 bf8 c8~ c4 \times 2/3 {bf8 c bf } |
+            bf8 c8~ c4 \times 2/3 {bf8 c bf } |
   \time 2/4 bf4( c8[ d!]) |
   \time 3/4 d4 d4. r8 |
   \time 5/4 R1*5/4 |
@@ -257,7 +257,7 @@ tenMusic = \relative c' {
 
   \time 3/4 d8 d16 d16 d8 c d d |
   \time 4/4 r8 d8 d c d4 d8 d8 |
-  \time 3/4 r16 d16 c8 d c d c |
+  \time 3/4 r8 d16 c16 d8 c d c |
   d2. |
 } % end of tenMusic
 
@@ -281,8 +281,8 @@ basMusic = \relative c {
   \time 2/4 r4 r8. f16 |
   \time 5/4 g16[( f]) g8~ g4.. f16 bf16[( af]) g4 f8 |
   \time 3/4 g8. f32 g32 \times 2/3 { af8 g af } g8 f |
-  % Page 7
-  \time 4/4 g8. f32 g32 \times 2/3 { f8 g f } bf4 \times 2/3 { g8 af g } |
+  % Page 7, bar 27
+  \time 4/4 g8. f32 g32 \times 2/3 { f8 g f } g4 \times 2/3 { g8 af g } |
   \time 3/4 af8 g8~ g4 \times 2/3 {a8 g a } |
             af8 g8~ g4 \times 2/3 {f8 g f } |
   \time 2/4 c8[ df ef f] |
@@ -294,14 +294,14 @@ basMusic = \relative c {
   \time 5/4 R1*5/4 |
   \time 4/4 r8 cs,8 cs8 cs8 cs8 cs16 b16 cs8 cs8 |
             r8 cs8 cs8 cs16 b16 cs8 d cs8 cs8 |
-  % Page 9
-  r8 cs8 cs cs cs4 a8 cs |
+  % Page 9, bar 35
+  r8 cs8 cs cs cs4 d8 cs |
   \time 3/4 r8 cs16 d cs cs cs b cs4 |
   \time 4/4 d8 cs cs e e16 d16 cs16[ b16] cs4 |
   \time 5/4 r8 cs8 cs cs16 d16 cs8 d8 d cs r4 |
-  % Page 10
+  % Page 10, bar 39
   \time 3/4 r8 d8 d4( b4) |
-  r8 cs8 cs4 c8 cs8 |
+  r8 cs8 cs4 d8 cs8 |
   r8 cs16 cs16 cs8 d cs b |
   \time 5/4 cs4.( d8 cs2) r4 |
   R1*5/4 |
@@ -314,13 +314,13 @@ basMusic = \relative c {
 
   \time 3/4 d8 d16 d16 d8 c d d |
   \time 4/4 r8 d8 d c d4 d8 d8 |
-  \time 3/4 r16 d16 c8 d c d c |
+  \time 3/4 r8 d16 c16 d8 c d c |
   d2. |
 } % end of basMusic
 
 
 \header {
-  title = "Psalms 4"
+  title = "Psalms 4  תהלים ד"
   composer = "Paul Ben-Haim"
   % Do not display the tagline for this book
   % tagline = ##f

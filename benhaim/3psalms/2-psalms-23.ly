@@ -50,19 +50,20 @@ sopMusic = \relative c'' {
   b16( a g8] a4) b8 c |
   d2. |
 \break
-  % page 16
+  % page 16, bar 32
   d4 e fs |
   g4. fs16[ e] d8 e |
   d16[( c]) c[( b]) a4 b |
   c8 d16[( c]) c[( b]) a8 b4 |
-\break
+\break % bqr 36
   c8. b16 c16[(b] a8 b) c8 |
   b4( a4. g8) |
   g2 r4 |
   R1*3/4 |
-  % page 17
-  R1*3/4 | R1*3/4 | R1*3/4 | R1*3/4 |
 \break
+  % page 17, bar 40
+  R1*3/4 | R1*3/4 | R1*3/4 | R1*3/4 |
+\break % bar 44
   R1*3/4 | R1*3/4 | R1*3/4 |
   \time 2/4 r4 d8 d |
 \break
@@ -278,6 +279,65 @@ basMusic = \relative c {
   % page 21
 } % end of basMusic
 
+LHMusic = \relative c {
+  \dynamicUp \numericTimeSignature
+  % page 12
+  e2 fs8[ d] |
+  e2 r4 |
+  \time 4/4 e2 e4  fs8[ d] |
+  % page 13m b1r 7
+  \time 3/4 e2. |
+  e2. |
+  e2. |
+  \time 4/4 R1*4/4 |
+  % bar 11
+  \time 2/4 r2 |
+  \time 3/4 R1*3/4 |
+  R1*3/4 |
+  \time 4/4 R1*4/4
+  % page 14, bar 15
+  \time 2/4 R1*2/4 |
+  \time 3/4 r4 g,2 |
+  g8 r8 e4 c' |
+  g4 g'2 |
+  e4 c' e, |
+  % bar 20
+  g4 e, c |
+  b4 c'8[ b] a4 |
+  b c cs
+  d4 e fs |
+  % page 15, bar 24
+  b,2 c8 r8 |
+  a'4 b c |
+  d4 c( b8[) a] |
+  b4 b, a |
+  % bar 28
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  % page 16, bar 32
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  % bar 36 
+  R1*3/4 |
+  R1*3/4 |
+  g,8 r8 g'2 |
+  g8 r8 e4 c' |
+  % page 17, bar 40
+  g4 g'2 |
+  e4 c' a |
+  g4 e, c |
+  g4 c'8[ b] a4 |
+  % bar 44
+  g4 a g |
+  a2. |
+  e2.~ |
+  \time 2/4 e2 |
+}
+
 
 \header {
   title = "Psalms 23  תהלים כג"
@@ -354,6 +414,15 @@ basMusic = \relative c {
         }
       >>
     >>
+    \new Staff {
+      \set Staff.midiInstrument = "acoustic grand"
+      \clef bass
+    \new Voice = "SoloVoice" <<
+      \set Staff.instrumentName = "Piano LH"
+      \autoBeamOff
+      \global \LHMusic
+    >>
+    }
   >>
 
   \header { }
