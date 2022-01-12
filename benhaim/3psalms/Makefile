@@ -12,7 +12,8 @@ NOW := $(shell date "+%Y%m%d-%H%M%S")
 
 BASE1 = 1-psalms-4
 BASE2 = 2-psalms-23
-BASES = ${BASE1} ${BASE2}
+BASE3 = 3-psalms-147
+BASES = ${BASE1} ${BASE2} ${BASE3}
 
 MIDIS1 = ${BASE1}.midi
 MIDIS1 += $(foreach voice, sop alt ten bas, ${BASE1}-${voice}.midi)
@@ -20,12 +21,18 @@ MIDIS1 += $(foreach voice, sop alt ten bas, ${BASE1}-${voice}.midi)
 MIDIS2 = ${BASE2}.midi
 MIDIS2 += $(foreach voice, sop alt ten bas, ${BASE2}-${voice}.midi)
 
-MIDIS = ${MIDIS1} ${MIDIS2}
+MIDIS3 = ${BASE3}.midi
+MIDIS3 += $(foreach voice, sop alt ten bas, ${BASE3}-${voice}.midi)
 
-1-psalms-4.pdf 1-psalms-4.midi : 1-psalms-4.ly
+MIDIS = ${MIDIS1} ${MIDIS2} ${MIDIS3}
+
+${BASE1}.pdf ${BASE1}.midi : ${BASE1}.ly
 	lilypond --pdf $<
 
-2-psalms-23.pdf 2-psalms-23.midi : 2-psalms-23.ly
+${BASE2}.pdf ${BASE2}.midi : ${BASE2}.ly
+	lilypond --pdf $<
+
+${BASE3}.pdf ${BASE3}.midi : ${BASE3}.ly
 	lilypond --pdf $<
 
 MIDIMORE=1.2 10
@@ -56,9 +63,10 @@ ${BASE2}-ten.midi: ${BASE2}.midi
 ${BASE2}-bas.midi: ${BASE2}.midi
 	midiconv -tv 4 ${MIDIMORE}  -tv -1 ${MIDILESS}  $< $@
 
-PDFS = 1-psalms-4.pdf 2-psalms-23.pdf
+PDFS = ${BASE1}.pdf ${BASE2}.pdf ${BASE3}.pdf
 midis1: ${MIDIS1}
 midis2: ${MIDIS2}
+midis3: ${MIDIS3}
 
 RELEASE_FILES = ${PDFS} ${MIDIS}
 
