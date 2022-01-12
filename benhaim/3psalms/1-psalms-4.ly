@@ -100,7 +100,7 @@ sopMusic = \relative c'' {
   \time 3/4 a2~ a8 r8 |
   \time 5/4 R1*5/4 |
   \time 4/4 R1 |
-  % page 6
+  % page 6, bar 19
   \time 3/4 R1*3/4 |
   \time 3/4 R1*3/4 |
   \time 2/4 r4 r8. f16 |
@@ -168,7 +168,7 @@ altMusic = \relative c'' {
   \time 2/4 r4 r8. f16 |
   \time 5/4 d16[( c]) d8~ d4.. c16 f16[( ef]) d4 c8 |
   \time 3/4 d8. c32 d32 \times 2/3 { ef8 d ef } d8 c |
-  % Page 7, bar 22
+  % Page 7, bar 24
   \time 4/4 d8. c32 d32 \times 2/3 { ef8 d ef } f4 \times 2/3 { g8 f g } |
   \time 3/4 af8 bf~ bf4 \times 2/3 {af8 bf af } |
             af8 bf~ bf4 \times 2/3 {af8 bf af } |
@@ -275,7 +275,7 @@ basMusic = \relative c {
   \time 3/4 ef2( d8) r8 |
   \time 5/4 R1*5/4 |
   \time 4/4 R1 |
-  % page 6
+  % page 6, bar 19
   \time 3/4 R1*3/4 |
   \time 3/4 R1*3/4 |
   \time 2/4 r4 r8. f16 |
@@ -283,7 +283,7 @@ basMusic = \relative c {
   \time 3/4 g8. f32 g32 \times 2/3 { af8 g af } g8 f |
   % Page 7, bar 27
   \time 4/4 g8. f32 g32 \times 2/3 { f8 g f } g4 \times 2/3 { g8 af g } |
-  \time 3/4 af8 g8~ g4 \times 2/3 {a8 g a } |
+  \time 3/4 af8 g8~ g4 \times 2/3 {af8 g af } |
             af8 g8~ g4 \times 2/3 {f8 g f } |
   \time 2/4 c8[ df ef f] |
   \time 3/4 g4 g4. r8 |

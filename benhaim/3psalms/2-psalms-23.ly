@@ -67,13 +67,13 @@ sopMusic = \relative c'' {
   R1*3/4 | R1*3/4 | R1*3/4 |
   \time 2/4 r4 d8 d |
 \break
-  % page 18
+  % page 18, bar 48
   \time 3/4 g4 a8[( g16 a]) b8 c |
   \time 4/4 b16[( a g8]) g4. r8 d8 d |
   \time 3/4 g8[( fs16 g] a8[ g16 a] b8) c8 |
-\break
+\break % bar 51
   \time 4/4 b16[( a g8]) g4. r8 g8 g |
-  \time 3/4 e'4 d16[( c) d( c]) b8 c |
+  \time 3/4 e'4 d16[( c) c( b]) b8 c |
   c16[( b a8]) a8( b) c d |
 \break
   % page 19, bar 54
@@ -171,19 +171,19 @@ altMusic = \relative c'' {
   % page 19, bar 54
   \time 2/4 fs4 g |
   \time 3/4 fs2 r8 g8 |
-  \time 4/4 e4 fs g g8[ f] |
+  \time 4/4 e4 fs g g8[ fs] |
   % bar 57
-  \time 3/4 fs2 r8 f8 |
+  \time 3/4 fs2 r8 fs8 |
   e2  e8 e |
   fs2. |
   fs4 g b8[( a]) |
   % page 20, bar 61
   g2 fs4 |
   g2~ g8 fs |
-  e2 ds4 |
+  g2 fs4 |
   % bar 64
   \time 4/4 g4 g g b8( c) |
-  \time 2/4 fs2 |
+  \time 2/4 d4. c8 |
   \time 3/4 b4 a4. g8 |
   g2 r4 |
   % page 21 % bar 68
@@ -192,7 +192,7 @@ altMusic = \relative c'' {
   R1*3/4 |
   R1*3/4 |
   % bar 72
-  r4 << g,,4. e'4. >> << a,8 d8 >> |
+  r4 << g,4. e'4. >> << a,8 d8 >> |
   << { a4( b4) } d2 >> << cs4 e4 >> |
   << d2.~ e2.~ >> |
   << d2. e2. >> |
@@ -205,16 +205,16 @@ tenMusic = \relative c' {
   R1*3/4 |
   R1*3/4 |
   \time 4/4 R1 |
-  % page 13
+  % page 13, bar 7
   \time 3/4 R1*3/4 |
   R1*3/4 |
   R1*3/4 |
   \time 4/4 R1*4/4 |
-
+  % bar 11
   \time 2/4 r2 |
   \time 3/4 r4 r4 r8 b8 |
-  g4 d8 c d e |
-  \time 4/4 d8 d g4 g fs |
+  g4 d'8 c d e |
+  \time 4/4 d8[ d] g,4 g fs |
   % page 14
   \time 2/4 g4 g8 fs |
   \time 3/4 g4 r4 r4 |
@@ -273,7 +273,7 @@ tenMusic = \relative c' {
   e2 ds4 |
   e2 ds4 |
   % bar 64
-  \time 4/4 e4 ds d4. g8 |
+  \time 4/4 e4 ds ds4. g8 |
   \time 2/4 fs2~ |
   \time 3/4 fs4 e2 |
   <<d2 g2>> r4
@@ -285,7 +285,7 @@ tenMusic = \relative c' {
   % bar 72
   R1*3/4 |
   r4 <<e,4. b'4.>> <<e,8 b'8>> |
-  << { \times 2/3 { e4 e8 } } { \times 2/3 { b8 a8 b8 } }>>
+  << { \times 2/3 { e,4 e8 } } { \times 2/3 { b'8 a8 b8 } }>>
     <<e,2~ b'2~>> |
   <<e,2. b'2.>> |
  
@@ -378,7 +378,7 @@ basMusic = \relative c {
   % bar 72
   R1*3/4 |
   r4 <<g,4. d'4.>> <<g,8 d'8>> |
-  << { \times 2/3 { g4 g8 } } { \times 2/3 { d8 c8 d8 } }>>
+  << { \times 2/3 { g,8[ a8] g8 } } { \times 2/3 { d'4 d8 } }>>
     <<g,2~ d'2~>> |
   <<g,2. d'2.>> |
 } % end of basMusic
