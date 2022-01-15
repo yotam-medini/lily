@@ -111,7 +111,16 @@ soloNotes = \relative c'' {
   bf'4( af2) g4 f c |
   \time 4/2 d8 c g d' g2. g,4 c f |
   c'2 g2. g4 g f |
+\break
   % page 33, bar 66
+  g16[( a g f]) g4~ g2. f4 d c |
+  \time 4/4 d8 r8 r4 r2 |
+  \time 3/4 R1*3/4 |
+\break
+  \time 4/4 R1 |
+  \time 3/4 R1*3/4 |
+  \time 4/4 R1 |
+  \time 3/4 R1*3/4 |
   % break bar 69
   % page 34, bar 73
   % break bar 78
@@ -241,7 +250,14 @@ sopMusic = \relative c'' {
   \time 4/2 g2( c2)  d2 c4 c4 |
   c2. c4 c c c c |
   % page 33, bar 66
+  d2 c2 e2 c4 c4 |
+  \time 4/4 d8 r8 r8 g, g af bf af |
+  \time 3/4 g8.[( f16] g4) f8 g |
   % \break % bar 69
+  \time 4/4 af8[( bf c d] c[ bf af g] |
+  \time 3/4 f4) g8 r8 f4 |
+  \time 4/4 g4 r8 g8 g af bf af |
+  \time 3/4 g8.[( f16]) g4 f8 g8 |
   % page 34, bar 73
   % \break % bar 78
   % page 35, bar 81
@@ -353,7 +369,14 @@ altMusic = \relative c'' {
   \time 4/2 g1 g2 af4 bf |
   g2. g4 f g af bf |
   % page 33, bar 66
+  a!2 a2. g4 f f |
+  \time 4/4 g8 r8 r8 g g af bf af |
+  \time 3/4 g8.[( f16] g4) f8 g |
   % break bar 69
+  \time 4/4 af2( g2 |
+  \time 3/4 f4) g8 r8 f4 |
+  \time 4/4 g4 r8 g8 g af bf af |
+  \time 3/4 g8.[( f16]) g4 f8 g8 |
   % page 34, bar 73
   % break bar 78
   % page 35, bar 81
@@ -459,7 +482,14 @@ tenMusic = \relative c' {
   \time 4/2 g1 af2 c4 d4 |
   c2. c4 c c c df |
   % page 33, bar 66
+  c2 c2. d4 c a |
+  \time 4/4 d8 r8 r8 g, g af bf af |
+  \time 3/4 g8.[( f16] g4) f8 g |
   % break bar 69
+  \time 4/4 af8[( bf c d] c4 bf4 |
+  \time 3/4 c4) g8 r8 f4 |
+  \time 4/4 g4 r8 g8 g af bf af |
+  \time 3/4 g8.[( f16]) g4 af8 bf8 |
   % page 34, bar 73
   % break bar 78
   % page 35, bar 81
@@ -583,7 +613,14 @@ basMusic = \relative c {
   \time 4/2 e!1 f2 f4 f4 |
   e2. e4 d ef f gf |
   % page 33, bar 66
+  f2 f2. f4 f f |
+  \time 4/4 g8 r8 r8 g g af bf af |
+  \time 3/4 g8.[( f16] g4) f8 g |
   % break bar 69
+  \time 4/4 f2( g2 |
+  \time 3/4 af4) g8 r8 f4 |
+  \time 4/4 g4 r8 g8 g af bf af |
+  \time 3/4 g8.[( f16]) g4 af8 g8 |
   % page 34, bar 73
   % break bar 78
   % page 35, bar 81
