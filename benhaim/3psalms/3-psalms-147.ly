@@ -117,13 +117,23 @@ soloNotes = \relative c'' {
   \time 4/4 d8 r8 r4 r2 |
   \time 3/4 R1*3/4 |
 \break
-  \time 4/4 R1 |
-  \time 3/4 R1*3/4 |
-  \time 4/4 R1 |
-  \time 3/4 R1*3/4 |
   % break bar 69
+  \time 4/4 R1 |
+  \time 3/4 R1*3/4 |
+  \time 4/4 R1 |
+  \time 3/4 R1*3/4 |
+\break
   % page 34, bar 73
+  \time 4/4 R1 |
+  \time 3/4 R1*3/4 |
+  R1*3/4 |
+  R1*3/4 |
+  \time 4/4 R1 |
+\break
   % break bar 78
+  \time 3/2 R1*3/2 |
+  r2 r2 r8 c8( g8) c8 |
+  d2~ d8 e[( d]) c d4. c8 |
   % page 35, bar 81
   % break bar 84
   % page 36, bar 88
@@ -259,7 +269,15 @@ sopMusic = \relative c'' {
   \time 4/4 g4 r8 g8 g af bf af |
   \time 3/4 g8.[( f16]) g4 f8 g8 |
   % page 34, bar 73
+  \time 4/4 af8[( bf c d] ef[ d c bf] |
+  \time 3/4 af4 g f |
+  g8) r8 r4 c4 |
+  d4. c8 d ef |
+  \time 4/4 f2 ef4 d8( c8) |
   % \break % bar 78
+  \time 3/2 d8. c16 d8 ef f8.[( g16 f8 ef]) d8 c g c  |
+  d1~ d8 r8 r4 |
+  R1*3/2 |
   % page 35, bar 81
   % \break % bar 84
   % page 36, bar 88
@@ -378,7 +396,15 @@ altMusic = \relative c'' {
   \time 4/4 g4 r8 g8 g af bf af |
   \time 3/4 g8.[( f16]) g4 f8 g8 |
   % page 34, bar 73
+  \time 4/4 af4.( g8 af4. g8 |
+  \time 3/4 af4 g f |
+  g8) r8 r4 f4 |
+  g4. g8 g af |
+  \time 4/4 bf2 af4 g8( f8) |
   % break bar 78
+  \time 3/2 g8. af16 g8 af bf8.[( c16 bf8 af] g8) af g f  |
+  g1~ g8 r8 r4 |
+  R1*3/2 |
   % page 35, bar 81
   % break bar 84
   % page 36, bar 88
@@ -491,7 +517,15 @@ tenMusic = \relative c' {
   \time 4/4 g4 r8 g8 g af bf af |
   \time 3/4 g8.[( f16]) g4 af8 bf8 |
   % page 34, bar 73
+  \time 4/4 c4.( d8 c4. d8 |
+  \time 3/4 c4 d ef |
+  d8) r8 c4 d4 |
+  ef( d) c |
+  \time 4/4 d4( c4 d) ef4 |
   % break bar 78
+  \time 3/2 d4( c af2 c2) |
+  c1~ c8 r8 r4 |
+  R1*3/2 |
   % page 35, bar 81
   % break bar 84
   % page 36, bar 88
@@ -622,7 +656,15 @@ basMusic = \relative c {
   \time 4/4 g4 r8 g8 g af bf af |
   \time 3/4 g8.[( f16]) g4 af8 g8 |
   % page 34, bar 73
+  \time 4/4 af4.( g8 f4. g8 |
+  \time 3/4 af4 g f |
+  g8) r8 af4 g4 |
+  f( g) af |
+  \time 4/4 g4( f4 g) af4 |
   % break bar 78
+  \time 3/2 g4( g ef2 f2) |
+  g1~ g8 r8 r4 |
+  R1*3/2 |
   % page 35, bar 81
   % break bar 84
   % page 36, bar 88
