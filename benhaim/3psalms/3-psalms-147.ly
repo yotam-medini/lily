@@ -144,8 +144,15 @@ soloNotes = \relative c'' {
   d2 r8 a8 d e d2 |
   \time 4/4 r8 g,8 d' fs e2 |
   r8 b8 e fs e2 |
-  r8 b8 e a fs2 |
+  r8 b8 e a fs2~( |
+\break
   % page 36, bar 88
+  fs2 es4) es8 es |
+  \time 3/4 fs2( e4) |
+  \time 4/4 fs4 r4 r2 |
+  \time 3/4 R1*3/4 |
+
+  
   % break bar 92
   % page 37, bar 96
   % break bar 100
@@ -297,6 +304,10 @@ sopMusic = \relative c'' {
   r2 r8 cs8[ b] e, |
   fs2 a2 |
   % page 36, bar 88
+  b4. b8 cs4 b8 cs |
+  \time 3/4 d8. cs16 b4 cs |
+  \time 4/4 ds2 cs4 b8 cs |
+  \time 3/4 ds8.( cs16 b4) cs |
   % \break % bar 92
   % page 37, bar 96
   % \break % bar 100
@@ -431,6 +442,10 @@ altMusic = \relative c'' {
   fs2 e2 |
   cs2 e2 |
   % page 36, bar 88
+  fs4 fs8 fs es4 es8 es8 |
+  \time 3/4 fs2 es4 |
+  \time 4/4 fs2 es4 es8 es |
+  \time 3/4 fs2( es4) |
   % break bar 92
   % page 37, bar 96
   % break bar 100
@@ -559,6 +574,10 @@ tenMusic = \relative c' {
   a2 b2 |
   a2. a4 |
   % page 36, bar 88
+  b4 b8 gs g4 g8 g8 |
+  \time 3/4 a2 gs4 |
+  \time 4/4 b2 gs4 gs8 gs |
+  \time 3/4 as2( gs4) |
   % break bar 92
   % page 37, bar 96
   % break bar 100
@@ -705,6 +724,10 @@ basMusic = \relative c {
   a2. a4 |
   a2 fs |
   % page 36, bar 88
+  b,4 b8 b b4 b8 b8 |
+  \time 3/4 b2 b4 |
+  \time 4/4 b2 b4 b8 b |
+  \time 3/4 b2. |
   % break bar 92
   % page 37, bar 96
   % break bar 100
