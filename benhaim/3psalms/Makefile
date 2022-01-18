@@ -38,16 +38,16 @@ ${BASE3}.pdf ${BASE3}.midi : ${BASE3}.ly
 MIDIMORE=1.2 10
 MIDILESS=0.7 -10
 
-%-sop.midi: %.midi
+${BASE1}-sop.midi: ${BASE1}.midi
 	midiconv -tv 2 ${MIDIMORE}  -tv -1 ${MIDILESS}  $< $@
 
-%-alt.midi: %.midi
+${BASE1}-alt.midi: ${BASE1}.midi
 	midiconv -tv 3 ${MIDIMORE}  -tv -1 ${MIDILESS}  $< $@
 
-%-ten.midi: %.midi
+${BASE1}-ten.midi: ${BASE1}.midi
 	midiconv -tv 4 ${MIDIMORE}  -tv -1 ${MIDILESS}  $< $@
 
-%-bas.midi: %.midi
+${BASE1}-bas.midi: ${BASE1}.midi
 	midiconv -tv 5 ${MIDIMORE}  -tv -1 ${MIDILESS}  $< $@
 
 
@@ -62,6 +62,20 @@ ${BASE2}-ten.midi: ${BASE2}.midi
 
 ${BASE2}-bas.midi: ${BASE2}.midi
 	midiconv -tv 4 ${MIDIMORE}  -tv -1 ${MIDILESS}  $< $@
+
+SOLO3LESS=0.4 -20
+
+${BASE3}-sop.midi: ${BASE3}.midi
+	midiconv -tv 2 ${MIDIMORE} -tv 1 ${SOLO3LESS} -tv -1 ${MIDILESS}  $< $@
+
+${BASE3}-alt.midi: ${BASE3}.midi
+	midiconv -tv 3 ${MIDIMORE} -tv 1 ${SOLO3LESS} -tv -1 ${MIDILESS}  $< $@
+
+${BASE3}-ten.midi: ${BASE3}.midi
+	midiconv -tv 4 ${MIDIMORE} -tv 1 ${SOLO3LESS} -tv -1 ${MIDILESS}  $< $@
+
+${BASE3}-bas.midi: ${BASE3}.midi
+	midiconv -tv 5 ${MIDIMORE} -tv 1 ${SOLO3LESS} -tv -1 ${MIDILESS}  $< $@
 
 PDFS = ${BASE1}.pdf ${BASE2}.pdf ${BASE3}.pdf
 midis1: ${MIDIS1}

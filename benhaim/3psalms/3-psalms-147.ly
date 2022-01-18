@@ -4,7 +4,8 @@
 global = {
   \key a \minor
   \time 4/4
-  \tempo 4 = 60
+  % \tempo 4 = 116
+  \tempo 4 = 80
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -68,7 +69,7 @@ soloNotes = \relative c'' {
   ds4. e8 e4 cs as cs |
 \break % bar 36
   ds2. gs,4( cs) fs4 |
-  bs2( gs2.) gs4 |
+  b2( gs2.) gs4 |
   gs16[( as gs fs] gs2 fs4 ds) fs |
 \break
   % page 29, bar 39
@@ -98,7 +99,7 @@ soloNotes = \relative c'' {
   r2 r2 r4 c4 |
 \break
   % break bar 57
-  g2. f4 af f |
+  g2. g4 af f |
   c'4 bf8 af g2. g4 |
   d'2. d4 ef c |
 \break
@@ -243,7 +244,7 @@ sopMusic = \relative c'' {
   r2 r2 gs4. gs8 |
   % page 28, bar 34
   \times 2/3 { gs4 gs4 gs4 } gs4 gs4 gs4 gs4 |
-  g2. g4 g g |
+  gs2. gs4 gs gs |
   % \break % bar 36
   fs2( gs2.) gs4 |
   fs2( gs2) gs2 |
@@ -256,7 +257,7 @@ sopMusic = \relative c'' {
        {gs,4 r8 }
     >>
        gs8 a4 b8 a |
-  \time 3/4 g8.[( fs16]) g8 r8 e[( fs]) |
+  \time 3/4 gs8.[( fs16]) gs8 r8 e[( fs]) |
   gs4 a b8[( a]) |
   gs8.[( fs16]) gs8 r8 r4 |
   % \break % bar 43
@@ -435,16 +436,16 @@ altMusic = \relative c'' {
   r2 r2 e4. e8 |
   % page 28, bar 34
   \times 2/3 { fs4 fs4 fs4 } fs4 fs4 e e |
-  ds2. ds4 ds e |
+  ds2. cs4 ds e |
   % break bar 36
   ds1 cs2 |
   b1  b2 |
   fs'2 e2 ds4 e |
   % page 29, bar 39
   \time 4/4 ds4 r8 ds!8 e4 fs8 e |
-  \time 3/4 ds8.[( e16]) d8 r8 e4 |
+  \time 3/4 ds8.[( e16]) ds8 r8 e4 |
   ds4 e fs |
-  ds4 d8 r8 r4 |
+  ds4 ds8 r8 r4 |
   % break bar 43
   \time 2/4 R1*2/4 |
   \time 3/4 R1*3/4 |
@@ -488,7 +489,7 @@ altMusic = \relative c'' {
   \time 4/4 af4.( g8 af4. g8 |
   \time 3/4 af4 g f |
   g8) r8 r4 f4 |
-  g4. g8 g af |
+  g4. f8 g af |
   \time 4/4 bf2 af4 g8( f8) |
   % break bar 78
   \time 3/2 g8. af16 g8 af bf8.[( c16 bf8 af] g8) af g f  |
@@ -510,7 +511,7 @@ altMusic = \relative c'' {
   \time 3/4 fs2( es4) |
   % break bar 92
   \time 4/4 fs4. fs8 gs4 fs8 gs8
-  \time 3/4 a8.[( gs16] fs4) gs4 |
+  \time 3/4 as8.[( gs16] fs4) gs4 |
   \time 4/4 as2 gs4 fs8 gs8 |
   \time 3/4 a8.[( gs16] fs4) gs4 |
   % page 37, bar 96
@@ -519,7 +520,7 @@ altMusic = \relative c'' {
   R1*3/4 |
   \time 3/2 fs2( gs2) a2 |
   % break bar 100
-  bs2( fs2) gs |
+  gs2( fs2) gs |
   fs2 fs2 b2 |
   b1.~ |
   b8 r8 r4 r2 r2 |
@@ -578,14 +579,14 @@ tenMusic = \relative c' {
   \times 2/3 { r4 a4 a4 } \times 2/3 { a4 a4 a4 } a4 gs4 |
   r2 r2 gs4. gs8 |
   % page 28, bar 34
-  \times 2/3 { bs4 bs4 bs4 } bs4 bs4 bs4 bs4 |
+  \times 2/3 { gs4 gs4 gs4 } gs4 gs4 gs4 gs4 |
   as2. as4 as as |
   % break bar 36
   gs2~ gs2. gs4 |
   fs1 gs2 |
   as2. as4 as as |
   % page 29, bar 39
-  \time 4/4 s4 r8 gs!8 a4 b8 a |
+  \time 4/4 gs4 r8 gs!8 a4 b8 a |
   \time 3/4 gs8.[( a16]) gs8 r8 a4 |
   gs4 a fs |
   gs8.[( a16]) gs8 r8 r8 gs8 |
@@ -600,8 +601,8 @@ tenMusic = \relative c' {
   \time 4/4 ds2 e4. e8 |
   % break bar 50
   \time 3/4 ds2 cs8 cs |
-  cs2.( |
-  \time 4/4 cs4) r4 b2 |
+  cs2.~ |
+  \time 4/4 cs4 r4 b2 |
   a2 cs4. cs8 |
   % page 31, bar 54
   \time 3/2 bs4 bs cs1 |
@@ -635,20 +636,20 @@ tenMusic = \relative c' {
   ef( d) c |
   \time 4/4 d4( c4 d) ef4 |
   % break bar 78
-  \time 3/2 d4( c af2 c2) |
-  c1~ c8 r8 r4 |
+  \time 3/2 d4( c bf2 c2) |
+  d1~ d8 r8 r4 |
   R1*3/2 |
   % page 35, bar 81
-  r2 g2. g4 |
+  r2 g,2. g4 |
   g2 af1 |
-  e8 af8[( g]) ef bf'2 bf4 a! |
+  r8 af8[( g]) ef bf'2 bf4 a! |
   % break bar 84
   b2. b4 r8 b8 d e |
   \time 4/4 d1 |
   a2 b2 |
   a2. a4 |
   % page 36, bar 88
-  b4 b8 gs g4 g8 g8 |
+  b4. b8 gs4 gs8 gs8 |
   \time 3/4 a2 gs4 |
   \time 4/4 b2 gs4 gs8 gs |
   \time 3/4 as2( gs4) |
@@ -707,10 +708,10 @@ basMusic = \relative c {
   gs2( fs2   cs4~ cs8) r8 gs'!4 |
   fs2 as2
   % page 26, bar ..23
-    g2 a!8 gs8 | fs2 gs2    fs4 r4 r4 |
+    gs2 a!8 gs8 | fs2 gs2    fs4 r4 r4 |
   % break bar 25
   \time 4/4 r2 r4 a4 |
-  cs4 a8 gs fs4 fs8 fs |
+  gs4 a8 gs fs4 fs8 fs |
   \time 3/2 e1~ e4 r4 |
   % page 27, bar 28
   R1*3/2 |
@@ -797,7 +798,7 @@ basMusic = \relative c {
   f( g) af |
   \time 4/4 g4( f4 g) af4 |
   % break bar 78
-  \time 3/2 g4( g ef2 f2) |
+  \time 3/2 g4( f ef2 f2) |
   g1~ g8 r8 r4 |
   R1*3/2 |
   % page 35, bar 81
