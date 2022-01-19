@@ -767,7 +767,7 @@ basMusic = \relative c {
   \time 4/4 fs4) r4 b2 |
   a2 gs4. gs8 |
   % page 31, bar 54
-  \time 3/2 gs4 gs as1 |
+  \time 3/2 gs4 gs a1 |
   gs2 gs1~ |
   gs4 r4 r2 r2 |
   % break bar 57
