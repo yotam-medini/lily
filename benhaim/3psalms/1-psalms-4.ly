@@ -124,7 +124,7 @@ sopMusic = \relative c'' {
   r8 gs8 gs gs gs4 fs8 gs |
   \time 3/4 r8 gs16 fs gs gs gs a gs4 |
 \break
-  \time 4/4 fs8 gs gs gs gs16 a16 b16[ a16] gs4 |
+  \time 4/4 r8 fs8 gs gs gs gs16 a16 b16[ a16] gs8 |
   \time 5/4 r8 gs8 gs gs16 fs16 gs!8 fs!8 fs gs r4 |
 \break
   % Page 10
@@ -184,7 +184,7 @@ altMusic = \relative c'' {
   % Page 9, bar 35
   r8 cs8 cs cs cs4 b8 cs |
   \time 3/4 r8 cs16 b cs cs cs d cs4 |
-  \time 4/4 b8 cs cs cs cs16 d16 e16[ d16] cs4 |
+  \time 4/4 r8 b8 cs cs cs cs16 d16 e16[ d16] cs8 |
   \time 5/4 r8 cs8 cs cs16 b16 cs!8 b8 b cs r4 |
   % Page 10
   \time 3/4 r8 d8 fs4( d4) |
@@ -215,7 +215,7 @@ tenMusic = \relative c' {
   \time 6/4 ef4. d8 c b! d2 c4 |
   % page 5 , bar 15
   d4( c) d d~ \times 2/3 { d8[( c]) a } bf4~ |
-  \time 3/4 bf8 g a bf a r |
+  \time 3/4 bf8. g16 a8[( bf]) a r |
   \time 5/4 R1*5/4
   \time 4/4 R1 |
   % page 6
@@ -237,10 +237,10 @@ tenMusic = \relative c' {
   \time 5/4 R1*5/4 |
   \time 4/4 r8 gs,8 gs8 gs8 gs8 gs16 fs16 gs8 gs8 |
             r8 gs8 gs8 gs16 fs16 gs8 a gs8 gs8 |
-  % Page 9
+  % Page 9, bar 35
   r8 gs8 gs gs gs4 a8 gs |
   \time 3/4 r8 gs16 a gs gs gs fs gs4 |
-  \time 4/4 a8 gs gs b b16 a16 gs16[ fs16] gs4 |
+  \time 4/4 r8 a8 gs gs b b16 a16 gs16[ fs16] gs8 |
   \time 5/4 r8 gs8 gs gs16 a16 gs8 a8 a gs r4 |
   % Page 10
   \time 3/4 r8 a8 a4( fs4) |
@@ -297,7 +297,7 @@ basMusic = \relative c {
   % Page 9, bar 35
   r8 cs8 cs cs cs4 d8 cs |
   \time 3/4 r8 cs16 d cs cs cs b cs4 |
-  \time 4/4 d8 cs cs e e16 d16 cs16[ b16] cs4 |
+  \time 4/4 r8 d8 cs cs e e16 d16 cs16[ b16] cs8 |
   \time 5/4 r8 cs8 cs cs16 d16 cs8 d8 d cs r4 |
   % Page 10, bar 39
   \time 3/4 r8 d8 d4( b4) |
