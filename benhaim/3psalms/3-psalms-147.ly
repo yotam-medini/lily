@@ -167,7 +167,7 @@ soloNotes = \relative c'' {
   \time 3/2 fs16[( g fs e] fs4~ fs2.) e4 |
 \break
   % break bar 100
-  fs16[( gs fs es] fs4~ fs2) es2 |
+  fs16[( gs fs es] fs4~ fs2) es!2 |
   r4 b4( cs) b fs'2 |
   b1.~ |
   b8 r8 r4 r2 r2 |
@@ -513,7 +513,7 @@ altMusic = \relative c'' {
   \time 4/4 fs4. fs8 gs4 fs8 gs8
   \time 3/4 as8.[( gs16] fs4) gs4 |
   \time 4/4 as2 gs4 fs8 gs8 |
-  \time 3/4 a8.[( gs16] fs4) gs4 |
+  \time 3/4 as8.[( gs16] fs4) gs4 |
   % page 37, bar 96
   as8.[( gs16] fs4) gs |
   as8.[( gs16] fs4) gs |
@@ -590,10 +590,10 @@ tenMusic = \relative c' {
   \time 3/4 gs8.[( a16]) gs8 r8 a4 |
   gs4 a fs |
   gs8.[( a16]) gs8 r8 r8 gs8 |
-  % break bar 4
+  % break bar 43
   \time 2/4 a4 b8 a8 |
   \time 3/4 gs8.[( fs16]) gs4 e8[( fs]) |
-  fs4 a b8[( cs]) |
+  gs4 a b8[( cs]) |
   ds8.[( cs16]) ds8 ds cs ds |
   % page 30, bar 47
   \time 4/4 cs2 ds4. ds8 |

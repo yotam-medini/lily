@@ -84,6 +84,7 @@ midis3: ${MIDIS3}
 
 RELEASE_FILES = ${PDFS} ${MIDIS}
 
+.PHONY: relase
 release: ${RELEASE_FILES}
 	rm -rf release.d
 	mkdir release.d
@@ -93,3 +94,11 @@ release: ${RELEASE_FILES}
 	   cp $${f} release.d/$${tgtmid}; \
         done
 	(cd release.d; stat -c "%-36n %.19x %7s" *) | sort
+
+ZIP = /tmp/3psalms-ben-haim-midi.zip
+.PHONY: zip
+zip: release
+	rm -f ${ZIP}
+	(cd release.d; zip ${ZIP} *.mid *.pdf)
+	unzip -l ${ZIP}
+	ls -lG ${ZIP}
