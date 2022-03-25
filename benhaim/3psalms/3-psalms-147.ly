@@ -568,7 +568,7 @@ tenMusic = \relative c' {
   cs2. cs4    e8.[( ds16] cs4) b |
   % break bar 25
   \time 4/4 a2 b4. bs8 |
-  cs2 d4. e8 |
+  cs2 ds4. e8 |
   \time 3/2 <<ds1~ fs1~>> <<ds4 fs4>> r4 |
   % page 27, bar 28
   R1*3/2 |
@@ -832,6 +832,13 @@ basMusic = \relative c {
   b8 r8 r4 r2 r2 |
 } % end of basMusic
 
+  \header {
+    title = "Psalms 147  תהלים קמז"
+    composer = "Paul Ben-Haim פאול בן-חיים"
+    % Do not display the tagline for this book
+    % tagline = ##f
+  }
+
 \score {
   <<
     \new Staff {
@@ -894,8 +901,6 @@ basMusic = \relative c {
 
     >>
   >>
-
-  \header { }
 
   \layout {
     \context {
