@@ -11,6 +11,13 @@ global = {
 music = \relative c'' {
   g4 b8 d b g8 |
   c4( a8 g fs) r8 |
+  g4( b8) e,8( b' a) |
+  g4 b16[ a] fs4 r8 |
+  c'4( a8 b4 g8) |
+  fs4( a8 g4 r8 |
+  e8[( fs gs] a[ b]) c |
+  g4. b4 a8 |
+  g4 r8 r4. |
 }
 
 \header { 
@@ -20,6 +27,7 @@ music = \relative c'' {
 \score {
   <<
     \new Staff <<
+      \autoBeamOff
       \global \music
      >>
   >>

@@ -7,7 +7,7 @@ endif
 
 .DELETE_ON_ERROR:
 
-BASE=garcia-missa-kyrie-27to34
+BASE=garcia-missa-kyrie-26to34
 
 NOW := $(shell date "+%Y%m%d-%H%M%S")
 ZIP = /tmp/${BASE}-${NOW}.zip
@@ -21,4 +21,9 @@ ${BASE}.pdf ${BASE}.midi: ${BASE}.ly
 
 clean:
 	rm -f ${BASE}.pdf ${BASE}.midi
+
+release:
+	cp ${BASE}.pdf /tmp/${BASE}-${NOW}.pdf
+	cp ${BASE}.midi /tmp/${BASE}-${NOW}.midi
+	ls -l /tmp/${BASE}-${NOW}.pdf /tmp/${BASE}-${NOW}.midi
 
