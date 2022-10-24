@@ -36,7 +36,9 @@ ${BASE3}.pdf ${BASE3}.midi : ${BASE3}.ly
 	lilypond --pdf $<
 
 MIDIMORE=1.2 10
+MIDIMORE3=1.3 80
 MIDILESS=0.7 -10
+MIDILESS3=0.6 -20
 
 ${BASE1}-sop.midi: ${BASE1}.midi
 	midiconv -tv 2 ${MIDIMORE}  -tv -1 ${MIDILESS}  $< $@
@@ -72,10 +74,10 @@ ${BASE3}-alt.midi: ${BASE3}.midi
 	midiconv -tv 3 ${MIDIMORE} -tv 1 ${SOLO3LESS} -tv -1 ${MIDILESS}  $< $@
 
 ${BASE3}-ten.midi: ${BASE3}.midi
-	midiconv -tv 4 ${MIDIMORE} -tv 1 ${SOLO3LESS} -tv -1 ${MIDILESS}  $< $@
+	midiconv -tv 4 ${MIDIMORE3} -tv 1 ${SOLO3LESS} -tv -1 ${MIDILESS3}  $< $@
 
 ${BASE3}-bas.midi: ${BASE3}.midi
-	midiconv -tv 5 ${MIDIMORE} -tv 1 ${SOLO3LESS} -tv -1 ${MIDILESS}  $< $@
+	midiconv -tv 5 ${MIDIMORE3} -tv 1 ${SOLO3LESS} -tv -1 ${MIDILESS3}  $< $@
 
 PDFS = ${BASE1}.pdf ${BASE2}.pdf ${BASE3}.pdf
 midis1: ${MIDIS1}
