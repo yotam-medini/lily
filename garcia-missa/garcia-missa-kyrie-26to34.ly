@@ -25,7 +25,7 @@ music = \relative c'' {
 }
 
 \header { 
-  title = "Missa Pastoril - bars 27 to 34"
+  title = "Missa Pastoril - bars 26 to 34"
 }
 
 \score {
