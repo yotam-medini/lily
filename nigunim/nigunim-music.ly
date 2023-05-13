@@ -13,6 +13,21 @@ sopMusic = \relative c'' {
   R1*6/8 | 
   \time 9/8
   R1*9/8 |
+  \time 6/8
+  R1*6/8 | 
+  R1*6/8 | 
+  R1*6/8 | 
+  % bar 7
+  \time 9/8
+  R1*9/8 |
+  \time 6/8
+  R1*6/8 |
+  R1*6/8 \bar "||"
+ \time 2/4
+  fss,4(^\pp gs) |
+  as8[ b] as16 as gs8] |
+  as4 gs |
+  gs8[ gs] gs r |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -22,6 +37,9 @@ altMusic = \relative c'' {
   R1*6/8 | 
   \time 9/8
   R1*9/8 |
+  \time 6/8
+  R1*6/8 | 
+  R1*6/8 | 
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,5 +152,15 @@ tenMusic = \relative c' {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 basMusic = \relative c {
+  % page 5 bar 1
+  r8 ds8 ds] ds[ ds ds] |
+  b'4.~(b4 as8) |
+  \time 9/8
+  b4.~b8 as8[ as] as4. |
+  \time 6/8
+  gs8 gs4 ~ gs4. |
+  r8 gs[ fss] gs[ fss fss] |
+  as2. |
+  % bar 7
 }
 
