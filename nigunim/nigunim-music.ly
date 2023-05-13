@@ -79,7 +79,7 @@ tenMusic = \relative c' {
   as4 b |
   % page 8 bar 39
   cs8[ d] cs[ b] |
-  c4^\cresc d4 
+  cs4^\cresc d4 
   e8[ f] e[ d] |
   e4 d |
   d^\f d~ |
@@ -98,6 +98,25 @@ tenMusic = \relative c' {
   % page 9 bar 54
   ds2. |
   ds4.-> ds4.->^\f  |
+  ds8[ cs8. b16] ds8 ds4 |
+  css8[ ds css] ds[ css ds] |
+  % bar 58
+  \time 9/8
+  es4( ds8) cs!4. cs4.^\dim |
+  \time 6/8
+  ds4 cs b \bar "||"
+  \time 2/4
+  as2^\pp |
+  as2 |
+  b16[ b8.] ~ b4 |
+  % page 10 bar 63
+  b2( |
+  as2)^\cresc |
+  as2 |
+  b16[ b8.] b4 |
+  b4 b |
+  as8.[^\f as16] a4 |
+  as16[ as8.] b4 |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
