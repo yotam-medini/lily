@@ -139,11 +139,38 @@ altMusic = \relative c'' {
   R1*6/8 | 
   R1*6/8 | 
   % bar 7
-  % page 5 bar 1
-  % bar 7
+  \time 9/8
+  R1*9/8 |
+  \time 6/8
+  R1*6/8 |
+  R1*6/8 \bar "||"
+ \time 2/4
+  fss,4(^\pp gs) |
+  as8[ b] as16 as gs8] |
+  as4 gs |
+  gs8[ gs] gs r |
   % page 6 bar 14
+  as4(^\p b) |
+  cs8[ d] cs16[ cs b8] |
+  cs4 b |
+  b8[ b] b r^\mf |
+  as4.( b8) |
+  cs4 b |
+  as8[ as] as[ gs]
   % bar 21
+  d4 cs8[( b]) |
+  cs8[( ds]) fs8[( e]) |
+  ds4 cs8[( e]) |
+  ds2~ |
+  ds2 \bar "||"
+  \time 6/8
+  ds16[ ds ds8 ds] b'4.~ |
   % page 7 bar 27
+  b4 as8 b4( as8) |
+  a8.[ gs16 gs8] gs4.~ |
+  gs4. fss16[ gs fss gs fss gs] |
+  as4. ~ as4 gs8 |
+  fss4( es8) es8.[ ds16 ds8] |
   % bar 32
   % page 8 bar 39
   % bar 47
