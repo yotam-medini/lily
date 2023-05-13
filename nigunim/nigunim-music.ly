@@ -51,10 +51,47 @@ sopMusic = \relative c'' {
   cs16[ ds cs( ds) cs( ds16)] e4. |
   ds4 as8 as8.[ gs16 gs8] |
   % bar 32
+  gs2.~^\dim |
+  gs4.~ gs8^\pp r8 r8 \bar "||"
+  \time 2/4
+  R1*2/4 |
+  R1*2/4 |
+  fss4 gs |
+  as8[ b]
+  as8[ gs] |
+  a4 gs8 r8 |
   % page 8 bar 39
+  gs4 gs8 r |
+  as4^\cresc b |
+  cs8[ d] cs[ b] |
+  cs4 b |
+  b4 b~^\f |
+  b4 r |
+  cs4.( b8) |
+  as4. fs8 |
   % bar 47
+  cs'8[ cs] cs[ b] |
+  a4. r16 cs,16 |
+  cs8[( b'] as[ gs]) |
+  fss8[( gs]) cs,[( e]) |
+  ds2 ~ \bar "||"
+  \time 6/8
+  ds4. ~ ds8 r r |
+  b'8[^\cresc b b ] b[ b b] |
   % page 9 bar 54
+  d4( cs8) d4->( cs8) |
+  d4( cs8) cs8[ b8. b16] |
+  b8 b4~ b4. |
+  as8[ b as] b[ as b]
   % bar 58
+  \time 9/8
+  cs4. ds4 as8 as8[ gs8.^\dim gs16] |
+  \time 6/8
+  gs8^\markup{\italic rit.} gs4~ gs4. \breathe \bar "||"
+  \time 2/4
+  fss16[^\pp^\markup{\italic a tempo} fss8.] gs4 \breathe |
+  as16[( as b8] as8[ gs] |
+  as4 gs4) |
   % page 10 bar 63
   % bar 70
   % page 5 bar 1
