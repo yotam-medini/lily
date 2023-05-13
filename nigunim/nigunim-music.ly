@@ -416,8 +416,8 @@ basMusic = \relative c {
   gs'8[) gs gs] gs[ gs gs] |
   % page 9 bar 54
   fs2.~ |
-  fs4. es4. |
-  e4.~ e8[^\f ds8. cs16] |
+  fs4. es4.-> |
+  es4.->~ es8[^\f ds8. cs16] |
   es8 es4 ~ es4. |
   % bar 58
   \time 9/8
