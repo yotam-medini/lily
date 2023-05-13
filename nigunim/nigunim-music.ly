@@ -355,19 +355,99 @@ basMusic = \relative c {
   r8 gs[ fss] gs[ fss gs] |
   as2. |
   % bar 7
-  % page 5 bar 1
-  % page 5 bar 1
-  % bar 7
+  \time 9/8
+  ds4.~ ds8 as[ as] as4. |
+  \time 6/8
+  gs8 gs4~ gs4.~ |
+  gs2. \bar "||"
+  \time 2/4
+  fss4( gs) |
+  as8[ b] as16[ as16 gs8] |
+  as4 gs |
+  gs8[ gs] gs r8 |
   % page 6 bar 14
+  fss4( gs) | 
+  as8[ b] as16[ as gs8] |
+  as4 gs |
+  gs8[ gs] gs r\mf |
+  ds2 |
+  ds4 ds4 |
+  ds4. ds8 |
   % bar 21
+  ds2 |
+  cs8[( b']) as8[ gs] |
+  fss8[( gs]) cs,[( e]) |
+  ds2~ |
+  ds2 \bar "||"
+  \time 6/8
+  ds16[ ds ds8 ds] b'4.~ |
   % page 7 bar 27
+  b4 as8 b4( as8) |
+  as8.[ gs16 gs8] gs4.~ |
+  gs4. fss16[ gs fss gs fss gs] |
+  as4. ~ as4 gs8 |
+  fss4. fss8.[ es16 es8] |
   % bar 32
+  e!2. ~ |
+  e4. ~ e8 r r \bar "||"
+  \time 2/4
+  fss4 gs |
+  as8[ b] as[ gs] |
+  as4 gs8 r |
+  gs4 gs8 r |
+  fss4 gs |
   % page 8 bar 39
+  as8[ b] as[ gs] |
+  as4^\cresc gs8 r |
+  gs4 gs |
+  fs e |
+  e4 e~^\f |
+  e4 r |
+  ds2 |
+  ds4 ds4 |
   % bar 47
+  ds8[ ds] ds[ ds] |
+  ds4. r16 cs16 |
+  cs8[( b'] as[ gs]) |
+  fss8[( gs]) cs,[( e]) |
+  ds2 \breathe \bar "||"
+  \time 6/8
+  gs,2.( |
+  gs'8[) gs gs] gs[ gs gs] |
   % page 9 bar 54
+  fs2.~ |
+  fs4. es4. |
+  e4.~ e8[^\f ds8. cs16] |
+  es8 es4 ~ es4. |
   % bar 58
+  \time 9/8
+  ds8[ cs8. ds16] e4.( ds4.) |
+  \time 6/8
+  ds2. \breathe \bar "||"
+  \time 2/4
+  ds16[ ds8.]~ ds4 |
+  ds2 |
+  ds2 |
   % page 10 bar 63
+  ds2 |
+  ds16[^\cresc ds8.]~ ds4 |
+  ds2 |
+  ds2 |
+  ds4 es |
+  fs8.[^\f fs16] fs4 |
+  fs16[^\f fs8.] fs4 |
   % bar 70
-  % page 5 bar 1
+  fs8[ fs] fs[ fs] |
+  fs4. r8 |
+  cs4( b'~ |
+  b4 as8[ gs]) |
+  fss2~ |
+  fss4 \breathe gs4 |
+  fs2 |
+  cs2 ~ |
+  cs2 |
+  ds2 ~ |
+  ds2 ~ |
+  ds4 r4 \bar "|."
 }
 
