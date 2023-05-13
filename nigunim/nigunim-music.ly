@@ -66,7 +66,7 @@ sopMusic = \relative c'' {
   cs8[ d] cs[ b] |
   cs4 b |
   b4 b~^\f |
-  b4 r |
+  b4 r^\pp |
   cs4.( b8) |
   as4. fs8 |
   % bar 47
@@ -124,7 +124,7 @@ sopMusic = \relative c'' {
   e2 |
   ds2~ |
   ds2~ |
-  ds4 r4 |
+  ds4 r4 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -172,13 +172,67 @@ altMusic = \relative c'' {
   as4. ~ as4 gs8 |
   fss4( es8) es8.[ ds16 ds8] |
   % bar 32
+  d2. ~ |
+  d4. ~ d8 r r \bar "||"
+  \time 2/4
+  R1*2/4 |
+  R1*2/4 |
+  fss4 gs |
+  as8[ b]
+  as8[ gs] |
+  as4 gs8 r8 |
   % page 8 bar 39
+  gs4 gs8 r |
+  fss4^\cresc gs |
+  as8[ b] as[ gs] |
+  as4 gs | 
+  gs gs~\f |
+  gs4 r^\pp |
+  fs2 |
+  es4 ds |
   % bar 47
+  fs8[ fs] fs[ e!] |
+  ds4. r16 cs16 |
+  cs8[( ds] fs[ e]) |
+  ds4 cs8[( e]) |
+  ds2 ~ \bar "||"
+  \time 6/8
+  ds8 r r ds[^\cresc d d] |
+  ds8[ d d] b'4.~( |
   % page 9 bar 54
+  b4 a8) b4->( a8) |
+  b4->( a8) a8[^\f gs8. gs16] |
+  gs8 gs4 ~ gs4. |
+  fss8[ gs fss] gs[ fss gs] |
   % bar 58
+  as4( gs8) fss4 fss8 fss8[^\dim es8. es16] |
+  \time 6/8
+  es8 es4~ es4. \bar "||"
+  \time 2/4
+  R1*2/4\pp |
+  css16[ css8.] d4 |
+  es16[ es fs8] ess8[ ds] |
   % page 10 bar 63
+  es4( ds |
+  ds8.[^\cresc ds16] ds4) |
+  css16[( cs8.] ds4 |
+  es16[ es fs8] es8[ ds] |
+  es4 ds |
+  cs!8.[^\f cs16] cs4) |
+  cs16[ cs8.] ds4 | 
   % bar 70
-  % page 5 bar 1
+  fs8[ fs] fs[ e] |
+  ds4. r8\p |
+  cs4( ds4~ |
+  ds4 fs8[ e]) |
+  ds2~ |
+  ds4 \breathe ds4\pp |
+  cs2 |
+  b2~ |
+  b2 |
+  as2~ |
+  as2~ |
+  as4 r4 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -239,7 +293,7 @@ tenMusic = \relative c' {
   cs4^\cresc d4 
   e8[ f] e[ d] |
   e4 d |
-  d^\f d~ |
+  d d~\f |
   d r4^\pp |
   cs4.( b8) |
   as4. b8 |
