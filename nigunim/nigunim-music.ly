@@ -117,6 +117,19 @@ tenMusic = \relative c' {
   b4 b |
   as8.[^\f as16] a4 |
   as16[ as8.] b4 |
+  % bar 70
+  cs8[ cs] cs[ b] |
+  as4. r8^\p |
+  gs2~( |
+  gs4 as4) |
+  b2~ |
+  b4\breathe b^\pp |
+  as2 |
+  gs2~ |
+  gs2 |
+  fss2~ |
+  fss ~ |
+  fss4 r4 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
