@@ -28,6 +28,36 @@ sopMusic = \relative c'' {
   as8[ b] as16 as gs8] |
   as4 gs |
   gs8[ gs] gs r |
+  % page 6 bar 14
+  as4(^\p b) |
+  cs8[ d] cs16[ cs b8] |
+  cs4 b |
+  b8[ b] b r^\mf |
+  cs4.( b8) |
+  as4. fs8 |
+  cs'8[ cs] cs[ b] |
+  % bar 21
+  as2 |
+  cs,8[( b']) as[ gs] |
+  fss[( gs]) cs[( e]) |
+  ds2~ |
+  ds2 |
+  \time 6/8
+  r4. ^\f b16[ b b8 b] |
+  % page 7 bar 27
+  d4.~ d4 cs8 |
+  d4( cs8) cs8.[ b16 b8] |
+  b2. |
+  cs16[ ds cs( ds) cs( ds16)] e4. |
+  ds4 as8 as8.[ gs16 gs8] |
+  % bar 32
+  % page 8 bar 39
+  % bar 47
+  % page 9 bar 54
+  % bar 58
+  % page 10 bar 63
+  % bar 70
+  % page 5 bar 1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,6 +70,21 @@ altMusic = \relative c'' {
   \time 6/8
   R1*6/8 | 
   R1*6/8 | 
+  R1*6/8 | 
+  % bar 7
+  % page 5 bar 1
+  % bar 7
+  % page 6 bar 14
+  % bar 21
+  % page 7 bar 27
+  % bar 32
+  % page 8 bar 39
+  % bar 47
+  % page 9 bar 54
+  % bar 58
+  % page 10 bar 63
+  % bar 70
+  % page 5 bar 1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -162,5 +207,19 @@ basMusic = \relative c {
   r8 gs[ fss] gs[ fss fss] |
   as2. |
   % bar 7
+  % page 5 bar 1
+  % page 5 bar 1
+  % bar 7
+  % page 6 bar 14
+  % bar 21
+  % page 7 bar 27
+  % bar 32
+  % page 8 bar 39
+  % bar 47
+  % page 9 bar 54
+  % bar 58
+  % page 10 bar 63
+  % bar 70
+  % page 5 bar 1
 }
 
