@@ -75,16 +75,16 @@ ${BASE}-hebrewlatin.pdf: ${LYS_HEBREWLATIN}
 # ls -lG ${BASE}.pdf ${BASE}.midi
 
 %-sop.midi: %.midi
-	midiconv.py -tv 1 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
+	midiconv -tv 1 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
 %-alt.midi: %.midi
-	midiconv.py -tv 2 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
+	midiconv -tv 2 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
 %-ten.midi: %.midi
-	midiconv.py -tv 3 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
+	midiconv -tv 3 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
 %-bas.midi: %.midi
-	midiconv.py -tv 4 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
+	midiconv -tv 4 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
 
 midis: ${MIDIS}
 

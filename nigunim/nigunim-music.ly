@@ -39,11 +39,11 @@ sopMusic = \relative c'' {
   % bar 21
   as2 |
   cs,8[( b']) as[ gs] |
-  fss[( gs]) cs[( e]) |
+  fss[( gs]) cs,[( e]) |
   ds2~ |
   ds2 |
   \time 6/8
-  r4. ^\f b16[ b b8 b] |
+  r4. ^\f b'16[ b b8 b] |
   % page 7 bar 27
   d4.~ d4 cs8 |
   d4( cs8) cs8.[ b16 b8] |
@@ -59,7 +59,7 @@ sopMusic = \relative c'' {
   fss4 gs |
   as8[ b]
   as8[ gs] |
-  a4 gs8 r8 |
+  as4 gs8 r8 |
   % page 8 bar 39
   gs4 gs8 r |
   as4^\cresc b |
@@ -71,7 +71,7 @@ sopMusic = \relative c'' {
   as4. fs8 |
   % bar 47
   cs'8[ cs] cs[ b] |
-  a4. r16 cs,16 |
+  as4. r16 cs,16 |
   cs8[( b'] as[ gs]) |
   fss8[( gs]) cs,[( e]) |
   ds2 ~ \bar "||"
@@ -91,10 +91,40 @@ sopMusic = \relative c'' {
   \time 2/4
   fss16[^\pp^\markup{\italic a tempo} fss8.] gs4 \breathe |
   as16[( as b8] as8[ gs] |
-  as4 gs4) |
+  as4 gs4 |
   % page 10 bar 63
+  gs8.[ gs16]) gs4 |
+  fss16[^\cresc fss8.] gs4 | 
+  as16[ as b8] as[ gs] |
+  as4 gs |
+  gs8. gs16] gs4\f | % !!! But this forte shouls start the next bar 
+  \new Voice <<
+    {as16[ as8.] ~ as8[ gs8]}
+    {cs16[ cs8.] ~ cs8[ b8]}
+  >> |
+  \new Voice <<
+    {fs4 ds}
+    {as'4 fs}
+  >> |
   % bar 70
-  % page 5 bar 1
+  \new Voice <<
+    {as8[ as] as[ gs]}
+    {cs8[ cs] cs[ b]}
+  >> |
+  \new Voice <<
+    {fs4.}
+    {as4.}
+  >> r8\p |
+  cs,4( b' ~ |
+  b4 as8[ gs]) |
+  fss2 ~ |
+  fss4 \breathe gs4 |
+  cs,2 |
+  e2~ |
+  e2 |
+  ds2~ |
+  ds2~ |
+  ds4 r4 |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,7 +163,7 @@ tenMusic = \relative c' {
   b4.~b8 as8[ as] as4. |
   \time 6/8
   gs8 gs4 ~ gs4. |
-  r8 gs[ fss] gs[ fss fss] |
+  r8 gs[ fss] gs[ fss gs] |
   as2. |
   % bar 7
   \time 9/8
@@ -148,7 +178,7 @@ tenMusic = \relative c' {
   gs8[ gs] gs r8 |
   % page 6 bar 14
   as4^\p( b) |
-  cs8[ ds] cs16[ cs16 b8] |
+  cs8[ d] cs16[ cs16 b8] |
   cs4 b4 |
   b8[ b] b r^\mf |
   as4.( b8) |
@@ -215,7 +245,7 @@ tenMusic = \relative c' {
   as2 |
   b16[ b8.] b4 |
   b4 b |
-  as8.[^\f as16] a4 |
+  as8.[^\f as16] as4 |
   as16[ as8.] b4 |
   % bar 70
   cs8[ cs] cs[ b] |
@@ -241,7 +271,7 @@ basMusic = \relative c {
   b4.~b8 as8[ as] as4. |
   \time 6/8
   gs8 gs4 ~ gs4. |
-  r8 gs[ fss] gs[ fss fss] |
+  r8 gs[ fss] gs[ fss gs] |
   as2. |
   % bar 7
   % page 5 bar 1
