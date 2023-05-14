@@ -17,6 +17,7 @@ sopMusic = \relative c'' {
   R1*6/8 |
   R1*6/8 |
   R1*6/8 |
+\break
   % bar 7
   \time 9/8
   R1*9/8 |
@@ -28,6 +29,7 @@ sopMusic = \relative c'' {
   as8[ b] as16 as gs8] |
   as4 gs |
   gs8[ gs] gs r |
+\break
   % page 6 bar 14
   as4(^\p b) |
   cs8[ d] cs16[ cs b8] |
@@ -36,6 +38,7 @@ sopMusic = \relative c'' {
   cs4.( b8) |
   as4. fs8 |
   cs'8[ cs] cs[ b] |
+\break
   % bar 21
   as2 |
   cs,8[( b']) as[ gs] |
@@ -44,12 +47,14 @@ sopMusic = \relative c'' {
   ds2 |
   \time 6/8
   r4. ^\f b'16[ b b8 b] |
+\break
   % page 7 bar 27
   d4.~ d4 cs8 |
   d4( cs8) cs8.[ b16 b8] |
   b2. |
   cs16[ ds cs( ds) cs( ds16)] e4. |
   ds4 as8 as8.[ gs16 gs8] |
+\break
   % bar 32
   gs2.~^\dim |
   gs4.~ gs8^\pp r8 r8 \bar "||"
@@ -60,6 +65,7 @@ sopMusic = \relative c'' {
   as8[ b]
   as8[ gs] |
   as4 gs8 r8 |
+\break
   % page 8 bar 39
   gs4 gs8 r |
   as4^\cresc b |
@@ -69,6 +75,7 @@ sopMusic = \relative c'' {
   b4 r^\pp |
   cs4.( b8) |
   as4. fs8 |
+\break
   % bar 47
   cs'8[ cs] cs[ b] |
   as4. r16 cs,16 |
@@ -78,11 +85,13 @@ sopMusic = \relative c'' {
   \time 6/8
   ds4. ~ ds8 r r |
   b'8[^\cresc b b ] b[ b b] |
+\break
   % page 9 bar 54
   d4( cs8) d4->( cs8) |
-  d4( cs8) cs8[ b8. b16] |
+  d4( cs8) cs8-\prall[ b8. b16] |
   b8 b4~ b4. |
   as8[ b as] b[ as b]
+\break
   % bar 58
   \time 9/8
   cs4. ds4 as8 as8[ gs8.^\dim gs16] |
@@ -92,6 +101,7 @@ sopMusic = \relative c'' {
   fss16[^\pp^\markup{\italic a tempo} fss8.] gs4 \breathe |
   as16[( as b8] as8[ gs] |
   as4 gs4 |
+\break
   % page 10 bar 63
   gs8.[ gs16]) gs4 |
   fss16[^\cresc fss8.] gs4 |
@@ -106,6 +116,7 @@ sopMusic = \relative c'' {
     {fs4 ds}
     {as'4 fs}
   >> |
+\break
   % bar 70
   \new Voice <<
     {as8[ as] as[ gs]}
@@ -201,7 +212,7 @@ altMusic = \relative c'' {
   ds8[ ds ds] b'4.~( |
   % page 9 bar 54
   b4 as8) b4->( as8) |
-  b4->( as8) as8[^\f gs8. gs16] |
+  b4->( as8) as8-\prall[^\f gs8. gs16] |
   gs8 gs4 ~ gs4. |
   fss8[ gs fss] gs[ fss gs] |
   % bar 58
@@ -439,7 +450,7 @@ basMusic = \relative c {
   % bar 70
   fs8[ fs] fs[ fs] |
   fs4. r8 |
-  cs4( b'~ |
+  cs4( b'~ % |
   b4 as8[ gs]) |
   fss2~ |
   fss4 \breathe gs4 |

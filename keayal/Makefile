@@ -7,7 +7,7 @@ endif
 
 .DELETE_ON_ERROR:
 
-BASE=nigunim
+BASE=keayal
 
 NOW := $(shell date "+%Y%m%d-%H%M%S")
 ZIP = /tmp/${BASE}-${NOW}.zip
