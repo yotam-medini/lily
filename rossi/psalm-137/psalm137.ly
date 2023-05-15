@@ -6,7 +6,7 @@
 \header {
   title = "על נהרות בבל"
   poet = "Text: תהילים קי\"ז"
-  composer = "Melody: Rossi"
+  composer = "Music: Salamone Rossi"
   % Do not display the tagline for this book
   % tagline = ##f
 }
