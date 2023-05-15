@@ -126,6 +126,11 @@ tenMusic = \relative c' {
   as4 as8 b b4 as |
   b2 d4\pp cs |
   % page2 system 2
+  d4( cs8) b cs4 b |
+  b4 cs8 cs d4 cs |
+  cs4 a gs2 |
+  as2\fermata r8\f b b b |
+  b4. b8 cs4 cs |
   % page2 system 3
   % page2 system 4
   % page3 system 1
@@ -163,6 +168,11 @@ basMusic = \relative c {
   fs4 fs8 g8 e4 fs |
   b,2 b'4\pp as |
   % page2 system 2
+  b4( a8) g fs4 g |
+  e4 a8 a d,4 a'~ |
+  a4 fs cs cs |
+  fs2\fermata r8\f e e e |
+  e4. e8 a4 a |
   % page2 system 3
   % page2 system 4
   % page3 system 1
