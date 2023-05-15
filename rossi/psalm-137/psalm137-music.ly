@@ -47,8 +47,20 @@ sopMusic = \relative c' {
   e4 fs fs e |
   fs2\fermata r8\f^\markup{Piu mosso} gs8 gs gs |
   gs4. gs8 a4 a |
+\draftbreak
   % page2 system 3
+  a2 gs4 gs\ff |
+  fs2 fs4 fs |
+  fs2 r2 |
+  R1 |
+  R1 |
   % page2 system 4
+\draftbreak
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  r2 r4 a |
   % page3 system 1
   % page3 system 2
   % page3 system 3
@@ -88,9 +100,19 @@ altMusic = \relative c' {
   R1 
   r4 cs8 cs cs2 |
   cs2\fermata r8\f e8 e e |
-  e4. e8 e e e4 |
+  e4. e8 e e e4~ |
   % page2 system 3
+  e4 ds e e\ff |
+  d!2 cs4 cs |
+  d4\p fs^\markup{Espressivo} fs fs8 fs |
+  fs4 e8 e e4 e |
+  fs4 fs8 e d2 |
   % page2 system 4
+  cs4 e  d e8 ds |
+  e4 b2 a4 |
+  a4. a8 d!2 |
+  cs4 cs d cs8 cs |
+  b2 e4 e |
   % page3 system 1
   % page3 system 2
   % page3 system 3
@@ -132,7 +154,17 @@ tenMusic = \relative c' {
   as2\fermata r8\f b b b |
   b4. b8 cs4 cs |
   % page2 system 3
+  a2 b4 b4\ff |
+  b2 b4 as |
+  b4 d\p cs cs8 cs |
+  d4 b8 b cs4 cs |
+  d4 a8 a a8[( gs16 fs] gs4) |
   % page2 system 4
+  a4 cs cs a8 a |
+  gs4 gs2 e4 |
+  fs2. b4 |
+  b4 as8 as b8 b4 as8 |
+  b2 r4 cs |
   % page3 system 1
   % page3 system 2
   % page3 system 3
@@ -174,7 +206,17 @@ basMusic = \relative c {
   fs2\fermata r8\f e e e |
   e4. e8 a4 a |
   % page2 system 3
+  fs2 e4 e\ff |
+  b2  fs'4 fs |
+  b,4 b' as as8 as |
+  b4 gs8 gs a4 a |
+  d,4 d8 cs b2 |
   % page2 system 4
+  a4 a'4. a8 fs fs |
+  e2 e4 cs |
+  d4 d b2 |
+  fs'4 fs e8 g fs4 |
+  b,2 r4 a |
   % page3 system 1
   % page3 system 2
   % page3 system 3
