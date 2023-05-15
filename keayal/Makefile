@@ -19,8 +19,8 @@ RELFILES = ${ZIPSRC} ${ZIPMIDIS} \
 	/tmp/${BASE}-latin-${NOW}.pdf \
 	/tmp/${BASE}-hebrewlatin-${NOW}.pdf \
 
-MIDIMORE=1.3
-MIDILESS=0.7
+MIDIMORE=1.3 10
+MIDILESS=0.6 -10
 
 MIDIS = ${BASE}.midi \
 	${BASE}-sop.midi \
@@ -75,16 +75,16 @@ ${BASE}-hebrewlatin.pdf: ${LYS_HEBREWLATIN}
 # ls -lG ${BASE}.pdf ${BASE}.midi
 
 %-sop.midi: %.midi
-	midiconv -tv 1 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
+	midiconv -tv 1 ${MIDIMORE} -tv -1 ${MIDILESS} $< $@
 
 %-alt.midi: %.midi
-	midiconv -tv 2 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
+	midiconv -tv 2 ${MIDIMORE} -tv -1 ${MIDILESS} $< $@
 
 %-ten.midi: %.midi
-	midiconv -tv 3 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
+	midiconv -tv 3 ${MIDIMORE} -tv -1 ${MIDILESS} $< $@
 
 %-bas.midi: %.midi
-	midiconv -tv 4 ${MIDIMORE} 0 -tv -1 ${MIDILESS} 0 $< $@
+	midiconv -tv 4 ${MIDIMORE} -tv -1 ${MIDILESS} $< $@
 
 midis: ${MIDIS}
 
