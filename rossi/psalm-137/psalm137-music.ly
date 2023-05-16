@@ -31,7 +31,7 @@ sopMusic = \relative c' {
 \draftbreak
   % page1 system 3
   g2( fs4) gs4 |
-  a4 a8 a a4 fs |
+  a4 a8 a a4 gs |
   fs2 e4 gs |
   fs4 fs8 fs gs4 a8 a |
   fs2\f e4 a |
@@ -39,7 +39,7 @@ sopMusic = \relative c' {
   % page2 system 1
   a4( gs) a r8 a |
   fs8 fs g!4\sf fs e |
-  fs4 a2\sf gs4 |
+  fs4 a2\sf g4 |
   fs4 fs8 d8 g4 fs |
   fs2\pp fs4 fs |
   % page2 system 2
@@ -102,7 +102,7 @@ altMusic = \relative c' {
   % page1 system 1
   d4 d8 d8 cs2 ~ |
   cs2( d4) e\cresc |
-  e2 d4 e |
+  e2 e4 e |
   fs2\f fs |
   % page1 system 2
   fs4\decresc e es2 |
@@ -113,11 +113,11 @@ altMusic = \relative c' {
   % page1 system 3
   d8[( cs16 b] cs4 d4) b |
   cs4 cs8 cs e4 e |
-  d4 ds e b |
-  bs4 bs8 bs bs4 cs8 cs8 |
+  e4 ds e b |
+  b4 b8 b b4 cs8 cs8 |
   a2\f a4 cs |
   % page2 system 1
-  c2 cs4 r8 e |
+  b2 cs4 r8 e |
   d8 d d4\sf d4. cs8 |
   d4 fs2\sf e4 |
   cs4 cs8 b e4 cs |
@@ -135,7 +135,7 @@ altMusic = \relative c' {
   fs4 e8 e e4 e |
   fs4 fs8 e d2 |
   % page2 system 4
-  cs4 e  d e8 ds |
+  cs4 e e e8 ds |
   e4 b2 a4 |
   a4. a8 d!2 |
   cs4 cs d cs8 cs |
@@ -188,7 +188,7 @@ tenMusic = \relative c' {
   g2( a4) e4 |
   e4 e8 e cs'4 b |
   b2 gs4 e |
-  d4 d8 d cs4 cs8 cs |
+  fs4 fs8 fs e4 e8 e |
   d2\f cs8.[ d16] e4 |
   % page2 system 1
   fs4( e) e r8 cs |
@@ -217,7 +217,7 @@ tenMusic = \relative c' {
   % page3 system 1
   cs4 cs8 cs cs4 cs |
   d4 a b b |
-  fs4( cs') b8 b a4 |
+  fs4( cs') d8 d a4 |
   a4( gs a2) |
   a2 a4. a8 |
   % page3 system 2
@@ -228,9 +228,9 @@ tenMusic = \relative c' {
   fs1\fermata |
   a4\f b cs4. cs8 |
   % page3 system 3
-  b4 fs g g\f |
+  d4 a b b\f |
   a4. a8 d d b4 |
-  b4 b a b |
+  b4 b a a |
   a4( gs8) gs a4( b) |
   b2 b4 gs |
   % page3 system 4
@@ -263,7 +263,7 @@ basMusic = \relative c {
   a,4 a8 a a4 e' |
   b2 e4 e |
   ds4 ds8 ds8 e4 cs8 cs |
-  b2\f a |
+  d2\f a |
   % page2 system 1
   d4 e a, r8 a |
   d8 d g4\sf d a |
@@ -309,7 +309,7 @@ basMusic = \relative c {
   b2 e4 e4 |
   % page3 system 4
   a,4 d8 d b2 |
-  fs'4 fs gs4. gs8 |
+  fs'4 fs g4. g8 |
   d2 e |
   b2 e |
   fs4 fs fs,2 |
