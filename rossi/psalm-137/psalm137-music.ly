@@ -1,4 +1,5 @@
 \include "english.ly"
+%% אבג
 
 global = {
   \key b \minor
@@ -45,7 +46,7 @@ sopMusic = \relative c' {
   fs8[( e fs]) g a4 d, |
   g4 e8 e fs4 e~ |
   e4 fs fs e |
-  fs2\fermata r8\f^\markup{Piu mosso} gs8 gs gs |
+  fs2\fermata r8\f^\markup{Più mosso} gs8 gs gs |
   gs4. gs8 a4 a |
 \draftbreak
   % page2 system 3
@@ -76,8 +77,21 @@ sopMusic = \relative c' {
   cs2 cs |
   cs1\fermata |
   fs4\f gs a4. a8 |
+\draftbreak
   % page3 system 3
+  a4 a gs gs\sf |
+  a4. a8 a8 a gs4 |
+  fs4 gs a a |
+  fs4( e8) e e4( gs) |
+  fs2 gs4\ff e |
+\draftbreak
   % page3 system 4
+  e4^\markup{Più animato} fs8 fs fs2 |
+  fs4 fs d gs~ |
+  gs4 fs8 fs e2 |
+  ds2 e2~ |
+  e4 d! cs2 |
+  << ds1\fermata { s4\< s4 s4\> s4\! } >> \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -140,7 +154,18 @@ altMusic = \relative c' {
   as1\fermata |
   cs4\f e e4. e8 |
   % page3 system 3
+  fs4 e e e\sf
+  cs4. cs8 fs fs e4 |
+  d4 e e e |
+  d( b8) b cs4( e) |
+  e4( ds) e b |
   % page3 system 4
+  cs4 d8 d d2 |
+  cs4 cs b d |
+  d2 b2 |
+  b2 b |
+  as4 b2 as4 |
+  << b1 { s4\< s4 s4\> s4\! } >> \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -203,7 +228,18 @@ tenMusic = \relative c' {
   fs1\fermata |
   a4\f b cs4. cs8 |
   % page3 system 3
+  b4 fs g g\f |
+  a4. a8 d d b4 |
+  b4 b a b |
+  a4( gs8) gs a4( b) |
+  b2 b4 gs |
   % page3 system 4
+  a4 a8 a b2 |
+  b4 as b b |
+  a2 g |
+  fs2 g |
+  fs4 fs fs2 |
+  << fs1 { s4\< s4 s4\> s4\! } >> \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -266,5 +302,16 @@ basMusic = \relative c {
   fs,1\fermata |
   fs'4\f e a,4. a8 |
   % page3 system 3
+  d4 cs e4. e8 |
+  fs4. fs8 d d e4 |
+  b4 e cs cs |
+  d( e8) e a,4( e') |
+  b2 e4 e4 |
   % page3 system 4
+  a,4 d8 d b2 |
+  fs'4 fs gs4. gs8 |
+  d2 e |
+  b2 e |
+  fs4 fs fs,2 |
+  << b1 { s4\< s4 s4\> s4\! } >> \bar "|."
 }
