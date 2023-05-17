@@ -13,6 +13,7 @@ NOW := $(shell date "+%Y%m%d-%H%M%S")
 ZIP = /tmp/${BASE}-${NOW}.zip
 ZIPSRC = /tmp/${BASE}-src-${NOW}.zip
 ZIPMIDIS = /tmp/${BASE}-midis-${NOW}.zip
+ZIPRELEASE = /tmp/${BASE}-pdfs-midis.zip
 
 RELFILES = ${ZIPSRC} ${ZIPMIDIS} \
 	/tmp/${BASE}-${NOW}.pdf \
@@ -113,8 +114,17 @@ ${ZIPMIDIS}: ${MIDIS}
 	zip $@ ${MIDIS}
 	unzip -l $@; ls -lGt $@
 
+${ZIPRELEASE}: ${PDFS} ${MIDIS}
+	rm -f $@
+	zip $@ ${PDFS} ${MIDIS}
+	unzip -l $@; ls -lGt $@
+
 zipsrc: ${ZIPSRC}
 zipmidis: ${ZIPMIDIS}
+
+zipmidis: ${ZIPMIDIS}
+
+ziprel: ${ZIPRELEASE}
 
 zips: ${ZIPSRC} ${ZIPMIDIS}
 
