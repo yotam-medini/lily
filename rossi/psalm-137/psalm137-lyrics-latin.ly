@@ -59,7 +59,7 @@ tenlyricsLatinText = \lyricmode {
   im lo a -- a -- leh et Je -- ru -- scha -- la -- yim
     al rosch sim -- cha -- ti se
   chor a -- do -- nai  li -- bne e -- dom et yom
-     je -- ru -- scha -- la__~--~yim
+     je -- ru -- scha -- la~__~-__-~yim
     ha -- o -- me --
   rim a -- ru a -- ru ad hai -- sod  bah
     Bat  Ba -- bel hasch --
