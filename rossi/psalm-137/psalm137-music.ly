@@ -42,6 +42,7 @@ sopMusic = \relative c' {
   fs4 a2\sf g4 |
   fs4 fs8 d8 g4 fs |
   fs2\pp fs4 fs |
+\draftbreak
   % page2 system 2
   fs8[( e fs]) g a4 d, |
   g4 e8 e fs4 e~ |
@@ -113,7 +114,7 @@ altMusic = \relative c' {
   % page1 system 3
   d8[( cs16 b] cs4 d4) b |
   cs4 cs8 cs e4 e |
-  e4 ds e b |
+  e4( ds) e b |
   b4 b8 b b4 cs8 cs8 |
   a2\f a4 cs |
   % page2 system 1
@@ -139,7 +140,7 @@ altMusic = \relative c' {
   e4 b2 a4 |
   a4. a8 d!2 |
   cs4 cs d cs8 cs |
-  b2 e4 e |
+  b2 r4 e |
   % page3 system 1
   e4 e8 e e4 e |
   fs4 e e e |
