@@ -295,7 +295,7 @@ tenMusic = \relative c' {
   cs16[ ds cs( ds) cs( ds16)] e4. |
   ds4( cs8) cs4( b8) |
   % bar 32
-  b8.[ gs16 gs8] gs4.^\dim |
+  b8.[ gs16 gs8] gs4.~^\dim |
   gs4.~ gs8^\pp r8 r8 \bar "||"
   \time 2/4
   fss4 gs |
