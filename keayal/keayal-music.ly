@@ -12,6 +12,7 @@ global = {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {
+  \override DynamicTextSpanner.style = #'none
   % page 5
   R1*6/8 |
   R1*6/8 |
@@ -144,6 +145,7 @@ sopMusic = \relative c'' {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 altMusic = \relative c'' {
+  \override DynamicTextSpanner.style = #'none
   % page 5 bar 1
   R1*6/8 |
   R1*6/8 |
@@ -226,7 +228,7 @@ altMusic = \relative c'' {
   \time 2/4
   R1*2/4\pp |
   css16[ css8.] ds4 |
-  es16[ es fs8] ess8[ ds] |
+  es16[ es fs8] es8[ ds] |
   % page 10 bar 63
   es4( ds |
   ds8.[^\cresc ds16] ds4) |
@@ -252,6 +254,7 @@ altMusic = \relative c'' {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 tenMusic = \relative c' {
+  \override DynamicTextSpanner.style = #'none
   % page 5 bar 1
   r8 ds,8 ds] ds[ ds ds] |
   b'4.~(b4 as8) |
@@ -360,6 +363,7 @@ tenMusic = \relative c' {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 basMusic = \relative c {
+  \override DynamicTextSpanner.style = #'none
   % page 5 bar 1
   r8 ds8 ds] ds[ ds ds] |
   b'4.~(b4 as8) |
@@ -403,8 +407,8 @@ basMusic = \relative c {
   as4. ~ as4 gs8 |
   fss4. fss8.[ es16 es8] |
   % bar 32
-  e!2. ~ |
-  e4. ~ e8 r r \bar "||"
+  e!2. ~\dim |
+  e4. ~ e8 r r\pp \bar "||"
   \time 2/4
   fss4 gs |
   as8[ b] as[ gs] |
@@ -436,7 +440,7 @@ basMusic = \relative c {
   es8 es4 ~ es4. |
   % bar 58
   \time 9/8
-  ds8[ cs8. ds16] e4.( ds4.) |
+  ds8[ cs8. ds16] e!4.( ds4.)\dim |
   \time 6/8
   ds2. \breathe \bar "||"
   \time 2/4
@@ -450,14 +454,14 @@ basMusic = \relative c {
   ds2 |
   ds4 es |
   fs8.[^\f fs16] fs4 |
-  fs16[^\f fs8.] fs4 |
+  fs16[ fs8.] fs4 |
   % bar 70
   fs8[ fs] fs[ fs] |
-  fs4. r8 |
+  fs4. r8\p |
   cs4( b'~ % |
   b4 as8[ gs]) |
   fss2~ |
-  fss4 \breathe gs4 |
+  fss4 \breathe gs4\pp |
   fs2 |
   cs2 ~ |
   cs2 |
