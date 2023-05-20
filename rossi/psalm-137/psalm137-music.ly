@@ -62,7 +62,7 @@ sopMusic = \relative c' {
   R1 |
   R1 |
   R1 |
-  r2 r4 a |
+  r2 r4 a\f |
 \draftbreak
   % page3 system 1
   a4 a8 a a4. a8 |
@@ -88,8 +88,8 @@ sopMusic = \relative c' {
 \draftbreak
   % page3 system 4
   e4^\markup{Più animato} fs8 fs fs2 |
-  fs4 fs d gs~ |
-  gs4 fs8 fs e2 |
+  fs4 fs d g!~ |
+  g4 fs8 fs e2 |
   ds2 e2~ |
   e4 d! cs2 |
   << ds1\fermata { s4\< s4 s4\> s4\! } >> \bar "|."
@@ -132,19 +132,19 @@ altMusic = \relative c' {
   % page2 system 3
   e4 ds e e\ff |
   d!2 cs4 cs |
-  d4\p fs^\markup{Espressivo} fs fs8 fs |
+  d4 fs^\markup{{\bold\italic p} Espressivo} fs fs8 fs |
   fs4 e8 e e4 e |
   fs4 fs8 e d2 |
   % page2 system 4
   cs4 e e e8 ds |
   e4 b2 a4 |
   a4. a8 d!2 |
-  cs4 cs d cs8 cs |
-  b2 r4 e |
+  cs4 cs e cs8 cs |
+  b2 r4 e\f |
   % page3 system 1
   e4 e8 e e4 e |
   fs4 e e e |
-  cs4( a'8) gs fs4 e |
+  cs4( a'8) g fs4 e |
   d2 cs |
   cs2 cs4. cs8 |
   % page3 system 2
@@ -157,7 +157,7 @@ altMusic = \relative c' {
   % page3 system 3
   fs4 e e e\sf
   cs4. cs8 fs fs e4 |
-  d4 e e e |
+  ds4 e e e |
   d( b8) b cs4( e) |
   e4( ds) e b |
   % page3 system 4
@@ -214,7 +214,7 @@ tenMusic = \relative c' {
   gs4 gs2 e4 |
   fs2. b4 |
   b4 as8 as b8 b4 as8 |
-  b2 r4 cs |
+  b2 r4 cs\f |
   % page3 system 1
   cs4 cs8 cs cs4 cs |
   d4 a b b |
@@ -229,7 +229,7 @@ tenMusic = \relative c' {
   fs1\fermata |
   a4\f b cs4. cs8 |
   % page3 system 3
-  d4 a b b\f |
+  d4 a b b\sf |
   a4. a8 d d b4 |
   b4 b a a |
   a4( gs8) gs a4( b) |
@@ -254,7 +254,7 @@ basMusic = \relative c {
   e'2 a,4 a |
   d2.\f d4 |
   % page1 system 2
-  b4\decresc e cs2 |
+  d4\decresc e cs2 |
   cs1\fermata |
   fs8\f fs d2 b4 |
   fs'4 fs b, r |
@@ -280,7 +280,7 @@ basMusic = \relative c {
   % page2 system 3
   fs2 e4 e\ff |
   b2  fs'4 fs |
-  b,4 b' as as8 as |
+  b,4 b'\p as as8 as |
   b4 gs8 gs a4 a |
   d,4 d8 cs b2 |
   % page2 system 4
@@ -288,7 +288,7 @@ basMusic = \relative c {
   e2 e4 cs |
   d4 d b2 |
   fs'4 fs e8 g fs4 |
-  b,2 r4 a |
+  b,2 r4 a\f |
   % page3 system 1
   a4 a8 a a4 a |
   d4 cs e e |
@@ -303,7 +303,7 @@ basMusic = \relative c {
   fs,1\fermata |
   fs'4\f e a,4. a8 |
   % page3 system 3
-  d4 cs e4. e8 |
+  d4 cs e4. e8\sf |
   fs4. fs8 d d e4 |
   b4 e cs cs |
   d( e8) e a,4( e') |

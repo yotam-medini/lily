@@ -30,7 +30,7 @@ altlyricsLatinText = \lyricmode {
     misch schir tsi -- yon 
        ad -- mat ne -- char
     im esch -- ka -- chech ye -- ru -- scha --
-  la -- yim _  tisch -- kach ye -- mi -- ni tid bak le -- scho -- ni 
+  la -- _ yim  tisch -- kach ye -- mi -- ni tid bak le -- scho -- ni 
     le -- chik -- ki  im lo ez -- ke -- re -- chi
   im lo a -- a -- leh et Je -- ru -- scha -- la -- yim
     al rosch sim -- cha -- ti se
