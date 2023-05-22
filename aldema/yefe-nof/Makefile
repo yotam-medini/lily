@@ -13,7 +13,7 @@ NOW := $(shell date "+%Y%m%d-%H%M%S")
 ZIP = /tmp/${BASE}-${NOW}.zip
 ZIPSRC = /tmp/${BASE}-src-${NOW}.zip
 ZIPMIDIS = /tmp/${BASE}-midis-${NOW}.zip
-ZIPRELEASE = /tmp/${BASE}-pdfs-midis.zip
+ZIPRELEASE = /tmp/aldema-${BASE}-pdfs-midis.zip
 
 RELFILES = ${ZIPSRC} ${ZIPMIDIS} \
 	/tmp/${BASE}-${NOW}.pdf \

@@ -14,7 +14,12 @@
 \paper{
   #(set-paper-size "a4")
 
-  system-system-spacing.basic-distance = #8
+  system-system-spacing.basic-distance = #16
+  score-system-spacing =
+    #'((basic-distance . 12)
+      (minimum-distance . 8)
+      (padding . 1)
+      (stretchability . 12))
 
   oddFooterMarkup = \markup {
       \hspace #60
