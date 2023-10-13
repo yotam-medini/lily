@@ -20,20 +20,24 @@ sopMusic = \relative c' {
   d8\p[( e) f g] a4 a4 |
   bf8[( a) bf( d]) a2 |
   g4 g8.[ g16] f4 f4 |
+\break
   % page 1, system 2
   e8[( d) e( f]) d4. a8 |
   d8[ e f( g]) a4 a4 |
   bf8[( a) bf( d]) a2 |
   g4 g8.[ g16] f4 f4 |
+\break
   % page 1, system 3
   e8[( d) e( f]) d2 |
   d4 d' d  \mark \markup{\italic { poco cresc. }} d |
   c8[d c( bf]) a2 |
   d,4 d' d d |
+\break
   % page 2, system 1
   c8[ d c( bf]) a2 |
   c4 c8[ c] f,4 f |
   g8[( a) bf( c]) a4( g8[) f] |
+\break
   % page 2, system 2
   <<
     { g4 g f f8[ f] }
@@ -44,6 +48,7 @@ sopMusic = \relative c' {
     \new Voice { \voiceTwo bf,8[bf] 4 }
   >> d2\< |
   g4\f g8[ g] f4 f4 |
+\break
   % page 2, system 3
   g8[( a) bf( c]) a4( g8[) f] |
   g4 g'4 f f8[ f] |
@@ -54,7 +59,7 @@ sopMusic = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 altMusic = \relative c' {
   \override DynamicTextSpanner.style = #'none
-  \autoBeamOff
+  % \autoBeamOff
   \dynamicUp 
   % page 1, system 1
   d4\p d8[ e] f4 f4 |
@@ -64,7 +69,7 @@ altMusic = \relative c' {
   bf4 a a8[( bf a) g] |
   a8[ a d( e]) f4 e8[( d]) |
   d4 g f2 |
-  e4 e8.[ e16] a,4 bf8[ c] |
+  e4 e8.[ e16] a,4 bf8[( c]) |
   % page 1, system 3
   d4 cs a2 |
   <<
@@ -112,7 +117,7 @@ altMusic = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 tenMusic = \relative c {
   \override DynamicTextSpanner.style = #'none
-  \autoBeamOff
+  % \autoBeamOff
   \dynamicUp 
   % page 1, system 1
   f4\p a8[ d] d4 d8[( c]) |
@@ -124,7 +129,7 @@ tenMusic = \relative c {
   bf4. g8 a4 d( |
   d4) cs8.[ cs16] e4 d8[( c]) |
   % page 1, system 3
-  bf4 a8[ g] f2 |
+  bf4 a8[( g]) f2 |
   bf4 bf8[( c]) d4 << { \stemUp e } \new Voice { \voiceTwo d } >> |
   <<
    { e8[ f] c4 c( a8[ g]) }
@@ -151,7 +156,7 @@ tenMusic = \relative c {
     \new Voice { \voiceTwo b,4 cs e d8[ d] }
   >> |
   <<
-    { \stemUp e8[ d e f] d2\< }
+    { \stemUp e8[ d e( f]) d2\< }
     \new Voice { \voiceTwo d8[ d] cs4 d2 }
   >> |
   g,4\f g8[ g] f4 f |
@@ -170,7 +175,7 @@ tenMusic = \relative c {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 basMusic = \relative c {
   \override DynamicTextSpanner.style = #'none
-  \autoBeamOff
+  % \autoBeamOff
   \dynamicUp 
   % page 1, system 1
   d4\p d8[ d] d4 d4 |
@@ -191,7 +196,7 @@ basMusic = \relative c {
   a4 a8[ a] d8[( c) bf( a]) |
   bf4 c
      <<
-       { \stemUp f4( g8[ a]]) }
+       { \stemUp f4( g8[) a]] }
        \new Voice { \voiceTwo f4( f8[) f] }
      >> |
   % page 2, system 2
