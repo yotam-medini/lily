@@ -20,24 +20,20 @@ sopMusic = \relative c' {
   d8\p[( e) f g] a4 a4 |
   bf8[( a) bf( d]) a2 |
   g4 g8.[ g16] f4 f4 |
-\break
   % page 1, system 2
   e8[( d) e( f]) d4. a8 |
   d8[ e f( g]) a4 a4 |
   bf8[( a) bf( d]) a2 |
   g4 g8.[ g16] f4 f4 |
-\break
   % page 1, system 3
   e8[( d) e( f]) d2 |
   d4 d' d  \mark \markup{\italic { poco cresc. }} d |
   c8[d c( bf]) a2 |
   d,4 d' d d |
-\break
   % page 2, system 1
   c8[ d c( bf]) a2 |
   c4 c8[ c] f,4 f |
   g8[( a) bf( c]) a4( g8[) f] |
-\break
   % page 2, system 2
   <<
     { g4 g f f8[ f] }
@@ -48,7 +44,6 @@ sopMusic = \relative c' {
     \new Voice { \voiceTwo bf,8[bf] 4 }
   >> d2\< |
   g4\f g8[ g] f4 f4 |
-\break
   % page 2, system 3
   g8[( a) bf( c]) a4( g8[) f] |
   g4 g'4 f f8[ f] |
@@ -126,8 +121,8 @@ tenMusic = \relative c {
   % page 1, system 2
   g4 g f8[( g f) e] |
   d8[ e f( g]) a4 a4 |
-  bf4. g8 a4 d( |
-  d4) cs8.[ cs16] e4 d8[( c]) |
+  bf4. g8 a4 d ~ |
+  d4 cs8.[ cs16] e4 d8[( c]) |
   % page 1, system 3
   bf4 a8[( g]) f2 |
   bf4 bf8[( c]) d4 << { \stemUp e } \new Voice { \voiceTwo d } >> |
@@ -218,7 +213,7 @@ basMusic = \relative c {
   >> |
   <<
     { \stemUp g'8[ g] a4 a2 }
-    \new Voice { \voiceTwo g,8[ g] a4 a2 }
+    \new Voice { \voiceTwo g,8[ g] a4 d2 }
   >> | \bar "|."
 }
 

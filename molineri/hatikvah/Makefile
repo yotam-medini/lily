@@ -13,19 +13,21 @@ NOW := $(shell date "+%Y%m%d-%H%M%S")
 ZIP = /tmp/${BASE}-${NOW}.zip
 ZIPSRC = /tmp/${BASE}-src-${NOW}.zip
 ZIPMIDIS = /tmp/${BASE}-midis-${NOW}.zip
-ZIPRELEASE = /tmp/aldema-${BASE}-pdfs-midis.zip
+ZIPRELEASE = /tmp/molinari-${BASE}-pdfs-midis.zip
 
 RELFILES = ${ZIPSRC} ${ZIPMIDIS} \
 	/tmp/${BASE}-${NOW}.pdf \
 	/tmp/${BASE}-latin-${NOW}.pdf \
 	/tmp/${BASE}-hebrewlatin-${NOW}.pdf \
 
-MIDIMORE=1.3 10
+MIDIMORE=1.3 20
 MIDILESS=0.6 -10
 
 MIDIS = ${BASE}.midi \
 	${BASE}-sop.midi \
 	${BASE}-alt.midi \
+	${BASE}-ten.midi \
+	${BASE}-bas.midi \
 
 LYS_COMMOM = ${BASE}.ly ${BASE}-music.ly ${BASE}-lyrics.ly
 
@@ -73,7 +75,13 @@ ${BASE}-hebrewlatin.pdf: ${LYS_HEBREWLATIN}
 	midiconv -tv 1 ${MIDIMORE} -tv -1 ${MIDILESS} $< $@
 
 %-alt.midi: %.midi
-	midiconv -tv 2 ${MIDIMORE} -tv -1 ${MIDILESS} $< $@
+	midiconv -tv 3 ${MIDIMORE} -tv -1 ${MIDILESS} $< $@
+
+%-ten.midi: %.midi
+	midiconv -tv 5 ${MIDIMORE} -tv -1 ${MIDILESS} $< $@
+
+%-bas.midi: %.midi
+	midiconv -tv 7 ${MIDIMORE} -tv -1 ${MIDILESS} $< $@
 
 midis: ${MIDIS}
 

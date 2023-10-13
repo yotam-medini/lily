@@ -18,6 +18,7 @@
   #(set-paper-size "a4")
 
   system-system-spacing.basic-distance = #16
+  % system-distance = 5mm
   score-system-spacing =
     #'((basic-distance . 12)
       (minimum-distance . 8)
@@ -48,6 +49,7 @@
     \new ChoirStaff <<
 
       \new Staff = "sop" <<
+	\set Staff.midiInstrument = #"flute"
         \new Voice = "sopranos" {
           \set Staff.instrumentName = "S"
           <<
@@ -59,6 +61,7 @@
       \include "soplyrics.ly"
 
       \new Staff = "alt" <<
+	\set Staff.midiInstrument = #"oboe"
         \new Voice = "altos" {
           \set Staff.instrumentName = "A"
           <<
@@ -70,6 +73,7 @@
       \include "altlyrics.ly"
 
       \new Staff = "ten" <<
+	\set Staff.midiInstrument = #"cello"
         \clef "G_8"
         \new Voice = "tenors" {
           \set Staff.instrumentName = "T"
@@ -81,6 +85,7 @@
       \include "tenlyrics.ly"
 
       \new Staff = "bas" <<
+	\set Staff.midiInstrument = #"bassoon"
         \clef bass
         \new Voice = "basses" {
           \set Staff.instrumentName = "B"
@@ -102,6 +107,12 @@
     % \override LyricText #'font-size = #1.81
     \context {
       \Staff
+    }
+  }
+
+  \midi {
+    \context {
+      \Score
     }
   }
 }
