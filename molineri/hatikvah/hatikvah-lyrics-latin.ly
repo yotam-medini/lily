@@ -6,10 +6,10 @@ A -- yin le -- tz -- ion tzo -- fi -- yah
 Od lo av -- dah tik -- va -- te -- nu
 Ha -- tik -- vah bat shnot al -- pa -- yim
 L -- hiyot am chof -- shi be -- art -- ze -- nu
-E -- retz Tz -- ion vi -- Yeru -- sha -- la -- yim
+E -- retz Tz -- ion viY -- ru -- sha -- la -- yim
 
 L -- hiyot am chof -- shi be -- art -- ze -- nu
-E -- retz Tz -- ion vi -- Yeru -- sha -- la -- yim
+E -- retz Tz -- ion viY -- ru -- sha -- la -- yim
 }
 
 altlyricsLatinText = \lyricmode {
@@ -20,10 +20,10 @@ A -- yin le -- tz -- ion tzo -- fi -- yah
 Od lo av -- dah tik -- va -- te -- nu
 Ha -- tik -- vah bat shnot al -- pa -- yim
 L -- hiyot am chof -- shi be -- art -- ze -- nu
-E -- retz Tz -- ion vi -- Yeru -- sha -- la -- yim
+E -- retz Tz -- ion viY -- ru -- sha -- la -- yim
 
 L -- hiyot am chof -- shi be -- art -- ze -- nu
-E -- retz Tz -- ion vi -- Yeru -- sha -- la -- yim
+E -- retz Tz -- ion viY -- ru -- sha -- la -- yim
 }
 
 tenlyricsLatinText = \lyricmode {
@@ -34,10 +34,10 @@ A -- yin le -- tz -- ion tzo -- fi -- yah
 Od lo av -- dah tik -- va -- te -- nu
 Ha -- tik -- vah bat shnot al -- pa -- yim
 L -- hiyot am chof -- shi be -- art -- ze -- nu
-E -- retz Tz -- ion vi -- Yeru -- sha -- la -- yim
+E -- retz Tz -- ion viY -- ru -- sha -- la -- yim
 
 L -- hiyot am chof -- shi be -- art -- ze -- nu
-E -- retz Tz -- ion vi -- Yeru -- sha -- la -- yim
+E -- retz Tz -- ion viY -- ru -- sha -- la -- yim
 }
 
 baslyricsLatinText = \lyricmode {
@@ -48,9 +48,9 @@ A -- yin le -- tz -- ion tzo -- fi -- yah
 Od lo av -- dah tik -- va -- te -- nu
 Ha -- tik -- vah bat shnot al -- pa -- yim
 L -- hiyot am chof -- shi be -- art -- ze -- nu
-E -- retz Tz -- ion vi -- Yeru -- sha -- la -- yim
+E -- retz Tz -- ion viY -- ru -- sha -- la -- yim
 
 L -- hiyot am chof -- shi be -- art -- ze -- nu
-E -- retz Tz -- ion vi -- Yeru -- sha -- la -- yim
+E -- retz Tz -- ion viY -- ru -- sha -- la -- yim
 }
 

@@ -68,7 +68,7 @@ altMusic = \relative c' {
   % page 1, system 3
   d4 cs a2 |
   <<
-    {d4 d8.[( e16]) f4 g}
+    {d4 d8[( e]) f4 g}
     \new Voice { \voiceTwo d4 d4 d4 d4 }
   >> |
   <<
@@ -82,7 +82,7 @@ altMusic = \relative c' {
   % page 2, system 1
   <<
     { f8[ f] e4 f8[( a g f]) }
-    \new Voice { \voiceTwo c8[ d] c8[( bf]) a4 }
+    \new Voice { \voiceTwo c8[ d] c8[( bf]) a4 r4}
   >> |
   e'4 e8[ e] f8[( e) d( c]) | 
   d4 e 
@@ -177,7 +177,7 @@ basMusic = \relative c {
   g,4 g' d( e8[ f]) |
   g4 a8.[ a,16] g4. f8 |
   % page 1, system 2
-  f4 a d4. d8 |
+  g4 a d4. d8 |
   d8[ d] d4 d8[( a) g( f]) |
   g4. bf8 d8[( e f g ]) |
   a4 a,8.[ a16] d8[( c) bf( a]) |
@@ -192,7 +192,7 @@ basMusic = \relative c {
   bf4 c
      <<
        { \stemUp f4( g8[) a]] }
-       \new Voice { \voiceTwo f4( f8[) f] }
+       \new Voice { \voiceTwo f4 f8[ f] } % ugly [needed]  slur removed
      >> |
   % page 2, system 2
   <<
