@@ -76,8 +76,8 @@ PartPThreeVoiceOneLyricsThree =  \lyricmode {\set ignoreMelismata = ##t
     }
 
 PartPFourVoiceOneLyricsFour =  \lyricmode {\set ignoreMelismata = ##t E
-    -- lo --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1
-    \skip1 \skip1 him ha --\skip1 shi -- ve --\skip1 \skip1 \skip1
+    --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1
+    \skip1 \skip1 lo -- him ha --\skip1 shi -- ve --\skip1 \skip1 \skip1
     \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 "nu;"
     ve -- ha -- er pa -- ne -- "kha," ve -- ni --\skip1 \skip1 \skip1
     \skip1 \skip1 \skip1 va -- she --\skip1 \skip1 \skip1 \skip1 "'a."

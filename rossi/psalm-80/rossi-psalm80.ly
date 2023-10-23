@@ -301,7 +301,7 @@ PartPFourVoiceOne =  \relative d {
                 \context Staff << 
                     \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
                     \context Voice = "PartPOneVoiceOne" {  \PartPOneVoiceOne }
-                    \new Lyrics \lyricsto "PartPOneVoiceOne" { \set stanza = "1." \PartPOneVoiceOneLyricsOne }
+                    \new Lyrics \lyricsto "PartPOneVoiceOne" { \set stanza = "" \PartPOneVoiceOneLyricsOne }
                     >>
                 >>
             \new Staff
@@ -312,7 +312,7 @@ PartPFourVoiceOne =  \relative d {
                 \context Staff << 
                     \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
                     \context Voice = "PartPTwoVoiceOne" {  \PartPTwoVoiceOne }
-                    \new Lyrics \lyricsto "PartPTwoVoiceOne" { \set stanza = "1." \PartPTwoVoiceOneLyricsTwo }
+                    \new Lyrics \lyricsto "PartPTwoVoiceOne" { \set stanza = "" \PartPTwoVoiceOneLyricsTwo }
                     >>
                 >>
             \new Staff
@@ -323,7 +323,7 @@ PartPFourVoiceOne =  \relative d {
                 \context Staff << 
                     \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
                     \context Voice = "PartPThreeVoiceOne" {  \PartPThreeVoiceOne }
-                    \new Lyrics \lyricsto "PartPThreeVoiceOne" { \set stanza = "1." \PartPThreeVoiceOneLyricsThree }
+                    \new Lyrics \lyricsto "PartPThreeVoiceOne" { \set stanza = "" \PartPThreeVoiceOneLyricsThree }
                     >>
                 >>
             \new Staff
@@ -334,7 +334,7 @@ PartPFourVoiceOne =  \relative d {
                 \context Staff << 
                     \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
                     \context Voice = "PartPFourVoiceOne" {  \PartPFourVoiceOne }
-                    \new Lyrics \lyricsto "PartPFourVoiceOne" { \set stanza = "1." \PartPFourVoiceOneLyricsFour }
+                    \new Lyrics \lyricsto "PartPFourVoiceOne" { \set stanza = "" \PartPFourVoiceOneLyricsFour }
                     >>
                 >>
             
