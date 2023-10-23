@@ -14,24 +14,25 @@ ORIGMID=${BASE}.mid
 VOICES = sop alt ten bas
 MIDI_EMPH = $(foreach v, ${VOICES}, ${BASE}-${v}.mid)
 MIDI_MINUS = $(foreach v, ${VOICES}, ${BASE}-no${v}.mid)
-TARGETS = ${MIDI_EMPH} ${MIDI_MINUS}
+TARGETS = ${BASE}-latin.pdf ${BASE}-hebrew.pdf
+TARGETS += ${BASE}.midi ${MIDI_EMPH} ${MIDI_MINUS}
 
-rossi-psalm80-latin.pdf: \
-	rossi-psalm80.ly latin/psalm80-lyrics.ly
-	lilypond -I latin --pdf -o rossi-psalm80-latin rossi-psalm80.ly
-	rm -f rossi-psalm80-latin.midi
+${BASE}-latin.pdf: \
+	${BASE}.ly latin/psalm80-lyrics.ly
+	lilypond -I latin --pdf -o ${BASE}-latin ${BASE}.ly
+	rm -f ${BASE}-latin.midi
 	ls -lG $@
 
-rossi-psalm80-hebrew.pdf: \
-	rossi-psalm80.ly hebrew/psalm80-lyrics.ly
-	lilypond -I hebrew --pdf -o rossi-psalm80-hebrew rossi-psalm80.ly
-	rm -f rossi-psalm80-latin.midi
+${BASE}-hebrew.pdf: \
+	${BASE}.ly hebrew/psalm80-lyrics.ly
+	lilypond -I hebrew --pdf -o ${BASE}-hebrew ${BASE}.ly
+	rm -f ${BASE}-latin.midi
 	ls -lG $@
 
-rossi-psalm80.midi: \
-	rossi-psalm80.ly latin/psalm80-lyrics.ly
-	lilypond -I latin rossi-psalm80.ly
-	rm -f rossi-psalm80.pdf
+${BASE}.midi: \
+	${BASE}.ly latin/psalm80-lyrics.ly
+	lilypond -I latin ${BASE}.ly
+	rm -f ${BASE}.pdf
 	ls -lG $@
 
 default:
