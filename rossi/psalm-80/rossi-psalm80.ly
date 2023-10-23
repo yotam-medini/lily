@@ -152,7 +152,7 @@ PartPTwoVoiceOne =  \relative g' {
     \stemUp d2 \stemUp bes2 \stemUp a2 \stemUp d2 | % 32
     \stemUp c2 \stemUp f2 \stemUp e2 \stemUp d2 | % 33
     e1 fis1 \break | % 34
-    \stemUp f2. \stemUp e4 d1 | % 35
+    \stemUp f!2. \stemUp e4 d1 | % 35
     \stemUp e2. \stemUp d4 c1 | % 36
     \stemUp f2 \stemUp e2 d1 | % 37
     d1 bes'1 \break | % 38
