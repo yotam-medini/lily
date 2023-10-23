@@ -206,7 +206,7 @@ PartPThreeVoiceOne =  \relative g {
     \stemDown d2 \stemDown c2. \stemUp f,4 \stemUp g2 ~ |
     \barNumberCheck #30
     \stemUp g4 \stemUp f4 g1 \stemUp fis2 | % 31
-    g1 \stemUp f2 \stemUp a2 ~ | % 32
+    g1 \stemUp f!2 \stemUp a2 ~ | % 32
     \stemUp a2 \stemDown d2 \stemDown cis2 \stemDown d2 ~ | % 33
     \stemDown d2 \stemDown cis2 d1 \break | % 34
     a1. \stemUp f2 | % 35
