@@ -28,16 +28,22 @@ PartPOneVoiceOneLyricsOne =  \lyricmode {\set ignoreMelismata = ##t ha
     }
 
 PartPTwoVoiceOneLyricsTwo =  \lyricmode {\set ignoreMelismata = ##t ha
-    --\skip1 \skip1 \skip1 \skip1 shi -- ve --\skip1 \skip1 \skip1
-    \skip1 \skip1 "nu;" ve -- ha -- er pa -- ne -- "kha," ve --\skip1
-    \skip1 ni -- va --\skip1 \skip1 she --\skip1 \skip1 "'a." E -- lo
+    --\skip1 \skip1 shi -- ve -- nu ha -- \skip1 \skip1 shi -- ve 
+    \skip1  
+    % bar 14
+    "nu;" 
+    ve -- ha -- er pa -- ne -- "kha," ve --\skip1
+    \skip1 ni -- va --\skip1 \skip1 she --\skip1 \skip1 "'a." E --
     --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1
-    \skip1 him tse -- va --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1
-    \skip1 \skip1 "ot," ha --\skip1 shi --\skip1 ve --\skip1 \skip1
-    \skip1 \skip1 \skip1 "nu;" ve -- ha -- er pa -- ne -- "kha," ve --
+    \skip1 lo -- him tse -- va --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1
+    \skip1 \skip1 "ot," ha -- shi -- ve -- nu
+    % bar 39
+    ha -- \skip1 \skip1 \skip1 -- shi -- ve -- nu
+    % bar 39
+    ve -- ha -- er pa -- ne -- "kha," ve --
     niv -- va -- she --\skip1 \skip1 \skip1 \skip1 "'a," ve -- niv
     --\skip1 \skip1 \skip1 \skip1 va -- she -- "'a." A -- do -- nai e --
-    lo --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1 him tse -- va
+    --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1 lo -- him tse -- va
     --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1 ot ha -- shi -- ve
     --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1 "nu;" ha -- er pa
     --\skip1 \skip1 ne -- kha "v'" --\skip1 \skip1 \skip1 \skip1 niv
