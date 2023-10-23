@@ -79,15 +79,21 @@ PartPFourVoiceOneLyricsFour =  \lyricmode {\set ignoreMelismata = ##t E
     --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1
     \skip1 \skip1 lo -- him ha --\skip1 shi -- ve --\skip1 \skip1 \skip1
     \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 "nu;"
-    ve -- ha -- er pa -- ne -- "kha," ve -- ni --\skip1 \skip1 \skip1
-    \skip1 \skip1 \skip1 va -- she --\skip1 \skip1 \skip1 \skip1 "'a."
+    ve -- ha -- er pa -- ne -- "kha," ve -- 
+    % bar 19
+    ni -- va -- she --\skip1 \skip1 \skip1
+    \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 "'a."
     tse --\skip1 va --\skip1 \skip1 \skip1 \skip1 \skip1 "ot," ha
     --\skip1 \skip1 \skip1 \skip1 shi -- ve --\skip1 \skip1 \skip1
     \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 "nu;" ve -- ha --
-    er pa -- ne -- "kha," ve -- niv -- va -- she --\skip1 \skip1 \skip1
-    \skip1 \skip1 "'a," ve -- niv --\skip1 \skip1 \skip1 va --\skip1 she
-    -- "'a." A -- do -- nai e -- lo --\skip1 \skip1 \skip1 \skip1 \skip1
-    \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 him tse -- va --\skip1
+    er pa -- ne -- 
+    % bar 45
+    "kha," ve -- niv -- va -- she --\skip1 \skip1 \skip1
+    \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1
+    -- "'a." 
+    % bar 53
+    A -- do -- nai e --\skip1 \skip1 \skip1 \skip1 \skip1
+    \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 lo -- him tse -- va --\skip1
     \skip1 \skip1 \skip1 ot ha --\skip1 shi -- ve --\skip1 \skip1 \skip1
     "nu;" ha -- er pa -- ne -- kha ve -- niv -- va -- she --\skip1
     \skip1 \skip1 \skip1 \skip1 "'a."
