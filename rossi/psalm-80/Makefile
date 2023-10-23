@@ -18,7 +18,20 @@ TARGETS = ${MIDI_EMPH} ${MIDI_MINUS}
 
 rossi-psalm80-latin.pdf: \
 	rossi-psalm80.ly latin/psalm80-lyrics.ly
-	lilypond -I latin -o rossi-psalm80-latin rossi-psalm80.ly
+	lilypond -I latin --pdf -o rossi-psalm80-latin rossi-psalm80.ly
+	rm -f rossi-psalm80-latin.midi
+	ls -lG $@
+
+rossi-psalm80-hebrew.pdf: \
+	rossi-psalm80.ly hebrew/psalm80-lyrics.ly
+	lilypond -I hebrew --pdf -o rossi-psalm80-hebrew rossi-psalm80.ly
+	rm -f rossi-psalm80-latin.midi
+	ls -lG $@
+
+rossi-psalm80.midi: \
+	rossi-psalm80.ly latin/psalm80-lyrics.ly
+	lilypond -I latin rossi-psalm80.ly
+	rm -f rossi-psalm80.pdf
 	ls -lG $@
 
 default:
