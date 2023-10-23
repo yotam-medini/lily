@@ -72,9 +72,20 @@ PartPThreeVoiceOneLyricsThree =  \lyricmode {\set ignoreMelismata = ##t
 % end of block
     }
 
-PartPFourVoiceOneLyricsFour =  \lyricmode {\set ignoreMelismata = ##t E
+PartPFourVoiceOneLyricsFour =  \lyricmode {\set ignoreMelismata = ##t
 
-אל
+אֱ -- _ _ _ _ _ _ _ _ _ _ לֹ -- הִים 
+הֲ -- _ שִׁי -- בֵ -- _ _ _ _ _ _ _ _ _ _ _ _  נוּ
+וְ -- הָ -- אֵר פָּ -- נֶי -- ךָ וְ -- נִ -- וָּ -- שֵׁ -- _ _ _ _ _ _ _ _ _ _ עָה
+צְ -- _ בָ -- _ _ _ _ _ אוֹת הֲ -- _ _ _ _ שִׁי -- בֵ -- 
+_ _ _ _ _ _ _ _ _ _ נוּ
+וְ -- הָ -- אֵר פָּ -- נֶי -- ךָ 
+וְ _ -- נִ -- _ וָּ -- _ שֵׁ -- _ _ _ _ _ _ _ _ _ _ _ עָה
+אֲ -- דוֹ -- נָי  אֱ -- _ _ _ _ _ _ _ _ _ _ _ לֹ -- הִים
+ צְ -- בָ -- _ _ _ _ אוֹת
+הֲ -- _ שִׁי -- בֵ -- _ _ _ נוּ
+הָ -- אֵר פָּ -- נֶי -- ךָ  וְ --  נִ -- וָּ -- שֵׁ 
+
 
 % end of block
     }
