@@ -38,7 +38,7 @@
         }
     }
 PartPOneVoiceOne =  \relative bes' {
-    \clef "treble" \time 2/2 \key f \major | % 1
+    \clef "treble" \time 4/2 \key f \major | % 1
     r1*2 | % 2
     r1*2 ^\markup{ \bold {VII. Elohim Hashivenu} } ^
     "(Psalm 80, 4-8-20)" | % 3
@@ -112,7 +112,7 @@ PartPOneVoiceOne =  \relative bes' {
     }
 
 PartPTwoVoiceOne =  \relative g' {
-    \clef "treble" \time 2/2 \key f \major | % 1
+    \clef "treble" \time 4/2 \key f \major | % 1
     r1*2 | % 2
     r1*2 | % 3
     r1*2 | % 4
@@ -169,7 +169,7 @@ PartPTwoVoiceOne =  \relative g' {
     }
 
 PartPThreeVoiceOne =  \relative g {
-    \clef "treble_8" \time 2/2 \key f \major | % 1
+    \clef "treble_8" \time 4/2 \key f \major | % 1
     \stemUp g2 bes1 \stemUp a4 \stemUp g4 | % 2
     \stemUp a4 \stemDown bes4 \stemDown c2. \stemUp bes8 [ \stemUp a8 ]
     \stemDown bes4 \stemDown c4 | % 3
@@ -223,7 +223,7 @@ PartPThreeVoiceOne =  \relative g {
     }
 
 PartPFourVoiceOne =  \relative d {
-    \clef "bass" \time 2/2 \key f \major | % 1
+    \clef "bass" \time 4/2 \key f \major | % 1
     R1 \stemDown d2 -
     ""
     \stemDown f2 ~ | % 2
