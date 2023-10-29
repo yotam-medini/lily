@@ -1,8 +1,8 @@
 PartPOneVoiceOneLyricsOne =  \lyricmode {\set ignoreMelismata = ##t ha
     --\skip1 \skip1 shi -- ve --\skip1 \skip1 \skip1 \skip1 \skip1
     \skip1 \skip1 \skip1 \skip1 \skip1 "nu;" "v'" -- ha -- er pa -- ne
-    -- "kha," ve --\skip1 ni --\skip1 va --\skip1 she --\skip1 \skip1
-    \skip1 \skip1 \skip1 "'a." 
+    -- "kha," ve -- ni --\skip1 va -- she --\skip1 \skip1
+    \skip1 \skip1 \skip1 \skip1 \skip1 "'a." 
     % bar 25
     E -- \skip1 \skip1 \skip1 \skip1
     \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 lo him tse
@@ -32,8 +32,10 @@ PartPTwoVoiceOneLyricsTwo =  \lyricmode {\set ignoreMelismata = ##t ha
     \skip1  
     % bar 14
     "nu;" 
-    ve -- ha -- er pa -- ne -- "kha," ve --\skip1
-    \skip1 ni -- va --\skip1 \skip1 she --\skip1 \skip1 "'a." E --
+    ve -- ha -- er pa -- ne -- "kha," 
+    ve -- ni -- va -- she -- "'a" 
+    ve -- ni -- va -- she -- _ "'a." 
+    E --
     --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1
     \skip1 lo -- him tse -- va --\skip1 \skip1 \skip1 \skip1 \skip1 \skip1
     \skip1 \skip1 "ot," ha -- shi -- ve -- nu

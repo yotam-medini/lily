@@ -30,6 +30,17 @@
     page-top-space = 0.87\cm
     indent = 2.5846153846153843\cm
     short-indent = 0.6461538461538461\cm
+
+    oddFooterMarkup = \markup {
+	\hspace #60
+	\on-the-fly #last-page { (typeset via \italic "LilyPond"
+	\small \typewriter
+	\hspace #2
+	\small
+	\simple #(strftime "%Y-%m-%d %H:%M:%S)" (localtime (current-time)))
+	}
+    }
+    evenFooterMarkup = \oddFooterMarkup
     }
 \layout {
     \context { \Score
@@ -43,7 +54,7 @@ PartPOneVoiceOne =  \relative bes' {
     r1*2 ^\markup{ \bold {VII. Elohim Hashivenu} } ^
     "(Psalm 80, 4-8-20)" | % 3
     r1*2 | % 4
-    R1 \stemDown bes2. \stemUp a4 | % 5
+    r1 \stemDown bes2. \stemUp a4 | % 5
     \stemDown bes2 \stemDown c2 \stemDown d2. \stemDown c8 [ \stemDown
     bes8 ] \break | % 6
     \stemUp a4 \stemDown bes4 \stemDown c4 \stemUp a4 \stemDown b2
@@ -116,7 +127,7 @@ PartPTwoVoiceOne =  \relative g' {
     r1*2 | % 2
     r1*2 | % 3
     r1*2 | % 4
-    R1 \stemUp g2. \stemUp f4 | % 5
+    r1 \stemUp g2. \stemUp f4 | % 5
     \stemUp g2 \stemUp a2 \stemDown bes2 \stemDown bes2 \break | % 6
     \stemUp f2. \stemUp e4 \stemUp d2 \stemUp e2 | % 7
     \stemUp a2 \stemUp g2 g1 | % 8
@@ -125,7 +136,7 @@ PartPTwoVoiceOne =  \relative g' {
     \stemUp e2 \stemUp f2 f1 | % 11
     \stemUp f2 \stemUp es2 \stemUp d2 \stemUp d2 \break | % 12
     \stemUp es2 \stemUp d2 d1 \bar "||"
-    R1 \stemUp d2 \stemUp f2 ~ | % 14
+    r1 \stemUp d2 \stemUp f2 ~ | % 14
     \stemUp f2 \stemUp e4 \stemUp d4 \stemUp e4 \stemUp f4 \stemUp g4
     \stemUp e4 | % 15
     \stemUp fis2 g1 \stemUp fis2 | % 16
@@ -246,7 +257,7 @@ PartPFourVoiceOne =  \relative d {
     r1*2 | % 14
     r1*2 | % 15
     r1*2 | % 16
-    R1 r2 \stemDown f'2 ~ | % 17
+    r1. \stemDown f'2 ~ | % 17
     \stemDown f2 \stemDown d2. \stemUp c8 [ \stemUp bes8 ] \stemUp a4
     \stemUp bes4 \break | % 18
     c1 f1 | % 19
