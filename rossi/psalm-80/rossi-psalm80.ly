@@ -235,7 +235,7 @@ PartPThreeVoiceOne =  \relative g {
 
 PartPFourVoiceOne =  \relative d {
     \clef "bass" \time 4/2 \key f \major | % 1
-    R1 \stemDown d2 -
+    r1 \stemDown d2 -
     ""
     \stemDown f2 ~ | % 2
     \stemDown f2 \stemDown e4 \stemDown d4 \stemDown e4 \stemDown f4
