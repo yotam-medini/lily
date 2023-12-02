@@ -1,7 +1,7 @@
 PartPOneVoiceOneLyricsOne =  \lyricmode {\set ignoreMelismata = ##t ha
     --\skip1 \skip1 shi -- ve --\skip1 \skip1 \skip1 \skip1 \skip1
     \skip1 \skip1 \skip1 \skip1 \skip1 "nu;" "v'" -- ha -- er pa -- ne
-    -- "kha," ve -- ni --\skip1 va -- she --\skip1 \skip1
+    -- "kha," ve -- \skip1 ni -- va -- she --\skip1 \skip1
     \skip1 \skip1 \skip1 \skip1 \skip1 "'a." 
     % bar 25
     E -- \skip1 \skip1 \skip1 \skip1
