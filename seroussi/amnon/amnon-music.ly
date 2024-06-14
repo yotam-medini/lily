@@ -81,10 +81,11 @@ tenMusic = \relative c {
   bf'4.\mp\< g8[( af\! gf\> cf\!]
   bf4.) gf8[( af gf cf] |
   \time 5/8
-    c!8[ df] af4.) |
+    c!8[ df!] af4.) |
   \time 3/8
-    r8 a4 |
+    r8 a4( |
   % page 2 system 2
+  bf4.)
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
