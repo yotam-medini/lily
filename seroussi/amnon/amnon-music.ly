@@ -14,7 +14,8 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {
   \stemUp
-  bf8[ bf16 bf bf bf] cf8[ df ef cf] |
+  \set melismaBusyProperties = #'()
+  bf8\mp\<[ bf16 bf bf bf] cf8\![( df\> ef cf])\! |
   % page 2 system 1
   % page 2 system 2
   % page 3 system 1
@@ -34,7 +35,7 @@ sopMusic = \relative c'' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 altMusic = \relative c' {
   % page 2 system 1
-  f8[ gf af16 af16] af16[ af16 bf8 af ff] |
+  f8\mp\<[ gf af16 af16] af16[ af16\! bf8\> af ff]\! |
   % page 2 system 2
   % page 3 system 1
   % page 3 system 2
@@ -54,7 +55,7 @@ altMusic = \relative c' {
 tenMusic = \relative c {
   \stemUp
   % page 2 system 1
-  bf'4. g8[ af gf cf]
+  bf'4.\mp\< g8[( af\! gf\> cf\!])
   % page 2 system 2
   % page 3 system 1
   % page 3 system 2
@@ -74,7 +75,7 @@ tenMusic = \relative c {
 basMusic = \relative c {
   \stemUp
   % page 2 system 1
-  bf8 f'4 ~ f16[ ef df df cf cf af8] |
+  bf8\mp\< f'4 ~ f16[ ef df\! df\> cf cf af8\!] |
   % page 2 system 2
   % page 3 system 1
   % page 3 system 2

@@ -1,16 +1,16 @@
 soplyricsLatinText = \lyricmode {
-  SLa
+  La La La La La La La La La
 }
 
 altlyricsLatinText = \lyricmode {
-  ALa
+  La La La La La La La La La
 }
 
 tenlyricsLatinText = \lyricmode {
-  TLa
+  La La La La La
 }
 
 baslyricsLatinText = \lyricmode {
-  BLa
+  La La La La
 }
 

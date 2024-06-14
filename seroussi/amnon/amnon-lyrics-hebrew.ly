@@ -1,6 +1,7 @@
 soplyricsText = \lyricmode {
 
-סלָה
+
+לָה לָה לָה לָה לָה לָה לָה לָה לָה 
 
   % LTR
 }
@@ -8,21 +9,21 @@ soplyricsText = \lyricmode {
 altlyricsText = \lyricmode {
 
 
-אלָה
+לָה לָה לָה לָה לָה לָה לָה לָה לָה 
 
   % LTR
 }
 
 tenlyricsText = \lyricmode {
 
-טלָה
+לָה
 
   % LTR
 }
 
 baslyricsText = \lyricmode {
 
-בלָה
+לָה
 
   % LTR
 }
