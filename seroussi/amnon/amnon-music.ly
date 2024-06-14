@@ -13,10 +13,24 @@ global = {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {
-  \stemUp
+  % \stemUp
+  \override Stem.neutral-direction = #up
   \set melismaBusyProperties = #'()
-  bf8\mp\<[ bf16 bf bf bf] cf8\![( df\> ef cf])\! |
+  bf8\mp\<[ bf16 bf bf bf] cf8\![( df\> ef cf]\! |
+  bf8)[ bf16\< bf bf bf] cf8 
+    % \shape #'((0 . 0.5) (0 . 0.5) (0 . 0.5) (0 . 0.5)) Slur
+    % \stemDown
+    [( df ef 
+    % \shape #'((0 . 0.5) (0 . 0.5) (0 . 0.5) (0 . 0.5)) Tie
+    ff~] |
+  \time 5/8
+    ff8[\! df ef\> df cf~] |
+  \time 3/8
+    \override Hairpin.to-barline = ##f
+    cf8[ df cf] |
   % page 2 system 1
+  \time 7/8
+    bf8\!)
   % page 2 system 2
   % page 3 system 1
   % page 3 system 2
@@ -34,9 +48,17 @@ sopMusic = \relative c'' {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 altMusic = \relative c' {
+  \set melismaBusyProperties = #'()
   % page 2 system 1
   f8\mp\<[ gf af16 af16] af16[ af16\! bf8\> af ff]\! |
+  f!8[ gf\< af16 af16] af16[ af16 bf8(] af4] |
+  \time 5/8
+    g8\![ gf] f4.)\> |
+  \time 3/8
+    gf4. |
   % page 2 system 2
+  \time 7/8
+    f8\!
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
@@ -53,9 +75,15 @@ altMusic = \relative c' {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 tenMusic = \relative c {
+  \set melismaBusyProperties = #'()
   \stemUp
   % page 2 system 1
-  bf'4.\mp\< g8[( af\! gf\> cf\!])
+  bf'4.\mp\< g8[( af\! gf\> cf\!]
+  bf4.) gf8[( af gf cf] |
+  \time 5/8
+    c!8[ df] af4.) |
+  \time 3/8
+    r8 a4 |
   % page 2 system 2
   % page 3 system 1
   % page 3 system 2
@@ -73,10 +101,18 @@ tenMusic = \relative c {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 basMusic = \relative c {
+  \set melismaBusyProperties = #'()
   \stemUp
   % page 2 system 1
-  bf8\mp\< f'4 ~ f16[ ef df\! df\> cf cf af8\!] |
+  bf8\mp\< f'4 ~ f16[   ef df\! df\> cf cf af8\!] |
+  bf8      f'4 ~ f16[\< ef df   df   cf cf af8] |
+  \time 5/8
+    a4\!( bf8\>[ cf d] |
+  \time 3/8
+    ef4.)
   % page 2 system 2
+  \time 7/8
+    bf8\!
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1

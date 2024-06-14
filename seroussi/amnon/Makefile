@@ -9,6 +9,10 @@ endif
 
 BASE=amnon
 
+LILYPOND=lilypond
+# LILYPOND=/home/yotam/lilypond-2.24.3/bin/lilypond
+# LILYPOND=/home/yotam/lilypond-2.25.16/bin/lilypond
+
 NOW := $(shell date "+%Y%m%d-%H%M%S")
 ZIP = /tmp/${BASE}-${NOW}.zip
 ZIPSRC = /tmp/${BASE}-src-${NOW}.zip
@@ -60,15 +64,15 @@ LYS_ALL_DUP = ${LYS_HEBREW} ${LYS_LATIN} ${BASE}-hebrewlatin.ly
 LYS_ALL := $(shell ls -1 ${LYS_ALL_DUP} | sort -u)
 
 ${BASE}-hebrew.pdf ${BASE}.midi: ${LYS_HEBREW}
-	lilypond -I hebrew ${BASE}-hebrew.ly
+	${LILYPOND} -I hebrew ${BASE}-hebrew.ly
 	ls -lG $@
 
 ${BASE}-latin.pdf: ${LYS_LATIN}
-	lilypond -I latin ${BASE}-latin.ly
+	${LILYPOND} -I latin ${BASE}-latin.ly
 	ls -lG $@
 
 ${BASE}-hebrewlatin.pdf: ${LYS_HEBREWLATIN}
-	lilypond -I hebrewlatin ${BASE}-hebrewlatin.ly
+	${LILYPOND} -I hebrewlatin ${BASE}-hebrewlatin.ly
 	ls -lG $@
 
 %-sop.midi: %.midi

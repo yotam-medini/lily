@@ -11,6 +11,6 @@ tenlyricsLatinText = \lyricmode {
 }
 
 baslyricsLatinText = \lyricmode {
-  La La La La
+  La La _ La La
 }
 

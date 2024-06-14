@@ -16,14 +16,20 @@ altlyricsText = \lyricmode {
 
 tenlyricsText = \lyricmode {
 
-לָה
+
+לָה לָה לָה לָה לָה
+ לָה לָה לָה לָה 
+
 
   % LTR
 }
 
 baslyricsText = \lyricmode {
 
-לָה
+
+לָה לָה _ לָה לָה לָה לָה לָה לָה
+לָה לָה לָה לָה לָה    
+
 
   % LTR
 }
