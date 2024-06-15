@@ -16,6 +16,7 @@ sopMusic = \relative c'' {
   % \stemUp
   \override Stem.neutral-direction = #up
   \set melismaBusyProperties = #'()
+  % page 2 system 1
   bf8\mp\<[ bf16 bf bf bf] cf8\![( df\> ef cf]\! |
   bf8)[ bf16\< bf bf bf] cf8 
     % \shape #'((0 . 0.5) (0 . 0.5) (0 . 0.5) (0 . 0.5)) Slur
@@ -28,10 +29,14 @@ sopMusic = \relative c'' {
   \time 3/8
     \override Hairpin.to-barline = ##f
     cf8[ df cf] |
-  % page 2 system 1
-  \time 7/8
-    bf8\!)
   % page 2 system 2
+  \time 7/8
+    bf8)\!\mp[ bf16 bf bf\< bf] cf8\![( df\> ef cf] |
+    bf8[\!) bf16\< bf bf bf] cf8 [( df ef ff~\!] |
+  \time 5/8
+    ff8[\! df\> ef df cf]\! |
+  \time 7/8
+    bf8[) bf16 bf16 bf16 bf16] bf8[\< bf16 bf16 bf16 bf16] bf8\! |
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
@@ -58,7 +63,12 @@ altMusic = \relative c' {
     gf4. |
   % page 2 system 2
   \time 7/8
-    f8\!
+    f8\!\<[ gf af16 af16] af16[\! af\> bf8] af4\! |
+    f8\!\<[ gf af16 af16] af16[ af bf8] af4(\! |
+  \time 5/8
+    g8\>[ gf] f4.)\! |
+  \time 7/8
+    f8[ gf af16 af16] af16[ af gf8 gf8. gf16] |
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
@@ -75,8 +85,9 @@ altMusic = \relative c' {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 tenMusic = \relative c {
+  \override Stem.neutral-direction = #up
   \set melismaBusyProperties = #'()
-  \stemUp
+  % \stemUp
   % page 2 system 1
   bf'4.\mp\< g8[( af\! gf\> cf\!]
   bf4.) gf8[( af gf cf] |
@@ -85,7 +96,12 @@ tenMusic = \relative c {
   \time 3/8
     r8 a4( |
   % page 2 system 2
-  bf4.)
+  bf4.) gf'4 ff |
+  df8[ ef df] cf4. r8 |
+  \time 5/8
+    r4 r4 a8( |
+  \time 7/8
+    bf4.) cf8[ df ef f!] |
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
@@ -102,8 +118,9 @@ tenMusic = \relative c {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 basMusic = \relative c {
+  \override Stem.neutral-direction = #up
   \set melismaBusyProperties = #'()
-  \stemUp
+  % \stemUp
   % page 2 system 1
   bf8\mp\< f'4 ~ f16[   ef df\! df\> cf cf af8\!] |
   bf8      f'4 ~ f16[\< ef df   df   cf cf af8] |
@@ -113,7 +130,12 @@ basMusic = \relative c {
     ef4.)
   % page 2 system 2
   \time 7/8
-    bf8\!
+    bf8\! f'4(\< f16[)\! ef df\> df cf cf af8]\! |
+    bf8\! f'4(\< f16[) ef df df cf cf af8]\! |
+  \time 5/8
+    a4\> bf8[ cf df]\! |
+  \time 7/8
+    ef8 f4~ f16[\< ef ef ef cf8 df]\! |
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1

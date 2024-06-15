@@ -27,6 +27,8 @@
 
   oddFooterMarkup = \markup {
       \hspace #60
+      % On  lilypond >= 2.24 use:
+      % \if \on-last-page { (typeset via \italic "LilyPond"
       \on-the-fly #last-page { (typeset via \italic "LilyPond"
       \small \typewriter
       \hspace #2
@@ -40,7 +42,7 @@
 \layout { 
   \context { 
     \Lyrics
-    \override  LyricHyphen #'minimum-distance = #0.8 
+    % \override  LyricHyphen #'minimum-distance = #0.8 
   } 
 }
 
