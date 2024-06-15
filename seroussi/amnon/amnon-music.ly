@@ -10,6 +10,8 @@ global = {
 #(define draftbreak "")
 % #(define draftbreak break)
 
+piuF = \markup { \italic più \dynamic f }
+Finrilievo = \markup { \dynamic f \bold\italic " in rilievo" }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {
@@ -94,7 +96,8 @@ tenMusic = \relative c {
   \time 5/8
     c!8[ df!] af4.) |
   \time 3/8
-    r8 a4( |
+    % r8 a4(\f\break\markup{ \bold \italic {{\large f} " in rilievo" }} |
+    r8 a4-\Finrilievo(
   % page 2 system 2
   bf4.) gf'4 ff |
   df8[ ef df] cf4. r8 |
