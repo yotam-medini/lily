@@ -38,8 +38,12 @@ sopMusic = \relative c'' {
   \time 5/8
     ff8[\! df\> ef df cf]\! |
   \time 7/8
-    bf8[) bf16 bf16 bf16 bf16] bf8[\< bf16 bf16 bf16 bf16] bf8\! |
+    bf8[) bf16 bf16 bf16 bf16] bf8[\< bf16 bf16 bf16 bf16] bf8~\! |
   % page 3 system 1
+  \time 5/8
+    bf8[ cf df ef f!~] |
+  \time 8/8
+    f4 f,16[ f f f] f8[( ef f ef']) |
   % page 3 system 2
   % page 4 system 1
   % page 4 system 2
@@ -102,7 +106,7 @@ tenMusic = \relative c {
   bf4.) gf'4 ff |
   df8[ ef df] cf4. r8 |
   \time 5/8
-    r4 r4 a8( |
+    r4 r4 a8(\mp |
   \time 7/8
     bf4.) cf8[ df ef f!] |
   % page 3 system 1

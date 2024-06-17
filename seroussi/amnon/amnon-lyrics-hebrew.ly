@@ -1,5 +1,7 @@
 soplyricsText = \lyricmode {
 
+    \override LyricText #'font-name = #"David CLM"
+
 
 לָה לָה לָה לָה לָה לָה לָה לָה לָה 
 לָה לָה לָה לָה לָה לָה לָה לָה לָה _
@@ -14,6 +16,8 @@ soplyricsText = \lyricmode {
 }
 
 altlyricsText = \lyricmode {
+
+    \override LyricText #'font-name = #"David CLM"
 
 
 לָה לָה לָה לָה לָה לָה לָה לָה לָה 
@@ -30,6 +34,8 @@ altlyricsText = \lyricmode {
 
 tenlyricsText = \lyricmode {
 
+    \override LyricText #'font-name = #"David CLM"
+
 
 לָה לָה לָה לָה לָה
 לָה לָה לָה לָה לָה
@@ -42,6 +48,8 @@ tenlyricsText = \lyricmode {
 }
 
 baslyricsText = \lyricmode {
+
+    \override LyricText #'font-name = #"David CLM"
 
 
 לָה לָה _ לָה לָה לָה לָה לָה לָה
