@@ -12,6 +12,7 @@ global = {
 
 piuF = \markup { \italic più \dynamic f }
 Finrilievo = \markup { \dynamic f \bold\italic " in rilievo" }
+espr = \markup { \bold\italic "espr." }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {
@@ -41,9 +42,13 @@ sopMusic = \relative c'' {
     bf8[) bf16 bf16 bf16 bf16] bf8[\< bf16 bf16 bf16 bf16] bf8~\! |
   % page 3 system 1
   \time 5/8
-    bf8[ cf df ef f!~] |
+    bf8[ cf\(_\espr df ef\< f!~] |
   \time 8/8
-    f4 f,16[ f f f] f8[( ef f ef']) |
+    f4\! f,16[\mp f f f] f8[( ef\< f ef'~]) |
+  \time 6/8
+    ef8\! bf4 ef8[\> df c] |
+  \time 7/8
+    bf8[\)\!\mp bf16 bf16 bf16 bf16] bf8[ c df af] |
   % page 3 system 2
   % page 4 system 1
   % page 4 system 2
@@ -76,6 +81,14 @@ altMusic = \relative c' {
   \time 7/8
     f8[ gf af16 af16] af16[ af gf8 gf8. gf16] |
   % page 3 system 1
+  \time 5/8
+    gf16[ gf16 f f f f] f8[ af~] |
+  \time 8/8
+    af8[ gf16 gf] gf16[ gf] gf4 gf16[\< gf] gf16[ gf gf gf] |
+  \time 6/8
+    gf8[\! gf16\> gf gf gf] af4 f16[\! f] |
+  \time 7/8
+    ef16[\mp ef ef ef] f4 ef16[ ef ef ef ef8] |
   % page 3 system 2
   % page 4 system 1
   % page 4 system 2
@@ -108,8 +121,16 @@ tenMusic = \relative c {
   \time 5/8
     r4 r4 a8(\mp |
   \time 7/8
-    bf4.) cf8[ df ef f!] |
+    bf4.) cf8[ df ef f!(] |
   % page 3 system 1
+  \time 5/8
+    df4.) cf4( |
+  \time 8/8
+    bf4.~) bf4 r8 bf[ c!]( |
+  \time 6/8
+    df4 ef8 f4 df8 |
+  \time 7/8
+    c4 bf) af8[ bf c] |
   % page 3 system 2
   % page 4 system 1
   % page 4 system 2
@@ -144,6 +165,14 @@ basMusic = \relative c {
   \time 7/8
     ef8 f4~ f16[\< ef ef ef cf8 df]\! |
   % page 3 system 1
+  \time 5/8
+    ef8 af,4~ af16[ df df df] |
+  \time 8/8
+    gf,8 df'4~ df16[ cf cf\< cf] cf8[ bf af]\! |
+  \time 6/8
+    bf8[ f'8.\> df16]  c!16[ c bf bf\! af8~] |
+  \time 7/8
+    af8[ af'] gf8[ gf16 gf] gf16[ gf] gf4 |
   % page 3 system 2
   % page 4 system 1
   % page 4 system 2
