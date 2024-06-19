@@ -14,6 +14,8 @@ piuF = \markup { \italic più \dynamic f }
 Finrilievo = \markup { \dynamic f \bold\italic " in rilievo" }
 espr = \markup { \bold\italic "espr." }
 simdot = \markup { \bold\italic "sim." }
+piucalmo = \markup { \bold\italic "Più Calmo" }
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {
@@ -58,7 +60,7 @@ sopMusic = \relative c'' {
   \time 7/8
     bf4. bf2~ |
   \time 6/8
-    bf4.\! r4. |
+    bf4.\! \breathe  r4.^\piucalmo |
   % page 4 system 1
   % page 4 system 2
   % page 5 system 1
@@ -106,7 +108,7 @@ altMusic = \relative c' {
   \time 7/8
     f16[ f] f4 f f~\! |
   \time 6/8
-    f4. r4. |
+    f4. \breathe r4. |
   % page 4 system 1
   % page 4 system 2
   % page 5 system 1
@@ -147,8 +149,16 @@ tenMusic = \relative c {
   \time 6/8
     df4 ef8 f4 df8 |
   \time 7/8
-    c4 bf) af8[ bf c] |
+    c4 bf) af8[( bf c] |
   % page 3 system 2
+  bf4.) gf8[ af gf f] |
+  bf4. c8[( df ef c] |
+  \time 4/8
+    bf8[) bf16 bf] bf16[ bf bf8] |
+  \time 7/8
+    bf16[ bf bf bf bf8~] bf8 bf4 bf8~ |
+  \time 6/8
+    bf4. \breathe r8 bf8[ c] |
   % page 4 system 1
   % page 4 system 2
   % page 5 system 1
@@ -191,6 +201,15 @@ basMusic = \relative c {
   \time 7/8
     af8[ af'] gf8[ gf16 gf] gf16[ gf] gf4 |
   % page 3 system 2
+  bf,8\p\< f'4~ f16[\! ef df\> df c c af8]\! |
+  bf8\p\< f'4~ f16[\! ef ef\> ef c c af8]\! |
+  \time 4/8
+    c8[( df ef c] |
+  \time 7/8
+    bf8[) bf16 bf bf bf] bf8[ bf16 bf bf bf] bf8~ |
+  \time 6/8
+    bf4. \breathe r4. |
+
   % page 4 system 1
   % page 4 system 2
   % page 5 system 1

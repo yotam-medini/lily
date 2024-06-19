@@ -8,6 +8,7 @@ soplyricsText = \lyricmode {
 
 \simdot % \skip \fill
 \skip 1
+% \repeat unfold 4 { \skip 1 }
 
   % page 2 system 2
   % page 3 system 1
