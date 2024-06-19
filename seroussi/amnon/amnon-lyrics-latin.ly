@@ -1,11 +1,9 @@
 soplyricsLatinText = \lyricmode {
   % page 2 system 1
   La La La La La La La La La
-  La La La La La La La La La _
-  La La La La _
-  La La 
+  \simdot
+  \skip 1
   % page 2 system 2
-  La 
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
@@ -23,11 +21,9 @@ soplyricsLatinText = \lyricmode {
 altlyricsLatinText = \lyricmode {
   % page 2 system 1
   La La La La La La La La La
-  La La La La La La La La
-  La La La
-  La
+  \simdot
+  \skip 1
   % page 2 system 2
-  La
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
@@ -67,11 +63,9 @@ tenlyricsLatinText = \lyricmode {
 baslyricsLatinText = \lyricmode {
   % page 2 system 1
   La La _ La La La La La La
-  La La _ La La La La La La
-  La La La La
-  La
+  \simdot
+  \skip 1
   % page 2 system 2
-  La
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
