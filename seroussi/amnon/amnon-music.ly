@@ -16,6 +16,8 @@ espr = \markup { \bold\italic "espr." }
 simdot = \markup { \bold\italic "sim." }
 piucalmo = \markup { \bold\italic "Più Calmo" }
 morendo = \markup { \bold\italic "morendo" }
+dulce = \markup { \bold\italic "dulce" }
+pdulce = \markup { \dynamic p \bold\italic "dulce" }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,6 +65,13 @@ sopMusic = \relative c'' {
   \time 6/8
     bf4.\! \breathe  r4.^\piucalmo |
   % page 4 system 1
+    r4. r4. |
+  \time 3/4
+    c8-\p [( df] ef4 df8[ bf~])
+  \time 6/8
+    bf8[ af bf] c[ df ef~]
+  ef[ f g!~] g[ f ef~] |
+  ef4. r8 bf8[ c] |
   % page 4 system 2
   % page 5 system 1
   % page 5 system 2
@@ -111,6 +120,13 @@ altMusic = \relative c' {
   \time 6/8
     f4. \breathe r4. |
   % page 4 system 1
+  r8\p f8[ g!] af4 bf8 |
+  \time 3/4
+    c4 bf8 af4 g!8~ |
+  \time 6/8
+    g8[ f( g!] af4 bf8 |
+  c4 bf8 af4 bf8 |
+  c4 bf8[ af] g!4) |
   % page 4 system 2
   % page 5 system 1
   % page 5 system 2
