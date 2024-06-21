@@ -7,13 +7,15 @@ soplyricsText = \lyricmode {
 לָה לָה לָה לָה לָה לָה לָה לָה לָה 
 
 \simdot % \skip \fill
-\skip 1
-% \repeat unfold 4 { \skip 1 }
+ \repeat unfold 102 { \skip 1 }
 
   % page 2 system 2
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
+
+ מְ -- _ יֻ -- דָּ -- עַי, אֵ -- _ _ לַי _ הֲ -- בִי -- _ אוּ -- _ _ הָ, _  אַ _
+
   % page 4 system 2
   % page 5 system 1
   % page 5 system 2
