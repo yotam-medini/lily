@@ -40,7 +40,7 @@ altlyricsText = \lyricmode {
 לָה לָה לָה לָה לָה לָה לָה לָה לָה 
 
 \simdot % \skip \fill
-\skip 1
+ \repeat unfold 108 { \skip 1 }
 
 
   % LTR
@@ -48,7 +48,15 @@ altlyricsText = \lyricmode {
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
+
+  רֵ -- _ עַי, מְ --  יֻ -- דָּ -- _ עַי, _ אֵ -- _ לַי _ הֲ -- בִי -- אוּ -- _ הָ, _ _ _
+
+
   % page 4 system 2
+
+
+  אַ _
+
   % page 5 system 1
   % page 5 system 2
   % page 6 system 1
