@@ -19,6 +19,7 @@ morendo = \markup { \bold\italic "morendo" }
 dulce = \markup { \bold\italic "dulce" }
 pdulce = \markup { \dynamic p \bold\italic "dulce" }
 
+SimFont = \override LyricText #'font-name = #"generic family italic"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {

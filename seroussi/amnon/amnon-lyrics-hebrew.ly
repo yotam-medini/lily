@@ -6,7 +6,7 @@ soplyricsText = \lyricmode {
 
 לָה לָה לָה לָה לָה לָה לָה לָה לָה 
 
-\simdot % \skip \fill
+ { \SimFont \simdot }
  \repeat unfold 102 { \skip 1 }
 
   % page 2 system 2
@@ -39,7 +39,9 @@ altlyricsText = \lyricmode {
 
 לָה לָה לָה לָה לָה לָה לָה לָה לָה 
 
-\simdot % \skip \fill
+% \override LyricText #'font-name = \lyric-font 
+{ \SimFont \simdot }
+
  \repeat unfold 108 { \skip 1 }
 
 
@@ -94,7 +96,7 @@ tenlyricsText = \lyricmode {
  לָה לָה לָה לָה
 
 % LTR
- \simdot
+ {\SimFont \simdot }
   \repeat unfold 19 { \skip 1 }
 
 
@@ -124,13 +126,16 @@ baslyricsText = \lyricmode {
 
 לָה לָה _ לָה לָה לָה לָה לָה לָה
 
-\simdot % \skip \fill
-\skip 1
+{\SimFont \simdot }
+\repeat unfold 108 { \skip 1 }
 
   % page 2 system 2
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
+
+ רֵ -- _ עַי, _ מְ --  יֻ -- דָּ -- עַי, _ אֵ -- לַי _ הֲ -- בִי -- אוּ -- _ הָ,  הֲ -- בִי -- אוּ
+
   % page 4 system 2
   % page 5 system 1
   % page 5 system 2
