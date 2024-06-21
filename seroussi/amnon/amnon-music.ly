@@ -120,7 +120,7 @@ altMusic = \relative c' {
   \time 6/8
     f4. \breathe r4. |
   % page 4 system 1
-  r8\p f8[ g!] af4 bf8 |
+  r8_\pdulce f8[ g!] af4 bf8 |
   \time 3/4
     c4 bf8 af4 g!8~ |
   \time 6/8
@@ -157,7 +157,7 @@ tenMusic = \relative c {
   \time 5/8
     r4 r4 a8(\mp |
   \time 7/8
-    bf4.) cf8[ df ef f!(] |
+    bf4.) cf8[( df ef f!] |
   % page 3 system 1
   \time 5/8
     df4.) cf4( |
@@ -234,7 +234,7 @@ basMusic = \relative c {
   \time 6/8
     bf4.\! \breathe r4. |
   % page 4 system 1
-  r4. bf'8( af g!~] |
+  r4. bf'8(_\pdulce af g!~] |
   \time 3/4
     g8[ f] g4 f8[ ef~] |
   \time 6/8
