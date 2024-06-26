@@ -1,6 +1,6 @@
 soplyricsText = \lyricmode {
 
-    \override LyricText #'font-name = #"David CLM"
+    \override LyricText.font-name = #"David CLM"
   % page 2 system 1
 
 
@@ -33,13 +33,13 @@ soplyricsText = \lyricmode {
 
 altlyricsText = \lyricmode {
 
-    \override LyricText #'font-name = #"David CLM"
+    \override LyricText.font-name = #"David CLM"
 
   % page 2 system 1
 
 לָה לָה לָה לָה לָה לָה לָה לָה לָה 
 
-% \override LyricText #'font-name = \lyric-font 
+% \override LyricText.font-name = \lyric-font 
 { \SimFont \simdot }
 
  \repeat unfold 108 { \skip 1 }
@@ -71,7 +71,7 @@ altlyricsText = \lyricmode {
 
 tenlyricsText = \lyricmode {
 
-    \override LyricText #'font-name = #"David CLM"
+    \override LyricText.font-name = #"David CLM"
 
   % page 2 system 1
 
@@ -121,7 +121,7 @@ tenlyricsText = \lyricmode {
 
 baslyricsText = \lyricmode {
 
-    \override LyricText #'font-name = #"David CLM"
+    \override LyricText.font-name = #"David CLM"
 
 
 לָה לָה _ לָה לָה לָה לָה לָה לָה

@@ -9,9 +9,10 @@ endif
 
 BASE=amnon
 
-LILYPOND=lilypond
+# LILYPOND=lilypond
 # LILYPOND=/home/yotam/lilypond-2.24.3/bin/lilypond
 # LILYPOND=/home/yotam/lilypond-2.25.16/bin/lilypond
+LILYPOND=/home/yotam/pub/lilypond/pfx/bin/lilypond
 
 NOW := $(shell date "+%Y%m%d-%H%M%S")
 ZIP = /tmp/${BASE}-${NOW}.zip
