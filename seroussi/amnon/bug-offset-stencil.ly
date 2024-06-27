@@ -9,14 +9,16 @@
 \paper{
   #(set-paper-size "a4")
 
-  system-system-spacing.basic-distance = #16
-  % system-distance = 5mm
-  score-system-spacing =
-    #'((basic-distance . 12)
-      (minimum-distance . 8)
-      (padding . 1)
-      (stretchability . 12))
-
+  oddFooterMarkup = \markup {
+      \hspace #60
+      \if \on-last-page { (typeset via \italic "LilyPond"
+      \small \typewriter
+      \hspace #2
+      \small
+      \simple #(strftime "%Y-%m-%d %H:%M:%S)" (localtime (current-time)))
+      }
+  }
+  evenFooterMarkup = \oddFooterMarkup
 }
 
 \layout { 
@@ -40,7 +42,6 @@
           >>
         }
       >>
-      \include "soplyrics.ly"
 
       \new Staff = "alt" <<
 	\set Staff.midiInstrument = #"oboe"
@@ -52,7 +53,6 @@
           >>
         }
       >>
-      \include "altlyrics.ly"
 
       \new Staff = "ten" <<
 	\set Staff.midiInstrument = #"cello"
@@ -76,7 +76,6 @@
           >>
         }
       >>
-      \include "baslyrics.ly"
 
       \include "lyrics-context.ly"
     >>
@@ -89,12 +88,6 @@
     % \override LyricText #'font-size = #1.81
     \context {
       \Staff
-    }
-  }
-
-  \midi {
-    \context {
-      \Score
     }
   }
 }
