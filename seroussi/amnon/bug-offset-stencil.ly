@@ -44,15 +44,6 @@
         }
       >>
 
-      \new Staff = "bas" <<
-	\set Staff.midiInstrument = #"bassoon"
-        \clef bass
-        \new Voice = "basses" {
-          \set Staff.instrumentName = "B"
-               \global \basMusic
-        }
-      >>
-
     >>
   >>
 
