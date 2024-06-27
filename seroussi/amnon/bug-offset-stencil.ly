@@ -1,10 +1,5 @@
 \version "2.25.18"
 \include "amnon-music.ly"
-\include "amnon-lyrics-latin.ly"
-
-\header {
-  title = "bug offset sentcil"
-}
 
 \paper{
   #(set-paper-size "a4")
