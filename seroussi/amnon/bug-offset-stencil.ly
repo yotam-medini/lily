@@ -66,6 +66,14 @@ sopMusic = \relative c'' {
     bf4. bf2~_\morendo |
   \time 6/8
     bf4.\! \breathe  r4.^\piucalmo |
+  % page 4 system 1
+    r4. r4. |
+  \time 3/4
+    c8_\pdulce [( df] ef4 df8[ bf~])
+  \time 6/8
+    bf8[ af bf] c[ df ef~\<]
+  ef[ f g!~] g[\> f ef~\!] |
+  ef4. r8\! bf8[ c] |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,6 +112,14 @@ altMusic = \relative c' {
     f16[ f] f4 f_\morendo f~\! |
   \time 6/8
     f4. \breathe r4. |
+  % page 4 system 1
+  r8_\pdulce f8[ g!] af4 bf8 |
+  \time 3/4
+    c4 bf8 af4 g!8~ |
+  \time 6/8
+    g8[ f( g!] af4 bf8 |
+  c4 bf8 af4 bf8 |
+  c4 bf8[ af] g!4) |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -144,6 +160,14 @@ tenMusic = \relative c {
     bf16[ bf bf bf bf8~] bf8 bf4_\morendo bf8~\! |
   \time 6/8
     bf4. \breathe r8 bf8[_\pdulce c] |
+  % page 4 system 1
+  df4( ef8 f4 e8 |
+  \time 3/4
+    df4 c) bf8[( c] |
+  \time 6/8
+    d4 ef8 f4 g!8 |
+  f8[ ef] d4 c) |
+  bf8[ c d~] d[ ef f] |
 }
 
 
