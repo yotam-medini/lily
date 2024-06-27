@@ -161,11 +161,7 @@ tenMusic = \relative c {
   #(set-paper-size "a4")
 
   oddFooterMarkup = \markup {
-      \hspace #60
-      \if \on-last-page { (typeset via \italic "LilyPond"
-      \small \typewriter
       \hspace #2
-      }
   }
   evenFooterMarkup = \oddFooterMarkup
 }
