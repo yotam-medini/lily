@@ -8,13 +8,8 @@ global = {
   \tempo "Allegro energico" 8 = 115
 }
 
-#(define draftbreak "")
-% #(define draftbreak break)
-
-piuF = \markup { \italic più \dynamic f }
 Finrilievo = \markup { \dynamic f \bold\italic " in rilievo" }
 espr = \markup { \bold\italic "espr." }
-simdot = \markup { \bold\italic "sim." }
 piucalmo = \markup { \bold\italic "Più Calmo" }
 morendo = \markup { \bold\italic "morendo" }
 dulce = \markup { \bold\italic "dulce" }
