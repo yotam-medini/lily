@@ -36,14 +36,6 @@
         }
       >>
 
-      \new Staff = "ten" <<
-	\set Staff.midiInstrument = #"cello"
-        \clef "G_8"
-        \new Voice = "tenors" {
-               \global \tenMusic
-        }
-      >>
-
     >>
   >>
 
