@@ -17,18 +17,6 @@
       (padding . 1)
       (stretchability . 12))
 
-  oddFooterMarkup = \markup {
-      \hspace #60
-      % On  lilypond >= 2.24 use:
-      \if \on-last-page { (typeset via \italic "LilyPond"
-      % \on-the-fly #last-page { (typeset via \italic "LilyPond"
-      \small \typewriter
-      \hspace #2
-      \small
-      \simple #(strftime "%Y-%m-%d %H:%M:%S)" (localtime (current-time)))
-      }
-  }
-  evenFooterMarkup = \oddFooterMarkup
 }
 
 \layout { 
