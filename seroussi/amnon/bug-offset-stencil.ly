@@ -170,53 +170,6 @@ tenMusic = \relative c {
   bf8[ c d~] d[ ef f] |
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-basMusic = \relative c {
-  \override Stem.neutral-direction = #up
-  \set melismaBusyProperties = #'()
-  % \stemUp
-  % page 2 system 1
-  bf8\mp\< f'4 ~ f16[   ef df\! df\> cf cf af8\!] |
-  bf8      f'4 ~ f16[\< ef df   df   cf cf af8] |
-  \time 5/8
-    a4\!( bf8\>[ cf d] |
-  \time 3/8
-    ef4.)
-  % page 2 system 2
-  \time 7/8
-    bf8\! f'4(\< f16[)\! ef df\> df cf cf af8]\! |
-    bf8\! f'4(\< f16[) ef df df cf cf af8]\! |
-  \time 5/8
-    a4\> bf8[ cf df]\! |
-  \time 7/8
-    ef8 f4~ f16[\< ef ef ef cf8 df]\! |
-  % page 3 system 1
-  \time 5/8
-    ef8 af,4~ af16[ df df df] |
-  \time 8/8
-    gf,8 df'4~ df16[ cf cf\< cf] cf8[ bf af]\! |
-  \time 6/8
-    bf8[ f'8.\> df16]  c!16[ c bf bf\! af8~] |
-  \time 7/8
-    af8[ af'] gf8[ gf16 gf] gf16[ gf] gf4 |
-  % page 3 system 2
-  bf,8\p\< f'4~ f16[\! ef df\> df c c af8]\! |
-  bf8\p\< f'4~ f16[\! ef ef\> ef c c af8]\! |
-  \time 4/8
-    c8[(\mf df ef c] |
-  \time 7/8
-    bf8[)\> bf16 bf bf bf] bf8[ bf16 bf_\morendo bf bf] bf8~ |
-  \time 6/8
-    bf4.\! \breathe r4. |
-  % page 4 system 1
-  r4. bf'8(_\pdulce af g!~] |
-  \time 3/4
-    g8[ f] g4 f8[ ef~] |
-  \time 6/8
-    ef8) r8 df4( bf8[ c] |
-  df4 ef8 f4 g!8 |
-  af4) g!8( f8[ ef df]) | 
-}
 
 \paper{
   #(set-paper-size "a4")
