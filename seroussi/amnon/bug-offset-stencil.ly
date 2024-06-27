@@ -9,10 +9,7 @@ global = {
 }
 
 Finrilievo = \markup { \dynamic f \bold\italic " in rilievo" }
-espr = \markup { \bold\italic "espr." }
-piucalmo = \markup { \bold\italic "Più Calmo" }
 morendo = \markup { \bold\italic "morendo" }
-dulce = \markup { \bold\italic "dulce" }
 pdulce = \markup { \dynamic p \bold\italic "dulce" }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,7 +37,7 @@ sopMusic = \relative c'' {
     bf8[) bf16 bf16 bf16 bf16] bf8[\< bf16 bf16 bf16 bf16] bf8~\! |
   % page 3 system 1
   \time 5/8
-    bf8[ cf\(_\espr df ef\< f!~] |
+    bf8[ cf\( df ef\< f!~] |
   \time 8/8
     f4\! f,16[\mp f f f] f8[( ef\< f ef'~]) |
   \time 6/8
@@ -55,7 +52,7 @@ sopMusic = \relative c'' {
   \time 7/8
     bf4. bf2~_\morendo |
   \time 6/8
-    bf4.\! \breathe  r4.^\piucalmo |
+    bf4.\! \breathe  r4. |
   % page 4 system 1
     r4. r4. |
   \time 3/4
@@ -168,8 +165,6 @@ tenMusic = \relative c {
       \if \on-last-page { (typeset via \italic "LilyPond"
       \small \typewriter
       \hspace #2
-      \small
-      \simple #(strftime "%Y-%m-%d %H:%M:%S)" (localtime (current-time)))
       }
   }
   evenFooterMarkup = \oddFooterMarkup
