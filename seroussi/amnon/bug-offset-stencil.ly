@@ -24,10 +24,7 @@
 	\set Staff.midiInstrument = #"flute"
         \new Voice = "sopranos" {
           \set Staff.instrumentName = "S"
-          <<
-             % \stemUp
                \global \sopMusic
-          >>
         }
       >>
 
@@ -35,10 +32,7 @@
 	\set Staff.midiInstrument = #"oboe"
         \new Voice = "altos" {
           \set Staff.instrumentName = "A"
-          <<
-             % \stemUp
                \global \altMusic
-          >>
         }
       >>
 
@@ -46,10 +40,7 @@
 	\set Staff.midiInstrument = #"cello"
         \clef "G_8"
         \new Voice = "tenors" {
-          \set Staff.instrumentName = "T"
-          <<
                \global \tenMusic
-          >>
         }
       >>
 
@@ -58,9 +49,7 @@
         \clef bass
         \new Voice = "basses" {
           \set Staff.instrumentName = "B"
-          <<
                \global \basMusic
-          >>
         }
       >>
 
@@ -68,8 +57,6 @@
   >>
 
   \layout {
-    % $(layout-set-staff-size 17)
-    % \override LyricText #'font-size = #1.81
     \context {
       \Staff
     }
