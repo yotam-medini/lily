@@ -160,9 +160,7 @@ tenMusic = \relative c {
 \paper{
   #(set-paper-size "a4")
 
-  oddFooterMarkup = \markup {
-      \hspace #2
-  }
+  oddFooterMarkup = \markup { \hspace #2  }
   evenFooterMarkup = \oddFooterMarkup
 }
 
