@@ -64,7 +64,6 @@
           >>
         }
       >>
-      \include "tenlyrics.ly"
 
       \new Staff = "bas" <<
 	\set Staff.midiInstrument = #"bassoon"
