@@ -15,8 +15,6 @@ morendo = \markup { \bold\italic "morendo" }
 dulce = \markup { \bold\italic "dulce" }
 pdulce = \markup { \dynamic p \bold\italic "dulce" }
 
-SimFont = \override LyricText.#'font-name = #"generic family italic"
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopMusic = \relative c'' {
   % \stemUp
@@ -25,10 +23,7 @@ sopMusic = \relative c'' {
   % page 2 system 1
   bf8\mp\<[ bf16 bf bf bf] cf8\![( df\> ef cf]\! |
   bf8)[ bf16\< bf bf bf] cf8 
-    % \shape #'((0 . 0.5) (0 . 0.5) (0 . 0.5) (0 . 0.5)) Slur
-    % \stemDown
     [( df ef 
-    % \shape #'((0 . 0.5) (0 . 0.5) (0 . 0.5) (0 . 0.5)) Tie
     ff~] |
   \time 5/8
     ff8[\! df ef\> df cf~] |
@@ -128,7 +123,6 @@ tenMusic = \relative c {
   \time 5/8
     c!8[ df!] af4.) |
   \time 3/8
-    % r8 a4(\f\break\markup{ \bold \italic {{\large f} " in rilievo" }} |
     r8 a4-\Finrilievo(
   % page 2 system 2
   bf4.) gf'4 ff |
