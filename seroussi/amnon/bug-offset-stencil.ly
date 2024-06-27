@@ -77,7 +77,6 @@
         }
       >>
 
-      \include "lyrics-context.ly"
     >>
   >>
 
