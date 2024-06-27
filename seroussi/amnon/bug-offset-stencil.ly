@@ -79,8 +79,6 @@
     >>
   >>
 
-  \header { }
-
   \layout {
     % $(layout-set-staff-size 17)
     % \override LyricText #'font-size = #1.81
