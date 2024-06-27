@@ -74,15 +74,6 @@ sopMusic = \relative c'' {
     bf8[ af bf] c[ df ef~\<]
   ef[ f g!~] g[\> f ef~\!] |
   ef4. r8\! bf8[ c] |
-  % page 4 system 2
-  % page 5 system 1
-  % page 5 system 2
-  % page 6 system 1
-  % page 6 system 2
-  % page 7 system 1
-  % page 7 system 2
-  % page 8 system 1
-  % page 8 system 2
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -129,15 +120,6 @@ altMusic = \relative c' {
     g8[ f( g!] af4 bf8 |
   c4 bf8 af4 bf8 |
   c4 bf8[ af] g!4) |
-  % page 4 system 2
-  % page 5 system 1
-  % page 5 system 2
-  % page 6 system 1
-  % page 6 system 2
-  % page 7 system 1
-  % page 7 system 2
-  % page 8 system 1
-  % page 8 system 2
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -186,15 +168,6 @@ tenMusic = \relative c {
     d4 ef8 f4 g!8 |
   f8[ ef] d4 c) |
   bf8[ c d~] d[ ef f] |
-  % page 4 system 2
-  % page 5 system 1
-  % page 5 system 2
-  % page 6 system 1
-  % page 6 system 2
-  % page 7 system 1
-  % page 7 system 2
-  % page 8 system 1
-  % page 8 system 2
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -243,15 +216,6 @@ basMusic = \relative c {
     ef8) r8 df4( bf8[ c] |
   df4 ef8 f4 g!8 |
   af4) g!8( f8[ ef df]) | 
-  % page 4 system 2
-  % page 5 system 1
-  % page 5 system 2
-  % page 6 system 1
-  % page 6 system 2
-  % page 7 system 1
-  % page 7 system 2
-  % page 8 system 1
-  % page 8 system 2
 }
 
 \paper{
