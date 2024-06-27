@@ -16,13 +16,6 @@
   evenFooterMarkup = \oddFooterMarkup
 }
 
-\layout { 
-  \context { 
-    \Lyrics
-    % \override  LyricHyphen #'minimum-distance = #0.8 
-  } 
-}
-
 \score {
   <<
     \new ChoirStaff <<
