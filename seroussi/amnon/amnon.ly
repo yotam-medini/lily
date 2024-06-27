@@ -1,4 +1,5 @@
-\version "2.22.1"
+\version "2.25.18"
+% \version "2.22.1"
 \include "amnon-music.ly"
 \include "amnon-lyrics-hebrew.ly"
 \include "amnon-lyrics-latin.ly"
