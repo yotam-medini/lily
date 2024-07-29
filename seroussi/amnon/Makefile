@@ -34,24 +34,24 @@ MIDIS = ${BASE}.midi \
 	${BASE}-ten.midi \
 	${BASE}-bas.midi \
 
-LYS_COMMOM = ${BASE}.ly ${BASE}-music.ly \
+LYS_COMMON = ${BASE}.ly ${BASE}-music.ly \
 	${BASE}-lyrics-hebrew.ly \
 	${BASE}-lyrics-latin.ly
 
-LYS_HEBREW = ${LYS_COMMOM} \
+LYS_HEBREW = ${LYS_COMMON} \
         hebrew-ctx.ly \
 	hebrew/lyrics-context.ly \
 	hebrew/soplyrics.ly \
 	hebrew/altlyrics.ly \
 
-LYS_LATIN = ${LYS_COMMOM} ${BASE}-latin.ly \
+LYS_LATIN = ${LYS_COMMON} ${BASE}-latin.ly \
 	${BASE}-lyrics-latin.ly \
         latin-ctx.ly \
 	latin/lyrics-context.ly \
 	latin/soplyrics.ly \
 	latin/altlyrics.ly \
 
-LYS_HEBREWLATIN = ${LYS_COMMOM} ${BASE}-hebrewlatin.ly \
+LYS_HEBREWLATIN = ${LYS_COMMON} ${BASE}-hebrewlatin.ly \
 	${BASE}-lyrics-latin.ly \
         hebrew-ctx.ly \
         latin-ctx.ly \

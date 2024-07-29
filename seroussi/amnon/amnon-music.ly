@@ -74,6 +74,15 @@ sopMusic = \relative c'' {
   ef[ f g!~] g[\> f ef~\!] |
   ef4. r8\! bf8[ c] |
   % page 4 system 2
+  df4( ef8\< f4 g8 |
+  \time 3/4
+    af4\f f4\>  ef8[ df] |
+  \time 6/8
+    bf8[ c df])\! c4.~\> |
+  \time 2/4
+    c8\!\breathe f4\mf ef8
+  \time 6/8
+    d4 ef8 f4 g8 |
   % page 5 system 1
   % page 5 system 2
   % page 6 system 1
@@ -129,6 +138,15 @@ altMusic = \relative c' {
   c4 bf8 af4 bf8 |
   c4 bf8[ af] g!4) |
   % page 4 system 2
+  af8[( bf c~] c4 d8 |
+  \time 3/4
+    ef4 af,4. g8 |
+  \time 6/8
+    af4) g8 af4( g8 |
+  \time 2/4
+    g4\> f)\! |
+  \time 6/8
+    r8 bf8[\mp af] g4 c8 |
   % page 5 system 1
   % page 5 system 2
   % page 6 system 1
@@ -184,8 +202,17 @@ tenMusic = \relative c {
   \time 6/8
     d4 ef8 f4 g!8 |
   f8[ ef] d4 c) |
-  bf8[ c d~] d[ ef f] |
+  bf8[( c d~] d[ ef f~] |
   % page 4 system 2
+  f8[\< g af~] af)\! r8 f8( |
+  \time 3/4
+    g8[\> f] df4 a8[ bf] |
+  \time 6/8
+    c4.)\! bf8[ a df] |
+  \time 2/4
+    bf4\> c\! |
+  \time 6/8
+    r4. r8 f8[\mp ef] |
   % page 5 system 1
   % page 5 system 2
   % page 6 system 1
@@ -243,6 +270,15 @@ basMusic = \relative c {
   df4 ef8 f4 g!8 |
   af4) g!8( f8[ ef df]) | 
   % page 4 system 2
+  c4\> g'8[(\> f ef df] |
+  \time 3/4
+    c4)\! c'8[(\f bf g\> af] |
+  \time 6/8
+    f4 ef8 f4 ef8 |    
+  \time 2/4
+    f2)\! |
+  \time 6/8
+    r4. r4. |
   % page 5 system 1
   % page 5 system 2
   % page 6 system 1
