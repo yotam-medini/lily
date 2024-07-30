@@ -82,8 +82,15 @@ sopMusic = \relative c'' {
   \time 2/4
     c8\!\breathe f4\mf ef8
   \time 6/8
-    d4 ef8 f4 g8 |
+    d4 ef8 f4( g8~ |
   % page 5 system 1
+  g8[ f ef] d8) r8 d8~( |
+  d8[ c d] ef[ f ef] |
+  \time 7/8
+    d4 bf8 c2) |
+  df4( c8~ c8[ bf] c4~ |
+  \time 9/8
+    c8[\< bf c] ef8 f4)\! r8 f8[ ef]
   % page 5 system 2
   % page 6 system 1
   % page 6 system 2
@@ -148,6 +155,13 @@ altMusic = \relative c' {
   \time 6/8
     r8 bf8[\mp af] g4 c8 |
   % page 5 system 1
+  bf4( af8 f8[ ef f] |
+  g4.) af8[( bf af~] |
+  \time 7/8
+    af8 g4 f ef8[ f] |
+  g4. f8[ ef] d4) |
+  \time 9/8
+    f8[( g af~] af4 c8~ c8) r8 c8 |
   % page 5 system 2
   % page 6 system 1
   % page 6 system 2
@@ -214,7 +228,14 @@ tenMusic = \relative c {
   \time 6/8
     r4. r8 f8[\mp ef] |
   % page 5 system 1
+  d4 c8 bf4 c8 |
   % page 5 system 2
+  d8[ ef c] r8 d8[( c] |
+  \time 7/8
+    bf8[ c d~] d8 g,4 d'8 |
+  c8[ d ef] d4) \breathe af8[ bf] |
+  \time 9/8
+    c8[ d ef] g4 d8 ef4 f8 |
   % page 6 system 1
   % page 6 system 2
   % page 7 system 1
@@ -276,10 +297,17 @@ basMusic = \relative c {
   \time 6/8
     f4 ef8 f4 ef8 |    
   \time 2/4
-    f2)\! |
+    f2)   |
   \time 6/8
-    r4. r4. |
+    r4. \! r4. |
   % page 5 system 1
+  r8 ef8[(\mp f] g4 f8 |
+  bf4 af8 g4 f8~
+  \time 7/8
+    f8 ef4 c) \breathe af\mf
+  bf4. g'4 f |
+  \time 9/8
+    d8[ ef d] c4. r8 a4 |
   % page 5 system 2
   % page 6 system 1
   % page 6 system 2
