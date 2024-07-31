@@ -10,14 +10,16 @@ global = {
 #(define draftbreak "")
 % #(define draftbreak break)
 
-piuF = \markup { \italic più \dynamic f }
 Finrilievo = \markup { \dynamic f \bold\italic " in rilievo" }
-espr = \markup { \bold\italic "espr." }
-simdot = \markup { \bold\italic "sim." }
-piucalmo = \markup { \bold\italic "Più Calmo" }
-morendo = \markup { \bold\italic "morendo" }
 dulce = \markup { \bold\italic "dulce" }
+espr = \markup { \bold\italic "espr." }
+morendo = \markup { \bold\italic "morendo" }
 pdulce = \markup { \dynamic p \bold\italic "dulce" }
+piuF = \markup { \italic più \dynamic f }
+piucalmo = \markup { \bold\italic "Più Calmo" }
+pocoapoco = \markup { \bold\italic "poco a poco" }
+crescpocoapoco = \markup { \bold\italic "cresc poco a poco" }
+simdot = \markup { \bold\italic "sim." }
 
 SimFont = \override LyricText.#'font-name = #"generic family italic"
 
@@ -90,8 +92,16 @@ sopMusic = \relative c'' {
     d4 bf8 c2) |
   df4( c8~ c8[ bf] c4~ |
   \time 9/8
-    c8[\< bf c] ef8 f4)\! r8 f8[ ef]
+    c8[\< bf c] ef8 f4)\! r8 f8[( ef]
   % page 5 system 2
+  \time 7/8
+    d4 c8 ef[\< f] g4 |
+  \time 5/8
+    a8)\f f4.( g8 |
+  \time 6/8
+    ef8[ d c~]\> c[ d! bf~] |
+  bf4 c8 a4 g8~ |
+  g8\! a4) gf8[\p f16 \cresc f f f]\! |
   % page 6 system 1
   % page 6 system 2
   % page 7 system 1
@@ -163,6 +173,14 @@ altMusic = \relative c' {
   \time 9/8
     f8[( g af~] af4 c8~ c8) r8 c8 |
   % page 5 system 2
+  \time 7/8
+    g4 a8 bf4. a8 |
+  \time 5/8
+    bf4 a bf8
+  \time 6/8
+    g4 a8~a4. |
+  gf4( f8~ f e4 |
+  f4)\p e16[-\crescpocoapoco e] e[ e] e4 |
   % page 6 system 1
   % page 6 system 2
   % page 7 system 1
@@ -229,13 +247,21 @@ tenMusic = \relative c {
     r4. r8 f8[\mp ef] |
   % page 5 system 1
   d4 c8 bf4 c8 |
-  % page 5 system 2
   d8[ ef c] r8 d8[( c] |
   \time 7/8
     bf8[ c d~] d8 g,4 d'8 |
-  c8[ d ef] d4) \breathe af8[ bf] |
+  c8[ d ef] d4) \breathe af8[( bf] |
   \time 9/8
     c8[ d ef] g4 d8 ef4 f8 |
+  % page 5 system 2
+  \time 7/8
+    ef8[ f d] c[ d] ef4) \breathe |
+  \time 5/8
+    d4( bf8[ c d~] |
+  \time 6/8
+    d8 ef4 f8[ ef d] |
+  e8[ d a] bf4 bf8~)\p |
+  bf8-\crescpocoapoco d16[ d d d] d8 c4 |
   % page 6 system 1
   % page 6 system 2
   % page 7 system 1
@@ -307,8 +333,16 @@ basMusic = \relative c {
     f8 ef4 c) \breathe af\mf
   bf4. g'4 f |
   \time 9/8
-    d8[ ef d] c4. r8 a4 |
+    d8[ ef d] c4. r8 a4( |
   % page 5 system 2
+  \time 7/8
+    bf4. g'4 f) |
+  \time 5/8
+    r8 g4( f |
+  \time 6/8
+    c4 g' f |
+  d8[ ef d] c4) c'16[\p c] |
+  c16[-\crescpocoapoco c] bf4~ bf a8 |
   % page 6 system 1
   % page 6 system 2
   % page 7 system 1
