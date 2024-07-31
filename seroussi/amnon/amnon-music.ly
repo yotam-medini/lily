@@ -20,6 +20,7 @@ piucalmo = \markup { \bold\italic "Più Calmo" }
 pocoapoco = \markup { \bold\italic "poco a poco" }
 crescpocoapoco = \markup { \bold\italic "cresc poco a poco" }
 simdot = \markup { \bold\italic "sim." }
+TempoI = \markup { \bold\italic "Tempo I" }
 
 SimFont = \override LyricText.#'font-name = #"generic family italic"
 
@@ -103,6 +104,13 @@ sopMusic = \relative c'' {
   bf4 c8 a4 g8~ |
   g8\! a4) gf8[\p f16 \cresc f f f]\! |
   % page 6 system 1
+  g4.-\pocoapoco a16[ a a a a8~] |
+  a8[ bf g] a4( g8 |
+  \time 7/8
+    bf8[)^\TempoI\mp\< bf16 bf bf bf] c8[ d(\> e c]\! |
+  bf8[) bf16\< bf bf bf] c8[( d e f~] |
+  \time 5/8
+    f8[\! d e d c]) |
   % page 6 system 2
   % page 7 system 1
   % page 7 system 2
@@ -182,6 +190,13 @@ altMusic = \relative c' {
   gf4( f8~ f e4 |
   f4)\p e16[-\crescpocoapoco e] e[ e] e4 |
   % page 6 system 1
+  e4 e16[ e] e[ e] e4 |
+  d16[ d d d d8] f16[ f f8 e] |
+  \time 7/8
+    f8[\mp\< a g16 g] g[ g af8\> g e]\! |
+    f8[ a\< g16 g] g[ g] af8[ g] c8\! |
+  \time 5/8
+    af!8 g4 f | 
   % page 6 system 2
   % page 7 system 1
   % page 7 system 2
@@ -263,6 +278,13 @@ tenMusic = \relative c {
   e8[ d a] bf4 bf8~)\p |
   bf8-\crescpocoapoco d16[ d d d] d8 c4 |
   % page 6 system 1
+  bf16[ bf bf bf bf8~] bf8[ c bf~] |
+  bf8 c16[ c c c] c8[ bf a] |
+  \time 7/8
+    bf4.\mp\< a8\! bf4\> f8\! |
+    bf4.\< a8 bf4 d8( |
+  \time 5/8
+    cs8[\! d] bf4.) |
   % page 6 system 2
   % page 7 system 1
   % page 7 system 2
@@ -342,8 +364,15 @@ basMusic = \relative c {
   \time 6/8
     c4 g' f |
   d8[ ef d] c4) c'16[\p c] |
-  c16[-\crescpocoapoco c] bf4~ bf a8 |
+  c16[-\crescpocoapoco c] bf4~ bf a8~ |
   % page 6 system 1
+  a8[ a!16 a a g] f4 f16[ f] |
+  f16[ f] e4~ e8[ d c] |
+  \time 7/8
+    bf8\mp\< f'4~ f16[\! e d\> d c c a8]\! |
+    bf8 f'4~\< f16[ e d d c c a8] |
+  \time 5/8
+   bf4\! c\> d8\! |  
   % page 6 system 2
   % page 7 system 1
   % page 7 system 2
