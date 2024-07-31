@@ -13,6 +13,7 @@ global = {
 Finrilievo = \markup { \dynamic f \bold\italic " in rilievo" }
 dulce = \markup { \bold\italic "dulce" }
 espr = \markup { \bold\italic "espr." }
+inrilievo = \markup { \bold\italic "in rilievo" }
 morendo = \markup { \bold\italic "morendo" }
 pdulce = \markup { \dynamic p \bold\italic "dulce" }
 piuF = \markup { \italic più \dynamic f }
@@ -52,7 +53,7 @@ sopMusic = \relative c'' {
     bf8[) bf16 bf16 bf16 bf16] bf8[\< bf16 bf16 bf16 bf16] bf8~\! |
   % page 3 system 1
   \time 5/8
-    bf8[ cf\(_\espr df ef\< f!~] |
+    bf8[ cf\(-\espr df ef\< f!~] |
   \time 8/8
     f4\! f,16[\mp f f f] f8[( ef\< f ef'~]) |
   \time 6/8
@@ -110,9 +111,26 @@ sopMusic = \relative c'' {
     bf8[)^\TempoI\mp\< bf16 bf bf bf] c8[ d(\> e c]\! |
   bf8[) bf16\< bf bf bf] c8[( d e f~] |
   \time 5/8
-    f8[\! d e d c]) |
+    f8[\! d\> e d c] |
   % page 6 system 2
+  \time 3/8
+    c8[ d c] |
+  \time 7/8
+    bf8[)\mp\< bf16 bf bf bf] c8[ d(\> e c]\! |
+    bf8[) bf16 bf bf\< bf] c8[ d( e f~] |
+  \time 5/8
+    f8[\! d\> e d c]\! |
+  \time 7/8
+    bf8[) bf16 bf bf bf] bf8[ bf16 bf bf bf] bf8~ |
   % page 7 system 1
+  \time 5/8
+    bf8[-\espr(\< c d e f~]\! |
+  \time 8/8
+    f4 f,16[\mp\< f] f[ f f8] e8[ f e'~] |
+  \time 6/8
+    e8\! c4 e8[\> d c] |
+  \time 7/8
+    bf8[\!) bf16\mp\< bf bf bf] bf8[ c\! d\> a]\! |
   % page 7 system 2
   % page 8 system 1
   % page 8 system 2
@@ -194,11 +212,28 @@ altMusic = \relative c' {
   d16[ d d d d8] f16[ f f8 e] |
   \time 7/8
     f8[\mp\< a g16 g] g[ g af8\> g e]\! |
-    f8[ a\< g16 g] g[ g] af8[ g] c8\! |
+    f8[ a\< g16 g] g[ g] af8[ g] c8(\! |
   \time 5/8
-    af!8 g4 f | 
+    af!8 g4 f\> | 
   % page 6 system 2
+  \time 3/8
+    g8 e4 |
+  \time 7/8
+    f4)\mp\< a16[ a] a16[\! a bf8\> a e8]\! |
+  f8[ g g16\< g] g16[ g] bf4 c8 \! |
+  \time 5/8
+    af8\> g4 f\! |
+  \time 7/8
+    f4 g16[ g] g[ g] g4~ g16[ af] |
   % page 7 system 1
+  \time 5/8
+    g16[ g f f f f] f8[ a~] |
+  \time 8/8
+    a8[ g16 g g g] g4 g16[\< g g g g g]\! |
+  \time 6/8
+    g8[ af16\> af af af] af4\! g16[ g] |
+  \time 7/8
+    f16[\mp f f f e8~] e8[ e16 e e e e8] |
   % page 7 system 2
   % page 8 system 1
   % page 8 system 2
@@ -286,7 +321,24 @@ tenMusic = \relative c {
   \time 5/8
     cs8[\! d] bf4.) |
   % page 6 system 2
+  \time 3/8
+    r8 a4(\f |
+  \time 7/8
+    bf4.-\inrilievo g'4 f |
+  d8[ e d] c4) r8 d8( |
+  \time 5/8
+    cs[ d] bf) r8 a8( |
+  \time 7/8
+    bf4. c8[ d e f] |
   % page 7 system 1
+  \time 5/8
+    d4. c4 |
+  \time 8/8
+    bf4.~ bf4) r8 bf8[( c] |
+  \time 6/8
+    d4 e8 f4 e8 |
+  \time 7/8
+    d4 c8~ c8[) a( bf c]) | % delete )
   % page 7 system 2
   % page 8 system 1
   % page 8 system 2
@@ -372,9 +424,26 @@ basMusic = \relative c {
     bf8\mp\< f'4~ f16[\! e d\> d c c a8]\! |
     bf8 f'4~\< f16[ e d d c c a8] |
   \time 5/8
-   bf4\! c\> d8\! |  
+    bf4\! c\> d8\! |  
   % page 6 system 2
+  \time 3/8
+    e8\> f4\! |
+  \time 7/8
+    bf,8\mp\< f'4~ f16[\! e d\> d c c a8]\! |
+    bf8 f'4~\< f16[ e d d c c a8]\! |
+  \time 5/8
+    bf4(\< c d8\! |  
+  \time 7/8
+    e8 f4~\! f16[)\> e e e\< c8 d]\! |
   % page 7 system 1
+  \time 5/8
+    e8 a,4~ a16[ df df df] |
+  \time 8/8
+    g,8 d'4~ d16[ c\< c c] c8[ bf af]\! |
+  \time 6/8
+    bf8[\> f'8. d16] c16[ c bf bf\! a8~] |
+  \time 7/8
+    a8[ a'] g8 g16[\< g g g g8 f8]\! |
   % page 7 system 2
   % page 8 system 1
   % page 8 system 2
