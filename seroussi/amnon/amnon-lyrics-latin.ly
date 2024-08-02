@@ -70,7 +70,7 @@ tenlyricsLatinText = \lyricmode {
   \repeat unfold 26 { \skip 1 }
   % page 6 system 1
   % page 6 system 2
-  Ta -- vo ve tasj -- _ ke -- _ ni La la la la U -- lay te -- _ cha -- be
+  Ta -- vo ve tash -- _ ke -- _ ni La la la la U -- lay te -- _ cha -- be
   % page 7 system 1
   esh li -- bi _ li -- _  bi  A -- sher bi -- la _ _ be -- sa -- _
   % page 7 system 2
