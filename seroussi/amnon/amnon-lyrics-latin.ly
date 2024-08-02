@@ -45,10 +45,18 @@ tenlyricsLatinText = \lyricmode {
   La La La
   Am --
   % page 2 system 2
-  non
+  non A -- ni cho -- _ _ le Kir -- u e -- _ lei Ta --
   % page 3 system 1
+  mar Ta -- mar _
+  Ki hosh -- ka  na -- phal be -- re -- shet ve -- gam mich -- 
   % page 3 system 2
+  mar  La la la la
+ {\SimFont \simdot }
+  \repeat unfold 19 { \skip 1 }
+  Re _ --
   % page 4 system 1
+  ay me -- yoo -- da -- ay, _ E -- _ Lay _ ha -- _ vi -- _ u -- ha,
+  A -- _ hat _ she -- e 
   % page 4 system 2
   % page 5 system 1
   % page 5 system 2
