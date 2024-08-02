@@ -391,7 +391,7 @@ tenMusic = \relative c {
   \time 8/8
     ef8[ df cf~] cf8 bf8~\! bf4.) |
   % page 8 system 2
-  r8 g16[^\atempo g g g] af!4\< a8[ bf gf!] |
+  r8 g16\fermata[^\atempo g g g] af!4\< a8[ bf gf!] |
   \time 5/8
     bf4.\f r4 \bar "\."
 }
