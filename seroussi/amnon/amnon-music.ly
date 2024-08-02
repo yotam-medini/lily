@@ -323,7 +323,7 @@ tenMusic = \relative c {
   % page 4 system 2
   f8[\< g af~] af)\! r8 f8( |
   \time 3/4
-    g8[\> f] df4 a8[ bf] |
+    g8[\> f] df4 c8[ bf] |
   \time 6/8
     c4.)\! bf8[ a df] |
   \time 2/4
