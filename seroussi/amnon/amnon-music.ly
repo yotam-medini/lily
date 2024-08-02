@@ -11,6 +11,7 @@ global = {
 % #(define draftbreak break)
 
 Finrilievo = \markup { \dynamic f \bold\italic " in rilievo" }
+atempo = \markup { \bold\italic "a tempo" }
 dulce = \markup { \bold\italic "dulce" }
 espr = \markup { \bold\italic "espr." }
 inrilievo = \markup { \bold\italic "in rilievo" }
@@ -148,6 +149,9 @@ sopMusic = \relative c'' {
   \time 8/8
     c8[) bf af] gf8 f~ f ef4\! | 
   % page 8 system 2
+  r8 e4~\mf\fermata e16[ e\< e e] f8[ g a]\! |
+  \time 5/8
+    bf4.\f r4 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -265,6 +269,9 @@ altMusic = \relative c' {
   \time 8/8
     af8[ f ef~] ef8 df cf4.)\! |
   % page 8 system 2
+  r8 c!8.[\fermata\mf c16] c16[\< c b8] c8 ef4 |
+  \time 5/8
+    f4.\f r4 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -384,6 +391,9 @@ tenMusic = \relative c {
   \time 8/8
     ef8[ df cf~] cf8 bf8~\! bf4.) |
   % page 8 system 2
+  r8 g16[^\atempo g g g] af!4\< a8[ bf gf!] |
+  \time 5/8
+    bf4.\f r4 \bar "\."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -501,6 +511,9 @@ basMusic = \relative c {
     d4 e8 f4 e8 |
   a8[ g f~\>]) f[ ef!( f] |
   \time 8/8
-    gf!4. af4 gf8[ af\! gf]) | % del ) add \<
+    gf!4. af4 gf8[ af\! gf]\< | % del ) add \<
   % page 8 system 2
+  f4.~)\mf  f8.[\< ef!16] ef16[ ef df df cf8] |
+  \time 5/8
+    bf4.\f r4 \bar "|."
 }
