@@ -364,7 +364,7 @@ tenMusic = \relative c {
   \time 5/8
     cs[ d] bf) r8 a8( |
   \time 7/8
-    bf4. c8[ d e f] |
+    bf4. c8[\< d e f]\! |
   % page 7 system 1
   \time 5/8
     d4. c4 |
