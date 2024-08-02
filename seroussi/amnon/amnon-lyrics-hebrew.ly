@@ -14,7 +14,7 @@ soplyricsText = \lyricmode {
   % page 3 system 2
   % page 4 system 1
 
- מְ -- _ יֻ -- דָּ -- עַי, אֵ -- _ _ לַי _ הֲ -- בִי -- _ אוּ -- _ _ הָ, _  אַ _
+ מְ -- _ יֻ -- דָּ -- ,עַי _ אֵ -- _ לַי _ הֲ -- _ בִי -- _ אוּ -- _ ,הָ _  אַ _
 
   % page 4 system 2
   % page 5 system 1

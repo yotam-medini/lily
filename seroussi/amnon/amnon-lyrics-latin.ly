@@ -1,12 +1,13 @@
 soplyricsLatinText = \lyricmode {
   % page 2 system 1
   La La La La La La La La La
-  \simdot
-  \skip 1
+ { \SimFont \simdot }
+ \repeat unfold 102 { \skip 1 }
   % page 2 system 2
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
+  me -- _ yoo -- da -- ay _ e -- _ lay _ ha -- _ vi - u -- _ ha _ a _
   % page 4 system 2
   % page 5 system 1
   % page 5 system 2
