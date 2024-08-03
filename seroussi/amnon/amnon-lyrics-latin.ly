@@ -7,16 +7,26 @@ soplyricsLatinText = \lyricmode {
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
-  me -- _ yoo -- da -- ay _ e -- _ lay _ ha -- _ vi - u -- _ ha _ a _
+  me -- _ yoo -- da -- ay _ e -- _ lay _ ha -- _ vi - u -- _ ha _ a -- _
   % page 4 system 2
+  hat she -- e -- la -- ti mi -- kem _ a -- sher o -- mar _
+  Kish -- _ ru a -- te -- ret _
   % page 5 system 1
+  al ro -- sha ve -- _ ha -- _ chi -- _ _ nu e -- dia
+  Ve -- ha -- _ chi nu _ e -- dia _ _ Ve -- _
   % page 5 system 2
+  si -- mu al ya -- da  be -- chos cha -- mar _ _ _ cha -- mar _
+  be -- chos cha -- _ mar La la la la la
   % page 6 system 1
+  La \simdot
+  \repeat unfold 123 { \skip 1 }
   % page 6 system 2
   % page 7 system 1
   % page 7 system 2
   % page 8 system 1
+  U -- _ lay te -- cha -- be _ esh _ li -- bi _ _
   % page 8 system 2
+  A _ Kir -- u e -- ley _ Ta -- mar
 }
 
 altlyricsLatinText = \lyricmode {
