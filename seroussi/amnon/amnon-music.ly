@@ -387,7 +387,7 @@ tenMusic = \relative c {
     r4.
   \time 6/8
     r4. bf4( c8 |
-  bf8 ef4 d4.\> |
+  bf8 ef4 df4.\> |
   \time 8/8
     ef8[ df cf~] cf8 bf8~\! bf4.) |
   % page 8 system 2
@@ -508,12 +508,12 @@ basMusic = \relative c {
   \time 3/8
     r8 bf8[(\mf c] |
   \time 6/8
-    d4 e8 f4 e8 |
+    d4 e8 f4 g8 |
   a8[ g f~\>]) f[ ef!( f] |
   \time 8/8
     gf!4. af4 gf8[ af\! gf]\< | % del ) add \<
   % page 8 system 2
-  f4.~)\mf  f8.[\< ef!16] ef16[ ef df df cf8] |
+  ff4.~)\mf  ff8.[\< ef!16] ef16[ ef df df cf8] |
   \time 5/8
     bf4.\f r4 \bar "|."
 }
