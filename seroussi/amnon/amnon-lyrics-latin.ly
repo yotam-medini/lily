@@ -33,13 +33,19 @@ altlyricsLatinText = \lyricmode {
   % page 2 system 1
   La La La La La La La La La
   \simdot
-  \skip 1
+  \repeat unfold 108 { \skip 1 }
   % page 2 system 2
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
+  Re -- _ ay me -- yoo -- da -- a -- ay _ 
+    e -- _ lay _ ha -- vi -- u -- _ ha _ _ _
   % page 4 system 2
+  A -- _ hat _ she -- e -- la -- _ ti a -- sher o -- mar _
+    Kish -- _ ru a -- 
   % page 5 system 1
+  te -- _ ret al ro -- sha Ve -- _ ha -- _ chi -- nu e -- _ dia  
+  e -- _ dia Ve -- _ si -- _ mu _ al
   % page 5 system 2
   % page 6 system 1
   % page 6 system 2
