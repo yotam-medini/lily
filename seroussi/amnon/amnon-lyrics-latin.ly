@@ -47,12 +47,19 @@ altlyricsLatinText = \lyricmode {
   te -- _ ret al ro -- sha Ve -- _ ha -- _ chi -- nu e -- _ dia  
   e -- _ dia Ve -- _ si -- _ mu _ al
   % page 5 system 2
+  _ ya -- da be -- chos _ cha -- mar _ _
+  Be -- chos _ cha -- mar 
+  La la la la la 
   % page 6 system 1
+  \simdot
+  \repeat unfold 138 { \skip 1 }
   % page 6 system 2
   % page 7 system 1
   % page 7 system 2
   % page 8 system 1
+  Am -- _ non cho -- _ le _ Li -- bo _ a -- sher _ sa -- mar
   % page 8 system 2
+  A Kir -- u e -- ley _ Ta -- mar
 }
 
 tenlyricsLatinText = \lyricmode {
