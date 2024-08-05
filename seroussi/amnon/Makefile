@@ -52,6 +52,7 @@ LYS_LATIN = ${LYS_COMMON} ${BASE}-latin.ly \
 	latin/altlyrics.ly \
 
 LYS_HEBREWLATIN = ${LYS_COMMON} ${BASE}-hebrewlatin.ly \
+	${BASE}-lyrics-hebrew.ly \
 	${BASE}-lyrics-latin.ly \
         hebrew-ctx.ly \
         latin-ctx.ly \
