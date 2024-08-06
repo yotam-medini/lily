@@ -7,7 +7,7 @@ soplyricsLatinText = \lyricmode {
   % page 3 system 1
   % page 3 system 2
   % page 4 system 1
-  me -- _ yoo -- da -- ay _ e -- _ lay _ ha -- _ vi - u -- _ ha _ a -- _
+  me -- _ yoo -- da -- ay _ e -- _ lay _ ha -- _ vi - u -- _ ha __ _ a -- _
   % page 4 system 2
   hat she -- e -- la -- ti mi -- kem _ a -- sher o -- mar _
   Kish -- _ ru a -- te -- ret _
@@ -24,7 +24,7 @@ soplyricsLatinText = \lyricmode {
   % page 7 system 1
   % page 7 system 2
   % page 8 system 1
-  U -- _ lay te -- cha -- be _ esh _ li -- bi _ _
+  U -- _ lay te -- cha -- be _ esh _ li -- bi __ _ _
   % page 8 system 2
   A _ Kir -- u e -- ley _ Ta -- mar
 }
@@ -39,15 +39,15 @@ altlyricsLatinText = \lyricmode {
   % page 3 system 2
   % page 4 system 1
   Re -- _ ay me -- yoo -- da -- a -- ay _ 
-    e -- _ lay _ ha -- vi -- u -- _ ha _ _ _
+    e -- _ lay _ ha -- vi -- u -- _ ha __ _ _ _
   % page 4 system 2
-  A -- _ hat _ she -- e -- la -- _ ti a -- sher o -- mar _
+  A -- _ hat _ she -- e -- la -- _ ti a -- sher o -- mar __ _
     Kish -- _ ru a -- 
   % page 5 system 1
   te -- _ ret al ro -- sha Ve -- _ ha -- _ chi -- nu e -- _ dia  
   e -- _ dia Ve -- _ si -- _ mu _ al
   % page 5 system 2
-  _ ya -- da be -- chos _ cha -- mar _ _
+  _ ya -- da be -- chos __ _ cha -- mar __ _ _
   Be -- chos _ cha -- mar 
   La la la la la 
   % page 6 system 1
@@ -71,7 +71,7 @@ tenlyricsLatinText = \lyricmode {
   % page 2 system 2
   non A -- ni cho -- _ _ le Kir -- u e -- _ lei Ta --
   % page 3 system 1
-  mar Ta -- mar _
+  mar Ta -- mar __ _
   Ki hosh -- ka  na -- phal be -- re -- shet ve -- gam mich -- 
   % page 3 system 2
   mar  La la la la
@@ -79,13 +79,13 @@ tenlyricsLatinText = \lyricmode {
   \repeat unfold 19 { \skip 1 }
   Re _ --
   % page 4 system 1
-  ay me -- yoo -- da -- ay, _ E -- _ Lay _ ha -- _ vi -- _ u -- ha,
+  ay me -- yoo -- da -- ay, __ _ E -- _ Lay _ ha -- _ vi -- _ u -- ha,
   A -- _ hat _ she -- e -- _
   % page 4 system 2
   la -- ti _ mi -- kem a -- sher _ o -- mar
   a -- sher o -- mar _ Kish -- _
   % page 5 system 1
-  ru a -- te ret al ro -- sha ve -- ha -- chi _ _ _ nu e -- dia _ _ _ 
+  ru a -- te ret al ro -- sha ve -- ha -- chi _ _ _ nu e -- dia __ _ _ _ 
     Ve -- _  ha -- _ _ chi --_ nu e --
   % page 5 system 2
   dia _ _ e -- _ dia Ve -- si -- _ mu _ be chos _ _ char _ _ mar La _ 
@@ -96,7 +96,7 @@ tenlyricsLatinText = \lyricmode {
   % page 6 system 2
   Ta -- vo ve tash -- _ ke -- _ ni La la la la U -- lay te -- _ cha -- be
   % page 7 system 1
-  esh li -- bi _ li -- _  bi  A -- sher bi -- la _ _ be -- sa -- _
+  esh li -- bi __ _ li -- _  bi  A -- sher bi -- la _ _ be -- sa -- _
   % page 7 system 2
   ri a -- sher sa -- mar La la la la {\SimFont \simdot }
   \repeat unfold 20 { \skip 1 }
