@@ -112,21 +112,21 @@ baslyricsLatinText = \lyricmode {
   \simdot 
   \repeat unfold 108 { \skip 1 }
   % page 2 system 2
+  % page 3 system 1
+  % page 3 system 2
+  % page 4 system 1
   Re -- _ ay _ me -- yoo -- da -- ay _ e -- lay _ ha -- vi -- u -- _ ha
   ha -- vi -- u -- _
-  % page 3 system 1
+  % page 4 system 2
   ha ha -- vi -- u -- _ ha ha -- vi -- u -- _ ha
   E -- lay E -- lay 
-  % page 3 system 2
+  % page 5 system 1
   Kish -- _ ru a -- te -- _ ret al _ ro sha Ve -- ha chi -- nu e-- dia __ _ _ 
   Ve --
-  % page 4 system 1
-  si -- mi al ya -- da __ _ be -- chos cha -- _ mar __ _ 
+  % page 5 system 2
+  si -- mu al ya -- da __ _ be -- chos cha -- _ mar __ _ 
   La la la la la _ \simdot
   \repeat unfold 135 { \skip 1 }
-  % page 4 system 2
-  % page 5 system 1
-  % page 5 system 2
   % page 6 system 1
   % page 6 system 2
   % page 7 system 1
