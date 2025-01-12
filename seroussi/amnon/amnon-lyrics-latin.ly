@@ -121,7 +121,8 @@ baslyricsLatinText = \lyricmode {
   ha ha -- vi -- u -- _ ha ha -- vi -- u -- _ ha
   E -- lay E -- lay 
   % page 5 system 1
-  Kish -- _ ru a -- te -- _ ret al _ ro sha Ve -- ha chi -- nu e-- dia __ _ _ 
+  Kish -- _ ru a -- te -- _ ret al _ ro -- sha 
+  Ve -- ha -- chi -- nu e -- dia __ _ _ 
   Ve --
   % page 5 system 2
   si -- mu al ya -- da __ _ be -- chos cha -- _ mar __ _ 
