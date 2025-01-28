@@ -77,6 +77,7 @@ sopMusic = \relative c' {
   }
   c1 |
   c1 |
+  % hu haya
   e,2. e4 |
   f4 g2 f4 |
   e1~ |
@@ -86,12 +87,13 @@ sopMusic = \relative c' {
   a2 g4 a |
   % zemer
   b4 g2.~ |
-  g2. r4
+  g2. r4 |
+\break
   d'2. d4 |
   c2 e4 c4 |
   b1~ |
   b1
-  % basade
+  % lasade
   b2. b4 |
   a2 b4 a4 |
   gs1~ |
@@ -211,9 +213,79 @@ altMusic = \relative c' {
 }
 
 tenMusic = \relative c {
-  \partial 4 c4 |
-  % e2. f4 |
-  % e2. e4
+  \partial 4 c'4 |
+  \repeat volta 2 {
+  e2. c4 |
+  b2. c4 |
+  e e e c  |
+  b4 b2 b4 |
+  a a a a |
+  g g g f |
+  g1 |
+  r2. c4 |
+  e2. c4 |
+  b2. c4 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  }
+  \alternative {
+    % \volta 1 
+    {
+      a1 |
+      s1 |
+    }
+    % \volta 2 
+    {
+      a1 |
+      s1  |
+    }
+  }
+  % }
+  % hu haya
+  e2. e4 |
+  f4 g2 f4 |
+  e1~ |
+  e2. r4 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  % ani ad sof yamay
+  c4 a d f |
+  e c g'2~ |
+  g2. a4 |
+  a1~ |
+  a1 \bar "|."
 }
 
 \header {
@@ -232,6 +304,16 @@ tenMusic = \relative c {
       (padding . 1)
       (stretchability . 12))
 
+  oddFooterMarkup = \markup {
+      \hspace #60
+      \on-the-fly #last-page { (typeset via \italic "LilyPond"
+      \small \typewriter
+      \hspace #2
+      \small
+      \simple #(strftime "%Y-%m-%d %H:%M:%S)" (localtime (current-time)))
+      }
+  }
+  evenFooterMarkup = \oddFooterMarkup
 }
 
 theMusic = {
@@ -240,6 +322,8 @@ theMusic = {
 
       \new Staff = "sop" <<
 	\set Staff.midiInstrument = #"flute"
+        \set Staff.midiMinimumVolume = #0.9
+        \set Staff.midiMaximumVolume = #0.95
         \new Voice = "sopranos" {
           \set Staff.instrumentName = "S"
           <<
@@ -250,6 +334,8 @@ theMusic = {
       >>
 
       \new Staff = "alt" <<
+        \set Staff.midiMinimumVolume = #0.9
+        \set Staff.midiMaximumVolume = #0.95
 	\set Staff.midiInstrument = #"oboe"
         \new Voice = "altos" {
           \set Staff.instrumentName = "A"
@@ -299,5 +385,8 @@ theMusic = {
     \unfoldRepeats { 
         \theMusic
     }
-    \midi { }
+    \midi { 
+      midiMinimumVolume = #0.8
+      midiMaximumVolume = #0.9
+    }
 }
