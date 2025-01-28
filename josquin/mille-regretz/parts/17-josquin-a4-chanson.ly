@@ -35,7 +35,7 @@ superiusLyricsXVII = \lyricmode {
     Qu'on me ver -- ra brief mes jours des -- fi -- ner,
     Qu'on me ver -- ra brief mes jours des -- fi -- ner,
     \ijLyrics
-        in brief mes jours fi -- ner,
+        brief mes jours des -- fi -- ner,
         brief mes jours des -- fi -- ner.
     \normalLyrics
 }
