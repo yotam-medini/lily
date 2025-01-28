@@ -1,6 +1,8 @@
 \version "2.22.1"
 \include "english.ly"
 
+% #(set-global-staff-size 19.0)
+
 global = {
   \key a \minor
   \time 2/2
