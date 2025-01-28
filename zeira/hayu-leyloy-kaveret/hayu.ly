@@ -9,19 +9,7 @@ global = {
   \tempo 4 = 140
 }
 
-hsecondlyrics = \lyricmode {
-
-
-וְ -- הוּא נִ -- גַּשׁ שִׁמְ -- עִי אֵ -- לַי קְטַ -- נְטֹ -- נֶת
-אֲ -- נִי בָּ -- נִי -- תִי בַּ -- יִת לְ -- שִׁבְ -- תֵּךְ
-אַתְּ תִּרְ -- קְ -- מִי בָּ -- עֶ -- רֶב לִי כֻּ -- תֹּ -- נֶת
-אֲ -- נִי אֶנְ -- הַג בַּ -- יּוֹם אֶת עֶגְ -- לָ -- תֵךְ
-
-% LTR
-}
-
-
-hlyrics = \lyricmode {
+hOnelyricsA = \lyricmode {
 
 % RTL
 
@@ -29,10 +17,28 @@ hlyrics = \lyricmode {
 אֲ -- נִי אוֹ -- תָם עַד סוֹף יָ -- מַי אֶ -- שָּׂא
 בַּ -- מִּשְׁ -- עוֹ -- לִים בֵּין דְּגַנְ -- יָה לְ -- כִ -- נֶּ -- רֶת
 עָמְ -- דָה עֶגְ -- לַת חַ -- יַּי הָ -- עֲ -- מוּ -- סָה
+וְ
 
-_ _
+% LTR
+}
 
-הוֹּא הָ -- יָה אָז בָּ -- הִיר וְ -- גָ -- בוֹ -- הַּ כְּ -- זֶ -- מֶר
+hTwolyricsA = \lyricmode {
+
+
+_ הוּא נִ -- גַּשׁ שִׁמְ -- עִי אֵ -- לַי קְטַ -- נְטֹ -- נֶת
+אֲ -- נִי בָּ -- נִי -- תִי בַּ -- יִת לְ -- שִׁבְ -- תֵּךְ
+אַתְּ תִּרְ -- קְ -- מִי בָּ -- עֶ -- רֶב לִי כֻּ -- תֹּ -- נֶת
+אֲ -- נִי אֶנְ -- הַג בַּ -- יּוֹם אֶת עֶגְ -- לָ --
+
+% תֵךְ
+
+% LTR
+}
+
+
+tailOneA = \lyricmode {
+
+הוּּא הָ -- יָה אָז בָּ -- הִיר וְ -- גָ -- בוֹ -- הַּ כְּ -- זֶ -- מֶר
 הוּא נָ -- הַג עֲ -- גָ -- לוֹת לַ -- שָּׂ -- דֶה הָ -- רָ -- חָב
 וַ -- אֲ -- נִי לוֹ כֻּ -- תֹּ -- נֶת הָ -- יִי -- תִי רוֹ -- קֶ -- מֶת
 כֻּ -- תֹּ -- נֶת שֶׁל תְּכֵ -- לֶת עִם פֶּ -- רַח זָ -- הָב
@@ -41,6 +47,41 @@ _ _
 אֲ -- נִי אוֹ -- תָם עַד סוֹף יָ -- מַי אֶ -- שָֹּא
 
 
+
+% LTR
+}
+
+
+hOnelyricsB = \lyricmode {
+
+% RTL
+
+הָ -- יוּ לֵי -- לוֹת אֲ -- נִי אוֹ -- תָם זוֹ -- כֶ -- רֶת
+וְ -- הוּא אֶת הָ -- עֵ -- צִים בַּ -- גַּן הֵ -- עִיד
+אֶת הַ -- שְּׁבִי -- לִים בֵּין דְּגַנְ -- יָה לְ -- כִ -- נֶּ -- רֶת
+כִּי רַק אוֹ -- תִי יִשְׁ -- מֹר לוֹ לְ -- תָ -- מִיד
+הָ --
+
+% LTR
+}
+
+hTwolyricsB = \lyricmode {
+
+_ -- יָה הוֹ -- לֵךְ וְ -- שָׁב אֵ -- לַי קוֹ -- דֵ -- חַ
+הָ -- יָה נוֹ -- שֵׂא דְּמוּ -- תִי מִ -- מּוּל פָּ -- נָיו
+הַ -- גִּי -- דוּ נָא הֲ -- יֵשׁ בָּ -- כֶם יוֹ -- דֵ -- עַ
+אֵי אָ -- נָה זֶה הָ -- לַךְ לוֹ וְ -- לֹא שָׁב
+
+% LTR
+}
+
+
+tailOneB = \lyricmode {
+
+אָז הָ -- יִי -- תִי בּוֹ -- כָה אָז הָ -- יִי -- תִי נִדְ -- הֶ -- מֶת
+בְּ -- שָׂ -- דוֹת רְ -- חוֹ -- קִים עוֹד הָ -- לַכְ -- תִּי אֵ -- לָיו
+אָ -- נֹ -- כִי עוֹד נוֹ -- שֵׂאת כֻּ -- תָּנְ -- תּוֹ הַ -- מְּרֻ -- קֶּ -- מֶת
+כֻּ -- תֹּ -- נֶת שֶׁל תְּכֵ -- לֶת עִם פֶּ -- רַח זָ -- הָב
 
 % LTR
 }
@@ -63,15 +104,15 @@ sopMusic = \relative c' {
   b g2 g4 |
   a4 a b c |
   d4. d8 e4 e |
-  }  
+  }
   \alternative {
-    % \volta 1 
+    % \volta 1
     {
       c1~ |
       c2 r4 b4 |
     }
 \break
-    % \volta 2 
+    % \volta 2
     {
       c1~ |
       c1  |
@@ -100,6 +141,7 @@ sopMusic = \relative c' {
   a2 b4 a4 |
   gs1~ |
   gs2. r4 |
+\break
   % vaani
   c2. c4 |
   d2 e4 d |
@@ -119,6 +161,7 @@ sopMusic = \relative c' {
   a2 a2 |
   gs1 |
   gs2. b4 | % ... ha
+\break
   % yu
   c2. c4 |
   d2. d4 |
@@ -151,12 +194,12 @@ altMusic = \relative c' {
   b4. b8 c4 c |
   }
   \alternative {
-    % \volta 1 
+    % \volta 1
     {
       a1~ |
       a2 r4 e4 |
     }
-    % \volta 2 
+    % \volta 2
     {
       a1~ |
       a1  |
@@ -176,7 +219,7 @@ altMusic = \relative c' {
   f2. f4 |
   f2 a4 f4 |
   e1~ |
-  e1 
+  e1
   % basade
   d2. d4 |
   d2 a'4 f4 |
@@ -211,7 +254,7 @@ altMusic = \relative c' {
   a1~ |
   a1 \bar "|."
 
-    
+
 }
 
 tenMusic = \relative c {
@@ -233,12 +276,12 @@ tenMusic = \relative c {
   s1 |
   }
   \alternative {
-    % \volta 1 
+    % \volta 1
     {
       a1 |
       s1 |
     }
-    % \volta 2 
+    % \volta 2
     {
       a1 |
       s1  |
@@ -348,12 +391,36 @@ theMusic = {
         }
       >>
 
-      \new Lyrics = "hlyrics" {
-      \context Lyrics = "hlyrics"
-        \lyricsto "altos" {
-          \hlyrics
-        }
+
+    \new Lyrics {
+      \lyricsto "altos" {
+        { \hOnelyricsA }
+        \repeat unfold 1 { \skip 1 }
+        { \tailOneA }
       }
+    }
+    \new Lyrics {
+      \lyricsto "altos" {
+        { \hTwolyricsA }
+        \repeat unfold 2 { \skip 1 }
+        תֵךְ
+      }
+    }
+
+    \new Lyrics {
+      \lyricsto "altos" {
+        { \hOnelyricsB }
+        \repeat unfold 1 { \skip 1 }
+        { \tailOneB }
+      }
+    }
+    \new Lyrics {
+      \lyricsto "altos" {
+        { \hTwolyricsB }
+        \repeat unfold 2 { \skip 1 }
+      }
+    }
+
 
       \new Staff = "ten" <<
 	\set Staff.midiInstrument = #"cello"
@@ -384,10 +451,10 @@ theMusic = {
 
 %% MIDI SCORE
 \score {
-    \unfoldRepeats { 
+    \unfoldRepeats {
         \theMusic
     }
-    \midi { 
+    \midi {
       midiMinimumVolume = #0.8
       midiMaximumVolume = #0.9
     }
