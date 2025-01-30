@@ -142,16 +142,18 @@ sopMusic = \relative c' {
   gs1~ |
   gs2. r4 |
 \break
-  % vaani
-  c2. c4 |
-  d2 e4 d |
-  c1 |
-  b1 |
+  % vaani bar-35
+  << c2. f2.>> << c4 f4>> |
+  << d2 g2>> <<e4 a4>> << d, g >> |
+  << {f2 e4 d} {c1} >> |
+  << b1 e1 >> |
   % hayiti
   e4 d c a |
   d c a c |
-  a1 |
-  a2 a2 |
+  % ke 
+  b1 |
+  % mat
+  b2 b2 |
   % ...tonet
   a1 |
   b2 c2 |
