@@ -15,7 +15,7 @@ hOnelyricsA = \lyricmode {
 
 הָ -- יוּ לֵי -- לוֹת  אֲ -- נִי אוֹ -- תָם זוֹ -- כֶ -- רֶת
 אֲ -- נִי אוֹ -- תָם עַד סוֹף יָ -- מַי אֶ -- שָּׂא
-בַּ -- מִּשְׁ -- עוֹ -- לִים בֵּין דְּגַנְ -- יָה לְ -- כִ -- נֶּ -- רֶת
+בַּ -- מִּשְׁ -- עוֹ -- לִים בֵּין דְּגַנְ -- יָה לְ -- כִּ -- נֶּ -- רֶת
 עָמְ -- דָה עֶגְ -- לַת חַ -- יַּי הָ -- עֲ -- מוּ -- סָה
 וְ
 
@@ -58,7 +58,7 @@ hOnelyricsB = \lyricmode {
 
 הָ -- יוּ לֵי -- לוֹת אֲ -- נִי אוֹ -- תָם זוֹ -- כֶ -- רֶת
 וְ -- הוּא אֶת הָ -- עֵ -- צִים בַּ -- גַּן הֵ -- עִיד
-אֶת הַ -- שְּׁבִי -- לִים בֵּין דְּגַנְ -- יָה לְ -- כִ -- נֶּ -- רֶת
+אֶת הַ -- שְּׁבִי -- לִים בֵּין דְּגַנְ -- יָה לְ -- כִּ -- נֶּ -- רֶת
 כִּי רַק אוֹ -- תִי יִשְׁ -- מֹר לוֹ לְ -- תָ -- מִיד
 הָ --
 
@@ -87,97 +87,7 @@ tailOneB = \lyricmode {
 }
 
 
-sopMusic = \relative c' {
-  \partial 4 b'4 |
-  \repeat volta 2 {
-  c2. c4 |
-  d2. d4 |
-  c4 d c c |
-  d4 d2 d4 |
-  c d e c |
-  b4 d b g |
-  b1 |
-  r2. b4 |
-  c2. c4 |
-  d2. d4 |
-  c e d d |
-  b g2 g4 |
-  a4 a b c |
-  d4. d8 e4 e |
-  }
-  \alternative {
-    % \volta 1
-    {
-      c1~ |
-      c2 r4 b4 |
-    }
-\break
-    % \volta 2
-    {
-      c1~ |
-      c1  |
-    }
-  }
-  c1 |
-  c1 |
-  % hu haya
-  e,2. e4 |
-  f4 g2 f4 |
-  e1~ |
-  e2. r4 |
-  % veGavoha
-  b'2. b4 |
-  a2 g4 a |
-  % zemer
-  b4 g2.~ |
-  g2. r4 |
-\break
-  d'2. d4 |
-  c2 e4 c4 |
-  b1~ |
-  b1
-  % lasade
-  b2. b4 |
-  a2 b4 a4 |
-  gs1~ |
-  gs2. r4 |
-\break
-  % vaani bar-35
-  << c2. f2.>> << c4 f4>> |
-  << d2 g2>> <<e4 a4>> << d, g >> |
-  << {f2 e4 d} {c1} >> |
-  << b1 e1 >> |
-  % hayiti
-  e4 d c a |
-  d c a c |
-  % ke 
-  b1 |
-  % mat
-  b2 b2 |
-  % ...tonet
-  a1 |
-  b2 c2 |
-  d1 |
-  e2 d2 |
-  c1 |
-  a2 a2 |
-  gs1 |
-  gs2. b4 | % ... ha
-\break
-  % yu
-  c2. c4 |
-  d2. d4 |
-  c4 d c c |
-  d4 d2 d,4 |
-  % ani ad sof yamay
-  c4 a d f |
-  e c g'2~ |
-  g2 d'4 c4 |
-  c1~ |
-  c1 \bar "|."
-}
-
-altMusic = \relative c' {
+tenMusic = \relative c {
   \partial 4 e4 |
   \repeat volta 2 {
   a2. c,4 |
@@ -193,14 +103,17 @@ altMusic = \relative c' {
   a4 c b g |
   e e2 e4 |
   fs fs gs a |
+% \break
   b4. b8 c4 c |
   }
+% \break
   \alternative {
     % \volta 1
     {
       a1~ |
       a2 r4 e4 |
     }
+% \break
     % \volta 2
     {
       a1~ |
@@ -208,16 +121,18 @@ altMusic = \relative c' {
     }
   }
   % }
+  % hu haya
   e2. e4 |
-  f4 g2 f4 |
+  f2 g4 f4 |
   e1~ |
-  e2. r4 |
+  e1 |
   % veGavoha
   g2. g4 |
   fs2 e4 fs4 |
   % zemer
   g4 e2.~ |
-  e2. r4 |
+  e1 |
+  % hu nahag
   f2. f4 |
   f2 a4 f4 |
   e1~ |
@@ -226,7 +141,8 @@ altMusic = \relative c' {
   d2. d4 |
   d2 a'4 f4 |
   e1~ |
-  e2. r4 |
+  e1 |
+\pageBreak
   % vaani
   a2. a4 |
   b2 c4 b |
@@ -234,7 +150,7 @@ altMusic = \relative c' {
   g1 |
   % hayiti
   fs1 |
-  f!4 d2 f4 |
+  f!2 d4 f4 |
   e1 |
   e2 e2 |
   fs1
@@ -245,94 +161,199 @@ altMusic = \relative c' {
   g2 f2 |
   e1~ |
   e2. e4 |
+\break
   a2. c,4 |
   d2. e4 |
   a4 b a c, |
   d d2 d4 |
+\break
   % ani ad sof yamay
   c4 a d f |
   e c g'2~ |
-  g2. b4 |
+  g2. b8( a8) |
   a1~ |
   a1 \bar "|."
-
-
 }
 
-tenMusic = \relative c {
-  \partial 4 c'4 |
+sopMusic = \relative c' {
+  \partial 4 b'4 |
   \repeat volta 2 {
-  e2. c4 |
-  b2. c4 |
-  e e e c  |
-  b4 b2 b4 |
-  a a a a |
-  g g g f |
-  g1 |
-  r2. c4 |
-  e2. c4 |
-  b2. c4 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
+  c2. g4 |
+  a2. b4 |
+  c4 d c g |
+  a4 a2 b4 |
+  c d e c |
+  b4 d b a |
+  b1 |
+  r2. b4 | % ba
+  c2. g4 |
+  a2. b4 |
+  c e d b |
+  b g2 g4 |
+  a4 a b c |
+  d4 d e4 e |
   }
   \alternative {
     % \volta 1
     {
-      a1 |
-      s1 |
+      c1~ |
+      c2 r4 b4 |
     }
+% \break
     % \volta 2
     {
-      a1 |
-      s1  |
+      c1~ |
+      c1  |
     }
   }
-  % }
   % hu haya
-  e2. e4 |
-  f4 g2 f4 |
+  e,2. e4 |
+  f2 g4 f4 |
   e1~ |
-  e2. r4 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s1 |
+  e1 |
+  % veGavoha
+  b'2. b4 |
+  a2 g4 a |
+  % zemer
+  b4 g2.~ |
+  g1 |
+% \break
+  a2. a4 |
+  a2 c4 a4 |
+  g1~ |
+  g1
+  % lasade
+  fs2. fs4 |
+  a2 c4 a4 |
+  gs1~ |
+  gs1 |
+% \break
+  % vaani bar-35
+  c2. c4 |
+  d2 e4 d |
+  % << {f2 e4 d} {c1} >> |
+  c2 c4 b4 |
+  b1  |
+  % hayiti
+  e4 d c a |
+  d c a c |
+  % ke 
+  b1 |
+  % mat
+  r2 a2 |
+  % ...tonet
+  a1 |
+  b2 c2 |
+  d1 |
+  e2 d2 |
+  c1 |
+  b2 a2 |
+  b1 |
+  r2. b4 | % ... ha
+% \break
+  % yu
+  c2. g4 |
+  a2. b4 |
+  c4 d c g |
+  a4 a2 d,4 |
   % ani ad sof yamay
   c4 a d f |
   e c g'2~ |
-  g2. a4 |
-  a1~ |
-  a1 \bar "|."
+  g2. d'8( c8) |
+  c1~ |
+  c1 \bar "|."
+}
+
+altMusic = \relative c' {
+  \partial 4 b'4 |
+  \repeat volta 2 {
+  c2. g4 |
+  a2. b4 |
+  c4 d c g |
+  a4 a2 b4 |
+  c d e c |
+  b4 d b a |
+  b1 |
+  r2. b4 | % ba
+  c2. g4 |
+  a2. b4 |
+  c e d b |
+  b g2 g4 |
+  a4 a b c |
+  d4 d e4 e |
+  }
+  \alternative {
+    % \volta 1
+    {
+      c1~ |
+      c2 r4 b4 |
+    }
+% \break
+    % \volta 2
+    {
+      c1~ |
+      c1  |
+    }
+  }
+  % hu haya
+  e,2. e4 |
+  f2 g4 f4 |
+  e1~ |
+  e1 |
+  % veGavoha
+  b'2. b4 |
+  a2 g4 a |
+  % zemer
+  b4 g2.~ |
+  g1 |
+% \break
+  d'2. d4 |
+  c2 e4 c4 |
+  b1~ |
+  b1
+  % lasade
+  a2. a4 |
+  c2 e4 c4 |
+  b1~ |
+  b1 |
+% \break
+  % vaani bar-35
+  % << c2. f2.>> << c4 f4>> |
+  % << d2 g2>> <<e4 a4>> << d, g >> |
+  % << {f2 e4 d} {c1} >> |
+  % << b1 e1 >> |
+  e2. e4 |
+  g2 a4 g4 |
+  f2 e4 d4 |
+  e1 |
+  % hayiti
+  c4 b a fs |
+  b a f a |
+  % ke 
+  g1 |
+  % mat
+  r2 e2 |
+  % ...tonet
+  ds1 |
+  ds2 fs2 |
+  gs1 |
+  gs2 gs2 |
+  f!1 |
+  e2 d2 |
+  gs1 |
+  r2. b4 | % ... ha
+% \break
+  % yu
+  c2. g4 |
+  a2. b4 |
+  c4 d c g |
+  a4 a2 d,4 |
+  % ani ad sof yamay
+  c4 a d f |
+  e c g'2~ |
+  g2. d'8( c8) |
+  c1~ |
+  c1 \bar "|."
 }
 
 \header {
@@ -365,7 +386,16 @@ tenMusic = \relative c {
 
 theMusic = {
   <<
-    \new ChoirStaff <<
+      \new Staff = "ten" <<
+	\set Staff.midiInstrument = #"cello"
+        \clef "G_8"
+        \new Voice = "tenors" {
+          \set Staff.instrumentName = "T"
+          <<
+               \global \tenMusic
+          >>
+        }
+      >>
 
       \new Staff = "sop" <<
 	\set Staff.midiInstrument = #"flute"
@@ -380,6 +410,36 @@ theMusic = {
         }
       >>
 
+    \new Lyrics {
+      \lyricsto "tenors" {
+        { \hOnelyricsA }
+        \repeat unfold 1 { \skip 1 }
+        { \tailOneA }
+      }
+    }
+    \new Lyrics {
+      \lyricsto "tenors" {
+        { \hTwolyricsA }
+        \repeat unfold 2 { \skip 1 }
+        תֵךְ
+      }
+    }
+
+    \new Lyrics {
+      \lyricsto "tenors" {
+        { \hOnelyricsB }
+        \repeat unfold 1 { \skip 1 }
+        { \tailOneB }
+      }
+    }
+    \new Lyrics {
+      \lyricsto "tenors" {
+        { \hTwolyricsB }
+        \repeat unfold 2 { \skip 1 }
+      }
+    }
+
+
       \new Staff = "alt" <<
         \set Staff.midiMinimumVolume = #0.9
         \set Staff.midiMaximumVolume = #0.95
@@ -393,48 +453,6 @@ theMusic = {
         }
       >>
 
-
-    \new Lyrics {
-      \lyricsto "altos" {
-        { \hOnelyricsA }
-        \repeat unfold 1 { \skip 1 }
-        { \tailOneA }
-      }
-    }
-    \new Lyrics {
-      \lyricsto "altos" {
-        { \hTwolyricsA }
-        \repeat unfold 2 { \skip 1 }
-        תֵךְ
-      }
-    }
-
-    \new Lyrics {
-      \lyricsto "altos" {
-        { \hOnelyricsB }
-        \repeat unfold 1 { \skip 1 }
-        { \tailOneB }
-      }
-    }
-    \new Lyrics {
-      \lyricsto "altos" {
-        { \hTwolyricsB }
-        \repeat unfold 2 { \skip 1 }
-      }
-    }
-
-
-      \new Staff = "ten" <<
-	\set Staff.midiInstrument = #"cello"
-        \clef "G_8"
-        \new Voice = "tenors" {
-          \set Staff.instrumentName = "T"
-          <<
-               \global \tenMusic
-          >>
-        }
-      >>
-    >>
   >>
 }
 
@@ -443,6 +461,9 @@ theMusic = {
   \header { }
 
   \layout {
+    \context {
+      \RemoveEmptyStaves
+    }
     % $(layout-set-staff-size 17)
     % \override LyricText #'font-size = #1.81
     % ragged-right = ##t
