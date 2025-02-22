@@ -31,7 +31,7 @@ superiusLyricsXVII = \lyricmode {
     et des -- lon -- ger,
     \normalLyrics
     vo -- stre fa -- che~a -- mou -- reu -- se,
-    J'ai si grand deuil et pai -- ne dou -- lo -- reu -- se,
+    J'ai si grand deuil et pai -- ne dou -- lou -- reu -- se,
     Qu'on me ver -- ra brief mes jours des -- fi -- ner,
     Qu'on me ver -- ra brief mes jours des -- fi -- ner,
     \ijLyrics
@@ -74,7 +74,7 @@ contraLyricsXVII = \lyricmode {
     \ijLyrics
     vo -- stre fa -- che~a -- mou -- reu -- se,
     \normalLyrics
-    J'ai si grand deuil et pai -- ne dou -- lo -- reu -- se,
+    J'ai si grand deuil et pai -- ne dou -- lou -- reu -- se,
     Qu'on me __ ver -- ra brief mes jours des -- fi -- ner,
     Qu'on me ver -- ra brief mes jours des -- fi -- ner,
     \ijLyrics
@@ -112,7 +112,7 @@ tenorLyricsXVII = \lyricmode {
     Mil -- le re -- gretz de vous ha -- ban -- don -- ner,
     Et des -- lon -- ger,
     vo -- stre fa -- che~a -- mou -- reu -- se,
-    J'ai si grand deuil et pai -- ne dou -- lo -- reu -- se, __
+    J'ai si grand deuil et pai -- ne dou -- lou -- reu -- se, __
     Qu'on me ver -- ra brief mes jours des -- fi -- ner,
     \ijLyrics
         brief mes jours des -- fi -- ner,
@@ -155,7 +155,7 @@ bassusLyricsXVII = \lyricmode {
     \ijLyrics
     vo -- stre fa -- che~a -- mou -- reu -- se,
     \normalLyrics
-    J'ai si grand deuil et pai -- ne dou -- lo -- reu -- se,
+    J'ai si grand deuil et pai -- ne dou -- lou -- reu -- se,
     Qu'on me ver -- ra brief mes jours des -- fi -- ner,
         brief mes jours des -- fi -- ner,
     \ijLyrics
