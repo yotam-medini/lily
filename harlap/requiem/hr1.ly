@@ -1,33 +1,46 @@
 "global1" = {
   \key c \major
-  % \time 4/4
+  \time 26/4
+  \tempo 2 = 40
 }
+
+pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
+sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
 
 "soprano1" = \relative c'' {
   \"global1"
- g'4 g
+ % \omit Staff.TimeSignature  % Hide time signature
+ % \set Score.checkBars = ##f
+ % \override Staff.BarLine.stencil = ##f
+ g4(^\pocosostenuto^\sempMarkup g
   % | bar 1 
- g g g g2.
+ g g g g\fermata
   % | bar 2 
  g4 g
   % | bar 3 
  g g bf
   % | bar 6 
- g g2.
+ g g\fermata) r4
   % | bar 7 
- g4
+ g4(
   % | bar 8 
  g
   % | bar 9 
  g ef' d
   % | bar 10 
- g,2.
+ g,\fermata) r4
   % | bar 11 
- g4
+ g4(
   % | bar 12 
  f
   % | bar 13 
- f ef d1
+ f ef d\fermata)
+ \undo \omit Staff.TimeSignature  % Restore time signature
+ \numericTimeSignature
+% \break
+ \time 4/4
+ \tempo Larghetto 4 = 50
+ 
   % | bar 14 
  g8 g g g
   % | bar 15 
@@ -107,27 +120,18 @@
 }
 
 "alto1" = \relative c' {
-  \"global1"
-  g4 a b c | d2 c | b4 a g2 | \bar "|."
 }
+
 "tenor1" = \relative c {
-  \"global1"
-  e4 f g a | b2 a | g4 f e2 | \bar "|."
 }
 
 "bass1" = \relative c, {
-  \"global1"
-  c4 g c g' | c2 g' | e4 g c2 | \bar "|."
 }
 
 "pianoRight1" = \relative c'' {
-  \"global1"
-  c4 e g c | g'2 e | c4 e g c | \bar "|."
 }
 
 "pianoLeft1" = \relative c {
-  \"global1"
-  g,4 c g e' | c2 g, | g,4 c g e' | \bar "|."
 }
 
 
@@ -149,7 +153,7 @@
         \"alto1"
       }
       \new Staff = "tenor" {
-        \set Staff.instrumentName = #"Tenor" \clef tenor
+        \set Staff.instrumentName = #"Tenor" \clef "G_8"
         \"tenor1"
       }
       \new Staff = "bass" {
