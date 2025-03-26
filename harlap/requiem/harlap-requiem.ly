@@ -17,17 +17,8 @@
     pdfauthor = "yotam.medini@gmail.com"
   }
   \markup { \vspace #1 }
-  \score {
-    \header {
-      title = "Requiem Aeternam"
-      subtitle = ##f
-      composer = ##f
-    }
-    \new PianoStaff <<
-    \new Staff { s1 }
-    \new Staff { \clef "bass" s1 }
-    >>
-  }
+  \include "hr1.ly"
+  \include "hr2.ly"
   \score {
     \header {
       title = "Dies Irae"
