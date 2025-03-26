@@ -19,6 +19,6 @@
     pdfauthor = "yotam.medini@gmail.com"
   }
   \markup { \vspace #1 }
-  \"score_1d"
+  \"score1"
   \include "hr2.ly"
 }

@@ -33,7 +33,7 @@ pianoLeft = \relative c {
 }
 
 
-"score_1d" = \score {
+"score1" = \score {
   \header {
     title = "Requiem Aeternam"
     subtitle = ##f
