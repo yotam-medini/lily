@@ -1,6 +1,8 @@
 \version "2.22.1"
 \include "english.ly"
 
+\include "hr1.ly"
+
 \book {
   \paper {
     print-all-headers = ##t
@@ -17,17 +19,6 @@
     pdfauthor = "yotam.medini@gmail.com"
   }
   \markup { \vspace #1 }
-  \include "hr1.ly"
+  \"score_1d"
   \include "hr2.ly"
-  \score {
-    \header {
-      title = "Dies Irae"
-      subtitle = ##f
-      composer = ##f 
-   }
-    \new PianoStaff <<
-    \new Staff { s1 }
-    \new Staff { \clef "bass" s1 }
-    >>
-  }
 }
