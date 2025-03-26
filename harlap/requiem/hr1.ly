@@ -2,10 +2,12 @@
   \key c \major
   \time 26/4
   \tempo 2 = 40
+  \dynamicUp
 }
 
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
 sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
+rit = \markup{\italic rit.}
 
 "soprano1" = \relative c'' {
   \"global1"
@@ -13,44 +15,22 @@ sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
  % \set Score.checkBars = ##f
  % \override Staff.BarLine.stencil = ##f
  g4(^\pocosostenuto^\sempMarkup g
-  % | bar 1 
  g g g g\fermata
-  % | bar 2 
- g4 g
-  % | bar 3 
- g g bf
-  % | bar 6 
- g g\fermata) r4
-  % | bar 7 
- g4(
-  % | bar 8 
- g
-  % | bar 9 
- g ef' d
-  % | bar 10 
- g,\fermata) r4
-  % | bar 11 
- g4(
-  % | bar 12 
- f
-  % | bar 13 
- f ef d\fermata)
+ g4 g g g bf g g\fermata) r4
+ g4( g g ef' d g,\fermata) r4
+ g4(^\rit f f ef d\fermata)
  \undo \omit Staff.TimeSignature  % Restore time signature
  \numericTimeSignature
 % \break
  \time 4/4
  \tempo Larghetto 4 = 50
- 
-  % | bar 14 
- g8 g g g
-  % | bar 15 
- g g4. g8 g g g
-  % | bar 16 
- bf16 g g4. g8 af c
-  % | bar 17 
- ef8. d16 d4. c8 f8. ef16
-  % | bar 18 
- ef8 d4 d8 d d d
+  % | bar 2
+ g8 g g g  g g4. |
+ g8 g g^\< g  bf16[\> g g8] g4\! |
+ r8 g8\< af c  ef8.\mf d16 d4~ |
+ d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
+ % | bar 6
+ d d d
   % | bar 19 
  d d4 d8 d d d
   % | bar 20 
@@ -129,9 +109,23 @@ sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
 }
 
 "pianoRight1" = \relative c'' {
+  R1 * 26/4
+  % bar 2
+  << { \voiceOne g1}
+     \new Voice { 
+       \voiceTwo ef4( d c2)
+     }
+  >> |
+  << { \voiceOne g'1}
+     \new Voice { 
+       \voiceTwo ef4( d c2)
+     }
+  >> |
 }
 
 "pianoLeft1" = \relative c {
+  R1 * 26/4 |
+  % bar 2
 }
 
 
