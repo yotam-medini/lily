@@ -17,3 +17,6 @@ midi-${1}.ly: midi/harlap-requiem-${1}.mid
 endef
 
 $(foreach n, 1 2 3 4 5 6 7,$(eval $(call mid2ly_rule,$(n))))
+
+harlap-requiem.pdf: harlap-requiem.ly hr1.ly hr1.ly
+	lilypond harlap-requiem.ly

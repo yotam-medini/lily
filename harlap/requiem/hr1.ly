@@ -121,6 +121,8 @@ rit = \markup{\italic rit.}
        \voiceTwo ef4( d c2)
      }
   >> |
+  r8 <<c8 d>>[( <<g8 af>>]) <<c, d>> <<g af>> \repeat tremolo 6 { c,32( d) } |
+  r8 <<c8 d>>[( <<g8 af>>]) <<c, d>> <<g af>> \repeat tremolo 6 { c,32( d) } |
 }
 
 "pianoLeft1" = \relative c {
