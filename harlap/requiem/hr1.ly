@@ -3,6 +3,7 @@
   \time 26/4
   \tempo 2 = 40
   \dynamicUp
+  \numericTimeSignature
 }
 
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
@@ -20,7 +21,6 @@ rit = \markup{\italic rit.}
  g4( g g ef' d g,\fermata) r4
  g4(^\rit f f ef d\fermata)
  \undo \omit Staff.TimeSignature  % Restore time signature
- \numericTimeSignature
 % \break
  \time 4/4
  \tempo Larghetto 4 = 50
@@ -100,15 +100,93 @@ rit = \markup{\italic rit.}
 }
 
 "alto1" = \relative c' {
+ \"global1"
+ g'4(^\sempMarkup g
+ g g g g\fermata
+ g4 g g g bf g g\fermata) r4
+ g4( g g ef' d g,\fermata) r4
+ g4(^\rit f f ef d\fermata)
+ \time 4/4
+ ef4 d c2 |
+ ef4 d
+  % | bar 16 
+ c2 r2 g'8 af c
+  % | bar 17 
+ c8. c16 c4. c8 c8. c16
+  % | bar 18 
+ c8 c4 bf a
+  % | bar 19 
+ g4. bf4 a
+  % | bar 20 
+ g2 bf,4 a
+  % | bar 21 
+ g2 bf4 a
+  % | bar 22 
+ g1
+  % | bar 23 
+ r1
+  % | bar 52 
+ c'4
+  % | bar 53 
+ f,
+  % | bar 54 
+ g1
+  % | bar 55 
+ a8 bf a2
+  % | bar 56 
+ g1
+  % | bar 57 
+ r1 a'8 bf b4 e,2
+  % | bar 58 
+ e4 af a
+  % | bar 59 
+ c bf8 c c4 bf
+  % | bar 60 
+ a2 b
+  % | bar 61 
+ a r
+  % | bar 63 
+ e'4 ef
+  % | bar 64 
+ df2 e4 ef
+  % | bar 65 
+ df2 r2 af'8 a df
+  % | bar 66 
+ df8. df16 df4. df8 df8. df16
+  % | bar 67 
+ df8 df4 b bf
+  % | bar 68 
+ af4. b4 bf
+  % | bar 69 
+ af2 b,4 bf
+  % | bar 70 
+ af2 b4 bf
+  % | bar 71 
+ af1
 }
 
 "tenor1" = \relative c {
+ \"global1"
+ g'4(^\sempMarkup g
+ g g g g\fermata
+ g4 g g g bf g g\fermata) r4
+ g4( g g ef' d g,\fermata) r4
+ g4(^\rit f f ef d\fermata)
+ \time 4/4
 }
 
-"bass1" = \relative c, {
+"bass1" = \relative c {
+ \"global1"
+ g'4(^\sempMarkup g
+ g g g g\fermata
+ g4 g g g bf g g\fermata) r4
+ g4( g g ef d g\fermata) r4
+ g4(^\rit f f ef d\fermata)
+ \time 4/4
 }
 
 "pianoRight1" = \relative c'' {
+ \"global1"
   R1 * 26/4
   % bar 2
   << { \voiceOne g1}
@@ -126,6 +204,7 @@ rit = \markup{\italic rit.}
 }
 
 "pianoLeft1" = \relative c {
+ \"global1"
   R1 * 26/4 |
   % bar 2
 }
