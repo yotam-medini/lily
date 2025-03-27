@@ -22,6 +22,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
  \tempo "Andente dulce" 2 = 50
   r2 r4 a\p^\dulce |
   a a c a~ |
+\break
   a2. a4 |
   a d c a |
   r4 fs fs fs8 fs\< |
@@ -254,6 +255,38 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   << { \voiceOne d1 | d1 | a'1\fermata }
      \new Voice { \voiceTwo bf,4( a g2\>) | bf4( a g2) | d'1\!}
   >>
+  % bar 11
+  <<
+     { \voiceOne a'4( d,) e2~             | e2. fs8( g) }
+     \new Voice { \voiceTwo <cs, fs>2 d2~ | d2. r4 }
+  >> |
+  % bar 13
+  <<
+    { \voiceOne a'8( b) a8( d) e,2~ | e2. fs8( g) }
+    \new Voice {
+      \voiceTwo <cs, fs>2 d2~ | d2. r4
+    }
+  >> |
+  <<
+    { \voiceOne fs4( b,) cs4 ds8( e) }
+    \new Voice { \voiceTwo <as, ds>2 b2 }
+  >> |
+  % bar 13
+  <<
+    { 
+    \voiceOne fs'8[( gs) fs( b)] a!4 b8( cs) }
+    \new Voice { 
+      \voiceTwo <as, ds>4 e' g!2 
+    }
+  >> |
+  <<
+    { \voiceOne ef'4( af,) bf2~         | bf2. c8( df) }
+    \new Voice { \voiceTwo <g, c!>2 af2~ | af2. r4 }
+  >> |
+  << 
+    { \voiceOne ef'8( f) ef8( af) bf,2 }
+    \new Voice { \voiceTwo <g, c>2 af2 }
+  >>
 }
 
 "pianoLeft1" = \relative c {
@@ -278,6 +311,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   <g g'>4(\mp <f f'> <ef ef'>2) |
   <g g'>4( <f f'> <ef ef'>2) |
   <ef bf' g'>1\fermata^\slowarpeg |
+  % bar 11
 }
 
 
