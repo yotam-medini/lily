@@ -29,16 +29,14 @@ rit = \markup{\italic rit.}
  g8 g g^\< g  bf16[\> g g8] g4\! |
  r8 g8\< af c  ef8.\mf d16 d4~ |
  d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
- % | bar 6
- d d d
-  % | bar 19 
- d d4 d8 d d d
-  % | bar 20 
- f16 d d4. g,4 g8
-  % | bar 21 
- a2 g4 bf8
-  % | bar 22 
- a1
+\break
+ %  bar 6
+ d8 d d d d d4. |
+ d8 d d d f16 d d8 ~ d4 |
+ r8 g,4 g8 a2 |
+ r8 g4 bf8 a2 ~ |
+ a1\fermata |
+\break
   % | bar 34 
  a4 a a
   % | bar 35 
@@ -107,10 +105,15 @@ rit = \markup{\italic rit.}
  g4( g g ef' d g,\fermata) r4
  g4(^\rit f f ef d\fermata)
  \time 4/4
+ % bar 2
  ef4 d c2 |
- ef4 d
-  % | bar 16 
- c2 r2 g'8 af c
+ ef4( d) c2 |
+ r8 g'8\< af c  c8.\mf c16 c4~ |
+ c8 c8\< c8.\f\< c16 c8( c4.)\! |
+ % bar 6
+ bf4 a g2 |
+
+ r2 g'8 af c
   % | bar 17 
  c8. c16 c4. c8 c8. c16
   % | bar 18 
@@ -173,6 +176,12 @@ rit = \markup{\italic rit.}
  g4( g g ef' d g,\fermata) r4
  g4(^\rit f f ef d\fermata)
  \time 4/4
+ % bar 2
+ c'4 bf af2 |
+ c4( bf) af2 |
+ r8 g8\< af c  ef8.\mf d16 d4~ |
+ d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
+ % | bar 6
 }
 
 "bass1" = \relative c {
@@ -183,6 +192,12 @@ rit = \markup{\italic rit.}
  g4( g g ef d g\fermata) r4
  g4(^\rit f f ef d\fermata)
  \time 4/4
+ % bar 2
+ c4 bf af2 |
+ c4( bf) af2 |
+ R1 |
+ R1 |
+ % bar 6
 }
 
 "pianoRight1" = \relative c'' {
@@ -199,14 +214,26 @@ rit = \markup{\italic rit.}
        \voiceTwo ef4( d c2)
      }
   >> |
-  r8 <<c8 d>>[( <<g8 af>>]) <<c, d>> <<g af>> \repeat tremolo 6 { c,32( d) } |
-  r8 <<c8 d>>[( <<g8 af>>]) <<c, d>> <<g af>> \repeat tremolo 6 { c,32( d) } |
+  r8 <<c8 d>> <<g8[ af(>> <<c,] d)>> <<g af>> \repeat tremolo 6 { c,32( d) } |
+  r8 <<c8 d>> <<g8[ af(>> <<c,] d)>> <<g af>> \repeat tremolo 6 { c,32( d) } |
 }
 
 "pianoLeft1" = \relative c {
  \"global1"
   R1 * 26/4 |
   % bar 2
+   << { \voiceOne c'4( bf af2)}
+      \new Voice { 
+        \voiceTwo <<c,,4( c'4>> <<bf, bf'>> <<af,2) af'2>>
+      }
+   >> |
+   << { \voiceOne c'4( bf af2)}
+      \new Voice { 
+        \voiceTwo <<c,,4( c'4>> <<bf, bf'>> <<af,2) af'2>>
+      }
+   >> |
+   <<c,2 g' c d>> <<c,2 g' c d>> |
+   <<c,2 g' c d>> <<c,2 g' c d>> |
 }
 
 
@@ -236,7 +263,7 @@ rit = \markup{\italic rit.}
         \"bass1"
       }
     >>
-    \new PianoStaff <<
+    \new PianoStaff \with {instrumentName = "Pno." } <<
       \new Staff = "upper" { \clef treble \"pianoRight1" }
       \new Staff = "lower" { \clef bass \"pianoLeft1" }
     >>
