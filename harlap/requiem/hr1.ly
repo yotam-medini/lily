@@ -7,9 +7,12 @@
 }
 
 dulce = \markup { \italic "dulce" }
+fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
-sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
 rit = \markup{\italic rit.}
+sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
+sempre = \markup { \italic "sempre" }
+slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 "soloSoprano1" =  \relative c'' {  
   \"global1"
@@ -269,6 +272,12 @@ rit = \markup{\italic rit.}
    >> |
    <<c,2 g' c d>> <<c,2 g' c d>> |
    <<c,2 g' c d>> <<c,2 g' c d>> |
+  % bar 6
+  <g, g'>4(^\fsempre <f f'> <ef ef'>2) |
+  <g g'>4( <f f'> <ef ef'>2) |
+  <g g'>4(\mp <f f'> <ef ef'>2) |
+  <g g'>4( <f f'> <ef ef'>2) |
+  <ef bf' g'>1\fermata^\slowarpeg |
 }
 
 
