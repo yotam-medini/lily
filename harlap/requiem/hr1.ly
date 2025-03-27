@@ -8,15 +8,6 @@
   \numericTimeSignature
 }
 
-dulce = \markup { \italic "dulce" }
-fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
-pocorall = \markup { \bold\italic "poco rall." }
-pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
-rit = \markup{\italic rit.}
-sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
-sempre = \markup { \italic "sempre" }
-slowarpeg = \markup { \italic "(slow arpeggio)" }
-
 "soloSoprano1" =  \relative c'' {  
   \"global1"
   \"dummy1"
