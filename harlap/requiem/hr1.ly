@@ -183,6 +183,12 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
  r2 |
  \time 2/2
  r2 r4 c |
+ c c ef c~ |
+ c2. c4 |
+ c f ef c |
+ r e,! fs gs8 a |
+ b8[( cs) b e] d4 e8 fs |
+ f!4. df8 ef2 |
 }
 
 "bass1" = \relative c {
@@ -217,6 +223,15 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
  R1 * 2
  \time 2/4
  % bar 28
+ r2 |
+ \time 2/2
+ r1 |
+ r1 |
+ r1 |
+ r1 |
+ e'2 c'2 |
+ e,2 c'2 |
+ df1 |
 }
 
 "pianoRight1" = \relative c'' {
@@ -301,6 +316,29 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   \time 2/4
   % bar 28
   g'8( a) bf( cs) |
+  \time 2/2
+  <<
+    \new Voice { \voiceOne c,4( f,) g2~ | g2. a8( bf) }
+    \new Voice { \voiceTwo e,2 f2~      | f2. r4 }
+  >> |
+  <<
+    \new Voice { \voiceOne  c'8([ d) c8( f)] g,2~ | g2. a8( as) }
+    \new Voice { \voiceTwo  <e a>2 f2~          | f2. r4 }
+  >> |
+  <<
+    \new Voice { \voiceOne b!4( e,) fs gs8( a) }
+    \new Voice { \voiceTwo ds2 e2 }
+  >> |
+  <<
+    \new Voice { \voiceOne b!8[( cs) b( e)] d!4 e8( fs) }
+    \new Voice { \voiceTwo ds,4 a' c!2 }
+  >> |
+  <<
+    \new Voice { \voiceOne af'4( df,) ef2 } % ~~~~~~~~~~
+    \new Voice { \voiceTwo <c f!>2 df2 }
+  >> |
+
+
 }
 
 "pianoLeft1" = \relative c {
@@ -381,6 +419,44 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   >>
   % bar 28
   \time 2/4
+  <<
+    \new Voice { \voiceOne es8( ds) gs( fs) }
+    \new Voice { \voiceTwo cs4 e4 }
+  >>
+  % bar 29
+  \clef "F"
+  \time 2/2
+  <<
+    \new Voice { \voiceOne r4 e!8( d!) df2 | ef2 df }
+    \new Voice { \voiceTwo <f,,! f'>1~       | <f f'>1 }
+  >> |
+  % bar 31
+  <<
+    \new Voice { \voiceOne r4 e''!8( d!) df2 | ef2 df }
+    \new Voice { \voiceTwo <f,,! f'>1~       | <f f'>1 }
+  >> |
+  % bar 33
+  <<
+    \new Voice { \voiceOne r4 <b'! df> }
+    \new Voice { \voiceTwo e,!2}
+  >>
+  c'2 |
+  % bar 34
+  <<
+    \new Voice { \voiceOne r4 <b! df> }
+    \new Voice { \voiceTwo e,!2 }
+  >>
+  \clef "G"
+  <<
+    \new Voice { \voiceOne bf''4( <bf c>4) }
+    \new Voice { \voiceTwo c,2}
+  >> |
+  <<
+    \new Voice { \voiceOne r4 c'8( bf) a!2 }
+    \new Voice { \voiceTwo df,1}            % ~~~~~~~
+  >>
+
+  
 }
 
 "score1" = \score {
