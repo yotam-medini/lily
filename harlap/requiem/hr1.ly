@@ -103,7 +103,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 \break
   % bar 36
   ef1 |
-  r1 | r1
+  r1 | r1 \bar "||" 
   \tempo Larghetto 4 = 50
   gs,8[\p^\sempre gs gs gs] gs gs4. |
   gs8[ gs gs gs] b16[ gs gs8~] gs4 |
@@ -157,7 +157,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   c4( bf) a!2 |
   % bar 36
   b!2( a!2) |
-  r1 | r1
+  r1 | r1 \bar "||" 
   e4 ds cs2 |
   e4( ds) cs2 |
   r8 gs'8 a cs cs8. cs16 cs4~ |
@@ -207,7 +207,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   f!4. df8 ef2~ |
   % bar 36
   ef1 |
-  r1 | r1
+  r1 | r1 \bar "||" 
   cs4 b a2 |
   cs4( b) a2 |
   r8 gs8 a cs e8. ds16 ds4~ |
@@ -255,6 +255,13 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   e'2 c'2 |
   e,2 c'2 |
   df1 |
+  % bar 36
+  df1 |
+  r1 | r1
+  cs4 b a2 |
+  cs4( b) a2 |
+  r1 |
+  r1 |
 }
 
 "pianoRight1" = \relative c'' {
@@ -357,11 +364,24 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
     \new Voice { \voiceTwo ds,4 a' c!2 }
   >> |
   <<
-    \new Voice { \voiceOne af'4( df,) ef2 } % ~~~~~~~~~~
+    \new Voice { \voiceOne af'4( df,) ef2~ }
     \new Voice { \voiceTwo <c f!>2 df2 }
   >> |
-
-
+  % bar 36
+  <<
+    \new Voice { \voiceOne ef2. f8( gs) | af8([ bf) af( df]) ef,2 ~ | ef1 }
+    \new Voice { \voiceTwo df2. r4      | <c f>2 df2~         | df1 }
+  >> \bar "||" 
+  <<
+    \new Voice { \voiceOne gs1}
+    \new Voice { \voiceTwo e!4( ds cs2) }
+  >>
+  <<
+    \new Voice { \voiceOne gs1}
+    \new Voice { \voiceTwo e!4( ds cs2) }
+  >>
+  r8 <cs ds>8 <gs' a>( <cs ds>) <gs a>  \repeat tremolo 6 { cs,32( ds) } |
+  r8 <cs ds>8 <gs' a>( <cs ds>) <gs a>  \repeat tremolo 6 { cs,32( ds) } |
 }
 
 "pianoLeft1" = \relative c {
@@ -476,10 +496,32 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   >> |
   <<
     \new Voice { \voiceOne r4 c'8( bf) a!2 }
-    \new Voice { \voiceTwo df,1}            % ~~~~~~~
+    \new Voice { \voiceTwo df,1 ~} 
   >>
-
-  
+  % bar 36
+  <<
+    \new Voice { \voiceOne d'!2 c!2 }
+    \new Voice { \voiceTwo df,1 }
+  >>
+  <<
+    \new Voice { \voiceOne r4 c'8( bf) a!2 } 
+    \new Voice { \voiceTwo df,! }
+  >>
+  <<
+    \new Voice { \voiceOne b'4( a2) a4 }
+    \new Voice { \voiceTwo df,1 }
+  >> \bar "||"
+  \clef "F"
+  <<
+    \new Voice { \voiceOne cs4( b a2) }
+    \new Voice { \voiceTwo <cs,, cs'>4( <b b'> <a a'>2) }
+  >> |
+  <<
+    \new Voice { \voiceOne cs''4( b a2) }
+    \new Voice { \voiceTwo <cs,, cs'>4( <b b'> <a a'>2) }
+  >> |
+  <cs gs' cs ds>2  <cs gs' cs ds>2 |
+  <cs gs' cs ds>2  <cs gs' cs ds>2 |
 }
 
 "score1" = \score {
