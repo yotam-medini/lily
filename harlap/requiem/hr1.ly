@@ -356,6 +356,10 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   \time 2/2
   d4.( e!8) f!4.( af8) |
   g4.( a8) bf4( cs) |
+\break
+  \time 2/4
+  % bar 28
+  g'8( a) bf( cs) |
 }
 
 "pianoLeft1" = \relative c {
@@ -408,9 +412,35 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
     \new Voice { \voiceOne r4 g'8( f) e!2 | \time 3/2 fs2 e!2 fs!4.( e8) }
     \new Voice { \voiceTwo af,1~          | \time 3/2 af2 r8 c( d e) af,2  }
   >> |
- 
+  \clef "F"
+  % bar 21
+  <<
+    \new Voice { \voiceOne r4 a8( g) fs2 | gs2 fs2 }
+    \new Voice { \voiceTwo bf,!1         | bf1 }
+  >> |
+  <<
+    \new Voice { \voiceOne r4 a'8( g) fs2 | gs2 fs2 }
+    \new Voice { \voiceTwo bf,!1         | bf1 }
+  >> |
+  \time 3/2
+  <<
+    \new Voice { \voiceOne r4 fs'8( e) r4 f4 r a }
+    \new Voice { \voiceTwo s2 ef2 fs }
+    \new Voice { \voiceThree g,1. }
+  >> |
+  \time 2/2
+  <<
+    \new Voice { \voiceOne b'!4( a) c( d) }
+    \new Voice { \voiceTwo g,2 bf2 }
+  >> |
+  \clef "G"
+  <<
+    \new Voice { \voiceOne e!4( ds) gs4.( fs8) }
+    \new Voice { \voiceTwo cs2 e!2 }
+  >>
+  % bar 28
+  \time 2/4
 }
-
 
 "score1" = \score {
   \header {
