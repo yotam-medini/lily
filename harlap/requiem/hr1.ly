@@ -10,6 +10,7 @@
 
 dulce = \markup { \italic "dulce" }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
+pocorall = \markup { \bold\italic "poco rall." }
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
 rit = \markup{\italic rit.}
 sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
@@ -32,6 +33,23 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   fs4 fs8 b a4 b8 cs |
   ef4.\mf af,8 bf2~\> |
   bf2. r4\! |
+  r1 |
+  \time 3/2
+  r1.^\pocorall
+  \time 2/2
+\break
+  % bar 21
+  \tempo "Andante dolce" 2 = 50
+  r2 r4 f |
+  af f r8 f f f |
+  f4 df' c f,~ |
+  f2 r4 d'!8( ef) |
+  \time 3/2
+  d4 g,8 g a4. b!8 c4. ef8 |
+  \time 2/2
+  d2. r4 |
+  r2 r2 |
+  \time 2/4
 }
 
 "soprano1" = \relative c'' {
@@ -159,6 +177,16 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
  g1\fermata |
 \break
  R1 * 9
+ \time 3/2
+ R1.
+ \time 2/2
+ R1 * 4
+ \time 3/2
+ R1.
+ \time 2/2
+ R1 * 3
+ \time 2/4
+ % bar 28
  
 
  r2 g'8 af c
@@ -310,6 +338,24 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
     \new Voice { \voiceTwo <g, c>2 af2~ | \time 3/2 af1}
   >>
   \repeat tremolo 8 { af'32( bf) }
+  % bar 21
+  <<
+    \new Voice { \voiceOne f4 bf, c2~     | c2. d8( ef) }
+    \new Voice { \voiceTwo <a,! d>2 bf2~ | bf2. r4}
+  >> |
+  <<
+    \new Voice { \voiceOne f'!8[( g) f( df')] c,2~ | c2. d8( ef) }
+    \new Voice { \voiceTwo a,2 bf~                | bf2. r4 }
+  >>
+  \time 3/2
+  <<
+    \new Voice { \voiceOne d4( g,) }
+    \new Voice { \voiceTwo fs2 }
+  >>
+  <g! a!>4.( b!8) c4.( ef8) |
+  \time 2/2
+  d4.( e!8) f!4.( af8) |
+  g4.( a8) bf4( cs) |
 }
 
 "pianoLeft1" = \relative c {
@@ -360,7 +406,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   >> |
   <<
     \new Voice { \voiceOne r4 g'8( f) e!2 | \time 3/2 fs2 e!2 fs!4.( e8) }
-    \new Voice { \voiceTwo af,1~           | \time 3/2 af2 r8 c( d e) af,2  }
+    \new Voice { \voiceTwo af,1~          | \time 3/2 af2 r8 c( d e) af,2  }
   >> |
  
 }
