@@ -55,210 +55,210 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 "soprano1" = \relative c'' {
   \"global1"
   \"dummy1"
- % \omit Staff.TimeSignature  % Hide time signature
- % \set Score.checkBars = ##f
- % \override Staff.BarLine.stencil = ##f
- g4(^\pocosostenuto^\sempMarkup g
- g g g g\fermata
- g4 g g g bf g g\fermata) r4
- g4( g g ef' d g,\fermata) r4
- g4(^\rit f f ef d\fermata)
- \undo \omit Staff.TimeSignature  % Restore time signature
+  % \omit Staff.TimeSignature  % Hide time signature
+  % \set Score.checkBars = ##f
+  % \override Staff.BarLine.stencil = ##f
+  g4(^\pocosostenuto^\sempMarkup g
+  g g g g\fermata
+  g4 g g g bf g g\fermata) r4
+  g4( g g ef' d g,\fermata) r4
+  g4(^\rit f f ef d\fermata)
+  \undo \omit Staff.TimeSignature  % Restore time signature
 % \break
- \time 4/4
- \tempo Larghetto 4 = 50
+  \time 4/4
+  \tempo Larghetto 4 = 50
   % | bar 2
- g8 g g g  g g4. |
- g8 g g^\< g  bf16[\> g g8] g4\! |
- r8 g8\< af c  ef8.\mf d16 d4~ |
- d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
+  g8 g g g  g g4. |
+  g8 g g^\< g  bf16[\> g g8] g4\! |
+  r8 g8\< af c  ef8.\mf d16 d4~ |
+  d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
 \break
- %  bar 6
- d8 d d d d d4. |
- d8 d d d f16 d d8 ~ d4 |
- r8 g,4 g8 a2 |
- r8 g4 bf8 a2 ~ |
- a1\fermata |
+  %  bar 6
+  d8 d d d d d4. |
+  d8 d d d f16 d d8 ~ d4 |
+  r8 g,4 g8 a2 |
+  r8 g4 bf8 a2 ~ |
+  a1\fermata |
 \break
- R1 * 9
- \time 3/2
- R1.
- \time 2/2
- R1 * 4
- \time 3/2
- R1.
- \time 2/2
- R1 * 2
- \time 2/4
- % bar 28
- r2
- \time 2/2
- r2 r4 c4 | 
- c c ef c4~ |
- c2. c4 |
- c f ef c |
- r4 e,! fs gs8 a |
- b8[( cs) b e] d4 e8 fs |
+  R1 * 9
+  \time 3/2
+  R1.
+  \time 2/2
+  R1 * 4
+  \time 3/2
+  R1.
+  \time 2/2
+  R1 * 2
+  \time 2/4
+  % bar 28
+  r2
+  \time 2/2
+  r2 r4 c4 | 
+  c c ef c4~ |
+  c2. c4 |
+  c f ef c |
+  r4 e,! fs gs8 a |
+  b8[( cs) b e] d4 e8 fs |
  af4. df,8 ef2~ |
 \break
- % bar 36
- ef1 |
- r1 | r1
- \tempo Larghetto 4 = 50
- gs,8[\p^\sempre gs gs gs] gs gs4. |
- gs8[ gs gs gs] b16[ gs gs8~] gs4 |
- r8 gs a cs e8. ds16 ds4~ |
- ds8 cs fs8. e16 e8( ds4.) |
+  % bar 36
+  ef1 |
+  r1 | r1
+  \tempo Larghetto 4 = 50
+  gs,8[\p^\sempre gs gs gs] gs gs4. |
+  gs8[ gs gs gs] b16[ gs gs8~] gs4 |
+  r8 gs a cs e8. ds16 ds4~ |
+  ds8 cs fs8. e16 e8( ds4.) |
 \break
- as1 |
- as1
+  as1 |
+  as1
 }
 
 "alto1" = \relative c' {
- \"global1"
+  \"global1"
   \"dummy1"
- g'4(^\sempMarkup g
- g g g g\fermata
- g4 g g g bf g g\fermata) r4
- g4( g g ef' d g,\fermata) r4
- g4(^\rit f f ef d\fermata)
- \time 4/4
- % bar 2
- ef4 d c2 |
- ef4( d) c2 |
- r8 g'8\< af c  c8.\mf c16 c4~ |
- c8 c8\< c8.\f\< c16 c8( c4.)\! |
- % bar 6
- bf4 a g2 |
- bf4( a) g2 |
- bf,4 a g2 |
- bf4 a g2~ |
- g1\fermata |
+  g'4(^\sempMarkup g
+  g g g g\fermata
+  g4 g g g bf g g\fermata) r4
+  g4( g g ef' d g,\fermata) r4
+  g4(^\rit f f ef d\fermata)
+  \time 4/4
+  % bar 2
+  ef4 d c2 |
+  ef4( d) c2 |
+  r8 g'8\< af c  c8.\mf c16 c4~ |
+  c8 c8\< c8.\f\< c16 c8( c4.)\! |
+  % bar 6
+  bf4 a g2 |
+  bf4( a) g2 |
+  bf,4 a g2 |
+  bf4 a g2~ |
+  g1\fermata |
 \break
  R1 * 9
  \time 3/2
  R1.
- \time 2/2
- R1 * 4
- \time 3/2
- R1.
- \time 2/2
- R1 * 2
- \time 2/4
- % bar 28
- r2 |
- \time 2/2
- c'4( f,) g2~ |
- g2. a8( bf) |
- a!2 g2~ |
- g2. a8 as |
- b4 e,2 e4 | 
- gs4( a) c bf8 c |
- c4( bf) a!2 |
- % bar 36
- b!2( a!2) |
- r1 | r1
- e4 ds cs2 |
- e4( ds) cs2 |
- r8 gs'8 a cs cs8. cs16 cs4~ |
- cs8 cs cs8. cs16 cs8~ cs4. |
+  \time 2/2
+  R1 * 4
+  \time 3/2
+  R1.
+  \time 2/2
+  R1 * 2
+  \time 2/4
+  % bar 28
+  r2 |
+  \time 2/2
+  c'4( f,) g2~ |
+  g2. a8( bf) |
+  a!2 g2~ |
+  g2. a8 as |
+  b4 e,2 e4 | 
+  gs4( a) c bf8 c |
+  c4( bf) a!2 |
+  % bar 36
+  b!2( a!2) |
+  r1 | r1
+  e4 ds cs2 |
+  e4( ds) cs2 |
+  r8 gs'8 a cs cs8. cs16 cs4~ |
+  cs8 cs cs8. cs16 cs8~ cs4. |
 }
 
 "tenor1" = \relative c {
- \"global1"
+  \"global1"
   \"dummy1"
- g'4(^\sempMarkup g
- g g g g\fermata
- g4 g g g bf g g\fermata) r4
- g4( g g ef' d g,\fermata) r4
- g4(^\rit f f ef d\fermata)
- \time 4/4
- % bar 2
- c'4 bf af2 |
- c4( bf) af2 |
- r8 g8\< af c  ef8.\mf d16 d4~ |
- d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
- % | bar 6
- g4^\fsempre f ef2 | 
- g4( f) ef2 |
- r8 g,4 g8 a2 |
- r8 g4 bf8 a2~ |
- a1\fermata |
- \time 2/2
- R1 * 9
- \time 3/2
- R1.
- \time 2/2
- R1 * 4
- \time 3/2
- R1.
- \time 2/2
- R1 * 2
- \time 2/4
- % bar 28
- r2 |
- \time 2/2
- r2 r4 c |
- c c ef c~ |
- c2. c4 |
- c f ef c |
- r e,! fs gs8 a |
- b8[( cs) b e] d4 e8 fs |
- f!4. df8 ef2~ |
- % bar 36
- ef1 |
- r1 | r1
- cs4 b a2 |
- cs4( b) a2 |
- r8 gs8 a cs e8. ds16 ds4~ |
- ds8 cs fs8. e16 e8( ds4.) |
+  g'4(^\sempMarkup g
+  g g g g\fermata
+  g4 g g g bf g g\fermata) r4
+  g4( g g ef' d g,\fermata) r4
+  g4(^\rit f f ef d\fermata)
+  \time 4/4
+  % bar 2
+  c'4 bf af2 |
+  c4( bf) af2 |
+  r8 g8\< af c  ef8.\mf d16 d4~ |
+  d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
+  % | bar 6
+  g4^\fsempre f ef2 | 
+  g4( f) ef2 |
+  r8 g,4 g8 a2 |
+  r8 g4 bf8 a2~ |
+  a1\fermata |
+  \time 2/2
+  R1 * 9
+  \time 3/2
+  R1.
+  \time 2/2
+  R1 * 4
+  \time 3/2
+  R1.
+  \time 2/2
+  R1 * 2
+  \time 2/4
+  % bar 28
+  r2 |
+  \time 2/2
+  r2 r4 c |
+  c c ef c~ |
+  c2. c4 |
+  c f ef c |
+  r e,! fs gs8 a |
+  b8[( cs) b e] d4 e8 fs |
+  f!4. df8 ef2~ |
+  % bar 36
+  ef1 |
+  r1 | r1
+  cs4 b a2 |
+  cs4( b) a2 |
+  r8 gs8 a cs e8. ds16 ds4~ |
+  ds8 cs fs8. e16 e8( ds4.) |
 }
 
 "bass1" = \relative c {
- \"global1"
+  \"global1"
   \"dummy1"
- g'4(^\sempMarkup g
- g g g g\fermata
- g4 g g g bf g g\fermata) r4
- g4( g g ef d g\fermata) r4
- g4(^\rit f f ef d\fermata)
- \time 4/4
- % bar 2
- c4 bf af2 |
- c4( bf) af2 |
- R1 |
- R1 |
- % bar 6
- g4^\fsempre f ef2 | 
- g4( f) ef2 |
- g4 f ef2 | 
- g4( f) ef2~ |
- ef1\fermata |
- \time 2/2
- R1 * 9
- \time 3/2
- R1.
- \time 2/2
- R1 * 4
- \time 3/2
- R1.
- \time 2/2
- R1 * 2
- \time 2/4
- % bar 28
- r2 |
- \time 2/2
- r1 |
- r1 |
- r1 |
- r1 |
- e'2 c'2 |
- e,2 c'2 |
- df1 |
+  g'4(^\sempMarkup g
+  g g g g\fermata
+  g4 g g g bf g g\fermata) r4
+  g4( g g ef d g\fermata) r4
+  g4(^\rit f f ef d\fermata)
+  \time 4/4
+  % bar 2
+  c4 bf af2 |
+  c4( bf) af2 |
+  R1 |
+  R1 |
+  % bar 6
+  g4^\fsempre f ef2 | 
+  g4( f) ef2 |
+  g4 f ef2 | 
+  g4( f) ef2~ |
+  ef1\fermata |
+  \time 2/2
+  R1 * 9
+  \time 3/2
+  R1.
+  \time 2/2
+  R1 * 4
+  \time 3/2
+  R1.
+  \time 2/2
+  R1 * 2
+  \time 2/4
+  % bar 28
+  r2 |
+  \time 2/2
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  e'2 c'2 |
+  e,2 c'2 |
+  df1 |
 }
 
 "pianoRight1" = \relative c'' {
- \"global1"
+  \"global1"
   \"dummy1"
   R1 * 26/4
   % bar 2
