@@ -15,7 +15,7 @@
   R1 * 9 |
   % bar 11
  \tempo "Andente dulce" 2 = 50
-  r2 r4 a\p^\dulce |
+  r2 r4 a^\pdulce |
   a a c a~ |
 \break
   a2. a4 |
@@ -59,7 +59,7 @@
   \time 4/4
   \tempo Larghetto 4 = 50
   % | bar 2
-  g8 g g g  g g4. |
+  g8^\psempre g g g  g g4. |
   g8 g g^\< g  bf16[\> g g8] g4\! |
   r8 g8\< af c  ef8.\mf d16 d4~ |
   d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
@@ -120,7 +120,7 @@
   g4(^\rit f f ef d\fermata)
   \time 4/4
   % bar 2
-  ef4 d c2 |
+  ef4^\psempre d c2 |
   ef4( d) c2 |
   r8 g'8\< af c  c8.\mf c16 c4~ |
   c8 c8\< c8.\f\< c16 c8( c4.)\! |
@@ -177,7 +177,7 @@
   g4(^\rit f f ef d\fermata)
   \time 4/4
   % bar 2
-  c'4 bf af2 |
+  c'4^\psempre bf af2 |
   c4( bf) af2 |
   r8 g8\< af c  ef8.\mf d16 d4~ |
   d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
@@ -234,7 +234,7 @@
   g4(^\rit f f ef d\fermata)
   \time 4/4
   % bar 2
-  c4 bf af2 |
+  c4^\psempre bf af2 |
   c4( bf) af2 |
   R1 |
   R1 |
@@ -441,8 +441,8 @@
         \voiceTwo <<c,,4( c'4>> <<bf, bf'>> <<af,2) af'2>>
       }
    >> |
-   <<c,2 g' c d>> <<c,2 g' c d>> |
-   <<c,2 g' c d>> <<c,2 g' c d>> |
+   <c, g' c d>2  <c g' c d>2\< |
+   <c g' c d>2  <c g' c d>2\f |
   % bar 6
   <g, g'>4(^\fsempre <f f'> <ef ef'>2) |
   <g g'>4( <f f'> <ef ef'>2) |
