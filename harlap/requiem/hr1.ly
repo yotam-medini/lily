@@ -6,9 +6,26 @@
   \numericTimeSignature
 }
 
+dulce = \markup { \italic "dulce" }
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
 sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
 rit = \markup{\italic rit.}
+
+"soloSoprano1" =  \relative c'' {  
+  \"global1"
+  R4 * 26
+  R1 * 9 |
+  % bar 11
+ \tempo "Andente dulce" 2 = 50
+  r2 r4 a\p^\dulce |
+  a a c a~ |
+  a2. a4 |
+  a d c a |
+  r4 fs fs fs8 fs\< |
+  fs4 fs8 b a4 b8 cs |
+  ef4.\mf af,8 bf2~\> |
+  bf2. r4\! |
+}
 
 "soprano1" = \relative c'' {
   \"global1"
@@ -37,6 +54,7 @@ rit = \markup{\italic rit.}
  r8 g4 bf8 a2 ~ |
  a1\fermata |
 \break
+ R1 * 9
   % | bar 34 
  a4 a a
   % | bar 35 
@@ -112,6 +130,13 @@ rit = \markup{\italic rit.}
  c8 c8\< c8.\f\< c16 c8( c4.)\! |
  % bar 6
  bf4 a g2 |
+ bf4( a) g2 |
+ bf,4 a g2 |
+ bf4 a g2~ |
+ g1\fermata |
+\break
+ R1 * 9
+ 
 
  r2 g'8 af c
   % | bar 17 
@@ -216,6 +241,16 @@ rit = \markup{\italic rit.}
   >> |
   r8 <<c8 d>> <<g8[ af(>> <<c,] d)>> <<g af>> \repeat tremolo 6 { c,32( d) } |
   r8 <<c8 d>> <<g8[ af(>> <<c,] d)>> <<g af>> \repeat tremolo 6 { c,32( d) } |
+  % bar 6
+  << { \voiceOne d'1 }
+     \new Voice { \voiceTwo <g, bf>4( <f a!> <ef g>2) }
+  >> |
+  << { \voiceOne d'1 }
+     \new Voice { \voiceTwo <g, bf>4( <f a> <ef g>2) }
+  >> |
+  << { \voiceOne d1 | d1 | a'1\fermata }
+     \new Voice { \voiceTwo bf,4( a g2\>) | bf4( a g2) | d'1\!}
+  >>
 }
 
 "pianoLeft1" = \relative c {
@@ -243,8 +278,11 @@ rit = \markup{\italic rit.}
     subtitle = ##f
     composer = ##f
   }
-
-   <<
+  <<
+    \new Staff = "solo" {
+      \set Staff.instrumentName = #"Sop solo"
+      \"soloSoprano1"
+    }
     \new ChoirStaff <<
       \new Staff = "soprano" {
 	\set Staff.instrumentName = #"Soprano"
@@ -268,4 +306,14 @@ rit = \markup{\italic rit.}
       \new Staff = "lower" { \clef bass \"pianoLeft1" }
     >>
   >>
+  \layout {
+    \context {
+      \Staff
+      \RemoveEmptyStaves
+    }
+    \context {
+      \ChoirStaff
+      \RemoveEmptyStaves
+    }
+  }
 }
