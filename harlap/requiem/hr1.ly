@@ -290,10 +290,10 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
     }
   >> |
   <<
-    { \voiceOne fs4( b,) cs4 ds8( e) }
+    { \voiceOne fs4( b,) cs4 ds!8( e) }
     \new Voice { \voiceTwo <as, ds>2 b2 }
   >> |
-  % bar 13
+  % bar ??
   <<
     { 
     \voiceOne fs'8[( gs) fs( b)] a!4 b8( cs) }
@@ -309,6 +309,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
     { \voiceOne ef'8( f) ef8( af) bf,2~ | \time 3/2 bf1 }
     \new Voice { \voiceTwo <g, c>2 af2~ | \time 3/2 af1}
   >>
+  \repeat tremolo 8 { af'32( bf) }
 }
 
 "pianoLeft1" = \relative c {
@@ -345,7 +346,23 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
     \new Voice { \voiceTwo d,1~  | d1 }
   >> |
   <<
-  >>
+    { \voiceOne r4 <fs af>4 g2 }
+    \new Voice { \voiceTwo b,!2 }
+  >> |
+  <<
+    \new Voice { \voiceOne r4 <fs' af>4 f'!4( <f g>) }
+    \new Voice { \voiceTwo b,,!2 g'2 }
+  >> |
+  \clef "G"
+  <<
+    \new Voice { \voiceOne r4 g'8( f) e2  | fs2 e!2 }
+    \new Voice { \voiceTwo af,1~  |  af1}
+  >> |
+  <<
+    \new Voice { \voiceOne r4 g'8( f) e!2 | \time 3/2 fs2 e!2 fs!4.( e8) }
+    \new Voice { \voiceTwo af,1~           | \time 3/2 af2 r8 c( d e) af,2  }
+  >> |
+ 
 }
 
 
