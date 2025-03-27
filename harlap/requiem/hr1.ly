@@ -1,3 +1,5 @@
+"dummy1" = {} % sometime needed to make emacs LilyPond-mode happy
+
 "global1" = {
   \key c \major
   \time 26/4
@@ -16,6 +18,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 "soloSoprano1" =  \relative c'' {  
   \"global1"
+  \"dummy1"
   R4 * 26
   R1 * 9 |
   % bar 11
@@ -33,6 +36,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 "soprano1" = \relative c'' {
   \"global1"
+  \"dummy1"
  % \omit Staff.TimeSignature  % Hide time signature
  % \set Score.checkBars = ##f
  % \override Staff.BarLine.stencil = ##f
@@ -59,6 +63,20 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
  a1\fermata |
 \break
  R1 * 9
+ \time 3/2
+ R1.
+ \time 2/2
+ R1 * 4
+ \time 3/2
+ R1.
+ \time 2/2
+ R1 * 3
+ \time 2/4
+ % bar 28
+ R2
+ \time 2/2
+ r2 r4 c4 | 
+ % bar
   % | bar 34 
  a4 a a
   % | bar 35 
@@ -121,6 +139,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 "alto1" = \relative c' {
  \"global1"
+  \"dummy1"
  g'4(^\sempMarkup g
  g g g g\fermata
  g4 g g g bf g g\fermata) r4
@@ -199,6 +218,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 "tenor1" = \relative c {
  \"global1"
+  \"dummy1"
  g'4(^\sempMarkup g
  g g g g\fermata
  g4 g g g bf g g\fermata) r4
@@ -215,6 +235,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 "bass1" = \relative c {
  \"global1"
+  \"dummy1"
  g'4(^\sempMarkup g
  g g g g\fermata
  g4 g g g bf g g\fermata) r4
@@ -231,6 +252,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 "pianoRight1" = \relative c'' {
  \"global1"
+  \"dummy1"
   R1 * 26/4
   % bar 2
   << { \voiceOne g1}
@@ -284,13 +306,14 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
     \new Voice { \voiceTwo <g, c!>2 af2~ | af2. r4 }
   >> |
   << 
-    { \voiceOne ef'8( f) ef8( af) bf,2 }
-    \new Voice { \voiceTwo <g, c>2 af2 }
+    { \voiceOne ef'8( f) ef8( af) bf,2~ | \time 3/2 bf1 }
+    \new Voice { \voiceTwo <g, c>2 af2~ | \time 3/2 af1}
   >>
 }
 
 "pianoLeft1" = \relative c {
  \"global1"
+  \"dummy1"
   R1 * 26/4 |
   % bar 2
    << { \voiceOne c'4( bf af2)}
@@ -312,6 +335,17 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   <g g'>4( <f f'> <ef ef'>2) |
   <ef bf' g'>1\fermata^\slowarpeg |
   % bar 11
+  <<
+    { \voiceOne r4 cs''8( b!) bf2 | c!2 bf2 }
+    \new Voice { \voiceTwo d,1~  | d1 }
+  >> |
+  % bar 13
+  <<
+    { \voiceOne r4 cs'8( b!) bf2 | c!2  bf2 }
+    \new Voice { \voiceTwo d,1~  | d1 }
+  >> |
+  <<
+  >>
 }
 
 
@@ -325,23 +359,28 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
     \new Staff = "solo" {
       \set Staff.instrumentName = #"Sop solo"
       \"soloSoprano1"
+      \"dummy1"
     }
     \new ChoirStaff <<
       \new Staff = "soprano" {
 	\set Staff.instrumentName = #"Soprano"
         \"soprano1"
+        \"dummy1"
       }
       \new Staff = "alto" {
         \set Staff.instrumentName = #"Alto"
         \"alto1"
+        \"dummy1"
       }
       \new Staff = "tenor" {
         \set Staff.instrumentName = #"Tenor" \clef "G_8"
         \"tenor1"
+        \"dummy1"
       }
       \new Staff = "bass" {
         \set Staff.instrumentName = #"Bass" \clef bass
         \"bass1"
+        \"dummy1"
       }
     >>
     \new PianoStaff \with {instrumentName = "Pno." } <<
