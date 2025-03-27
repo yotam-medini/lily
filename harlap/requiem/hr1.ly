@@ -99,7 +99,16 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
  c f ef c |
  r4 e,! fs gs8 a |
  b8[( cs) b e] d4 e8 fs |
- af4. df,8 ef2 |
+ af4. df,8 ef2~ |
+\break
+ % bar 36
+ ef1 |
+ r1 | r1
+ \tempo Larghetto 4 = 50
+ gs,8[\p^\sempre gs gs gs] gs gs4. |
+ gs8[ gs gs gs] b16[ gs gs8~] gs4 |
+ r8 gs a cs e8. ds16 ds4~ |
+ ds8 cs fs8. e16 e8( ds4.) |
 \break
  as1 |
  as1
@@ -146,6 +155,13 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
  b4 e,2 e4 | 
  gs4( a) c bf8 c |
  c4( bf) a!2 |
+ % bar 36
+ b!2( a!2) |
+ r1 | r1
+ e4 ds cs2 |
+ e4( ds) cs2 |
+ r8 gs'8 a cs cs8. cs16 cs4~ |
+ cs8 cs cs8. cs16 cs8~ cs4. |
 }
 
 "tenor1" = \relative c {
@@ -188,7 +204,14 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
  c f ef c |
  r e,! fs gs8 a |
  b8[( cs) b e] d4 e8 fs |
- f!4. df8 ef2 |
+ f!4. df8 ef2~ |
+ % bar 36
+ ef1 |
+ r1 | r1
+ cs4 b a2 |
+ cs4( b) a2 |
+ r8 gs8 a cs e8. ds16 ds4~ |
+ ds8 cs fs8. e16 e8( ds4.) |
 }
 
 "bass1" = \relative c {
