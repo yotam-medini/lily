@@ -163,7 +163,11 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
  r8 g8\< af c  ef8.\mf d16 d4~ |
  d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
  % | bar 6
- r1 | r1 | r1 | r1 | r1 |
+ g4^\fsempre f ef2 | 
+ g4( f) ef2 |
+ r8 g,4 g8 a2 |
+ r8 g4 bf8 a2~ |
+ a1\fermata |
  \time 2/2
  R1 * 9
  \time 3/2
@@ -196,7 +200,11 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
  R1 |
  R1 |
  % bar 6
- r1 | r1 | r1 | r1 | r1 |
+ g4^\fsempre f ef2 | 
+ g4( f) ef2 |
+ g4 f ef2 | 
+ g4( f) ef2~ |
+ ef1\fermata |
  \time 2/2
  R1 * 9
  \time 3/2
