@@ -101,8 +101,13 @@
   r8 gs a cs e8. ds16 ds4~ |
   ds8 cs fs8. e16 e8( ds4.) |
 \break
-  as1 |
-  as1
+  % bar 43
+  ds8[ ds ds ds] ds ds4. |
+  ds8[ ds ds ds]  fs16[ ds ds8~] ds4 |
+  r8 gs,4 gs8 as2 |
+  r8 gs4 b8 as2~ | 
+  as1 ~ | 
+  as1\fermata  \bar "|."
 }
 
 "alto1" = \relative c' {
@@ -153,6 +158,13 @@
   e4( ds) cs2 |
   r8 gs'8 a cs cs8. cs16 cs4~ |
   cs8 cs cs8. cs16 cs8~ cs4. |
+  % bar 43
+  b4 as gs2 |
+  b4( as) gs2 |
+  b,4 as gs2 |
+  b4 as gs2~ |
+  gs1 ~ |
+  gs\fermata \bar "|."
 }
 
 "tenor1" = \relative c {
@@ -203,6 +215,13 @@
   cs4( b) a2 |
   r8 gs8 a cs e8. ds16 ds4~ |
   ds8 cs fs8. e16 e8( ds4.) |
+  % bar 43
+  gs4 fs e2 |
+  gs4( fs) e2 |
+  r8 gs,4 gs8 as2 |
+  r8 gs4 b8 as2~ |
+  as1~ |
+  as\fermata \bar "|."
 }
 
 "bass1" = \relative c {
@@ -253,6 +272,13 @@
   cs4( b) a2 |
   r1 |
   r1 |
+  % bar 43
+  gs4 fs e2 |
+  gs4( fs) e2 |
+  gs4 fs e2 |
+  gs4 fs e2~ |
+  e1 ~ |
+  e1\fermata \bar "|."
 }
 
 "pianoRight1" = \relative c'' {
@@ -371,8 +397,33 @@
     \new Voice { \voiceOne gs1}
     \new Voice { \voiceTwo e!4( ds cs2) }
   >>
+  r8 <cs ds>8 <gs' a!>( <cs ds>) <gs a>  \repeat tremolo 6 { cs,32( ds) } |
   r8 <cs ds>8 <gs' a>( <cs ds>) <gs a>  \repeat tremolo 6 { cs,32( ds) } |
-  r8 <cs ds>8 <gs' a>( <cs ds>) <gs a>  \repeat tremolo 6 { cs,32( ds) } |
+  % bar 43
+  <<
+    \new Voice { \voiceOne ds'1 }
+    \new Voice { \voiceTwo <gs, b>4( <fs as> <e gs>2) }
+  >> |
+  <<
+    \new Voice { \voiceOne ds'1 }
+    \new Voice { \voiceTwo <gs, b>4( <fs as> <e gs>2) }
+  >> |
+  <<
+    \new Voice { \voiceOne ds1 }
+    \new Voice { \voiceTwo b4( a gs2) }
+  >> |
+  <<
+    \new Voice { \voiceOne ds'1 }
+    \new Voice { \voiceTwo b4( a gs2) }
+  >> |
+  <<
+    \new Voice { \voiceOne <ds'' e! gs as>2 <ds e! gs as>2 }
+    \new Voice { \voiceTwo <ds, as'>1 }
+  >> |
+  <<
+    \new Voice { \voiceOne <ds' e! gs as>1 }\fermata
+    \new Voice { \voiceTwo <ds, as'>1 }
+  >> \bar "|."
 }
 
 "pianoLeft1" = \relative c {
@@ -513,6 +564,13 @@
   >> |
   <cs gs' cs ds>2  <cs gs' cs ds>2 |
   <cs gs' cs ds>2  <cs gs' cs ds>2 |
+  % bar 43
+  <gs' gs'>4( <fs fs'> <e e'>2) |
+  <gs gs'>4( <fs fs'> <e e'>2) |
+  <gs gs'>4( <fs fs'> <e e'>2) |
+  <gs gs'>4( <fs fs'> <e e'>2) |
+  <e b' gs'>1 |
+  <e b' gs'>1 \fermata \bar "|."
 }
 
 "score1" = \score {
