@@ -16,6 +16,25 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 \include "hr1.ly"
 
+\paper{
+  #(set-paper-size "a4")
+
+  % system-system-spacing.basic-distance = #8
+
+  oddFooterMarkup = \markup {
+      \hspace #20
+      \on-the-fly #last-page { (typeset via \italic "LilyPond"
+				by {\small\typewriter "yotam.medini@gmail.com"}
+      \small \typewriter
+      \hspace #2
+      \small
+      \simple #(strftime "%Y-%m-%d %H:%M:%S)" (localtime (current-time)))
+      }
+  }
+  evenFooterMarkup = \oddFooterMarkup
+}
+
+
 \book {
   \paper {
     print-all-headers = ##t

@@ -60,9 +60,9 @@
   \tempo Larghetto 4 = 50
   % | bar 2
   g8^\psempre g g g  g g4. |
-  g8 g g^\< g  bf16[\> g g8] g4\! |
+  g8 g g^\< g  bf16[\> g g8~] g4\! |
   r8 g8\< af c  ef8.\mf d16 d4~ |
-  d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
+  d8 c8\< f8.\f\< ef16 ef8\( d4.\)\! |
 \break
   %  bar 6
   d8^\fsempre d d d d d4. |
@@ -124,7 +124,7 @@
   ef4^\psempre d c2 |
   ef4( d) c2 |
   r8 g'8\< af c  c8.\mf c16 c4~ |
-  c8 c8\< c8.\f\< c16 c8( c4.)\! |
+  c8 c8\< c8.\f\< c16 c8\( c4.\)\! |
   % bar 6
   bf4^\fsempre a g2 |
   bf4( a) g2 |
@@ -181,7 +181,7 @@
   c'4^\psempre bf af2 |
   c4( bf) af2 |
   r8 g8\< af c  ef8.\mf d16 d4~ |
-  d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
+  d8 c8\< f8.\f\< ef16 ef8\( d4.\)\! |
   % | bar 6
   g4^\fsempre f ef2 |
   g4( f) ef2 |
@@ -595,23 +595,34 @@
 "lyricsSop1" = \lyricmode {
   Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
     Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+  % bar 2
+  Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne 
+     Et lux per -- pe -- tu -- a  lu -- ce -- at e -- is
+  % bar 6
+  Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne 
+     Re -- qui -- em Re -- qui -- em 
 }
 
 "lyricsAlt1" = \lyricmode {
   Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
     Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+  % bar 2
+  Re -- qui -- em do -- na Et lux per -- pe -- tu -- a  lu -- ce -- at e -- is
 }
 
 "lyricsTen1" = \lyricmode {
   Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
     Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+  % bar 2
+  Re -- qui -- em do -- na Et lux per -- pe -- tu -- a  lu -- ce -- at e -- is
 }
 
 "lyricsBas1" = \lyricmode {
   Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
     Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+  % bar 2
+  Re -- qui -- em do -- na 
 }
-
 
 "score1" = \score {
   \header {
