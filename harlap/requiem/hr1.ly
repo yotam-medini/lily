@@ -581,6 +581,17 @@
   <e b' gs'>1 \fermata <>\! \bar "|."
 }
 
+"lyricsSoloSop1" = \lyricmode {
+  % bar 11
+  Te -- de -- cet hym -- nus
+  % bar 13
+  De -- us in Si -- on Et ti -- bi re -- dde -- tur vo -- tum
+    in Je -- ru -- sa -- lem
+  % bar 21
+  Ex -- au -- di o -- ra -- ti -- o -- nem me -- am
+    ad te om -- nis ca -- ro ve -- ni et   
+}
+
 "score1" = \score {
   \header {
     title = "Requiem Aeternam"
@@ -590,8 +601,16 @@
   <<
     \new Staff = "solo" {
       \set Staff.instrumentName = #"Sop solo"
-      \"soloSoprano1"
-      \"dummy1"
+      \new Voice = "solo" {
+        \"soloSoprano1"
+        \"dummy1"
+      }
+    }
+    \new Lyrics = "solo"
+    \context Lyrics = "solo" {
+      \lyricsto "solo" {
+        \"lyricsSoloSop1"
+      }
     }
     \new ChoirStaff <<
       \new Staff = "soprano" {
