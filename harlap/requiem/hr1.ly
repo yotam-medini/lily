@@ -100,7 +100,7 @@
   gs,8[^\psempre gs gs gs] gs gs4. |
   gs8[ gs\< gs gs] b16[\> gs gs8~] gs4\! |
   r8 gs\< a cs e8.\!\mf ds16 ds4~ |
-  ds8 cs\< fs8.\f\< e16 e8->( ds4.)\! |
+  ds8 cs\< fs8.\f\< e16 e8->\( ds4.\)\! |
 \break
   % bar 43
   ds8[^\fsempre ds ds ds] ds ds4. |
@@ -158,7 +158,7 @@
   e4^\psempre ds cs2 |
   e4( ds) cs2 |
   r8 gs'8\< a cs cs8.\!\mf cs16 cs4~ |
-  cs8 cs cs8.\f\< cs16 cs8->~ cs4.\! |
+  cs8 cs cs8.\f\< cs16 cs8->\( cs4.\)\! |
   % bar 43
   b4^\fsempre as gs2 |
   b4( as) gs2 |
@@ -215,7 +215,7 @@
   cs4^\psempre b a2 |
   cs4( b) a2 |
   r8 gs8\< a cs e8.\!\mf ds16 ds4~ |
-  ds8 cs fs8.\f\< e16 e8->( ds4.)\! |
+  ds8 cs fs8.\f\< e16 e8->\( ds4.\)\! |
   % bar 43
   gs4^\fsempre fs e2 |
   gs4( fs) e2 |
@@ -604,6 +604,12 @@
   % bar 28
   Te de -- cet hym -- nus De -- us in Si -- on 
     Et ti -- bi re -- dde -- tur vo -- tum in Je -- ru -- sa -- lem 
+  % bar 36
+  Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
+    Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+  % bar 43
+  Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
+    Re -- qui -- em Re -- qui -- em 
 }
 
 "lyricsAlt1" = \lyricmode {
@@ -616,7 +622,12 @@
   % bar 28
   Te de -- cet hym -- nus in Si -- on 
     re -- dde -- tur in Je -- ru -- sa -- 
+  % bar 36
   lem 
+  Re -- qui -- em do -- na 
+    Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+  % bar 43
+  Re -- qui -- em do -- na Re -- qui -- em Re -- qui -- em 
 }
 
 "lyricsTen1" = \lyricmode {
@@ -629,6 +640,11 @@
   % bar 28
   Te de -- cet hym -- nus De -- us in Si -- on 
     Et ti -- bi re -- dde -- tur vo -- tum in Je -- ru -- sa -- lem 
+  % bar 36
+  Re -- qui -- em do -- na 
+    Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+  % bar 43
+  Re -- qui -- em do -- na Re -- qui -- em Re -- qui -- em 
 }
 
 "lyricsBas1" = \lyricmode {
@@ -637,6 +653,12 @@
   % bar 2
   Re -- qui -- em do -- na 
   % bar 6
+  Re -- qui -- em do -- na Re -- qui -- em Re -- qui -- em 
+  % bar 28
+    Et ti -- bi re -- dde -- 
+  % bar 36
+  tur   Re -- qui -- em do -- na 
+  % bar 43
   Re -- qui -- em do -- na Re -- qui -- em Re -- qui -- em 
 }
 
