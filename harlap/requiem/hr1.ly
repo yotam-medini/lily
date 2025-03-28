@@ -148,7 +148,7 @@
   c'4(\f f,) g2~ |
   g2. a8( bf) |
   a!2 g2~ |
-  g2. a8 as |
+  g2. a8( as) |
   b4 e,2 e4 |
   gs4( a) c bf8 c |
   c4( bf) a!2 |
@@ -240,10 +240,10 @@
   R1 |
   R1 |
   % bar 6
-  g4^\fsempre f ef2 |
+  g'4^\fsempre f ef2 |
   g4( f) ef2 |
   g4\mp f\> ef2 |
-  g4( f) ef2~ |
+  g4 f ef2~ |
   ef1\fermata\!\pp |
   \time 2/2
   R1 * 9
@@ -263,18 +263,18 @@
   r1 |
   r1 |
   r1 |
-  e'2\f c'2 |
+  e2\f c'2 |
   e,2 c'2 |
   df1 |
   % bar 36
   df1 |
   r1 | r1
-  cs4^\psempre b a2 |
+  cs,4^\psempre b a2 |
   cs4( b) a2 |
   r1 |
   r1 |
   % bar 43
-  gs4^\fsempre fs e2 |
+  gs'4^\fsempre fs e2 |
   gs4( fs) e2 |
   gs4 fs e2 \> |
   gs4 fs e2~ |
@@ -601,6 +601,9 @@
   % bar 6
   Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne 
      Re -- qui -- em Re -- qui -- em 
+  % bar 28
+  Te de -- cet hym -- nus De -- us in Si -- on 
+    Et ti -- bi re -- dde -- tur vo -- tum in Je -- ru -- sa -- lem 
 }
 
 "lyricsAlt1" = \lyricmode {
@@ -608,6 +611,12 @@
     Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
   % bar 2
   Re -- qui -- em do -- na Et lux per -- pe -- tu -- a  lu -- ce -- at e -- is
+  % bar 6
+  Re -- qui -- em do -- na Re -- qui -- em Re -- qui -- em 
+  % bar 28
+  Te de -- cet hym -- nus in Si -- on 
+    re -- dde -- tur in Je -- ru -- sa -- 
+  lem 
 }
 
 "lyricsTen1" = \lyricmode {
@@ -615,6 +624,11 @@
     Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
   % bar 2
   Re -- qui -- em do -- na Et lux per -- pe -- tu -- a  lu -- ce -- at e -- is
+  % bar 6
+  Re -- qui -- em do -- na Re -- qui -- em Re -- qui -- em 
+  % bar 28
+  Te de -- cet hym -- nus De -- us in Si -- on 
+    Et ti -- bi re -- dde -- tur vo -- tum in Je -- ru -- sa -- lem 
 }
 
 "lyricsBas1" = \lyricmode {
@@ -622,6 +636,8 @@
     Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
   % bar 2
   Re -- qui -- em do -- na 
+  % bar 6
+  Re -- qui -- em do -- na Re -- qui -- em Re -- qui -- em 
 }
 
 "score1" = \score {
