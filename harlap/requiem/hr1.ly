@@ -83,23 +83,24 @@
   \time 2/4
   % bar 28
   r2
+  \tempo "Andante molto espressivo" 2 = 50
   \time 2/2
-  r2 r4 c4 |
+  r2 r4\f c4 |
   c c ef c4~ |
   c2. c4 |
   c f ef c |
   r4 e,! fs gs8 a |
-  b8[( cs) b e] d4 e8 fs |
+  b8[(\< cs) b e] d4 e8 fs\! |
  af4. df,8 ef2~ |
 \break
   % bar 36
   ef1 |
   r1 | r1 \bar "||"
   \tempo Larghetto 4 = 50
-  gs,8[\p^\sempre gs gs gs] gs gs4. |
-  gs8[ gs gs gs] b16[ gs gs8~] gs4 |
-  r8 gs a cs e8. ds16 ds4~ |
-  ds8 cs fs8. e16 e8( ds4.) |
+  gs,8[^\psempre gs gs gs] gs gs4. |
+  gs8[ gs\< gs gs] b16[\> gs gs8~] gs4\! |
+  r8 gs\< a cs e8.\!\mf ds16 ds4~ |
+  ds8 cs\< fs8.\f\< e16 e8->( ds4.)\! |
 \break
   % bar 43
   ds8[ ds ds ds] ds ds4. |
@@ -144,7 +145,7 @@
   % bar 28
   r2 |
   \time 2/2
-  c'4( f,) g2~ |
+  c'4(\f f,) g2~ |
   g2. a8( bf) |
   a!2 g2~ |
   g2. a8 as |
@@ -154,10 +155,10 @@
   % bar 36
   b!2( a!2) |
   r1 | r1 \bar "||"
-  e4 ds cs2 |
+  e4^\psempre ds cs2 |
   e4( ds) cs2 |
-  r8 gs'8 a cs cs8. cs16 cs4~ |
-  cs8 cs cs8. cs16 cs8~ cs4. |
+  r8 gs'8\< a cs cs8.\!\mf cs16 cs4~ |
+  cs8 cs cs8.\f\< cs16 cs8->~ cs4.\! |
   % bar 43
   b4 as gs2 |
   b4( as) gs2 |
@@ -201,20 +202,20 @@
   % bar 28
   r2 |
   \time 2/2
-  r2 r4 c |
+  r2 r4 c\f |
   c c ef c~ |
   c2. c4 |
   c f ef c |
   r e,! fs gs8 a |
-  b8[( cs) b e] d4 e8 fs |
+  b8[(\< cs) b e] d4 e8 fs\! |
   f!4. df8 ef2~ |
   % bar 36
   ef1 |
   r1 | r1 \bar "||"
-  cs4 b a2 |
+  cs4^\psempre b a2 |
   cs4( b) a2 |
-  r8 gs8 a cs e8. ds16 ds4~ |
-  ds8 cs fs8. e16 e8( ds4.) |
+  r8 gs8\< a cs e8.\!\mf ds16 ds4~ |
+  ds8 cs fs8.\f\< e16 e8->( ds4.)\! |
   % bar 43
   gs4 fs e2 |
   gs4( fs) e2 |
@@ -262,13 +263,13 @@
   r1 |
   r1 |
   r1 |
-  e'2 c'2 |
+  e'2\f c'2 |
   e,2 c'2 |
   df1 |
   % bar 36
   df1 |
   r1 | r1
-  cs4 b a2 |
+  cs4^\psempre b a2 |
   cs4( b) a2 |
   r1 |
   r1 |
@@ -386,11 +387,11 @@
   >> |
   % bar 36
   <<
-    \new Voice { \voiceOne ef2. f8( gs) | af8([ bf) af( df]) ef,2 ~ | ef1 }
+    \new Voice { \voiceOne ef2. f8(\f gs) | af8([ bf) af( df]) ef,2 ~ | ef1 }
     \new Voice { \voiceTwo df2. r4      | <c f>2 df2~         | df1 }
   >> \bar "||"
   <<
-    \new Voice { \voiceOne gs1}
+    \new Voice { \voiceOne gs1^\psempre }
     \new Voice { \voiceTwo e!4( ds cs2) }
   >>
   <<
@@ -550,16 +551,16 @@
   <<
     \new Voice { \voiceOne r4 c'8( bf) a!2 }
     \new Voice { \voiceTwo df,1 ~}
-  >>
+  >> |
   % bar 36
   <<
     \new Voice { \voiceOne d'!2 c!2 }
     \new Voice { \voiceTwo df,1 }
-  >>
+  >> |
   <<
     \new Voice { \voiceOne r4 c'8( bf) a!2 }
     \new Voice { \voiceTwo df,! }
-  >>
+  >> |
   <<
     \new Voice { \voiceOne b'4( a2) a4 }
     \new Voice { \voiceTwo df,1 }
