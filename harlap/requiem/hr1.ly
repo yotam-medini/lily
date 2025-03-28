@@ -49,11 +49,11 @@
   % \omit Staff.TimeSignature  % Hide time signature
   % \set Score.checkBars = ##f
   % \override Staff.BarLine.stencil = ##f
-  g4(^\pocosostenuto^\sempMarkup g
+  g4\(^\pocosostenuto^\sempMarkup g
   g g g g\fermata
-  g4 g g g bf g g\fermata) r4
-  g4( g g ef' d g,\fermata) r4
-  g4(^\rit f f ef d\fermata)
+  g4 g g g bf g g\fermata\) r4
+  g4\( g g ef' d g,\fermata\) r4
+  g4\(^\rit f f ef d\fermata\)
   \undo \omit Staff.TimeSignature  % Restore time signature
 % \break
   \time 4/4
@@ -65,7 +65,7 @@
   d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
 \break
   %  bar 6
-  d8 d d d d d4. |
+  d8^\fsempre d d d d d4. |
   d8 d d\< d\! f16\> d d8 ~ d4\! |
   r8 g,4\mp g8 a2\> |
   r8 g4 bf8 a2 ~ |
@@ -114,11 +114,11 @@
 "alto1" = \relative c' {
   \"global1"
   \"dummy1"
-  g'4(^\sempMarkup g
+  g'4\(^\sempMarkup g
   g g g g\fermata
-  g4 g g g bf g g\fermata) r4
-  g4( g g ef' d g,\fermata) r4
-  g4(^\rit f f ef d\fermata)
+  g4 g g g bf g g\fermata\) r4
+  g4\( g g ef' d g,\fermata\) r4
+  g4\(^\rit f f ef d\fermata\)
   \time 4/4
   % bar 2
   ef4^\psempre d c2 |
@@ -126,7 +126,7 @@
   r8 g'8\< af c  c8.\mf c16 c4~ |
   c8 c8\< c8.\f\< c16 c8( c4.)\! |
   % bar 6
-  bf4 a g2 |
+  bf4^\fsempre a g2 |
   bf4( a) g2 |
   bf,4\mp a g2\> |
   bf4 a g2~ |
@@ -171,11 +171,11 @@
 "tenor1" = \relative c {
   \"global1"
   \"dummy1"
-  g'4(^\sempMarkup g
+  g'4\(^\sempMarkup g
   g g g g\fermata
-  g4 g g g bf g g\fermata) r4
-  g4( g g ef' d g,\fermata) r4
-  g4(^\rit f f ef d\fermata)
+  g4 g g g bf g g\fermata\) r4
+  g4\( g g ef' d g,\fermata\) r4
+  g4\(^\rit f f ef d\fermata\)
   \time 4/4
   % bar 2
   c'4^\psempre bf af2 |
@@ -228,11 +228,11 @@
 "bass1" = \relative c {
   \"global1"
   \"dummy1"
-  g'4(^\sempMarkup g
+  g'4\(^\sempMarkup g
   g g g g\fermata
-  g4 g g g bf g g\fermata) r4
-  g4( g g ef d g\fermata) r4
-  g4(^\rit f f ef d\fermata)
+  g4 g g g bf g g\fermata\) r4
+  g4\( g g ef d g\fermata\) r4
+  g4\(^\rit f f ef d\fermata\)
   \time 4/4
   % bar 2
   c4^\psempre bf af2 |
@@ -592,6 +592,27 @@
     ad te om -- nis ca -- ro ve -- ni et   
 }
 
+"lyricsSop1" = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
+    Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+}
+
+"lyricsAlt1" = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
+    Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+}
+
+"lyricsTen1" = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
+    Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+}
+
+"lyricsBas1" = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
+    Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+}
+
+
 "score1" = \score {
   \header {
     title = "Requiem Aeternam"
@@ -610,28 +631,65 @@
     \context Lyrics = "solo" {
       \lyricsto "solo" {
         \"lyricsSoloSop1"
+        \"dummy1"
       }
     }
     \new ChoirStaff <<
       \new Staff = "soprano" {
 	\set Staff.instrumentName = #"Soprano"
-        \"soprano1"
-        \"dummy1"
+        \new Voice = "soprano" {
+          \"soprano1"
+          \"dummy1"
+        }
+      }
+      \new Lyrics = "soprano"
+      \context Lyrics = "soprano" {
+        \lyricsto "soprano" {
+          \"lyricsSop1"
+          \"dummy1"
+        }
       }
       \new Staff = "alto" {
         \set Staff.instrumentName = #"Alto"
-        \"alto1"
-        \"dummy1"
+        \new Voice = "alto" {
+          \"alto1"
+          \"dummy1"
+        }
+      }
+      \new Lyrics = "alto"
+      \context Lyrics = "alto" {
+        \lyricsto "alto" {
+          \"lyricsAlt1"
+          \"dummy1"
+        }
       }
       \new Staff = "tenor" {
         \set Staff.instrumentName = #"Tenor" \clef "G_8"
-        \"tenor1"
-        \"dummy1"
+        \new Voice = "tenor" {
+          \"tenor1"
+          \"dummy1"
+        }
+      }
+      \new Lyrics = "tenor"
+      \context Lyrics = "tenor" {
+        \lyricsto "tenor" {
+          \"lyricsTen1"
+          \"dummy1"
+        }
       }
       \new Staff = "bass" {
         \set Staff.instrumentName = #"Bass" \clef bass
-        \"bass1"
-        \"dummy1"
+        \new Voice = "bass" {
+          \"bass1"
+          \"dummy1"
+        }
+      }
+      \new Lyrics = "bass"
+      \context Lyrics = "bass" {
+        \lyricsto "bass" {
+          \"lyricsBas1"
+          \"dummy1"
+        }
       }
     >>
     \new PianoStaff \with {instrumentName = "Pno." } <<
