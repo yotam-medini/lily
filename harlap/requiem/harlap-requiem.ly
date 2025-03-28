@@ -7,6 +7,7 @@ pocorall = \markup { \bold\italic "poco rall." }
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
 pdulce = \markup { \dynamic "p" \italic "dulce" }
 psempre = \markup { \dynamic "p" \italic "sempre" }
+rall = \markup{\italic "rall."}
 rit = \markup{\italic rit.}
 sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
 sempre = \markup { \italic "sempre" }

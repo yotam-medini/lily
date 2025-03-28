@@ -8,7 +8,7 @@
   \numericTimeSignature
 }
 
-"soloSoprano1" =  \relative c'' {  
+"soloSoprano1" =  \relative c'' {
   \"global1"
   \"dummy1"
   R4 * 26
@@ -66,10 +66,10 @@
 \break
   %  bar 6
   d8 d d d d d4. |
-  d8 d d d f16 d d8 ~ d4 |
-  r8 g,4 g8 a2 |
+  d8 d d\< d\! f16\> d d8 ~ d4\! |
+  r8 g,4\mp g8 a2\> |
   r8 g4 bf8 a2 ~ |
-  a1\fermata |
+  a1\fermata\!\pp |
 \break
   R1 * 9
   \time 3/2
@@ -84,7 +84,7 @@
   % bar 28
   r2
   \time 2/2
-  r2 r4 c4 | 
+  r2 r4 c4 |
   c c ef c4~ |
   c2. c4 |
   c f ef c |
@@ -94,7 +94,7 @@
 \break
   % bar 36
   ef1 |
-  r1 | r1 \bar "||" 
+  r1 | r1 \bar "||"
   \tempo Larghetto 4 = 50
   gs,8[\p^\sempre gs gs gs] gs gs4. |
   gs8[ gs gs gs] b16[ gs gs8~] gs4 |
@@ -105,8 +105,8 @@
   ds8[ ds ds ds] ds ds4. |
   ds8[ ds ds ds]  fs16[ ds ds8~] ds4 |
   r8 gs,4 gs8 as2 |
-  r8 gs4 b8 as2~ | 
-  as1 ~ | 
+  r8 gs4 b8 as2~ |
+  as1 ~ |
   as1\fermata  \bar "|."
 }
 
@@ -127,9 +127,9 @@
   % bar 6
   bf4 a g2 |
   bf4( a) g2 |
-  bf,4 a g2 |
+  bf,4\mp a g2\> |
   bf4 a g2~ |
-  g1\fermata |
+  g1\fermata\!\pp |
 \break
  R1 * 9
  \time 3/2
@@ -148,12 +148,12 @@
   g2. a8( bf) |
   a!2 g2~ |
   g2. a8 as |
-  b4 e,2 e4 | 
+  b4 e,2 e4 |
   gs4( a) c bf8 c |
   c4( bf) a!2 |
   % bar 36
   b!2( a!2) |
-  r1 | r1 \bar "||" 
+  r1 | r1 \bar "||"
   e4 ds cs2 |
   e4( ds) cs2 |
   r8 gs'8 a cs cs8. cs16 cs4~ |
@@ -182,11 +182,11 @@
   r8 g8\< af c  ef8.\mf d16 d4~ |
   d8 c8\< f8.\f\< ef16 ef8( d4.)\! |
   % | bar 6
-  g4^\fsempre f ef2 | 
+  g4^\fsempre f ef2 |
   g4( f) ef2 |
-  r8 g,4 g8 a2 |
+  r8\mp g,4 g8\> a2 |
   r8 g4 bf8 a2~ |
-  a1\fermata |
+  a1\fermata\!\pp |
   \time 2/2
   R1 * 9
   \time 3/2
@@ -210,7 +210,7 @@
   f!4. df8 ef2~ |
   % bar 36
   ef1 |
-  r1 | r1 \bar "||" 
+  r1 | r1 \bar "||"
   cs4 b a2 |
   cs4( b) a2 |
   r8 gs8 a cs e8. ds16 ds4~ |
@@ -239,11 +239,11 @@
   R1 |
   R1 |
   % bar 6
-  g4^\fsempre f ef2 | 
+  g4^\fsempre f ef2 |
   g4( f) ef2 |
-  g4 f ef2 | 
+  g4\mp f\> ef2 |
   g4( f) ef2~ |
-  ef1\fermata |
+  ef1\fermata\!\pp |
   \time 2/2
   R1 * 9
   \time 3/2
@@ -287,12 +287,12 @@
   R1 * 26/4
   % bar 2
   << { \voiceOne g1}
-     \new Voice { 
+     \new Voice {
        \voiceTwo ef4( d c2)
      }
   >> |
   << { \voiceOne g'1}
-     \new Voice { 
+     \new Voice {
        \voiceTwo ef4( d c2)
      }
   >> |
@@ -326,17 +326,17 @@
   >> |
   % bar ??
   <<
-    { 
+    {
     \voiceOne fs'8[( gs) fs( b)] a!4 b8( cs) }
-    \new Voice { 
-      \voiceTwo <as, ds>4 e' g!2 
+    \new Voice {
+      \voiceTwo <as, ds>4 e' g!2
     }
   >> |
   <<
     { \voiceOne ef'4( af,) bf2~         | bf2. c8( df) }
     \new Voice { \voiceTwo <g, c!>2 af2~ | af2. r4 }
   >> |
-  << 
+  <<
     { \voiceOne ef'8( f) ef8( af) bf,2~ | \time 3/2 bf1 }
     \new Voice { \voiceTwo <g, c>2 af2~ | \time 3/2 af1}
   >>
@@ -388,7 +388,7 @@
   <<
     \new Voice { \voiceOne ef2. f8( gs) | af8([ bf) af( df]) ef,2 ~ | ef1 }
     \new Voice { \voiceTwo df2. r4      | <c f>2 df2~         | df1 }
-  >> \bar "||" 
+  >> \bar "||"
   <<
     \new Voice { \voiceOne gs1}
     \new Voice { \voiceTwo e!4( ds cs2) }
@@ -432,19 +432,19 @@
   R1 * 26/4 |
   % bar 2
    << { \voiceOne c'4( bf af2)}
-      \new Voice { 
+      \new Voice {
         \voiceTwo <<c,,4( c'4>> <<bf, bf'>> <<af,2) af'2>>
       }
    >> |
    << { \voiceOne c'4( bf af2)}
-      \new Voice { 
+      \new Voice {
         \voiceTwo <<c,,4( c'4>> <<bf, bf'>> <<af,2) af'2>>
       }
    >> |
    <c, g' c d>2  <c g' c d>2\< |
    <c g' c d>2  <c g' c d>2\f |
   % bar 6
-  <g, g'>4(^\fsempre <f f'> <ef ef'>2) |
+  <g' g'>4(^\fsempre <f f'> <ef ef'>2) |
   <g g'>4( <f f'> <ef ef'>2) |
   <g g'>4(\mp <f f'> <ef ef'>2) |
   <g g'>4( <f f'> <ef ef'>2) |
@@ -486,22 +486,33 @@
     \new Voice { \voiceOne r4 a'8( g) fs2 | gs2 fs2 }
     \new Voice { \voiceTwo bf,!1         | bf1 }
   >> |
-  \time 3/2
   <<
-    \new Voice { \voiceOne r4 fs'8( e) r4 f4 r a }
-    \new Voice { \voiceTwo s2 ef2 fs }
-    \new Voice { \voiceThree g,1. }
+    % { \time 3/2  c1. | \time 2/2  c1 | c1  }
+    {
+      \time 3/2
+      <<
+        \new Voice { \voiceOne r4 fs'8( e) r4 f4 r a }
+        \new Voice { \voiceTwo s2 ef2 fs }
+        \new Voice { \voiceThree g,1. }
+      >> |
+      \time 2/2
+      <<
+        \new Voice { \voiceOne b'!4( a) c( d) }
+        \new Voice { \voiceTwo g,2 bf2 }
+      >> |
+      \clef "G"
+      <<
+        \new Voice { \voiceOne e!4( ds) gs4.( fs8) }
+        \new Voice { \voiceTwo cs2 e!2 }
+      >>
+    }
+    {
+       \new Dynamics \with { alignAboveContext = "lower" } 
+       {
+           \time 3/2 s16\< s8. s4 s1 | \time 2/2  s1 | s2. s4 \!
+       }
+    }
   >> |
-  \time 2/2
-  <<
-    \new Voice { \voiceOne b'!4( a) c( d) }
-    \new Voice { \voiceTwo g,2 bf2 }
-  >> |
-  \clef "G"
-  <<
-    \new Voice { \voiceOne e!4( ds) gs4.( fs8) }
-    \new Voice { \voiceTwo cs2 e!2 }
-  >>
   % bar 28
   \time 2/4
   <<
@@ -538,7 +549,7 @@
   >> |
   <<
     \new Voice { \voiceOne r4 c'8( bf) a!2 }
-    \new Voice { \voiceTwo df,1 ~} 
+    \new Voice { \voiceTwo df,1 ~}
   >>
   % bar 36
   <<
@@ -546,7 +557,7 @@
     \new Voice { \voiceTwo df,1 }
   >>
   <<
-    \new Voice { \voiceOne r4 c'8( bf) a!2 } 
+    \new Voice { \voiceOne r4 c'8( bf) a!2 }
     \new Voice { \voiceTwo df,! }
   >>
   <<
