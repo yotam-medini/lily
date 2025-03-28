@@ -23,8 +23,8 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   \header {
     title = "REQUIEM"
     subtitle = \markup \center-column {
-    "in memory of the dearly departed"
-    "to my good friend Stanley Sperber"
+    \normal-text \smaller "to my good friend Stanley Sperber"
+    \normal-text \smaller "in memory of the dearly departed"
     }
     % Do not display the default LilyPond footer for this book
     tagline = ##f
