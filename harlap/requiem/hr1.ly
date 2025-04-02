@@ -1,4 +1,3 @@
-"dummy1" = {} % sometime needed to make emacs LilyPond-mode happy
 
 "global1" = {
   \key c \major
@@ -10,7 +9,7 @@
 
 "soloSoprano1" =  \relative c'' {
   \"global1"
-  \"dummy1"
+  \"dummy"
   R4 * 26
   R1 * 9 |
   % bar 11
@@ -45,7 +44,7 @@
 
 "soprano1" = \relative c'' {
   \"global1"
-  \"dummy1"
+  \"dummy"
   % \omit Staff.TimeSignature  % Hide time signature
   % \set Score.checkBars = ##f
   % \override Staff.BarLine.stencil = ##f
@@ -113,7 +112,7 @@
 
 "alto1" = \relative c' {
   \"global1"
-  \"dummy1"
+  \"dummy"
   g'4\(^\sempMarkup g
   g g g g\fermata
   g4 g g g bf g g\fermata\) r4
@@ -170,7 +169,7 @@
 
 "tenor1" = \relative c {
   \"global1"
-  \"dummy1"
+  \"dummy"
   g'4\(^\sempMarkup g
   g g g g\fermata
   g4 g g g bf g g\fermata\) r4
@@ -227,7 +226,7 @@
 
 "bass1" = \relative c {
   \"global1"
-  \"dummy1"
+  \"dummy"
   g'4\(^\sempMarkup g
   g g g g\fermata
   g4 g g g bf g g\fermata\) r4
@@ -284,7 +283,7 @@
 
 "pianoRight1" = \relative c'' {
   \"global1"
-  \"dummy1"
+  \"dummy"
   R1 * 26/4
   % bar 2
   << { \voiceOne g1}
@@ -429,7 +428,7 @@
 
 "pianoLeft1" = \relative c {
  \"global1"
-  \"dummy1"
+  \"dummy"
   R1 * 26/4 |
   % bar 2
    << { \voiceOne c'4( bf af2)}
@@ -673,14 +672,14 @@
       \set Staff.instrumentName = #"Sop solo"
       \new Voice = "solo" {
         \"soloSoprano1"
-        \"dummy1"
+        \"dummy"
       }
     }
     \new Lyrics = "solo"
     \context Lyrics = "solo" {
       \lyricsto "solo" {
         \"lyricsSoloSop1"
-        \"dummy1"
+        \"dummy"
       }
     }
     \new ChoirStaff <<
@@ -688,56 +687,56 @@
 	\set Staff.instrumentName = #"Soprano"
         \new Voice = "soprano" {
           \"soprano1"
-          \"dummy1"
+          \"dummy"
         }
       }
       \new Lyrics = "soprano"
       \context Lyrics = "soprano" {
         \lyricsto "soprano" {
           \"lyricsSop1"
-          \"dummy1"
+          \"dummy"
         }
       }
       \new Staff = "alto" {
         \set Staff.instrumentName = #"Alto"
         \new Voice = "alto" {
           \"alto1"
-          \"dummy1"
+          \"dummy"
         }
       }
       \new Lyrics = "alto"
       \context Lyrics = "alto" {
         \lyricsto "alto" {
           \"lyricsAlt1"
-          \"dummy1"
+          \"dummy"
         }
       }
       \new Staff = "tenor" {
         \set Staff.instrumentName = #"Tenor" \clef "G_8"
         \new Voice = "tenor" {
           \"tenor1"
-          \"dummy1"
+          \"dummy"
         }
       }
       \new Lyrics = "tenor"
       \context Lyrics = "tenor" {
         \lyricsto "tenor" {
           \"lyricsTen1"
-          \"dummy1"
+          \"dummy"
         }
       }
       \new Staff = "bass" {
         \set Staff.instrumentName = #"Bass" \clef bass
         \new Voice = "bass" {
           \"bass1"
-          \"dummy1"
+          \"dummy"
         }
       }
       \new Lyrics = "bass"
       \context Lyrics = "bass" {
         \lyricsto "bass" {
           \"lyricsBas1"
-          \"dummy1"
+          \"dummy"
         }
       }
     >>

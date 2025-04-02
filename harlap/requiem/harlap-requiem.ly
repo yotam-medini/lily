@@ -1,6 +1,7 @@
 \version "2.22.1"
 \include "english.ly"
 
+"dummy" = {} % sometimes needed to make emacs LilyPond-mode happy
 dulce = \markup { \italic "dulce" }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 moltorall = \markup { \bold "molto rall." }
@@ -15,6 +16,7 @@ sempre = \markup { \italic "sempre" }
 slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 \include "hr1.ly"
+\include "hr2.ly"
 
 \paper{
   #(set-paper-size "a4")
@@ -52,5 +54,5 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   }
   \markup { \vspace #1 }
   \"score1"
-  \include "hr2.ly"
+  \"score2"
 }
