@@ -13,7 +13,7 @@
   R4 * 26
   R1 * 9 |
   % bar 11
- \tempo "Andente dulce" 2 = 50
+ \tempo "Andante dulce" 2 = 50
   r2 r4 a^\pdulce |
   a a c a~ |
 \break
