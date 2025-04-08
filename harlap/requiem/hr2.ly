@@ -351,19 +351,73 @@
   \"dummy"
 }
 
-"lyricsSoloSop2" = \lyricmode {
-}
-
 "lyricsSop2" = \lyricmode {
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Sol -- vet sae -- clum in fa -- vil -- la
+  Di -- es i -- rae di -- es il -- la
+  cum Si -- by -- lla
+  Quan -- tus tre -- mor est fu -- tu -- rus
+  Quan -- do ju -- dex est ven -- tu -- rus
+  Di -- es i -- rae di -- es il -- la
+  Cun -- cta stri -- cte dis -- cus -- su -- rus
+  Di -- es i -- rae di -- es il -- la
+  Di -- es il -- la
 }
 
 "lyricsAlt2" = \lyricmode {
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Sol -- vet sae -- clum in fa -- vil -- la
+  Te -- ste Da -- vid cum Si -- by -- lla
+  Quan -- tus tre -- mor est fu -- tu -- rus
+  Quan -- do ju -- dex est ven -- tu -- rus
+  Di -- es i -- rae di -- es il -- la
+  Cun -- cta stri -- cte dis -- cus -- su -- rus
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- l
+  Di -- es il -- la
 }
 
 "lyricsTen2" = \lyricmode {
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Sol -- vet
+  Sol -- vet sae -- clum in fa -- vil -- la
+  in fa -- vil -- la
+  Di -- es i -- rae di -- es il -- la
+  Te -- ste Da -- vid cum Si -- by -- lla
+  cum Si -- by -- lla
+  Quan -- tus tre -- mor est fu -- tu -- rus
+  Quan -- do ju -- dex est ven -- tu -- rus
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Cun -- cta stri -- cte dis -- cus -- su -- rus
+  Di -- es i -- rae di -- es il -- la
+  Di -- es il -- la
 }
 
 "lyricsBas2" = \lyricmode {
+  Di -- es i -- rae di -- es il -- la
+  Di -- es
+  Di -- es i -- rae di -- es il -- la
+  Di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Sol -- vet sae -- clum in fa -- vil -- la
+  Te -- ste Da -- vid cum Si -- by -- lla
+  Quan -- tus tre -- mor est fu -- tu -- rus
+  Quan -- do ju -- dex est ven -- tu -- rus
+  Di -- es i -- rae di -- es il -- la
+  Cun -- cta stri -- cte dis -- cus -- su -- rus
+  dis -- cus -- su -- rus
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae di -- es il -- la
+  Di -- es i -- rae Di -- es il -- la
 }
 
 "score2" = \score {
