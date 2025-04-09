@@ -331,9 +331,9 @@
   % bar 32
   fs8. fs16 ds8 ds r2
   % bar 33
-  fs8 fs r2.
+  fs8 fs r4 r2
   % bar 34
-  fs8 fs r2.
+  fs8 fs r4 r2
   % bar 35
   r1
   % bar 36
@@ -344,8 +344,59 @@
 "pianoRight2" = \relative c'' {
   \"global2"
   \"dummy"
-  \repeat percent 6 { r16 a, cs e r16 a, cs e r16 a, cs e r16 a, cs e }
-  \repeat percent 4 { r16 a, cs e r16 a, cs e r16 a, cs e r16 a, cs e }
+  \repeat percent 6 { \repeat unfold 4 {r16 a,( cs e) } }
+  \repeat percent 4 { \repeat unfold 4 {r16 a,( cs e) } }
+  \repeat percent 3 { \repeat unfold 4 { r16 f( a c) } }
+  \time 2/4
+  \repeat unfold 2 { r16 f,( a c) } 
+  % bar 15
+  \time 6/4
+  << 
+    \new Voice { \voiceOne { d8[ c c b16] r16 c4( ef) c( ef) } }
+    \new Voice { \voiceTwo { e,8[ g] a!4    af4( bf) af( bf) } }
+  >> |
+  % bar 16
+  \time 4/4
+  \repeat unfold 2 { <af c>4( <bf ef>) } |
+  % bar 17
+  <<
+    \new Voice { \voiceOne { ef8] df df( c)] } gf' ef df c16 r16}
+    \new Voice { \voiceTwo { \repeat unfold 2 {f,8 gf bf4 } } }
+  >> |
+  % bar 18
+  <f a>4( <g! c>) <f a>4( <g c>) |
+  % bar 19
+  <<
+    \new Voice { \voiceOne { c8] bf bf( a)] } ef' c bf a16 r16 }
+    \new Voice { \voiceTwo { \repeat unfold 2 {d,8 ef g!4 } } }
+  >> |
+  % bars 20-24
+  \repeat percent 5 { {r16 g( b! d) } \repeat unfold 3 {r16 g,( b d) } }
+  % bar 25
+  \repeat unfold 4 {r16 g,( b d) }
+  % bar 26
+  \time 2/4
+  <<
+    \new Voice { \voiceOne { e8 d d cs16 r16 } }
+    \new Voice { \voiceTwo { fs,8 g b4 } }
+  >> |
+  % bar 27
+  \time 4/4
+  { r16 b( ds fs) } \repeat unfold 3 {r16 b,( ds fs) }
+  % bar 28
+  { r16 b,,( ds fs) } \repeat unfold 3 {r16 b,( ds fs) }
+  % bar 29
+  \time 6/4
+  { r16 b,( ds fs) } \repeat unfold 5 {r16 b,( ds fs) }
+  % bar 30
+  \time 4/4
+  \repeat percent 5 { { r16 b,( ds fs) } \repeat unfold 3 {r16 b,( ds fs) } }
+  % bar 33
+  <as fs' as>2. <b es ds b>4 |
+  % bar 34
+  <ds fs ds'>2 <es ds' es>2 |
+  % bar 35
+  <fs ds' es fs>16 r16 r8 r4 r2 \fermata \bar "|."
 }
 
 "pianoLeft2" = \relative c {
