@@ -5,9 +5,10 @@
 dulce = \markup { \italic "dulce" }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 moltorall = \markup { \bold "molto rall." }
+pdulce = \markup { \dynamic "p" \italic "dulce" }
 pocorall = \markup { \bold\italic "poco rall." }
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
-pdulce = \markup { \dynamic "p" \italic "dulce" }
+ppagitato = \markup { \dynamic "pp" \italic "agitato" }
 psempre = \markup { \dynamic "p" \italic "sempre" }
 rall = \markup{\italic "rall."}
 rit = \markup{\italic rit.}

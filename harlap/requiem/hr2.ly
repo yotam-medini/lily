@@ -344,11 +344,25 @@
 "pianoRight2" = \relative c'' {
   \"global2"
   \"dummy"
+  \repeat percent 6 { r16 a, cs e r16 a, cs e r16 a, cs e r16 a, cs e }
+  \repeat percent 4 { r16 a, cs e r16 a, cs e r16 a, cs e r16 a, cs e }
 }
 
 "pianoLeft2" = \relative c {
  \"global2"
   \"dummy"
+  \clef "G"
+  <<
+    {
+      \repeat percent 6 { c'4 c c c }
+    }
+    \new Dynamics \with { alignAboveContext = "lower" } 
+    {
+      s16\f\> s16 s8 s4 s4 s4\! | s16^\ppagitato
+    }
+  >>
+  \clef "F"
+  \repeat percent 4 { gs4 gs gs gs }
 }
 
 "lyricsSop2" = \lyricmode {
