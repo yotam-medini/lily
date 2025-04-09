@@ -388,15 +388,15 @@
   % bar 29
   \time 6/4
   { r16 b,( ds fs) } \repeat unfold 5 {r16 b,( ds fs) }
-  % bar 30
+  % bar 30-34
   \time 4/4
   \repeat percent 5 { { r16 b,( ds fs) } \repeat unfold 3 {r16 b,( ds fs) } }
-  % bar 33
-  <as fs' as>2. <b es ds b>4 |
-  % bar 34
-  <ds fs ds'>2 <es ds' es>2 |
   % bar 35
-  <fs ds' es fs>16 r16 r8 r4 r2 \fermata \bar "|."
+  <as fs' as>2. <b es fs! b>4 |
+  % bar 36
+  <ds fs ds'>2 <es ds' es>2 |
+  % bar 37
+  <fs ds' es fs>16 r16 r8 r4 r2\fermata \bar "|."
 }
 
 "pianoLeft2" = \relative c {
@@ -414,6 +414,65 @@
   >>
   \clef "F"
   \repeat percent 4 { gs4 gs gs gs }
+  % bar 11-13
+  \clef "G"
+  \repeat percent 3 {e'4 e e e }
+  % bar 14
+  \time 2/4
+  e e |
+  % bar 15
+  \clef "F"
+  \time 6/4
+  <<
+    \new Voice { \voiceOne { d8 c c b16 r16 } }
+    \new Voice { \voiceTwo { <e,, e'> <f f'> a!4 } }
+  >> 
+  \clef "G"
+  f''4( gf) f4( gf)
+  |
+  \time 4/4
+  % bar 16
+  f4( gf) f4( gf)
+  % bar 17
+  \clef "F"
+  <<
+    \new Voice { \voiceOne { ef8 df df c gf' ef df c16 r16 } }
+    \new Voice { \voiceTwo { \repeat unfold 2 {f,8 gf bf4 } } }
+  >> |
+  % bar 18
+  d4( ef)  d4( ef)  |
+  % bar 19
+  \clef "F"
+  <<
+    \new Voice { \voiceOne { c8 bf bf a ef' c bf a16 r16 } }
+    \new Voice { \voiceTwo { \repeat unfold 2 { d,,8 ef g!4 } } }
+  >> |
+  % bar 21-25
+  \clef "G"
+  \repeat percent 5 { fs''4 fs fs fs } 
+  fs4 fs fs fs |
+  % bar 26
+  \clef "F"
+  \time 2/4
+  <<
+    \new Voice { \voiceOne { e8 d d cs16 r16 } }
+    \new Voice { \voiceTwo { fs,8 g b!4 } }
+    \new Voice { \voiceThree { \parenthesize { fs,8 g b4 } } }
+  >> |
+  \clef "G"
+  \time 4/4
+  as''4 as as as |
+  \clef "F"
+  as,4 as as as |
+  \time 6/4
+  as4 as as as as as |
+  \time 4/4
+  \repeat percent 5 { as4 as as as } |
+  <as g d'>2. <g cs>4 |
+  % bar 36
+  <ds' fs>2 <es fs> |
+  % bar 37
+  <ds,,, ds'>16 r16 r8 r4 r2\fermata \bar "|."
 }
 
 "lyricsSop2" = \lyricmode {
@@ -545,6 +604,7 @@
         instrumentName = "Bass"
         shortInstrumentName = "B"
       } {
+        \clef bass
         \new Voice = "bass" {
           \"bass2"
           \"dummy"
