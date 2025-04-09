@@ -493,12 +493,14 @@
   }
   <<
     \new ChoirStaff <<
-      \new Staff = "soprano" {
-	\set Staff.instrumentName = #"Soprano"
+     \new Staff = "soprano" \with {
+        instrumentName = "Soprano"
+        shortInstrumentName = "S"
+      } {
         \new Voice = "soprano" {
           \"soprano2"
           \"dummy"
-        }
+	}
       }
       \new Lyrics = "soprano"
       \context Lyrics = "soprano" {
@@ -507,8 +509,10 @@
           \"dummy"
         }
       }
-      \new Staff = "alto" {
-        \set Staff.instrumentName = #"Alto"
+      \new Staff = "alto" \with {
+        instrumentName = "Alto"
+        shortInstrumentName = "A"
+      } {
         \new Voice = "alto" {
           \"alto2"
           \"dummy"
@@ -521,8 +525,10 @@
           \"dummy"
         }
       }
-      \new Staff = "tenor" {
-        \set Staff.instrumentName = #"Tenor" \clef "G_8"
+      \new Staff = "tenor" \with {
+        instrumentName = "Tenor"
+        shortInstrumentName = "T"
+      } {
         \new Voice = "tenor" {
           \"tenor2"
           \"dummy"
@@ -535,8 +541,10 @@
           \"dummy"
         }
       }
-      \new Staff = "bass" {
-        \set Staff.instrumentName = #"Bass" \clef bass
+      \new Staff = "bass" \with {
+        instrumentName = "Bass"
+        shortInstrumentName = "B"
+      } {
         \new Voice = "bass" {
           \"bass2"
           \"dummy"
