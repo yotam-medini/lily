@@ -16,10 +16,12 @@ pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
 ppagitato = \markup { \dynamic "pp" \italic "agitato" }
 ppmaagitato = \markup { \dynamic "pp" \italic "ma agitato" }
 psempre = \markup { \dynamic "p" \italic "sempre" }
+psubito = \markup { \dynamic "p" \italic "subito" }
 rall = \markup{\italic "rall."}
 rit = \markup{\italic rit.}
 sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
 sempre = \markup { \italic "sempre" }
+sfff = \markup { \dynamic "sfff" }
 slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 leftParenthesis = 

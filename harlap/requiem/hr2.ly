@@ -411,7 +411,7 @@
   \time 4/4
   { r16 b( ds fs) } \repeat unfold 3 {r16 b,( ds fs) }
   % bar 28
-  { r16 b,,( ds fs) } \repeat unfold 3 {r16 b,( ds fs) }
+  { r16_\psubito b,,( ds fs) } \repeat unfold 3 {r16 b,( ds fs) }
   % bar 29
   \time 6/4
   { r16 b,( ds fs) } \repeat unfold 5 {r16 b,( ds fs) }
@@ -419,11 +419,11 @@
   \time 4/4
   \repeat percent 5 { { r16 b,( ds fs) } \repeat unfold 3 {r16 b,( ds fs) } }
   % bar 35
-  <as fs' as>2. <b es fs! b>4 |
+  <as fs' as>2.-> <b es fs! b>4-> |
   % bar 36
-  <ds fs ds'>2 <es ds' es>2 |
+  <ds fs ds'>2-> <es ds' es>2-> |
   % bar 37
-  <fs ds' es fs>16 r16 r8 r4 r2\fermata \bar "|."
+  <fs ds' es fs>16-> r16 r8 r4 r2\fermata \bar "|."
 }
 
 "pianoLeft2" = \relative c {
@@ -516,24 +516,35 @@
     \new Voice { \voiceTwo { 
       <fs,, fs'>8-\tweak extra-offset #'(-2.2 . -8) ^\markup \tiny ( 
       <g g'> 
-      <b! b'!>4-\tweak extra-offset #'(1.8 . -6.0) ^\markup \tiny )
+      <b! b'!>4->-\tweak extra-offset #'(1.8 . -6.0) ^\markup \tiny )
     } }
     % \new Voice { \voiceThree { \parenthesize { fs,8 g b4 } } }
   >> |
+  % bar 27
   \clef "G"
   \time 4/4
-  as''4 as as as |
+  as''4\f\> as as as\! |
   \clef "F"
   as,4 as as as |
+  % bar 29
   \time 6/4
-  as4 as as as as as |
+  as4-> as as as as as |
+  % bar 30-34
   \time 4/4
-  \repeat percent 5 { as4 as as as } |
-  <as g d'>2. <g cs>4 |
+  <<
+    \new Voice { \voiceOne { \repeat percent 5 { as4 as as as } } }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s16^\f\> s16 s8 s4 s4 s8. s16\! | s1 | 
+      s16^\f\> s16 s8 s4 s4 s8. s16\! | s1^\pp | 
+      s16^\f\> s16 s8 s4 s4^\ppp\! s4 
+    }
+  >> |
+  % bar 35
+  <as g d'>2.->^\f\< <g cs>4-> |
   % bar 36
-  <ds' fs>2 <es fs> |
+  <ds' fs>2-> <es fs>->\! |
   % bar 37
-  <ds,,, ds'>16 r16 r8 r4 r2\fermata \bar "|."
+  <ds,,, ds'>16->^\sfff r16 r8 r4 r2\fermata \bar "|."
 }
 
 "lyricsSop2" = \lyricmode {
