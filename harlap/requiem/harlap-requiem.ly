@@ -2,9 +2,14 @@
 \include "english.ly"
 
 "dummy" = {} % sometimes needed to make emacs LilyPond-mode happy
+atempo_par = \markup { \italic "(a tempo)" }
 dulce = \markup { \italic "dulce" }
+fmarcato = \markup { \dynamic "f" \italic "marcato" }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
+fsubito = \markup { \dynamic "f" \italic "subito" }
 moltorall = \markup { \bold "molto rall." }
+mfagitato = \markup { \dynamic "mf" \italic "agitato" }
+mpmoltoagitato = \markup { \dynamic "mp" \italic "molto agitato" }
 pdulce = \markup { \dynamic "p" \italic "dulce" }
 pocorall = \markup { \bold\italic "poco rall." }
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
