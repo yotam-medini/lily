@@ -14,6 +14,7 @@ pdulce = \markup { \dynamic "p" \italic "dulce" }
 pocorall = \markup { \bold\italic "poco rall." }
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
 ppagitato = \markup { \dynamic "pp" \italic "agitato" }
+ppmaagitato = \markup { \dynamic "pp" \italic "ma agitato" }
 psempre = \markup { \dynamic "p" \italic "sempre" }
 rall = \markup{\italic "rall."}
 rit = \markup{\italic rit.}
