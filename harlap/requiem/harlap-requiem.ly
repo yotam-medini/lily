@@ -22,6 +22,15 @@ sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
 sempre = \markup { \italic "sempre" }
 slowarpeg = \markup { \italic "(slow arpeggio)" }
 
+leftParenthesis = 
+  -\tweak extra-offset #'(-1.5 . 0)
+  ^\markup \tiny \halign #LEFT "("
+
+rightParenthesis = 
+  -\tweak extra-offset #'(1.5 . 0)
+  ^\markup \tiny \halign #RIGHT ")"
+
+
 \include "hr1.ly"
 \include "hr2.ly"
 

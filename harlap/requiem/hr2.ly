@@ -385,8 +385,8 @@
   <f a>4(_\mp <g! c>) <f a>4( <g c>) |
   % bar 19
   <<
-    \new Voice { \voiceOne { c8] bf bf->( a)] } ef' c bf-> a16 r16 }
-    \new Voice { \voiceTwo { \repeat unfold 2 {d,8 ef g!4-> } } }
+    \new Voice { \voiceOne { c8-.[ bf-. bf->( a)] } ef'-. c-. bf-> a16 r16 }
+    \new Voice { \voiceTwo { \repeat unfold 2 {d,8-. ef-. g!4-> } } }
   >> |
   % bars 20-24
   <<
@@ -404,8 +404,8 @@
   % bar 26
   \time 2/4
   <<
-    \new Voice { \voiceOne { e8 d d cs16 r16 } }
-    \new Voice { \voiceTwo { fs,8 g b4 } }
+    \new Voice { \voiceOne { e8-. d-. d->( cs16) r16 } }
+    \new Voice { \voiceTwo { fs,8_\f g b!4-> } }
   >> |
   % bar 27
   \time 4/4
@@ -490,8 +490,8 @@
   % bar 19
   \clef "F"
   <<
-    \new Voice { \voiceOne { c8 bf bf-> a ef' c bf-> a16 r16 } }
-    \new Voice { \voiceTwo { \repeat unfold 2 { d,,8 ef g!4-> } } }
+    \new Voice { \voiceOne { c8-. bf-. bf->( a) ef'-. c-. bf->( a16) r16 } }
+    \new Voice { \voiceTwo { \repeat unfold 2 { d,,8-. ef-. g!4-> } } }
   >> |
   % bar 20-24
   \clef "G"
@@ -507,14 +507,18 @@
     }
   >>
   % bar 25
-  fs4 fs fs fs |
+  fs4->\< fs fs fs\! |
   % bar 26
   \clef "F"
   \time 2/4
   <<
     \new Voice { \voiceOne { e8 d d cs16 r16 } }
-    \new Voice { \voiceTwo { fs,8 g b!4 } }
-    \new Voice { \voiceThree { \parenthesize { fs,8 g b4 } } }
+    \new Voice { \voiceTwo { 
+      <fs,, fs'>8-\tweak extra-offset #'(-2.2 . -8) ^\markup \tiny ( 
+      <g g'> 
+      <b! b'!>4-\tweak extra-offset #'(1.8 . -6.0) ^\markup \tiny )
+    } }
+    % \new Voice { \voiceThree { \parenthesize { fs,8 g b4 } } }
   >> |
   \clef "G"
   \time 4/4
