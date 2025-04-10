@@ -382,14 +382,23 @@
     \new Voice { \voiceTwo { \repeat unfold 2 {f,8 gf bf4 } } }
   >> |
   % bar 18
-  <f a>4( <g! c>) <f a>4( <g c>) |
+  <f a>4(_\mp <g! c>) <f a>4( <g c>) |
   % bar 19
   <<
-    \new Voice { \voiceOne { c8] bf bf( a)] } ef' c bf a16 r16 }
-    \new Voice { \voiceTwo { \repeat unfold 2 {d,8 ef g!4 } } }
+    \new Voice { \voiceOne { c8] bf bf->( a)] } ef' c bf-> a16 r16 }
+    \new Voice { \voiceTwo { \repeat unfold 2 {d,8 ef g!4-> } } }
   >> |
   % bars 20-24
-  \repeat percent 5 { {r16 g( b! d) } \repeat unfold 3 {r16 g,( b d) } }
+  <<
+    \new Voice { 
+      \voiceOne { 
+        \repeat percent 5 { {r16 g( b! d) } \repeat unfold 3 {r16 g,( b d) } }
+      }
+    }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+       s1 | s16^\ppmaagitato s16 s8 s4 s2 | s1 | s1 | s1 
+    }
+  >>
   % bar 25
   \repeat unfold 4 {r16 g,( b d) }
   % bar 26
@@ -457,32 +466,47 @@
   \clef "F"
   \time 6/4
   <<
-    \new Voice { \voiceOne { d8 c c b16 r16 } }
+    \new Voice { \voiceOne { d8-> c c-> b16 r16 } }
     \new Voice { \voiceTwo { <e,, e'>8 <f f'> a!4 } }
   >> 
   \clef "G"
-  f''4( gf) f4( gf)
-  |
+  <<
+    \new Voice { \voiceOne { f''4->( gf) f4( gf) } }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s16^\f\> s16 s8 s4 s4 s8. s16\!
+    }
+  >> |
   \time 4/4
   % bar 16
-  f4( gf) f4( gf)
+  f4^\mp( gf) f4( gf)
   % bar 17
   \clef "F"
   <<
-    \new Voice { \voiceOne { ef8 df df c gf' ef df c16 r16 } }
-    \new Voice { \voiceTwo { \repeat unfold 2 {f,8 gf bf4 } } }
+    \new Voice { \voiceOne { ef8^\fsubito df df-> c gf' ef-> df c16 r16 } }
+    \new Voice { \voiceTwo { \repeat unfold 2 {f,8 gf bf4-> } } }
   >> |
   % bar 18
-  d4( ef)  d4( ef)  |
+  d4( ef)  d4( ef^\markup { \halign #2 \dynamic "f" \italic "subito" })  |
   % bar 19
   \clef "F"
   <<
-    \new Voice { \voiceOne { c8 bf bf a ef' c bf a16 r16 } }
-    \new Voice { \voiceTwo { \repeat unfold 2 { d,,8 ef g!4 } } }
+    \new Voice { \voiceOne { c8 bf bf-> a ef' c bf-> a16 r16 } }
+    \new Voice { \voiceTwo { \repeat unfold 2 { d,,8 ef g!4-> } } }
   >> |
-  % bar 21-25
+  % bar 20-24
   \clef "G"
-  \repeat percent 5 { fs''4 fs fs fs } 
+  <<
+    \new Voice { \voiceOne { \repeat percent 5 { fs''4 fs fs fs } } }
+    \new Dynamics \with {
+      alignAboveContext = "lower" 
+      \override DynamicText.extra-offset = #'(0 . -4)
+      \override Hairpin.extra-offset =     #'(0 . -4)
+    } 
+    {
+      s16^\f\> s16 s8 s4 s4 s8. s16\! | s1 | s1 | s1 | s1
+    }
+  >>
+  % bar 25
   fs4 fs fs fs |
   % bar 26
   \clef "F"
