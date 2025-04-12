@@ -3,6 +3,8 @@
 
 "dummy" = {} % sometimes needed to make emacs LilyPond-mode happy
 atempo_par = \markup { \italic "(a tempo)" }
+break_orig = \break
+% break_orig = {}
 dulce = \markup { \italic "dulce" }
 fmarcato = \markup { \dynamic "f" \italic "marcato" }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
@@ -23,15 +25,6 @@ sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
 sempre = \markup { \italic "sempre" }
 sfff = \markup { \dynamic "sfff" }
 slowarpeg = \markup { \italic "(slow arpeggio)" }
-
-leftParenthesis = 
-  -\tweak extra-offset #'(-1.5 . 0)
-  ^\markup \tiny \halign #LEFT "("
-
-rightParenthesis = 
-  -\tweak extra-offset #'(1.5 . 0)
-  ^\markup \tiny \halign #RIGHT ")"
-
 
 \include "hr1.ly"
 \include "hr2.ly"

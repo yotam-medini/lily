@@ -20,7 +20,7 @@
   r1
   % bar 6
   af8->^\mfagitato af g g af8.-> af16 f8 f
-\break
+\break_orig
   % bar 7
   r1
   % bar 8
@@ -31,7 +31,7 @@
   fs4.->\< e8 e4 ds\! |
   % bar 11
   r1 |
-\break
+\break_orig
   % bar 12
   c8->^\mfagitato c b b c8.-> c16 a8 a |
   % bar 13
@@ -47,7 +47,7 @@
   c8^\mpmoltoagitato c ef8.-> ef16 c8 f ef ef |
   % bar 17
   r1 |
-\break
+\break_orig
   % bar 18
   a,8^\mpmoltoagitato a c8.-> c16 a8 d c c
   % bar 19
@@ -60,7 +60,7 @@
   r1
   % bar 23
   fs2.->^\fmarcato g4
-\break
+\break_orig
   % bar 24
   b2-> cs->
   % bar 25
@@ -73,7 +73,7 @@
   r1
   % bar 28
   r  
-\break
+\break_orig
   % bar 29
   \time 6/4
   as8->^\mfagitato b ds es r4 as,8.-> b16 ds8 es r4
@@ -84,7 +84,7 @@
   r
   % bar 32
   r
-\break
+\break_orig
   % bar 33
   r
   % bar 34
