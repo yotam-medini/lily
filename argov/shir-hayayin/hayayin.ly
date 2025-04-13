@@ -53,16 +53,15 @@
   } 
 }
 
+% for pdf
 \score {
   <<
     \new ChoirStaff <<
 
       \new Staff = "sop" <<
-	\set Staff.midiInstrument = #"flute"
         \new Voice = "sopranos" {
           \set Staff.instrumentName = "S"
           <<
-             % \stemUp
                \global \sopMusic
           >>
         }
@@ -70,11 +69,9 @@
       \include "soplyrics.ly"
 
       \new Staff = "alt" <<
-	\set Staff.midiInstrument = #"oboe"
         \new Voice = "altos" {
           \set Staff.instrumentName = "A"
           <<
-             % \stemUp
                \global \altMusic
           >>
         }
@@ -82,7 +79,6 @@
       \include "altlyrics.ly"
 
       \new Staff = "ten" <<
-	\set Staff.midiInstrument = #"cello"
         \clef "G_8"
         \new Voice = "tenors" {
           \set Staff.instrumentName = "T"
@@ -94,7 +90,6 @@
       \include "tenlyrics.ly"
 
       \new Staff = "bas" <<
-	\set Staff.midiInstrument = #"bassoon"
         \clef bass
         \new Voice = "basses" {
           \set Staff.instrumentName = "B"
@@ -118,10 +113,68 @@
       \Staff
     }
   }
-
-  \midi {
-    \context {
-      \Score
-    }
-  }
 }
+
+% % for midi
+% \score {
+%   \unfoldRepeats {
+%   <<
+%     \new ChoirStaff <<
+% 
+%       \new Staff = "sop" <<
+% 	\set Staff.midiInstrument = #"flute"
+%         \new Voice = "sopranos" {
+%           \set Staff.instrumentName = "S"
+%           <<
+%                \global \sopMusic
+%           >>
+%         }
+%       >>
+%       \include "soplyrics.ly"
+% 
+%       \new Staff = "alt" <<
+% 	\set Staff.midiInstrument = #"oboe"
+%         \new Voice = "altos" {
+%           \set Staff.instrumentName = "A"
+%           <<
+%                \global \altMusic
+%           >>
+%         }
+%       >>
+%       \include "altlyrics.ly"
+% 
+%       \new Staff = "ten" <<
+% 	\set Staff.midiInstrument = #"cello"
+%         \clef "G_8"
+%         \new Voice = "tenors" {
+%           \set Staff.instrumentName = "T"
+%           <<
+%                \global \tenMusic
+%           >>
+%         }
+%       >>
+%       \include "tenlyrics.ly"
+% 
+%       \new Staff = "bas" <<
+% 	\set Staff.midiInstrument = #"bassoon"
+%         \clef bass
+%         \new Voice = "basses" {
+%           \set Staff.instrumentName = "B"
+%           <<
+%                \global \basMusic
+%           >>
+%         }
+%       >>
+%       \include "baslyrics.ly"
+% 
+%       \include "lyrics-context.ly"
+%     >>
+%   >>
+%   }
+% 
+%   \midi {
+%     \context {
+%       \Score
+%     }
+%   }
+% }

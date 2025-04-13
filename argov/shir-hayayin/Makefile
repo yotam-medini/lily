@@ -67,6 +67,7 @@ LYS_ALL := $(shell ls -1 ${LYS_ALL_DUP} | sort -u)
 
 ${BASE}-hebrew.pdf ${BASE}.midi: ${LYS_HEBREW}
 	${LILYPOND} -I hebrew ${BASE}-hebrew.ly
+	cp ${BASE}-hebrew.midi ${BASE}.midi
 	ls -lG $@
 
 ${BASE}-latin.pdf: ${LYS_LATIN}
