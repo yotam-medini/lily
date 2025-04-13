@@ -2,10 +2,10 @@
 % \version "2.22.1"
 
 \header {
-  title = "Shir haYayin (The Wine Song) שִׁיר הַיָּיִן"
-  pdftitle = "שִׁיר הַיָּיִן"
+  title = "Shir haYayin (The Wine Song) שִׁיר הַיַּיִן"
+  pdftitle = "שִׁיר הַיַּיִן"
   pdffooxx = "barxx"
-  poet = "Text: נתן אלתרמן"
+  poet = "Text: Nathan Alterman נתן אלתרמן"
 
   % LTR
   composer = \markup { { \bold "Composer: "} "Sasha Argov סשה ארגוב"}

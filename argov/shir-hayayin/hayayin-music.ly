@@ -159,8 +159,8 @@ tenMusic = \relative c' {
   % p1 s3
   r2 |
   b4 b |
-  c2( |
-  d4 c) |
+  c2\( |
+  d4 c\) |
   b2~ |
   b4 r4 |
   % p1s4
@@ -168,7 +168,7 @@ tenMusic = \relative c' {
   fs[ a] b4 |
   \tenCommon
   % p1s5
-  a8[ c] b4 |
+  a8[ c] b[ b] |
   \tenCommon
   % p1s6
   \time 3/4 
