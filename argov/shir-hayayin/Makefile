@@ -75,7 +75,7 @@ ${BASE}-hebrew.pdf ${BASE}.midi: ${LYS_HEBREW}
 	ls -lG $@
 
 ${BASE}-latin.pdf: ${LYS_LATIN}
-	${LILYPOND} -I latin ${BASE}-latin.ly
+	${LILYPOND} -dlatinonly=t -I latin ${BASE}-latin.ly
 	ls -lG $@
 
 ${BASE}-hebrewlatin.pdf: ${LYS_HEBREWLATIN}
