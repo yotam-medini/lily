@@ -12,7 +12,10 @@ global = {
 
 SimFont = \override LyricText.#'font-name = #"generic family italic"
 
-break_orig = \break
+% break_orig = \break
+break_orig = {}
+break_men = \break
+break_men = {}
 
 sopCommonH = \relative c' {
   e'4 d |
@@ -92,11 +95,13 @@ sopMusic = \relative c' {
   \break_orig
   \time 3/4
   fs8[ a] b8[ fs] e4 |
+  \break_men
   \time 2/4
   s2 | s2 | s2 | s2 |
   \break_orig
   % p1s7
   s2 | s2 | s2 | s2
+  \break_men
   \sopCommon % p2s1
   \break_orig
   fs8[ a b b] |
