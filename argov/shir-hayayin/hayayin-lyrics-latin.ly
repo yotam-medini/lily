@@ -64,7 +64,7 @@ tenlyricsLatinText = \lyricmode {
   La -- ma
   La -- ma sha -- la -- ma
   Ein a -- nu sha -- ma
-  le -- ma -- la ba -- ar -- min
+  le -- ma -- la ba -- ar -- mon
   % p1s2
   E -- la
   rak po le -- ma -- ta

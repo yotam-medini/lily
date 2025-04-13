@@ -43,6 +43,8 @@ LYS_HEBREW = ${LYS_COMMON} \
 	hebrew/lyrics-context.ly \
 	hebrew/soplyrics.ly \
 	hebrew/altlyrics.ly \
+	hebrew/tenlyrics.ly \
+	hebrew/baslyrics.ly \
 
 LYS_LATIN = ${LYS_COMMON} ${BASE}-latin.ly \
 	${BASE}-lyrics-latin.ly \
@@ -50,6 +52,8 @@ LYS_LATIN = ${LYS_COMMON} ${BASE}-latin.ly \
 	latin/lyrics-context.ly \
 	latin/soplyrics.ly \
 	latin/altlyrics.ly \
+	latin/tenlyrics.ly \
+	latin/baslyrics.ly \
 
 LYS_HEBREWLATIN = ${LYS_COMMON} ${BASE}-hebrewlatin.ly \
 	${BASE}-lyrics-hebrew.ly \
