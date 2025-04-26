@@ -661,6 +661,7 @@
         shortInstrumentName = "T"
       } {
         \new Voice = "tenor" {
+          \clef "G_8"
           \"tenor2"
           \"dummy"
         }

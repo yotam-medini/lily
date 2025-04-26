@@ -7,9 +7,46 @@
   \numericTimeSignature
 }
 
-"solobaritone3" =  \relative c'' {
+"solobaritone3" =  \relative c {
   \"global3"
   \"dummy"
+  r1
+  % bar 2
+  r
+  % bar 3
+  r
+  % bar 4
+  r
+  % bar 5
+  r
+  % bar 6
+  r
+  % bar 7
+  r
+  % bar 8
+  r8 e16 e ef ef32 ef16 r8. e16 g ef8 ef16 r r32
+  % bar 9
+  r8 e16 e gf8 gf g8. d'16 df8 df
+  % bar 10
+  r b16 b df8. df16 f8. d16 d8 r
+  % bar 11
+  r1
+  % bar 12
+  r
+  % bar 13
+  r
+  % bar 14
+  r
+  % bar 15
+  r
+  % bar 16
+  r8 d16 d df8 df2 r8
+  % bar 17
+  r d16 bf' df,8 df2 r8
+  % bar 18
+  r d16 d ef8 d d8. df16 df8 a
+  % bar 19
+  r bf16 d, a'8 a c8. bf16 bf8 a
 }
 
 "soprano3" = \relative c' {
@@ -21,6 +58,7 @@
   r ef16 ef f8. f16 gf8. df'16 f,8 f
   % bar 3
   r1
+  \break_orig
   % bar 4
   r8 bf16 bf c8 c r df16 ef c8 c
   % bar 5
@@ -29,6 +67,7 @@
   r1
   % bar 7
   r
+  \break_orig
   % bar 8
   r
   % bar 9
@@ -73,6 +112,7 @@
   r g16 g a8. a16 bf8. bf16 a8 a
   % bar 14
   r1
+  \break_orig
   % bar 15
   r
   % bar 16
@@ -81,7 +121,7 @@
   r4. bf16 bf bf4 a
 }
 
-"tenor3" = \relative c {
+"tenor3" = \relative c' {
   \"global3"
   \"dummy"
   r4 df8 df b4 bf
@@ -124,13 +164,13 @@
   % bar 3
   r1
   % bar 4
-  r4 <bf bf>8 <bf bf> <bf bf>4 <bf bf>
+  r4 <bf bf'>8 <bf bf'> <bf bf'>4 <bf bf'>
   % bar 5
-  r <bf bf>8 <bf bf> <bf bf>4 <bf bf>
+  r <bf bf'>8 <bf bf'> <bf bf'>4 <bf bf'>
   % bar 6
-  r4. af16 af gf4 af
+  r4 r8 af'16 af gf4 af
   % bar 7
-  r4. af16 af gf4 af
+  r4 r8 af16 af gf4 af
   % bar 8
   r1
   % bar 9
@@ -185,9 +225,12 @@
     composer = ##f
   }
   <<
-    \new Staff = "solo" {
-      \set Staff.instrumentName = #"Baritone solo"
+    \new Staff = "solo" \with {
+      instrumentName = "Baritone"
+      shortInstrumentName = "Bar."
+    } { 
       \new Voice = "solo" {
+        \clef bass
         \"solobaritone3"
         \"dummy"
       }
@@ -200,8 +243,10 @@
       }
     }
     \new ChoirStaff <<
-      \new Staff = "soprano" {
-	\set Staff.instrumentName = #"Soprano"
+      \new Staff = "soprano" \with {
+        instrumentName = "Soprano"
+        shortInstrumentName = "S"
+      } {
         \new Voice = "soprano" {
           \"soprano3"
           \"dummy"
@@ -214,8 +259,10 @@
           \"dummy"
         }
       }
-      \new Staff = "alto" {
-        \set Staff.instrumentName = #"Alto"
+      \new Staff = "alto" \with {
+        instrumentName = "Alto"
+        shortInstrumentName = "A"
+      } {
         \new Voice = "alto" {
           \"alto3"
           \"dummy"
@@ -228,9 +275,12 @@
           \"dummy"
         }
       }
-      \new Staff = "tenor" {
-        \set Staff.instrumentName = #"Tenor" \clef "G_8"
+      \new Staff = "tenor" \with {
+        instrumentName = "Tenor"
+        shortInstrumentName = "T"
+      } {
         \new Voice = "tenor" {
+          \clef "G_8"
           \"tenor3"
           \"dummy"
         }
@@ -242,9 +292,12 @@
           \"dummy"
         }
       }
-      \new Staff = "bass" {
-        \set Staff.instrumentName = #"Bass" \clef bass
+      \new Staff = "bass" \with {
+        instrumentName = "Bass" 
+        shortInstrumentName = "B"
+      } {
         \new Voice = "bass" {
+          \clef bass
           \"bass3"
           \"dummy"
         }

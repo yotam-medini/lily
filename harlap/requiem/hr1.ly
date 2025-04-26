@@ -668,8 +668,10 @@
     composer = ##f
   }
   <<
-    \new Staff = "solo" {
-      \set Staff.instrumentName = #"Sop solo"
+    \new Staff = "solo" \with {
+      instrumentName = "Sop solo"
+      shortInstrumentName = "Sop"
+    } {
       \new Voice = "solo" {
         \"soloSoprano1"
         \"dummy"
@@ -683,8 +685,10 @@
       }
     }
     \new ChoirStaff <<
-      \new Staff = "soprano" {
-	\set Staff.instrumentName = #"Soprano"
+      \new Staff = "soprano" \with {
+        instrumentName = "Soprano"
+        shortInstrumentName = "S"
+      } {
         \new Voice = "soprano" {
           \"soprano1"
           \"dummy"
@@ -697,8 +701,10 @@
           \"dummy"
         }
       }
-      \new Staff = "alto" {
-        \set Staff.instrumentName = #"Alto"
+      \new Staff = "alto" \with {
+        instrumentName = "Alto"
+        shortInstrumentName = "A"
+      } {
         \new Voice = "alto" {
           \"alto1"
           \"dummy"
@@ -711,8 +717,11 @@
           \"dummy"
         }
       }
-      \new Staff = "tenor" {
-        \set Staff.instrumentName = #"Tenor" \clef "G_8"
+      \new Staff = "tenor" \with {
+        instrumentName = "Tenor"
+        shortInstrumentName = "T"
+      } {
+        \clef "G_8"
         \new Voice = "tenor" {
           \"tenor1"
           \"dummy"
@@ -725,8 +734,11 @@
           \"dummy"
         }
       }
-      \new Staff = "bass" {
-        \set Staff.instrumentName = #"Bass" \clef bass
+      \new Staff = "bass" \with {
+        instrumentName = "Bass"
+        shortInstrumentName = "B"
+      } {
+        \clef bass
         \new Voice = "bass" {
           \"bass1"
           \"dummy"
