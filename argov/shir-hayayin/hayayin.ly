@@ -117,6 +117,7 @@
     % \override LyricText #'font-size = #1.81
     \context {
       \Staff
+      \RemoveEmptyStaves
     }
   }
 }

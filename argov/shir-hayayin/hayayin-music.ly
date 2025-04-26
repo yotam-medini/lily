@@ -97,11 +97,14 @@ sopMusic = \relative c' {
   fs8[ a] b8[ fs] e4 |
   \break_men
   \time 2/4
-  s2 | s2 | s2 | s2 |
+  s2 | 
+  \break
+  s2 | s2 | s2 |
   \break_orig
   % p1s7
   s2 | s2 | s2 | s2
   \break_men
+  \break
   \sopCommon % p2s1
   \break_orig
   fs8[ a b b] |
