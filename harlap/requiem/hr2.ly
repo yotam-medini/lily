@@ -618,7 +618,7 @@
 
 "score2" = \score {
   \header {
-    title = "Dies Irae"
+    title = "II. Dies Irae"
     subtitle = ##f
     composer = ##f
   }

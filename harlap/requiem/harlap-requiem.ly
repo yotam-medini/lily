@@ -28,6 +28,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 
 \include "hr1.ly"
 \include "hr2.ly"
+\include "hr3.ly"
 
 \paper{
   #(set-paper-size "a4")
@@ -66,4 +67,5 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   \markup { \vspace #1 }
   \"score1"
   \"score2"
+  \"score3"
 }
