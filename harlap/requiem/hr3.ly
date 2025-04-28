@@ -24,13 +24,14 @@
   % bar 7
   r
   % bar 8
-  r8 e16 e ef ef32 ef16 r8. e16 g ef8 ef16 r r32
+  r8\fermata e16 e ds8 ds16 r16 r8 e16 g ds8 ds16 r16 |
   % bar 9
-  r8 e16 e gf8 gf g8. d'16 df8 df
+  r8 e16( e fs8 fs g8. d'16 cs8 cs) |
   % bar 10
-  r b16 b df8. df16 f8. d16 d8 r
+  r8 b16( b cs8. cs16 f!8. d16 d8 cs) |
   % bar 11
   r1
+  \break_orig
   % bar 12
   r
   % bar 13
@@ -40,13 +41,14 @@
   % bar 15
   r
   % bar 16
-  r8 d16 d df8 df2 r8
+  r8 d,16 d cs8 cs2 r8
   % bar 17
-  r d16 bf' df,8 df2 r8
+  r d16 bf' cs,8 cs2 r8
   % bar 18
-  r d16 d ef8 d d8. df16 df8 a
+  r d16 d ef'8 d d8. cs16 cs8 a
+  \break_orig
   % bar 19
-  r bf16 d, a'8 a c8. bf16 bf8 a
+  r bf16 d, a'8 a c!8. bf16 bf8 a
 }
 
 "soprano3" = \relative c' {
@@ -80,6 +82,8 @@
   r8 g16 g a8 a r bf16 c a8 a
   % bar 13
   r g16 g a8. a16 bf8. f'16 a,8 a
+  % bar 14 
+  r1 |
 }
 
 "alto3" = \relative c' {
@@ -119,6 +123,7 @@
   r4. bf,16 bf bf4 a
   % bar 17
   r4. bf16 bf bf4 a
+  R1*6
 }
 
 "tenor3" = \relative c' {
@@ -152,7 +157,9 @@
   % bar 14
   r8 g,16 g a8 a r2
   % bar 15
-  r8 g16 bf a8 a
+  r8 g16 bf a8 a r2 |
+  r1 | r1 |
+  R1*5
 }
 
 "bass3" = \relative c {
@@ -191,16 +198,47 @@
   r4. g,16 g g4 g
   % bar 17
   r4. g16 g g4 g
+  R1*5
 }
 
-"pianoRight3" = \relative c'' {
+"pianoRight3" = \relative c' {
   \"global3"
   \"dummy"
+  % bar 1
+  r8 ef <ef f>4 <ef gf> <ef f> |
+  r8 ef <ef f>4 <ef gf> <ef f> |
+  r8     \tuplet 3/2 {ef16[ af ef]}
+    bf'8[ \tuplet 3/2 {af16 df gf]}
+    ef!8[ \tuplet 3/2 {af,16 df gf]}
+    ef8[ \tuplet 3/2 {af16 df gf]} |
+  % bar 4
+  <<
+    \new Voice { \voiceOne { <ef f>1 } }
+    \new Voice { \voiceTwo { r8 bf, <bf c>4 <bf df> <bf c> } }
+  >> |
+  % bar 5
+  r8 bf <bf c>4 <bf df> <bf c>
 }
 
 "pianoLeft3" = \relative c {
- \"global3"
+  \"global3"
   \"dummy"
+  \repeat unfold 2 {
+  <<
+    \new Voice { \voiceOne { r4 df' cf <bf cf> } }
+    \new Voice { \voiceTwo { <gf,, bf ef>1 } }
+  >> |
+  }
+  <<
+    \new Voice { \voiceOne {
+      r4 \tuplet 3/2 {ef''16[ af ef} bf'8]
+      \clef "G"
+      \tuplet 3/2 {af16[ df gf} ef8]
+      \tuplet 3/2 {af16[ df gf} ef8]
+      \clef bass
+    } }
+    \new Voice { \voiceTwo { <gf,, bf ef>1 } }
+  >>
 }
 
 "lyricsSoloBar3" = \lyricmode {
