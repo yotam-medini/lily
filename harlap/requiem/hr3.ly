@@ -217,7 +217,12 @@
     \new Voice { \voiceTwo { r8 bf, <bf c>4 <bf df> <bf c> } }
   >> |
   % bar 5
-  r8 bf <bf c>4 <bf df> <bf c>
+  r8 bf <bf c>4 <bf df> <bf c> |
+  % bar 6
+  r8 bf, <bf c>4 <bf df> <bf ef> |
+  % bar 7
+  r8 bf <bf c>4 <bf df> <bf ef> |
+  \clef bass 
 }
 
 "pianoLeft3" = \relative c {
@@ -238,6 +243,26 @@
       \clef bass
     } }
     \new Voice { \voiceTwo { <gf,, bf ef>1 } }
+  >>
+  % bar 4
+  <<
+    \new Voice { \voiceOne { r4 af' gf <f gf> } }
+    \new Voice { \voiceTwo { <bf,,, f' bf>1 } }
+  >>
+  % bar 5
+  <<
+    \new Voice { \voiceOne { r4 af''' gf <f gf> } }
+    \new Voice { \voiceTwo { <bf,,, f' bf>1 } }
+  >>
+  % bar 6
+  <<
+    \new Voice { \voiceOne { r4 af'' gf <f af> } }
+    \new Voice { \voiceTwo { <bf,, f' bf>1 } }
+  >>
+  % bar 7
+  <<
+    \new Voice { \voiceOne { r4 af'' gf <f af> } }
+    \new Voice { \voiceTwo { <bf,, f' bf>1 } }
   >>
 }
 
