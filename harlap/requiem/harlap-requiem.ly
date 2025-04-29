@@ -1,4 +1,4 @@
-\version "2.22.1"
+\version "2.24.3"
 \include "english.ly"
 
 "dummy" = {} % sometimes needed to make emacs LilyPond-mode happy
@@ -37,8 +37,8 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
 
   oddFooterMarkup = \markup {
       \hspace #20
-      \on-the-fly #last-page { (typeset via \italic "LilyPond"
-				by {\small\typewriter "yotam.medini@gmail.com"}
+      \if \on-last-page { (typeset via \italic "LilyPond"
+                           by {\small\typewriter "yotam.medini@gmail.com"}
       \small \typewriter
       \hspace #2
       \small

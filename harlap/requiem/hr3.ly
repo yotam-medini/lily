@@ -251,8 +251,10 @@
   >>
   % bar 5
   <<
+    % \set Staff.pedalSustainStyle = #'mixed
     \new Voice { \voiceOne { r4 af''' gf <f gf> } }
     \new Voice { \voiceTwo { <bf,,, f' bf>1 } }
+    \new Voice { \voiceThree { s8\sustainOn s4. s4. s8\sustainOff } }
   >>
   % bar 6
   <<
@@ -373,9 +375,16 @@
         }
       }
     >>
-    \new PianoStaff \with {instrumentName = "Pno." } <<
-      \new Staff = "upper" { \clef treble \"pianoRight3" }
-      \new Staff = "lower" { \clef bass \"pianoLeft3" }
+    \new PianoStaff \with { instrumentName = "Pno." } <<
+      \new Staff = "upper" { \clef treble \"pianoRight3" \"dummy" }
+      \new Staff = "lower" \with {
+	\consists "Sustain_pedal_engraver"
+        pedalSustainStyle = #'mixed
+      } { 
+        % \override Staff.SustainPedalLineSpanner.staff-padding = #5
+        \clef bass 
+        \"pianoLeft3" \"dummy" 
+      }
     >>
   >>
   \layout {
