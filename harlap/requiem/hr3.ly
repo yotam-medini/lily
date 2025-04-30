@@ -236,7 +236,16 @@
     g'8[ \tuplet 3/2 {f16 bf ef]}
     c!8[ \tuplet 3/2 {f,16 bff ef]}
     c8[ \tuplet 3/2 {f16 bf ef]} |
-  
+  % bar 12
+  <<
+    \new Voice { \voiceOne { <c d>1-> } }
+    \new Voice { \voiceTwo { r8 g, <g a>4 <g bf> <g a> } }
+  >> |
+  % bar 13
+  r8 g <g a>4 <g bf> <g a> |
+  % bar 14
+  r8 g, <g a>4 <g bf> <g c> |
+  \break_orig
 }
 
 "pianoLeft3" = \relative c {
@@ -300,7 +309,23 @@
    \new Voice { \voiceThree { 
      s16\sustainOn s16 s8 s4 s4 s8. s16\sustainOff
    } }
-  >>
+  >> |
+  % bar 12
+  <<
+    \new Voice { \voiceOne { r4 f''' ef <d ef> } }
+    \new Voice { \voiceTwo { <g,,, d' g>1-> } }
+    \new Voice { \voiceThree { s16\sustainOn s16 s8 s4 s4 s8. s16\sustainOff } }
+  >> |
+  % bar 13
+  <<
+    \new Voice { \voiceOne { r4 f''' ef <d ef> } }
+    \new Voice { \voiceTwo { <g,,, d' g>1-> } }
+  >> |
+  % bar 14
+  <<
+    \new Voice { \voiceOne { r4 f'' ef <d ef> } }
+    \new Voice { \voiceTwo { <g,, d' g>1-> } }
+  >> |
 }
 
 "lyricsSoloBar3" = \lyricmode {

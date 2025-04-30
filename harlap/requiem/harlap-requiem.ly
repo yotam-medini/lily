@@ -36,14 +36,18 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
   % system-system-spacing.basic-distance = #8
 
   oddFooterMarkup = \markup {
-      \hspace #20
-      \if \on-last-page { (typeset via \italic "LilyPond"
-                           by {\small\typewriter "yotam.medini@gmail.com"}
+    \hspace #20
+    % \onLastPage { LilyPond 2.25
+    \if \on-last-page {
+      (typeset via \italic "LilyPond"
+        by {\small\typewriter "yotam.medini@gmail.com"}
       \small \typewriter
       \hspace #2
       \small
       \simple #(strftime "%Y-%m-%d %H:%M:%S)" (localtime (current-time)))
-      }
+    } else {
+      \with-dimensions #'(0 . 0) #'(0 . 0) \transparent " "
+    }
   }
   evenFooterMarkup = \oddFooterMarkup
 }
