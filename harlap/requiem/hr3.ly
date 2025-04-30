@@ -2,7 +2,7 @@
 "global3" = {
   \key c \major
   \time 4/4
-  \tempo 4 = 55
+  \tempo "March funebre" 4 = 55
   \dynamicUp
   \numericTimeSignature
 }
@@ -24,11 +24,12 @@
   % bar 7
   r
   % bar 8
+  \tempo 4 = 45
   r8\fermata e16 e ds8 ds16 r16 r8 e16 g ds8 ds16 r16 |
   % bar 9
   r8 e16( e fs8 fs g8. d'16 cs8 cs) |
   % bar 10
-  r8 b16( b cs8. cs16 f!8. d16 d8 cs) |
+  r8 b16( b cs8. cs16 f!8. d16 d8 cs) \bar "||" |
   % bar 11
   r1
   \break_orig
@@ -222,7 +223,20 @@
   r8 bf, <bf c>4 <bf df> <bf ef> |
   % bar 7
   r8 bf <bf c>4 <bf df> <bf ef> |
-  \clef bass 
+  \clef bass
+  % bar 8
+  <ds, e>1->\sf\fermata
+  % bar 9
+  r8 e8 <e fs>4-- <e fs g>2-- |
+  % bar 10
+  r8 b'8-- <b cs>4-- <b cs d>2\fermata \clef "G" \bar "||" |
+  % bar 11
+  \tempo "I" 4 = 55
+  r8     \tuplet 3/2 {c16[ f c]}
+    g'8[ \tuplet 3/2 {f16 bf ef]}
+    c!8[ \tuplet 3/2 {f,16 bff ef]}
+    c8[ \tuplet 3/2 {f16 bf ef]} |
+  
 }
 
 "pianoLeft3" = \relative c {
@@ -243,18 +257,19 @@
       \clef bass
     } }
     \new Voice { \voiceTwo { <gf,, bf ef>1 } }
+    \new Voice { \voiceThree { s8\sustainOn s4. s4. s8\sustainOff } }
   >>
   % bar 4
   <<
     \new Voice { \voiceOne { r4 af' gf <f gf> } }
     \new Voice { \voiceTwo { <bf,,, f' bf>1 } }
+    \new Voice { \voiceThree { s8\sustainOn s4. s4. s8\sustainOff } }
   >>
   % bar 5
   <<
     % \set Staff.pedalSustainStyle = #'mixed
     \new Voice { \voiceOne { r4 af''' gf <f gf> } }
     \new Voice { \voiceTwo { <bf,,, f' bf>1 } }
-    \new Voice { \voiceThree { s8\sustainOn s4. s4. s8\sustainOff } }
   >>
   % bar 6
   <<
@@ -265,6 +280,26 @@
   <<
     \new Voice { \voiceOne { r4 af'' gf <f af> } }
     \new Voice { \voiceTwo { <bf,, f' bf>1 } }
+  >>
+  % bar 8
+  <e, e' f as b!>16-> r16 r8 r4 r2\fermata |
+  % bar 9
+  <e b' e>1\mf |
+  % bar 10
+  <b' fs' g>1\fermata \bar "||" |
+  % bar 11
+  <<
+   \new Voice { \voiceOne { 
+      r4 \tuplet 3/2 {c'16[ f c} g'8]
+      \clef "G"
+      \tuplet 3/2 {f16[ bf ef} c8]
+      \tuplet 3/2 {f16[ bf ef} c8]
+      \clef bass
+   } }
+   \new Voice { \voiceTwo {  <c,,,, g' c!>1-> } }
+   \new Voice { \voiceThree { 
+     s16\sustainOn s16 s8 s4 s4 s8. s16\sustainOff
+   } }
   >>
 }
 
