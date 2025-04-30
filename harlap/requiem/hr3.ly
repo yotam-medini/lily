@@ -44,12 +44,15 @@
   % bar 16
   r8 d,16 d cs8 cs2 r8
   % bar 17
-  r d16 bf' cs,8 cs2 r8
+  r d16 bf' cs,8 cs2 r8 \bar "||" |
   % bar 18
-  r d16 d ef'8 d d8. cs16 cs8 a
+  \tempo Grave 4 = 40
+  r d16 d ef'8 d d8. cs16 cs8 a  \bar "||" |
   \break_orig
   % bar 19
-  r bf16 d, a'8 a c!8. bf16 bf8 a
+  r bf16 d, a'8 a c!8. bf16 bf8 a |
+  % bar 20
+  R1*4
 }
 
 "soprano3" = \relative c' {
@@ -246,6 +249,27 @@
   % bar 14
   r8 g, <g a>4 <g bf> <g c> |
   \break_orig
+  % bar 15
+  r8 g <g a>4 <g bf> <g c> |
+  \clef "F"
+  % bar 16
+  r8 d8 <b cs d>2. |
+  % bar 17
+  r8 d8 <b cs d>2. \bar "||" |
+  % bar 18
+  r1  \bar "||" |
+  % bar 19
+  R1 |
+  % bar 20
+  \tempo "A Tempo" 4 = 52
+  \clef "F"
+  r8 g16( bf) <g a>4 <g bf> <g c> |
+  % bar 21
+  r8 cs16( d) ef8( d~ d2) |
+  % bar 22
+  r1
+  % bar 22
+  r1\fermata \bar "|." |
 }
 
 "pianoLeft3" = \relative c {
@@ -323,9 +347,45 @@
   >> |
   % bar 14
   <<
-    \new Voice { \voiceOne { r4 f'' ef <d ef> } }
+    \new Voice { \voiceOne { r4 f'' ef <d f> } }
     \new Voice { \voiceTwo { <g,, d' g>1-> } }
   >> |
+  % bar 15
+  <<
+    \new Voice { \voiceOne { r4 f'' ef <d f> } }
+    \new Voice { \voiceTwo { <g,, d' g>1-> } }
+  >> |
+  % bar 16
+  <<
+    \new Voice { \voiceOne { r2 r8 bf'4( fs8) } }
+    \new Voice { \voiceTwo { <g, d' g>1-> } }
+  >> |
+  % bar 17
+  <<
+    \new Voice { \voiceOne { r2 r8 ef'4( d8) } }
+    \new Voice { \voiceTwo { <g, d' g>1-> } }
+  >> \bar "||" 
+  % bar 18
+  g1 \bar "||" |
+  % bar 19
+  R1 |
+  % bar 20
+  <<
+    \new Voice { \voiceOne { r4 r8 f''8 ef4 <b d> } }
+    \new Voice { \voiceTwo { <g, d' g>1 } }
+  >>  
+  % bar 21
+  <<
+    \new Voice { \voiceOne { r2 r8 <a'! bf>4( fs8) } }
+    \new Voice { \voiceTwo { <g, d' g>1 } }
+  >>  
+  % bar 22
+  <<
+    \new Voice { \voiceOne { fs'8--( g4.)  g2-- } }
+    \new Voice { \voiceTwo { <g, d'>2-- <g d'>2-- } }
+  >>  
+  % bar 23
+  <g d' g>1--\fermata \bar "|." |
 }
 
 "lyricsSoloBar3" = \lyricmode {
