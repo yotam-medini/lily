@@ -2,7 +2,8 @@
 \include "english.ly"
 
 "dummy" = {} % sometimes needed to make emacs LilyPond-mode happy
-atempo_par = \markup { \italic "(a tempo)" }
+atempo = \markup { \italic "(a tempo)" }
+Atempo = \markup { \italic "(A tempo)" }
 break_orig = \break
 % break_orig = {}
 dulce = \markup { \italic "dulce" }

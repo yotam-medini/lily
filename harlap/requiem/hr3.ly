@@ -27,9 +27,9 @@
   \tempo 4 = 45
   r8\fermata e16 e ds8 ds16 r16 r8 e16 g ds8 ds16 r16 |
   % bar 9
-  r8 e16\( e fs8 fs g8. d'16 cs8 cs\) |
+  r8^\Atempo e16\(\< e fs8 fs g8. d'16 cs8 cs\)\! |
   % bar 10
-  r8 b16\( b cs8. cs16 f!8. d16 d8 cs\) \bar "||" |
+  r8\f b16\( b cs8. cs16 f!8. d16 d8 cs\fermata\) \bar "||" |
   % bar 11
   r1
   \break_orig
@@ -225,28 +225,42 @@
   >>  
   % bar 4
   <<
-    \new Voice { \voiceOne { <ef f>1 } }
+    \new Voice { \voiceOne { <ef f>1-> } }
     \new Voice { \voiceTwo { r8 bf, <bf c>4 <bf df> <bf c> } }
   >> |
   % bar 5
   r8 bf <bf c>4 <bf df> <bf c> |
-  % bar 6
-  r8 bf, <bf c>4 <bf df> <bf ef> |
-  % bar 7
-  r8 bf <bf c>4 <bf df> <bf ef> |
-  \clef bass
+  <<
+    \new Voice { \voiceOne {  
+      % bar 6
+      r8 bf, <bf c>4 <bf df> <bf ef> |
+      % bar 7
+      r8 bf <bf c>4 <bf df> <bf ef> |
+    } }
+    \new Dynamics \with { alignBelowContext = "upper" } {
+      r8\mf\> s8 s4 s2 | s2 s4 s4\p\!
+    }
+  >>  
+  \clef bass |
   % bar 8
   <ds, e>1->\sf\fermata
   % bar 9
   r8 e8 <e fs>4-- <e fs g>2-- |
   % bar 10
-  r8 b'8-- <b cs>4-- <b cs d>2\fermata \clef "G" \bar "||" |
+  <<
+    \new Voice { \voiceOne {  
+      r8 b'8-- <b cs>4-- <b cs d>2\fermata
+    } }
+    \new Dynamics \with { alignBelowContext = "upper" } {
+      r8 s8\< s4 s4 s8 \tuplet 3/2 {s16 s\!\f s]}
+    }
+  >>   \clef "G" \bar "||" |
   % bar 11
   \tempo "I" 4 = 55
-  r8     \tuplet 3/2 {c16[ f c]}
+  r8\f     \tuplet 3/2 {c16[ f c]}
     g'8[ \tuplet 3/2 {f16 bf ef]}
-    c!8[ \tuplet 3/2 {f,16 bff ef]}
-    c8[ \tuplet 3/2 {f16 bf ef]} |
+    c!8->[ \tuplet 3/2 {f,16 bff ef]}
+    c8->[ \tuplet 3/2 {f16 bf\ff ef]} |
   % bar 12
   <<
     \new Voice { \voiceOne { <c d>1-> } }
@@ -304,24 +318,24 @@
   % bar 4
   <<
     \new Voice { \voiceOne { r4 af' gf <f gf> } }
-    \new Voice { \voiceTwo { <bf,,, f' bf>1 } }
+    \new Voice { \voiceTwo { <bf,,, f' bf>1-> } }
     \new Voice { \voiceThree { s8\sustainOn s4. s4. s8\sustainOff } }
   >>
   % bar 5
   <<
     % \set Staff.pedalSustainStyle = #'mixed
     \new Voice { \voiceOne { r4 af''' gf <f gf> } }
-    \new Voice { \voiceTwo { <bf,,, f' bf>1 } }
+    \new Voice { \voiceTwo { <bf,,, f' bf>1-> } }
   >>
   % bar 6
   <<
     \new Voice { \voiceOne { r4 af'' gf <f af> } }
-    \new Voice { \voiceTwo { <bf,, f' bf>1 } }
+    \new Voice { \voiceTwo { <bf,, f' bf>1-> } }
   >>
   % bar 7
   <<
     \new Voice { \voiceOne { r4 af'' gf <f af> } }
-    \new Voice { \voiceTwo { <bf,, f' bf>1 } }
+    \new Voice { \voiceTwo { <bf,, f' bf>1-> } }
   >>
   % bar 8
   <e, e' f as b!>16-> r16 r8 r4 r2\fermata |

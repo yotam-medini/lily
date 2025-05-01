@@ -94,7 +94,7 @@
   % bar 36
   r
   % bar 37
-  as,8.->[^\atempo_par b16] ds8->[ es-.] r2\fermata \bar "|."
+  as,8.->[^\atempo b16] ds8->[ es-.] r2\fermata \bar "|."
 }
 
 "alto2" = \relative c' {
