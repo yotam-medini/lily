@@ -59,14 +59,14 @@
   \"global3"
   \"dummy"
   \time 4/4
-  r8 ef16 ef f8 f r gf16 af f8 f
+  r8\f ef16 ef f8 f r gf16 af f8 f
   % bar 2
   r ef16 ef f8. f16 gf8. df'16 f,8 f
   % bar 3
   r1
   \break_orig
   % bar 4
-  r8 bf16 bf c8 c r df16 ef c8 c
+  r8 bf16\f bf c8 c r df16 ef c8 c
   % bar 5
   r bf16 bf c8. c16 df8. af'16 c,8 c
   % bar 6
@@ -93,13 +93,13 @@
 "alto3" = \relative c' {
   \"global3"
   \"dummy"
-  r8 ef16 ef f8 f r gf16 af f8 f
+  r8\f ef16 ef f8 f r gf16 af f8 f
   % bar 2
   r ef16 ef f8. f16 gf8. gf16 f8 f
   % bar 3
   r1
   % bar 4
-  r4 af8 af gf4 f
+  r4 af8\f af gf4 f
   % bar 5
   r af8 af gf4 f
   % bar 6
@@ -133,19 +133,19 @@
 "tenor3" = \relative c' {
   \"global3"
   \"dummy"
-  r4 df8 df b4 bf
+  r4 df8\f df b4 bf
   % bar 2
   r df8 df b4 bf
   % bar 3
   r1
   % bar 4
-  r8 bf16 bf c8 c r df16 ef c8 c
+  r8 bf16\f bf c8 c r df16 ef c8 c
   % bar 5
   r bf16 bf c8. c16 df8. df16 c8 c
   % bar 6
-  r bf16 bf c8 c r2
+  r bf16\f\> bf c8 c r2\!
   % bar 7
-  r8 bf16 df c8 c r2
+  r8 bf16\mp\> df c8 c r2\!
   % bar 8
   r1
   % bar 9
@@ -169,19 +169,19 @@
 "bass3" = \relative c {
   \"global3"
   \"dummy"
-  r4 ef8 ef ef4 ef
+  r4 ef8\f ef ef4 ef
   % bar 2
   r ef8 ef ef4 ef
   % bar 3
   r1
   % bar 4
-  r4 <bf bf'>8 <bf bf'> <bf bf'>4 <bf bf'>
+  r4 <bf bf'>8\f <bf bf'> <bf bf'>4 <bf bf'>
   % bar 5
   r <bf bf'>8 <bf bf'> <bf bf'>4 <bf bf'>
   % bar 6
-  r4 r8 af'16 af gf4 af
+  r4 r8 af'16\mf\> af gf4 af\!
   % bar 7
-  r4 r8 af16 af gf4 af
+  r4 r8 af16\mp\> af gf4 af\!
   % bar 8
   r1
   % bar 9
@@ -211,10 +211,18 @@
   % bar 1
   r8 ef <ef f>4 <ef gf> <ef f> |
   r8 ef <ef f>4 <ef gf> <ef f> |
-  r8     \tuplet 3/2 {ef16[ af ef]}
-    bf'8[ \tuplet 3/2 {af16 df gf]}
-    ef!8[ \tuplet 3/2 {af,16 df gf]}
-    ef8[ \tuplet 3/2 {af16 df gf]} |
+  % bar 3
+  <<
+    \new Voice { \voiceOne {  
+      r8     \tuplet 3/2 {ef16[ af ef]}
+        bf'8->[ \tuplet 3/2 {af16 df gf]}
+        ef!8->[ \tuplet 3/2 {af,16 df gf]}
+        ef8->[ \tuplet 3/2 {af16 dff gf]} |
+    } }
+    \new Dynamics \with { alignBelowContext = "upper" } {
+      r8 s8\f\< s4 s4 s8 \tuplet 3/2 {s16 s\!\ff s]}
+    }
+  >>  
   % bar 4
   <<
     \new Voice { \voiceOne { <ef f>1 } }
@@ -278,14 +286,15 @@
   \repeat unfold 2 {
   <<
     \new Voice { \voiceOne { r4 df' cf <bf cf> } }
-    \new Voice { \voiceTwo { <gf,, bf ef>1 } }
+    \new Voice { \voiceTwo { <gf,, bf ef>1-> } }
   >> |
   }
+  % bar 3
   <<
     \new Voice { \voiceOne {
-      r4 \tuplet 3/2 {ef''16[ af ef} bf'8]
+      r4 \tuplet 3/2 {ef''16[ af ef} bf'8->]
       \clef "G"
-      \tuplet 3/2 {af16[ df gf} ef8]
+      \tuplet 3/2 {af16[ df gf} ef8->]
       \tuplet 3/2 {af16[ df gf} ef8]
       \clef bass
     } }
