@@ -223,16 +223,345 @@
 "alto4" = \relative c' {
   \"global4"
   \"dummy"
+  r1
+  % bar 2
+  ef4. ef16 d e4 ef
+  % bar 3
+  r ef8. b'16 bf4 e,
+  % bar 4
+  b'4. b'16 bf bf4 a
+  % bar 5
+  af4. af16 ef d4 df
+  % bar 6
+  r1
+  % bar 7
+  r
+  % bar 8
+  \time 3/2
+  r1.
+  % bar 9
+  r
+  % bar 10
+  \time 2/2
+  r1
+  % bar 11
+  r
+  % bar 12
+  r
+  % bar 13
+  r
+  % bar 14
+  r
+  % bar 15
+  r
+  % bar 16
+  r
+  % bar 17
+  r
+  % bar 18
+  \time 3/2
+  r1.  % bar 19
+  \time 2/2
+  e4. e16 ef f4 e
+  % bar 20
+  r e8. c'16 b4 f
+  % bar 21
+  c'4. c'16 b b4 bf
+  % bar 22
+  a4. a16 e ef4 d
+  % bar 23
+  r a8 a a4 b8. r16
+  % bar 24
+  r1
+  % bar 25
+  r
+  % bar 26
+  r
+  % bar 27
+  r
+  % bar 28
+  \time 3/2
+  r r4 b8 c  % bar 29
+  \time 2/2
+  af4. a8 ef4. e8
+  % bar 30
+  g4 f4. f16 r g8 af
+  % bar 31
+  g2 g8. r16 f8 af
+  % bar 32
+  g1
+  % bar 33
+  r4. df8 d4 e
+  % bar 34
+  bf4. f'8 g4 af
+  % bar 35
+  a8 a a a e4 f
+  % bar 36
+  r f8 f e2
+  % bar 37
+  f e
+  % bar 38
+  d2. d8 d32 r16 r32
+  % bar 39
+  f2 e
+  % bar 40
+  d1
+  % bar 41
+  r4 a' bf d
+  % bar 42
+  d4. d8 d2
+  % bar 43
+  d4 d d4. d8
+  % bar 44
+  d4 d2 d8. r16
+  % bar 45
+  d4 d d2
+  % bar 46
+  d1
+  % bar 47
+  d4. d8 d4 d
+  % bar 48
+  d d2 d8. r16
+  % bar 49
+  d4 d d2
+  % bar 50
+  d2. d8 d32 r16 r32
+  % bar 51
+  d2. d8. r16
+  % bar 52
+  d2. d8. r16
+  % bar 53
+  d2. d8.
 }
 
-"tenor4" = \relative c' {
+"tenor4" = \relative c {
   \"global4"
   \"dummy"
+  r1
+  % bar 2
+  b'4. b'16 bf g4 af
+  % bar 3
+  r b8. df16 d4 ef
+  % bar 4
+  ef2 e
+  % bar 5
+  ef e
+  % bar 6
+  r1
+  % bar 7
+  r
+  % bar 8
+  \time 3/2
+  r1.
+  % bar 9
+  r
+  % bar 10
+  \time 2/2
+  r1
+  % bar 11
+  r
+  % bar 12
+  r
+  % bar 13
+  r
+  % bar 14
+  r
+  % bar 15
+  r
+  % bar 16
+  r
+  % bar 17
+  r
+  % bar 18
+  \time 3/2
+  r1.  % bar 19
+  \time 2/2
+  c4. c16 b af4 a
+  % bar 20
+  r c8. d16 ef4 e
+  % bar 21
+  e2 f
+  % bar 22
+  e f
+  % bar 23
+  r4 e8 f ef4 ef8. r16
+  % bar 24
+  r2. a,8 af
+  % bar 25
+  af4 a2 c8 b
+  % bar 26
+  af4 a2.
+  % bar 27
+  r1
+  % bar 28
+  \time 3/2
+  r1.
+  % bar 29
+  \time 2/2
+  r4 c8 c b2
+  % bar 30
+  r4 af8 af g2
+  % bar 31
+  r8 af af bf b4 b
+  % bar 32
+  r8 a a b df4 ef
+  % bar 33
+  r df8 d a2
+  % bar 34
+  r4 df8 d e4. d8
+  % bar 35
+  e f f4 a,2
+  % bar 36
+  a4. a8 bf2
+  % bar 37
+  d c
+  % bar 38
+  bf2. bf8 bf32 r16 r32
+  % bar 39
+  d2 c
+  % bar 40
+  bf1
+  % bar 41
+  r4 a bf d
+  % bar 42
+  f4. e8 e2
+  % bar 43
+  e4 d g4. f8
+  % bar 44
+  f4 e2 e8. r16
+  % bar 45
+  d4 d d2
+  % bar 46
+  d1
+  % bar 47
+  d4. d8 d4 d
+  % bar 48
+  d e2 e8. r16
+  % bar 49
+  d4 d e2
+  % bar 50
+  e2. e8 e32 r16 r32
+  % bar 51
+  d2. d8. r16
+  % bar 52
+  d2. d8. r16
+  % bar 53
+  d2. d8.
 }
 
 "bass4" = \relative c {
   \"global4"
   \"dummy"
+  r1
+  % bar 2
+  af'2 af
+  % bar 3
+  af af
+  % bar 4
+  af af
+  % bar 5
+  af af
+  % bar 6
+  r1
+  % bar 7
+  r
+  % bar 8
+  \time 3/2
+  r1.
+  % bar 9
+  r
+  % bar 10
+  \time 2/2
+  r1
+  % bar 11
+  r
+  % bar 12
+  r
+  % bar 13
+  r
+  % bar 14
+  r
+  % bar 15
+  r
+  % bar 16
+  r
+  % bar 17
+  r
+  % bar 18
+  \time 3/2
+  r1.  % bar 19
+  \time 2/2
+  a2 a
+  % bar 20
+  a a
+  % bar 21
+  a a
+  % bar 22
+  a a
+  % bar 23
+  r4 a8 a f'4 f8. r16
+  % bar 24
+  r1
+  % bar 25
+  r4 e8 f f4 ef
+  % bar 26
+  ef e8 a, e'4 ef
+  % bar 27
+  r1
+  % bar 28
+  \time 3/2
+  r1.
+  % bar 29
+  \time 2/2
+  r8 e e f f4 e
+  % bar 30
+  r8 c c c c4 df
+  % bar 31
+  df1
+  % bar 32
+  df
+  % bar 33
+  gf
+  % bar 34
+  bf
+  % bar 35
+  r8 a a a bf4 a
+  % bar 36
+  d,1
+  % bar 37
+  d2 c
+  % bar 38
+  bf2. bf8 bf32 r16 r32
+  % bar 39
+  d2 c
+  % bar 40
+  bf1
+  % bar 41
+  r
+  % bar 42
+  r
+  % bar 43
+  r
+  % bar 44
+  r
+  % bar 45
+  d4 d d2
+  % bar 46
+  d1
+  % bar 47
+  d4. d8 d4 d
+  % bar 48
+  d d2 d8. r16
+  % bar 49
+  d4 d d2
+  % bar 50
+  d2. d8 d32 r16 r32
+  % bar 51
+  d2. d8. r16
+  % bar 52
+  d2. d8. r16
+  % bar 53
+  d2. d8.
 }
 
 "pianoRight4" = \relative c' {
