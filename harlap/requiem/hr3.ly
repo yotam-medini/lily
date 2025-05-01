@@ -83,7 +83,7 @@
   % bar 11
   r
   % bar 12
-  r8 g16 g a8 a r bf16 c a8 a
+  r8\f g16 g a8 a r bf16 c a8 a
   % bar 13
   r g16 g a8. a16 bf8. f'16 a,8 a
   % bar 14 
@@ -115,7 +115,7 @@
   % bar 11
   r
   % bar 12
-  r8 g16 g a8 a r bf16 c a8 a
+  r8\f g16 g a8 a r bf16 c a8 a
   % bar 13
   r g16 g a8. a16 bf8. bf16 a8 a
   % bar 14
@@ -155,11 +155,11 @@
   % bar 11
   r
   % bar 12
-  r4 f8 f ef4 d
+  r4 f8\f f ef4 d
   % bar 13
   r f8 f ef4 d
   % bar 14
-  r8 g,16 g a8 a r2
+  r8 g,16\mf\> g a8 a r2\!
   % bar 15
   r8 g16 bf a8 a r2 |
   r1 | r1 |
@@ -191,11 +191,18 @@
   % bar 11
   r
   % bar 12
-  r4 g8 g g4 g
+  r4 g8\f g g4 g
   % bar 13
   r g8 g g4 g
   % bar 14
-  r4. f16 f ef4 f
+  <<
+    \new Voice { \voiceOne {  
+      r4 r8 f16\mf\> f ef4 f\!
+    } }
+    \new Dynamics \with { alignBelowContext = "upper" } { 
+      s8\mf s8 s4\> s4\! s4
+    }
+  >>  
   % bar 15
   r4. f16 f ef4 f
   % bar 16
@@ -359,7 +366,7 @@
   >> |
   % bar 12
   <<
-    \new Voice { \voiceOne { r4 f''' ef <d ef> } }
+    \new Voice { \voiceOne { r4^\f f''' ef <d ef> } }
     \new Voice { \voiceTwo { <g,,, d' g>1-> } }
     \new Voice { \voiceThree { s16\sustainOn s16 s8 s4 s4 s8. s16\sustainOff } }
   >> |
