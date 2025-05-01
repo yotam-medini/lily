@@ -104,6 +104,73 @@
 "solobaritone4" =  \relative c {
   \"global4"
   \"dummy"
+  R1*7 |
+  % bar 8
+  \time 3/2
+  r1. | r1. |
+  % bar 10
+  \time 2/2
+  R1*8
+  % bar 18
+  \time 3/2
+  r1. |
+  % bar 19
+  \time 2/2
+  R1*4 |
+  % bar 23
+  r1 |
+  % bar 24
+  r4 d8 c c4 b
+  % bar 25
+  f'4. d8 c4 b
+  % bar 26
+  r b8 c af4. a8
+  % bar 27
+  f4. e8 e4 ef
+  % bar 28
+  \time 3/2
+  r1.
+  % bar 29
+  \time 2/2
+  r1
+  % bar 30
+  r
+  % bar 31
+  r
+  % bar 32
+  r
+  % bar 33
+  r
+  % bar 34
+  r
+  % bar 35
+  r
+  % bar 36
+  r
+  % bar 37
+  r
+  % bar 38
+  r
+  % bar 39
+  r
+  % bar 40
+  r
+  % bar 41
+  r
+  % bar 42
+  r
+  % bar 43
+  r
+  % bar 44
+  r
+  % bar 45
+  r4 af8 a e4 f
+  % bar 46
+  d e2.
+  % bar 47
+  d4. d8 d4 d
+  % bar 48
+  d d2 d8.
 }
 
 "soprano4" = \relative c' {
