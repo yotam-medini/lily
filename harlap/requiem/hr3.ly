@@ -42,15 +42,19 @@
   % bar 15
   r
   % bar 16
-  r8 d,16 d cs8 cs8 ~ cs4. r8 |
+  r8 d,16\mf d cs8 cs8 ~ cs4.\> r8\! |
   % bar 17
-  r d16 bf' cs,8 cs8 ~ cs4. r8 \bar "||" |
+  r d16 bf' cs,8 cs8 ~ cs4.^\rit\> r8\! \bar "||" |
   % bar 18
   \tempo Grave 4 = 40
-  r d16 d ef'8 d d8. cs16 cs8 a  \bar "||" |
+  r\f d16\< d ef'8\> d d8. cs16 cs8 a\!  \bar "||" |
   \break_orig
   % bar 19
-  r bf16 d, a'8 a c!8. bf16 bf8 a |
+  r\mf bf16^\moltespr d, a'8\< a c!8.\!^\ten 
+    \override TextSpanner.bound-details.left.text = "rall."
+    bf16\>\startTextSpan
+    bf8 a\!\stopTextSpan |
+  \break_orig
   % bar 20
   R1*4
 }
@@ -124,9 +128,9 @@
   % bar 15
   r
   % bar 16
-  r4. bf,16 bf bf4 a
+  r4. bf,16\mp bf bf4\> a\!
   % bar 17
-  r4. bf16 bf bf4 a
+  r4. bf16\mp bf bf4\> a\!
   R1*6
 }
 
@@ -161,7 +165,7 @@
   % bar 14
   r8 g,16\mf\> g a8 a r2\!
   % bar 15
-  r8 g16 bf a8 a r2 |
+  r8 g16\mp\> bf a8 a\! r2 |
   r1 | r1 |
   R1*5
 }
@@ -204,11 +208,11 @@
     }
   >>  
   % bar 15
-  r4. f16 f ef4 f
+  r4 r8\mp f16 f ef4\> f\!
   % bar 16
-  r4. g,16 g g4 g
+  r4 r8 g,16\mp g g4\> g\!
   % bar 17
-  r4. g16 g g4 g
+  r4. g16\mp g g4\> g\!
   R1*5
 }
 
@@ -279,7 +283,12 @@
   r8 g, <g a>4 <g bf> <g c> |
   \break_orig
   % bar 15
-  r8 g <g a>4 <g bf> <g c> |
+  <<
+    \new Voice { \voiceOne { r8 g <g a>4 <g bf> <g c> } }
+    \new Dynamics \with { alignBelowContext = "upper" } {
+      r8 s8\> s4 s4 s8 \tuplet 3/2 {s16 s\!\p s]}
+    }
+  >> |
   \clef "F"
   % bar 16
   r8 d8 <b cs d>2. |
@@ -403,19 +412,26 @@
   <<
     \new Voice { \voiceOne { r4 r8 f''8 ef4 <b d> } }
     \new Voice { \voiceTwo { <g, d' g>1 } }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      r4 s4\mp\> s4 s4\!\p
+    }
   >>  
   % bar 21
   <<
     \new Voice { \voiceOne { r2 r8 <a'! bf>4( fs8) } }
     \new Voice { \voiceTwo { <g, d' g>1 } }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s2 s8 s4\p\< s8\!\p
+    }
   >>  
   % bar 22
   <<
     \new Voice { \voiceOne { fs'8--( g4.)  g2-- } }
     \new Voice { \voiceTwo { <g, d'>2-- <g d'>2-- } }
+    \new Dynamics \with { alignAboveContext = "lower" } { s4\> s2 s4\!}
   >>  
   % bar 23
-  <g d' g>1--\fermata \bar "|." |
+  \after 4 \> \after 2 \! <g d' g>1--\fermata \bar "|." |
 }
 
 "lyricsSoloBar3" = \lyricmode {
@@ -566,7 +582,7 @@
     \new PianoStaff \with { instrumentName = "Pno." } <<
       \new Staff = "upper" { \clef treble \"pianoRight3" \"dummy" }
       \new Staff = "lower" \with {
-	\consists "Sustain_pedal_engraver"
+	% \consists "Sustain_pedal_engraver"
         pedalSustainStyle = #'mixed
       } { 
         % \override Staff.SustainPedalLineSpanner.staff-padding = #5

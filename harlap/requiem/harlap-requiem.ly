@@ -10,6 +10,7 @@ dulce = \markup { \italic "dulce" }
 fmarcato = \markup { \dynamic "f" \italic "marcato" }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 fsubito = \markup { \dynamic "f" \italic "subito" }
+moltespr = \markup { \italic "molto espressivo" }
 moltorall = \markup { \bold "molto rall." }
 mfagitato = \markup { \dynamic "mf" \italic "agitato" }
 mpmoltoagitato = \markup { \dynamic "mp" \italic "molto agitato" }
@@ -26,6 +27,7 @@ sempMarkup = \markup { \halign #1.4 \italic "sempre" \dynamic "p" }
 sempre = \markup { \italic "sempre" }
 sfff = \markup { \dynamic "sfff" }
 slowarpeg = \markup { \italic "(slow arpeggio)" }
+ten = \markup {\italic "ten." }
 
 \include "hr1.ly"
 \include "hr2.ly"
