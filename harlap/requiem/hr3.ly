@@ -27,9 +27,9 @@
   \tempo 4 = 45
   r8\fermata e16 e ds8 ds16 r16 r8 e16 g ds8 ds16 r16 |
   % bar 9
-  r8 e16( e fs8 fs g8. d'16 cs8 cs) |
+  r8 e16\( e fs8 fs g8. d'16 cs8 cs\) |
   % bar 10
-  r8 b16( b cs8. cs16 f!8. d16 d8 cs) \bar "||" |
+  r8 b16\( b cs8. cs16 f!8. d16 d8 cs\) \bar "||" |
   % bar 11
   r1
   \break_orig
@@ -42,9 +42,9 @@
   % bar 15
   r
   % bar 16
-  r8 d,16 d cs8 cs2 r8
+  r8 d,16 d cs8 cs8 ~ cs4. r8 |
   % bar 17
-  r d16 bf' cs,8 cs2 r8 \bar "||" |
+  r d16 bf' cs,8 cs8 ~ cs4. r8 \bar "||" |
   % bar 18
   \tempo Grave 4 = 40
   r d16 d ef'8 d d8. cs16 cs8 a  \bar "||" |
@@ -389,18 +389,56 @@
 }
 
 "lyricsSoloBar3" = \lyricmode {
+  Mors stu -- pe -- bit et na -- tu -- ra
+  Cum re -- sur -- get cre -- a -- tu -- ra
+  Ju -- di -- can -- ti res -- pon -- su -- ra
+  % bar 16
+  Quid sum mi -- ser tunc dic -- tur -- us
+  Quem pat -- ro -- num ro -- ga -- tu -- rus
+  % bar 19
+  Cum vix jus -- tus sit se -- cu -- rus
 }
 
 "lyricsSop3" = \lyricmode {
+  Tu -- ba mi -- rum spar -- gens so -- num
+  Per se -- pul -- cra re -- gi -- o -- num
+  Tu -- ba mi -- rum spar -- gens so -- num
+  Co -- get om -- nes an -- te thro -- num
+  % bar 12
+  Tu -- ba mi -- rum spar -- gens so -- num
+  Per se -- pul -- cra re -- gi -- o -- num
 }
 
 "lyricsAlt3" = \lyricmode {
+  Tu -- ba mi -- rum spar -- gens so -- num
+  Per se -- pul -- cra re -- gi -- o -- num
+  Tu -- ba mi -- rum Co -- get om -- nes 
+  % bar 12
+  Tu -- ba mi -- rum spar -- gens so -- num
+  Per se -- pul -- cra re -- gi -- o -- num
+  % bar 16
+  Quid sum mi -- ser tunc dic -- tu -- rus
 }
 
 "lyricsTen3" = \lyricmode {
+  Tu -- ba mi -- rum spar -- gens so -- num
+  Tu -- ba mi -- rum spar -- gens so -- num
+  Co -- get om -- nes an -- te thro -- num
+  Tu -- ba mi -- rum spar -- gens so -- num
+  % bar 12
+  Tu -- ba mi -- rum spar -- gens so -- num
+  Co -- get om -- nes an -- te thro -- num
 }
 
 "lyricsBas3" = \lyricmode {
+  Tu -- ba mi -- rum spar -- gens so -- num
+  Co -- get om -- nes an -- te thro -- num
+  Tu -- ba mi -- rum spar -- gens so -- num
+  % bar 12
+  Tu -- ba mi -- rum spar -- gens so -- num
+  Co -- get om -- nes an -- te thro -- num
+  % bar 16
+  Quid sum mi -- ser tunc dic -- tu -- rus
 }
 
 "score3" = \score {

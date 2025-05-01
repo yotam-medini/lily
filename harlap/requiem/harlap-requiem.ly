@@ -45,7 +45,7 @@ slowarpeg = \markup { \italic "(slow arpeggio)" }
       \hspace #2
       \small
       \simple #(strftime "%Y-%m-%d %H:%M:%S)" (localtime (current-time)))
-    } else {
+    } {
       \with-dimensions #'(0 . 0) #'(0 . 0) \transparent " "
     }
   }
