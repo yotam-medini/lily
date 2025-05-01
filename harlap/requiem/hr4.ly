@@ -10,10 +10,14 @@
 "solosoprano4" =  \relative c'' {
   \"global4"
   \"dummy"
-  R1.*8 |
+  R1*7 |
+  % bar 8
+  \time 3/2
+  r1. |
   % bar 9
-  r2 r4 bf8[ cf] |
+  r1 r4 bf8[ cf] |
   % bar 10
+  \time 2/2
   g4. af8 d,4. ef8
   % bar 11
   gf4 e4. e16 r gf8 g
@@ -26,11 +30,12 @@
   % bar 15
   c8 df ef4. df8 ef e
   % bar 16
-  e4 af,2 g8 b
+  e4 af,2 g8 b |
   % bar 17
-  af4. af16 r g4. df8  % bar 18
+  af4. af16 r g4. df8   |
+  % bar 18
   \time 3/2
-  af'1 af'4. af'16 af'32
+  gs1. |
   % bar 19
   \time 2/2
   r2. e'8 f
@@ -121,7 +126,7 @@
   \time 3/2
   r1.
   % bar 9
-  r
+  r1.
   % bar 10
   \time 2/2
   r1
