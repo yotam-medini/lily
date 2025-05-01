@@ -270,7 +270,7 @@
   \tempo "I" 4 = 55
   r8\f     \tuplet 3/2 {c16[ f c]}
     g'8[ \tuplet 3/2 {f16 bf ef]}
-    c!8->[ \tuplet 3/2 {f,16 bff ef]}
+    c!8->[ \tuplet 3/2 {f,16 bf ef]}
     c8->[ \tuplet 3/2 {f16 bf\ff ef]} |
   % bar 12
   <<
@@ -421,7 +421,7 @@
     \new Voice { \voiceOne { r2 r8 <a'! bf>4( fs8) } }
     \new Voice { \voiceTwo { <g, d' g>1 } }
     \new Dynamics \with { alignAboveContext = "lower" } {
-      s2 s8 s4\p\< s8\!\p
+      s2 s8 s4\p\< s8\!
     }
   >>  
   % bar 22
