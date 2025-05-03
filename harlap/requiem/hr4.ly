@@ -67,11 +67,11 @@
   % bar 33
   r
   % bar 34
-  df8 d e4. d8 e f
+  cs8 d e4. d8 e f
   % bar 35
   f4 a,2 af8 c
   % bar 36
-  a4. a16 r af4. d,8
+  a2 gs4. d8
   % bar 37
   a'1
   % bar 38
@@ -87,15 +87,16 @@
   % bar 43
   r
   % bar 44
-  r2. e'8 f
+  r2 r4 e'8\( f |
   % bar 45
-  df4. d8 af4. a8
+  cs4. d8 gs,4. a8 |
   % bar 46
-  c4 bf2.
+  c!4 bf2.\) |
   % bar 47
-  a4 a16 a32 r d,8 d4 d
+  a4.-- d,8 d4 d
   % bar 48
-  d e2 e8.
+  d e2. |
+  R1*5 |
 }
 
 "solobaritone4" =  \relative c {
@@ -123,7 +124,7 @@
   % bar 26
   r b8 c af4. a8
   % bar 27
-  f4. e8 e4 ds
+  f4. e8 e4 ds |
   \break_orig
   % bar 28
   \time 3/2
@@ -132,17 +133,18 @@
   \time 2/2
   r1
   % bar 30
-  R1*14 |
+  r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | 
   % bar 44
-  r
+  r |
   % bar 45
-  r4 af8 a e4 f
+  r4 gs8\( a e4 f |
   % bar 46
-  d e2.
+  d e2.\) |
   % bar 47
-  d4. d8 d4 d
+  d4. d8 d4 d |
   % bar 48
-  d d2 d8.
+  d d2. |
+  r1 | r1 | r1 | r1 | r1 \bar "|." | 
 }
 
 "soprano4" = \relative c' {
@@ -171,19 +173,7 @@
   \time 2/2
   r1
   % bar 11
-  r
-  % bar 12
-  r
-  % bar 13
-  r
-  % bar 14
-  r
-  % bar 15
-  r
-  % bar 16
-  r
-  % bar 17
-  r
+  R1*7
   % bar 18
   \time 3/2
   r1.  % bar 19
@@ -196,22 +186,24 @@
   % bar 22
   b4. b16 d c4 gs
   % bar 23
-  r1
+  r1 |
   % bar 24
-  R1*4
+  r1 | r1 | r1 | r1 |
   % bar 28
   \time 3/2
-  r r4 b8 c  % bar 29
+  r r4 b8 c
+  % bar 29
   \time 2/2
-  af4. a8 ef4. e8
+  gs4. a8 ds,4. e8
   % bar 30
-  g4 f4. f16 r g8 af
+  g!4 f!4. f16 r g8 af
   % bar 31
-  g2 g8. r16 f8 af
+  g2. f8 af |
   % bar 32
-  g4. f8 g a b df
+  g4. f8 g a b cs |
   % bar 33
-  df d a2 a8. r16
+  cs d a2. |
+  \break_orig
   % bar 34
   r1
   % bar 35
@@ -225,33 +217,35 @@
   % bar 39
   a4 a a a
   % bar 40
-  c8 a a2.
+  c8 a a2. |
   % bar 41
-  r4 a bf d
+  r4 a bf d |
   % bar 42
-  f4. e8 e2
+  f4. e8 e2 ~ |
+  \break_orig
   % bar 43
-  e4 d g4. f8
+  e4 d g4. f8 |
   % bar 44
-  f4 e2 e8. r16
+  f4 e2. |
   % bar 45
-  d4 d d2
+  d,4 d d2 ~ |
   % bar 46
-  d1
+  d1 |
   % bar 47
-  d4. d8 d4 d
+  d4. d8 d4 d |
   % bar 48
-  d e2 e8. r16
+  d e2. |
   % bar 49
-  d4 d e2
+  d4 d e2 ~
   % bar 50
-  e2. e8 e32 r16 r32
+  e1 |
   % bar 51
-  d2. d8. r16
+  d1-- |
   % bar 52
-  d2. d8. r16
+  d-- |
+  \break_orig
   % bar 53
-  d2. d8.
+  d--\fermata \bar "|." |
 }
 
 "alto4" = \relative c' {
@@ -303,27 +297,28 @@
   r
   % bar 28
   \time 3/2
-  r r4 b8 c  % bar 29
+  r r4 b8 c
+  % bar 29
   \time 2/2
-  af4. a8 ef4. e8
+  gs4. a8 ds4. e8 |
   % bar 30
-  g4 f4. f16 r g8 af
+  g!4 f4. f16 r g8 af |
   % bar 31
-  g2 g8. r16 f8 af
+  g2. f8 af |
   % bar 32
-  g1
+  g1 |
   % bar 33
-  r4. df8 d4 e
+  r4 r8 cs,8 d4 e |
   % bar 34
-  bf4. f'8 g4 af
+  bf4. f'8 g4 gs |
   % bar 35
-  a8 a a a e4 f
+  a8 a a a e!4 f |
   % bar 36
-  r f8 f e2
+  r f8 f e!2 |
   % bar 37
-  f e
+  f\( e\) |
   % bar 38
-  d2. d8 d32 r16 r32
+  d1 |
   % bar 39
   f2 e
   % bar 40
@@ -335,25 +330,25 @@
   % bar 43
   d4 d d4. d8
   % bar 44
-  d4 d2 d8. r16
+  d4 d2. |
   % bar 45
-  d4 d d2
+  d,4 d d2 ~ |
   % bar 46
   d1
   % bar 47
-  d4. d8 d4 d
+  d4. d8 d4 d |
   % bar 48
-  d d2 d8. r16
+  d d2. |
   % bar 49
-  d4 d d2
+  d4 d d2 ~ |
   % bar 50
-  d2. d8 d32 r16 r32
+  d1 |
   % bar 51
-  d2. d8. r16
+  d-- |
   % bar 52
-  d2. d8. r16
+  d-- |
   % bar 53
-  d2. d8.
+  d--\fermata \bar "|." |
 }
 
 "tenor4" = \relative c {
@@ -417,20 +412,20 @@
   r1
   % bar 28
   \time 3/2
-  r1.
+  r1. |
   % bar 29
   \time 2/2
-  r4 c8 c b2
+  r4 c8 c b2 |
   % bar 30
-  r4 af8 af g2
+  r4 af8 af g2 |
   % bar 31
-  r8 af af bf b4 b
+  r8 gs gs[ as] b4 b |
   % bar 32
-  r8 a a b df4 ef
+  r8 a! a[ b] cs4 ds |
   % bar 33
-  r df8 d a2
+  r cs8 d! a2 |
   % bar 34
-  r4 df8 d e4. d8
+  r4 cs8 d e4. d8
   % bar 35
   e f f4 a,2
   % bar 36
@@ -438,37 +433,37 @@
   % bar 37
   d c
   % bar 38
-  bf2. bf8 bf32 r16 r32
+  bf!1 |
   % bar 39
-  d2 c
+  d2\( c\) |
   % bar 40
-  bf1
+  bf1 |
   % bar 41
   r4 a bf d
   % bar 42
-  f4. e8 e2
+  f4. e8 e2~
   % bar 43
   e4 d g4. f8
   % bar 44
-  f4 e2 e8. r16
+  f4 e2. |
   % bar 45
-  d4 d d2
+  d,4 d d2 |
   % bar 46
-  d1
+  d1 |
   % bar 47
-  d4. d8 d4 d
+  d4. d8 d4 d |
   % bar 48
-  d e2 e8. r16
+  d e2. |
   % bar 49
-  d4 d e2
+  d4 d e2 ~ |
   % bar 50
-  e2. e8 e32 r16 r32
+  e1 |
   % bar 51
-  d2. d8. r16
+  d-- |
   % bar 52
-  d2. d8. r16
+  d-- |
   % bar 53
-  d2. d8.
+  d-- \bar "|." | |
 }
 
 "bass4" = \relative c {
@@ -525,21 +520,21 @@
   \time 2/2
   r8 e e f f4 e
   % bar 30
-  r8 c c c c4 df
+  r8 c c c c4 df |
   % bar 31
-  df1
+  cs1 |
   % bar 32
-  df
+  cs |
   % bar 33
-  gf
+  fs |
   % bar 34
-  bf
+  bf |
   % bar 35
-  r8 a a a bf4 a
+  r8 a a[ a] bf4 a! |
   % bar 36
-  d,1
+  d,1 |
   % bar 37
-  d2 c
+  d2 c |
   % bar 38
   bf2. bf8 bf32 r16 r32
   % bar 39
@@ -555,23 +550,23 @@
   % bar 44
   r
   % bar 45
-  d4 d d2
+  d4 d d2 ~ |
   % bar 46
-  d1
+  d1 |
   % bar 47
   d4. d8 d4 d
   % bar 48
-  d d2 d8. r16
+  d d2. |
   % bar 49
-  d4 d d2
+  d4 d d2 ~ |
   % bar 50
-  d2. d8 d32 r16 r32
+  d1 |
   % bar 51
-  d2. d8. r16
+  d1-- |
   % bar 52
-  d2. d8. r16
+  d1-- |
   % bar 53
-  d2. d8.
+  d--\fermata \bar "|." |
 }
 
 "pianoRight4" = \relative c' {
