@@ -162,7 +162,7 @@
   % bar 6
   r1
   % bar 7
-  r
+  r \bar "||"
   \break_orig
   % bar 8
   \time 3/2
@@ -263,7 +263,7 @@
   % bar 6
   r1
   % bar 7
-  r
+  r \bar "||"
   % bar 8
   \time 3/2
   r1.
@@ -366,7 +366,7 @@
   % bar 6
   r1
   % bar 7
-  r
+  r \bar "||"
   % bar 8
   \time 3/2
   r1.
@@ -481,7 +481,7 @@
   % bar 6
   r1
   % bar 7
-  r
+  r \bar "||"
   % bar 8
   \time 3/2
   r1.
@@ -573,11 +573,63 @@
   \"global4"
   \"dummy"
   % bar 1
+  r1
+  % bar 2
+  <cf ef>4.. <bf d>16 <g ff'>4( <af e'>) |
+  % bar 3
+  r4 <cf ef>8.[ <df cf'>16] <d! f bf>4-- <ef ff>-- |
+  % bar 4
+  <<
+    \new Voice { \voiceOne { <cf' ef>4..( <bf d!>16) <bf d>4( <a! df>) } }
+    \new Voice { \voiceTwo { ef2-- e-- } }
+  >> |
+  % bar 5
+  <<
+    \new Voice { \voiceOne { <af bf>4..( df16) df4( <cs, g'>4) } }
+    \new Voice { \voiceTwo { ef2-- e-- } }
+  >>  
+  \clef bass | 
+  % bar 5
+  r4
+  <<
+    \new Voice { \voiceOne { bf8.[( df16]) cf4.( g!8) } }
+    \new Voice { \voiceTwo { af8[( ef16]) <cs e>2 } }
+  >>  
+  % bar 6
+  g'4( af2) gf4-- \bar "||" |
+  % bar 7
+  % bar 8
+  \time 3/2
+  r4 c!4~( <bf c>1) |
+  % bar 8
+  r4 cf4~( <bf cf>1) |
+  % bar 9
+  \time 2/2
+  r4 cf4~( <bf cf>2) |
 }
 
 "pianoLeft4" = \relative c {
   \"global4"
   \"dummy"
+  % bar 1
+  <af, af'>2-- <af af'>2-- |
+  % bar 2
+  <af af'>2-- <af af'>2-- |
+  % bar 3
+  <af af'>2-- <af af'>2-- |
+  % bar 4
+  <af af'>2-- <af af'>2-- |
+  % bar 5
+  <af af'>2-- <af af'>2-- |
+  % bar 6
+  <af af'>2-- <af af'>2-- |
+  % bar 7
+  <<
+    \new Voice { \voiceOne { r8 ef''8~ <ef ff~>4 <d! ff>2 } }
+    \new Voice { \voiceTwo { af1 } }
+  >>  
+  \bar "||" |
+  % bar 8
 }
 
 "lyricsSoloSop4" = \lyricmode {
