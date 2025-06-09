@@ -611,6 +611,24 @@
   r2 bf2\tenuto |
   % bar 13
   r2 \clef "G" c!4( <c d>4) |
+  % bar 14
+  r4. c8 df4( <df f>4) |
+  % bar 15
+  r4. e8 fs4( < g a!>4) |
+  % bar 16 
+  r4 e4( <ds e>2) |
+  % bar 17 
+  r4 e4( <ds e>2) |
+  % bar 18
+  \clef bass
+  \time 3/2
+  r4 c,!4 \repeat tremolo 16 { \stemUp ds32( e) } |
+  % bar 19
+  \clef "G"
+  \time 2/2
+  <c' e>4.. <b ds>16 <gs f'>4( <a e'>4) |
+  % bar 20
+  r4 <c e>8.[ <d! c'>16] <ds f b>4-- <e f!>4-- |
 }
 
 "pianoLeft4" = \relative c {
@@ -667,6 +685,31 @@
     \new Voice { \voiceOne { r8 e8( <e as>2.) } }
     \new Voice { \voiceTwo { c1-- } }
   >>  
+  % bar 14
+  <f df'>1 |
+  % bar 15
+  a!1
+  % bar 16
+  <<
+    \new Voice { \voiceOne { r8 gs4.( <gs a>2) } }
+    \new Voice { \voiceTwo { cs,1 } }
+  >> | 
+  % bar 17
+  <<
+    \new Voice { \voiceOne { r8 gs'4.( <gs a>2) } }
+    \new Voice { \voiceTwo { cs,1 } }
+  >> |
+  % bar 18
+  \time 3/2
+  <<
+    \new Voice { \voiceOne { r8 gs4. <gs a!>16 r16 r8 r4 r2 } }
+    \new Voice { \voiceTwo { cs,2 r2 <a a'>2 } }
+  >> |
+  % bar 19
+  \time 2/2
+  <a a'>2-- <a a'>2-- |
+  % bar 20
+  <a a'>2-- <a a'>2-- |
 }
 
 "lyricsSoloSop4" = \lyricmode {
