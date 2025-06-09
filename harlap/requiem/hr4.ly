@@ -589,23 +589,28 @@
     \new Voice { \voiceTwo { ef2-- e-- } }
   >>  
   \clef bass | 
-  % bar 5
+  % bar 6
   r4
   <<
     \new Voice { \voiceOne { bf8.[( df16]) cf4.( g!8) } }
     \new Voice { \voiceTwo { af8[( ef16]) <cs e>2 } }
   >>  
-  % bar 6
-  g'4( af2) gf4-- \bar "||" |
   % bar 7
+  g'4( af2) gf4-- \bar "||" |
   % bar 8
   \time 3/2
-  r4 c!4~( <bf c>1) |
-  % bar 8
-  r4 cf4~( <bf cf>1) |
+  r4 c!4( <bf c>1) |
   % bar 9
+  r4 cf4( <bf c>1) |
+  % bar 10
   \time 2/2
-  r4 cf4~( <bf cf>2) |
+  r4 cf4( <bf cf>2) |
+  % bar 11
+  r4 g4( <fs g>2) |
+  % bar 12
+  r2 bf2\tenuto |
+  % bar 13
+  r2 \clef "G" c!4( <c d>4) |
 }
 
 "pianoLeft4" = \relative c {
@@ -630,6 +635,38 @@
   >>  
   \bar "||" |
   % bar 8
+  \time 3/2
+  <<
+    \new Voice { \voiceOne { r8 ef'4.( <ef f>1) } }
+    \new Voice { \voiceTwo { af,1. } }
+  >>  
+  % bar 9
+  \time 3/2
+  <<
+    \new Voice { \voiceOne { r8 ef'4.( <ef f>1) } }
+    \new Voice { \voiceTwo { af,1. } }
+  >>  
+  % bar 10
+  \time 2/2
+  <<
+    \new Voice { \voiceOne { r8 ef'4.( <ef f>2) } }
+    \new Voice { \voiceTwo { af,1 } }
+  >>  
+  % bar 11
+  <<
+    \new Voice { \voiceOne { r8 b!4.( <b c>2) } }
+    \new Voice { \voiceTwo { e,!1 } }
+  >>  
+  % bar 12
+  <<
+    \new Voice { \voiceOne { r8 g'8( <g a>2.) } }
+    \new Voice { \voiceTwo { c,1-- } }
+  >>  
+  % bar 13
+  <<
+    \new Voice { \voiceOne { r8 e8( <e as>2.) } }
+    \new Voice { \voiceTwo { c1-- } }
+  >>  
 }
 
 "lyricsSoloSop4" = \lyricmode {
