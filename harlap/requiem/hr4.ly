@@ -133,7 +133,7 @@
   \time 2/2
   r1
   % bar 30
-  r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | 
+  r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 |
   % bar 44
   r |
   % bar 45
@@ -144,7 +144,7 @@
   d4. d8 d4 d |
   % bar 48
   d d2. |
-  r1 | r1 | r1 | r1 | r1 \bar "|." | 
+  r1 | r1 | r1 | r1 | r1 \bar "|." |
 }
 
 "soprano4" = \relative c' {
@@ -252,7 +252,7 @@
   \"global4"
   \"dummy"
   r1 |
-  % bar 2 
+  % bar 2
   ef4. ef16 d ff4 ef |
   % bar 3
   r ef8. cf'16 bf4 ff |
@@ -587,14 +587,14 @@
   <<
     \new Voice { \voiceOne { <af bf>4..( df16) df4( <cs, g'>4) } }
     \new Voice { \voiceTwo { ef2-- e-- } }
-  >>  
-  \clef bass | 
+  >>
+  \clef bass |
   % bar 6
   r4
   <<
     \new Voice { \voiceOne { bf8.[( df16]) cf4.( g!8) } }
     \new Voice { \voiceTwo { af8[( ef16]) <cs e>2 } }
-  >>  
+  >>
   % bar 7
   g'4( af2) gf4-- \bar "||" |
   % bar 8
@@ -615,9 +615,9 @@
   r4. c8 df4( <df f>4) |
   % bar 15
   r4. e8 fs4( < g a!>4) |
-  % bar 16 
+  % bar 16
   r4 e4( <ds e>2) |
-  % bar 17 
+  % bar 17
   r4 e4( <ds e>2) |
   % bar 18
   \clef bass
@@ -633,12 +633,12 @@
   <<
     \new Voice { \voiceOne { <c' e>4..( <b ds>16) <b ds>4( <as d!>4) } }
     \new Voice { \voiceTwo { e2-> f2-> } }
-  >>  
+  >>
   % bar 22
   <<
     \new Voice { \voiceOne { <a b>4.( d8) c!4( <d,! gs>4) } }
     \new Voice { \voiceTwo { e!2-> f2-> } }
-  >>  
+  >>
   % bar 23
   \clef bass
   gs,4( a2) b4-- |
@@ -646,12 +646,12 @@
   <<
     \new Voice { \voiceOne { d4. c8 c4( b) } }
     \new Voice { \voiceTwo { gs4( a2.) } }
-  >>  
+  >>
   % bar 25
   <<
     \new Voice { \voiceOne { f'4. d8 c4( b) } }
     \new Voice { \voiceTwo { gs4( a2.) } }
-  >>  
+  >>
   % bar 26
   <gs a>1->( |
   % bar 27
@@ -677,41 +677,41 @@
   <<
     \new Voice { \voiceOne { r8 ef''8~ <ef ff~>4 <d! ff>2 } }
     \new Voice { \voiceTwo { af1 } }
-  >>  
+  >>
   \bar "||" |
   % bar 8
   \time 3/2
   <<
     \new Voice { \voiceOne { r8 ef'4.( <ef f>1) } }
     \new Voice { \voiceTwo { af,1. } }
-  >>  
+  >>
   % bar 9
   \time 3/2
   <<
     \new Voice { \voiceOne { r8 ef'4.( <ef f>1) } }
     \new Voice { \voiceTwo { af,1. } }
-  >>  
+  >>
   % bar 10
   \time 2/2
   <<
     \new Voice { \voiceOne { r8 ef'4.( <ef f>2) } }
     \new Voice { \voiceTwo { af,1 } }
-  >>  
+  >>
   % bar 11
   <<
     \new Voice { \voiceOne { r8 b!4.( <b c>2) } }
     \new Voice { \voiceTwo { e,!1 } }
-  >>  
+  >>
   % bar 12
   <<
     \new Voice { \voiceOne { r8 g'8( <g a>2.) } }
     \new Voice { \voiceTwo { c,1-- } }
-  >>  
+  >>
   % bar 13
   <<
     \new Voice { \voiceOne { r8 e8( <e as>2.) } }
     \new Voice { \voiceTwo { c1-- } }
-  >>  
+  >>
   % bar 14
   <f df'>1 |
   % bar 15
@@ -720,7 +720,7 @@
   <<
     \new Voice { \voiceOne { r8 gs4.( <gs a>2) } }
     \new Voice { \voiceTwo { cs,1 } }
-  >> | 
+  >> |
   % bar 17
   <<
     \new Voice { \voiceOne { r8 gs'4.( <gs a>2) } }
@@ -737,6 +737,29 @@
   <a a'>2-- <a a'>2-- |
   % bar 20
   <a a'>2-- <a a'>2-- |
+  % bar 21
+  <a a'>2-- <a a'>2-- |
+  % bar 22
+  <a a'>2-- <a a'>2-- |
+  % bar 23
+  <<
+    \new Voice { \voiceOne { r8 e''8( <e f~>4) <ds f>2 } }
+    \new Voice { \voiceTwo { <a, a'>1 } }
+  >>  
+  % bar 24
+  <<
+    \new Voice { \voiceOne { r8 e''8( <e f~>4) <ds f>2 } }
+    \new Voice { \voiceTwo { a1 } }
+  >>  
+  % bar 25
+  <<
+    \new Voice { \voiceOne { r8 e'8( <e f~>4) <ds f>2 } }
+    \new Voice { \voiceTwo { a1 } }
+  >>  
+  % bar 26
+  <a, a' ds e f!>1-> (
+  % bar 27
+  <a a' ds e f!>1)
 }
 
 "lyricsSoloSop4" = \lyricmode {
@@ -783,7 +806,7 @@
     \new Staff = "solobar" \with {
       instrumentName = "Baritone"
       shortInstrumentName = "Bar."
-    } { 
+    } {
       \new Voice = "solobar" {
         \clef bass
         \"solobaritone4"
@@ -848,7 +871,7 @@
         }
       }
       \new Staff = "bass" \with {
-        instrumentName = "Bass" 
+        instrumentName = "Bass"
         shortInstrumentName = "B"
       } {
         \new Voice = "bass" {
@@ -870,10 +893,10 @@
       \new Staff = "lower" \with {
 	% \consists "Sustain_pedal_engraver"
         pedalSustainStyle = #'mixed
-      } { 
+      } {
         % \override Staff.SustainPedalLineSpanner.staff-padding = #5
-        \clef bass 
-        \"pianoLeft4" \"dummy" 
+        \clef bass
+        \"pianoLeft4" \"dummy"
       }
     >>
   >>
