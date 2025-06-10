@@ -326,7 +326,7 @@
   % bar 41
   r4 a' bf d
   % bar 42
-  d4. d8 d2
+  d4. d8 d2 ~
   % bar 43
   d4 d d4. d8
   % bar 44
@@ -672,7 +672,25 @@
   % bar 33
   r4 r8 cs8 d!4( <e fs>4) |
   % bar 34
+  r4 r8 f!8 g4( <fs as>4) |
   % bar 35
+  r4 f!4~( <e f>2) |
+  % bar 36
+  r4 f!4~( <e f>2) |
+  % bar 37+38
+  <<
+    \new Voice { \voiceOne { a1 ~ | a1 } }
+    \new Voice { \voiceTwo { f2( e2 | d1) } }
+  >>  
+  % bar 39+40
+  <<
+    \new Voice { \voiceOne { a'1 ~ | a1 } }
+    \new Voice { \voiceTwo { f2( e2 | d1) } }
+  >>  
+  % bar 41
+  r4 <d e>4 <a' bf>4--( <d, e>4)  |
+  % bar 42
+  <a' bf>4 \repeat tremolo 12 {  ds,32( e) } |
 }
 
 "pianoLeft4" = \relative c {
