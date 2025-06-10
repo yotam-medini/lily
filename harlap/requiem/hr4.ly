@@ -774,9 +774,38 @@
     \new Voice { \voiceTwo { a1 } }
   >>  
   % bar 26
-  <a, a' ds e f!>1-> (
+  <a, a' ds e f!>1-> ( |
   % bar 27
-  <a a' ds e f!>1)
+  <a a' ds e f!>1) |
+  % bar 28
+  <<
+    \new Voice { \voiceOne { r8 e''4.~( <e f>1) } }
+    \new Voice { \voiceTwo { a,1. } }
+  >> |
+  % bar 29
+  \time 2/2
+  <<
+    \new Voice { \voiceOne { r8 e'4.~( <e f>2) } }
+    \new Voice { \voiceTwo { a,1 } }
+  >> |
+  % bar 30
+  <<
+    \new Voice { \voiceOne { r8 c!4.~( <c df>2) } }
+    \new Voice { \voiceTwo { f,1 } }
+  >> |
+  % bar 31
+  <<
+    \new Voice { \voiceOne { r8 gs'8~( <gs as>2.) } }
+    \new Voice { \voiceTwo { cs,1 } }
+  >> |
+  % bar 32
+  <<
+    \new Voice { \voiceOne { r8 f!8~( <f b!>2.) } }
+    \new Voice { \voiceTwo { cs1 } }
+  >> |
+  % bar 33
+  <fs d'>1 |
+  % bar 34
 }
 
 "lyricsSoloSop4" = \lyricmode {
