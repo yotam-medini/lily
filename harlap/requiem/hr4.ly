@@ -681,12 +681,12 @@
   <<
     \new Voice { \voiceOne { a1 ~ | a1 } }
     \new Voice { \voiceTwo { f2( e2 | d1) } }
-  >>  
+  >>
   % bar 39+40
   <<
     \new Voice { \voiceOne { a'1 ~ | a1 } }
     \new Voice { \voiceTwo { f2( e2 | d1) } }
-  >>  
+  >>
   % bar 41
   r4 <d e>4 <a' bf>4--( <d, e>4)  |
   % bar 42
@@ -780,17 +780,17 @@
   <<
     \new Voice { \voiceOne { r8 e''8( <e f~>4) <ds f>2 } }
     \new Voice { \voiceTwo { <a, a'>1 } }
-  >>  
+  >>
   % bar 24
   <<
     \new Voice { \voiceOne { r8 e''8( <e f~>4) <ds f>2 } }
     \new Voice { \voiceTwo { a1 } }
-  >>  
+  >>
   % bar 25
   <<
     \new Voice { \voiceOne { r8 e'8( <e f~>4) <ds f>2 } }
     \new Voice { \voiceTwo { a1 } }
-  >>  
+  >>
   % bar 26
   <a, a' ds e f!>1-> ( |
   % bar 27
@@ -824,6 +824,29 @@
   % bar 33
   <fs d'>1 |
   % bar 34
+  bf1 |
+  % bar 35
+  <<
+    \new Voice { \voiceOne { r8 a4.~( <a bf>2) } }
+    \new Voice { \voiceTwo { d,1 } }
+  >> |
+  % bar 36
+  <<
+    \new Voice { \voiceOne { r8 a'4.~( <a bf>2) } }
+    \new Voice { \voiceTwo { d,1 } }
+  >> |
+  % bar 37
+  <d, d' d'>2( <c c' c'>2 |
+  % bar 38
+  <bf bf' bf'>1) |
+  % bar 39
+  <d d' d'>2( <c c' c'>2 |
+  % bar 40
+  <bf bf' bf'>1) |
+  % bar 41
+  <d a' d e>1
+  % bar 42
+  <d a' d e>1
 }
 
 "lyricsSoloSop4" = \lyricmode {
