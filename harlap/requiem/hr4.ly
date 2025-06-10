@@ -691,6 +691,20 @@
   r4 <d e>4 <a' bf>4--( <d, e>4)  |
   % bar 42
   <a' bf>4 \repeat tremolo 12 {  ds,32( e) } |
+  % bar 43
+  r4 <d e>4 <a' bf>4--( <d, e>4)  |
+  % bar 44
+  <a' bf>4 \repeat tremolo 12 {  ds,32( e) } |
+  % bar 45-50
+  R1*6
+  % bar 51
+  \clef bass
+  <a,, d>1-- |
+  % bar 52
+  <a d e>1-- |
+  % bar 53
+  <a d f>1\fermata |
+
 }
 
 "pianoLeft4" = \relative c {
@@ -844,9 +858,31 @@
   % bar 40
   <bf bf' bf'>1) |
   % bar 41
-  <d a' d e>1
+  <d a' d e>1 |
   % bar 42
-  <d a' d e>1
+  <d a' d e>1 |
+  % bar 43
+  <d a' d e>1 |
+  % bar 44
+  <d a' d e>1 |
+  % bar 45
+  <d a' d e>1~ |
+  % bar 46
+  <d a' d e>1 |
+  % bar 47
+  <d a' d e>1~ |
+  % bar 48
+  <d a' d e>1 |
+  % bar 49
+  <d a' d e>1~ |
+  % bar 50
+  <d a' d e>1 |
+  % bar 51
+  <d, d'>1-- |
+  % bar 52
+  <d d'>1-- |
+  % bar 53
+  <d d'>1-- |
 }
 
 "lyricsSoloSop4" = \lyricmode {
