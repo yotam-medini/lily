@@ -629,6 +629,33 @@
   <c' e>4.. <b ds>16 <gs f'>4( <a e'>4) |
   % bar 20
   r4 <c e>8.[ <d! c'>16] <ds f b>4-- <e f!>4-- |
+  % bar 21
+  <<
+    \new Voice { \voiceOne { <c' e>4..( <b ds>16) <b ds>4( <as d!>4) } }
+    \new Voice { \voiceTwo { e2-> f2-> } }
+  >>  
+  % bar 22
+  <<
+    \new Voice { \voiceOne { <a b>4.( d8) c!4( <d,! gs>4) } }
+    \new Voice { \voiceTwo { e!2-> f2-> } }
+  >>  
+  % bar 23
+  \clef bass
+  gs,4( a2) b4-- |
+  % bar 24
+  <<
+    \new Voice { \voiceOne { d4. c8 c4( b) } }
+    \new Voice { \voiceTwo { gs4( a2.) } }
+  >>  
+  % bar 25
+  <<
+    \new Voice { \voiceOne { f'4. d8 c4( b) } }
+    \new Voice { \voiceTwo { gs4( a2.) } }
+  >>  
+  % bar 26
+  <gs a>1->( |
+  % bar 27
+  <gs a>1) |
 }
 
 "pianoLeft4" = \relative c {
