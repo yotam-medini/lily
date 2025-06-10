@@ -656,6 +656,23 @@
   <gs a>1->( |
   % bar 27
   <gs a>1) |
+  % bar 28
+  \clef bass
+  \time 3/2
+  r4 c~( <b c>1) |
+  % bar 29
+  \time 2/2
+  r4 c~( <b c>2) |
+  % bar 30
+  r4 af4~( <g af>2) |
+  % bar 31
+  r2 b!2-- |
+  % bar 32
+  r2 \clef "G" cs4~( <cs ds>4) |
+  % bar 33
+  r4 r8 cs8 d!4( <e fs>4) |
+  % bar 34
+  % bar 35
 }
 
 "pianoLeft4" = \relative c {
