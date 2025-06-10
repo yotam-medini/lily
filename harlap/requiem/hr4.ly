@@ -320,7 +320,7 @@
   % bar 38
   d1 |
   % bar 39
-  f2 e
+  f2( e)
   % bar 40
   d1
   % bar 41
@@ -536,9 +536,9 @@
   % bar 37
   d2 c |
   % bar 38
-  bf2. bf8 bf32 r16 r32
+  bf1 |
   % bar 39
-  d2 c
+  d2( c)
   % bar 40
   bf1
   % bar 41
