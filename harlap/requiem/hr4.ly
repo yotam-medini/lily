@@ -158,7 +158,7 @@
   % bar 4
   ef'4.. d16 d4 df |
   % bar 5
-  bf4. bf16 df cf4 g! |
+  bf4.. df16 cf4 g! |
   % bar 6
   r1
   % bar 7
@@ -184,7 +184,7 @@
   % bar 21
   e'4.. ds16 ds4 d
   % bar 22
-  b4. b16 d c4 gs
+  b4.. d16 c4 gs
   % bar 23
   r1 |
   % bar 24
@@ -196,7 +196,7 @@
   \time 2/2
   gs4. a8 ds,4. e8
   % bar 30
-  g!4 f!4. f16 r g8 af
+  g!4 f2 \breathe g8 af
   % bar 31
   g2. f8 af |
   % bar 32
@@ -284,7 +284,7 @@
   % bar 21
   c'4.. b16 b4 as |
   % bar 22
-  a4. a16 e ds4 d |
+  a4.. e16 ds4 d |
   % bar 23
   r\ff a8-> a-> a4-> b4-> |
   % bar 24
@@ -302,7 +302,7 @@
   \time 2/2
   gs4. a8 ds4. e8 |
   % bar 30
-  g!4 f4. f16 r g8 af |
+  g!4 f2 \breathe g8 af |
   % bar 31
   g2. f8 af |
   % bar 32

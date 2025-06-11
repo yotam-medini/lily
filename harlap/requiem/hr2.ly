@@ -201,7 +201,7 @@
   % bar 7
   r1
   % bar 8
-  gs'2^\fmarcato a
+  gs2^\fmarcato a
   % bar 9
   gs8->^\mfagitato a cs ds gs,-> a cs ds
   % bar 10
@@ -356,9 +356,9 @@
 "pianoRight2" = \relative c'' {
   \"global2"
   \"dummy"
-  \repeat percent 6 { \repeat unfold 4 {r16 a,( cs e) } }
+  \repeat percent 6 { \repeat unfold 4 {r16 df,( f af) } }
   <<
-    { \repeat percent 4 { \repeat unfold 4 {r16 a,( cs e) } } }
+    { \repeat percent 4 { \repeat unfold 4 {r16 df,( f af) } } }
     \new Dynamics \with { alignAboveContext = "lower" } {
        s1 s16^\ppmaagitato 
     }
@@ -432,7 +432,7 @@
   \clef "G"
   <<
     {
-      \repeat percent 6 { c'4 c c c }
+      \repeat percent 6 { c'4-> c c c }
     }
     \new Dynamics \with { alignAboveContext = "lower" } 
     {
