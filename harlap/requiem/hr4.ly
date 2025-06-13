@@ -737,11 +737,13 @@
   % bar 42
   <a' bf>4 \repeat tremolo 12 {  ds,32(\! e) } |
   % bar 43
-  r4 <d e>4 <a' bf>4--( <d, e>4)  |
+  r4\< <d e>4 <a' bf>4--( <d, e>4)  |
   % bar 44
-  <a' bf>4 \repeat tremolo 12 {  ds,32( e) } |
-  % bar 45-50
-  R1*6
+  <a' bf>4\f \after 4 \> \repeat tremolo 12 {  ds,32( e) } |
+  % bar 45
+  r1\! |
+  % bar 46-50
+  R1*5
   % bar 51
   \clef bass
   <a,, d>1-- |
@@ -919,14 +921,15 @@
   % bar 48
   <d a' d e>1 |
   % bar 49
-  <d a' d e>1~ |
+  <d a' d e>1~\pp\> |
   % bar 50
   <d a' d e>1 |
   % bar 51
-  <d, d'>1-- |
+  <d, d'>1--\< |
   % bar 52
-  <d d'>1-- |
+  <d d'>1--\f\> |
   % bar 53
+  \after 2.. \ppp
   <d d'>1-- |
 }
 
