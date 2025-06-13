@@ -306,13 +306,13 @@
   % bar 26
   r
   % bar 27
-  r
+  r1
   % bar 28
   \time 3/2
-  r r4 b8 c
+  r1 r4 b'8 c
   % bar 29
   \time 2/2
-  gs4. a8 ds4. e8 |
+  gs4. a8 ds,4. e8 |
   % bar 30
   g!4 f2 \breathe g8 af |
   % bar 31
@@ -532,9 +532,9 @@
   r1.
   % bar 29
   \time 2/2
-  r8 e e f f4 e
+  r8 e8 e[ f] f4 e
   % bar 30
-  r8 c c c c4 df |
+  r8 c c[ c] c4 df |
   % bar 31
   cs1 |
   % bar 32
