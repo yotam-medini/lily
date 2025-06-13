@@ -10,7 +10,9 @@
 "solosoprano4" =  \relative c'' {
   \"global4"
   \"dummy"
-  R1*7 |
+  R1*6 |
+  % bar 7
+  r1^\pocorit |
   % bar 8
   \time 3/2
   r1. |
@@ -102,7 +104,9 @@
 "solobaritone4" =  \relative c {
   \"global4"
   \"dummy"
-  R1*7 |
+  R1*6 |
+  % bar 7
+  r1^\pocorit |
   % bar 8
   \time 3/2
   r1. | r1. |
@@ -150,19 +154,20 @@
 "soprano4" = \relative c' {
   \"global4"
   \"dummy"
+  \dynamicUp
   r1
   % bar 2
-  ef4.. d16 ff4 ef |
+  ef4..\f d16 ff4 ef |
   % bar 3
-  r ef8. cf'16 bf4 ff |
+  r ef8. cf'16 bf4 ff\< |
   % bar 4
-  ef'4.. d16 d4 df |
+  ef'4..\ff d16 d4 df |
   % bar 5
   bf4.. df16 cf4 g! |
   % bar 6
   r1
   % bar 7
-  r \bar "||"
+  r1^\pocorit \bar "||"
   \break_orig
   % bar 8
   \time 3/2
@@ -251,13 +256,14 @@
 "alto4" = \relative c' {
   \"global4"
   \"dummy"
+  \dynamicUp
   r1 |
   % bar 2
-  ef4. ef16 d ff4 ef |
+  ef4.\f ef16 d ff4 ef |
   % bar 3
-  r ef8. cf'16 bf4 ff |
+  r ef8. cf'16 bf4 ff\< |
   % bar 4
-  cf'4.. bf16 bf4 a! |
+  cf'4..\ff bf16 bf4 a! |
   % bar 5
   af4.. ef16 d4 cs |
   % bar 6
@@ -354,13 +360,14 @@
 "tenor4" = \relative c {
   \"global4"
   \"dummy"
+  \dynamicUp
   r1 |
   % bar 2
-  cf'4.. bf16 g!4 af |
+  cf'4..\f bf16 g!4 af |
   % bar 3
-  r cf8. df16 d4 ef |
+  r cf8. df16 d4 ef\< |
   % bar 4
-  ef2-> ff->
+  ef2->\! ff->
   % bar 5
   ef-> e->
   % bar 6
@@ -469,9 +476,10 @@
 "bass4" = \relative c {
   \"global4"
   \"dummy"
+  \dynamicUp
   r1
   % bar 2
-  af'2-> af->
+  af'2->\f af->
   % bar 3
   af-> af->
   % bar 4
@@ -573,27 +581,39 @@
   \"global4"
   \"dummy"
   % bar 1
-  r1
+  <<
+    \new Voice { \voiceOne { r1 }}  
+    \new Dynamics \with { alignBelowContext = "upper" } {
+      s8 \f \> s8 s2 s4\!
+    }
+  >>
   % bar 2
-  <cf ef>4.. <bf d>16 <g ff'>4( <af e'>) |
+  <<
+    \new Voice { \voiceOne {  
+      <cf ef>4.. <bf d>16 <g ff'>4( <af e'>) |
+    } }
+    \new Dynamics \with { alignBelowContext = "upper" } {
+      s8\mf s8 s4 s2
+    }
+  >> |
   % bar 3
   r4 <cf ef>8.[ <df cf'>16] <d! f bf>4-- <ef ff>-- |
   % bar 4
   <<
     \new Voice { \voiceOne { <cf' ef>4..( <bf d!>16) <bf d>4( <a! df>) } }
-    \new Voice { \voiceTwo { ef2-- e-- } }
+    \new Voice { \voiceTwo { ef2-> e-> } }
   >> |
   % bar 5
   <<
     \new Voice { \voiceOne { <af bf>4..( df16) df4( <cs, g'>4) } }
-    \new Voice { \voiceTwo { ef2-- e-- } }
+    \new Voice { \voiceTwo { ef2-> e-> } }
   >>
   \clef bass |
   % bar 6
   r4
   <<
     \new Voice { \voiceOne { bf8.[( df16]) cf4.( g!8) } }
-    \new Voice { \voiceTwo { af8[( ef16]) <cs e>2 } }
+    \new Voice { \voiceTwo { af8[( ef16]) <cs e>2-> } }
   >>
   % bar 7
   g'4( af2) gf4-- \bar "||" |
@@ -711,7 +731,7 @@
   \"global4"
   \"dummy"
   % bar 1
-  <af, af'>2-- <af af'>2-- |
+  <af, af'>2-> <af af'>2-> |
   % bar 2
   <af af'>2-- <af af'>2-- |
   % bar 3
@@ -892,15 +912,19 @@
 }
 
 "lyricsSop4" = \lyricmode {
+  Con -- fu -- ta -- tis
 }
 
 "lyricsAlt4" = \lyricmode {
+  Con -- fu -- ta -- tis
 }
 
 "lyricsTen4" = \lyricmode {
+  Con -- fu -- ta -- tis
 }
 
 "lyricsBas4" = \lyricmode {
+  Con -- fu -- ta -- tis
 }
 
 "score4" = \score {
