@@ -202,18 +202,19 @@
   r1 | r1 | r1 | r1 |
   % bar 28
   \time 3/2
-  r r4 b8 c
+  r r4\mp b8^\espress c
   % bar 29
   \time 2/2
   gs4. a8 ds,4. e8
   % bar 30
-  g!4 f2 \breathe g8 af
+  g!4 f!2 \breathe g8 af
   % bar 31
-  g2. f8 af |
+  g2. \breathe f8 af |
   % bar 32
-  g4. f8 g a b cs |
+  g4.^\moltorall f8\> g a b cs |
   % bar 33
-  cs d a2. |
+  \tempo "a tempo" 2 = 50
+  cs\p d a2. |
   \break_orig
   % bar 34
   r1
@@ -309,14 +310,14 @@
   r1
   % bar 28
   \time 3/2
-  r1 r4 b'8 c
+  r1 r4\mp b'8^\espress c
   % bar 29
   \time 2/2
   gs4. a8 ds,4. e8 |
   % bar 30
-  g!4 f2 \breathe g8 af |
+  g!4 f!2 \breathe g8 af |
   % bar 31
-  g2. f8 af |
+  g2.\breathe f8 af |
   % bar 32
   g1 |
   % bar 33
@@ -428,7 +429,7 @@
   r1. |
   % bar 29
   \time 2/2
-  r4 c8 c b2 |
+  r4\mp c8^\espress c b2 |
   % bar 30
   r4 af8 af g2 |
   % bar 31
@@ -436,7 +437,7 @@
   % bar 32
   r8 a! a[ b] cs4 ds |
   % bar 33
-  r cs8 d! a2 |
+  r cs8\p d! a2 |
   % bar 34
   r4 cs8 d e4. d8
   % bar 35
@@ -532,7 +533,7 @@
   r1.
   % bar 29
   \time 2/2
-  r8 e8 e[ f] f4 e
+  r8\mp e8^\espress e[ f] f4 e
   % bar 30
   r8 c c[ c] c4 df |
   % bar 31
@@ -707,9 +708,9 @@
   % bar 31
   r2 b!2-- |
   % bar 32
-  r2 \clef "G" cs4~( <cs ds>4) |
+  r2 \clef "G" cs4~(\> <cs ds>4) |
   % bar 33
-  r4 r8 cs8 d!4( <e fs>4) |
+  r4\! r8 cs8 d!4( <e fs>4) |
   % bar 34
   r4 r8 f!8 g4( <fs as>4) |
   % bar 35
