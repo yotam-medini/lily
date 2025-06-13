@@ -94,16 +94,17 @@
   % bar 43
   r
   % bar 44
-  r2 r4 e'8\( f |
+  r2 r4\ff e'8\( f |
   % bar 45
   cs4. d8 gs,4. a8 |
   % bar 46
-  c!4 bf2.\) |
+  c!4\> bf2.\) |
   % bar 47
-  a4.-- d,8 d4 d
+  a4.--\mf\> d,8 d4 d
   % bar 48
   d e2. |
-  R1*5 |
+  r1\mp |
+  R1*4 |
 }
 
 "solobaritone4" =  \relative c {
@@ -147,11 +148,11 @@
   % bar 44
   r |
   % bar 45
-  r4 gs8\( a e4 f |
+  r4\mf gs8( a\> e4 f |
   % bar 46
-  d e2.\) |
+  d e2.) |
   % bar 47
-  d4. d8 d4 d |
+  d4.\!^\psempre d8 d4 d |
   % bar 48
   d d2. |
   r1 | r1 | r1 | r1 | r1 \bar "|." |
@@ -236,11 +237,11 @@
   f4.\mf e8 e2 ~ |
   \break_orig
   % bar 43
-  e4 d g4. f8 |
+  e4\< d g4. f8 |
   % bar 44
-  f4 e2. |
+  f4\f\> e2. |
   % bar 45
-  d,4 d d2 ~ |
+  d,4\!^\psempre d d2 ~ |
   % bar 46
   d1 |
   % bar 47
@@ -248,7 +249,7 @@
   % bar 48
   d e2. |
   % bar 49
-  d4 d e2 ~
+  d4\pp d\> e2 ~
   % bar 50
   e1 |
   % bar 51
@@ -257,7 +258,8 @@
   d-- |
   \break_orig
   % bar 53
-  d--\fermata \bar "|." |
+  \after 2.. \ppp
+  d1--\fermata \bar "|." |
 }
 
 "alto4" = \relative c' {
@@ -341,11 +343,11 @@
   % bar 42
   d4.\mf d8 d2 ~
   % bar 43
-  d4 d d4. d8
+  d4\< d d4. d8
   % bar 44
-  d4 d2. |
+  d4\f\> d2. |
   % bar 45
-  d,4 d d2 ~ |
+  d,4\!^\psempre d d2 ~ |
   % bar 46
   d1
   % bar 47
@@ -353,7 +355,7 @@
   % bar 48
   d d2. |
   % bar 49
-  d4 d d2 ~ |
+  d4\pp d\> d2 ~ |
   % bar 50
   d1 |
   % bar 51
@@ -361,6 +363,7 @@
   % bar 52
   d-- |
   % bar 53
+  \after 2.. \ppp
   d--\fermata \bar "|." |
 }
 
@@ -457,11 +460,11 @@
   % bar 42
   f4.\mf e8 e2~
   % bar 43
-  e4 d g4. f8
+  e4\< d g4. f8
   % bar 44
-  f4 e2. |
+  f4\f\> e2. |
   % bar 45
-  d,4 d d2 |
+  d,4\!^\psempre d d2 |
   % bar 46
   d1 |
   % bar 47
@@ -469,7 +472,7 @@
   % bar 48
   d e2. |
   % bar 49
-  d4 d e2 ~ |
+  d4\pp d\> e2 ~ |
   % bar 50
   e1 |
   % bar 51
@@ -477,6 +480,7 @@
   % bar 52
   d-- |
   % bar 53
+  \after 2.. \ppp
   d-- \bar "|." | |
 }
 
@@ -565,7 +569,7 @@
   % bar 44
   r
   % bar 45
-  d4 d d2 ~ |
+  d4^\psempre d d2 ~ |
   % bar 46
   d1 |
   % bar 47
@@ -573,7 +577,7 @@
   % bar 48
   d d2. |
   % bar 49
-  d4 d d2 ~ |
+  d4\pp d\> d2 ~ |
   % bar 50
   d1 |
   % bar 51
@@ -581,6 +585,7 @@
   % bar 52
   d1-- |
   % bar 53
+  \after 2.. \ppp
   d--\fermata \bar "|." |
 }
 
