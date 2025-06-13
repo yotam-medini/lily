@@ -609,14 +609,17 @@
     \new Voice { \voiceTwo { ef2-> e-> } }
   >>
   \clef bass |
-  % bar 6
+  % bar 6+7
   r4
   <<
-    \new Voice { \voiceOne { bf8.[( df16]) cf4.( g!8) } }
-    \new Voice { \voiceTwo { af8[( ef16]) <cs e>2-> } }
+    \new Voice { \voiceOne { bf8.[( df16])\! cf4.( g!8) | s1 } }
+    \new Voice { \voiceTwo { af8.[( ef16]) <cs e>2->     | s1 } }
+    \new Voice { \voiceThree { s2.                      | g'4( af2) gf4-- } }
+    \new Dynamics \with { alignBelowContext = "upper" } { 
+      s4 s2\> | s2 s4 s4\!
+    }
   >>
-  % bar 7
-  g'4( af2) gf4-- \bar "||" |
+  \bar "||" |
   % bar 8
   \time 3/2
   r4 c!4( <bf c>1) |
