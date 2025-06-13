@@ -49,13 +49,15 @@
   e4. c8 b4. c8 |
   \break_orig
   % bar 21
-  e4 ds2 d8 e |
+  e4 ds2 \breathe d8 e |
   % bar 22
   d2 c4. gs8 |
   % bar 23
-  a1 |
-  % bar 24
-  R1*4 |
+  a1\> |
+  % bar 21
+  r1\! |
+  % bar 22-24
+  R1*3 |
   \break_orig
   % bar 28
   \time 3/2
@@ -107,6 +109,7 @@
 "solobaritone4" =  \relative c {
   \"global4"
   \"dummy"
+  \dynamicUp
   R1*6 |
   % bar 7
   r1^\pocorit |
@@ -125,13 +128,13 @@
   % bar 23
   r1 |
   % bar 24
-  r4 d'8 c c4 b
+  r4 d'8\f^\moltespr c c4 b
   % bar 25
   f'4. d8 c4 b
   % bar 26
-  r b8 c af4. a8
+  r b8\mf c af4. a8
   % bar 27
-  f4. e8 e4 ds |
+  f4.\< e8 e4 ds\!^\ten |
   \break_orig
   % bar 28
   \time 3/2
@@ -195,7 +198,7 @@
   b4.. d16 c4 gs
   % bar 23
   r1 |
-  % bar 24
+  % bar 24-27
   r1 | r1 | r1 | r1 |
   % bar 28
   \time 3/2
@@ -411,13 +414,13 @@
   % bar 22
   e-> f-> |
   % bar 23
-  r4 e8-> f-> ds4-> ds-> |
+  r4\ff e8-> f-> ds4-> ds-> |
   % bar 24
-  r2. a8\( gs |
+  r2 r4\mf^\sempreLegatoEspress a8\( gs |
   % bar 25
-  gs4 a2 c8 b |
+  gs4\< a2 c8 b |
   % bar 26
-  gs4 a2.\) |
+  gs4\> a2.\)\! |
   % bar 27
   r1
   % bar 28
@@ -515,15 +518,15 @@
   % bar 22
   a-> a-> |
   % bar 23
-  r4 a,8-> a-> f'4-> f-> |
+  r4\ff a,8-> a-> f'4-> f-> |
   % bar 24
-  r1
+  r1^\sempreLegatoEspress
   % bar 25
-  r4 e8\( f! f4 ds ~
+  r4\mf e8\( f!\< f4 ds ~
   % bar 26
-  ds e8 a, e'4 ds\)
+  ds e8\> a, e'4 ds\)
   % bar 27
-  r1
+  r1\!
   % bar 28
   \time 3/2
   r1.
@@ -671,25 +674,31 @@
   >>
   % bar 23
   \clef bass
-  gs,4( a2) b4-- |
-  % bar 24
+  gs,4(\ff\< a2) b4--\! |
+  % bar 24-25
   <<
-    \new Voice { \voiceOne { d4. c8 c4( b) } }
-    \new Voice { \voiceTwo { gs4( a2.) } }
-  >>
-  % bar 25
-  <<
-    \new Voice { \voiceOne { f'4. d8 c4( b) } }
-    \new Voice { \voiceTwo { gs4( a2.) } }
+    \new Voice { \voiceOne {
+      d4. c8 c4( b) |
+      f'4. d8 c4( b)
+    } }
+    \new Voice { \voiceTwo {
+      gs4( a2.) |
+      gs4( a2.)
+    } }
+    \new Dynamics \with { alignBelowContext = "upper" } { 
+      s16\> s16 s8 s4 s2 | s2 s4 s8 s16 s16\!
+    }
   >>
   % bar 26
-  <gs a>1->( |
+  %%  <gs a>1->(\sf\> |
+  <gs a>1->(\sf\> |
   % bar 27
+  %% <gs a>1) \after 1 \! |
   <gs a>1) |
   % bar 28
   \clef bass
   \time 3/2
-  r4 c~( <b c>1) |
+  r4\! c~( <b c>1) |
   % bar 29
   \time 2/2
   r4 c~( <b c>2) |
