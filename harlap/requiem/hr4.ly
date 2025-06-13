@@ -10,23 +10,25 @@
 "solosoprano4" =  \relative c'' {
   \"global4"
   \"dummy"
+  \dynamicUp
   R1*6 |
   % bar 7
   r1^\pocorit |
   % bar 8
   \time 3/2
+  \tempo "Dulce espressivo" 2 = 50
   r1. |
   % bar 9
-  r1 r4 bf8[ cf] |
+  r1 r4\mp bf8[^\espress cf] |
   % bar 10
   \time 2/2
   g!4. af8 d,4. ef8
   % bar 11
   fs4 e!2 \breathe fs8 g |
   % bar 12
-  fs2. e8 g |
+  fs2. \breathe e8 g |
   % bar 13
-  fs4. e8 fs[ gs as c!]
+  fs4.^\moltorall e8\> fs[ gs as c!\!]
   \break_orig
   % bar 14
   c df af2 af8. r16
@@ -622,9 +624,9 @@
   \bar "||" |
   % bar 8
   \time 3/2
-  r4 c!4( <bf c>1) |
+  r4 c!4(\> <bf c>1) |
   % bar 9
-  r4 cf4( <bf c>1) |
+  r4\!\p cf4( <bf c>1) |
   % bar 10
   \time 2/2
   r4 cf4( <bf cf>2) |
@@ -633,7 +635,7 @@
   % bar 12
   r2 bf2\tenuto |
   % bar 13
-  r2 \clef "G" c!4( <c d>4) |
+  r2\< \clef "G" c!4(\> <c d!>4)\! |
   % bar 14
   r4. c8 df4( <df f>4) |
   % bar 15
@@ -781,7 +783,7 @@
   >>
   % bar 13
   <<
-    \new Voice { \voiceOne { r8 e8( <e as>2.) } }
+    \new Voice { \voiceOne { r8 e!8( <e as>2.) } }
     \new Voice { \voiceTwo { c1-- } }
   >>
   % bar 14

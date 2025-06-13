@@ -8,6 +8,7 @@ break_orig = \break
 % break_orig = {}
 DrammaticoIntensivo = \markup { \bold "Drammatico intensivo" }
 dulce = \markup { \italic "dulce" }
+espress = \markup { \italic "espress." }
 fmarcato = \markup { \dynamic "f" \italic "marcato" }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 fsubito = \markup { \dynamic "f" \italic "subito" }
