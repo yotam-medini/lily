@@ -74,15 +74,15 @@
   % bar 33
   r
   % bar 34
-  cs8 d e4. d8 e f
+  cs8\mf d e4. d8\< e f
   % bar 35
-  f4 a,2 af8 c
+  f4 a,2\! af8 c
   % bar 36
-  a2 gs4. d8
+  a!2 \breathe gs4. d8
   % bar 37
-  a'1
+  a'1\>
   % bar 38
-  r
+  r1\!
   % bar 39
   r
   % bar 40
@@ -223,17 +223,17 @@
   % bar 36
   r
   % bar 37
-  a4 a a a
+  a4\p^\sempre a a a
   % bar 38
   a a2.
   % bar 39
-  a4 a a a
+  a4\< a a a
   % bar 40
-  c8 a a2. |
+  c8\> a a2. |
   % bar 41
-  r4 a bf d |
+  r4\! a\< bf d |
   % bar 42
-  f4. e8 e2 ~ |
+  f4.\mf e8 e2 ~ |
   \break_orig
   % bar 43
   e4 d g4. f8 |
@@ -327,9 +327,9 @@
   % bar 35
   a8 a a a e!4 f |
   % bar 36
-  r f8 f e!2 |
+  r f8\> f e!2 |
   % bar 37
-  f\( e\) |
+  f\(\p^\sempre e\) |
   % bar 38
   d1 |
   % bar 39
@@ -337,9 +337,9 @@
   % bar 40
   d1
   % bar 41
-  r4 a' bf d
+  r4 a'\< bf d
   % bar 42
-  d4. d8 d2 ~
+  d4.\mf d8 d2 ~
   % bar 43
   d4 d d4. d8
   % bar 44
@@ -439,13 +439,13 @@
   % bar 33
   r cs8\p d! a2 |
   % bar 34
-  r4 cs8 d e4. d8
+  r4 cs8 d e4. d8\<
   % bar 35
-  e f f4 a,2
+  e f f4 a,2\!
   % bar 36
-  a4. a8 bf2
+  a4.\> a8 bf2
   % bar 37
-  d c
+  d2\p^\sempre c
   % bar 38
   bf!1 |
   % bar 39
@@ -453,9 +453,9 @@
   % bar 40
   bf1 |
   % bar 41
-  r4 a bf d
+  r4 a\< bf d
   % bar 42
-  f4. e8 e2~
+  f4.\mf e8 e2~
   % bar 43
   e4 d g4. f8
   % bar 44
@@ -547,9 +547,9 @@
   % bar 35
   r8 a a[ a] bf4 a! |
   % bar 36
-  d,1 |
+  d,1\> |
   % bar 37
-  d2 c |
+  d2\p^\sempre c |
   % bar 38
   bf1 |
   % bar 39
@@ -728,9 +728,9 @@
     \new Voice { \voiceTwo { f2( e2 | d1) } }
   >>
   % bar 41
-  r4 <d e>4 <a' bf>4--( <d, e>4)  |
+  r4\< <d e>4 <a' bf>4--( <d, e>4)  |
   % bar 42
-  <a' bf>4 \repeat tremolo 12 {  ds,32( e) } |
+  <a' bf>4 \repeat tremolo 12 {  ds,32(\! e) } |
   % bar 43
   r4 <d e>4 <a' bf>4--( <d, e>4)  |
   % bar 44
@@ -890,7 +890,7 @@
     \new Voice { \voiceTwo { d,1 } }
   >> |
   % bar 37
-  <d, d' d'>2( <c c' c'>2 |
+  { \dynamicUp <d, d' d'>2(\p^\sempre <c c' c'>2 } |
   % bar 38
   <bf bf' bf'>1) |
   % bar 39
