@@ -28,22 +28,23 @@
   % bar 12
   fs2. \breathe e8 g |
   % bar 13
-  fs4.^\moltorall e8\> fs[ gs as c!\!]
+  fs4.^\moltorall e8\> fs[ gs as c!\!] |
   \break_orig
   % bar 14
-  c df af2 af8. r16
+  \tempo "a tempo" 2 = 50
+  c\p df af2. \breathe |
   % bar 15
-  c8 df ef4. df8 ef e
+  c8 df ef4. df8\< ef e |
   % bar 16
-  e4 gs,2 g8 b! |
+  e4 gs,2\! g8\> b! |
   % bar 17
-  gs4. gs16 r g4. cs8   |
+  gs4. gs16 r g4. cs8 \! |
   % bar 18
   \time 3/2
-  gs1. |
+  gs1.\pp\> |
   % bar 19
   \time 2/2
-  r2. e'8 f
+  r2\! r4\ff e'8 f |
   % bar 20
   e4. c8 b4. c8 |
   \break_orig
@@ -185,11 +186,11 @@
   \time 3/2
   r1.  % bar 19
   \time 2/2
-  e4.. ds16 f4 e |
+  e4..\f ds16 f4 e |
   % bar 20
-  r e8. c'16 b4 f
+  r e8. c'16 b4 f\<
   % bar 21
-  e'4.. ds16 ds4 d
+  e'4..\ff ds16 ds4 d
   % bar 22
   b4.. d16 c4 gs
   % bar 23
@@ -286,11 +287,11 @@
   \time 3/2
   r1.  % bar 19
   \time 2/2
-  e4.. ds16 f4 e |
+  e4..\f ds16 f4 e |
   % bar 20
-  r e8. c'16 b4 f |
+  r e8. c'16 b4 f\< |
   % bar 21
-  c'4.. b16 b4 as |
+  c'4..\ff b16 b4 as |
   % bar 22
   a4.. e16 ds4 d |
   % bar 23
@@ -402,11 +403,11 @@
   \time 3/2
   r1.  % bar 19
   \time 2/2
-  c4.. b16 gs4 a |
+  c4..\f b16 gs4 a |
   % bar 20
-  r c8. d16 ds4 e |
+  r c8. d16 ds4 e\< |
   % bar 21
-  e2-> f-> |
+  e2->\! f-> |
   % bar 22
   e-> f-> |
   % bar 23
@@ -506,7 +507,7 @@
   \time 3/2
   r1.  % bar 19
   \time 2/2
-  a2-> a-> |
+  a2->\f a-> |
   % bar 20
   a-> a-> |
   % bar 21
@@ -637,7 +638,7 @@
   % bar 13
   r2\< \clef "G" c!4(\> <c d!>4)\! |
   % bar 14
-  r4. c8 df4( <df f>4) |
+  r4.\p c8 df4( <df f>4) |
   % bar 15
   r4. e8 fs4( < g a!>4) |
   % bar 16
@@ -646,12 +647,16 @@
   r4 e4( <ds e>2) |
   % bar 18
   \clef bass
+  {
+  \dynamicUp
   \time 3/2
-  r4 c,!4 \repeat tremolo 16 { \stemUp ds32( e) } |
+  r4 c,!4 \repeat tremolo 16 { \stemUp ds32(\sff\> e) } |
+  }
   % bar 19
   \clef "G"
   \time 2/2
-  <c' e>4.. <b ds>16 <gs f'>4( <a e'>4) |
+  \dynamicDown
+  <c' e>4..\mf <b ds>16 <gs f'>4( <a e'>4) |
   % bar 20
   r4 <c e>8.[ <d! c'>16] <ds f b>4-- <e f!>4-- |
   % bar 21
@@ -803,8 +808,8 @@
   % bar 18
   \time 3/2
   <<
-    \new Voice { \voiceOne { r8 gs4. <gs a!>16 r16 r8 r4 r2 } }
-    \new Voice { \voiceTwo { cs,2 r2 <a a'>2 } }
+    \new Voice { \voiceOne { r8 gs4. <gs a!>16--\sff r16 r8 r4 r2 } }
+    \new Voice { \voiceTwo { cs,2\pp r2 <a a'>2->\f } }
   >> |
   % bar 19
   \time 2/2
