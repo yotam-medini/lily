@@ -38,10 +38,10 @@
   % bar 16
   e4 gs,2\! g8\> b! |
   % bar 17
-  gs4. gs16 r g4. cs8 \! |
+  gs2 g!4. cs,8 \! |
   % bar 18
   \time 3/2
-  gs1.\pp\> |
+  gs'1.\pp\> |
   % bar 19
   \time 2/2
   r2\! r4\ff e'8 f |
@@ -148,9 +148,9 @@
   % bar 44
   r |
   % bar 45
-  r4\mf gs8( a\> e4 f |
+  r4\mf gs8\( a\> e4 f |
   % bar 46
-  d e2.) |
+  d e2.\) |
   % bar 47
   d4.\!^\psempre d8 d4 d |
   % bar 48
@@ -268,7 +268,7 @@
   \dynamicUp
   r1 |
   % bar 2
-  ef4.\f ef16 d ff4 ef |
+  ef4..\f d16 ff4 ef |
   % bar 3
   r ef8. cf'16 bf4 ff\< |
   % bar 4
@@ -452,7 +452,7 @@
   % bar 38
   bf!1 |
   % bar 39
-  d2\( c\) |
+  d2( c) |
   % bar 40
   bf1 |
   % bar 41
@@ -464,7 +464,7 @@
   % bar 44
   f4\f\> e2. |
   % bar 45
-  d,4\!^\psempre d d2 |
+  d,4\!^\psempre d d2 ~ |
   % bar 46
   d1 |
   % bar 47
@@ -934,25 +934,119 @@
 }
 
 "lyricsSoloSop4" = \lyricmode {
+  Vo -- ca me cum be -- ne -- dic -- tis
+    Vo -- ca me Vo -- ca me cum be -- ne -- dic -- tis
+  Vo -- ca me Vo -- ca me cum be -- ne -- dic -- tis
+    Vo -- ca me Vo -- ca me 
+  Vo -- ca me cum be -- ne -- dic -- tis
+    Vo -- ca me Vo -- ca me Vo -- ca me  cum be -- ne --
+  dic -- tis  Vo -- ca me Vo -- ca me 
+  % bar 44
+  Ge -- re cu -- ram me -- i fi -- nis  Re -- qui -- em  ae -- ter -- nam
 }
 
 "lyricsSoloBar4" = \lyricmode {
+  % bar 24
+  O -- ro su -- pplex et a -- ccli -- nis
+  % bar 26
+  Cor con -- tri -- tum qua -- si ci -- nis
+  % bar 45
+  cu -- ram me -- i fi -- nis  Re -- qui -- em  ae -- ter -- nam
 }
 
 "lyricsSop4" = \lyricmode {
-  Con -- fu -- ta -- tis
+  Con -- fu -- ta -- tis ma -- le -- dic -- tis
+    Fla -- mmis a -- cri -- bus a -- ddic -- tis
+  % bar 19
+  Con -- fu -- ta -- tis ma -- le -- dic -- tis
+  % bar 21
+  Fla -- mmis a -- cri -- bus a -- ddic -- tis
+  % bar 28
+  Vo -- ca me cum be -- ne -- dic -- tis
+    Vo -- ca me Vo -- ca me 
+    cum be -- ne -- dic -- tis
+    Vo -- ca me 
+  % bar 37
+  Re -- qui -- em  ae -- ter -- nam
+    do -- na e -- us Do -- mi -- ne er lux per -- per -- tu -- a
+  % bar 43
+  lu -- ce -- at e -- is  Re -- qui -- em  Re -- qui -- em  ae -- ter -- nam
+  % bar 49
+  Re -- qui -- em
+  % bar 51
+  Re -- qui -- em
 }
 
 "lyricsAlt4" = \lyricmode {
-  Con -- fu -- ta -- tis
+  Con -- fu -- ta -- tis ma -- le -- dic -- tis
+    Fla -- mmis a -- cri -- bus a -- ddic -- tis
+  % bar 19
+  Con -- fu -- ta -- tis ma -- le -- dic -- tis
+  % bar 21
+  Fla -- mmis a -- cri -- bus a -- ddic -- tis
+  % bar 23
+  ma -- le -- dic -- tis
+  % bar 28
+  Vo -- ca me cum be -- ne -- dic -- tis
+    Vo -- ca me Vo -- ca me cum be -- ne -- dic -- tis
+  % bar 34
+  Vo -- ca me cum be -- ne -- dic -- tis
+    Vo -- ca me
+  % bar 37
+  Re -- qui -- em  do -- na  et lux per -- pe -- tu -- a
+  % bar 43
+  lu -- ce -- at e -- is  Re -- qui -- em  Re -- qui -- em  ae -- ter -- nam
+  % bar 49
+  Re -- qui -- em
+  % bar 51
+  Re -- qui -- em
 }
 
 "lyricsTen4" = \lyricmode {
-  Con -- fu -- ta -- tis
+  Con -- fu -- ta -- tis ma -- le -- dic -- tis
+    Con -- fu -- ta -- tis
+  % bar 19
+  Con -- fu -- ta -- tis ma -- le -- dic -- tis
+  % bar 21
+  Con -- fu -- ta -- tis 
+  % bar 23
+  ma -- le -- dic -- tis
+  % bar 24
+  O -- ro su -- pplex et a -- ccli -- nis
+  % bar 29
+  Vo -- ca me Vo -- ca me cum be -- ne -- dic -- tis
+    cum be -- ne -- dic -- tis Vo -- ca me
+  % bar 34
+  Vo -- ca me cum be -- ne -- dic -- tis Vo -- ca me
+  % bar 37
+  Re -- qui -- em  do -- na  et lux per -- pe -- tu -- a
+  % bar 43
+  lu -- ce -- at e -- is  Re -- qui -- em  Re -- qui -- em  ae -- ter -- nam
+  % bar 49
+  Re -- qui -- em
+  % bar 51
+  Re -- qui -- em
 }
 
 "lyricsBas4" = \lyricmode {
+  Con -- fu -- ta -- tis ma -- le -- dic -- tis
+  % bar 19
   Con -- fu -- ta -- tis
+  % bar 21
+  ma -- le -- dic -- tis
+  % bar 23
+  ma -- le -- dic -- tis
+  % bar 25
+  O -- ro su -- pplex et a -- ccli -- nis
+  % bar 29
+  cum be -- ne -- dic -- tis cum be -- ne -- dic -- tis Vo -- ca me
+  % bar 34
+  cum cum be -- ne -- dic -- tis cum
+  % bar 37
+  Re -- qui -- em  do -- na  
+  % bar 45
+  Re -- qui -- em  Re -- qui -- em  ae -- ter -- nam
+    Re -- qui -- em  Re -- qui -- em
 }
 
 "score4" = \score {
