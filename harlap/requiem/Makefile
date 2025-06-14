@@ -18,5 +18,5 @@ endef
 
 $(foreach n, 1 2 3 4 5 6 7,$(eval $(call mid2ly_rule,$(n))))
 
-harlap-requiem.pdf: harlap-requiem.ly hr1.ly hr2.ly hr3.ly hr4.ly
+harlap-requiem.pdf: harlap-requiem.ly hr1.ly hr2.ly hr3.ly hr4.ly hr5.ly
 	lilypond harlap-requiem.ly

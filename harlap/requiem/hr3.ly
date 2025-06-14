@@ -592,6 +592,8 @@
     >>
   >>
   \layout {
+    indent = 2.0\cm
+    short-indent = 1.0\cm
     \context {
       \Staff
       \RemoveEmptyStaves

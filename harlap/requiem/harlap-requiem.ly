@@ -2,6 +2,7 @@
 \include "english.ly"
 
 "dummy" = {} % sometimes needed to make emacs LilyPond-mode happy
+attaca = \markup { \italic "attaca" }
 atempo = \markup { \italic "(a tempo)" }
 Atempo = \markup { \italic "(A tempo)" }
 break_orig = \break
@@ -9,14 +10,18 @@ break_orig = \break
 DrammaticoIntensivo = \markup { \bold "Drammatico intensivo" }
 dulce = \markup { \italic "dulce" }
 espress = \markup { \italic "espress." }
+espressintensivo = \markup { \italic "espress. intensivo" }
 fmarcato = \markup { \dynamic "f" \italic "marcato" }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 fsubito = \markup { \dynamic "f" \italic "subito" }
+intensivo = \markup { \italic "intensivo" }
+mfintensivo = \markup { \dynamic "mf" \italic "intensivo" }
 moltespr = \markup { \italic "molto espressivo" } % obsolete
 moltoespr = \markup { \italic "molto espressivo" }
 moltorall = \markup { \bold "molto rall." }
 mfagitato = \markup { \dynamic "mf" \italic "agitato" }
 mpmoltoagitato = \markup { \dynamic "mp" \italic "molto agitato" }
+mpsubito = \markup { \dynamic "mp" \italic "subito" }
 pdulce = \markup { \dynamic "p" \italic "dulce" }
 pocorall = \markup { \bold\italic "poco rall." }
 pocorit = \markup { \bold\italic "poco rit." }
@@ -34,10 +39,16 @@ sfff = \markup { \dynamic "sfff" }
 slowarpeg = \markup { \italic "(slow arpeggio)" }
 ten = \markup {\italic "ten." }
 
+
+makePercent = #(define-music-function (note) (ly:music?)
+  "Make a percent repeat the same length as NOTE."
+  (make-music 'PercentEvent 'length (ly:music-length note)))
+
 \include "hr1.ly"
 \include "hr2.ly"
 \include "hr3.ly"
 \include "hr4.ly"
+\include "hr5.ly"
 
 \paper{
   #(set-paper-size "a4")
@@ -82,4 +93,5 @@ ten = \markup {\italic "ten." }
   \"score2"
   \"score3"
   \"score4"
+  \"score5"
 }
