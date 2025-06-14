@@ -38,6 +38,7 @@ ten = \markup {\italic "ten." }
 \include "hr2.ly"
 \include "hr3.ly"
 \include "hr4.ly"
+\include "hr5.ly"
 
 \paper{
   #(set-paper-size "a4")
@@ -82,4 +83,5 @@ ten = \markup {\italic "ten." }
   \"score2"
   \"score3"
   \"score4"
+  \"score5"
 }
