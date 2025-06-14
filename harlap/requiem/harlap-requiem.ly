@@ -34,9 +34,9 @@ sfff = \markup { \dynamic "sfff" }
 slowarpeg = \markup { \italic "(slow arpeggio)" }
 ten = \markup {\italic "ten." }
 
-% \include "hr1.ly"
-% \include "hr2.ly"
-% \include "hr3.ly"
+\include "hr1.ly"
+\include "hr2.ly"
+\include "hr3.ly"
 \include "hr4.ly"
 
 \paper{
@@ -78,8 +78,8 @@ ten = \markup {\italic "ten." }
     pdfauthor = "yotam.medini@gmail.com"
   }
   \markup { \vspace #1 }
-  % \"score1"
-  % \"score2"
-  % \"score3"
+  \"score1"
+  \"score2"
+  \"score3"
   \"score4"
 }
