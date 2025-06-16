@@ -362,11 +362,36 @@
   % bar 3
   <e g>8[( a) <d, c'>--( f]) <c e>8--( f) <c d>4-- |
   % bar 4
+  <cs e>4( <b d>) <a cs>8( b) <a b>4 |
   % bar 5
+  <<
+    \new Voice { \voiceOne { cs4.( b8) as8( b) gs4  } }
+    \new Voice { \voiceTwo { as4 gs fs-- fs-- } }
+  >> |
   % bar 6
+  <<
+    \new Voice { \voiceOne { cs'8( ds) fs( b,) as( b) gs4-- } }
+    \new Voice { \voiceTwo { as4 gs fs fs-- } }
+  >> |
   % bar 7
+  <g' bf>4( <f af>)
+  <<
+    \new Voice { \voiceOne { g8[( af]) } }
+    \new Voice { \voiceTwo { ef4 } }
+  >>
+  <ef f>4 |
   % bar 8
+  <<
+    \new Voice { \voiceOne { bf'8( c) ef( af,)  g( af) f4--} }
+    \new Voice { \voiceTwo { g4 f ef-- ef-- } }
+  >> |
   % bar 9
+  <<
+    \new Voice { \voiceOne {
+       <f f'>8( <gf gf'>) <ef ef'>4.( <f f'>8) <cs cs'>8[( <ds ds'>])
+    } }
+    \new Voice { \voiceTwo { ef4 df2 b4 } }
+  >> |
   % bar 10
   % bar 11
   % bar 12
