@@ -252,6 +252,36 @@
   a'!4 g! f!2 |
   % bar 21
   a!4\< g! f!2\! |
+  % bar 22
+  r4 f ef ef |
+  % bar 23
+  gs fs fs2 |
+  % bar 24
+  b4( a) c bf |
+  % bar 25
+  b!4( a) g g8-- g-- |
+  % bar 26
+  b4( a) g2 \bar "||" |
+  \time 2/4
+  % bar 27-29
+  r2 | r2 | r2 |
+  % bar 30
+  gf8( f) ef( af) |
+  % bar 31
+  df,4-> c!-> |
+  % bar 32-33
+  r2 | r2 |
+  % bar 34
+  r8 e f g |
+  % bar 35
+  e f g4 |
+  % bar 36
+  c8( b) a( d) |
+  % bar 37
+  g,4-> fs |
+  % bar 38
+  r2 |
+  % bar 38
 }
 
 "tenor5" = \relative c {
