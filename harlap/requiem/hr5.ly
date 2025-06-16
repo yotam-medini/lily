@@ -239,7 +239,19 @@
   R\breve\fermata |
   % bar 15
   \time 2/2
-  f'4
+  a'4 g fs8( g) e4 |
+  % bar 16
+  a4. g8 fs( g) e4 |
+  % bar 17
+  fs4 e ds8( e) cs4 |
+  % bar 18
+  ef4. df8 c! df bf4 |
+  % bar 19
+  ef4 df8 df  c df bf4 |
+  % bar 20
+  a'!4 g! f!2 |
+  % bar 21
+  a!4\< g! f!2\! |
 }
 
 "tenor5" = \relative c {
