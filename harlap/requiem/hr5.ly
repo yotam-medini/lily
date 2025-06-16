@@ -10,19 +10,42 @@
   \"global5"
   \"dummy"
   R1*12
+  \bar "||" |
   \time 4/2
-  r8.\fermata fs16 fs8 g
-  
+  r8.\fermata fs16 fs8 g b4.( fs8) fs g d'8.. c32 c4 b\fermata |
+  R1*2 \bar "||" |
+  % bar 15
+  \time 2/2
+  a4. d8 d4 d |
+  % bar 16
+  d4 e fs g |
+  % bar 17
+  fs4. fs8 fs2 |
+  % bar 18
+  r4 ef ef ef |
+  % bar 19
+  af4. ef8 ef2 |
+  % bar 20
+  cs4. cs8 cs2~ |
+  % bar 21
+  cs1 |
+  % bar 22-26
+  R1*5 \bar "||" |
+  % bar 27-
+  \time 2/4
 }
 
 "soloBaritone5" =  \relative c {
   \"global5"
   \"dummy"
   R1*12
+  \bar "||" |
+  % bar 13
   \time 4/2
-  R1*2 \fermata 
-  r4\fermata
-  d8 ef
+  % bar 14
+  R1*2 \fermata
+  r4\fermata d8\( ef b4. c8 d[ ef bf' af] af8..[ g32] d'4\fermata\) \bar "||" |
+  % bar 15
 }
 
 "soprano5" = \relative c' {
@@ -52,12 +75,12 @@
   % bar 11
   bf c d ef |
   % bar 12
-  d4. d8 d2 |
+  d4. d8 d2 \bar "||" |
   % bar 13
   \time 4/2
-  R1*2\fermata |
+  R\breve\fermata |
   % bar 14
-  R1*2\fermata |
+  R\breve\fermata |
   \break_orig
   % bar 15
   \time 2/2
@@ -164,7 +187,7 @@
   % bar 70
   ef,4 f |
   % bar 71-77
-  r2*7 | 
+  r2*7 |
   % bar 78
   f'4.->( e8)
   % bar 79
@@ -200,9 +223,23 @@
   % bar 7
   bf' af g!8 af f4 |
   % bar 8
-  bf4. af8 g af f4
+  bf4. af8 g af f4 |
   % bar 9
-  r1
+  r1 |
+  % bar 10
+  f4 ef d8 ef c4 |
+  % bar 11
+  f4. ef8 d ef c4 |
+  % bar 12
+  d c b8 c a4 \bar "||" |
+  % bar 13
+  \time 4/2
+  R\breve\fermata |
+  % bar 14
+  R\breve\fermata |
+  % bar 15
+  \time 2/2
+  f'4
 }
 
 "tenor5" = \relative c {
