@@ -281,7 +281,40 @@
   g,4-> fs |
   % bar 38
   r2 |
-  % bar 38
+  % bar 39-45
+  R2*7 |
+  % bar 46
+  r8 d8 ef f |
+  % bar 47
+  d8 ef f4 |
+  % bar 48
+  bf8( a) g( c) |
+  % bar 49
+  f,4-> g-> |
+  % bar 50
+  a8( gs) fs( b) |
+  % bar 51
+  e,4-> fs-> |
+  % bar 52-60
+  R2*9 |
+  % bar 61
+  r4 r8 ef8 |
+  % bar 62
+  df4 df8 ef |
+  % bar 63
+  e8 fs fs4 |
+  % bar 64
+  e8 ds cs fs |
+  % bar 66
+  e4-> fs-> |
+  % bar 66-67
+  r2 | r2 |
+  % bar 68
+  r2
+  % bar 69
+  af8( g) f( bf) |
+  % bar 70
+  ef,4-> d!-> |
 }
 
 "tenor5" = \relative c {
