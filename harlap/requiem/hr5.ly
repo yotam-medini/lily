@@ -505,30 +505,57 @@
   <<
     \new Voice { \voiceOne { <g, c>16-. r16 r8 r4 } }
     \new Voice { \voiceTwo { c8-. c-. c-. c-. } }
-  >>
-  
-  % bar 46
-  % bar 47
-  % bar 48
-  % bar 49
+  >> |
+  % bar 46-49
+  \repeat percent 4 { c8-.\mp c-. c-. c-. } |
   % bar 50
+  b8-. b-. b-. b-. |
   % bar 51
+  b8-. b-. b-. b-. |
   % bar 52
+  a''8( gs) fs( b) |
   % bar 53
+  e,4.( fs8) |
   % bar 54
+  d4.( e8) |
   % bar 55
+  d,4.( e8) |
   % bar 56
+  d8( e) f( e) |
   % bar 57
+  g( f) e( f) |
   % bar 58
+  d4.( e8) |
   % bar 59
+  <<
+    \new Voice { \voiceOne { <af, df>16 r16 r8 r4 } }
+    \new Voice { \voiceTwo { d8-. d-. d-. d-. } }
+  >>
   % bar 60
+  df16-. r16 r8 r4 |
   % bar 61
+  r4 r8 ef8 |
   % bar 62
+  df4 df8( ef) |
   % bar 63
+  <<
+    \new Voice { \voiceOne { r4 r8 bf'8 } }
+    \new Voice { \voiceTwo { e,!8( fs4.) } }
+  >> |
   % bar 64
+  <<
+    \new Voice { \voiceOne { af4. bf8 } }
+    \new Voice { \voiceTwo { e,!8( ds) cs( fs) } }
+  >>
   % bar 65
+  <<
+    \new Voice { \voiceOne { b!8( fs) gs4 } }
+    \new Voice { \voiceTwo { e4-> fs-> } }
+  >>
   % bar 66
+  bf,8-. bf-. bf-. bf-. |
   % bar 67
+  bf8-. bf-. bf-. bf-. |
   % bar 68
   % bar 69
   % bar 70
