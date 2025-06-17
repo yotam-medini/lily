@@ -554,25 +554,19 @@
   >>
   % bar 66
   bf,8-. bf-. bf-. bf-. |
-  % bar 67
-  bf8-. bf-. bf-. bf-. |
-  % bar 68
-  % bar 69
-  % bar 70
+  % bar 67-70
+  \repeat percent 4 {bf8-. bf-. bf-. bf-.} |
   % bar 71
+  af''8( g) f( bf) |
   % bar 72
+  af8( ef) f4 |
   % bar 73
-  % bar 74
-  % bar 75
-  % bar 76
-  % bar 77
-  % bar 78
-  % bar 79
-  % bar 80
-  % bar 81
-  % bar 82
-  % bar 83
+  af,8( ef) f4 |
+  % bar 74-83
+  \repeat percent 10 { g8-. g-. g-. g-. } |
   % bar 84
+  \clef bass
+  r8 <a,, d' g>16[ <a d' g>16] <a d' g>16 r16 r8\fermata \bar "|."
 }
 
 "pianoLeft5" = \relative c {
