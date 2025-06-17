@@ -393,18 +393,62 @@
     \new Voice { \voiceTwo { ef4 df2 b4 } }
   >> |
   % bar 10
+  <<
+    \new Voice { \voiceOne { f'4( ef) d8[( ef])  c-- } }
+    \new Voice { \voiceTwo { d!4 c! bf-- bf-- } }
+  >> |
   % bar 11
+  <<
+    \new Voice { \voiceOne { f'8( g) bf( ef,) d[( ef]) c-- } }
+    \new Voice { \voiceTwo { d4 c bf-- bf-- } }
+  >>  
   % bar 12
+  <<
+    \new Voice { \voiceOne { d8( e!) b'( c,) b![( c]) a-- } }
+    \new Voice { \voiceTwo { b4 a g-- g-- } }
+  >>  
   % bar 13
+  \clef bass
+  \time 4/2
+  <fs g b>\breve\fermata |
   % bar 14
+  <d ef g c>\breve\fermata |
   % bar 15
+  \clef "G"
+  <<
+    \new Voice { \voiceOne { a''4( g) fs8[( g]) e-- } }
+    \new Voice { \voiceTwo { fs4( e) d-- d-- } }
+  >> |
   % bar 16
+  <<
+    \new Voice { \voiceOne { a'8 b d[( g,]) fs![( g]) e-- } }
+    \new Voice { \voiceTwo { fs4( e) d-- d-- } }
+  >> |
   % bar 17
+  <<
+    \new Voice { \voiceOne { fs4( e) ds8[( e]) cs!4-- } }
+    \new Voice { \voiceTwo { ds4 cs bf-- bf-- } }
+  >> |
   % bar 18
+  <<
+    \new Voice { \voiceOne { ef4.( df8) c8[( df]) bf4-- } }
+    \new Voice { \voiceTwo { c!4 bf af-- af-- } }
+  >> |
   % bar 19
+  <<
+    \new Voice { \voiceOne { ef'8[( f) af( df,)] c8[( df]) bf!4-- } }
+    \new Voice { \voiceTwo { c4 bf af-- af-- } }
+  >> |
   % bar 20
+  <<
+    \new Voice { \voiceOne { d'4( bf) a!8[( bf]) g4-- } }
+    \new Voice { \voiceTwo { a!4 g f-- f-- } }
+  >>  
   % bar 21
-  % bar 22
+  <<
+    \new Voice { \voiceOne { c'8[( d) f( bf,)] a[( bf]) g4-- } }
+    \new Voice { \voiceTwo { a4 g f-- f-- } }
+  >>  
   % bar 23
   % bar 24
   % bar 25
