@@ -443,28 +443,52 @@
   <<
     \new Voice { \voiceOne { d'4( bf) a!8[( bf]) g4-- } }
     \new Voice { \voiceTwo { a!4 g f-- f-- } }
-  >>  
+  >> |
   % bar 21
   <<
     \new Voice { \voiceOne { c'8[( d) f( bf,)] a[( bf]) g4-- } }
     \new Voice { \voiceTwo { a4 g f-- f-- } }
-  >>  
+  >> |
+  % bar 22
+  <<
+    \new Voice { \voiceOne { gf8[( af]) f4 gf4.( af!8) } }
+    \new Voice { \voiceTwo { f4 ef2. } }
+  >> |
   % bar 23
+  <<
+    \new Voice { \voiceOne { a!8->[( b!]) gs4. a!4->( b!8) } }
+    \new Voice { \voiceTwo { gs4 fs2. } }
+  >> |
   % bar 24
+  <<
+    \new Voice { \voiceOne { c'8[( d) b( c)] df[( ef) c( df)] } }
+    \new Voice { \voiceTwo { b!4( a) c!( bf!) } }
+  >> |
   % bar 25
+  <<
+    \new Voice { \voiceOne { d!4( c) bf( a) } }
+    \new Voice { \voiceTwo { b!4( a) g-- g-- } }
+  >> |
   % bar 26
+  <<
+    \new Voice { \voiceOne { d'8[( e) g( c,)] b[( c]) a4--  } }
+    \new Voice { \voiceTwo { b4 a g-- g-- } }
+  >> \bar "||" |
   % bar 27
-  % bar 28
-  % bar 29
-  % bar 30
-  % bar 31
+  \clef bass
+  \time 2/4
+  af,8-.[ af-.] af-.[ af-.] |
+  % bar 28-31
+  \repeat percent 4 {af8-.[ af-.] af-.[ af-.] } |
   % bar 32
+  \clef "G"
+  gf'8( a) ef( af) |
   % bar 33
-  % bar 34
-  % bar 35
-  % bar 36
-  % bar 37
+  gf'8( df) e4 |
+  % bar 34-37
+  \repeat percent 4 {d,!8-.[ d-.] d-.[ d-.] } |
   % bar 38
+  c''8( b) a( d) |
   % bar 39
   % bar 40
   % bar 41
