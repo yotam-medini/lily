@@ -490,12 +490,23 @@
   % bar 38
   c''8( b) a( d) |
   % bar 39
+  c8( g) a4 |
   % bar 40
+  r8 gs8 ds( es) |
   % bar 41
+  g!8->( d!16) r16 r8 e!8-- |
   % bar 42
+  ef8( bf) c4 |
   % bar 43
+  r8 g8( d[ f]) |
   % bar 44
+  ef->[( <a,f bf>16]) r16 r8 df8-> |
   % bar 45
+  <<
+    \new Voice { \voiceOne { <g, c>16-. r16 r8 r4 } }
+    \new Voice { \voiceTwo { c8-. c-. c-. c-. } }
+  >>
+  
   % bar 46
   % bar 47
   % bar 48
