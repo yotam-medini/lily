@@ -527,14 +527,22 @@
   % bar 21
   f1 |
   % bar 22
+  r1 |
   % bar 23
+  r1 |
   % bar 24
+  r4 r8 a!8 gf4 gf8[ gf] |
   % bar 25
+  g1-> |
   % bar 26
+  g1-> \bar "||" |
   % bar 27
+  \time  2/4
+  r2 |
   % bar 28
+  r8 <af bf>8 <af b!>8[ <af df>8] |
   % bar 29
-  % bar 30
+  <af bf>8[ <af b!>] <af df>4 |
   % bar 31
   % bar 32
   % bar 33
