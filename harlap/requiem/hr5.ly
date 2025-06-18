@@ -419,28 +419,22 @@
   f4-> e-> |
   % bar 38
   r2 |
-  % bar 39
-  % bar 40
-  % bar 41
-  % bar 42
-  % bar 43
-  % bar 44
-  % bar 45
+  % bar 39-45
+  R2*7 |
   % bar 46
+  r8 d'8 ef[ f] |
   % bar 47
+  f8 ef f4 |
   % bar 48
+  c4-> d-> |
   % bar 49
+  ef-> d-> |
   % bar 50
+  b-> cs-> |
   % bar 51
-  % bar 52
-  % bar 53
-  % bar 54
-  % bar 55
-  % bar 56
-  % bar 57
-  % bar 58
-  % bar 59
-  % bar 60
+  d!-> cs-> |
+  % bar 52-60
+  R2*9 |
   % bar 61
   % bar 62
   % bar 63
