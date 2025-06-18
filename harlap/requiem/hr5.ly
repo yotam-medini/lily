@@ -336,7 +336,7 @@
   % bar 84
   \break_orig
   % bar 84
-  r2\fermata \bar "|." |
+  R2\fermata \bar "|." |
 }
 
 "tenor5" = \relative c' {
@@ -433,32 +433,50 @@
   b-> cs-> |
   % bar 51
   d!-> cs-> |
-  % bar 52-60
-  R2*9 |
+  % bar 52-59
+  R2*8 |
+  % bar 60
+  r4 r8 bf8 |
   % bar 61
+  af4 a8 bf |
   % bar 62
+  b!8( fs) gs4 |
   % bar 63
+  b8( as) gs( cs) |
   % bar 64
+  fs,4 gs |
   % bar 65
+  b8( ds) <b cs>4 |
   % bar 66
+  r2 |
   % bar 67
+  r8 c8 df( ef) |
   % bar 68
+  c8 df ef4 |
   % bar 69
+  bf4-> c-> |
   % bar 70
-  % bar 71
-  % bar 72
-  % bar 73
+  df4-> c-> |
+  % bar 71-73
+  r2 | r2 | r2 |
   % bar 74
+  r4. a8 |
   % bar 75
+  bf4 c |
   % bar 76
+  a4.bf8 |
   % bar 77
+  c2 |
   % bar 78
+  f4.->( e8) |
   % bar 79
+  d4->( g) |
   % bar 80
-  % bar 81
-  % bar 82
-  % bar 83
+  c2-> |
+  % bar 81-83
+  d2-> ~ | d2 ~ | d2 |
   % bar 84
+  R2\fermata \bar "|."
 }
 
 "bass5" = \relative c {
@@ -682,7 +700,7 @@
   \repeat percent 10 { g8-. g-. g-. g-. } |
   % bar 84
   \clef bass
-  r8 <a,, d' g>16[ <a d' g>16] <a d' g>16 r16 r8\fermata \bar "|."
+  r8 <a,, d g>16[ <a d g>16] <a d g>16 r16 r8\fermata \bar "|."
 }
 
 "pianoLeft5" = \relative c {
