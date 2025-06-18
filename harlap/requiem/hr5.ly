@@ -377,31 +377,48 @@
   fs4 e d2 |
   % bar 17
   % bar 18
-  ds4 cs b2 |
-  % bar 19
   d!4( bf) af af |
-  % bar 20
+  % bar 19
   c4 bf af2 |
-  % bar 21
+  % bar 20
   c2 d bf c-- ~( | 
-  % bar 22
+  % bar 21
   c4 d) bf( c) |
+  % bar 22
+  r1 |
   % bar 23
+  cs4( d) a! c! |
   % bar 24
+  e4( f) f fs |
   % bar 25
+  d4( e) c d8-- d-- |
   % bar 26
+  d4( c) d2 \bar "||" |
   % bar 27
+  \time 2/4
+  r2 |
   % bar 28
+  r8 bf8 b![ df] |
   % bar 29
+  bf8[ b!] df4 | 
   % bar 30
+  af4-> bf-> |
   % bar 31
+  b!-> bf-> |
   % bar 32
+  r2 |
   % bar 33
+  r2 |
   % bar 34
+  r8 e,8 f[ g] |
   % bar 35
+  e8[ f] g4 |
   % bar 36
+  d4-> e-> |
   % bar 37
+  f4-> e-> |
   % bar 38
+  r2 |
   % bar 39
   % bar 40
   % bar 41
