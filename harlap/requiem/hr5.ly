@@ -482,7 +482,31 @@
 "bass5" = \relative c {
   \"global5"
   \"dummy"
-  g4
+  % bar 1
+  r1 |
+  % bar 2
+  g'4 a f g |
+  % bar 3
+  c,1 |
+  % bar 4
+  e4 fs d e |
+  % bar 5
+  cs1 |
+  % bar 6
+  cs4( ds) b cs |
+  % bar 7
+  bf' c! af bf |
+  % bar 8
+  ef,1 |
+  % bar 9
+  r
+  % bar 10
+  f4 g ef f
+  % bar 11
+  bf,1
+  % bar 12
+  d4 e c d
+  % bar 13
 }
 
 "pianoRight5" = \relative c' {
