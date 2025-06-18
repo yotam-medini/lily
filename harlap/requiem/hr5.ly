@@ -339,10 +339,115 @@
   r2\fermata \bar "|." |
 }
 
-"tenor5" = \relative c {
+"tenor5" = \relative c' {
   \"global5"
   \"dummy"
-  e4
+  r1 |
+  % bar 2
+  e4 d c2 |
+  % bar 3
+  e4 d c2 |
+  % bar 4
+  cs4 b a2 |
+  % bar 5
+  as4( gs) fs fs |
+  % bar 6
+  as4 gs fs2 |
+  % bar 7
+  g'!4 f! ef2 |
+  % bar 8
+  g4( f) ef2 |
+  % bar 9
+  r1 |
+  % bar 10
+  d4 c bf2 |
+  % bar 11
+  d4 c bf2 |
+  % bar 12
+  b!4 a g2 \bar "||" |
+  % bar 13
+  \time 4/2
+  R\breve\fermata |
+  % bar 14
+  R\breve\fermata |
+  % bar 15
+  \time 2/2
+  fs'4 e d2 |
+  % bar 16
+  fs4 e d2 |
+  % bar 17
+  % bar 18
+  ds4 cs b2 |
+  % bar 19
+  d!4( bf) af af |
+  % bar 20
+  c4 bf af2 |
+  % bar 21
+  c2 d bf c-- ~( | 
+  % bar 22
+  c4 d) bf( c) |
+  % bar 23
+  % bar 24
+  % bar 25
+  % bar 26
+  % bar 27
+  % bar 28
+  % bar 29
+  % bar 30
+  % bar 31
+  % bar 32
+  % bar 33
+  % bar 34
+  % bar 35
+  % bar 36
+  % bar 37
+  % bar 38
+  % bar 39
+  % bar 40
+  % bar 41
+  % bar 42
+  % bar 43
+  % bar 44
+  % bar 45
+  % bar 46
+  % bar 47
+  % bar 48
+  % bar 49
+  % bar 50
+  % bar 51
+  % bar 52
+  % bar 53
+  % bar 54
+  % bar 55
+  % bar 56
+  % bar 57
+  % bar 58
+  % bar 59
+  % bar 60
+  % bar 61
+  % bar 62
+  % bar 63
+  % bar 64
+  % bar 65
+  % bar 66
+  % bar 67
+  % bar 68
+  % bar 69
+  % bar 70
+  % bar 71
+  % bar 72
+  % bar 73
+  % bar 74
+  % bar 75
+  % bar 76
+  % bar 77
+  % bar 78
+  % bar 79
+  % bar 80
+  % bar 81
+  % bar 82
+  % bar 83
+  % bar 84
 }
 
 "bass5" = \relative c {
