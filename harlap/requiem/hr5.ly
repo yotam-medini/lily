@@ -854,7 +854,25 @@
   \"global5"
   \"dummy"
   \dynamicDown
-  e1
+  % bar 1-3
+  \repeat unfold 3 {
+    <<
+      \new Voice { \voiceOne { g'4( a) g( a) } }
+      \new Voice { \voiceTwo { c,1 } }
+    >>
+  } |
+  % bar 4
+  <<
+    \new Voice { \voiceOne { e4( fs) d( e) } }
+    \new Voice { \voiceTwo { a,1 } }
+  >> |
+  % bar 5-6
+  \repeat unfold 2 {
+    <<
+      \new Voice { \voiceOne { cs4( ds) b( cs) } }
+      \new Voice { \voiceTwo { fs,1 } }
+    >>
+  } |
 }
 
 "lyricsSoloSop5" = \lyricmode {
