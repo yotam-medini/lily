@@ -376,12 +376,13 @@
   % bar 16
   fs4 e d2 |
   % bar 17
+  ds4 cs b2 |
   % bar 18
-  d!4( bf) af af |
+  c4( bf) af af |
   % bar 19
-  c4 bf af2 |
+  c4( bf) af2 |
   % bar 20
-  c2 d bf c-- ~( | 
+  c4 d bf c-- ~( | 
   % bar 21
   c4 d) bf( c) |
   % bar 22
@@ -472,7 +473,7 @@
   % bar 79
   d4->( g) |
   % bar 80
-  c2-> |
+  c,2-> |
   % bar 81-83
   d2-> ~ | d2 ~ | d2 |
   % bar 84
@@ -531,7 +532,7 @@
   % bar 23
   r1 |
   % bar 24
-  r4 r8 a!8 gf4 gf8[ gf] |
+  r4 r8 a!8 bf4 bf8[ bf] |
   % bar 25
   g1-> |
   % bar 26
@@ -540,63 +541,95 @@
   \time  2/4
   r2 |
   % bar 28
-  r8 <af bf>8 <af b!>8[ <af df>8] |
+  r8
+  <<
+    \new Voice { \voiceOne { bf8 b!8[ df8] } }
+    \new Voice { \voiceTwo { af8 af8[ df8] } }
+  >>
   % bar 29
-  <af bf>8[ <af b!>] <af df>4 |
-  % bar 31
+  <<
+    \new Voice { \voiceOne { bf8[ b!] df4 } }
+    \new Voice { \voiceTwo { af8[ af] af4 } }
+  >>
+  |
+  % bar 31-32
+  <<
+    \new Voice { \voiceOne { af4-> bf-> | b!4-> bf-> } }
+    \new Voice { \voiceTwo { af4-> af-> | af4-> af-> } }
+  >>
   % bar 32
+  r2 |
   % bar 33
-  % bar 34
-  % bar 35
-  % bar 36
-  % bar 37
+  r2 |
+  % bar 34-35
+  r8
+  <<
+    \new Voice { \voiceOne { e8 f[ g] | e8[ f] g4 } }
+    \new Voice { \voiceTwo { d8 d[ d] | d8[ d] d4 } }
+  >> |
+  % bar 36-37
+  <<
+    \new Voice { \voiceOne { d4   e-> | f4-> e-- } }
+    \new Voice { \voiceTwo { d4-> d   | d4   d} }
+  >> |
   % bar 38
-  % bar 39
-  % bar 40
-  % bar 41
-  % bar 42
-  % bar 43
-  % bar 44
-  % bar 45
+  r2 |
+  % bar 39-45
+  R2*7 |
   % bar 46
+  r8 a'8 a[ a] |
   % bar 47
+  a8[ a] a4
   % bar 48
+  a4-> a->
   % bar 49
+  a4-> a->
   % bar 50
-  % bar 51
-  % bar 52
-  % bar 53
-  % bar 54
-  % bar 55
-  % bar 56
-  % bar 57
-  % bar 58
+  b!-> b->
+  % bar 51-58
+  R2*8 |
   % bar 59
+  r4 r8 ef,8 |
   % bar 60
+  df4 df8 ef | 
   % bar 61
+  e!8( b) cs4 |
   % bar 62
+  e8( fs) cs( fs) |
   % bar 63
+  b,4 cs |
   % bar 64
+  cs4-> ds-> |
   % bar 65
+  gs-> fs-> |
   % bar 66
+  r2
   % bar 67
-  % bar 68
-  % bar 69
-  % bar 70
-  % bar 71
-  % bar 72
-  % bar 73
-  % bar 74
-  % bar 75
-  % bar 76
-  % bar 77
-  % bar 78
-  % bar 79
-  % bar 80
-  % bar 81
-  % bar 82
-  % bar 83
+  r8
+  <<
+    \new Voice { \voiceOne { c'8 df[ ef] } }
+    \new Voice { \voiceTwo { bf8 bf[ bf] } }
+  >>
+  % bar 68-70
+  <<
+    \new Voice { \voiceOne { c8 df ef4 | bf4-> c-> | bf-> c-> } }
+    \new Voice { \voiceTwo { bf8 bf bf4 | bf4-> bf-> | bf4-> bf-> } }
+  >> |
+  % bar 71-73
+  r2 | r2 | r2 |
+  % bar 74-80
+  r4.
+  <<
+    \new Voice { \voiceOne { a8 | bf4 c | a4. bf8 | c2 | g2 | a2 | bf2 } }
+    \new Voice { \voiceTwo { g8 | g4 g  | g4. g8  | g2 | g2 | g2 | g2  } }
+  >> |
+  % bar 81=83
+  <<
+    \new Voice { \voiceOne { a2 ~ | a2 ~ | a2 } }
+    \new Voice { \voiceTwo { g2 ~ | g2 ~ | g2 } }
+  >> |
   % bar 84
+  R2\fermata \bar "|."
 }
 
 "pianoRight5" = \relative c' {
