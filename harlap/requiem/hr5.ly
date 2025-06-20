@@ -824,16 +824,60 @@
   % bar 44
   ef->[( <af, bf>16]) r16 r8 df8-> |
   % bar 45
+  % <g, c>16-> r16 r8 r4 |
   <<
     \new Voice { \voiceOne { <g, c>16-. r16 r8 r4 } }
-    \new Voice { \voiceTwo { c8-. c-. c-. c-. } }
+    \new Voice { \voiceTwo { 
+      \change Staff = "lower" <c,, g'! c d>16->
+      \change Staff = "upper" c''16-.
+      \change Staff = "lower" c-.
+      \change Staff = "upper" c-.
+  
+      \change Staff = "lower" c-.
+      \change Staff = "upper" c-.
+      \change Staff = "lower" c-.
+      \change Staff = "upper" c-.
+    } }
   >> |
   % bar 46-49
-  \repeat percent 4 { c8-.\mp c-. c-. c-. } |
+  \repeat percent 4 { 
+    \voiceOne
+    \change Staff = "lower" c16_.
+    \change Staff = "upper" c_.
+    \change Staff = "lower" c_.
+    \change Staff = "upper" c_.
+
+    \change Staff = "lower" c_.
+    \change Staff = "upper" c_.
+    \change Staff = "lower" c_.
+    \change Staff = "upper" c_.
+  } |
   % bar 50
-  b8-. b-. b-. b-. |
+  { 
+    \voiceOne
+    \change Staff = "lower" b16_>
+    \change Staff = "upper" b_.
+    \change Staff = "lower" b_.
+    \change Staff = "upper" b_.
+
+    \change Staff = "lower" b_.
+    \change Staff = "upper" b_.
+    \change Staff = "lower" b_.
+    \change Staff = "upper" b_.
+  } |
   % bar 51
-  b8-. b-. b-. b-. |
+  { 
+    \voiceOne
+    \change Staff = "lower" b16_>
+    \change Staff = "upper" b_.
+    \change Staff = "lower" b_.
+    \change Staff = "upper" b_.
+
+    \change Staff = "lower" b_.
+    \change Staff = "upper" b_.
+    \change Staff = "lower" b_.
+    \change Staff = "upper" b_.
+  } |
   % bar 52
   a''8( gs) fs( b) |
   % bar 53
@@ -1065,12 +1109,13 @@
     \new Voice { \voiceTwo { gs,4-> <bf ef>-> } }
   >>
   % bar 45
-  % bar 46
-  % bar 47
-  % bar 48
-  % bar 49
+  s2
+  % bar 46-49
+  \repeat percent 4 { s2 } |
   % bar 50
+  s2
   % bar 51
+  s2
   % bar 52
   % bar 53
   % bar 54
