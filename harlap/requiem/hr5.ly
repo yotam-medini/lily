@@ -895,7 +895,18 @@
   % bar 59
   <<
     \new Voice { \voiceOne { <af, df>16 r16 r8 r4 } }
-    \new Voice { \voiceTwo { d8-. d-. d-. d-. } }
+    \new Voice { \voiceTwo { 
+      \voiceOne
+      \change Staff = "lower" <df,, af' df ef>16_>
+      \change Staff = "upper" df''_.
+      \change Staff = "lower" df_.
+      \change Staff = "upper" df_.
+
+      \change Staff = "lower" df_.
+      \change Staff = "upper" df_.
+      \change Staff = "lower" ef,_>
+      \change Staff = "upper" df'_.
+    } }
   >>
   % bar 60
   df16-. r16 r8 r4 |
@@ -1116,22 +1127,59 @@
   s2
   % bar 51
   s2
-  % bar 52
-  % bar 53
-  % bar 54
-  % bar 55
-  % bar 56
-  % bar 57
+  % bar 52-54
+  \clef "G"
+  <<
+    \new Voice { \voiceOne { b''4( cs) | d( cs) | c4( bf) } }
+    \new Voice { \voiceTwo { b2 | b2 | c!2 } }
+  >> |
+  % bar 55-57
+  \clef bass
+  <<
+    \new Voice { \voiceOne { c,4( bf) | c( bf) | af( bf) } }
+    \new Voice { \voiceTwo { c2 | c2 | c2 } }
+  >> |
   % bar 58
+  <<
+    \new Voice { \voiceOne { c4( bf) } }
+    \new Voice { \voiceTwo { c2 } }
+  >> |
   % bar 59
+  s2 |
   % bar 60
+  <<
+    \new Voice { \voiceOne { r4. bf8 } }
+    \new Voice { \voiceTwo { df,4 df8( ef) } }
+  >> |
   % bar 61
+  <<
+    \new Voice { \voiceOne { af4. bf8 } }
+    \new Voice { \voiceTwo { e,!8( b!) cs4 } }
+  >> |
   % bar 62
+  <<
+    \new Voice { \voiceOne { b'!8( fs) gs4 } }
+    \new Voice { \voiceTwo { e8( ds) cs( fs!) } }
+  >> |
   % bar 63
+  <<
+    \new Voice { \voiceOne { b8( as) gs( cs) } }
+    \new Voice { \voiceTwo { b,4 cs } }
+  >> |
   % bar 64
+  <<
+    \new Voice { \voiceOne { fs4^> gs^> } }
+    \new Voice { \voiceTwo { cs,4_> ds_> } }
+  >> |
   % bar 65
+  <<
+    \new Voice { \voiceOne { b'8( ds) <b! cs>4 } }
+    \new Voice { \voiceTwo { gs4-> fs-> } }
+  >> |
   % bar 66
+  s2
   % bar 67
+  s2
   % bar 68
   % bar 69
   % bar 70
