@@ -952,10 +952,33 @@
     \new Voice { \voiceTwo { f,1 } }
   >>
   % bar 22
+  <<
+    \new Voice { \voiceOne { bf4( b) af( a) } }
+    \new Voice { \voiceTwo { ef1 } }
+  >>
   % bar 23
+  <<
+    \new Voice { \voiceOne { cs'4( d) b!( c!) } }
+    \new Voice { \voiceTwo { fs,1 } }
+  >>
   % bar 24
+  \clef "G"
+  <<
+    \new Voice { \voiceOne { e'4( <e f>) f!( <f gf>) } }
+    \new Voice { \voiceTwo { a,2 bf2 } }
+  >>
   % bar 25
+  \clef bass
+  <<
+    \new Voice { \voiceOne { d4( e) c( d) } }
+    \new Voice { \voiceTwo { <g,, g'>1 } }
+  >>
   % bar 26
+  <<
+    \new Voice { \voiceOne { d''4( <c e>) d2 } }
+    \new Voice { \voiceTwo { <g,, g'>1 } }
+  >>
+  \bar "||" |
   % bar 27
   % bar 28
   % bar 29
