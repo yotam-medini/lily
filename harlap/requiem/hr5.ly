@@ -43,9 +43,19 @@
   % bar 13
   \time 4/2
   % bar 14
-  R1*2 \fermata
-  r4\fermata d8\( ef b4. c8 d[ ef bf' af] af8..[ g32] d'4\fermata\) \bar "||" |
+  R\breve \fermata
+    r4\fermata d8\( ef b4. c8 d[ ef bf' af] af8..[ g32] d'4\fermata ~ \) 
+    \bar "||" |
   % bar 15
+  \time 2/2
+  d1 |
+  % bar 16-27
+  R1*12 \bar "||"
+  % bar 28-83
+  \time 2/4
+  R2*56
+  % bar 84
+  r2 \bar "|."
 }
 
 "soprano5" = \relative c' {
@@ -671,7 +681,7 @@
     \new Voice { \voiceOne {
        <f f'>8( <gf gf'>) <ef ef'>4.( <f f'>8) <cs cs'>8[( <ds ds'>])
     } }
-    \new Voice { \voiceTwo { ef4 df2 b4 } }
+    \new Voice { \voiceTwo { ef4 df2 b!4 } }
   >> |
   % bar 10
   <<
@@ -873,6 +883,137 @@
       \new Voice { \voiceTwo { fs,1 } }
     >>
   } |
+  % bar 7
+  <<
+    \new Voice { \voiceOne { bf'4( c!) af( bf) } }
+    \new Voice { \voiceTwo { ef,1 } }
+  >> |
+  % bar 8
+  <<
+    \new Voice { \voiceOne { bf'4( c) af( bf) } }
+    \new Voice { \voiceTwo { ef,1 } }
+  >> |
+  % bar 9
+  <<
+    \new Voice { \voiceOne { af4( a!) fs( g!) } }
+    \new Voice { \voiceTwo { df1 } }
+  >> |
+  % bar 10
+  <<
+    \new Voice { \voiceOne { f4( g) ef( f) } }
+    \new Voice { \voiceTwo { bf,1 } }
+  >> |
+  % bar 11
+  <<
+    \new Voice { \voiceOne { f'4( g) ef( f) } }
+    \new Voice { \voiceTwo { bf,1 } }
+  >> |
+  % bar 12
+  <<
+    \new Voice { \voiceOne { d4( e!) c( d) } }
+    \new Voice { \voiceTwo { g,1 } }
+  >> \bar "||" |
+  % bar 13
+  \time 4/2
+  <e b'>\breve\fermata |
+  % bar 14
+  <c! g'!>\breve\fermata \bar "||" |
+  % bar 15-16
+  \time 2/2
+  \repeat unfold 2 {
+    <<
+      \new Voice { \voiceOne { a''4( b) g( a) } }
+      \new Voice { \voiceTwo { d,1 } }
+    >>
+  }
+  % bar 17
+  <<
+    \new Voice { \voiceOne { fs4( gs) e( fs) } }
+    \new Voice { \voiceTwo { b,1 } }
+  >>
+  % bar 18
+  <<
+    \new Voice { \voiceOne { ef4( f!) df( ef) } }
+    \new Voice { \voiceTwo { af,1 } }
+  >>
+  % bar 19
+  <<
+    \new Voice { \voiceOne { ef'4( f) df( ef) } }
+    \new Voice { \voiceTwo { af,1 } }
+  >>
+  % bar 20
+  <<
+    \new Voice { \voiceOne { c'4( d!) bf( c) } }
+    \new Voice { \voiceTwo { f,1 } }
+  >>
+  % bar 21
+  <<
+    \new Voice { \voiceOne { c'4( d) bf( c) } }
+    \new Voice { \voiceTwo { f,1 } }
+  >>
+  % bar 22
+  % bar 23
+  % bar 24
+  % bar 25
+  % bar 26
+  % bar 27
+  % bar 28
+  % bar 29
+  % bar 30
+  % bar 31
+  % bar 32
+  % bar 33
+  % bar 34
+  % bar 35
+  % bar 36
+  % bar 37
+  % bar 38
+  % bar 39
+  % bar 40
+  % bar 41
+  % bar 42
+  % bar 43
+  % bar 44
+  % bar 45
+  % bar 46
+  % bar 47
+  % bar 48
+  % bar 49
+  % bar 50
+  % bar 51
+  % bar 52
+  % bar 53
+  % bar 54
+  % bar 55
+  % bar 56
+  % bar 57
+  % bar 58
+  % bar 59
+  % bar 60
+  % bar 61
+  % bar 62
+  % bar 63
+  % bar 64
+  % bar 65
+  % bar 66
+  % bar 67
+  % bar 68
+  % bar 69
+  % bar 70
+  % bar 71
+  % bar 72
+  % bar 73
+  % bar 74
+  % bar 75
+  % bar 76
+  % bar 77
+  % bar 78
+  % bar 79
+  % bar 80
+  % bar 81
+  % bar 82
+  % bar 83
+  % bar 84
 }
 
 "lyricsSoloSop5" = \lyricmode {
