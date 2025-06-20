@@ -1360,7 +1360,12 @@
       }
     >>
     \new PianoStaff \with {instrumentName = "Pno." } <<
-      \new Staff = "upper" { \clef treble \"pianoRight5" }
+      \new Staff = "upper" { 
+        % Enable repeat counters. Show every 4 repeats
+        \set countPercentRepeats = ##t  
+        \set repeatCountVisibility = #(every-nth-repeat-count-visible 4)
+        \clef treble \"pianoRight5" 
+      }
       \new Staff = "lower" { \clef bass \"pianoLeft5" }
     >>
   >>
