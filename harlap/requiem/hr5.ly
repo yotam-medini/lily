@@ -44,7 +44,7 @@
   \time 4/2
   % bar 14
   R\breve \fermata
-    r4\fermata d8\( ef b4. c8 d[ ef bf' af] af8..[ g32] d'4\fermata ~ \) 
+    r4\fermata d8\( ef b4. c8 d[ ef bf' af] af8..[ g32] d'4\fermata ~ \)
     \bar "||" |
   % bar 15
   \time 2/2
@@ -392,7 +392,7 @@
   % bar 19
   c4( bf) af2 |
   % bar 20
-  c4 d bf c-- ~( | 
+  c4 d bf c-- ~( |
   % bar 21
   c4 d) bf( c) |
   % bar 22
@@ -411,7 +411,7 @@
   % bar 28
   r8 bf8 b![ df] |
   % bar 29
-  bf8[ b!] df4 | 
+  bf8[ b!] df4 |
   % bar 30
   af4-> bf-> |
   % bar 31
@@ -601,7 +601,7 @@
   % bar 59
   r4 r8 ef,8 |
   % bar 60
-  df4 df8 ef | 
+  df4 df8 ef |
   % bar 61
   e!8( b) cs4 |
   % bar 62
@@ -692,12 +692,12 @@
   <<
     \new Voice { \voiceOne { f'8( g) bf( ef,) d[( ef]) c-- } }
     \new Voice { \voiceTwo { d4 c bf-- bf-- } }
-  >>  
+  >>
   % bar 12
   <<
     \new Voice { \voiceOne { d8( e!) b'( c,) b![( c]) a-- } }
     \new Voice { \voiceTwo { b4 a g-- g-- } }
-  >>  
+  >>
   % bar 13
   \clef bass
   \time 4/2
@@ -768,16 +768,47 @@
   % bar 27
   \clef bass
   \time 2/4
-  af,8-.[ af-.] af-.[ af-.] |
+  {
+    \change Staff = "lower" af,16
+    \change Staff = "upper" af
+    \change Staff = "lower" af
+    \change Staff = "upper" af
+
+    \change Staff = "lower" af
+    \change Staff = "upper" af
+    \change Staff = "lower" af
+    \change Staff = "upper" af
+  } |
   % bar 28-31
-  \repeat percent 4 {af8-.[ af-.] af-.[ af-.] } |
+  \repeat percent 4 {
+    \change Staff = "lower" af16
+    \change Staff = "upper" af
+    \change Staff = "lower" af
+    \change Staff = "upper" af
+
+    \change Staff = "lower" af
+    \change Staff = "upper" af
+    \change Staff = "lower" af
+    \change Staff = "upper" af
+  }
   % bar 32
   \clef "G"
-  gf'8( a) ef( af) |
+  gf''8( a) ef( af) |
   % bar 33
-  gf'8( df) e4 |
+  gf8( df) ef4 |
   % bar 34-37
-  \repeat percent 4 {d,!8-.[ d-.] d-.[ d-.] } |
+  % \repeat percent 4 {d,!8-.[ d-.] d-.[ d-.] } |
+  \repeat percent 4 {
+    \change Staff = "lower" d,!16
+    \change Staff = "upper" d!
+    \change Staff = "lower" d
+    \change Staff = "upper" d
+
+    \change Staff = "lower" d
+    \change Staff = "upper" d
+    \change Staff = "lower" d
+    \change Staff = "upper" d
+  } |
   % bar 38
   c''8( b) a( d) |
   % bar 39
@@ -791,7 +822,7 @@
   % bar 43
   r8 g8( d[ f]) |
   % bar 44
-  ef->[( <a,f bf>16]) r16 r8 df8-> |
+  ef->[( <af, bf>16]) r16 r8 df8-> |
   % bar 45
   <<
     \new Voice { \voiceOne { <g, c>16-. r16 r8 r4 } }
@@ -980,23 +1011,59 @@
   >>
   \bar "||" |
   % bar 27
-  % bar 28
-  % bar 29
-  % bar 30
-  % bar 31
+  \time 2/4
+  s2 |
+  % bar 28-31
+  \repeat percent 4 { s2 } |
   % bar 32
+  \clef "G"
+  <<
+    \new Voice { \voiceOne { df''4( b!) } }
+    \new Voice { \voiceTwo { af4( bf) } }
+  >>
   % bar 33
-  % bar 34
-  % bar 35
-  % bar 36
-  % bar 37
+  <<
+    \new Voice { \voiceOne { df''4( b!) } }
+    \new Voice { \voiceTwo { af4( bf) } }
+  >>
+  % bar 34-37
+  \repeat percent 4 { s2 } |
   % bar 38
+  <<
+    \new Voice { \voiceOne { g4( f) } }
+    \new Voice { \voiceTwo { d4( e) } }
+  >>
   % bar 39
+  <<
+    \new Voice { \voiceOne { g4( fs) } }
+    \new Voice { \voiceTwo { d4( e) } }
+  >>
   % bar 40
+  <<
+    \new Voice { \voiceOne { ds4( cs) } }
+    \new Voice { \voiceTwo { as4( b!) } }
+  >>
   % bar 41
+  <<
+    \new Voice { \voiceOne { d!4( cs) } }
+    \new Voice { \voiceTwo { a!4( b!) } }
+  >>
   % bar 42
+  <<
+    \new Voice { \voiceOne { bf4( a) } }
+    \new Voice { \voiceTwo { f!4( g) } }
+  >>
   % bar 43
+  \clef bass
+  <<
+    \new Voice { \voiceOne { <a, d>4( <bf c!>) } }
+    \new Voice { \voiceTwo { <e,, e'>-> <fs fs'>-> } }
+  >>
   % bar 44
+  <<
+    \new Voice { \voiceOne { <f' bf>4( af) } }
+    \new Voice { \voiceTwo { gs,4-> <bf ef>-> } }
+  >>
   % bar 45
   % bar 46
   % bar 47
