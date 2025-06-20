@@ -930,9 +930,31 @@
     \new Voice { \voiceTwo { e4-> fs-> } }
   >>
   % bar 66
-  bf,8-. bf-. bf-. bf-. |
+  { 
+    \voiceOne
+    \change Staff = "lower" bf,16_._>
+    \change Staff = "upper" bf_.
+    \change Staff = "lower" bf_.
+    \change Staff = "upper" bf_.
+
+    \change Staff = "lower" bf_.
+    \change Staff = "upper" bf_.
+    \change Staff = "lower" bf_.
+    \change Staff = "upper" bf_.
+  } |
   % bar 67-70
-  \repeat percent 4 {bf8-. bf-. bf-. bf-.} |
+  \repeat percent 4 {
+    \voiceOne
+    \change Staff = "lower" bf16_.
+    \change Staff = "upper" bf_.
+    \change Staff = "lower" bf_.
+    \change Staff = "upper" bf_.
+
+    \change Staff = "lower" bf_.
+    \change Staff = "upper" bf_.
+    \change Staff = "lower" bf_.
+    \change Staff = "upper" bf
+  }
   % bar 71
   af''8( g) f( bf) |
   % bar 72
@@ -940,7 +962,18 @@
   % bar 73
   af,8( ef) f4 |
   % bar 74-83
-  \repeat percent 10 { g8-. g-. g-. g-. } |
+  \repeat percent 10 { 
+    \voiceOne
+    \change Staff = "lower" g16_.
+    \change Staff = "upper" g_.
+    \change Staff = "lower" g_.
+    \change Staff = "upper" g_.
+
+    \change Staff = "lower" g_.
+    \change Staff = "upper" g_.
+    \change Staff = "lower" g_.
+    \change Staff = "upper" g_.
+  }
   % bar 84
   \clef bass
   r8 <a,, d g>16[ <a d g>16] <a d g>16 r16 r8\fermata \bar "|."
@@ -1178,25 +1211,30 @@
   >> |
   % bar 66
   s2
-  % bar 67
-  s2
-  % bar 68
-  % bar 69
-  % bar 70
+  % bar 67-70
+  \repeat percent 4 { s2 } |
   % bar 71
+  \clef "G"
+  <<
+    \new Voice { \voiceOne { ef''4( df) } }
+    \new Voice { \voiceTwo { bf( c) } }
+  >>
   % bar 72
+  <<
+    \new Voice { \voiceOne { ef4( df) } }
+    \new Voice { \voiceTwo { bf( c) } }
+  >>
   % bar 73
-  % bar 74
-  % bar 75
-  % bar 76
-  % bar 77
-  % bar 78
-  % bar 79
-  % bar 80
-  % bar 81
-  % bar 82
-  % bar 83
+  <<
+    \new Voice { \voiceOne { ef4( df) } }
+    \new Voice { \voiceTwo { bf( c) } }
+  >>
+  % bar 74-83
+  \clef "G"
+  \repeat percent 10 { s2 } |
   % bar 84
+  \clef bass
+  r8 <g,, d' g>16[ <g d' g>16] <g d' g>16 r16 r8\fermata \bar "|."
 }
 
 "lyricsSoloSop5" = \lyricmode {
