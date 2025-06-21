@@ -899,7 +899,8 @@
   { 
     \dynamicUp
     \voiceOne
-    \change Staff = "lower" b16_>\tweak direction #UP \<
+    \once \override DynamicLineSpanner.Y-offset = #14
+    \change Staff = "lower" b16_>\<
     \change Staff = "upper" b_.
     \change Staff = "lower" b_.
     \change Staff = "upper" b_.
@@ -923,13 +924,13 @@
     \change Staff = "upper" b_.
   } |
   % bar 52
-  a''8( gs) fs( b) |
+  a''8_\f( gs_>) fs( b) |
   % bar 53
   e,4.( fs8) |
   % bar 54
   d4.( e8) |
   % bar 55
-  d,4.( e8) |
+  d,4._\mf( e8) |
   % bar 56
   d8( e) f( e) |
   % bar 57
