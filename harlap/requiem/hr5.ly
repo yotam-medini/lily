@@ -855,29 +855,28 @@
   \stemNeutral
   c8( g) a4 |
   % bar 40
-  r8 gs8 ds( es) |
+  r8_\ff gs8_\> ds( es) |
   % bar 41
   g!8->( d!16) r16 r8 e!8-- |
   % bar 42
   ef8( bf) c4 |
   % bar 43
-  r8 g8( d[ f]) |
+  r8\mf g8( d_\<[ f]) |
   % bar 44
-  ef->[( <af, bf>16]) r16 r8 df8-> |
+  ef->[( <af, bf>16]) r16 r8 \after 8 \! df8-> |
   % bar 45
-  % <g, c>16-> r16 r8 r4 |
   <<
-    \new Voice { \voiceOne { <g, c>16-. r16 r8 r4 } }
+    \new Voice { \voiceOne { <g, c>16->^\sff r16 r8 r4 } }
     \new Voice { \voiceTwo { 
-      \change Staff = "lower" <c,, g'! c d>16->
-      \change Staff = "upper" c''16-.
-      \change Staff = "lower" c-.
-      \change Staff = "upper" c-.
+      \change Staff = "lower" <c,, g'! c d>16->_\sff
+      \change Staff = "upper" c''16^.^\>
+      \change Staff = "lower" c^.
+      \change Staff = "upper" c^.
   
-      \change Staff = "lower" c-.
-      \change Staff = "upper" c-.
-      \change Staff = "lower" c-.
-      \change Staff = "upper" c-.
+      \change Staff = "lower" c^.
+      \change Staff = "upper" c^.
+      \change Staff = "lower" c^.
+      \change Staff = "upper" c^.\!
     } }
   >> |
   % bar 46-49
