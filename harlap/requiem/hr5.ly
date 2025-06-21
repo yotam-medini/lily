@@ -153,7 +153,7 @@
   % bar 35
   r
   % bar 36
-  c'8( b) a( d) |
+  c'8\f( b) a( d) |
   % bar 37
   g,4-> a4-> |
   % bar 38
@@ -291,11 +291,11 @@
   % bar 32-33
   r2 | r2 |
   % bar 34
-  r8 e f g |
+  r8 e^\mfintensivo f g\< |
   % bar 35
   e f g4 |
   % bar 36
-  c8( b) a( d) |
+  c8\!( b) a( d) |
   % bar 37
   g,4-> fs |
   % bar 38
@@ -430,11 +430,11 @@
   % bar 33
   r2 |
   % bar 34
-  r8 e,8 f[ g] |
+  r8 e,8^\mfintensivo f[ g\<] |
   % bar 35
   e8[ f] g4 |
   % bar 36
-  d4-> e-> |
+  d4->\! e-> |
   % bar 37
   f4-> e-> |
   % bar 38
@@ -585,7 +585,7 @@
   r8
   <<
     \new Voice { \voiceOne { e8 f[ g] | e8[ f] g4 } }
-    \new Voice { \voiceTwo { d8 d[ d] | d8[ d] d4 } }
+    \new Voice { \voiceTwo { d8^\< d[ d] | d8[ d] \after 4 \! d4 } }
   >> |
   % bar 36-37
   <<
@@ -826,25 +826,33 @@
   >> |
   % bar 32
   \clef "G"
+  \stemDown
   gf''8( f) ef( af) |
   % bar 33
   gf8( df) ef4 |
   % bar 34-37
-  % \repeat percent 4 {d,!8-.[ d-.] d-.[ d-.] } |
-  \repeat percent 4 {
-    \change Staff = "lower" d,!16
-    \change Staff = "upper" d!
-    \change Staff = "lower" d
-    \change Staff = "upper" d
+  <<
+    \new Voice { \voiceOne {  
+      \repeat percent 4 {
+        \change Staff = "lower" d,!16_\mp
+        \change Staff = "upper" d!
+        \change Staff = "lower" d
+        \change Staff = "upper" d
 
-    \change Staff = "lower" d
-    \change Staff = "upper" d
-    \change Staff = "lower" d
-    \change Staff = "upper" d
-  } |
+        \change Staff = "lower" d
+        \change Staff = "upper" d
+        \change Staff = "lower" d
+        \change Staff = "upper" d
+      }
+    } }
+    \new Dynamics \with { alignBelowContext = "lower" } {
+      s2 | s4\< s4 | s2 | s4 \after 4 \! s4
+    }
+  >> |
   % bar 38
   c''8( b) a( d) |
   % bar 39
+  \stemNeutral
   c8( g) a4 |
   % bar 40
   r8 gs8 ds( es) |
@@ -1148,7 +1156,7 @@
   \clef "G"
   <<
     \new Voice { \voiceOne { df'''4( b!) } }
-    \new Voice { \voiceTwo { af4( bf) } }
+    \new Voice { \voiceTwo { af4_\f( bf) } }
   >>
   % bar 33
   <<
@@ -1159,7 +1167,7 @@
   \repeat percent 4 { s2 } |
   % bar 38
   <<
-    \new Voice { \voiceOne { g4( f) } }
+    \new Voice { \voiceOne { g'4^\f( f) } }
     \new Voice { \voiceTwo { d4( e) } }
   >>
   % bar 39
