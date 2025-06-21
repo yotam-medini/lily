@@ -9,6 +9,7 @@ break_orig = \break
 DrammaticoIntensivo = \markup { \bold "Drammatico intensivo" }
 dulce = \markup { \italic "dulce" }
 espress = \markup { \italic "espress." }
+espressintensivo = \markup { \italic "espress. intensivo" }
 fmarcato = \markup { \dynamic "f" \italic "marcato" }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 fsubito = \markup { \dynamic "f" \italic "subito" }

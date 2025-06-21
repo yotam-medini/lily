@@ -12,7 +12,10 @@
   R1*12
   \bar "||" |
   \time 4/2
-  r8.\fermata fs16 fs8 g b4.( fs8) fs g d'8.. c32 c4 b\fermata |
+  \tempo 4 = 60
+  r8.\fermata fs16^\f^\espressintensivo
+    fs8 g b4.( fs8) fs\< g d'8.. c32 c4 b\fermata\! |
+  \after 1.^\pocorit
   R1*2 \bar "||" |
   % bar 15
   \time 2/2
@@ -44,7 +47,8 @@
   \time 4/2
   % bar 14
   R\breve \fermata
-    r4\fermata d8\( ef b4. c8 d[ ef bf' af] af8..[ g32] d'4\fermata ~ \)
+    r4\fermata d8\(^\f^\espressintensivo
+      ef b4. c8 d[ ef bf' af] af8..[ g32] d'4\fermata ~ \)
     \bar "||" |
   % bar 15
   \time 2/2
@@ -63,7 +67,7 @@
   \"dummy"
   r1
   % bar 2
-  g'4. c8 c4 c
+  g'4.\f c8 c4 c
   % bar 3
   c d e f
   % bar 4
@@ -74,9 +78,9 @@
   fs4. cs8 cs2 |
   \break_orig
   % bar 7
-  bf4. bf8 bf2 ~
+  bf4. bf8 bf2\> ~
   % bar 8
-  bf2. r4
+  bf2. r4\!
   % bar 9
   r1 |
   \break_orig
@@ -85,10 +89,10 @@
   % bar 11
   bf c d ef |
   % bar 12
-  d4. d8 d2 \bar "||" |
+  d4.\< d8 d2 \bar "||" |
   % bar 13
   \time 4/2
-  R\breve\fermata |
+  R\breve\fermata\! |
   % bar 14
   R\breve\fermata |
   \break_orig
@@ -221,7 +225,7 @@
   % bar 1
   r1 |
   % bar 2
-  g'4 f e8( f) d4 |
+  g'4\f f e8( f) d4 |
   % bar 3
   g4. f8 e( f) d4 |
   % bar 4
@@ -241,10 +245,10 @@
   % bar 11
   f4. ef8 d ef c4 |
   % bar 12
-  d c b8 c a4 \bar "||" |
+  d\< c b8 c a4 \bar "||" |
   % bar 13
   \time 4/2
-  R\breve\fermata |
+  R\breve\fermata\! |
   % bar 14
   R\breve\fermata |
   % bar 15
@@ -354,7 +358,7 @@
   \"dummy"
   r1 |
   % bar 2
-  e4 d c2 |
+  e4\f d c2 |
   % bar 3
   e4 d c2 |
   % bar 4
@@ -374,10 +378,10 @@
   % bar 11
   d4 c bf2 |
   % bar 12
-  b!4 a g2 \bar "||" |
+  b!4\< a g2 \bar "||" |
   % bar 13
   \time 4/2
-  R\breve\fermata |
+  R\breve\fermata\! |
   % bar 14
   R\breve\fermata |
   % bar 15
@@ -496,7 +500,7 @@
   % bar 1
   r1 |
   % bar 2
-  g'4 a f g |
+  g'4\f a f g |
   % bar 3
   c,1 |
   % bar 4
@@ -516,10 +520,10 @@
   % bar 11
   bf,1
   % bar 12
-  d4 e c d
+  d4\< e c d
   % bar 13
   \time 4/2
-  R\breve\fermata |
+  R\breve\fermata\! |
   % bar 14
   R\breve\fermata |
   % bar 15
@@ -647,7 +651,7 @@
   \"dummy"
   \dynamicDown
   % bar 1
-  <e g>4( <d f>) <c e>4-- <c d>-- |
+  <e g>4(\mp <d f>) <c e>4-- <c d>-- |
   % bar 2
   <e g>4( <d f>) <c e>8--( f) <c d>4-- |
   % bar 3
@@ -662,7 +666,7 @@
   % bar 6
   <<
     \new Voice { \voiceOne { cs'8( ds) fs( b,) as( b) gs4-- } }
-    \new Voice { \voiceTwo { as4 gs fs fs-- } }
+    \new Voice { \voiceTwo { as4 gs fs-- fs-- } }
   >> |
   % bar 7
   <g' bf>4( <f af>)
@@ -679,7 +683,7 @@
   % bar 9
   <<
     \new Voice { \voiceOne {
-       <f f'>8( <gf gf'>) <ef ef'>4.( <f f'>8) <cs cs'>8[( <ds ds'>])
+       <f f'>8(^\f <gf gf'>) <ef ef'>4.( <f f'>8) <cs cs'>8[( <ds ds'>])
     } }
     \new Voice { \voiceTwo { ef4 df2 b!4 } }
   >> |
@@ -701,9 +705,19 @@
   % bar 13
   \clef bass
   \time 4/2
-  <fs g b>\breve\fermata |
+  <<
+    \new Voice { \voiceOne { <fs g b>\breve^>\fermata }}
+    \new Dynamics \with { alignBelowContext = "upper" } {
+      s16\sfp\> s16 s8 s4 s2 \after 1 \! s1
+    }
+  >> |
   % bar 14
-  <d ef g c>\breve\fermata |
+  <<
+    \new Voice { \voiceOne { <d ef g c>\breve^>\fermata }}
+    \new Dynamics \with { alignBelowContext = "upper" } {
+      s16\sfp\> s16 s8 s4 s2 \after 1 \! s1
+    }
+  >> |
   % bar 15
   \clef "G"
   <<
@@ -1019,7 +1033,7 @@
   >> |
   % bar 10
   <<
-    \new Voice { \voiceOne { f4( g) ef( f) } }
+    \new Voice { \voiceOne { f4^\mp( g) ef( f) } }
     \new Voice { \voiceTwo { bf,1 } }
   >> |
   % bar 11
@@ -1029,14 +1043,14 @@
   >> |
   % bar 12
   <<
-    \new Voice { \voiceOne { d4( e!) c( d) } }
+    \new Voice { \dynamicUp \voiceOne { d4(\< e!) c( \after 4 \! d) } }
     \new Voice { \voiceTwo { g,1 } }
   >> \bar "||" |
   % bar 13
   \time 4/2
-  <e b'>\breve\fermata |
+  <e b'>\breve_>\fermata |
   % bar 14
-  <c! g'!>\breve\fermata \bar "||" |
+  <c! g'!>\breve_>\fermata \bar "||" |
   % bar 15-16
   \time 2/2
   \repeat unfold 2 {
