@@ -14,7 +14,7 @@
   \time 4/2
   \tempo 4 = 60
   r8.\fermata fs16^\f^\espressintensivo
-    fs8 g b4.( fs8) fs\< g d'8.. c32 c4 b\fermata\! |
+    fs8 g b4.\( fs8\) fs\< g d'8.. c32 c4 b\fermata\! |
   \after 1.^\pocorit
   R1*2 \bar "||" |
   % bar 15
@@ -1302,11 +1302,13 @@
 }
 
 "lyricsSoloSop5" = \lyricmode {
-  Tu % su -- sci -- pe
+  tu su -- sci -- pe pro a -- ni -- ma -- bus i -- llis
+  Ho -- sti -- as et pre -- ces ti -- bi Do -- mi -- ne
+  lau -- dis o -- ffe -- ri -- mus  Do -- mi -- ne
 }
 
 "lyricsSoloBar5" = \lyricmode {
-  qua % -- rum ho -- di -- e
+  qua -- rum ho -- di -- e me -- mor -- iam fa -- ci -- mus
 }
 
 "lyricsSop5" = \lyricmode {
