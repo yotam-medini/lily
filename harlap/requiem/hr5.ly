@@ -471,11 +471,11 @@
   % bar 66
   r2 |
   % bar 67
-  r8 c8^\mfintensivo df( ef) |
+  r8 c8^\mfintensivo df( ef)\< |
   % bar 68
   c8 df ef4 |
   % bar 69
-  bf4-> c-> |
+  bf4->\f c-> |
   % bar 70
   df4-> c-> |
   % bar 71-73
@@ -627,16 +627,17 @@
   gs->\ff fs-> |
   % bar 66
   r2^\mfintensivo
-  % bar 67
+  % bar 67-70
   r8
   <<
-    \new Voice { \voiceOne { c'8^\< df[ \after 8 \! ef] } }
-    \new Voice { \voiceTwo { bf8 bf[ bf] } }
-  >>
-  % bar 68-70
-  <<
-    \new Voice { \voiceOne { c8 df ef4 | bf4-> c-> | bf-> c-> } }
-    \new Voice { \voiceTwo { bf8 bf bf4 | bf4-> bf-> | bf4-> bf-> } }
+    \new Voice { \voiceOne {
+      c'8_\< df[ ef]
+      c8 df ef4 | bf4->\f c-> | bf-> c->
+     } }
+    \new Voice { \voiceTwo {
+      bf8 bf[ bf]
+      bf8 bf bf4 | bf4-> bf-> | bf4-> bf->
+    } }
   >> |
   % bar 71-73
   r2 | r2 | r2 |
