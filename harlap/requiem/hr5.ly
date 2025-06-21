@@ -141,7 +141,7 @@
   r2
   \break_orig
   % bar 30
-  gf8( f) ef( af) |
+  gf8\f( f) ef( af) |
   % bar 31
   df,4-> e4-> |
   % bar 32
@@ -806,20 +806,27 @@
     \change Staff = "upper" af
   } |
   % bar 28-31
-  \repeat percent 4 {
-    \change Staff = "lower" af16
-    \change Staff = "upper" af
-    \change Staff = "lower" af
-    \change Staff = "upper" af
+  <<
+    \new Voice { \voiceOne {  
+      \repeat percent 4 {
+        \change Staff = "lower" af16
+        \change Staff = "upper" af
+        \change Staff = "lower" af
+        \change Staff = "upper" af
 
-    \change Staff = "lower" af
-    \change Staff = "upper" af
-    \change Staff = "lower" af
-    \change Staff = "upper" af
-  }
+        \change Staff = "lower" af
+        \change Staff = "upper" af
+        \change Staff = "lower" af
+        \change Staff = "upper" af
+      }
+    } }
+    \new Dynamics \with { alignBelowContext = "lower" } {
+      s2 | s2 | s4\< s4 | s4 s4\!
+    }
+  >> |
   % bar 32
   \clef "G"
-  gf''8( a) ef( af) |
+  gf''8( f) ef( af) |
   % bar 33
   gf8( df) ef4 |
   % bar 34-37
@@ -1128,16 +1135,24 @@
   \time 2/4
   s2\sf\> | s2\mp |
   % bar 29-31
-  s2 | s2 | s2 |
+  % s2 | s2 | s2 |
+  \makePercent 2 | 
+  \makePercent 2 | 
+  \makePercent 2 | 
+%  % bar 29-31
+%  <<
+%    \new Voice { \voiceOne { \repeat percent 3 { s 2 }}}
+%    \new Voice { \voiceTwo { s2 | s4\< s4 s2 | s2 s4 s4\! } }
+%  >>
   % bar 32
   \clef "G"
   <<
-    \new Voice { \voiceOne { df''4( b!) } }
+    \new Voice { \voiceOne { df'''4( b!) } }
     \new Voice { \voiceTwo { af4( bf) } }
   >>
   % bar 33
   <<
-    \new Voice { \voiceOne { df''4( b!) } }
+    \new Voice { \voiceOne { df4( b!) } }
     \new Voice { \voiceTwo { af4( bf) } }
   >>
   % bar 34-37

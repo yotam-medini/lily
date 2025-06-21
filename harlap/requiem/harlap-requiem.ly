@@ -37,6 +37,11 @@ sfff = \markup { \dynamic "sfff" }
 slowarpeg = \markup { \italic "(slow arpeggio)" }
 ten = \markup {\italic "ten." }
 
+
+makePercent = #(define-music-function (note) (ly:music?)
+  "Make a percent repeat the same length as NOTE."
+  (make-music 'PercentEvent 'length (ly:music-length note)))
+
 % \include "hr1.ly"
 % \include "hr2.ly"
 % \include "hr3.ly"
