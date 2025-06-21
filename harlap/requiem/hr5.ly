@@ -19,7 +19,8 @@
   R1*2 \bar "||" |
   % bar 15
   \time 2/2
-  a4. d8 d4 d |
+  \tempo "Tempo I" 2 = 48
+  a4.\f d8 d4 d |
   % bar 16
   d4 e fs g |
   % bar 17
@@ -31,9 +32,9 @@
   % bar 20
   cs4. cs8 cs2~ |
   % bar 21
-  cs1 |
+  cs1\< |
   % bar 22-26
-  R1*5 \bar "||" |
+  R1*5\! \bar "||" |
   % bar 27-
   \time 2/4
 }
@@ -52,9 +53,9 @@
     \bar "||" |
   % bar 15
   \time 2/2
-  d1 |
+  d1\< |
   % bar 16-27
-  R1*12 \bar "||"
+  R1*12\! \bar "||"
   % bar 28-83
   \time 2/4
   R2*56
@@ -98,7 +99,7 @@
   \break_orig
   % bar 15
   \time 2/2
-  a4. d8 d4 d |
+  a4.\f d8 d4 d |
   % bar 16
   d4 e fs g |
   % bar 17
@@ -110,10 +111,10 @@
   % bar 20
   c4 bf a8 bf g4 |
   % bar 21
-  c4. bf8 a8[ bf] g4 |
+  c4.\< bf8 a8[ bf] g4 |
   \break_orig
   % bar 22
-  r4 f4 gf4. af8 |
+  r4\! f4 gf4. af8 |
   % bar 23
   a8[ b] gs4.\breathe c4( b!8) |
   % bar 24
@@ -253,7 +254,7 @@
   R\breve\fermata |
   % bar 15
   \time 2/2
-  a'4 g fs8( g) e4 |
+  a'4\f g fs8( g) e4 |
   % bar 16
   a4. g8 fs( g) e4 |
   % bar 17
@@ -265,9 +266,9 @@
   % bar 20
   a'!4 g! f!2 |
   % bar 21
-  a!4\< g! f!2\! |
+  a!4\< g! f!2 |
   % bar 22
-  r4 f ef ef |
+  r4\! f ef ef |
   % bar 23
   gs fs fs2 |
   % bar 24
@@ -386,7 +387,7 @@
   R\breve\fermata |
   % bar 15
   \time 2/2
-  fs'4 e d2 |
+  fs'4\f e d2 |
   % bar 16
   fs4 e d2 |
   % bar 17
@@ -398,9 +399,9 @@
   % bar 20
   c4 d bf c-- ~( |
   % bar 21
-  c4 d) bf( c) |
+  c4\< d) bf( c) |
   % bar 22
-  r1 |
+  r1\! |
   % bar 23
   cs4( d) a! c! |
   % bar 24
@@ -528,7 +529,7 @@
   R\breve\fermata |
   % bar 15
   \time 2/2
-  a4( b) g( a) |
+  a4\f( b) g( a) |
   % bar 16
   d1 |
   % bar 17
@@ -540,9 +541,9 @@
   % bar 20
   f2. f4 |
   % bar 21
-  f1 |
+  f1\< |
   % bar 22
-  r1 |
+  r1\! |
   % bar 23
   r1 |
   % bar 24
@@ -722,7 +723,7 @@
   \clef "G"
   <<
     \new Voice { \voiceOne { a''4( g) fs8[( g]) e-- } }
-    \new Voice { \voiceTwo { fs4( e) d-- d-- } }
+    \new Voice { \voiceTwo { fs4\f( e) d-- d-- } }
   >> |
   % bar 16
   <<
