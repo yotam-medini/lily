@@ -192,11 +192,11 @@
   % bar 58-62
   R2*5 |
   % bar 63
-  r4 r8 bf8 |
+  r4 r8 bf8\f |
   % bar 64
-  af4 af8 bf8 |
+  af4\< af8 bf8 |
   % bar 65
-  b!8( fs) gs4 |
+  b!8\ff( fs) gs4 |
   % bar 66-67
   r2 | r2 |
   \break_orig
@@ -318,15 +318,15 @@
   % bar 52-60
   R2*9\! |
   % bar 61
-  r4 r8 ef8 |
+  r4 r8 ef8\f\< |
   % bar 62
   df4 df8 ef |
   % bar 63
-  e8 fs fs4 |
+  e8 fs fs4\! |
   % bar 64
   e8 ds cs fs |
   % bar 66
-  e4-> fs-> |
+  e4->\ff fs-> |
   % bar 66-67
   r2 | r2 |
   % bar 68
@@ -457,21 +457,21 @@
   % bar 52-59
   R2*8\! |
   % bar 60
-  r4 r8 bf8 |
+  r4 r8 bf8\mf |
   % bar 61
-  af4 a8 bf |
+  af4\< a8 bf |
   % bar 62
   b!8( fs) gs4 |
   % bar 63
   b8( as) gs( cs) |
   % bar 64
-  fs,4 gs |
+  fs,4 gs\! |
   % bar 65
-  b8( ds) <b cs>4 |
+  b8\ff( ds) <b cs>4 |
   % bar 66
   r2 |
   % bar 67
-  r8 c8 df( ef) |
+  r8 c8^\mfintensivo df( ef) |
   % bar 68
   c8 df ef4 |
   % bar 69
@@ -612,9 +612,9 @@
   % bar 52-58
   R2*7\! |
   % bar 59
-  r4 r8 ef,8 |
+  r4 r8 ef,8\mf |
   % bar 60
-  df4 df8 ef |
+  df4 df8\< ef |
   % bar 61
   e!8( b) cs4 |
   % bar 62
@@ -624,13 +624,13 @@
   % bar 64
   cs4-> ds-> |
   % bar 65
-  gs-> fs-> |
+  gs->\ff fs-> |
   % bar 66
-  r2
+  r2^\mfintensivo
   % bar 67
   r8
   <<
-    \new Voice { \voiceOne { c'8 df[ ef] } }
+    \new Voice { \voiceOne { c'8^\< df[ \after 8 \! ef] } }
     \new Voice { \voiceTwo { bf8 bf[ bf] } }
   >>
   % bar 68-70
@@ -936,10 +936,10 @@
   % bar 57
   g( f) e( f) |
   % bar 58
-  d4.( e8) |
+  d4._\mf( e8) |
   % bar 59
   <<
-    \new Voice { \voiceOne { <af, df>16 r16 r8 r4 } }
+    \new Voice { \voiceOne { <af, df>16\sff r16^\> r8 \after 4 \! r4 } }
     \new Voice { \voiceTwo { 
       \voiceOne
       \change Staff = "lower" <df,, af' df ef>16_>
@@ -954,25 +954,26 @@
     } }
   >>
   % bar 60
-  df16-. r16 r8 r4 |
+  df16-. r16 r8_\< r4 |
   % bar 61
-  r4 r8 ef8 |
-  % bar 62
-  df4 df8( ef) |
-  % bar 63
+  r4 r8 ef8\mf |
+  % bar 62-64
   <<
-    \new Voice { \voiceOne { r4 r8 bf'8 } }
-    \new Voice { \voiceTwo { e,!8( fs4.) } }
-  >> |
-  % bar 64
-  <<
-    \new Voice { \voiceOne { af4. bf8 } }
-    \new Voice { \voiceTwo { e,!8( ds) cs( fs) } }
+    \new Voice { \voiceOne {  
+      df4 df8( ef) |
+      r4 r8 bf'8 |
+      af4. bf8
+    } }
+    \new Voice { \voiceTwo {
+      s2_\< |
+      e!8( fs4.) |
+      e,!8( ds) cs( \after 8 \! fs)
+    } }
   >>
   % bar 65
   <<
     \new Voice { \voiceOne { b!8( fs) gs4 } }
-    \new Voice { \voiceTwo { e4-> fs-> } }
+    \new Voice { \voiceTwo { e4->_\f fs-> } }
   >>
   % bar 66
   { 
