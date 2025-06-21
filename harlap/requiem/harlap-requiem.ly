@@ -2,6 +2,7 @@
 \include "english.ly"
 
 "dummy" = {} % sometimes needed to make emacs LilyPond-mode happy
+attaca = \markup { \italic "attaca" }
 atempo = \markup { \italic "(a tempo)" }
 Atempo = \markup { \italic "(A tempo)" }
 break_orig = \break

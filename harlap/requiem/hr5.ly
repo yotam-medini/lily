@@ -203,23 +203,23 @@
   % bar 68
   r2
   % bar 69
-  af8( g) f( bf) |
+  af8\f( g) f( bf) |
   % bar 70
   ef,4 f |
   % bar 71-77
   r2*7 |
   % bar 78
-  f'4.->( e8)
+  f'4.->\f( e8)
   % bar 79
   d4->( g) |
   % bar 80
   c,2-> |
   % bar 81
-  d2-> ~
+  d2->\< ~
   % bar 82
   d2 ~
   % bar 83
-  d2
+  d2 \ff
   \break_orig
   % bar 84
   r2\fermata \bar "|." |
@@ -332,13 +332,13 @@
   % bar 68
   r2
   % bar 69
-  af8( g) f( bf) |
+  af8\f( g) f( bf) |
   % bar 70
   ef,4-> d!-> |
   % bar 71-73
   R2*3
   % bar 74
-  r4. a'8 |
+  r4. a'8\f |
   % bar 75
   bf4 c |
   % bar 76
@@ -352,7 +352,7 @@
   % bar 80
   bf2-> |
   % bar 81-83
-  a2 ~ | a2 ~ | a2 |
+  a2\< ~ | a2 ~ | a2\ff |
   % bar 84
   \break_orig
   % bar 84
@@ -481,21 +481,21 @@
   % bar 71-73
   r2 | r2 | r2 |
   % bar 74
-  r4. a8 |
+  r4. a8\f |
   % bar 75
   bf4 c |
   % bar 76
-  a4.bf8 |
+  a4. bf8 |
   % bar 77
   c2 |
   % bar 78
   f4.->( e8) |
   % bar 79
-  d4->( g) |
+  d4->\f( g) |
   % bar 80
   c,2-> |
   % bar 81-83
-  d2-> ~ | d2 ~ | d2 |
+  d2->\< ~ | d2 ~ | d2\ff |
   % bar 84
   R2\fermata \bar "|."
 }
@@ -503,6 +503,7 @@
 "bass5" = \relative c {
   \"global5"
   \"dummy"
+  \dynamicUp
   % bar 1
   r1 |
   % bar 2
@@ -631,8 +632,8 @@
   r8
   <<
     \new Voice { \voiceOne {
-      c'8_\< df[ ef]
-      c8 df ef4 | bf4->\f c-> | bf-> c->
+      c'8^\< df[ ef]
+      c8 df ef4 | bf4->^\f c-> | bf-> c->
      } }
     \new Voice { \voiceTwo {
       bf8 bf[ bf]
@@ -644,12 +645,12 @@
   % bar 74-80
   r4.
   <<
-    \new Voice { \voiceOne { a8 | bf4 c | a4. bf8 | c2 | g2 | a2 | bf2 } }
+    \new Voice { \voiceOne { a8^\f | bf4 c | a4. bf8 | c2 | g2 | a2 | bf2 } }
     \new Voice { \voiceTwo { g8 | g4 g  | g4. g8  | g2 | g2 | g2 | g2  } }
   >> |
   % bar 81=83
   <<
-    \new Voice { \voiceOne { a2 ~ | a2 ~ | a2 } }
+    \new Voice { \voiceOne { a2^\< ~ | a2 ~ | a2\ff } }
     \new Voice { \voiceTwo { g2 ~ | g2 ~ | g2 } }
   >> |
   % bar 84
@@ -990,28 +991,35 @@
     \change Staff = "upper" bf_.
   } |
   % bar 67-70
-  \repeat percent 4 {
-    \voiceOne
-    \change Staff = "lower" bf16_.
-    \change Staff = "upper" bf_.
-    \change Staff = "lower" bf_.
-    \change Staff = "upper" bf_.
+  <<
+    \new Voice { \voiceOne {  
+      \repeat percent 4 {
+        \voiceOne
+        \change Staff = "lower" bf16_.
+        \change Staff = "upper" bf_.
+        \change Staff = "lower" bf_.
+        \change Staff = "upper" bf_.
 
-    \change Staff = "lower" bf_.
-    \change Staff = "upper" bf_.
-    \change Staff = "lower" bf_.
-    \change Staff = "upper" bf
-  }
+        \change Staff = "lower" bf_.
+        \change Staff = "upper" bf_.
+        \change Staff = "lower" bf_.
+        \change Staff = "upper" bf
+      }
+    } }
+    \new Voice { \voiceTwo {  
+      s2 | s2 | s2_\< | s4 s8\! s8
+    } }
+  >> |
   % bar 71
-  af''8( g) f( bf) |
+  af''8_\f_\<( g) f( bf) |
   % bar 72
   af8( ef) f4 |
   % bar 73
-  af,8( ef) f4 |
+  af,8( ef) f4\! |
   % bar 74-83
   \repeat percent 10 { 
     \voiceOne
-    \change Staff = "lower" g16_.
+    \change Staff = "lower" g16_._\sf_\>
     \change Staff = "upper" g_.
     \change Staff = "lower" g_.
     \change Staff = "upper" g_.
@@ -1019,11 +1027,12 @@
     \change Staff = "lower" g_.
     \change Staff = "upper" g_.
     \change Staff = "lower" g_.
-    \change Staff = "upper" g_.
+    \change Staff = "upper" g_.\!
   }
   % bar 84
   \clef bass
-  r8 <a,, d g>16[ <a d g>16] <a d g>16 r16 r8\fermata \bar "|."
+  r8 <a,, d g>16[ <a d g>16] <a d g>16 r16 r8\fermata
+    ^\markup { \hspace #4.0 \italic "attaca" } \bar "|."
 }
 
 "pianoLeft5" = \relative c {
