@@ -174,19 +174,20 @@
   % bar 45
   r
   \break_orig
+  % bar 46
   r2 |
   % bar 47
-  r4 r8 d8 |
+  r4 r8 d8\f |
   % bar 48
   c4 c8 d8 |
   % bar 49
   ef( bf) c4 |
   % bar 50
-  r8 b!8 b cs |
+  r8 b!8\< b cs |
   % bar 51
   d8( a) b4 |
   % bar 52-57
-  R2*6 |
+  R2*6\! |
   \break_orig
   % bar 58-62
   R2*5 |
@@ -303,19 +304,19 @@
   % bar 39-45
   R2*7 |
   % bar 46
-  r8 d8 ef f |
+  r8 d8^\mfintensivo ef f\< |
   % bar 47
   d8 ef f4 |
   % bar 48
-  bf8( a) g( c) |
+  bf8(\!^\mpsubito a) g( c) |
   % bar 49
   f,4-> g-> |
   % bar 50
-  a8( gs) fs( b) |
+  a8(\< gs) fs( b) |
   % bar 51
   e,4-> fs-> |
   % bar 52-60
-  R2*9 |
+  R2*9\! |
   % bar 61
   r4 r8 ef8 |
   % bar 62
@@ -442,19 +443,19 @@
   % bar 39-45
   R2*7 |
   % bar 46
-  r8 d'8 ef[ f] |
+  r8 d'8^\mfintensivo ef[ f\<] |
   % bar 47
   f8 ef f4 |
   % bar 48
-  c4-> d-> |
+  c4->\!^\mpsubito d-> |
   % bar 49
   ef-> d-> |
   % bar 50
-  b-> cs-> |
+  b->\< cs-> |
   % bar 51
   d!-> cs-> |
   % bar 52-59
-  R2*8 |
+  R2*8\! |
   % bar 60
   r4 r8 bf8 |
   % bar 61
@@ -597,17 +598,19 @@
   % bar 39-45
   R2*7 |
   % bar 46
-  r8 a'8 a[ a] |
+  r8 c'8 c[ c\<] |
   % bar 47
-  a8[ a] a4
+  c8[ c] c4
   % bar 48
-  a4-> a->
+  c4->\!^\mpsubito c->
   % bar 49
-  a4-> a->
+  c4-> c->
   % bar 50
+  b!->\< b->
+  % bar 51
   b!-> b->
-  % bar 51-58
-  R2*8 |
+  % bar 52-58
+  R2*7\! |
   % bar 59
   r4 r8 ef,8 |
   % bar 60
@@ -894,8 +897,9 @@
   } |
   % bar 50
   { 
+    \dynamicUp
     \voiceOne
-    \change Staff = "lower" b16_>
+    \change Staff = "lower" b16_>\tweak direction #UP \<
     \change Staff = "upper" b_.
     \change Staff = "lower" b_.
     \change Staff = "upper" b_.
@@ -915,7 +919,7 @@
 
     \change Staff = "lower" b_.
     \change Staff = "upper" b_.
-    \change Staff = "lower" b_.
+    \change Staff = "lower" b_.\!
     \change Staff = "upper" b_.
   } |
   % bar 52
