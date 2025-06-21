@@ -35,8 +35,11 @@
   cs1\< |
   % bar 22-26
   R1*5\! \bar "||" |
-  % bar 27-
+  % bar 27-83
   \time 2/4
+  R2*57 |
+  % bar 84
+  r2 \bar "|."
 }
 
 "soloBaritone5" =  \relative c {
@@ -54,11 +57,11 @@
   % bar 15
   \time 2/2
   d1\< |
-  % bar 16-27
-  R1*12\! \bar "||"
-  % bar 28-83
+  % bar 16-26
+  R1*11\! \bar "||"
+  % bar 27-83
   \time 2/4
-  R2*56
+  R2*57
   % bar 84
   r2 \bar "|."
 }
@@ -114,20 +117,21 @@
   c4.\< bf8 a8[ bf] g4 |
   \break_orig
   % bar 22
-  r4\! f4 gf4. af8 |
+  r4\! f4\mp\< gf4. af8 |
   % bar 23
   a8[ b] gs4.\breathe c4( b!8) |
   % bar 24
   c8[( d) b c] df[( ef) c df] |
   % bar 25
-  d!4( c) b( a) |
+  d!4\f( c)\< b( a) |
   % bar 26
   d4( <c e>)
+  \after 4. \ff
     <<
       \new Voice { \voiceOne { g'2 } }
-      \new Voice { \voiceTwo { b,8[( a]) a4 } }
+      \new Voice { \voiceTwo { b,8[( c]) a4 } }
     >> |
-  \bar "||"
+   \bar "||"
   % bar 27
   \time 2/4
   r2
@@ -268,15 +272,15 @@
   % bar 21
   a!4\< g! f!2 |
   % bar 22
-  r4\! f ef ef |
+  r4\! f\mp\< ef ef |
   % bar 23
   gs fs fs2 |
   % bar 24
   b4( a) c bf |
   % bar 25
-  b!4( a) g g8-- g-- |
+  b!4\f( a\<) g g8-- g-- |
   % bar 26
-  b4( a) g2 \bar "||" |
+  b4( a) \after 4. \ff g2 \bar "||" |
   \time 2/4
   % bar 27-29
   r2 | r2 | r2 |
@@ -403,13 +407,13 @@
   % bar 22
   r1\! |
   % bar 23
-  cs4( d) a! c! |
+  cs4\mf\<( d) a! c! |
   % bar 24
   e4( f) f fs |
   % bar 25
-  d4( e) c d8-- d-- |
+  d4\f( e\<) c d8-- d-- |
   % bar 26
-  d4( c) d2 \bar "||" |
+  d4( c) \after 4. \ff d2 \bar "||" |
   % bar 27
   \time 2/4
   r2 |
@@ -547,10 +551,11 @@
   % bar 23
   r1 |
   % bar 24
-  r4 r8 a!8 bf4 bf8[ bf] |
+  r4 r8 a!8\mf\< bf4 bf8[ bf] |
   % bar 25
   g1-> |
   % bar 26
+  \after 2.. \ff
   g1-> \bar "||" |
   % bar 27
   \time  2/4
@@ -755,20 +760,21 @@
     \new Voice { \voiceOne { c'8[( d) f( bf,)] a[( bf]) g4-- } }
     \new Voice { \voiceTwo { a4 g f-- f-- } }
   >> |
-  % bar 22
+  % bar 22-24
   <<
-    \new Voice { \voiceOne { gf8[( af]) f4 gf4.( af!8) } }
-    \new Voice { \voiceTwo { f4 ef2. } }
-  >> |
-  % bar 23
-  <<
-    \new Voice { \voiceOne { a!8->[( b!]) gs4. a!4->( b!8) } }
-    \new Voice { \voiceTwo { gs4 fs2. } }
-  >> |
-  % bar 24
-  <<
-    \new Voice { \voiceOne { c'8[( d) b( c)] df[( ef) c( df)] } }
-    \new Voice { \voiceTwo { b!4( a) c!( bf!) } }
+    \new Voice { \voiceOne { 
+      gf8[( af]) f4 gf4.( af!8) |
+      a!8->[( b!]) gs4. a!4->( b!8) |
+      c8[( d) b( c)] df[( ef) c( df)] 
+    } }
+    \new Voice { \voiceTwo { 
+      f,4  ef2. |
+      gs4 fs2. |
+      b!4( a) c!( bf!)
+    } }
+    \new Dynamics \with { alignBelowContext = "upper" } {
+      s8\sfp s8\< s4 s2 | s1 | s2 \after 4. \! s2 |
+    }
   >> |
   % bar 25
   <<
@@ -784,6 +790,7 @@
   \clef bass
   \time 2/4
   {
+    \voiceOne
     \change Staff = "lower" af,16
     \change Staff = "upper" af
     \change Staff = "lower" af
@@ -1105,7 +1112,7 @@
   \clef bass
   <<
     \new Voice { \voiceOne { d4( e) c( d) } }
-    \new Voice { \voiceTwo { <g,, g'>1 } }
+    \new Voice { \voiceTwo { <g,,! g'!>1 } }
   >>
   % bar 26
   <<
