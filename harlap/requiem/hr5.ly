@@ -418,9 +418,9 @@
   \time 2/4
   r2 |
   % bar 28
-  r8 bf8 b![ df] |
+  r8^\mfintensivo bf8 b!\<[ df] |
   % bar 29
-  bf8[ b!] df4 |
+  bf8[ b!] df4\f |
   % bar 30
   af4-> bf-> |
   % bar 31
@@ -560,23 +560,23 @@
   % bar 27
   \time  2/4
   r2 |
-  % bar 28
-  r8
+  % bar 28-29
+  r8^\mfintensivo
   <<
-    \new Voice { \voiceOne { bf8 b!8[ df8] } }
-    \new Voice { \voiceTwo { af8 af8[ df8] } }
-  >>
-  % bar 29
-  <<
-    \new Voice { \voiceOne { bf8[ b!] df4 } }
-    \new Voice { \voiceTwo { af8[ af] af4 } }
-  >>
-  |
-  % bar 31-32
+    \new Voice { \voiceOne {
+      bf8 b!8^\<[ df8] |
+      bf8[ b!] df4^\f
+    } }
+    \new Voice { \voiceTwo {
+      af8 af8[ df8] |
+      af8[ af] af4
+    } }
+  >> |
+  % bar 30-31
   <<
     \new Voice { \voiceOne { af4-> bf-> | b!4-> bf-> } }
     \new Voice { \voiceTwo { af4-> af-> | af4-> af-> } }
-  >>
+  >> |
   % bar 32
   r2 |
   % bar 33
@@ -776,16 +776,20 @@
       s8\sfp s8\< s4 s2 | s1 | s2 \after 4. \! s2 |
     }
   >> |
-  % bar 25
+  % bar 25-26
   <<
-    \new Voice { \voiceOne { d!4( c) bf( a) } }
-    \new Voice { \voiceTwo { b!4( a) g-- g-- } }
+    \new Voice { \voiceOne {
+      d!4( c) bf( a) |
+      d8[( e) g( c,)] b[( c]) a4--
+    } }
+    \new Voice { \voiceTwo {
+      b!4( a) g-- g-- |
+      b4 a g-- g--
+    } }
+    \new Dynamics \with { alignBelowContext = "upper" } {
+      s8\f s8\< s4 s2 | s2 \after 4. \! s2 |
+    }
   >> |
-  % bar 26
-  <<
-    \new Voice { \voiceOne { d'8[( e) g( c,)] b[( c]) a4--  } }
-    \new Voice { \voiceTwo { b4 a g-- g-- } }
-  >> \bar "||" |
   % bar 27
   \clef bass
   \time 2/4
