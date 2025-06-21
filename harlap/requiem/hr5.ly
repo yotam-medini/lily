@@ -1124,11 +1124,11 @@
     \new Voice { \voiceTwo { <g,, g'>1 } }
   >>
   \bar "||" |
-  % bar 27
+  % bar 27-28
   \time 2/4
-  s2 |
-  % bar 28-31
-  \repeat percent 4 { s2 } |
+  s2\sf\> | s2\mp |
+  % bar 29-31
+  s2 | s2 | s2 |
   % bar 32
   \clef "G"
   <<
