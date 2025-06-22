@@ -247,11 +247,11 @@
   % bar 9
   r1 |
   % bar 10
-  f4 ef d8 ef c4 |
+  f4 ef d8( ef) c4 |
   % bar 11
-  f4. ef8 d ef c4 |
+  f4. ef8 d( ef) c4 |
   % bar 12
-  d\< c b8 c a4 \bar "||" |
+  d\<( c) b!8( c) a4 \bar "||" |
   % bar 13
   \time 4/2
   R\breve\fermata\! |
@@ -322,9 +322,9 @@
   % bar 62
   df4 df8 ef |
   % bar 63
-  e8 fs fs4\! |
+  e!8( fs) fs4\! |
   % bar 64
-  e8 ds cs fs |
+  e8( ds) cs fs |
   % bar 66
   e4->\ff fs-> |
   % bar 66-67
@@ -1338,16 +1338,33 @@
 }
 
 "lyricsAlt5" = \lyricmode {
-  Ho % -- sti -- as
   % bar 1
+  Ho -- sti -- as et pre -- ces ti -- bi Do -- mi -- ne
+    lau -- dis o -- ffe -- ri -- mus
+    lau -- dis o -- ffe -- ri -- mus
   % bar 7
+  Do -- mi -- ne _ lau -- dis o -- ffe -- ri -- mus
   % bar 10
+  Ho -- sti -- as et pre -- ces ti -- bi Do -- mi -- ne
   % bar 15
+  Ho -- sti -- as et pre -- ces ti -- bi Do -- mi -- ne
+    lau -- dis o -- ffe -- ri -- mus
+    lau -- dis o -- ffe -- ri -- mus
+    Do -- mi -- ne Do -- mi -- ne
   % bar 22
+  fac e -- as Do -- mi -- ne
+    tran -- si -- re ad vi -- tam  ad vi -- tam
   % bar 30
+  pro -- mi -- si -- sti  
+    Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti 
   % bar 46
+  Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti 
+    pro -- mi -- si -- sti  
   % bar 58
+  et se -- mi -- ni e -- ius  se -- mi -- ni e -- ius
   % bar 68
+  pro -- mi -- si -- sti  
+    Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti 
 }
 
 "lyricsTen5" = \lyricmode {
