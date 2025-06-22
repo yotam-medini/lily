@@ -9,8 +9,39 @@
 "soloSoprano6" =  \relative c'' {
   \"global6"
   \"dummy"
-  r1. |
-  a4
+  R1.*9 |
+  % bar 10
+  fs4 e2 ds4 cs2 |
+  % bar 11
+  fs8( gs fs e ds e) ds4( cs2) |
+  % bar 12
+  ds4. ds8 e4 ~ e4 fs4 e
+  \break_orig
+  % bar 13
+  ef4. ef8 ef4 ~ ef2. |
+  \break_orig
+  % bar 14
+  ef4 df2 c4 bf2
+  \break_orig
+  % bar 15
+  ef8[( f ef df) c( df)] c4( bf2) |
+  % bar 16
+  c!4. c8 c4 ~ c4 cs4 ds |
+  % bar 17
+  c!4. c8 c4 ~ c2. |
+  % bar 18
+  R1.*15 |
+  % bar 33
+  f4 ef2 d4 c2 |
+  \break_orig
+  % bar 34
+  f8[( g f ef) d( ef)] d4( c2) |
+  % bar 35
+  d4. d8 d4 ~ d4 ds es |
+  % bar 36
+  d!4. d8 d4 d2. |
+  R1.*8
+  \bar "|."
 }
 
 "soloBaritone6" =  \relative c {
