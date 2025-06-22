@@ -507,11 +507,11 @@
   % bar 1
   r1 |
   % bar 2
-  g'4\f a f g |
+  g'4\f( a) f( g) |
   % bar 3
   c,1 |
   % bar 4
-  e4 fs d e |
+  e4( fs) d( e) |
   % bar 5
   cs1 |
   % bar 6
@@ -523,11 +523,11 @@
   % bar 9
   r
   % bar 10
-  f4 g ef f
+  f4( g) ef( f)
   % bar 11
   bf,1
   % bar 12
-  d4\< e c d
+  d4\< e c( d)
   % bar 13
   \time 4/2
   R\breve\fermata\! |
@@ -565,10 +565,10 @@
   % bar 28-29
   r8^\mfintensivo
   <<
-    \new Voice { \voiceOne {
+    {
       bf8 b!8^\<[ df8] |
       bf8[ b!] df4^\f
-    } }
+    }
     \new Voice { \voiceTwo {
       af8 af8[ df8] |
       af8[ af] af4
@@ -576,7 +576,7 @@
   >> |
   % bar 30-31
   <<
-    \new Voice { \voiceOne { af4-> bf-> | b!4-> bf-> } }
+    { af4-> bf-> | b!4-> bf-> }
     \new Voice { \voiceTwo { af4-> af-> | af4-> af-> } }
   >> |
   % bar 32
@@ -586,12 +586,12 @@
   % bar 34-35
   r8
   <<
-    \new Voice { \voiceOne { e8 f[ g] | e8[ f] g4 } }
+    { e8 f[ g] | e8[ f] g4 }
     \new Voice { \voiceTwo { d8^\< d[ d] | d8[ d] \after 4 \! d4 } }
   >> |
   % bar 36-37
   <<
-    \new Voice { \voiceOne { d4   e-> | f4-> e-- } }
+    { d4   e-> | f4-> e-- }
     \new Voice { \voiceTwo { d4-> d   | d4   d} }
   >> |
   % bar 38
@@ -619,7 +619,7 @@
   % bar 61
   e!8( b) cs4 |
   % bar 62
-  e8( fs) cs( fs) |
+  e8( fs) cs\( fs\) |
   % bar 63
   b,4 cs |
   % bar 64
@@ -631,10 +631,10 @@
   % bar 67-70
   r8
   <<
-    \new Voice { \voiceOne {
+    {
       c'8^\< df[ ef]
       c8 df ef4 | bf4->^\f c-> | bf-> c->
-     } }
+    }
     \new Voice { \voiceTwo {
       bf8 bf[ bf]
       bf8 bf bf4 | bf4-> bf-> | bf4-> bf->
@@ -645,12 +645,12 @@
   % bar 74-80
   r4.
   <<
-    \new Voice { \voiceOne { a8^\f | bf4 c | a4. bf8 | c2 | g2 | a2 | bf2 } }
+    { a8^\f | bf4 c | a4. bf8 | c2 | g2 | a2 | bf2 }
     \new Voice { \voiceTwo { g8 | g4 g  | g4. g8  | g2 | g2 | g2 | g2  } }
   >> |
   % bar 81=83
   <<
-    \new Voice { \voiceOne { a2^\< ~ | a2 ~ | a2\ff } }
+    { a2^\< ~ | a2 ~ | a2\ff }
     \new Voice { \voiceTwo { g2 ~ | g2 ~ | g2 } }
   >> |
   % bar 84
@@ -1404,16 +1404,30 @@
 }
 
 "lyricsBas5" = \lyricmode {
-  Ho % -- sti -- as
   % bar 1
+  Ho -- sti -- as  Do -- mi -- ne  lau -- dis o -- 
   % bar 7
+  ffe -- ri -- mus  lau -- dis 
   % bar 10
+  Ho -- sti -- as  Do -- mi -- ne
   % bar 15
+  Ho -- sti -- as  Do -- mi -- ne  lau -- dis o -- ffe -- ri -- mus 
   % bar 22
+  ad vi -- tam  ad vi -- tam
+    Quam o -- lim A -- bra -- hae
   % bar 30
+  pro -- mi -- si -- sti
+    Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti
   % bar 46
+  Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti
+    pro -- mi -- si -- sti
   % bar 58
+  et se -- mi -- ni e -- ius  se -- mi -- ni e -- ius 
+    pro -- mi -- si -- sti
+    Quam o -- lim
   % bar 68
+  A -- bra -- hae pro -- mi -- si -- sti
+  Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti
 }
 
 "score5" = \score {
