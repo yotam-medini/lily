@@ -566,8 +566,10 @@
   r8^\mfintensivo
   <<
     {
+      \stemUp
       bf8 b!8^\<[ df8] |
       bf8[ b!] df4^\f
+      \stemNeutral
     }
     \new Voice { \voiceTwo {
       af8 af8[ df8] |
@@ -576,7 +578,7 @@
   >> |
   % bar 30-31
   <<
-    { af4-> bf-> | b!4-> bf-> }
+    { \stemUp af4-> bf-> | b!4-> bf-> \stemNeutral }
     \new Voice { \voiceTwo { af4-> af-> | af4-> af-> } }
   >> |
   % bar 32
@@ -586,12 +588,12 @@
   % bar 34-35
   r8
   <<
-    { e8 f[ g] | e8[ f] g4 }
+    { \stemUp e8 f[ g] | e8[ f] g4 \stemNeutral }
     \new Voice { \voiceTwo { d8^\< d[ d] | d8[ d] \after 4 \! d4 } }
   >> |
   % bar 36-37
   <<
-    { d4   e-> | f4-> e-- }
+    { \stemUp d4   e-> | f4-> e-- \stemNeutral }
     \new Voice { \voiceTwo { d4-> d   | d4   d} }
   >> |
   % bar 38
@@ -632,8 +634,10 @@
   r8
   <<
     {
+      \stemUp
       c'8^\< df[ ef]
-      c8 df ef4 | bf4->^\f c-> | bf-> c->
+      c8 df ef4 | bf4^>^\f c^> | bf^> c^>
+      \stemNeutral
     }
     \new Voice { \voiceTwo {
       bf8 bf[ bf]
@@ -645,7 +649,7 @@
   % bar 74-80
   r4.
   <<
-    { a8^\f | bf4 c | a4. bf8 | c2 | g2 | a2 | bf2 }
+    { \stemUp a8^\f | bf4 c | a4. bf8 | c2 | g2 | a2 | bf2 \stemNeutral }
     \new Voice { \voiceTwo { g8 | g4 g  | g4. g8  | g2 | g2 | g2 | g2  } }
   >> |
   % bar 81=83
