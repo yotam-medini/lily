@@ -400,7 +400,7 @@
   % bar 18
   c4( bf) af af |
   % bar 19
-  c4( bf) af2 |
+  c4 bf af2 |
   % bar 20
   c4 d bf c-- ~( |
   % bar 21
@@ -463,7 +463,7 @@
   % bar 62
   b!8( fs) gs4 |
   % bar 63
-  b8( as) gs( cs) |
+  b8( as) gs\( cs\) |
   % bar 64
   fs,4 gs\! |
   % bar 65
@@ -471,7 +471,7 @@
   % bar 66
   r2 |
   % bar 67
-  r8 c8^\mfintensivo df( ef)\< |
+  r8 c8^\mfintensivo df ef\< |
   % bar 68
   c8 df ef4 |
   % bar 69
@@ -767,12 +767,12 @@
   >> |
   % bar 22-24
   <<
-    \new Voice { \voiceOne { 
+    \new Voice { \voiceOne {
       gf8[( af]) f4 gf4.( af!8) |
       a!8->[( b!]) gs4. a!4->( b!8) |
-      c8[( d) b( c)] df[( ef) c( df)] 
+      c8[( d) b( c)] df[( ef) c( df)]
     } }
-    \new Voice { \voiceTwo { 
+    \new Voice { \voiceTwo {
       f,4  ef2. |
       gs4 fs2. |
       b!4( a) c!( bf!)
@@ -812,7 +812,7 @@
   } |
   % bar 28-31
   <<
-    \new Voice { \voiceOne {  
+    \new Voice { \voiceOne {
       \repeat percent 4 {
         \change Staff = "lower" af16
         \change Staff = "upper" af
@@ -837,7 +837,7 @@
   gf8( df) ef4 |
   % bar 34-37
   <<
-    \new Voice { \voiceOne {  
+    \new Voice { \voiceOne {
       \repeat percent 4 {
         \change Staff = "lower" d,!16_\mp
         \change Staff = "upper" d!
@@ -872,12 +872,12 @@
   % bar 45
   <<
     \new Voice { \voiceOne { <g, c>16->^\sff r16 r8 r4 } }
-    \new Voice { \voiceTwo { 
+    \new Voice { \voiceTwo {
       \change Staff = "lower" <c,, g'! c d>16->_\sff
       \change Staff = "upper" c''16^.^\>
       \change Staff = "lower" c^.
       \change Staff = "upper" c^.
-  
+
       \change Staff = "lower" c^.
       \change Staff = "upper" c^.
       \change Staff = "lower" c^.
@@ -885,7 +885,7 @@
     } }
   >> |
   % bar 46-49
-  \repeat percent 4 { 
+  \repeat percent 4 {
     \voiceOne
     \change Staff = "lower" c16_.
     \change Staff = "upper" c_.
@@ -898,7 +898,7 @@
     \change Staff = "upper" c_.
   } |
   % bar 50
-  { 
+  {
     \dynamicUp
     \voiceOne
     \once \override DynamicLineSpanner.Y-offset = #14
@@ -913,7 +913,7 @@
     \change Staff = "upper" b_.
   } |
   % bar 51
-  { 
+  {
     \voiceOne
     \change Staff = "lower" b16_>
     \change Staff = "upper" b_.
@@ -942,7 +942,7 @@
   % bar 59
   <<
     \new Voice { \voiceOne { <af, df>16\sff r16^\> r8 \after 4 \! r4 } }
-    \new Voice { \voiceTwo { 
+    \new Voice { \voiceTwo {
       \voiceOne
       \change Staff = "lower" <df,, af' df ef>16_>
       \change Staff = "upper" df''_.
@@ -961,7 +961,7 @@
   r4 r8 ef8\mf |
   % bar 62-64
   <<
-    \new Voice { \voiceOne {  
+    \new Voice { \voiceOne {
       df4 df8( ef) |
       r4 r8 bf'8 |
       af4. bf8
@@ -978,7 +978,7 @@
     \new Voice { \voiceTwo { e4->_\f fs-> } }
   >>
   % bar 66
-  { 
+  {
     \voiceOne
     \change Staff = "lower" bf,16_._>
     \change Staff = "upper" bf_.
@@ -992,7 +992,7 @@
   } |
   % bar 67-70
   <<
-    \new Voice { \voiceOne {  
+    \new Voice { \voiceOne {
       \repeat percent 4 {
         \voiceOne
         \change Staff = "lower" bf16_.
@@ -1006,7 +1006,7 @@
         \change Staff = "upper" bf
       }
     } }
-    \new Voice { \voiceTwo {  
+    \new Voice { \voiceTwo {
       s2 | s2 | s2_\< | s4 s8\! s8
     } }
   >> |
@@ -1017,7 +1017,7 @@
   % bar 73
   af,8( ef) f4\! |
   % bar 74-83
-  \repeat percent 10 { 
+  \repeat percent 10 {
     \voiceOne
     \change Staff = "lower" g16_._\sf_\>
     \change Staff = "upper" g_.
@@ -1159,9 +1159,9 @@
   s2\sf\> | s2\mp |
   % bar 29-31
   % s2 | s2 | s2 |
-  \makePercent 2 | 
-  \makePercent 2 | 
-  \makePercent 2 | 
+  \makePercent 2 |
+  \makePercent 2 |
+  \makePercent 2 |
 %  % bar 29-31
 %  <<
 %    \new Voice { \voiceOne { \repeat percent 3 { s 2 }}}
@@ -1328,13 +1328,13 @@
   fac e -- as Do -- mi -- ne de mor -- te tran -- si -- re ad vi -- tam
     ad vi -- tam
   % bar 30
-  pro -- mi -- si -- sti   pro -- mi -- si -- sti 
+  pro -- mi -- si -- sti   pro -- mi -- si -- sti
   % bar 46
-  et se -- mi -- ni e -- ius  se -- mi -- ni e -- ius 
+  et se -- mi -- ni e -- ius  se -- mi -- ni e -- ius
   % bar 58
   et se -- mi -- ni e -- ius
   % bar 68
-  pro -- mi -- si -- sti   pro -- mi -- si -- sti 
+  pro -- mi -- si -- sti   pro -- mi -- si -- sti
 }
 
 "lyricsAlt5" = \lyricmode {
@@ -1355,29 +1355,52 @@
   fac e -- as Do -- mi -- ne
     tran -- si -- re ad vi -- tam  ad vi -- tam
   % bar 30
-  pro -- mi -- si -- sti  
-    Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti 
+  pro -- mi -- si -- sti
+    Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti
   % bar 46
-  Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti 
-    pro -- mi -- si -- sti  
+  Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti
+    pro -- mi -- si -- sti
   % bar 58
   et se -- mi -- ni e -- ius  se -- mi -- ni e -- ius
   % bar 68
-  pro -- mi -- si -- sti  
-    Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti 
+  pro -- mi -- si -- sti
+    Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti
 }
 
 "lyricsTen5" = \lyricmode {
-  Ho % -- sti -- as
   % bar 1
+  Ho -- sti -- as
+    Ho -- sti -- as  Do -- mi -- ne
+    lau -- dis o -- ffe -- ri -- mus
   % bar 7
+  Do -- mi -- ne  lau -- dis
   % bar 10
+  Ho -- sti -- as
+    Ho -- sti -- as  Do -- mi -- ne
   % bar 15
+  Ho -- sti -- as
+    Ho -- sti -- as  Do -- mi -- ne
+    lau -- dis o -- ffe -- ri -- mus
+    Do -- mi -- ne  
+    lau -- dis 
   % bar 22
+  de mor -- te tran -- si -- re ad vi -- tam
+    ad vi -- tam
+    Quam o -- lim A -- bra -- hae
   % bar 30
+  pro -- mi -- si -- sti
+    Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti
   % bar 46
+  Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti
+    pro -- mi -- si -- sti
   % bar 58
+  et se -- mi -- ni e -- ius
+    se -- mi -- ni e -- ius
+    e -- ius
+    Quam o -- lim
   % bar 68
+  A -- bra -- hae pro -- mi -- si -- sti
+  Quam o -- lim A -- bra -- hae pro -- mi -- si -- sti
 }
 
 "lyricsBas5" = \lyricmode {
@@ -1492,11 +1515,11 @@
       }
     >>
     \new PianoStaff \with {instrumentName = "Pno." } <<
-      \new Staff = "upper" { 
+      \new Staff = "upper" {
         % Enable repeat counters. Show every 4 repeats
-        \set countPercentRepeats = ##t  
+        \set countPercentRepeats = ##t
         \set repeatCountVisibility = #(every-nth-repeat-count-visible 4)
-        \clef treble \"pianoRight5" 
+        \clef treble \"pianoRight5"
       }
       \new Staff = "lower" { \clef bass \"pianoLeft5" }
     >>
