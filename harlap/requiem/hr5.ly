@@ -435,7 +435,7 @@
   % bar 35
   e8[ f] g4 |
   % bar 36
-  d4->\! e-> |
+  d4^\f->\! e-> |
   % bar 37
   f4-> e-> |
   % bar 38
@@ -535,9 +535,9 @@
   R\breve\fermata |
   % bar 15
   \time 2/2
-  a4\f( b) g( a) |
+  a'4\f( b) g( a) |
   % bar 16
-  d1 |
+  d,1 |
   % bar 17
   fs4( gs) e( fs) |
   % bar 18
@@ -593,7 +593,7 @@
   >> |
   % bar 36-37
   <<
-    { \stemUp d4   e-> | f4-> e-- \stemNeutral }
+    { \stemUp d4\f   e^> | f4^> e^> \stemNeutral }
     \new Voice { \voiceTwo { d4-> d   | d4   d} }
   >> |
   % bar 38
