@@ -752,7 +752,10 @@
         }
       }
     >>
-    \new PianoStaff \with {instrumentName = "Pno." } <<
+    \new PianoStaff \with {
+      instrumentName = "Pno."
+      shortInstrumentName = "Pno."
+    } <<
       \new Staff = "upper" { \clef treble \"pianoRight1" }
       \new Staff = "lower" { \clef bass \"pianoLeft1" }
     >>

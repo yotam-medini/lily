@@ -579,7 +579,10 @@
         }
       }
     >>
-    \new PianoStaff \with { instrumentName = "Pno." } <<
+    \new PianoStaff \with {
+      instrumentName = "Pno."
+      shortInstrumentName = "Pno."
+    } <<
       \new Staff = "upper" { \clef treble \"pianoRight3" \"dummy" }
       \new Staff = "lower" \with {
 	% \consists "Sustain_pedal_engraver"

@@ -1540,7 +1540,10 @@
         }
       }
     >>
-    \new PianoStaff \with {instrumentName = "Pno." } <<
+    \new PianoStaff \with {
+      instrumentName = "Pno."
+      shortInstrumentName = "Pno."
+    } <<
       \new Staff = "upper" {
         % Enable repeat counters. Show every 4 repeats
         \set countPercentRepeats = ##t

@@ -4,6 +4,7 @@
 "dummy" = {} % sometimes needed to make emacs LilyPond-mode happy
 attaca = \markup { \italic "attaca" }
 atempo = \markup { \italic "(a tempo)" }
+atempo_bold = \markup { \bold "a tempo" }
 Atempo = \markup { \italic "(A tempo)" }
 break_orig = \break
 % break_orig = {}
@@ -12,9 +13,11 @@ dulce = \markup { \italic "dulce" }
 espress = \markup { \italic "espress." }
 espressintensivo = \markup { \italic "espress. intensivo" }
 fmarcato = \markup { \dynamic "f" \italic "marcato" }
+fespress = \markup { \dynamic "f" \italic "espress." }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 fsubito = \markup { \dynamic "f" \italic "subito" }
 intensivo = \markup { \italic "intensivo" }
+mfdolce = \markup { \dynamic "mf" \italic "dolce" }
 mfintensivo = \markup { \dynamic "mf" \italic "intensivo" }
 moltespr = \markup { \italic "molto espressivo" } % obsolete
 moltoespr = \markup { \italic "molto espressivo" }
@@ -49,6 +52,7 @@ makePercent = #(define-music-function (note) (ly:music?)
 \include "hr3.ly"
 \include "hr4.ly"
 \include "hr5.ly"
+\include "hr6.ly"
 
 \paper{
   #(set-paper-size "a4")
@@ -94,4 +98,5 @@ makePercent = #(define-music-function (note) (ly:music?)
   \"score3"
   \"score4"
   \"score5"
+  \"score6"
 }

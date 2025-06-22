@@ -7,6 +7,7 @@ endif
 
 .DELETE_ON_ERROR:
 
+LYS = harlap-requiem.ly $(foreach i, 1 2 3 4 5 6, hr${i}.ly)
 MIDI_LYS = $(foreach i, 1 2 3 4 5 6 7, midi-${i}.ly)
 
 midi-lys: ${MIDI_LYS}
@@ -18,5 +19,5 @@ endef
 
 $(foreach n, 1 2 3 4 5 6 7,$(eval $(call mid2ly_rule,$(n))))
 
-harlap-requiem.pdf: harlap-requiem.ly hr1.ly hr2.ly hr3.ly hr4.ly hr5.ly
+harlap-requiem.pdf: ${LYS}
 	lilypond harlap-requiem.ly
