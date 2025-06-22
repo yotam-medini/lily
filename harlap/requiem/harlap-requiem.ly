@@ -44,10 +44,10 @@ makePercent = #(define-music-function (note) (ly:music?)
   "Make a percent repeat the same length as NOTE."
   (make-music 'PercentEvent 'length (ly:music-length note)))
 
-% \include "hr1.ly"
-% \include "hr2.ly"
-% \include "hr3.ly"
-% \include "hr4.ly"
+\include "hr1.ly"
+\include "hr2.ly"
+\include "hr3.ly"
+\include "hr4.ly"
 \include "hr5.ly"
 
 \paper{
@@ -89,9 +89,9 @@ makePercent = #(define-music-function (note) (ly:music?)
     pdfauthor = "yotam.medini@gmail.com"
   }
   \markup { \vspace #1 }
-  % \"score1"
-  % \"score2"
-  % \"score3"
-  % \"score4"
+  \"score1"
+  \"score2"
+  \"score3"
+  \"score4"
   \"score5"
 }
