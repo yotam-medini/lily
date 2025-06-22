@@ -128,8 +128,8 @@
   d4( <c e>)
   \after 4. \ff
     <<
-      \new Voice { \voiceOne { g'2 } }
-      \new Voice { \voiceTwo { b,8[( c]) a4 } }
+      { b8[( c]) a4 }
+      \new Voice { \voiceTwo { \stemUp g'2 \stemNeutral } }
     >> |
    \bar "||"
   % bar 27
@@ -141,7 +141,7 @@
   r2
   \break_orig
   % bar 30
-  gf8\f( f) ef( af) |
+  gf,8\f( f) ef( af) |
   % bar 31
   df,4-> e4-> |
   % bar 32
@@ -1312,19 +1312,68 @@
 }
 
 "lyricsSop5" = \lyricmode {
-  Ho % -- sti -- as
+  % bar 1
+  Ho -- sti -- as et pre -- ces ti -- bi Do -- mi -- ne
+    lau -- dis o -- ffe -- ri -- mus
+  % bar 7
+  Do -- mi -- ne
+  % bar 10
+  Ho -- sti -- as et pre -- ces ti -- bi Do -- mi -- ne
+  % bar 15
+  Ho -- sti -- as et pre -- ces ti -- bi Do -- mi -- ne
+    lau -- dis o -- ffe -- ri -- mus
+    Do -- mi -- ne__ _
+    lau -- dis o -- ffe -- ri -- mus
+  % bar 22
+  fac e -- as Do -- mi -- ne de mor -- te tran -- si -- re ad vi -- tam
+    ad vi -- tam
+  % bar 30
+  pro -- mi -- si -- sti   pro -- mi -- si -- sti 
+  % bar 46
+  et se -- mi -- ni e -- ius  se -- mi -- ni e -- ius 
+  % bar 58
+  et se -- mi -- ni e -- ius
+  % bar 68
+  pro -- mi -- si -- sti   pro -- mi -- si -- sti 
 }
 
 "lyricsAlt5" = \lyricmode {
   Ho % -- sti -- as
+  % bar 1
+  % bar 7
+  % bar 10
+  % bar 15
+  % bar 22
+  % bar 30
+  % bar 46
+  % bar 58
+  % bar 68
 }
 
 "lyricsTen5" = \lyricmode {
   Ho % -- sti -- as
+  % bar 1
+  % bar 7
+  % bar 10
+  % bar 15
+  % bar 22
+  % bar 30
+  % bar 46
+  % bar 58
+  % bar 68
 }
 
 "lyricsBas5" = \lyricmode {
   Ho % -- sti -- as
+  % bar 1
+  % bar 7
+  % bar 10
+  % bar 15
+  % bar 22
+  % bar 30
+  % bar 46
+  % bar 58
+  % bar 68
 }
 
 "score5" = \score {
