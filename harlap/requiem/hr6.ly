@@ -295,9 +295,35 @@
   % bar 5
   a'4. a8( gs4 ~ gs4) es( fs) |
   % bar 6
+  r4\mp
+  <<
+    \new Voice { \voiceOne { b,8( d8) cs4 } }
+    \new Voice { \voiceTwo { b2 } }
+  >>
+  r4
+  <<
+    \new Voice { \voiceOne { b8( d8) cs4 } }
+    \new Voice { \voiceTwo { b2 } }
+  >>
   % bar 7
+  \repeat unfold 2 {
+    r4
+    <<
+      \new Voice { \voiceOne { b8( d8) cs4 } }
+      \new Voice { \voiceTwo { b2 } }
+    >>
+  }
   % bar 8
+  r4
+  <<
+    \new Voice { \voiceOne { r8 e8( d4 ~ d2.) } }
+    \new Voice { \voiceTwo { r2 r4 e!4( d) } }
+  >> |
   % bar 9
+  <<
+    \new Voice { \voiceOne { fs1. } }
+    \new Voice { \voiceTwo { r4. ds8( es4 ~ es4) d!4( ds4) } }
+  >> |
   % bar 10
   % bar 11
   % bar 12
