@@ -30,7 +30,10 @@
   % bar 17
   c!4. c8 c4 ~ c2. |
   % bar 18
-  R1.*15 |
+  R1.*7 |
+  \break_orig
+  % bar 25
+  R1.*8 |
   % bar 33
   f4 ef2 d4 c2 |
   \break_orig
@@ -40,7 +43,9 @@
   d4. d8 d4 ~ d4 ds es |
   % bar 36
   d!4. d8 d4 d2. |
-  R1.*8
+  % bar 37-40
+  R1.*4
+  % bar 41
   \bar "|."
 }
 
@@ -48,7 +53,41 @@
   \"global6"
   \"dummy"
   r1. |
-  c4
+  % bar 2
+  c'4 bf2 a4 g2 |
+  % bar 3
+  c8( d c bf) a( bf) a4 g2 |
+  % bar 4
+  a4. a8 bf4 ~ bf4 c4 bf |
+  % bar 5
+  a4. a8 a4 ~ a2. |
+  \break_orig
+  % bar 6
+  a4 g2 fs4 e2 |
+  % bar 7
+  a8( b a g) fs( g) fs4 e2
+  % bar 8
+  fs4. fs8 fs4 ~ fs4 gs4 as |
+  % bar 9
+  fs4. ds8 es4 ~ es4 d4 ds |
+  \break_orig
+  % bar 10
+  ds2. r |
+  % bar 11-28
+  R1.*18 |
+  % bar 29
+  gs4 fs2 es4 ds2 |
+  \break_orig
+  % bar 30
+  gs8( as gs fs) es( fs) es4( ds2) |
+  % bar 31
+  es4. es8 fs4 ~ fs4 gs4 fs |
+  % bar 32
+  f!4. f8 f4 ~ f2. |
+  % bar 33-40
+  R1.*8 |
+  % bar 41
+  r1. \bar "|."
 }
 
 "soprano6" = \relative c'' {
