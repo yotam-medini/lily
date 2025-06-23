@@ -132,9 +132,9 @@
   d g,2 ~ g4 f4 a |
   \break_orig
   % bar 39
-  g4. a8 b c d4 e2
+  g4. a8 b c d4 e2 |
   % bar 40
-  g4. g8 g4 g2.
+  g4. g8 g4 g2. |
   \break_orig
   % bar 41
   g1.\ff\fermata \bar "|."
@@ -145,7 +145,33 @@
   \"dummy"
   R1.*20 |
   % bar 21
-  r2 r4 e4.
+  r2. e4. a,8 a4 |
+  % bar 22
+  b cs d! e a2 |
+  % bar 23
+  g!4. cs,8 d!4 e a,2 |
+  % bar 24
+  g'4 fs2 e( d4) |
+  % bar 25
+  cs2. gs'4. cs,8 cs4 |
+  % bar 26
+  ds4 es fs gs cs2 |
+  % bar 27
+  b!4. as8 gs4 gs cs,2 ~ |
+  % bar 28
+  cs4 b!2 cs4. ds8 es fs |
+  % bar 29
+  es4 es2 r2. |
+  % bar 30-37
+  R1.*8 |
+  % bar 38
+  d'4.-- g,8 g4 a d c |
+  % bar 39
+  b!2. g |
+  % bar 40
+  d'2. c |
+  % bar 41
+  <b d>1.\ff\fermata \bar "|."
 }
 
 "tenor6" = \relative c {
