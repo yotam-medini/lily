@@ -46,7 +46,7 @@
   % bar 37-40
   R1.*4
   % bar 41
-  \bar "|."
+  r1. \bar "|."
 }
 
 "soloBaritone6" =  \relative c {
@@ -95,7 +95,49 @@
   \"dummy"
   R1.*16 |
   % bar 17
-  c4.
+  c4. f,8 f4 g a bf |
+  % bar 18
+  c f2 ef4. af,8 bf4 |
+  % bar 19
+  c f,2 ~ f4 ef4 g |
+  \break_orig
+  % bar 20
+  f4. g8 a bf c4 d2 |
+  % bar 21
+  e4 d2 cs4 b!2 |
+  % bar 22
+  e8( fs e d) cs( d) cs4 b2 |
+  % bar 23
+  cs4. cs8 b4 ~ b4 cs4 d |
+  % bar 24
+  e!4. a,8 b4 ~ b2. |
+  \break_orig
+  % bar 25
+  cs4. cs8 cs4 ~ cs2. |
+  % bar 26
+  gs4.-- cs8 cs4 ds es fs |
+  % bar 27
+  gs cs,2 b!4. as8 gs4 |
+  % bar 28
+  gs fs2 es4 ds2 |
+  % bar 29
+  es2. r2. |
+  % bar 30-35
+  R1.*6 |
+  % bar 36
+  d'4. g,8 g4 a b! c |
+  % bar 37
+  d g2 f4. f8 e4
+  % bar 38
+  d g,2 ~ g4 f4 a |
+  \break_orig
+  % bar 39
+  g4. a8 b c d4 e2
+  % bar 40
+  g4. g8 g4 g2.
+  \break_orig
+  % bar 41
+  g1.\ff\fermata \bar "|."
 }
 
 "alto6" = \relative c' {
