@@ -179,7 +179,43 @@
   \"dummy"
   R1.*16 |
   % bar 17
-  r4 r8 c4.
+  r2. c'4. f,8 f4 |
+  % bar 18
+  g a bf c f2 |
+  % bar 19
+  ef4. af,8 bf4 c f,2 |
+  % bar 20
+  ef'4 d2 c bf4 |
+  % bar 21
+  a4. a8 a4 ~ a2. |
+  % bar 22
+  e'4 d2 cs4 d2 |
+  % bar 23
+  e8( fs e d) cs( d) cs!4 b2 |
+  % bar 24
+  cs4. cs8 cs4 ~ cs4 d4 e |
+  % bar 25
+  es4 ds2 cs4 bs2 |
+  % bar 26
+  es8( fs es ds) cs( ds) cs!4 b!2 |
+  % bar 27
+  cs4. cs8 cs4 ~ cs4 ds4 cs |
+  % bar 28
+  cs4. cs8 cs4 ~ cs2. |
+  % bar 29-35
+  R1.*7 |
+  % bar 36
+  r2. d4.-- g,8 g4 |
+  % bar 37
+  a b c d g2 |
+  % bar 38
+  f4. bf,8 c4 d g,2 ~ |
+  % bar 39
+  g4 f4( a) b!4. a8 b c |
+  % bar 40
+  d4 e2 g2.
+  % bar 41
+  g1.\ff\fermata \bar "|."
 }
 
 "bass6" = \relative c {
