@@ -1,7 +1,7 @@
 "global6" = {
   \key c \major
   \time  6/4
-  \tempo 2 = 40
+  \tempo "Andante dolcissimo" 2 = 40
   \dynamicUp
   \numericTimeSignature
 }
@@ -258,11 +258,139 @@
 "pianoRight6" = \relative c'' {
   \"global6"
   \"dummy"
+  \dynamicDown
+  % bar 1
+  r4\pp
+  <<
+    \new Voice { \voiceOne { d,8( f8) e4 } }
+    \new Voice { \voiceTwo { d2 } }
+  >> 
+  r4 
+  <<
+    \new Voice { \voiceOne { d8( f8) e4 } }
+    \new Voice { \voiceTwo { d2 } }
+  >> 
+  |
+  % bar 2-3
+  \repeat unfold 2 {
+    \repeat unfold 2 {
+      r4 
+      <<
+	\new Voice { \voiceOne { d8( f8) e4 } }
+	\new Voice { \voiceTwo { d2 } }
+      >>
+    }
+  } 
+  % bar 4
+  r4 
+  <<
+    \new Voice { \voiceOne { d8( f8) cs4 } }
+    \new Voice { \voiceTwo { d2 } }
+  >>
+  r8
+  <<
+    \new Voice { \voiceOne { s8 es2 } }
+    \new Voice { \voiceTwo { cs8 ~ cs2 } }
+  >> |
+  % bar 5
+  a'4. a8( gs4 ~ gs4) es( fs) |
+  % bar 6
+  % bar 7
+  % bar 8
+  % bar 9
+  % bar 10
+  % bar 11
+  % bar 12
+  % bar 13
+  % bar 14
+  % bar 15
+  % bar 16
+  % bar 17
+  % bar 18
+  % bar 19
+  % bar 20
+  % bar 21
+  % bar 22
+  % bar 23
+  % bar 24
+  % bar 25
+  % bar 26
+  % bar 27
+  % bar 28
+  % bar 29
+  % bar 30
+  % bar 31
+  % bar 32
+  % bar 33
+  % bar 34
+  % bar 35
+  % bar 36
+  % bar 37
+  % bar 38
+  % bar 39
+  % bar 40
+  % bar 41
 }
 
 "pianoLeft6" = \relative c {
  \"global6"
   \"dummy"
+  % bar 1-3
+  \repeat unfold 3 {
+    \repeat unfold 2 {
+      <<
+	\new Voice { \voiceOne { a'8( bf~ bf2) } }
+	\new Voice { \voiceTwo { a2-- } }
+      >>
+    }
+  } |
+  % bar 4
+  <<
+    \new Voice { \voiceOne { a8( bf~ bf2) } }
+    \new Voice { \voiceTwo { a2-- } }
+  >>
+  <g a>2. |
+  % bar 5
+  <<
+    \new Voice { \voiceOne { r8 a8( cs2) <cs ds>2.-- } }
+    \new Voice { \voiceTwo { fs,1. } }
+  >>
+  % bar 6
+  % bar 7
+  % bar 8
+  % bar 9
+  % bar 10
+  % bar 11
+  % bar 12
+  % bar 13
+  % bar 14
+  % bar 15
+  % bar 16
+  % bar 17
+  % bar 18
+  % bar 19
+  % bar 20
+  % bar 21
+  % bar 22
+  % bar 23
+  % bar 24
+  % bar 25
+  % bar 26
+  % bar 27
+  % bar 28
+  % bar 29
+  % bar 30
+  % bar 31
+  % bar 32
+  % bar 33
+  % bar 34
+  % bar 35
+  % bar 36
+  % bar 37
+  % bar 38
+  % bar 39
+  % bar 40
+  % bar 41
 }
 
 "lyricsSoloSop6" = \lyricmode {
