@@ -223,7 +223,36 @@
   \"dummy"
   R1.*20 |
   % bar 21
-  e4.
+  e4. a,8 a4 b cs d! |
+  % bar 22
+  e a2 g4. cs,8 d!4 |
+  % bar 23
+  e4 a,2 ~ a4 g!4 b |
+  % bar 24
+  a4. b8 cs d e4 fs2 |
+  % bar 25
+  gs4. cs,8 cs4 ds es fs |
+  % bar 26
+  gs cs2 b!4. as8 gs4
+  % bar 27
+  gs4 gs2 ~ gs4 b!2-- |
+  % bar 28
+  cs4. ds,8 es fs gs4 as2 |
+  % bar 29-36
+  R1.*8 |
+  % bar 37
+  d,4.-- g,8 g4 a b! c |
+  % bar 38
+  d g2 f4. bf,8 c4 |
+  % bar 39
+  d g2 ~ g4 f4( a) |
+  % bar 40
+  <<
+    { g1. }
+    \new Voice { \voiceTwo { \stemUp g4 a8 b! c d4( e2) \stemNeutral } }
+  >>
+  % bar 41
+  <g, d'>1.\ff\fermata \bar "|."
 }
 
 "pianoRight6" = \relative c'' {
