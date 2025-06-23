@@ -324,16 +324,57 @@
     \new Voice { \voiceOne { fs1. } }
     \new Voice { \voiceTwo { r4. ds8( es4 ~ es4) d!4( ds4) } }
   >> |
-  % bar 10
-  % bar 11
+  % bar 10-11
+  \repeat unfold 2 {
+    \repeat unfold 2 {
+      r4
+      <<
+	\new Voice { \voiceOne { gs8( b8 as4) } }
+	\new Voice { \voiceTwo { g2 } }
+      >>
+    }
+  } |
   % bar 12
+  r4
+  <<
+    \new Voice { \voiceOne { gs8[( b8] g) } }
+    \new Voice { \voiceTwo { g2 } }
+  >> 
+  r8 g!8 ~ <g b>2 |
+  |
   % bar 13
+  ef'4. ef8( d4~) d4 b!4( c) |
   % bar 14
+  r4\mp 
+  <<
+    \new Voice { \voiceOne { f,8[( af8] g4) } }
+    \new Voice { \voiceTwo { f2 } }
+  >> 
+  r4
+  <<
+    \new Voice { \voiceOne { f8[( af8] g4) } }
+    \new Voice { \voiceTwo { f2 } }
+  >> 
   % bar 15
+  \repeat unfold 2 {
+     r4
+     <<
+       \new Voice { \voiceOne { f8[( af8] g4) } }
+       \new Voice { \voiceTwo { f2 } }
+     >> 
+  } |
   % bar 16
+  r4 
+  <<
+    \new Voice { \voiceOne { r8 as8( gs4~) gs2. } }
+    \new Voice { \voiceTwo { r2 r4 as4( gs) } }
+  >> |
   % bar 17
+  <a d>2( f4) g!4( a bf) |
   % bar 18
+  c4( f2) ef4. af,8( bf4) |
   % bar 19
+  c4\f( f,2~) f4 ef4( g4) |
   % bar 20
   % bar 21
   % bar 22
