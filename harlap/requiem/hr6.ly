@@ -381,27 +381,47 @@
   <<
     \new Voice { \voiceOne { <a cs e>4( <a d>2) cs4( b2) } }
     \new Voice { \voiceTwo { r2. e,2( a,4) } }
-  >>
+  >> |
   % bar 22
   <<
     \new Voice { \voiceOne { e''8( fs e d) cs( d) cs!4( b2) } }
     \new Voice { \voiceTwo { e,4( d2) e4( a2) } }
-  >>
+  >> |
   % bar 23
   <<
     \new Voice { \voiceOne { cs2( b4~) b4 c( d) } }
     \new Voice { \voiceTwo { g,4. cs,8( d4) e4( a,2) } }
-  >>
+  >> |
   % bar 24
   <<
     \new Voice { \voiceOne { e''4.-- a,8( b4~) b2. } }
     \new Voice { \voiceTwo { g4( fs2) e2( d4) } }
-  >>
+  >> |
   % bar 25
+  <<
+    \new Voice { \voiceOne { cs'1. } }
+    \new Voice { \voiceTwo { cs,2. gs'2( cs,4) } }
+  >> |
   % bar 26
+  <<
+    \new Voice { \voiceOne { gs'2( cs4) ds4( es fs) } }
+    \new Voice { \voiceTwo { ds,4( es fs) gs( <cs, cs'>2 ) } }
+  >> |
   % bar 27
+  <<
+    \new Voice { \voiceOne { gs''4( cs,2) b4. as!8( gs4) } }
+    \new Voice { \voiceTwo { b4. as8( gs4) gs4( cs,2) } }
+  >> |
   % bar 28
+  <<
+    \new Voice { \voiceOne { gs'4( fs2) es4( ds2) } }
+    \new Voice { \voiceTwo { r4 b2-- cs2 es!8( fs!) } }
+  >> |
   % bar 29
+  <<
+    \new Voice { \voiceOne { es4 as,8( cs bs4) s4 as8( cs bs4) } }
+    \new Voice { \voiceTwo { gs4-- a2          r4 as2 } }
+  >> |
   % bar 30
   % bar 31
   % bar 32
