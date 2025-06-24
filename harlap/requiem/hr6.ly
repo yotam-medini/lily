@@ -474,8 +474,17 @@
   % bar 38
   d4( g,2) <g a>4-- <f d'>4( <a c>4) |
   % bar 39
+  <<
+    \new Voice { \voiceOne { g4. a8( b c) d4( e!2) } }
+    \new Voice { \voiceTwo { b!2.-- b2.-- } }
+  >> |
   % bar 40
+  <<
+    \new Voice { \voiceOne { g'1.-- } }
+    \new Voice { \voiceTwo { d!2.-- c!2.-- } }
+  >> |
   % bar 41
+  <b! d g>1.\fermata \bar "|."
 }
 
 "pianoLeft6" = \relative c {
