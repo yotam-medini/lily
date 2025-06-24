@@ -454,10 +454,25 @@
     \new Voice { \voiceTwo { g2 } }
   >>
   % bar 34
+  \repeat unfold 2 {
+    r4  
+    <<
+      \new Voice { \voiceOne { g8( bf a4) } }
+      \new Voice { \voiceTwo { g2 } }
+    >>
+  }
   % bar 35
+  r4
+  <<
+    \new Voice { \voiceOne { r8 bs8( as4~) as2. } }
+    \new Voice { \voiceTwo { r2 r4 bs4( as) } }
+  >>
   % bar 36
+  <b! d>2( g4) a!4( b! c) |
   % bar 37
+  d4( g2) f4. f8( e4) |
   % bar 38
+  d4( g,2) <g a>4-- <f d'>4( <a c>4) |
   % bar 39
   % bar 40
   % bar 41
