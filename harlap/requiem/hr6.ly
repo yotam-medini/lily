@@ -423,9 +423,36 @@
     \new Voice { \voiceTwo { gs4-- a2          r4 as2 } }
   >> |
   % bar 30
+  r4  
+  <<
+    \new Voice { \voiceOne { as8( cs bs4) } }
+    \new Voice { \voiceTwo { as2 } }
+  >>
+  r4  
+  <<
+    \new Voice { \voiceOne { as8( cs bs4) } }
+    \new Voice { \voiceTwo { as2 } }
+  >>
   % bar 31
+  r4  
+  <<
+    \new Voice { \voiceOne { as8( cs a4) } }
+    \new Voice { \voiceTwo { as2 } }
+  >>
+  r8 a!8 <a cs>2 |
   % bar 32
+  f'4. f8( e4~) e4 cs4( d4) |
   % bar 33
+  r4  
+  <<
+    \new Voice { \voiceOne { g8( bf a4) } }
+    \new Voice { \voiceTwo { g2 } }
+  >>
+  r4  
+  <<
+    \new Voice { \voiceOne { g8( bf a4) } }
+    \new Voice { \voiceTwo { g2 } }
+  >>
   % bar 34
   % bar 35
   % bar 36
