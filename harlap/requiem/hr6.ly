@@ -510,10 +510,25 @@
     \new Voice { \voiceOne { r8 a8( cs2) <cs ds>2.-- } }
     \new Voice { \voiceTwo { fs,1. } }
   >>
-  % bar 6
-  % bar 7
+  % bar 6-7
+  \repeat unfold 2 {
+    \repeat unfold 2 {
+      <<
+	\new Voice { \voiceOne { fs8( g~ g2) } }
+	\new Voice { \voiceTwo { fs2-- } }
+      >>
+    }
+  } |
   % bar 8
+  <<
+    \new Voice { \voiceOne { r8 as8~ <as cs>2 <a cs>2.-- } }
+    \new Voice { \voiceTwo { gs1.-- } }
+  >>
   % bar 9
+  <<
+    \new Voice { \voiceOne { r8 fs8~ <fs as>2~ <fs as c!>2. } }
+    \new Voice { \voiceTwo { ds1. } }
+  >>
   % bar 10
   % bar 11
   % bar 12
