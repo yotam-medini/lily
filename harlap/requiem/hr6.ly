@@ -376,10 +376,27 @@
   % bar 19
   c4\f( f,2~) f4 ef4( g4) |
   % bar 20
+  f4. g8( a bf) c4( d2) |
   % bar 21
+  <<
+    \new Voice { \voiceOne { <a cs e>4( <a d>2) cs4( b2) } }
+    \new Voice { \voiceTwo { r2. e,2( a,4) } }
+  >>
   % bar 22
+  <<
+    \new Voice { \voiceOne { e''8( fs e d) cs( d) cs!4( b2) } }
+    \new Voice { \voiceTwo { e,4( d2) e4( a2) } }
+  >>
   % bar 23
+  <<
+    \new Voice { \voiceOne { cs2( b4~) b4 c( d) } }
+    \new Voice { \voiceTwo { g,4. cs,8( d4) e4( a,2) } }
+  >>
   % bar 24
+  <<
+    \new Voice { \voiceOne { e''4.-- a,8( b4~) b2. } }
+    \new Voice { \voiceTwo { g4( fs2) e2( d4) } }
+  >>
   % bar 25
   % bar 26
   % bar 27
