@@ -529,11 +529,34 @@
     \new Voice { \voiceOne { r8 fs8~ <fs as>2~ <fs as c!>2. } }
     \new Voice { \voiceTwo { ds1. } }
   >>
-  % bar 10
-  % bar 11
+  \clef "G"
+  % bar 10-11
+  \repeat unfold 2 {
+    \repeat unfold 2 {
+      <<
+	\new Voice { \voiceOne { ds'8( e~ e2) } }
+	\new Voice { \voiceTwo { ds2-- } }
+      >>
+    }
+  } |
   % bar 12
+  <<
+    \new Voice { \voiceOne { ds8( es~ es2) } }
+    \new Voice { \voiceTwo { ds2-- } }
+  >>
+  <cs ds>2. |
   % bar 13
+  <<
+    \new Voice { \voiceOne { r8 ef8( g!2) <g! a>2.-- } }
+    \new Voice { \voiceTwo { c,!1. } }
+  >>
   % bar 14
+  \repeat unfold 2 {
+    <<
+      \new Voice { \voiceOne { c8( df8 ~ df4) } }
+      \new Voice { \voiceTwo { c2.-- } }
+    >>
+  }
   % bar 15
   % bar 16
   % bar 17
