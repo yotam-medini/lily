@@ -556,12 +556,26 @@
       \new Voice { \voiceOne { c8( df8 ~ df4) } }
       \new Voice { \voiceTwo { c2.-- } }
     >>
-  }
+  } |
   % bar 15
+  \repeat unfold 2 {
+    <<
+      \new Voice { \voiceOne { c8( df8 ~ df4) } }
+      \new Voice { \voiceTwo { c2.-- } }
+    >>
+  } |
   % bar 16
+  <<
+    \new Voice { \voiceOne { r8 e8 ~ <e fs> <e fs>2. } }
+    \new Voice { \voiceTwo { d!1. } }
+  >> |
+  \clef "bass"
   % bar 17
+  <f,! f'!>2 r4 c'2( f,4) |
   % bar 18
+  g4( a bf) c( f2) |
   % bar 19
+  ef4. bf8( bf4) c4( f,2) |
   % bar 20
   % bar 21
   % bar 22
