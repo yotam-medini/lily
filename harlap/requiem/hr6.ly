@@ -590,7 +590,7 @@
   >> |
   % bar 23
   <<
-    \new Voice { \voiceOne { e'8( fs e b) cs( d) cs!4( b2) } }
+    \new Voice { \voiceOne { e'8( fs e d) cs( d) cs!4( b2) } }
     \new Voice { \voiceTwo { e,4( a,2~ a4) g4( b!) } }
   >> |
   % bar 24
@@ -599,10 +599,32 @@
     \new Voice { \voiceTwo { a,,4. b8( cs d) e4( ds2) } }
   >> |
   % bar 25
+  <<
+    \new Voice { \voiceOne { es'4( ds2) cs4( bs2) } }
+    \new Voice { \voiceTwo { gs2( cs,4) ds4( es fs) } }
+  >> |
   % bar 26
+  <<
+    \new Voice { \voiceOne { es'8( fs es ds) cs( ds) cs4( b!2) } }
+    \new Voice { \voiceTwo { gs4( cs2) b!4. as8 gs!4 } }
+  >> |
   % bar 27
+  <<
+    \new Voice { \voiceOne { cs2. ~ cs4 ds4( cs!) } }
+    \new Voice { \voiceTwo { gs4  gs2 ~ gs4 b2 } }
+  >> |
   % bar 28
+  <<
+    \new Voice { \voiceOne { cs1. } }
+    \new Voice { \voiceTwo { cs4. ds,8( es fs) gs4( as2) } }
+  >> |
   % bar 29
+  \repeat unfold 2 {
+    <<
+      \new Voice { \voiceOne { es8( fs ~ fs2)  } }
+      \new Voice { \voiceTwo { es2.-- } }
+    >> 
+  } |  
   % bar 30
   % bar 31
   % bar 32
