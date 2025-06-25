@@ -577,10 +577,27 @@
   % bar 19
   ef4. bf8( bf4) c4( f,2) |
   % bar 20
+  ef'4( d2) c2( bf4) |
   % bar 21
+  <<
+    \new Voice { \voiceOne { a1. } }
+    \new Voice { \voiceTwo { e!2( a,4) b!4( cs d) } }
+  >> |
   % bar 22
+  <<
+    \new Voice { \voiceOne { b'4( cs d) cs!4( d2) } }
+    \new Voice { \voiceTwo { g,4( a2) g4. cs,8( d4) } }
+  >> |
   % bar 23
+  <<
+    \new Voice { \voiceOne { e'8( fs e b) cs( d) cs!4( b2) } }
+    \new Voice { \voiceTwo { e,4( a,2~ a4) g4( b!) } }
+  >> |
   % bar 24
+  <<
+    \new Voice { \voiceOne { cs'2. ~ cs4 b4( e) } }
+    \new Voice { \voiceTwo { a,,4. b8( cs d) e4( ds2) } }
+  >> |
   % bar 25
   % bar 26
   % bar 27
