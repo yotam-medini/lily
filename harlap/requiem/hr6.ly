@@ -644,18 +644,31 @@
     \new Voice { \voiceTwo { d,1. } }
   >>
   \clef "G"
-  % bar 33
-  \repeat unfold 2 {
+  % bar 33-34
+  \repeat unfold 4 {
     <<
       \new Voice { \voiceOne { d'8( ef8 ~ ef2) } }
       \new Voice { \voiceTwo { d2.-- } }
     >>
   }
-  % bar 34
   % bar 35
+  <<
+    \new Voice { \voiceOne { r8 fs8 <fs g>2 <fs g>2. } }
+    \new Voice { \voiceTwo { e!1.-- } }
+  >> |
+  \clef bass
   % bar 36
+  <g,! g'!>2. d'2( g,4) |
   % bar 37
+  <<
+    \new Voice { \voiceOne { a4( b c) d4(  g2) } }
+    \new Voice { \voiceTwo { d,2( g,4) a4( b! c) } }
+  >> |
   % bar 38
+  <<
+    \new Voice { \voiceOne { f'4. bf,8( c4) d4( g,2) } }
+    \new Voice { \voiceTwo { d4( g2) f4. bf,8( c4) } }
+  >> |
   % bar 39
   % bar 40
   % bar 41
