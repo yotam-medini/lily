@@ -626,9 +626,31 @@
     >> 
   } |  
   % bar 30
+  \repeat unfold 2 {
+    <<
+      \new Voice { \voiceOne { es8( fs8 ~ fs2) } }
+      \new Voice { \voiceTwo { es2.-- } }
+    >>
+  }
   % bar 31
+  <<
+    \new Voice { \voiceOne { es8( g!8 ~ g2) } }
+    \new Voice { \voiceTwo { es2.-- } }
+  >>
+  <ds es>2. |
   % bar 32
+  <<
+    \new Voice { \voiceOne { r8 f8( a!2) <a! b>2. } }
+    \new Voice { \voiceTwo { d,1. } }
+  >>
+  \clef "G"
   % bar 33
+  \repeat unfold 2 {
+    <<
+      \new Voice { \voiceOne { d'8( ef8 ~ ef2) } }
+      \new Voice { \voiceTwo { d2.-- } }
+    >>
+  }
   % bar 34
   % bar 35
   % bar 36
