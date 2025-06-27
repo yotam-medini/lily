@@ -475,9 +475,10 @@
   d4( g,2) <g a>4-- <f d'>4( <a c>4) |
   % bar 39
   <<
-    \new Voice { \voiceOne { g4. a8( b c) d4( e!2) } }
-    \new Voice { \voiceTwo { b!2.-- b2.-- } }
+    { \stemUp g4. a8( b c) d4( e!2) }
+    \new Voice { \voiceTwo { \stemDown b!2.-- b2.-- } }
   >> |
+  \stemNeutral
   % bar 40
   <<
     \new Voice { \voiceOne { g'1.-- } }
@@ -664,14 +665,26 @@
     \new Voice { \voiceOne { a4( b c) d4(  g2) } }
     \new Voice { \voiceTwo { d,2( g,4) a4( b! c) } }
   >> |
-  % bar 38
+  % bar 38-39
   <<
-    \new Voice { \voiceOne { f'4. bf,8( c4) d4( g,2) } }
-    \new Voice { \voiceTwo { d4( g2) f4. bf,8( c4) } }
+    \new Voice { \voiceOne { 
+      \stemUp
+      f'4. bf,8( c4) d4( g,2~) |
+      g4 f4( a) b!4. a8( b c) 
+      \stemNeutral
+    } }
+    \new Voice { \voiceTwo { 
+      d,4( g2) f4. bf,8( c4) |
+      d4--( <g, g'>2) ~ <g g'>4 f'4( a)
+    } }
   >> |
-  % bar 39
   % bar 40
+  <<
+    \new Voice { \voiceOne { d4( e2) g2. } }
+    \new Voice { \voiceTwo { g,4. a8( b c) d4( e2) } }
+  >> |
   % bar 41
+  <g,, g' d' g>1.\fermata \bar "|."
 }
 
 "lyricsSoloSop6" = \lyricmode {
