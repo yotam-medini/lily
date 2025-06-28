@@ -259,15 +259,6 @@
     } }
   >>
   \bar "|."
-%%   % bar 39
-%%  d g2 ~ g4 f4( \after 8 \< a) |
-%%  % bar 40
-%%  <<
-%%    { g1. }
-%%    \new Voice { \voiceTwo { \stemUp g4 a8 b! c d4( e2) \stemNeutral } }
-%%  >>
-%%  % bar 41
-%%  <g, d'>1.\ff\fermata \bar "|."
 }
 
 "pianoRight6" = \relative c'' {
@@ -816,11 +807,6 @@
   Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a
   % bar 39
   tu -- a 
-  % Ho -- sa -- nna 
-  %% <<
-  %%   { \lyricmode {  a -- b -- c -- d  } }
-  %%   \new Lyrics { \lyricmode { W -- X -- Y -- Z  } }
-  %% >>
 }
 
 "lyricsBas6Div1" = \lyricmode {
