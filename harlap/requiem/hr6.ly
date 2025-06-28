@@ -755,7 +755,20 @@
 }
 
 "lyricsAlt6" = \lyricmode {
-   dumdum
+  % bar 21
+  Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
+    San -- ctus San -- 
+  % bar 25
+  ctus
+    Ple -- ni sunt cae -- li et te -- rra
+    glo -- ri -- a tu -- a
+    Ho -- sa -- nna in ex -- cel -- sis
+  % bar 38
+  Ple -- ni sunt cae -- li et 
+  % bar 39
+  te -- rra glo -- ri --
+  % bar 41
+  a
 }
 
 "lyricsTen6" = \lyricmode {
