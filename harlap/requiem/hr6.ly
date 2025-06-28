@@ -13,7 +13,7 @@
   % bar 10
   fs4\mf e2 ds4 cs2 |
   % bar 11
-  fs8( gs fs e ds e) ds4( cs2) |
+  fs8( gs fs e) ds( e) ds4\( cs2\) |
   % bar 12
   ds4. ds8 e4 ~ e4 fs4 e
   \break_orig
@@ -24,7 +24,7 @@
   ef4\mf df2 c4 bf2
   \break_orig
   % bar 15
-  ef8[( f ef df) c( df)] c4( bf2) |
+  ef8[( f ef df) c( df)] c4\( bf2\) |
   % bar 16
   c!4.\< c8 c4 ~ c4 cs4 ds |
   % bar 17
@@ -38,11 +38,11 @@
   f4\mf ef2 d4 c2 |
   \break_orig
   % bar 34
-  f8[( g f ef) d( ef)] d4( c2) |
+  f8[( g f ef) d( ef)] d4\( c2\) |
   % bar 35
   d4.\< d8 d4 ~ d4 ds es |
   % bar 36
-  d!4.\f d8 d4 d2. |
+  d!4.\f d8 d4( d2.) |
   % bar 37-40
   R1.*4
   % bar 41
@@ -700,11 +700,36 @@
 }
 
 "lyricsSoloSop6" = \lyricmode {
-   dumdum
+  % bar 10
+  San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+    Do -- mi -- nus De -- us 
+  % bar 13
+  Sa -- ba -- oth
+  % bar 14
+  San -- ctus San -- ctus 
+  % bar 15
+  Sa -- a -- an -- ctus Do -- mi -- nus De -- us Sa -- ba -- oth
+  % bar 33
+  San -- ctus San -- ctus
+  % bar 34
+  Sa -- a -- an -- ctus Do -- mi -- nus De -- us Sa -- ba -- oth
 }
 
 "lyricsSoloBar6" = \lyricmode {
-   dumdum
+  % bar 2
+  San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+    Do -- mi -- nus De -- us Sa -- ba -- oth
+  % bar 6
+  San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+    Do -- mi -- nus De -- us Sa -- ba -- oth
+    Sa -- ba -- 
+  % bar 10
+  oth
+  % bar 29
+  San -- ctus San -- ctus 
+  % bar 30
+  San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+    Do -- mi -- nus De -- us Sa -- ba -- oth
 }
 
 "lyricsSop6" = \lyricmode {
