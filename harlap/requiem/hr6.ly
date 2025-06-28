@@ -772,7 +772,22 @@
 }
 
 "lyricsTen6" = \lyricmode {
-   dumdum
+  % bar 17
+  Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
+  % bar 20
+  San -- ctus San -- ctus Do -- mi -- nus
+    San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+    Do -- mi -- nus De -- us 
+  % bar 25
+  San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+    Do -- mi -- nus De -- us Sa -- ba -- oth
+  % bar 36
+  Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
+  % bar 39
+  Ho -- sa -- nna in ex -- cel -- sis
+    glo -- 
+  % bar 41
+  ria
 }
 
 "lyricsBas6" = \lyricmode {
