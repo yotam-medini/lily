@@ -247,7 +247,7 @@
   % bar 39-41
   d g2 ~ g4
   <<
-    \new Voice = "bas6div1" { \voiceOne { 
+    \new Voice = "bas6div1" { \voiceOne {
       f4( a) |
       g4. a8 b! c d4( e2) |
       d1.\fermata
@@ -270,25 +270,25 @@
   <<
     \new Voice { \voiceOne { d,8( f8) e4 } }
     \new Voice { \voiceTwo { d2 } }
-  >> 
-  r4 
+  >>
+  r4
   <<
     \new Voice { \voiceOne { d8( f8) e4 } }
     \new Voice { \voiceTwo { d2 } }
-  >> 
+  >>
   |
   % bar 2-3
   \repeat unfold 2 {
     \repeat unfold 2 {
-      r4 
+      r4
       <<
-	\new Voice { \voiceOne { d8( f8) e4 } }
-	\new Voice { \voiceTwo { d2 } }
+        \new Voice { \voiceOne { d8( f8) e4 } }
+        \new Voice { \voiceTwo { d2 } }
       >>
     }
-  } 
+  }
   % bar 4
-  r4 
+  r4
   <<
     \new Voice { \voiceOne { d8( f8) cs4 } }
     \new Voice { \voiceTwo { d2 } }
@@ -354,32 +354,32 @@
   <<
     \new Voice { \voiceOne { gs8[( b8] g) } }
     \new Voice { \voiceTwo { g2 } }
-  >> 
+  >>
   r8 g!8 ~ <g b>2 |
   |
   % bar 13
   ef'4. ef8( d4~) d4 b!4( c) |
   % bar 14
-  r4\mp 
+  r4\mp
   <<
     \new Voice { \voiceOne { f,8[( af8] g4) } }
     \new Voice { \voiceTwo { f2 } }
-  >> 
+  >>
   r4
   <<
     \new Voice { \voiceOne { f8[( af8] g4) } }
     \new Voice { \voiceTwo { f2 } }
-  >> 
+  >>
   % bar 15
   \repeat unfold 2 {
      r4
      <<
        \new Voice { \voiceOne { f8[( af8] g4) } }
        \new Voice { \voiceTwo { f2 } }
-     >> 
+     >>
   } |
   % bar 16
-  r4 
+  r4
   <<
     \new Voice { \voiceOne { r8 as8( gs4~) gs2. } }
     \new Voice { \voiceTwo { r2 r4 as!4( gs!) } }
@@ -443,13 +443,13 @@
     \new Voice { \voiceOne { as8( cs bs4) } }
     \new Voice { \voiceTwo { as2 } }
   >>
-  r4  
+  r4
   <<
     { as8( cs bs4) }
     \new Voice { \voiceTwo { as2 } }
   >>
   % bar 31
-  r4  
+  r4
   <<
     { as8( cs a4) }
     \new Voice { \voiceTwo { as2 } }
@@ -463,14 +463,14 @@
     \new Voice { \voiceOne { g8( bf a4) } }
     \new Voice { \voiceTwo { g2 } }
   >>
-  r4  
+  r4
   <<
     \new Voice { \voiceOne { g8( bf a4) } }
     \new Voice { \voiceTwo { g2 } }
   >>
   % bar 34
   \repeat unfold 2 {
-    r4  
+    r4
     <<
       \new Voice { \voiceOne { g8( bf a4) } }
       \new Voice { \voiceTwo { g2 } }
@@ -510,8 +510,8 @@
   \repeat unfold 3 {
     \repeat unfold 2 {
       <<
-	\new Voice { \voiceOne { a'8( bf~ bf2) } }
-	\new Voice { \voiceTwo { a2-- } }
+        \new Voice { \voiceOne { a'8( bf~ bf2) } }
+        \new Voice { \voiceTwo { a2-- } }
       >>
     }
   } |
@@ -530,8 +530,8 @@
   \repeat unfold 2 {
     \repeat unfold 2 {
       <<
-	\new Voice { \voiceOne { fs8( g~ g2) } }
-	\new Voice { \voiceTwo { fs2-- } }
+        \new Voice { \voiceOne { fs8( g~ g2) } }
+        \new Voice { \voiceTwo { fs2-- } }
       >>
     }
   } |
@@ -551,8 +551,8 @@
   \repeat unfold 2 {
     \repeat unfold 2 {
       <<
-	\new Voice { \voiceOne { ds'8( e~ e2) } }
-	\new Voice { \voiceTwo { ds2-- } }
+        \new Voice { \voiceOne { ds'8( e~ e2) } }
+        \new Voice { \voiceTwo { ds2-- } }
       >>
     }
   } |
@@ -639,11 +639,11 @@
   <<
     { es8(^\mfdolce fs ~ \after 8. \> fs2) }
     \new Voice { \voiceTwo { es2.-- } }
-  >> 
+  >>
   <<
     { es8( fs ~ \after 4..\! fs2) }
     \new Voice { \voiceTwo { es2.-- } }
-  >> 
+  >>
   % bar 30
   \repeat unfold 2 {
     <<
@@ -685,13 +685,13 @@
   >> |
   % bar 38-39
   <<
-    \new Voice { \voiceOne { 
+    \new Voice { \voiceOne {
       \stemUp
       f'4. bf,8( c4) d4( g,2~) |
-      g4 f4( a) b!4. a8( b c) 
+      g4 f4( a) b!4. a8( b c)
       \stemNeutral
     } }
-    \new Voice { \voiceTwo { 
+    \new Voice { \voiceTwo {
       d,4( g2) f4. bf,8( c4) |
       d4--( <g, g'>2) ~ <g g'>4 f'4( a)
     } }
@@ -707,12 +707,12 @@
 
 "lyricsSoloSop6" = \lyricmode {
   % bar 10
-  San -- ctus San -- ctus  Sa -- a -- an -- ctus 
-    Do -- mi -- nus De -- us 
+  San -- ctus San -- ctus  Sa -- a -- an -- ctus
+    Do -- mi -- nus De -- us
   % bar 13
   Sa -- ba -- oth
   % bar 14
-  San -- ctus San -- ctus 
+  San -- ctus San -- ctus
   % bar 15
   Sa -- a -- an -- ctus Do -- mi -- nus De -- us Sa -- ba -- oth
   % bar 33
@@ -723,18 +723,18 @@
 
 "lyricsSoloBar6" = \lyricmode {
   % bar 2
-  San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+  San -- ctus San -- ctus  Sa -- a -- an -- ctus
     Do -- mi -- nus De -- us Sa -- ba -- oth
   % bar 6
-  San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+  San -- ctus San -- ctus  Sa -- a -- an -- ctus
     Do -- mi -- nus De -- us Sa -- ba -- oth
-    Sa -- ba -- 
+    Sa -- ba --
   % bar 10
   oth
   % bar 29
-  San -- ctus San -- ctus 
+  San -- ctus San -- ctus
   % bar 30
-  San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+  San -- ctus San -- ctus  Sa -- a -- an -- ctus
     Do -- mi -- nus De -- us Sa -- ba -- oth
 }
 
@@ -744,7 +744,7 @@
     Ho __ _ --
   % bar 20
   sa -- nna in ex -- cel -- sis
-    San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+    San -- ctus San -- ctus  Sa -- a -- an -- ctus
     Do -- mi -- nus De -- us Sa -- ba -- oth
   % bar 25
   Do -- mi -- nus
@@ -752,7 +752,7 @@
     Do -- mi -- nus
   % bar 36
   Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
-    Ho -- 
+    Ho --
   % bar 39
   sa -- nna in ex -- cel -- sis
     glo -- ri -- a tu --
@@ -763,14 +763,14 @@
 "lyricsAlt6" = \lyricmode {
   % bar 21
   Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
-    San -- ctus San -- 
+    San -- ctus San --
   % bar 25
   ctus
     Ple -- ni sunt cae -- li et te -- rra
     glo -- ri -- a tu -- a
     Ho -- sa -- nna in ex -- cel -- sis
   % bar 38
-  Ple -- ni sunt cae -- li et 
+  Ple -- ni sunt cae -- li et
   % bar 39
   te -- rra glo -- ri --
   % bar 41
@@ -782,16 +782,16 @@
   Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
   % bar 20
   San -- ctus San -- ctus Do -- mi -- nus
-    San -- ctus San -- ctus  Sa -- a -- an -- ctus 
-    Do -- mi -- nus De -- us 
+    San -- ctus San -- ctus  Sa -- a -- an -- ctus
+    Do -- mi -- nus De -- us
   % bar 25
-  San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+  San -- ctus San -- ctus  Sa -- a -- an -- ctus
     Do -- mi -- nus De -- us Sa -- ba -- oth
   % bar 36
   Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
   % bar 39
   Ho -- sa -- nna in ex -- cel -- sis
-    glo -- 
+    glo --
   % bar 41
   ria
 }
@@ -806,7 +806,7 @@
   % bar 37
   Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a
   % bar 39
-  tu -- a 
+  tu -- a
 }
 
 "lyricsBas6Div1" = \lyricmode {
@@ -815,7 +815,7 @@
 "lyricsBas6Div2" = \lyricmode {
   Ho -- sa -- nna
 }
- 
+
 
 "score6" = \score {
   \header {
@@ -859,7 +859,7 @@
     }
     \new ChoirStaff <<
       \new Staff = "soprano" \with {
-	instrumentName = #"Soprano"
+        instrumentName = #"Soprano"
         shortInstrumentName = "S"
       } {
         \new Voice = "soprano" {
@@ -910,33 +910,33 @@
       \new Staff = "bass" \with {
         instrumentName = #"Bass" \clef bass
         shortInstrumentName = "B"
-      } 
+      }
       <<
         \new Voice = "bass" {
           \"bass6"
           \"dummy"
         }
-	\new Lyrics \with {
-          alignAboveContext = "bass" 
+        \new Lyrics \with {
+          alignAboveContext = "bass"
         } \lyricsto "bas6div1" {
-	  \"lyricsBas6Div1"
-	  \"dummy"
-	}
-	\new Lyrics \with {
+          \"lyricsBas6Div1"
+          \"dummy"
+        }
+        \new Lyrics \with {
           alignBelowContext = "bass"
         } \lyricsto "bas6div2" {
-	  \"lyricsBas6Div2"
-	  \"dummy"
-	}
-	\new Lyrics \lyricsto "bass" {
+          \"lyricsBas6Div2"
+          \"dummy"
+        }
+        \new Lyrics \lyricsto "bass" {
           \"lyricsBas6"
-	  \"dummy"
-	}
+          \"dummy"
+        }
       >>
     >>
     \new PianoStaff \with {
-      instrumentName = "Pno." 
-      shortInstrumentName = "Pno." 
+      instrumentName = "Pno."
+      shortInstrumentName = "Pno."
     } <<
       \new Staff = "upper" { \clef treble \"pianoRight6" }
       \new Staff = "lower" { \clef bass \"pianoLeft6" }
