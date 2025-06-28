@@ -129,7 +129,7 @@
   % bar 37
   d\! g2 f4. f8 e4
   % bar 38
-  d g,2 ~ g4 f4 a |
+  d g,2 ~ g4 f4( a) |
   \break_orig
   % bar 39
   g4.^\moltorall a8 b!\< c d4 e2 |
@@ -733,7 +733,25 @@
 }
 
 "lyricsSop6" = \lyricmode {
-   dumdum
+  % bar 17
+  Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
+    Ho __ _ --
+  % bar 20
+  sa -- nna in ex -- cel -- sis
+    San -- ctus San -- ctus  Sa -- a -- an -- ctus 
+    Do -- mi -- nus De -- us Sa -- ba -- oth
+  % bar 25
+  Do -- mi -- nus
+    Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
+    Do -- mi -- nus
+  % bar 36
+  Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
+    Ho -- 
+  % bar 39
+  sa -- nna in ex -- cel -- sis
+    glo -- ri -- a tu --
+  % bar 41
+  a
 }
 
 "lyricsAlt6" = \lyricmode {
