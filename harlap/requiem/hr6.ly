@@ -244,15 +244,30 @@
   d,4.--\f\< g,8 g4 a b! c |
   % bar 38
   d\! g2 f4. bf,8 c4 |
-  % bar 39
-  d g2 ~ g4 f4( \after 8 \< a) |
-  % bar 40
+  % bar 39-41
+  d g2 ~ g4
   <<
-    { g1. }
-    \new Voice { \voiceTwo { \stemUp g4 a8 b! c d4( e2) \stemNeutral } }
+    \new Voice = "bas6div1" { \voiceOne { 
+      f4( a) |
+      g4. a8 b! c d4( e2) |
+      d1.\fermata
+    } }
+    \new Voice = "bas6div2" { \voiceTwo {
+      { \slurDown f,4( a) \slurNeutral } |
+      g1. |
+      g1.\fermata
+    } }
   >>
-  % bar 41
-  <g, d'>1.\ff\fermata \bar "|."
+  \bar "|."
+%%   % bar 39
+%%  d g2 ~ g4 f4( \after 8 \< a) |
+%%  % bar 40
+%%  <<
+%%    { g1. }
+%%    \new Voice { \voiceTwo { \stemUp g4 a8 b! c d4( e2) \stemNeutral } }
+%%  >>
+%%  % bar 41
+%%  <g, d'>1.\ff\fermata \bar "|."
 }
 
 "pianoRight6" = \relative c'' {
@@ -791,8 +806,30 @@
 }
 
 "lyricsBas6" = \lyricmode {
-   dumdum
+  % bar 21
+  Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
+    Ho __ _ -- sa -- nna in ex -- cel -- sis
+  % bar 25
+  Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a tu -- a
+    Ho -- sa -- nna in ex -- cel -- sis
+  % bar 37
+  Ple -- ni sunt cae -- li et te -- rra glo -- ri -- a
+  % bar 39
+  tu -- a 
+  % Ho -- sa -- nna 
+  %% <<
+  %%   { \lyricmode {  a -- b -- c -- d  } }
+  %%   \new Lyrics { \lyricmode { W -- X -- Y -- Z  } }
+  %% >>
 }
+
+"lyricsBas6Div1" = \lyricmode {
+  Ho -- sa -- nna in ex -- cel -- sis
+}
+"lyricsBas6Div2" = \lyricmode {
+  Ho -- sa -- nna
+}
+ 
 
 "score6" = \score {
   \header {
@@ -883,22 +920,33 @@
           \"dummy"
         }
       }
+
       \new Staff = "bass" \with {
         instrumentName = #"Bass" \clef bass
         shortInstrumentName = "B"
-      } {
+      } 
+      <<
         \new Voice = "bass" {
           \"bass6"
           \"dummy"
         }
-      }
-      \new Lyrics = "bass"
-      \context Lyrics = "bass" {
-        \lyricsto "bass" {
+	\new Lyrics \with {
+          alignAboveContext = "bass" 
+        } \lyricsto "bas6div1" {
+	  \"lyricsBas6Div1"
+	  \"dummy"
+	}
+	\new Lyrics \with {
+          alignBelowContext = "bass"
+        } \lyricsto "bas6div2" {
+	  \"lyricsBas6Div2"
+	  \"dummy"
+	}
+	\new Lyrics \lyricsto "bass" {
           \"lyricsBas6"
-          \"dummy"
-        }
-      }
+	  \"dummy"
+	}
+      >>
     >>
     \new PianoStaff \with {
       instrumentName = "Pno." 
