@@ -9,7 +9,60 @@
 "soloSoprano7" =  \relative c'' {
   \"global7"
   \"dummy"
-  c4
+  R2. | R2. |
+  % bar 3
+  d4. c8 c f |
+  % bar 4
+  d4. c8 c g |
+  % bar 5 
+  bf4 a4. ef8
+  % bar 6
+  bf'4 a ~ a16 ~ a32 r a8
+  % bar 7
+  a af af4 af8 a
+  % bar 8
+  e'4 d2
+  % bar 9
+  c4. df8 df4
+  % bar 10
+  df2 r4
+  % bar 11-36
+  R2.*26
+  % bar 38-51
+  \time 4/4
+  R1.*14
+  % bar 52
+  \time 2/4
+  r2
+  % bar 53
+  \time 6/4
+  r1.
+  % bar 54-63
+  \time 4/4
+  R1*10
+  % bar 64
+  \time 2/4
+  r2
+  % bar 65
+  \time 4/4
+  r1
+  % bar 66
+  r1
+  % bar 67
+  \time 6/4
+  r1.
+  % bar 68-74
+  \time 4/4
+  R1*7
+  % bar 75
+  \time 14/4
+  r4. e8(~ e4 e e e e\fermata e e e e g e e\fermata) |
+  % bar 76
+  \time 13/4
+  r4 e,4( e e c' b e,\fermata) r4 e'4( d d c b\fermata) |
+  % bar 77
+  \time 4/4
+  R1*10 \bar "|."
 }
 
 "soloBaritone7" =  \relative c {
