@@ -7,7 +7,7 @@ endif
 
 .DELETE_ON_ERROR:
 
-LYS = harlap-requiem.ly $(foreach i, 1 2 3 4 5 6, hr${i}.ly)
+LYS = harlap-requiem.ly $(foreach i, 1 2 3 4 5 6 7, hr${i}.ly)
 MIDI_LYS = $(foreach i, 1 2 3 4 5 6 7, midi-${i}.ly)
 
 midi-lys: ${MIDI_LYS}

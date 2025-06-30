@@ -53,6 +53,7 @@ makePercent = #(define-music-function (note) (ly:music?)
 \include "hr4.ly"
 \include "hr5.ly"
 \include "hr6.ly"
+\include "hr7.ly"
 
 \paper{
   #(set-paper-size "a4")
@@ -99,4 +100,5 @@ makePercent = #(define-music-function (note) (ly:music?)
   \"score4"
   \"score5"
   \"score6"
+  \"score7"
 }
