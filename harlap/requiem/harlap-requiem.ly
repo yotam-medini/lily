@@ -17,15 +17,21 @@ fespress = \markup { \dynamic "f" \italic "espress." }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 fsubito = \markup { \dynamic "f" \italic "subito" }
 intensivo = \markup { \italic "intensivo" }
+lunga = \markup { \italic "lunga" }
+mfagitato = \markup { \dynamic "mf" \italic "agitato" }
 mfdolce = \markup { \dynamic "mf" \italic "dolce" }
+mfespress = \markup { \dynamic "mf" \italic "espress." }
 mfintensivo = \markup { \dynamic "mf" \italic "intensivo" }
+mpespress = \markup { \dynamic "mp" \italic "espress." }
 moltespr = \markup { \italic "molto espressivo" } % obsolete
 moltoespr = \markup { \italic "molto espressivo" }
 moltorall = \markup { \bold "molto rall." }
+moltorit = \markup { \bold "molto rit." }
 mfagitato = \markup { \dynamic "mf" \italic "agitato" }
 mpmoltoagitato = \markup { \dynamic "mp" \italic "molto agitato" }
 mpsubito = \markup { \dynamic "mp" \italic "subito" }
 pdulce = \markup { \dynamic "p" \italic "dulce" }
+pespress = \markup { \dynamic "p" \italic "espress" }
 pocorall = \markup { \bold\italic "poco rall." }
 pocorit = \markup { \bold\italic "poco rit." }
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
@@ -40,6 +46,7 @@ sempre = \markup { \italic "sempre" }
 sempreLegatoEspress = \markup { \italic "(sempre legato e espress.)" }
 sfff = \markup { \dynamic "sfff" }
 slowarpeg = \markup { \italic "(slow arpeggio)" }
+subitomp = \markup { \italic "subito" \dynamic "mp" }
 ten = \markup {\italic "ten." }
 
 
@@ -53,6 +60,7 @@ makePercent = #(define-music-function (note) (ly:music?)
 \include "hr4.ly"
 \include "hr5.ly"
 \include "hr6.ly"
+\include "hr7.ly"
 
 \paper{
   #(set-paper-size "a4")
@@ -99,4 +107,5 @@ makePercent = #(define-music-function (note) (ly:music?)
   \"score4"
   \"score5"
   \"score6"
+  \"score7"
 }
