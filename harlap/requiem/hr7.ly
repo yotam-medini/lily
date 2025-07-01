@@ -62,9 +62,16 @@
   % bar 76
   \time 13/4
   r4 e,4( e e c' b e,\fermata) r4 e'4( d d c b\fermata) |
-  % bar 77
+  % bar 77-82
   \time 4/4
-  R1*10 \bar "|."
+  R1*6 |
+  % bar 83
+  r2 r8 c4 b8 |
+  % bar 84
+  e,2-- r8 c'4--\p b8-- |
+  % bar 85
+  e2-- r8 e4 e8 |
+  e1\fermata \bar "|."
 }
 
 "soloBaritone7" =  \relative c {
@@ -124,7 +131,7 @@
   R4*14 |
   % bar 76
   \time 13/4
-  R1*3 ~ R4 |
+  R4*13 |
   % bar 77-82
   \time 4/4
   R1*6
