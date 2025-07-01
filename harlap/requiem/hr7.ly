@@ -15,28 +15,30 @@
   % bar 4
   d4. c8 c g |
   % bar 5 
-  bf4 a4. ef8
+  bf4 a4. ef8 |
   % bar 6
-  bf'4 a ~ a16 ~ a32 r a8
+  bf'4 a4. a8 |
   % bar 7
-  a af af4 af8 a
+  a8 gs gs4 gs8 a |
   % bar 8
-  e'4 d2
+  e'4-- d2 |
   % bar 9
-  c4. df8 df4
+  bs4. cs8 cs4 |
   % bar 10
-  df2 r4
-  % bar 11-36
-  R2.*26
-  % bar 38-51
+  cs2 r4 |
+  % bar 11-20
+  R2.*10 \bar "||"
+  % bar 21-38 |
+  R2.*18 |
+  % bar 39-51
   \time 4/4
-  R1.*14
+  R1*14 |
   % bar 52
   \time 2/4
   r2
   % bar 53
   \time 6/4
-  r1.
+  r1. |
   % bar 54-63
   \time 4/4
   R1*10
@@ -68,7 +70,72 @@
 "soloBaritone7" =  \relative c {
   \"global7"
   \"dummy"
-  c4
+  R2.*10 |
+  % bar 11
+  r2 f8 g
+  % bar 12
+  af4. g8 g f
+  % bar 13
+  df4. f8 g af
+  % bar 14
+  c4 b2
+  % bar 15
+  b4 bf4. af8
+  % bar 16
+  af4. g8 g4 |
+  % bar 17
+  r f g
+  % bar 18
+  af f4. ~ f16 r
+  % bar 19
+  g4. af8 bf c |
+  % bar 20
+  ef4 d2 \bar "||" |
+  % bar 21-38
+  R2.*18 |
+  % bar 39-51
+  \time 4/4
+  R1*14 |
+  % bar 52
+  \time 2/4
+  r2 |
+  % bar 53
+  \time 6/4
+  r1. |
+  % bar 54-63
+  \time 4/4
+  R1*10 |
+  % bar 64
+  \time 2/4
+  r2
+  % bar 65
+  \time 4/4
+  r1
+  % bar 66
+  r1
+  % bar 67
+  \time 6/4
+  r1.
+  % bar 68-74
+  \time 4/4
+  R1*7
+  % bar 75
+  \time 14/4
+  R4*14 |
+  % bar 76
+  \time 13/4
+  R1*3 ~ R4 |
+  % bar 77-82
+  \time 4/4
+  R1*6
+  % bar 83
+  r2 r4 r4 |
+  % bar 84
+  r8 g,4 e8 ds2 |
+  % bar 85
+  r8 e4-- e8-- e2-- |
+  % bar 86
+  R1\fermata \bar "|."
 }
 
 "soprano7" = \relative c'' {
