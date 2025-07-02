@@ -32,7 +32,7 @@
   R2.*18 |
   % bar 39-51
   \time 4/4
-  R1*14 |
+  R1*13 |
   % bar 52
   \time 2/4
   r2
@@ -81,28 +81,29 @@
   % bar 11
   r2 f8 g
   % bar 12
-  af4. g8 g f
+  af4. g8 g f |
+  \break_orig
   % bar 13
-  df4. f8 g af
+  df4. f8 g[ af] |
   % bar 14
-  c4 b2
+  c4 b2~ |
   % bar 15
-  b4 bf4. af8
+  b4 bf4.( af8--) |
   % bar 16
-  af4. g8 g4 |
+  af4.-> g8 g4 |
   % bar 17
-  r f g
+  r f-> g-> |
   % bar 18
-  af f4. ~ f16 r
+  af4-> f2-> |
   % bar 19
-  g4. af8 bf c |
+  g!4. af8 bf[ c] |
   % bar 20
-  ef4 d2 \bar "||" |
+  ef4-> d!2->\fermata \bar "||" |
   % bar 21-38
   R2.*18 |
   % bar 39-51
   \time 4/4
-  R1*14 |
+  R1*13 |
   % bar 52
   \time 2/4
   r2 |
@@ -148,7 +149,96 @@
 "soprano7" = \relative c'' {
   \"global7"
   \"dummy"
-  c4
+  R2.*19 |
+  % bar 20
+  r2.\fermata \bar "||"
+  % bar 21
+  cs4. b8 b[ e] |
+  \break_orig
+  % bar 22
+  cs4. b8 b fs |
+  % bar 23
+  a4-> gs4. d'8 |
+  % bar 24
+  a4 gs4. gs8 |
+  % bar 25
+  af8\< g! g4 g8 af |
+  % bar 26
+  ef'4\f df2 |
+  % bar 27
+  b!4. c8 c4 |
+  % bar 28
+  c2.\< |
+  % bar 29
+  r2.\! |
+  \break_orig
+  % bar 30-34
+  \repeat unfold 5 { R4*3 }
+  % bar 35
+  r4 e,->\f fs->\< |
+  % bar 36
+  g-> e2-> |
+  % bar 37
+  fs4. g8 a\! b |
+  % bar 38
+  d4->\ff cs2->\fermata |
+  % bar 39
+  \break_orig
+  \time 4/4
+  r1
+  % bar 40
+  g8-> g fs fs g8.-> g16 e8 e
+  % bar 41
+  r1
+  % bar 42
+  g8-> g fs fs g8.-> g16 e8 e
+  % bar 43
+  r1
+  % bar 44
+  g8-> g fs fs g8.-> g16 e8 e
+  \break_orig
+  % bar 45
+  r1
+  % bar 46
+  g2.-> af4
+  % bar 47
+  c2-> d->
+  % bar 48
+  f4.->\< ef8 ef4-> d\!
+  % bar 49
+  r1
+  \break_orig
+  % bar 50
+  b8-> b as as b8.-> b16 gs8 gs
+  % bar 51
+  r1 |
+  % bar 52
+  \time 2/4
+  cs8.-> b16 b8-> as |
+  \time 6/4
+  R4*6 |
+  % bar 54
+  \time 4/4
+  b8 b d8.-> d16 b8 e d d |
+  \break_orig
+  % bar 55
+  r1
+  % bar 56
+  af8 af b8. b16 af8 df b b
+  % bar 57
+  r1
+  % bar 58
+  r
+  % bar 59
+  df8 df c c df8. df16 bf8 bf
+  % bar 60
+  r1
+  % bar 61
+  f2. gf4
+  % bar 62
+  bf2 c
+  % bar 63
+  ef4 df df4. c8
 }
 
 "alto7" = \relative c' {
