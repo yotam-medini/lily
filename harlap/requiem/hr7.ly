@@ -446,7 +446,70 @@
 "tenor7" = \relative c {
   \"global7"
   \"dummy"
-  c4
+  R2.*19 |
+  % bar 20
+  r2.\fermata \bar "||"
+  % bar 21
+  cs'4. b8 b[ e] |
+  % bar 22
+  cs4. d8 d4 ~ |
+  % bar 23
+  d cs( d) |
+  % bar 24
+  cs d2 |
+  % bar 25
+  af8 g g4 g8 af |
+  % bar 26
+  ef'4-> df2 |
+  % bar 27
+  df4. c8 c4 |
+  % bar 28
+  c4. f,8 g[ af] |
+  % bar 29
+  g2. |
+  % bar 30-32
+  R2.* 3 |
+  % bar 33
+  r4 e4.-> fs8-> |
+  % bar 34
+  <e g>2. |
+  % bar 35
+  r4 e-> fs-> |
+  % bar 36
+  g e4. ~ e16 r |
+  % bar 37
+  fs4. g8 a[ b] |
+  % bar 38
+  d4->\ff e!2\fermata |
+  % bar 39
+  \time 4/4
+  r1 | 
+  % bar 40
+  g,8-> g fs fs g8.-> g16 e8 e |
+  % bar 41
+  r1 |
+  % bar 42
+  g8-> g fs fs g8.-> g16 e8 e |
+  % bar 43
+  r1 |
+  % bar 44
+  g8-> g fs fs g8.-> g16 e8 e |
+  % bar 45
+  r1 |
+  % bar 46
+  g2-> af-> |
+  % bar 47
+  g8-> af c d g,-> af c d |
+  % bar 48
+  g,4-> af-> c-> d-> |
+  % bar 49
+  r1 |
+  % bar 50
+  b8-> b as as b8.-> b16 gs8 gs |
+  % bar 51
+  ds-> e gs as ds,-> e gs as |
+  % bar 52
+  \time 2/4
 }
 
 "bass7" = \relative c {
