@@ -56,15 +56,19 @@
   % bar 68-74
   \time 4/4
   R1*7
+  \break_orig
   % bar 75
   \time 14/4
   r4 r8 e8(~ e4 e e e e\fermata e e e e g e e\fermata) |
   % bar 76
   \time 13/4
   r4 e,4( e e c' b e,\fermata) r4 e'4( d d c b\fermata) |
-  % bar 77-82
+  % bar 77-81
   \time 4/4
-  R1*6 |
+  R1*5 |
+  \break_orig
+  % bar 82
+  R1 |
   % bar 83
   r2 r8 c4 b8 |
   % bar 84
@@ -408,6 +412,7 @@
   % bar 68
   \time 4/4
   f8-> f e e f8.-> f16 d8 d
+  \break_orig
   % bar 69
   r4 f8-> f e e r4
   % bar 70
@@ -580,7 +585,148 @@
 "bass7" = \relative c {
   \"global7"
   \"dummy"
-  c4
+  R2.*19 |
+  % bar 20
+  r2.\fermata \bar "||"
+  % bar 21
+  cs8( d) fs4 gs |
+  % bar 22
+  cs,2. |
+  % bar 23
+  cs8( d) fs4 gs |
+  % bar 24
+  gs2. |
+  % bar 25
+  f8( g!) af df c4 |
+  % bar 26
+  c2. |
+  % bar 27
+  f,8( g!) af4 g! |
+  % bar 28
+  g2. |
+  % bar 29
+  r2 e8 fs |
+  % bar 30
+  g4. fs8 fs e |
+  % bar 31
+  c4. e8 g fs |
+  % bar 32
+  b4 as2 |
+  % bar 33
+  as4 b as |
+  % bar 34
+  b4. e,8 e4 |
+  % bar 35
+  d2 cs4 |
+  % bar 36
+  c2. |
+  % bar 37
+  b |
+  % bar 38
+  as2.->\ff\fermata
+  % bar 39
+  \time 4/4
+  r1 |
+  % bar 40
+  r |
+  % bar 41
+  b8-> c e fs b,-> c e fs |
+  % bar 42
+  b,2-> c |
+  % bar 43
+  b8-> c e fs b,-> c e fs |
+  % bar 44
+  b,4-> c-> e-> fs-> |
+  % bar 45
+  r1 |
+  % bar 46
+  ef8-> ef d d ef8.-> ef16 c8 c |
+  % bar 47
+  r1 |
+  % bar 48
+  ef8-> ef d d ef8.-> ef16 c8 c |
+  % bar 49
+  r1 |
+  % bar 50
+  ds2-> e-> |
+  % bar 51
+  gs-> as-> |
+  % bar 52
+  \time 2/4
+  ds,8-> e gs-> as |
+  % bar 53
+  \time 6/4
+  R1. |
+  % bar 54
+  \time 4/4
+  r1 |
+  % bar 55
+  e8 f a-> b e, f a b |
+  % bar 56
+  r1 |
+  % bar 57
+  cs,8 d fs-> gs cs, d fs gs |
+  % bar 58
+  r1 |
+  % bar 59
+  r |
+  % bar 60
+  f8-> fs as c f,-> fs as c |
+  % bar 61
+  r1 |
+  % bar 62
+  f,8-> fs as c f,-> fs as c |
+  % bar 63
+  f,4-> fs-> as-> c-> |
+  % bar 64
+  \time 2/4
+  r2 |
+  % bar 65
+  \time 4/4
+  r1 |
+  % bar 66
+  f,8-> f e e f8.-> f16 d8 d |
+  % bar 67
+  \time 6/4
+  R1. |
+  % bar 68
+  \time 4/4
+  f8-> f e e f8.-> f16 d8 d |
+  % bar 69
+  r2 f8 f-> e e |
+  % bar 70
+  f8.-> f16 d8 d r2 |
+  % bar 71
+  f8-> f r4 r2 |
+  % bar 72
+  f8-> f r4 r2 |
+  % bar 73-74
+  R1 | R1 |
+  % bar 75
+  \time 14/4
+  d8->[ d d-> d] r1*3\fermata |
+  % bar 76
+  \time 13/4
+  R4*13\fermata 
+  % bar 77
+  \time 4/4
+  a4 g f2
+  % bar 78
+  a4( g) f2
+  % bar 79-80
+  R1 | R1 |
+  % bar 81
+  e'4 d c2
+  % bar 82
+  e4( d) c2
+  % bar 83
+  e4 d c2
+  % bar 84
+  e4 d c2
+  % bar 85
+  <\parenthesize e, b'>2 <\parenthesize e b'>2 |
+  % bar 86
+  <\parenthesize e b'>1\fermata \bar "|."
 }
 
 "pianoRight7" = \relative c'' {
