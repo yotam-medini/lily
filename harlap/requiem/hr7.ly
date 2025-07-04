@@ -38,7 +38,7 @@
   r2
   % bar 53
   \time 6/4
-  r1. |
+  R1. |
   % bar 54-63
   \time 4/4
   R1*10
@@ -109,7 +109,7 @@
   r2 |
   % bar 53
   \time 6/4
-  r1. |
+  R1. |
   % bar 54-63
   \time 4/4
   R1*10 |
@@ -358,7 +358,7 @@
   ds,8 e gs as |
   % bar 53
   \time 6/4
-  r1. |
+  R1. |
   % bar 54
   \time 4/4
   <<
@@ -426,7 +426,7 @@
   % bar 78
   c4( b) a2 |
   % bar 79
-  r8 e' f a a8. a16 a4 ~ |
+  r8 e' f[ a] a8. a16 a4 ~ |
   % bar 80
   a8 a a8. a16 a8 a4. |
   % bar 81
@@ -510,6 +510,71 @@
   ds-> e gs as ds,-> e gs as |
   % bar 52
   \time 2/4
+  cs8. b16 b8 as |
+  % bar 53
+  \time 6/4
+  R1. |
+  % bar 54
+  r1 |
+  % bar 55
+  d8 c c-> b f' d c b |
+  % bar 56
+  r1 |
+  % bar 57
+  b8 a a-> gs d' b a gs |
+  % bar 58
+  r1 |
+  % bar 59
+  cs8->^\mfagitato cs bs bs cs8.-> cs16 as8 as |
+  % bar 60
+  r1 |
+  % bar 61
+  cs8-> cs bs bs cs8.-> cs16 as8 as |
+  % bar 62
+  r1 |
+  % bar 63
+  cs8-> cs bs bs cs8.-> cs16 as8 as |
+  % bar 64
+  \time 2/4
+  r2 |
+  % bar 65
+  \time 4/4
+  r1 |
+  % bar 66
+  r |
+  % bar 67
+  \time 6/4
+  a8 bf d e r2 a,8. bf16 d8 e |
+  % bar 68-74
+  \time 4/4
+  R1*7 |
+  % bar 75
+  \time 14/4
+  a,8.->\fff bf16 d8 e8 r1*3\fermata |
+  % bar 76
+  \time 13/4
+  R4*13\fermata 
+  % bar 77
+  \time 4/4
+  a,4 g f2 |
+  % bar 78
+  a4( g) f2 |
+  % bar 79
+  r8 e f[ a] c8. b16 b4 ~ |
+  % bar 80
+  b8 a d8. c16 c8->( b4.) |
+  % bar 81
+  e4 d c2 |
+  % bar 82
+  e4( d) c2 |
+  % bar 83
+  g4 fs e2 |
+  % bar 84
+  g4 fs e2 |
+  % bar 85
+  e2-- fs2-- |
+  % bar 86
+  g1--\fermata \bar "|."
 }
 
 "bass7" = \relative c {
