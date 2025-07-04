@@ -289,7 +289,72 @@
 "alto7" = \relative c' {
   \"global7"
   \"dummy"
-  c4
+  R2.*19 |
+  % bar 20
+  r2.\fermata \bar "||"
+  % bar 21
+  r2. |
+  % bar 22
+  cs8( d!) fs4 gs |
+  % bar 23
+  fs2. |
+  % bar 24
+  cs8( d!) fs4 gs |
+  % bar 25
+  f!2.
+  % bar 26
+  f8( g!) af( f) g( af) |
+  % bar 27
+  g2. |
+  % bar 28
+  f8( g!) af4 c |
+  % bar 29
+  b2. |
+  % bar 30
+  r4. e,4 fs8 |
+  % bar 31
+  g( fs) fs as e fs |
+  % bar 32
+  g4 fs2 |
+  % bar 33
+  g!8( fs) fs g c! as |
+  % bar 34
+  b2. |
+  % bar 35
+  r2. |
+  % bar 36
+  r4 e,-> fs-> |
+  % bar 37
+  fs4-> e2-> |
+  % bar 38
+  g!2.->\fermata
+  \time 4/4
+  r1
+  % bar 40
+  r
+  % bar 41
+  b,8-> c e fs b,-> c e fs |
+  % bar 42
+  b,2. c4 |
+  % bar 43
+  e!2-> fs-> |
+  % bar 44
+  a4.-> g8 g4-> fs |
+  % bar 45
+  r1 |
+  % bar 46
+  ef8-> ef d d ef8.-> ef16 c8 c |
+  % bar 47
+  r1 |
+  % bar 48
+  ef8-> ef d d ef8.-> ef16 c8 c |
+  % bar 49
+  r1 |
+  % bar 50
+  ds2.-> e4 |
+  % bar 51
+  gs2-> as-> |
+  % bar 52
 }
 
 "tenor7" = \relative c {
