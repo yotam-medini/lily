@@ -256,17 +256,16 @@
   R1*7 |
   % bar 75
   \time 14/4
-  a,8.-> bf16 d8 e8-. r4*12 |
-  % \repeat unfold 14 { a4 }
+  a,8.-> bf16 d8 e8-. r1*3\fermata |
   % bar 76
   \time 13/4
-  R4*13 |
+  R4*13\fermata |
   \break_orig
   % bar 77
   \time 4/4
   e,8 e e e e e4. |
   % bar 78
-  e8 e e e [g16 e e8~] e4 |
+  e8[ e e e] g16[ e e8~] e4 |
   % bar 79
   r8 e f[ a] c8. b16 b4~ |
   % bar 80
@@ -275,7 +274,7 @@
   b8[ b b b] b8 b4. |
   \break_orig
   % bar 82
-  b8 b b b [d16 b b8] ~ b4 |
+  b8[ b b b] d16[ b b8] ~ b4 |
   % bar 83
   r8 e,4 e8 fs2 |
   % bar 84
@@ -355,6 +354,93 @@
   % bar 51
   gs2-> as-> |
   % bar 52
+  \time 2/4
+  ds,8 e gs as |
+  % bar 53
+  \time 6/4
+  r1. |
+  % bar 54
+  \time 4/4
+  <<
+    { 
+      g8 g a8. a16 g8 g a a
+    }
+    \new Voice { \voiceTwo {
+      \stemDown 
+      e8 e f8. f16 e8 e f f 
+      \stemNeutral
+    } }
+  >> |
+  % bar 55
+  r1
+  % bar 56
+  <<
+    { 
+      e8 e fs8.-> fs16 e8 e fs fs
+    }
+    \new Voice { \voiceTwo {
+      \stemDown 
+      cs8 cs d8. d16 cs8 cs d d
+      \stemNeutral
+    } }
+  >> |
+  % bar 57-59
+  r1 | r1 | r1 |
+  % bar 60
+  es8-> fs as bs es,-> fs as bs |
+  % bar 61
+  es,2.-> fs4 |
+  % bar 62
+  as2-> bs-> |
+  % bar 63
+  es,4-> fs-> as4.-> bs8 |
+  % bar 64
+  \time 2/4
+  r2
+  % bar 65
+  \time 4/4
+  r1
+  % bar 66
+  f8-> f e e f8. f16 d8 d
+  % bar 67
+  \time 6/4
+  r1.
+  % bar 68
+  \time 4/4
+  f8-> f e e f8.-> f16 d8 d
+  % bar 69
+  r4 f8-> f e e r4
+  % bar 70
+  r f8.-> f16 d8 d r4
+  % bar 71-74
+  r1 | r1 | r1 | r1 |
+  % bar 75
+  \time 14/4
+  <e f>8 <e f> <d f> <d f> r1*3\fermata |
+  % bar 76
+  \time 13/4
+  R4*13\fermata |
+  % bar 77
+  \time 4/4
+  c4 b a2 |
+  % bar 78
+  c4( b) a2 |
+  % bar 79
+  r8 e' f a a8. a16 a4 ~ |
+  % bar 80
+  a8 a a8. a16 a8 a4. |
+  % bar 81
+  g4 fs e2 |
+  % bar 82
+  g4( fs) e2 |
+  % bar 83
+  r8 e4 e8 fs2 |
+  % bar 84
+  r8 e4 e8 fs2 |
+  % bar 85
+  <b, e>2-- <b e>-- |
+  % bar 86
+  <b e>1--\fermata \bar "|."
 }
 
 "tenor7" = \relative c {
@@ -372,11 +458,21 @@
 "pianoRight7" = \relative c'' {
   \"global7"
   \"dummy"
+  % bar 1
+  <d, ef g a>2.--^\pepress |
+  % bar 2-6
+  \repeat unfold 5 { <d ef g a>2.-- }
 }
 
 "pianoLeft7" = \relative c {
- \"global7"
+  \"global7"
   \"dummy"
+  % bar 1
+  <<
+    \new Voice { \voiceOne { d8[( ef] g4 a!--)
+    } }
+    \new Voice { \voiceTwo { d,2.-- } }
+  >>
 }
 
 "lyricsSoloSop7" = \lyricmode {

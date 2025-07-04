@@ -26,6 +26,7 @@ mfagitato = \markup { \dynamic "mf" \italic "agitato" }
 mpmoltoagitato = \markup { \dynamic "mp" \italic "molto agitato" }
 mpsubito = \markup { \dynamic "mp" \italic "subito" }
 pdulce = \markup { \dynamic "p" \italic "dulce" }
+pepress = \markup { \dynamic "p" \italic "espress" }
 pocorall = \markup { \bold\italic "poco rall." }
 pocorit = \markup { \bold\italic "poco rit." }
 pocosostenuto = \markup { \bold\italic "poco sostenuto e sempre tranqillo" }
