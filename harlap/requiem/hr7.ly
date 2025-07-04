@@ -58,7 +58,7 @@
   R1*7
   % bar 75
   \time 14/4
-  r4. e8(~ e4 e e e e\fermata e e e e g e e\fermata) |
+  r4 r8 e8(~ e4 e e e e\fermata e e e e g e e\fermata) |
   % bar 76
   \time 13/4
   r4 e,4( e e c' b e,\fermata) r4 e'4( d d c b\fermata) |
@@ -222,23 +222,68 @@
   b8 b d8.-> d16 b8 e d d |
   \break_orig
   % bar 55
-  r1
+  r1 |
   % bar 56
-  af8 af b8. b16 af8 df b b
+  gs,8 gs b8.-> b16 gs8 cs b b |
   % bar 57
-  r1
+  r1 |
   % bar 58
-  r
+  r |
   % bar 59
-  df8 df c c df8. df16 bf8 bf
+  cs8-> cs bs bs cs8.-> cs16 as8 as |
+  \break_orig
   % bar 60
   r1
   % bar 61
-  f2. gf4
+  es2.-> fs4 |
   % bar 62
-  bf2 c
+  as2-> bs-> |
   % bar 63
-  ef4 df df4. c8
+  ds4-> cs-> cs4.-> bs8-> |
+  % bar 64
+  R4*2 |
+  \break_orig
+  % bar  65
+  \time 4/4
+  r1
+  % bar 66
+  r |
+  % bar 67
+  \time 6/4
+  a8-> bf d e r4 a,8.-> bf16 d8 e r4 |
+  % bar 68-74
+  \time 4/4
+  R1*7 |
+  % bar 75
+  \time 14/4
+  a,8.-> bf16 d8 e8-. r4*12 |
+  % \repeat unfold 14 { a4 }
+  % bar 76
+  \time 13/4
+  R4*13 |
+  \break_orig
+  % bar 77
+  \time 4/4
+  e,8 e e e e e4. |
+  % bar 78
+  e8 e e e [g16 e e8~] e4 |
+  % bar 79
+  r8 e f[ a] c8. b16 b4~ |
+  % bar 80
+  b8 a d8. c16 c8->( b4.) |
+  % bar 81
+  b8[ b b b] b8 b4. |
+  \break_orig
+  % bar 82
+  b8 b b b [d16 b b8] ~ b4 |
+  % bar 83
+  r8 e,4 e8 fs2 |
+  % bar 84
+  r8 e4 g8 fs2 |
+  % bar 85
+  e2-- fs2-- |
+  % bar 86
+  g1--\fermata \bar "|."
 }
 
 "alto7" = \relative c' {
