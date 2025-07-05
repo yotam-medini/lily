@@ -897,9 +897,21 @@
   % bar 74
   <d f d'>2-> <e d'! e>2-> | 
   % bar 75
+  \time 14/4
+  <f d' e f>16-> r16 r8 r4  r1*3\fermata |
   % bar 76
-  % bar 77
+  \time 13/4
+  R4*13\fermata |
+  % bar 77-78
+  \time 4/4
+  \repeat unfold 2 {
+    <<
+      \new Voice { \voiceOne { e,1 } }
+      \new Voice { \voiceTwo { c4( b a2) } }
+    >>
+  }
   % bar 78
+  r8 <a b>8 <e' f>8->[(<a, b>]) <e' f>8 \repeat tremolo 2 { a,16.( b16.) } |
   % bar 79
   % bar 80
   % bar 81
