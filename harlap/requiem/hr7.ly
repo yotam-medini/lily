@@ -16,6 +16,7 @@
   d4. c8 c g |
   % bar 5 
   bf4 a4. ef8 |
+  \break_orig
   % bar 6
   bf'4 a4. a8 |
   % bar 7
@@ -939,19 +940,41 @@
   \"dummy"
   % bar 1
   <<
-    \new Voice { \voiceOne { d8[( ef] g4 a!--)
-    } }
+    \new Voice { \voiceOne { d8[( ef] g4 a!--) } }
     \new Voice { \voiceTwo { d,2.-- } }
-  >>
+  >> |
   % bar 2
+  <<
+    \new Voice { \voiceOne { d8[( ef] g bf a4) } }
+    \new Voice { \voiceTwo { d,2.-- } }
+  >> |
   % bar 3
+  <<
+    \new Voice { \voiceOne { d8[( ef] g4 a!--) } }
+    \new Voice { \voiceTwo { d,2.-- } }
+  >> |
   % bar 4
+  <<
+    \new Voice { \voiceOne { d8[( ef] g c a4) } }
+    \new Voice { \voiceTwo { d,2.-- } }
+  >> |
   % bar 5
+  <<
+    \new Voice { \voiceOne { d8[( ef] g4 a!--) } }
+    \new Voice { \voiceTwo { d,2.-- } }
+  >> |
   % bar 6
-  % bar 7
-  % bar 8
-  % bar 9
-  % bar 10
+  <<
+    \new Voice { \voiceOne { d8[( ef] g bf a4) } }
+    \new Voice { \voiceTwo { d,2.-- } }
+  >> |
+  % bar 7-10
+  \repeat unfold 4 {
+    <<
+      \new Voice { \voiceOne { fs8[( gs] a[ d] <cs d>4-- ) } }
+      \new Voice { \voiceTwo { fs,2.-- } }
+    >>
+  }
   % bar 11
   % bar 12
   % bar 13
