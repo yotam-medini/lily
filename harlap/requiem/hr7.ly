@@ -736,6 +736,114 @@
   <d, ef g a>2.--^\pepress |
   % bar 2-6
   \repeat unfold 5 { <d ef g a>2.-- }
+  % bar 7
+  <gs a>2.-- |
+  % bar 8
+  <gs a>4.-- fs8( gs[ a]) |
+  % bar 9
+  <gs a>2.-- ~ |
+  % bar 10
+  <gs a>4.-- fs8( gs[ a])
+  % bar 11
+  <<
+    \new Voice { \voiceOne { af8[( g!]) g[( af]) f4 } }
+    \new Voice { \voiceTwo { f!2. } }
+  >> |
+  % bar 12
+  <<
+    \new Voice { \voiceOne { <af c>2. }}
+    \new Voice { \voiceTwo { r4. f4( g8) } }
+  >> |
+  % bar 13
+  <<
+    \new Voice { \voiceOne { af8[( g]) g[( b!]) f~[( <f g>]) } }
+    \new Voice { \voiceTwo { f2. } }
+  >> |
+  % bar 14
+  <af c>4 <g b!>2-- |
+  % bar 15
+  <<
+    \new Voice { \voiceOne { af8[( g]) g[( a]) f[( g]) } }
+    \new Voice { \voiceTwo { <c, f>2 <df f>4 } }
+  >> |
+  % bar 16-18
+  \repeat unfold 3 { <af c f>2.-> } |
+  % bar 19->
+  <af c f g>2.-> |
+  % bar 20
+  <d! f g af>2.->\fermata \bar "||" |
+  % bar 21-24
+  \repeat unfold 4 { <cs d fs gs>2.-- } |
+  % bar 25
+  <g'! af>2. |
+  % bar 26
+  <g af>4. f8( g[ af]) |
+  % bar 27
+  <g af>2. ~ |
+  % bar 28
+  <g af>4. f8( g[ af]) |
+  % bar 29
+  <<
+    \new Voice { \voiceOne { g8[( fs]) fs[( g]) e4 } }
+    \new Voice { \voiceTwo { e2. } }
+  >> |
+  % bar 30
+  % bar 31
+  % bar 32
+  % bar 33
+  % bar 34
+  % bar 35
+  % bar 36
+  % bar 37
+  % bar 38
+  % bar 39
+  % bar 40
+  % bar 41
+  % bar 42
+  % bar 43
+  % bar 44
+  % bar 45
+  % bar 46
+  % bar 47
+  % bar 48
+  % bar 49
+  % bar 50
+  % bar 51
+  % bar 52
+  % bar 53
+  % bar 54
+  % bar 55
+  % bar 56
+  % bar 57
+  % bar 58
+  % bar 59
+  % bar 60
+  % bar 61
+  % bar 62
+  % bar 63
+  % bar 64
+  % bar 65
+  % bar 66
+  % bar 67
+  % bar 68
+  % bar 69
+  % bar 70
+  % bar 71
+  % bar 72
+  % bar 73
+  % bar 74
+  % bar 75
+  % bar 76
+  % bar 77
+  % bar 78
+  % bar 79
+  % bar 80
+  % bar 81
+  % bar 82
+  % bar 83
+  % bar 84
+  % bar 85
+  % bar 86
 }
 
 "pianoLeft7" = \relative c {
@@ -747,6 +855,91 @@
     } }
     \new Voice { \voiceTwo { d,2.-- } }
   >>
+  % bar 2
+  % bar 3
+  % bar 4
+  % bar 5
+  % bar 6
+  % bar 7
+  % bar 8
+  % bar 9
+  % bar 10
+  % bar 11
+  % bar 12
+  % bar 13
+  % bar 14
+  % bar 15
+  % bar 16
+  % bar 17
+  % bar 18
+  % bar 19
+  % bar 20
+  % bar 21
+  % bar 22
+  % bar 23
+  % bar 24
+  % bar 25
+  % bar 26
+  % bar 27
+  % bar 28
+  % bar 29
+  % bar 30
+  % bar 31
+  % bar 32
+  % bar 33
+  % bar 34
+  % bar 35
+  % bar 36
+  % bar 37
+  % bar 38
+  % bar 39
+  % bar 40
+  % bar 41
+  % bar 42
+  % bar 43
+  % bar 44
+  % bar 45
+  % bar 46
+  % bar 47
+  % bar 48
+  % bar 49
+  % bar 50
+  % bar 51
+  % bar 52
+  % bar 53
+  % bar 54
+  % bar 55
+  % bar 56
+  % bar 57
+  % bar 58
+  % bar 59
+  % bar 60
+  % bar 61
+  % bar 62
+  % bar 63
+  % bar 64
+  % bar 65
+  % bar 66
+  % bar 67
+  % bar 68
+  % bar 69
+  % bar 70
+  % bar 71
+  % bar 72
+  % bar 73
+  % bar 74
+  % bar 75
+  % bar 76
+  % bar 77
+  % bar 78
+  % bar 79
+  % bar 80
+  % bar 81
+  % bar 82
+  % bar 83
+  % bar 84
+  % bar 85
+  % bar 86
 }
 
 "lyricsSoloSop7" = \lyricmode {
