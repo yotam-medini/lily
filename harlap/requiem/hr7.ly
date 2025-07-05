@@ -763,8 +763,14 @@
   <af c>4 <g b!>2-- |
   % bar 15
   <<
-    \new Voice { \voiceOne { af8[( g]) g[( a]) f[( g]) } }
-    \new Voice { \voiceTwo { <c, f>2 <df f>4 } }
+    \new Voice { \voiceOne { af8[( g]) g[( af]) } }
+    \new Voice { \voiceTwo { <c, f>2 } }
+  >>
+  <<
+    \new Voice { \voiceOne { f8[( g]) } }
+    \new Voice { \voiceTwo {
+      \once \override NoteColumn.force-hshift = #0.8 <df f>4
+    } }
   >> |
   % bar 16-18
   \repeat unfold 3 { <af c f>2.-> } |
