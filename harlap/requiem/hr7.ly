@@ -185,7 +185,7 @@
   % bar 37
   fs4. g8 a\! b |
   % bar 38
-  d4->\ff cs2->\fermata |
+  d4->\ff cs2->\fermata \bar "||" |
   % bar 39
   \break_orig
   \time 4/4
@@ -330,7 +330,7 @@
   % bar 37
   fs4-> e2-> |
   % bar 38
-  g!2.->\fermata
+  g!2.->\fermata \bar "||"
   \time 4/4
   r1
   % bar 40
@@ -485,7 +485,7 @@
   % bar 37
   fs4. g8 a[ b] |
   % bar 38
-  d4->\ff e!2\fermata |
+  d4->\ff e!2\fermata  \bar "||" 
   % bar 39
   \time 4/4
   r1 | 
@@ -623,7 +623,7 @@
   % bar 37
   b |
   % bar 38
-  as2.->\ff\fermata
+  as2.->\ff\fermata \bar "||"
   % bar 39
   \time 4/4
   r1 |
@@ -769,7 +769,7 @@
   <<
     \new Voice { \voiceOne { f8[( g]) } }
     \new Voice { \voiceTwo {
-      \once \override NoteColumn.force-hshift = #0.8 <df f>4
+      \once \override NoteColumn.force-hshift = #1.0 <df f>4
     } }
   >> |
   % bar 16-18
@@ -794,30 +794,64 @@
     \new Voice { \voiceTwo { e2. } }
   >> |
   % bar 30
+  <<
+    \new Voice { \voiceOne { <g b>2. } }
+    \new Voice { \voiceTwo { r4. e4( fs8) } }
+  >> |
   % bar 31
+  <<
+    \new Voice { \voiceOne { g8[( fs]) fs[( as]) e~[( <e fs>]) } }
+    \new Voice { \voiceTwo { e2. } }
+  >>  |
   % bar 32
+  <g b>4-- <fs as>2-- |
   % bar 33
+  <<
+    \new Voice { \voiceOne { g8[( fs]) fs[( g]) e[( fs]) } }
+    \new Voice { \voiceTwo {
+      <b, e>2 \once \override NoteColumn.force-hshift = #1.0 <c e>4
+     } }
+  >>  |
   % bar 34
+  <g b e>2.-> | 
   % bar 35
+  <g b e>2.-> | 
   % bar 36
+  <g b e>2.-> | 
   % bar 37
+  <g b e fs>2.-> | 
   % bar 38
-  % bar 39
-  % bar 40
-  % bar 41
-  % bar 42
-  % bar 43
-  % bar 44
-  % bar 45
-  % bar 46
-  % bar 47
-  % bar 48
-  % bar 49
-  % bar 50
-  % bar 51
+  <cs f gs>2.->\fermata \bar "||" 
+  % bar 39-44
+  \repeat percent 6 {
+    r16 c!16[ e g]
+    \repeat unfold 3 { r16 c,16[ e g] }
+  } |
+  % bar 45-48
+  \repeat percent 4 {
+    r16 af,16[ c ef]
+    \repeat unfold 3 { r16 af,16[ c ef] }
+  } |
+  % bar 49-51
+  \repeat percent 3 {
+    r16 e16[ gs b]
+    r16 e,16[ gs b]
+    r16 e,16[ gs b]
+    r16 e,16[ gs b]
+  } |
   % bar 52
+  \time 2/4
+  r16 e,16[ gs b]   r16 e,16[ gs b]
   % bar 53
+  \time 6/4
+  <<
+    \new Voice { \voiceOne { cs8-.[ b b-> as16] r16 } }
+    \new Voice { \voiceTwo { ds,8[ e8] gs4-> } }
+  >>
+  <g! b>4( <a! d!>) <g b>4( <a! d!>) |
   % bar 54
+  \time 4/4
+  <g b>( <a d>) <g b>( <a! d!>) |
   % bar 55
   % bar 56
   % bar 57
@@ -1082,8 +1116,18 @@
       instrumentName = "Pno." 
       shortInstrumentName = "Pno."
     } <<
-      \new Staff = "upper" { \clef treble \"pianoRight7" }
-      \new Staff = "lower" { \clef bass \"pianoLeft7" }
+      \new Staff = "upper" { 
+        \set countPercentRepeats = ##t
+        \set repeatCountVisibility = #(every-nth-repeat-count-visible 4)
+        \clef treble \"pianoRight7" 
+        \"dummy"
+      }
+      \new Staff = "lower" { 
+        \set countPercentRepeats = ##t
+        \set repeatCountVisibility = #(every-nth-repeat-count-visible 4)
+        \clef bass \"pianoLeft7" 
+        \"dummy"
+    }
     >>
   >>
   \layout {
