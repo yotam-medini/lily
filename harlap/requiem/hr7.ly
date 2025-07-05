@@ -825,23 +825,23 @@
   % bar 39-44
   \repeat percent 6 {
     r16 c!16[ e g]
-    \repeat unfold 3 { r16 c,16[ e g] }
+    \repeat unfold 3 { r16 c,16[( e g]) }
   } |
   % bar 45-48
   \repeat percent 4 {
-    r16 af,16[ c ef]
-    \repeat unfold 3 { r16 af,16[ c ef] }
+    r16 af,16[( c ef])
+    \repeat unfold 3 { r16 af,16[( c ef]) }
   } |
   % bar 49-51
   \repeat percent 3 {
-    r16 e16[ gs b]
-    r16 e,16[ gs b]
-    r16 e,16[ gs b]
-    r16 e,16[ gs b]
+    r16 e16[( gs b])
+    r16 e,16[( gs b])
+    r16 e,16[( gs b])
+    r16 e,16[( gs b])
   } |
   % bar 52
   \time 2/4
-  r16 e,16[ gs b]   r16 e,16[ gs b]
+  r16 e,16[( gs b])   r16 e,16[( gs b]) |
   % bar 53
   \time 6/4
   <<
@@ -853,25 +853,49 @@
   \time 4/4
   <g b>( <a d>) <g b>( <a! d!>) |
   % bar 55
+  <<
+    \new Voice { \voiceOne { d8[ c c->( b]) f'[ d] c->[( b16]) r16 } }
+    \new Voice { \voiceTwo { \repeat unfold 2 { e,8[ f] a!4-> } } }
+  >>
   % bar 56
+  \repeat unfold 2 {
+    <e gs>4( <fs b>)
+  } |
   % bar 57
-  % bar 58
-  % bar 59
-  % bar 60
-  % bar 61
-  % bar 62
+  <<
+    \new Voice { \voiceOne { b8[ a a->( gs]) d'[ b] a->[( g16]) r16 } }
+    \new Voice { \voiceTwo { \repeat unfold 2 { cs,8[ d] fs!4-> } } }
+  >>
+  % bar 58-62
+  \repeat percent 5 {
+    \repeat unfold 4 { r16 fs( as cs) }
+  }
   % bar 63
+  \repeat unfold 4 { r16 fs,16[( as cs]) } |
   % bar 64
+  \time 2/4
+  <<
+    \new Voice { \voiceOne { ds8-.[ cs-.] ds->[ bs16] r16 } }
+    \new Voice { \voiceTwo { es,8[ fs] as4->  } }
+  >>
   % bar 65
+  \time 4/4
+  \repeat unfold 4 { r16 bf16[( d f]) }
   % bar 66
+  \repeat unfold 4 { r16 bf,,16[( d f]) }
   % bar 67
-  % bar 68
-  % bar 69
-  % bar 70
-  % bar 71
-  % bar 72
+  \time 6/4
+  \repeat unfold 6 { r16 bf,16[( d f]) }
+  % bar 66
+  \repeat unfold 4 { r16 bf,16[( d f]) }
+  % bar 69-72
+  \repeat unfold 4 {
+    \repeat unfold 4 { r16 bf,16[( d f]) }
+  }
   % bar 73
+  <a f' a>2.-> <bf e! f bf>4-> |
   % bar 74
+  <d f d'>2-> <e d'! e>2-> | 
   % bar 75
   % bar 76
   % bar 77
