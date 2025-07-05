@@ -910,16 +910,28 @@
       \new Voice { \voiceTwo { c4( b a2) } }
     >>
   }
-  % bar 78
-  r8 <a b>8 <e' f>8->[(<a, b>]) <e' f>8 \repeat tremolo 2 { a,16.( b16.) } |
-  % bar 79
-  % bar 80
-  % bar 81
-  % bar 82
-  % bar 83
-  % bar 84
+  % bar 79-80
+  \repeat unfold 2 {
+    r8 <a b>8 <e' f>8->[(<a, b>]) <e' f>8 \repeat tremolo 8 { a,64.( b64.) } |
+  }
+  % bar 81-82
+  \repeat unfold 2 {
+    <<
+      \new Voice { \voiceOne { b'1 } }
+      \new Voice { \voiceTwo { <e, g>4( <d fs> <c e>2) } }
+    >> |
+  }
+  % bar 83-84
+  \repeat unfold 2 {
+    <<
+      \new Voice { \voiceOne { b1 } }
+      \new Voice { \voiceTwo { g4( fs e2) } }
+    >> |
+  }
   % bar 85
+  <b' e>2-- <b e>2-- |
   % bar 86
+  <b e>1--\fermata \bar "|."
 }
 
 "pianoLeft7" = \relative c {
