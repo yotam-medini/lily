@@ -976,16 +976,53 @@
     >>
   }
   % bar 11
+  <<
+    \new Voice { \voiceOne { f!8[( af]) c!8( df4.) } }
+    \new Voice { \voiceTwo { f,!2.-- } }
+  >>
   % bar 12
+  <<
+    \new Voice { \voiceOne { f8[( af]) c4-( <c df>) } }
+    \new Voice { \voiceTwo { f,2.-- } }
+  >> |
   % bar 13
+  <<
+    \new Voice { \voiceOne { f8[( af]) c[( df]) b![( df!]) } }
+    \new Voice { \voiceTwo { f,2.-- } }
+  >> |
   % bar 14
+  <<
+    \new Voice { \voiceOne { f8[( af]) c4--(  df--)} }
+    \new Voice { \voiceTwo { <f,, f'>2.-- } }
+  >> |
   % bar 15
+  <<
+    \new Voice { \voiceOne { f'8[( af]) c[( df]) b![( df!]) } }
+    \new Voice { \voiceTwo { <f,, f'>2.-- } }
+  >> |
   % bar 16
+  <f f'>2.-> |
   % bar 17
+  <ef ef'>2-> <d! d'!>4 |
   % bar 18
+  <df df'>2.-> |
   % bar 19
+  <c c'>2.-- |
   % bar 20
+  {
+    % \override StemTremolo.beam-gap = #3
+    % \once \override Beam.positions = #'(3.5 . 3.5)
+    % \once \override Beam.beam-thickness = #0.48
+    % \once \override Beam.length-fraction = #0.7
+    \repeat tremolo 16 { b!64.->( b'!64.) 
+      \tweak X-offset #-2 ^\fermata } 
+  }
+    \bar "||"
   % bar 21
+  <<
+    \new Voice { \voiceOne { cs8[( d] fs4 gs--) } }
+    \new Voice { \voiceTwo { cs,2.-- } }
+  >> |
   % bar 22
   % bar 23
   % bar 24
