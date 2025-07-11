@@ -216,33 +216,33 @@
   r1
   \break_orig
   % bar 50
-  b8-> b as as b8.-> b16 gs8 gs
+  b8->^\mfagitato b as as b8.-> b16 gs8 gs
   % bar 51
   r1 |
   % bar 52
   \time 2/4
-  cs8.-> b16 b8-> as |
+  cs8.->^\fmarcato b16 b8-> as |
   \time 6/4
   R4*6 |
   % bar 54
   \time 4/4
-  b8 b d8.-> d16 b8 e d d |
+  b8^\mpmoltoagitato b d8.-> d16 b8 e d d |
   \break_orig
   % bar 55
   r1 |
   % bar 56
-  gs,8 gs b8.-> b16 gs8 cs b b |
+  gs,8^\mpmoltoagitato gs b8.-> b16 gs8 cs b b |
   % bar 57
   r1 |
   % bar 58
   r |
   % bar 59
-  cs8-> cs bs bs cs8.-> cs16 as8 as |
+  cs8->^\mfagitato cs bs bs cs8.-> cs16 as8 as |
   \break_orig
   % bar 60
   r1
   % bar 61
-  es2.-> fs4 |
+  es2.->^\fmarcato fs4 |
   % bar 62
   as2-> bs-> |
   % bar 63
@@ -362,7 +362,7 @@
   gs2-> as-> |
   % bar 52
   \time 2/4
-  ds,8 e gs as |
+  ds,8^\fmarcato e gs as |
   % bar 53
   \time 6/4
   R1. |
@@ -370,7 +370,7 @@
   \time 4/4
   <<
     { 
-      g8 g a8.^> a16 g8 g a a
+      g8^\mpmoltoagitato g a8.^> a16 g8 g a a
     }
     \new Voice { \voiceTwo {
       \stemDown 
@@ -383,7 +383,7 @@
   % bar 56
   <<
     { 
-      e8 e fs8.-> fs16 e8 e fs fs
+      e8^\mpmoltoagitato e fs8.-> fs16 e8 e fs fs
     }
     \new Voice { \voiceTwo {
       \stemDown 
@@ -394,13 +394,13 @@
   % bar 57-59
   r1 | r1 | r1 |
   % bar 60
-  es8-> fs as bs es,-> fs as bs |
+  es8->^\mfagitato fs as bs es,-> fs as bs |
   % bar 61
-  es,2.-> fs4 |
+  es,2.->^\fmarcato fs4 |
   % bar 62
   as2-> bs-> |
   % bar 63
-  es,4-> fs-> as4.-> bs8 |
+  es,4->\< fs-> as4.-> bs8\! |
   % bar 64
   \time 2/4
   r2
@@ -513,7 +513,7 @@
   % bar 49
   r1\! |
   % bar 50
-  b8-> b as as b8.-> b16 gs8 gs |
+  b8->^\mfagitato b as as b8.-> b16 gs8 gs |
   % bar 51
   ds-> e gs as ds,-> e gs as |
   % bar 52
@@ -525,11 +525,11 @@
   % bar 54
   r1 |
   % bar 55
-  d8 c c-> b f' d c b |
+  d8^\fsubito c c-> b f' d c b |
   % bar 56
   r1 |
   % bar 57
-  b8 a a-> gs d' b a gs |
+  b8^\fsubito a a-> gs d' b a gs |
   % bar 58
   r1 |
   % bar 59
@@ -537,11 +537,11 @@
   % bar 60
   r1 |
   % bar 61
-  cs8-> cs bs bs cs8.-> cs16 as8 as |
+  cs8->^\mfagitato cs bs bs cs8.-> cs16 as8 as |
   % bar 62
   r1 |
   % bar 63
-  cs8-> cs bs bs cs8.-> cs16 as8 as |
+  cs8->^\mfagitato cs bs bs cs8.-> cs16 as8 as |
   % bar 64
   \time 2/4
   r2 |
@@ -664,23 +664,23 @@
   \time 4/4
   r1 |
   % bar 55
-  e8 f a-> b e, f a b |
+  e8^\fsubito f a-> b e, f a b |
   % bar 56
   r1 |
   % bar 57
-  cs,8 d fs-> gs cs, d fs gs |
+  cs,8^\fsubito d fs-> gs cs, d fs gs |
   % bar 58
   r1 |
   % bar 59
   r |
   % bar 60
-  f8-> fs as c f,-> fs as c |
+  es8->^\mfagitato fs as bs es,-> fs as bs |
   % bar 61
   r1 |
   % bar 62
-  f,8-> fs as c f,-> fs as c |
+  es,8->^\mfagitato fs as bs es,-> fs as bs |
   % bar 63
-  f,4-> fs-> as-> c-> |
+  es,4->\< fs-> as-> bs->\! |
   % bar 64
   \time 2/4
   r2 |
@@ -918,16 +918,28 @@
     \new Voice { \voiceTwo { \repeat unfold 2 { cs,8[ d] fs!4-> } } }
   >>
   % bar 58-62
-  \repeat percent 5 {
-    \repeat unfold 4 { r16 fs( as cs) }
-  }
+  <<
+    {
+      \repeat percent 5 {
+        \repeat unfold 4 { r16 fs( as cs) }
+      }
+    }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s4\f\> s2 s4\! | s1^\ppmaagitato | s1 | s1 | s1 
+    }
+  >> |
   % bar 63
-  \repeat unfold 4 { r16 fs,16[( as cs]) } |
+  <<
+    \repeat unfold 4 { r16 fs,16[( as cs]) } 
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s32\< s32 s16 s8 s2 s8 s8\!
+    }
+  >> |
   % bar 64
   \time 2/4
   <<
     \new Voice { \voiceOne { ds8-.[ cs-.] ds->[ bs16] r16 } }
-    \new Voice { \voiceTwo { es,8[ fs] as4->  } }
+    \new Voice { \voiceTwo { es,8[_\f fs] as4->  } }
   >>
   % bar 65
   \time 4/4
@@ -1173,16 +1185,18 @@
     \new Voice { \voiceTwo { e,8-. f-. a!4-> e8-. f-. a!4-> } }
   >> |
   % bar 56
-  cs4( d_) cs( d) |
+  cs4^\mp( d_) cs( d) |
   % bar 57
   <<
-    \new Voice { \voiceOne { b8-.[ a-.  a->( gs]) d'-.[ b-.] a[ g16] r16 } }
+    \new Voice { \voiceOne { 
+      b8-.[^\fsubito a-.  a->( gs]) d'-.[ b-.] a[ g16] r16
+    } }
     \new Voice { \voiceTwo { cs,8-. d-. fs4-> cs8-. d-. fs4-> } }
   >> |
   % bar 58-62
   \clef "G"
   \repeat unfold 5 { es'4-- es es es | }
-  % bar 6
+  % bar 63
   es4-- es es es |
   % bar 64
   \clef bass
