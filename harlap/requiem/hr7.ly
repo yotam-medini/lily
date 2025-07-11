@@ -99,13 +99,14 @@
   % bar 17
   r f-> g-> |
   % bar 18
-  af4-> f2-> |
+  af4-> f2-> \breathe |
   % bar 19
-  g!4. af8 bf[ c] |
+  g!4.^\pocorit\< af8 bf[ c] |
   % bar 20
-  ef4-> d!2->\fermata \bar "||" |
+  ef4->\< d!2->\fermata \bar "||" |
   % bar 21-38
-  R2.*18 |
+  \tempo "Larghetto espressivo" 2 = 30
+  R2.*18\! |
   % bar 39-51
   \time 4/4
   R1*13 |
@@ -158,7 +159,7 @@
   % bar 20
   r2.\fermata \bar "||"
   % bar 21
-  cs4. b8 b[ e] |
+  cs4.^\mpespress b8 b[ e] |
   \break_orig
   % bar 22
   cs4. b8 b fs |
@@ -299,7 +300,7 @@
   % bar 21
   r2. |
   % bar 22
-  cs8( d!) fs4 gs |
+  cs8^\mpespress( d!) fs4 gs |
   % bar 23
   fs2. |
   % bar 24
@@ -456,7 +457,7 @@
   % bar 20
   r2.\fermata \bar "||"
   % bar 21
-  cs'4. b8 b[ e] |
+  cs'4.^\mpespress b8 b[ e] |
   % bar 22
   cs4. d8 d4 ~ |
   % bar 23
@@ -590,7 +591,7 @@
   % bar 20
   r2.\fermata \bar "||"
   % bar 21
-  cs8( d) fs4 gs |
+  cs8^\mpespress( d) fs4 gs |
   % bar 22
   cs,2. |
   % bar 23
@@ -733,6 +734,7 @@
 "pianoRight7" = \relative c'' {
   \"global7"
   \"dummy"
+  \dynamicDown
   % bar 1
   <d, ef g a>2.--_\pepress |
   % bar 2-6
@@ -794,9 +796,11 @@
   % bar 19->
   <af c f g>2.-> |
   % bar 20
-  <d! f g af>2.->\fermata \bar "||" |
-  % bar 21-24
-  \repeat unfold 4 { <cs d fs gs>2.-- } |
+  <d! f g af>2.->_\sfp\fermata\< \bar "||" |
+  % bar 21
+  { <cs d fs gs>2.--\! } |
+  % bar 22-24
+  \repeat unfold 3 { <cs d fs gs>2.-- } |
   % bar 25
   <g'! af>2. |
   % bar 26
@@ -1019,11 +1023,11 @@
   % bar 16
   <f f'>2.-> |
   % bar 17
-  <ef ef'>2-> <d! d'!>4 |
+  <ef ef'>2->\< <d! d'!>4 |
   % bar 18
   <df df'>2.-> |
   % bar 19
-  <c c'>2.-- |
+  <c c'>2.--\f |
   % bar 20
   \repeat tremolo 16 { b!64.->( b'!64.) 
     \tweak X-offset #-2 ^\fermata
@@ -1031,7 +1035,7 @@
   \bar "||"
   % bar 21
   <<
-    \new Voice { \voiceOne { cs8[( d] fs4 gs--) } }
+    \new Voice { \voiceOne { cs8^\pepress[( d] fs4 gs--) } }
     \new Voice { \voiceTwo { cs,2.-- } }
   >> |
   % bar 22
