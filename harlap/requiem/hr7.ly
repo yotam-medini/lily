@@ -257,7 +257,7 @@
   r |
   % bar 67
   \time 6/4
-  a8-> bf d e r4 a,8.-> bf16 d8 e r4 |
+  a8->^\mfagitato bf d e r4 a,8.-> bf16 d8 e r4 |
   % bar 68-74
   \time 4/4
   R1*7 |
@@ -408,13 +408,13 @@
   \time 4/4
   r1
   % bar 66
-  f8-> f e e f8. f16 d8 d
+  f8->^\mfagitato f e e f8. f16 d8 d
   % bar 67
   \time 6/4
   r1.
   % bar 68
   \time 4/4
-  f8-> f e e f8.-> f16 d8 d
+  f8->^\mfagitato f e e\> f8.-> f16 d8 d\!
   \break_orig
   % bar 69
   r4 f8-> f e e r4
@@ -552,7 +552,7 @@
   r |
   % bar 67
   \time 6/4
-  a8 bf d e r2 a,8. bf16 d8 e |
+  a8^\mfagitato bf d e r2 a,8. bf16 d8 e |
   % bar 68-74
   \time 4/4
   R1*7 |
@@ -688,13 +688,13 @@
   \time 4/4
   r1 |
   % bar 66
-  f,8-> f e e f8.-> f16 d8 d |
+  f,8->^\mfagitato f e e f8.-> f16 d8 d |
   % bar 67
   \time 6/4
   R1. |
   % bar 68
   \time 4/4
-  f8-> f e e f8.-> f16 d8 d |
+  f8->^\mfagitato f e e\> f8.-> f16 d8 d\! |
   % bar 69
   r2 f8 f-> e e |
   % bar 70
@@ -1211,16 +1211,16 @@
   % bar 65
   \clef "G"
   \time 4/4
-  a'4-> a a a |
+  a'4->^\f\> a a a |
   % bar 66
   \clef bass
-  a4-> a a a |
+  a4->\!^\psubito a a a |
   % bar 67
   \time 6/4
   a4-> a a a a a |
   % bar 68
   \time 4/4
-  a4-> a a a |
+  a4->\> a a \after 8. \! a |
   % bar 69-72
   \repeat unfold 4 { a4-> a a a | }
   % bar 73
