@@ -18,7 +18,9 @@ fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 fsubito = \markup { \dynamic "f" \italic "subito" }
 intensivo = \markup { \italic "intensivo" }
 mfdolce = \markup { \dynamic "mf" \italic "dolce" }
+mfespress = \markup { \dynamic "mf" \italic "espress." }
 mfintensivo = \markup { \dynamic "mf" \italic "intensivo" }
+mpespress = \markup { \dynamic "mp" \italic "espress." }
 moltespr = \markup { \italic "molto espressivo" } % obsolete
 moltoespr = \markup { \italic "molto espressivo" }
 moltorall = \markup { \bold "molto rall." }
@@ -41,6 +43,7 @@ sempre = \markup { \italic "sempre" }
 sempreLegatoEspress = \markup { \italic "(sempre legato e espress.)" }
 sfff = \markup { \dynamic "sfff" }
 slowarpeg = \markup { \italic "(slow arpeggio)" }
+subitomp = \markup { \italic "subito" \dynamic "mp" }
 ten = \markup {\italic "ten." }
 
 

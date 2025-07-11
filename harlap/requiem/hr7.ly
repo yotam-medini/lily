@@ -11,22 +11,22 @@
   \"dummy"
   R2. | R2. |
   % bar 3
-  d4. c8 c f |
+  d4.^\mpespress c8 c f |
   % bar 4
   d4. c8 c g |
   % bar 5 
-  bf4 a4. ef8 |
+  bf4-> a4. ef8 |
   \break_orig
   % bar 6
-  bf'4 a4. a8 |
+  bf'4 a4. \breathe a8 |
   % bar 7
-  a8 gs gs4 gs8 a |
+  a8\< gs gs4 gs8 a |
   % bar 8
-  e'4-- d2 |
+  e'4--\f d2 |
   % bar 9
   bs4. cs8 cs4 |
   % bar 10
-  cs2 r4 |
+  cs2\< r4\! |
   % bar 11-20
   R2.*10 \bar "||"
   % bar 21-38 |
@@ -84,7 +84,7 @@
   \"dummy"
   R2.*10 |
   % bar 11
-  r2 f8 g
+  r2 f8^\mfespress g
   % bar 12
   af4. g8 g f |
   \break_orig
@@ -734,22 +734,38 @@
   \"global7"
   \"dummy"
   % bar 1
-  <d, ef g a>2.--^\pepress |
+  <d, ef g a>2.--_\pepress |
   % bar 2-6
   \repeat unfold 5 { <d ef g a>2.-- }
-  % bar 7
-  <gs a>2.-- |
-  % bar 8
-  <gs a>4.-- fs8( gs[ a]) |
-  % bar 9
-  <gs a>2.-- ~ |
-  % bar 10
-  <gs a>4.-- fs8( gs[ a])
-  % bar 11
+  % bar 7-8
   <<
-    \new Voice { \voiceOne { af8[( g!]) g[( af]) f4 } }
-    \new Voice { \voiceTwo { f!2. } }
-  >> |
+    {
+      % bar 7
+      <gs a>2.-- |
+      % bar 8
+      <gs a>4.-- fs8( gs[ a]) |
+    }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+       s32\< s32 s16 s8 s2 | s2 s8 s16 s32 s32\!
+    }
+  >>
+  % bar 9-11
+  <<
+    {
+      % bar 9
+      <gs a>2.-- ~ |
+      % bar 10
+      <gs a>4.-- fs8( gs[ a])\!
+      % bar 11
+      <<
+        \new Voice { \voiceOne { af8[( g!]) g[( af]) f4 } }
+        \new Voice { \voiceTwo { f!2. } }
+      >> |
+    }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+       s2.\< | s2. | s2.\!-\subitomp
+    }
+  >>
   % bar 12
   <<
     \new Voice { \voiceOne { <af c>2. }}
