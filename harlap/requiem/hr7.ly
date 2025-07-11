@@ -1009,15 +1009,10 @@
   % bar 19
   <c c'>2.-- |
   % bar 20
-  {
-    % \override StemTremolo.beam-gap = #3
-    % \once \override Beam.positions = #'(3.5 . 3.5)
-    % \once \override Beam.beam-thickness = #0.48
-    % \once \override Beam.length-fraction = #0.7
-    \repeat tremolo 16 { b!64.->( b'!64.) 
-      \tweak X-offset #-2 ^\fermata } 
+  \repeat tremolo 16 { b!64.->( b'!64.) 
+    \tweak X-offset #-2 ^\fermata
   }
-    \bar "||"
+  \bar "||"
   % bar 21
   <<
     \new Voice { \voiceOne { cs8[( d] fs4 gs--) } }
