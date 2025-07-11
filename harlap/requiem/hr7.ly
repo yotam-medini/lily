@@ -60,10 +60,12 @@
   \break_orig
   % bar 75
   \time 14/4
-  r4 r8 e8(~ e4 e e e e\fermata e e e e g e e\fermata) |
+  r4^\atempo r8 e8(~ e4
+    \tempo "poco sostenuto" 2=50
+    e e e e\fermata e e e e g e e\fermata) |
   % bar 76
   \time 13/4
-  r4 e,4( e e c' b e,\fermata) r4 e'4( d d c b\fermata) |
+  r4 e,4(^\mp\< e e c' b\! e,\fermata) r4 e'4( d d c^\moltorit b\fermata) |
   % bar 77-81
   \time 4/4
   R1*5 |
@@ -263,7 +265,7 @@
   R1*7 |
   % bar 75
   \time 14/4
-  a,8.-> bf16 d8 e8-. r1*3\fermata |
+  a,8.->^\fff^\moltespr bf16 d8 e8-. r1*3\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata |
@@ -417,14 +419,14 @@
   f8->^\mfagitato f e e\> f8.-> f16 d8 d\!
   \break_orig
   % bar 69
-  r4 f8-> f e e r4
+  r4 f8->^p f e e r4
   % bar 70
   r f8.-> f16 d8 d r4
   % bar 71-74
   r1 | r1 | r1 | r1 |
   % bar 75
   \time 14/4
-  <e f>8 <e f> <d f> <d f> r1*3\fermata |
+  <e f>8^\fff <e f> <d f> <d f> r1*3\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata |
@@ -696,7 +698,7 @@
   \time 4/4
   f8->^\mfagitato f e e\> f8.-> f16 d8 d\! |
   % bar 69
-  r2 f8 f-> e e |
+  r4 r4 f8^\p f-> e e |
   % bar 70
   f8.-> f16 d8 d r2 |
   % bar 71
@@ -707,7 +709,7 @@
   R1 | R1 |
   % bar 75
   \time 14/4
-  d8->[ d d-> d] r1*3\fermata |
+  d8->^\fff[ d d-> d] r1*3\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata 
@@ -952,13 +954,26 @@
   % bar 66
   \repeat unfold 4 { r16 bf,16[( d f]) }
   % bar 69-72
-  \repeat unfold 4 {
-    \repeat unfold 4 { r16 bf,16[( d f]) }
-  }
-  % bar 73
-  <a f' a>2.-> <bf e! f bf>4-> |
-  % bar 74
-  <d f d'>2-> <e d'! e>2-> | 
+  <<
+    \repeat unfold 4 {
+      \repeat unfold 4 { r16 bf,16[( d f]) }
+    }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+     r8 s8\> s2. | s1 | s1\pp\> | s2. s8 s16 \ppp s16 |
+    }
+  >> |
+  % bar 73-74
+  <<
+    {
+      % bar 73
+      <a f' a>2.-> <bf e! f bf>4-> |
+      % bar 74
+      <d f d'>2-> <e d'! e>2-> | 
+    }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s1\f\< | s2. s8\! s8
+    }
+  >> |
   % bar 75
   \time 14/4
   <f d' e f>16-> r16 r8 r4  r1*3\fermata |
@@ -1228,7 +1243,7 @@
   % bar 74
   <d f>2-> <e f!>->
   % bar 75
-  <d,,, d'>16-> r16 r8 r4  r1*3\fermata |
+  <d,,, d'>16->^\sfff r16 r8 r4  r1*3\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata
