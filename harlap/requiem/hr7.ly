@@ -1019,13 +1019,45 @@
     \new Voice { \voiceTwo { cs,2.-- } }
   >> |
   % bar 22
+  <<
+    \new Voice { \voiceOne { cs8[( d] fs a gs4) } }
+    \new Voice { \voiceTwo { cs,2.-- } }
+  >> |
   % bar 23
+  <<
+    \new Voice { \voiceOne { cs8[( d] fs4 gs--) } }
+    \new Voice { \voiceTwo { cs,2.-- } }
+  >> |
   % bar 24
+  <<
+    \new Voice { \voiceOne { cs8[( d] fs b gs4) } }
+    \new Voice { \voiceTwo { cs,2.-- } }
+  >> |
   % bar 25
+  <<
+    \new Voice { \voiceOne { f!8[( g] af df) <c! df>4-- } }
+    \new Voice { \voiceTwo { f,!2.-- } }
+  >> |
   % bar 26
+  <<
+    \new Voice { \voiceOne { f8[( g] af df) <c df>4-- } }
+    \new Voice { \voiceTwo { f,2.-- } }
+  >> |
   % bar 27
+  <<
+    \new Voice { \voiceOne { f8[( g] af df) <c df>4-- } }
+    \new Voice { \voiceTwo { f,2.-- } }
+  >> |
   % bar 28
+  <<
+    \new Voice { \voiceOne { f8[( g] af ef') <c df>4-- } }
+    \new Voice { \voiceTwo { f,2.-- } }
+  >> |
   % bar 29
+  <<
+    \new Voice { \voiceOne { e!8[( g]) b( c4.)  } }
+    \new Voice { \voiceTwo { e,!2.-- } }
+  >> |
   % bar 30
   % bar 31
   % bar 32
