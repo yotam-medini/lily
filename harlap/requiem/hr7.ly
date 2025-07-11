@@ -1164,7 +1164,7 @@
   % bar 74
   <d f>2-> <e f!>->
   % bar 75
-  <d,, d'>16-> r16 r8 r4  r1*3\fermata |
+  <d,,, d'>16-> r16 r8 r4  r1*3\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata
@@ -1172,15 +1172,31 @@
     _\markup { \hspace #30 \italic "attaca" }
     \bar"||" |
   % bar 77
+  <<
+    \new Voice { \voiceOne { a'''4( g f2) } }
+    \new Voice { \voiceTwo { <a,, a'>4( <g g'> f2) } }
+  >>
   % bar 78
+  <<
+    \new Voice { \voiceOne { a''4( g f2) } }
+    \new Voice { \voiceTwo { <a,, a'>4( <g g'> f2) } }
+  >>
   % bar 79
+  <a e' a b>2 <a e' a b>2 |
   % bar 80
+  <a e' a b>2 <a e' a b>2 |
   % bar 81
+  <e' e'>4( <d d'> <c c'>2) |
   % bar 82
+  <e e'>4( <d d'> <c c'>2) |
   % bar 83
+  <e e'>4( <d d'> <c c'>2) |
   % bar 84
+  <e e'>4( <d d'> <c c'>2) |
   % bar 85
+  <e b' e>2-- <e b' e>2-- |
   % bar 86
+  <e b' e>1--\fermata \bar "|."
 }
 
 "lyricsSoloSop7" = \lyricmode {
