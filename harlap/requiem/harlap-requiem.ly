@@ -17,6 +17,7 @@ fespress = \markup { \dynamic "f" \italic "espress." }
 fsempre = \markup { \halign #1.4 \dynamic "f" \italic "sempre" }
 fsubito = \markup { \dynamic "f" \italic "subito" }
 intensivo = \markup { \italic "intensivo" }
+mfagitato = \markup { \dynamic "mf" \italic "agitato" }
 mfdolce = \markup { \dynamic "mf" \italic "dolce" }
 mfespress = \markup { \dynamic "mf" \italic "espress." }
 mfintensivo = \markup { \dynamic "mf" \italic "intensivo" }

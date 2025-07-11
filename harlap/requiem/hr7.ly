@@ -191,17 +191,18 @@
   % bar 39
   \break_orig
   \time 4/4
+  \tempo "Allegro agitato" 4=120
   r1
   % bar 40
-  g8-> g fs fs g8.-> g16 e8 e
+  g8->^\mfagitato g fs fs g8.-> g16 e8 e
   % bar 41
   r1
   % bar 42
-  g8-> g fs fs g8.-> g16 e8 e
+  g8->^\mfagitato g fs fs g8.-> g16 e8 e
   % bar 43
   r1
   % bar 44
-  g8-> g fs fs g8.-> g16 e8 e
+  g8->^\mfagitato g fs fs g8.-> g16 e8 e
   \break_orig
   % bar 45
   r1
@@ -338,15 +339,15 @@
   % bar 40
   r
   % bar 41
-  b,8-> c e fs b,-> c e fs |
+  b,8->^\mfagitato c e fs b,-> c e fs |
   % bar 42
-  b,2. c4 |
+  b,2.^\fmarcato c4 |
   % bar 43
   e!2-> fs-> |
   % bar 44
-  a4.-> g8 g4-> fs |
+  a4.->\< g8 g4-> fs |
   % bar 45
-  r1 |
+  r1\! |
   % bar 46
   ef8-> ef d d ef8.-> ef16 c8 c |
   % bar 47
@@ -492,15 +493,15 @@
   \time 4/4
   r1 | 
   % bar 40
-  g,8-> g fs fs g8.-> g16 e8 e |
+  g,8->^\mfagitato g fs fs g8.-> g16 e8 e |
   % bar 41
   r1 |
   % bar 42
-  g8-> g fs fs g8.-> g16 e8 e |
+  g8->^\mfagitato g fs fs g8.-> g16 e8 e |
   % bar 43
   r1 |
   % bar 44
-  g8-> g fs fs g8.-> g16 e8 e |
+  g8->^\mfagitato g fs fs g8.-> g16 e8 e |
   % bar 45
   r1 |
   % bar 46
@@ -632,15 +633,15 @@
   % bar 40
   r |
   % bar 41
-  b8-> c e fs b,-> c e fs |
+  b8->^\mfagitato c e fs b,-> c e fs |
   % bar 42
-  b,2-> c |
+  b,2->^\fmarcato c |
   % bar 43
-  b8-> c e fs b,-> c e fs |
+  b8->^\mfagitato c e fs b,-> c e fs |
   % bar 44
-  b,4-> c-> e-> fs-> |
+  b,4->\< c-> e-> fs-> |
   % bar 45
-  r1 |
+  r1\! |
   % bar 46
   ef8-> ef d d ef8.-> ef16 c8 c |
   % bar 47
@@ -851,8 +852,9 @@
     \bar "||" 
   % bar 39-44
   \repeat percent 6 {
-    r16 c!16[ e g]
-    \repeat unfold 3 { r16 c,16[( e g]) }
+    { r16\f c!16[ e\> g] }
+    \repeat unfold 2 { r16 c,16[( e g]) }
+    { r16 c,16[( e\! g]) }
   } |
   % bar 45-48
   \repeat percent 4 {
