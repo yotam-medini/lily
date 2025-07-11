@@ -207,7 +207,7 @@
   % bar 45
   r1
   % bar 46
-  g2.-> af4
+  g2.->^\fmarcato af4
   % bar 47
   c2-> d->
   % bar 48
@@ -349,11 +349,11 @@
   % bar 45
   r1\! |
   % bar 46
-  ef8-> ef d d ef8.-> ef16 c8 c |
+  ef8->^\mfagitato ef d d ef8.-> ef16 c8 c |
   % bar 47
   r1 |
   % bar 48
-  ef8-> ef d d ef8.-> ef16 c8 c |
+  ef8->^\mfagitato ef d d ef8.-> ef16 c8 c |
   % bar 49
   r1 |
   % bar 50
@@ -370,7 +370,7 @@
   \time 4/4
   <<
     { 
-      g8 g a8. a16 g8 g a a
+      g8 g a8.^> a16 g8 g a a
     }
     \new Voice { \voiceTwo {
       \stemDown 
@@ -505,13 +505,13 @@
   % bar 45
   r1 |
   % bar 46
-  g2-> af-> |
+  g2->^\fmarcato af-> |
   % bar 47
-  g8-> af c d g,-> af c d |
+  g8->^\mfagitato af c d g,-> af c d |
   % bar 48
-  g,4-> af-> c-> d-> |
+  g,4->\< af-> c-> d-> |
   % bar 49
-  r1 |
+  r1\! |
   % bar 50
   b8-> b as as b8.-> b16 gs8 gs |
   % bar 51
@@ -643,11 +643,11 @@
   % bar 45
   r1\! |
   % bar 46
-  ef8-> ef d d ef8.-> ef16 c8 c |
+  ef8->^\mfagitato ef d d ef8.-> ef16 c8 c |
   % bar 47
   r1 |
   % bar 48
-  ef8-> ef d d ef8.-> ef16 c8 c |
+  ef8->^\mfagitato ef d d ef8.-> ef16 c8 c |
   % bar 49
   r1 |
   % bar 50
@@ -857,30 +857,52 @@
     { r16 c,16[( e\! g]) }
   } |
   % bar 45-48
-  \repeat percent 4 {
-    r16 af,16[( c ef])
-    \repeat unfold 3 { r16 af,16[( c ef]) }
-  } |
+  <<
+    {
+      \repeat percent 4 {
+        r16 af,16[( c ef])
+        \repeat unfold 3 { r16 af,16[( c ef]) }
+      }
+    }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s8\f s8\> s2 s8 s8\! | s1^\ppmaagitato | s1 | s1
+    }
+  >> |
   % bar 49-51
-  \repeat percent 3 {
-    r16 e16[( gs b])
-    r16 e,16[( gs b])
-    r16 e,16[( gs b])
-    r16 e,16[( gs b])
-  } |
+  <<
+    {
+      \repeat percent 3 {
+        r16 e16[( gs b])
+        r16 e,16[( gs b])
+        r16 e,16[( gs b])
+        r16 e,16[( gs b])
+      } 
+    }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s8\f s8\> s2 s8 s8\! | s1^\ppmaagitato | s1
+    }
+  >> |
   % bar 52
   \time 2/4
-  r16 e,16[( gs b])   r16 e,16[( gs b]) |
+  r16\f e,16[(\< gs b])   r16 e,16[( gs b])\! |
   % bar 53
   \time 6/4
   <<
     \new Voice { \voiceOne { cs8-.[ b b-> as16] r16 } }
     \new Voice { \voiceTwo { ds,8[ e8] gs4-> } }
   >>
-  <g! b>4( <a! d!>) <g b>4( <a! d!>) |
-  % bar 54
-  \time 4/4
-  <g b>( <a d>) <g b>( <a! d!>) |
+  <<
+    {
+      <g! b>4->( <a! d!>) <g b>4( <a! d!>) |
+      % bar 54
+      \time 4/4
+      <g b>( <a d>) <g b>( <a! d!>) 
+    }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s4\f\> s2 s4\! | s4\mp s2 s4-\fsubito
+    }
+  >>
+  |
   % bar 55
   <<
     \new Voice { \voiceOne { d8[ c c->( b]) f'[ d] c->[( b16]) r16 } }
@@ -1140,7 +1162,7 @@
     } }
   >>
   \clef "G"
-  e''4--( f) e( f) |
+  e''4->( f) e( f) |
   % bar 54
   \time 4/4
   e4( f) e( f) |
