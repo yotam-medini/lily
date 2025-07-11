@@ -1099,30 +1099,78 @@
   \clef "G"
   \repeat percent 3 { ds4-- d d d | }
   % bar 52
+  \time 2/4
+  ds4-- ds |
   % bar 53
+  \clef bass
+  \time 6/4
+  <<
+    \new Voice { \voiceOne { cs8--[ b b--( as16)] r16 } }
+    \new Voice { \voiceTwo { 
+      <\parenthesize ds,, ds'>8-.[ <\parenthesize e e'>-.] 
+      <\parenthesize gs gs'>4->
+    } }
+  >>
+  \clef "G"
+  e''4--( f) e( f) |
   % bar 54
+  \time 4/4
+  e4( f) e( f) |
   % bar 55
+  \clef bass
+  <<
+    \new Voice { \voiceOne { d8-.[ c-.  c->( b]) f'-.[ d-.] c[ b16] r16 } }
+    \new Voice { \voiceTwo { e,8-. f-. a!4-> e8-. f-. a!4-> } }
+  >> |
   % bar 56
+  cs4( d_) cs( d) |
   % bar 57
-  % bar 58
-  % bar 59
-  % bar 60
-  % bar 61
-  % bar 62
-  % bar 63
+  <<
+    \new Voice { \voiceOne { b8-.[ a-.  a->( gs]) d'-.[ b-.] a[ g16] r16 } }
+    \new Voice { \voiceTwo { cs,8-. d-. fs4-> cs8-. d-. fs4-> } }
+  >> |
+  % bar 58-62
+  \clef "G"
+  \repeat unfold 5 { es'4-- es es es | }
+  % bar 6
+  es4-- es es es |
   % bar 64
+  \clef bass
+  \time 2/4
+  <<
+    \new Voice { \voiceOne { ds8--[ cs cs--( bs16)] r16 } }
+    \new Voice { \voiceTwo { 
+      <\parenthesize es,, es'>8-.[ <\parenthesize f f'>-.] 
+      <\parenthesize as as'>4->
+    } }
+  >> |
   % bar 65
+  \clef "G"
+  \time 4/4
+  a'4-> a a a |
   % bar 66
+  \clef bass
+  a4-> a a a |
   % bar 67
+  \time 6/4
+  a4-> a a a a a |
   % bar 68
-  % bar 69
-  % bar 70
-  % bar 71
-  % bar 72
+  \time 4/4
+  a4-> a a a |
+  % bar 69-72
+  \repeat unfold 4 { a4-> a a a | }
   % bar 73
+  <a bf d>2.-> <bf! e>4-> |
   % bar 74
+  <d f>2-> <e f!>->
   % bar 75
+  <d,, d'>16-> r16 r8 r4  r1*3\fermata |
   % bar 76
+  \time 13/4
+  R4*13\fermata
+    % _\markup { \override #'(padding . 2) \italic "attaca" }
+    _\markup { \hspace #30 \italic "attaca" }
+    \bar"||" |
   % bar 77
   % bar 78
   % bar 79
