@@ -73,12 +73,22 @@
   % bar 82
   R1 |
   % bar 83
-  r2 r8 c4 b8 |
+  r2 r8 c4^\pespress b8 |
   % bar 84
-  e,2-- r8 c'4--\p b8-- |
+  e,2--\> r8 c'4--\p b8-- |
   % bar 85
-  e2-- r8 e4 e8 |
-  e1\fermata \bar "|."
+  <<
+    {
+      % e2-\tweak #'Y-offset #10.0 ^\markup { \bold "molto rall." }
+      e2
+      r8 e4 e8 |
+      % bar 86
+      e1\fermata \bar "|."
+    }
+    \new Dynamics \with { alignAboveContext = "soloSopStaff" } {
+       s32\>^\moltorall s32 s16 s8 s2. | s2^\lunga s8 s16 s32 s32\ppp
+    }
+  >>
 }
 
 "soloBaritone7" =  \relative c {
@@ -740,7 +750,7 @@
   \"dummy"
   \dynamicDown
   % bar 1
-  <d, ef g a>2.--_\pepress |
+  <d, ef g a>2.--_\pespress |
   % bar 2-6
   \repeat unfold 5 { <d ef g a>2.-- }
   % bar 7-8
@@ -1093,7 +1103,7 @@
   \bar "||"
   % bar 21
   <<
-    \new Voice { \voiceOne { cs8^\pepress[( d] fs4 gs--) } }
+    \new Voice { \voiceOne { cs8^\pespress[( d] fs4 gs--) } }
     \new Voice { \voiceTwo { cs,2.-- } }
   >> |
   % bar 22
