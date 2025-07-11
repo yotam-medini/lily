@@ -1059,27 +1059,45 @@
     \new Voice { \voiceTwo { e,!2.-- } }
   >> |
   % bar 30
+  <<
+    \new Voice { \voiceOne { e8[( g]) b4--( <b c>)  } }
+    \new Voice { \voiceTwo { e,2.-- } }
+  >> |
   % bar 31
+  <<
+    \new Voice { \voiceOne { e8[( g]) b( c) as( c!)  } }
+    \new Voice { \voiceTwo { e,2.-- } }
+  >> |
   % bar 32
+  <<
+    \new Voice { \voiceOne { e8[( g]) b4--( c--)  } }
+    \new Voice { \voiceTwo { <e,, e'>2.-- } }
+  >> |
   % bar 33
+  <<
+    \new Voice { \voiceOne { e'8[( g]) b( c) as( c!)  } }
+    \new Voice { \voiceTwo { <e,, e'>2.-- } }
+  >> |
   % bar 34
+  <e e'>2. |
   % bar 35
+  <d d'>2-- <cs cs'>4 |
   % bar 36
+  <c! c'!>2.-- |
   % bar 37
+  <b b'>2.-- |
   % bar 38
-  % bar 39
-  % bar 40
-  % bar 41
-  % bar 42
-  % bar 43
-  % bar 44
-  % bar 45
-  % bar 46
-  % bar 47
-  % bar 48
-  % bar 49
-  % bar 50
-  % bar 51
+  \repeat tremolo 16 { as!64.->( as'!64.) 
+    \tweak X-offset #-2 ^\fermata
+  } \bar "||"
+  % bar 39-44
+  \time 4/4
+  \repeat percent 6 { b'4-- b-- b-- b-- | }
+   % bar 45-48
+  \repeat percent 4 { b4-- b-- b-- b-- | }
+  % bar 49-51
+  \clef "G"
+  \repeat percent 3 { ds4-- d d d | }
   % bar 52
   % bar 53
   % bar 54
