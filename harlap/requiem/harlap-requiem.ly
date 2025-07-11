@@ -24,6 +24,7 @@ mpespress = \markup { \dynamic "mp" \italic "espress." }
 moltespr = \markup { \italic "molto espressivo" } % obsolete
 moltoespr = \markup { \italic "molto espressivo" }
 moltorall = \markup { \bold "molto rall." }
+moltorit = \markup { \bold "molto rit." }
 mfagitato = \markup { \dynamic "mf" \italic "agitato" }
 mpmoltoagitato = \markup { \dynamic "mp" \italic "molto agitato" }
 mpsubito = \markup { \dynamic "mp" \italic "subito" }

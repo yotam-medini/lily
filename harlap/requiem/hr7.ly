@@ -166,7 +166,7 @@
   % bar 23
   a4-> gs4. d'8 |
   % bar 24
-  a4 gs4. gs8 |
+  a4 gs4. \breathe gs8 |
   % bar 25
   af8\< g! g4 g8 af |
   % bar 26
@@ -185,7 +185,7 @@
   % bar 36
   g-> e2-> |
   % bar 37
-  fs4. g8 a\! b |
+  fs4.^\moltorit g8 a\! b |
   % bar 38
   d4->\ff cs2->\fermata \bar "||" |
   % bar 39
@@ -314,9 +314,9 @@
   % bar 28
   f8( g!) af4 c |
   % bar 29
-  b2. |
+  b2.\> |
   % bar 30
-  r4. e,4 fs8 |
+  r4.\! e,4^\mfespress fs8 |
   % bar 31
   g( fs) fs as e fs |
   % bar 32
@@ -465,23 +465,23 @@
   % bar 24
   cs d2 |
   % bar 25
-  af8 g g4 g8 af |
+  af8\< g g4 g8 af |
   % bar 26
-  ef'4-> df2 |
+  ef'4->\f df2 |
   % bar 27
   df4. c8 c4 |
   % bar 28
   c4. f,8 g[ af] |
   % bar 29
-  g2. |
+  g2.\> |
   % bar 30-32
-  R2.* 3 |
+  R2.*3\! |
   % bar 33
   r4 e4.-> fs8-> |
   % bar 34
-  <e g>2. |
+  <e g>2.^\mfespress |
   % bar 35
-  r4 e-> fs-> |
+  r4 e->\f fs->\< |
   % bar 36
   g e4. ~ e16 r |
   % bar 37
@@ -607,19 +607,19 @@
   % bar 28
   g2. |
   % bar 29
-  r2 e8 fs |
+  r2 e8^\mfespress fs |
   % bar 30
   g4. fs8 fs e |
   % bar 31
   c4. e8 g fs |
   % bar 32
-  b4 as2 |
+  b4 as2~ |
   % bar 33
-  as4 b as |
+  as4\< b as |
   % bar 34
-  b4. e,8 e4 |
+  b4.->\! e,8 e4 |
   % bar 35
-  d2 cs4 |
+  d2\< cs4 |
   % bar 36
   c2. |
   % bar 37
@@ -802,16 +802,16 @@
   % bar 22-24
   \repeat unfold 3 { <cs d fs gs>2.-- } |
   % bar 25
-  <g'! af>2. |
+  <g'! af>2.\< |
   % bar 26
   <g af>4. f8( g[ af]) |
   % bar 27
-  <g af>2. ~ |
+  <g af>2. ~\< |
   % bar 28
   <g af>4. f8( g[ af]) |
   % bar 29
   <<
-    \new Voice { \voiceOne { g8[( fs]) fs[( g]) e4 } }
+    { g8\!_\subitomp[( fs]) fs[( g]) e4 }
     \new Voice { \voiceTwo { e2. } }
   >> |
   % bar 30
@@ -834,15 +834,21 @@
      } }
   >>  |
   % bar 34
-  <g b e>2.-> | 
+  <g b e>2.->\< | 
   % bar 35
   <g b e>2.-> | 
   % bar 36
   <g b e>2.-> | 
   % bar 37
-  <g b e fs>2.-> | 
+  \after 2 \! <g b e fs>2.-> | 
   % bar 38
-  <cs f gs>2.->\fermata \bar "||" 
+  <<
+    { <cs f gs>2.->\fermata }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s4\sfp \< s4 s8\! s8
+    }
+  >>
+    \bar "||" 
   % bar 39-44
   \repeat percent 6 {
     r16 c!16[ e g]
