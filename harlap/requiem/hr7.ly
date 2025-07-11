@@ -272,15 +272,16 @@
   \break_orig
   % bar 77
   \time 4/4
-  e,8 e e e e e4. |
+  \tempo "Larghetto" 4=50
+  e,8^\psempre e e e e e4. |
   % bar 78
-  e8[ e e e] g16[ e e8~] e4 |
+  e8[ e\< e e\!] g16[\> e e8~] e4 |
   % bar 79
-  r8 e f[ a] c8. b16 b4~ |
+  r8\! e\< f[ a] c8.\mf b16 b4~ |
   % bar 80
-  b8 a d8. c16 c8->( b4.) |
+  b8 a\< d8. c16\f\< c8->( b4.) |
   % bar 81
-  b8[ b b b] b8 b4. |
+  b8[\!<>^\fsempre b b b] b8 b4. |
   \break_orig
   % bar 82
   b8[ b b b] d16[ b b8] ~ b4 |
@@ -432,15 +433,15 @@
   R4*13\fermata |
   % bar 77
   \time 4/4
-  c4 b a2 |
+  c4^\psempre b a2 |
   % bar 78
   c4( b) a2 |
   % bar 79
-  r8 e' f[ a] a8. a16 a4 ~ |
+  r8 e'\< f[ a] a8.\mf a16 a4 ~ |
   % bar 80
-  a8 a a8. a16 a8 a4. |
+  a8\< a a8.\f\< a16 a8 a4. |
   % bar 81
-  g4 fs e2 |
+  g4\!<>^\fsempre fs e2 |
   % bar 82
   g4( fs) e2 |
   % bar 83
@@ -566,15 +567,15 @@
   R4*13\fermata 
   % bar 77
   \time 4/4
-  a,4 g f2 |
+  a,4^\psempre g f2 |
   % bar 78
   a4( g) f2 |
   % bar 79
-  r8 e f[ a] c8. b16 b4 ~ |
+  r8 e\< f[ a] c8.^\mf b16 b4 ~ |
   % bar 80
-  b8 a d8. c16 c8->( b4.) |
+  b8\< a d8.\f\< c16 c8->( b4.) |
   % bar 81
-  e4 d c2 |
+  e4\!<>^\fsempre d c2 |
   % bar 82
   e4( d) c2 |
   % bar 83
@@ -715,13 +716,13 @@
   R4*13\fermata 
   % bar 77
   \time 4/4
-  a4 g f2
+  a4^\psempre g f2
   % bar 78
   a4( g) f2
   % bar 79-80
   R1 | R1 |
   % bar 81
-  e'4 d c2
+  e'4^\fsempre d c2
   % bar 82
   e4( d) c2
   % bar 83
@@ -1252,7 +1253,7 @@
     \bar"||" |
   % bar 77
   <<
-    \new Voice { \voiceOne { a'''4( g f2) } }
+    \new Voice { \voiceOne { a'''4(^\psempre g f2) } }
     \new Voice { \voiceTwo { <a,, a'>4( <g g'> f2) } }
   >>
   % bar 78
@@ -1261,11 +1262,11 @@
     \new Voice { \voiceTwo { <a,, a'>4( <g g'> f2) } }
   >>
   % bar 79
-  <a e' a b>2 <a e' a b>2 |
+  <a e' a b>2 <a e' a b>2\< |
   % bar 80
-  <a e' a b>2 <a e' a b>2 |
+  <a e' a b>2 <a e' a b>2\f |
   % bar 81
-  <e' e'>4( <d d'> <c c'>2) |
+  <e' e'>4^\fsempre( <d d'> <c c'>2) |
   % bar 82
   <e e'>4( <d d'> <c c'>2) |
   % bar 83
