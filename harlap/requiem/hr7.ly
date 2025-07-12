@@ -274,7 +274,7 @@
   R1*7 |
   % bar 75
   \time 15/4
-  a,8.->^\fff^\moltespr bf16 d8 e8-. r4*13\fermata |
+  a,8.->^\fff^\moltespr bf16 d8-> e8-. r4*13\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata |
@@ -448,7 +448,7 @@
   r1 | r1 | r1 | r1 |
   % bar 75
   \time 15/4
-  <e f>8^\fff <e f> <d f> <d f> r4*13\fermata |
+  <e f>8->^\fff <e f> <d f>-> <d f>-. r4*13\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata |
@@ -589,7 +589,7 @@
   R1*7 |
   % bar 75
   \time 15/4
-  a,8.->\fff bf16 d8 e8 r4*13\fermata |
+  a,8.->\fff bf16 d8-> e8-. r4*13\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata 
@@ -745,7 +745,7 @@
   R1 | R1 |
   % bar 75
   \time 15/4
-  d8->^\fff[ d d-> d] r4*13\fermata |
+  d8->^\fff[ d d-> d-.] r4*13\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata 
@@ -1336,7 +1336,7 @@
     li -- be -- ra me
   % bar 75
   Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
-    et lux per -- pe -- tu -- a lu -- ce -- at e - is
+    et lux per -- pe -- tu -- a lu -- ce -- at e -- is
 }
 
 "lyricsSoloBar7" = \lyricmode {
