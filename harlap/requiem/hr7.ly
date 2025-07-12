@@ -1042,17 +1042,24 @@
       \new Voice { \voiceTwo { <e, g>4( <d fs> <c e>2) } }
     >> |
   }
-  % bar 83-84
-  \repeat unfold 2 {
-    <<
-      \new Voice { \voiceOne { b1 } }
-      \new Voice { \voiceTwo { g4( fs e2) } }
-    >> |
-  }
-  % bar 85
-  <b' e>2-- <b e>2-- |
-  % bar 86
-  <b e>1--\fermata \bar "|."
+  <<
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s2\mp s2\> | s1 | s1 | s2 s4 s4\ppp
+    }
+    {
+      % bar 83-84
+      \repeat unfold 2 {
+        <<
+          \new Voice { \voiceOne { b1 } }
+          \new Voice { \voiceTwo { g4( fs e2) } }
+        >> |
+      }
+      % bar 85
+      <b' e>2-- <b e>2-- |
+      % bar 86
+      <b e>1--\fermata \bar "|."
+   }
+  >>
 }
 
 "pianoLeft7" = \relative c {
