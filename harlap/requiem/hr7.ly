@@ -1371,7 +1371,7 @@
   % bar 54
   Quan -- tus tre -- mor est fu -- tu -- rus
   % bar 56
-  quan -- do iu -- dex est ven -- tu -- rus
+  quan -- do ju -- dex est ven -- tu -- rus
     Di -- es ir -- ae  Di -- es i -- lla 
   % bar 60
   cunc -- ta stric -- te dis -- cu -- ssu -- rus
@@ -1390,7 +1390,37 @@
 }
 
 "lyricsAlt7" = \lyricmode {
-  az
+  % bar 22
+  Li -- be -- ra me Li -- be -- ra me Li -- be -- ra me Li -- be -- ra me 
+  % bar 30 
+  quan -- do cae -- li mo -- ven -- di sunt et te -- rra
+    dum ve -- ne -- ris ju -- di -- ca -- a -- re 
+  % bar 32
+  Di -- es ir -- ae  Di -- es i -- lla 
+    Di -- es ir -- ae  Di -- es i -- lla 
+  % bar 46
+  Di -- es ir -- ae  Di -- es i -- lla 
+    Sol -- vet sae -- clum in fa -- vi -- lla
+  % bar 50
+  Te -- ste Da -- vid cum Si -- by -- lla
+    quan -- tus tre -- mor est fu -- tur -- us
+  % bar 56
+  quan -- do ju -- dex est ven -- tu -- rus
+  % bar 60
+  Di -- es i -- rae di -- es il -- la
+    cunc -- ta stric -- te dis -- cu -- ssu -- rus
+  % bar 66
+  Di -- es i -- rae di -- es il -- la  Di -- es i -- rae di -- es il -- la
+  % bar 69
+  Di -- es i -- rae di -- es il -- la 
+  % bar 75
+  di -- es il -- la 
+  % bar 77
+  Re -- qui -- em  do -- na
+    Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+    Re -- qui -- em 
+  % bar 82
+  do -- na  Re -- qui -- em  Re -- qui -- em  Re -- qui -- em
 }
 
 "lyricsTen7" = \lyricmode {
