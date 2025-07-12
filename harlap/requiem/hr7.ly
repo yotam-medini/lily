@@ -288,7 +288,7 @@
   % bar 79
   r8\! e\< f[ a] c8.\mf b16 b4~ |
   % bar 80
-  b8 a\< d8. c16\f\< c8->( b4.) |
+  b8 a\< d8. c16\f\< c8->\( b4.\) |
   % bar 81
   b8[\!<>^\fsempre b b b] b8 b4. |
   \break_orig
@@ -1350,7 +1350,43 @@
 
 
 "lyricsSop7" = \lyricmode {
-  az
+  % bar 21
+  Li -- be -- ra me 
+  % bar 22
+  Do -- mi -- ne de mor -- te ae -- ter -- na
+    in di -- e i -- lla tre -- men -- da
+    li -- be -- ra me 
+  % bar 35
+  ju -- di -- ca -- re sae -- cu -- lum per i -- gnem
+  % bar 40
+  Di -- es ir -- ae  Di -- es i -- lla 
+    Di -- es ir -- ae  Di -- es i -- lla 
+    Di -- es ir -- ae  Di -- es i -- lla 
+  % bar 46
+  Sol -- vet sae -- clum in fa -- vi -- lla
+  % bar 50
+  Di -- es ir -- ae  Di -- es i -- lla 
+  % bar 52
+  cum Si -- by -- la
+  % bar 54
+  Quan -- tus tre -- mor est fu -- tu -- rus
+  % bar 56
+  quan -- do iu -- dex est ven -- tu -- rus
+    Di -- es ir -- ae  Di -- es i -- lla 
+  % bar 60
+  cunc -- ta stric -- te dis -- cu -- ssu -- rus
+  % bar 67
+  Di -- es ir -- ae  Di -- es i -- lla 
+  % bar 75
+  Di -- es i -- lla 
+  % bar 77
+  Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
+  % bar 79
+  Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+    Re -- qui -- em ae -- ter -- nam
+  % bar 83
+  do -- na e -- is Do -- mi -- ne
+    Re -- qui -- em  Re -- qui -- em  Re -- qui -- em 
 }
 
 "lyricsAlt7" = \lyricmode {
