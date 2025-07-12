@@ -76,12 +76,11 @@
   r2 r8 c4^\pespress b8 |
   % bar 84
   e,2--\> r8 c'4--\p b8-- |
-  % bar 85
+  % bar 85-86
   <<
     {
-      % e2-\tweak #'Y-offset #10.0 ^\markup { \bold "molto rall." }
-      e2
-      r8 e4 e8 |
+      % bar 85
+      e2 r8 e4 e8 |
       % bar 86
       e1\fermata \bar "|."
     }
@@ -294,15 +293,27 @@
   b8[\!<>^\fsempre b b b] b8 b4. |
   \break_orig
   % bar 82
-  b8[ b b b] d16[ b b8] ~ b4 |
+  b8[ b b\< b] d16[\> b b8] ~ b4 |
   % bar 83
-  r8 e,4 e8 fs2 |
-  % bar 84
-  r8 e4 g8 fs2 |
-  % bar 85
-  e2-- fs2-- |
-  % bar 86
-  g1--\fermata \bar "|."
+  r8\! e,4 e8
+  <<
+    \new Dynamics \with { 
+      alignAboveContext = "solobar"
+      % direction = #UP
+    } {
+      s2\> | s1 | s1 | s2^\lunga s8 s16 s32 s32\ppp
+    }
+    {
+      fs2 |
+      % bar 84
+      r8 e4 g8 fs2 |
+      % bar 85
+      e2-- fs2-- |
+      % bar 86
+      g1--\fermata 
+    }
+  >>
+  \bar "|."
 }
 
 "alto7" = \relative c' {
@@ -454,14 +465,21 @@
   g4\!<>^\fsempre fs e2 |
   % bar 82
   g4( fs) e2 |
-  % bar 83
-  r8 e4 e8 fs2 |
-  % bar 84
-  r8 e4 e8 fs2 |
-  % bar 85
-  <b, e>2-- <b e>-- |
-  % bar 86
-  <b e>1--\fermata \bar "|."
+  <<
+    \new Dynamics \with { alignAboveContext = "soprano" } {
+       s8\mp s4 s8\> s2 | s1 | s1 | s2^\lunga s8 s16 s32 s32\ppp
+    }
+    {
+      % bar 83
+      r8 e4 e8 fs2 |
+      % bar 84
+      r8 e4 e8 fs2 |
+      % bar 85
+      <b, e>2-- <b e>-- |
+      % bar 86
+      <b e>1--\fermata \bar "|."
+    }
+  >>
 }
 
 "tenor7" = \relative c {
@@ -588,14 +606,21 @@
   e4\!<>^\fsempre d c2 |
   % bar 82
   e4( d) c2 |
-  % bar 83
-  g4 fs e2 |
-  % bar 84
-  g4 fs e2 |
-  % bar 85
-  e2-- fs2-- |
-  % bar 86
-  g1--\fermata \bar "|."
+  <<
+    \new Dynamics \with { alignAboveContext = "alto" } {
+       s8\mp s4 s8\> s2 | s1 | s1 | s2^\lunga s8 s16 s32 s32\ppp
+    }
+    {
+      % bar 83
+      g4 fs e2 |
+      % bar 84
+      g4 fs e2 |
+      % bar 85
+      e2-- fs2-- |
+      % bar 86
+      g1--\fermata \bar "|."
+    }
+  >>
 }
 
 "bass7" = \relative c {
@@ -701,7 +726,7 @@
   \time 4/4
   r1 |
   % bar 66
-  f,8->^\mfagitato f e e f8.-> f16 d8 d |
+  f8->^\mfagitato f e e f8.-> f16 d8 d |
   % bar 67
   \time 6/4
   R1. |
@@ -735,14 +760,21 @@
   e'4^\fsempre d c2
   % bar 82
   e4( d) c2
-  % bar 83
-  e4 d c2
-  % bar 84
-  e4 d c2
-  % bar 85
-  <\parenthesize e, b'>2 <\parenthesize e b'>2 |
-  % bar 86
-  <\parenthesize e b'>1\fermata \bar "|."
+  <<
+    \new Dynamics \with { alignAboveContext = "tenor" } {
+       s8\mp s4 s8\> s2 | s1 | s1 | s2^\lunga s8 s16 s32 s32\ppp
+    }
+    {
+      % bar 83
+      e4 d c2
+      % bar 84
+      e4 d c2
+      % bar 85
+      <\parenthesize e, b'>2 <\parenthesize e b'>2 |
+      % bar 86
+      <\parenthesize e b'>1\fermata \bar "|."
+    }
+  >>
 }
 
 "pianoRight7" = \relative c'' {
@@ -1357,6 +1389,7 @@
       \new Staff = "soprano" \with {
 	instrumentName = #"Soprano"
         shortInstrumentName = "S"
+        % \consists "Dynamic_engraver"
       } {
         \new Voice = "soprano" {
           \"soprano7"
@@ -1373,6 +1406,7 @@
       \new Staff = "alto" \with {
         instrumentName = #"Alto"
         shortInstrumentName = "A"
+        % \consists "Dynamic_engraver"
       } {
         \new Voice = "alto" {
           \"alto7"
