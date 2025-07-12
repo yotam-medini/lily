@@ -59,13 +59,13 @@
   R1*7
   \break_orig
   % bar 75
-  \time 14/4
-  r4^\atempo r8 e8(~ e4
+  \time 15/4
+  r4^\atempo r8 e8\(~ e4
     \tempo "poco sostenuto" 2=50
-    e e e e\fermata e e e e g e e\fermata) |
+    e e e e e\fermata e e e e g e e\fermata\) |
   % bar 76
   \time 13/4
-  r4 e,4(^\mp\< e e c' b\! e,\fermata) r4 e'4( d d c^\moltorit b\fermata) |
+  r4 e,4\(^\mp\< e e c' b\! e,\fermata\) r4 e'4\( d d c^\moltorit b\fermata\) |
   % bar 77-81
   \time 4/4
   R1*5 |
@@ -145,8 +145,8 @@
   \time 4/4
   R1*7
   % bar 75
-  \time 14/4
-  R4*14 |
+  \time 15/4
+  R4*15 |
   % bar 76
   \time 13/4
   R4*13 |
@@ -273,8 +273,8 @@
   \time 4/4
   R1*7 |
   % bar 75
-  \time 14/4
-  a,8.->^\fff^\moltespr bf16 d8 e8-. r1*3\fermata |
+  \time 15/4
+  a,8.->^\fff^\moltespr bf16 d8 e8-. r4*13\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata |
@@ -447,8 +447,8 @@
   % bar 71-74
   r1 | r1 | r1 | r1 |
   % bar 75
-  \time 14/4
-  <e f>8^\fff <e f> <d f> <d f> r1*3\fermata |
+  \time 15/4
+  <e f>8^\fff <e f> <d f> <d f> r4*13\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata |
@@ -588,8 +588,8 @@
   \time 4/4
   R1*7 |
   % bar 75
-  \time 14/4
-  a,8.->\fff bf16 d8 e8 r1*3\fermata |
+  \time 15/4
+  a,8.->\fff bf16 d8 e8 r4*13\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata 
@@ -744,8 +744,8 @@
   % bar 73-74
   R1 | R1 |
   % bar 75
-  \time 14/4
-  d8->^\fff[ d d-> d] r1*3\fermata |
+  \time 15/4
+  d8->^\fff[ d d-> d] r4*13\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata 
@@ -1018,8 +1018,8 @@
     }
   >> |
   % bar 75
-  \time 14/4
-  <f d' e f>16-> r16 r8 r4  r1*3\fermata |
+  \time 15/4
+  <f d' e f>16-> r16 r8 r4  r4*13\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata |
@@ -1293,7 +1293,8 @@
   % bar 74
   <d f>2-> <e f!>->
   % bar 75
-  <d,,, d'>16->^\sfff r16 r8 r4  r1*3\fermata |
+  \time 15/4
+  <d,,, d'>16->^\sfff r16 r8 r4  r4*13\fermata |
   % bar 76
   \time 13/4
   R4*13\fermata
@@ -1329,7 +1330,13 @@
 }
 
 "lyricsSoloSop7" = \lyricmode {
-  az
+  Li -- be -- ra me Do -- mi -- ne de mor -- te ae -- ter -- na
+  % bar 6
+  in di -- e i -- lla tre -- men -- da
+    li -- be -- ra me
+  % bar 75
+  Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
+    et lux per -- pe -- tu -- a lu -- ce -- at e - is
 }
 
 "lyricsSoloBar7" = \lyricmode {
