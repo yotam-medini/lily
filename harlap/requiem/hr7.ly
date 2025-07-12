@@ -601,7 +601,7 @@
   % bar 79
   r8 e\< f[ a] c8.^\mf b16 b4 ~ |
   % bar 80
-  b8\< a d8.\f\< c16 c8->( b4.) |
+  b8\< a d8.\f\< c16 c8->\( b4.\) |
   % bar 81
   e4\!<>^\fsempre d c2 |
   % bar 82
@@ -1343,7 +1343,7 @@
   % bar 11 
   quan -- do cae -- li mo -- ven -- di sunt et te -- rra
   % bar 15
-  dum ve -- ne -- ris iu -- di -- ca -- re sae -- cu -- lum per i -- gnem
+  dum ve -- ne -- ris iu -- di -- ca -- re sae -- cu -- lum per ig -- nem
   % bar 84
   Re -- qui -- em  Re -- qui -- em 
 }
@@ -1357,22 +1357,22 @@
     in di -- e i -- lla tre -- men -- da
     li -- be -- ra me 
   % bar 35
-  ju -- di -- ca -- re sae -- cu -- lum per i -- gnem
+  ju -- di -- ca -- re sae -- cu -- lum per ig -- nem
   % bar 40
-  Di -- es ir -- ae  Di -- es i -- lla 
-    Di -- es ir -- ae  Di -- es i -- lla 
-    Di -- es ir -- ae  Di -- es i -- lla 
+  Di -- es ir -- ae  di -- es i -- lla 
+    Di -- es ir -- ae  di -- es i -- lla 
+    Di -- es ir -- ae  di -- es i -- lla 
   % bar 46
   Sol -- vet sae -- clum in fa -- vi -- lla
   % bar 50
-  Di -- es ir -- ae  Di -- es i -- lla 
+  Di -- es ir -- ae  di -- es i -- lla 
   % bar 52
   cum Si -- by -- la
   % bar 54
   Quan -- tus tre -- mor est fu -- tu -- rus
   % bar 56
   quan -- do ju -- dex est ven -- tu -- rus
-    Di -- es ir -- ae  Di -- es i -- lla 
+    Di -- es ir -- ae  di -- es i -- lla 
   % bar 60
   cunc -- ta stric -- te dis -- cu -- ssu -- rus
   % bar 67
@@ -1396,10 +1396,10 @@
   quan -- do cae -- li mo -- ven -- di sunt et te -- rra
     dum ve -- ne -- ris ju -- di -- ca -- a -- re 
   % bar 32
-  Di -- es ir -- ae  Di -- es i -- lla 
-    Di -- es ir -- ae  Di -- es i -- lla 
+  Di -- es ir -- ae  di -- es i -- lla 
+    Di -- es ir -- ae  di -- es i -- lla 
   % bar 46
-  Di -- es ir -- ae  Di -- es i -- lla 
+  Di -- es ir -- ae  di -- es i -- lla 
     Sol -- vet sae -- clum in fa -- vi -- lla
   % bar 50
   Te -- ste Da -- vid cum Si -- by -- lla
@@ -1424,8 +1424,46 @@
 }
 
 "lyricsTen7" = \lyricmode {
-  az
-}
+  % bar 21
+  Li -- be -- ra me 
+  % bar 22
+  Do -- mi -- ne de mor -- te 
+    di -- e i -- lla 
+    tre -- men -- da 
+    li -- be -- ra me  li -- be -- ra me 
+  % bar 33
+  ve -- ne -- ris ju -- di -- ca -- re sae -- cu -- lum per ig -- nem
+  % bar 40
+  Di -- es ir -- ae  di -- es i -- lla 
+    Di -- es ir -- ae  di -- es i -- lla 
+    Di -- es ir -- ae  di -- es i -- lla 
+  % bar 46
+  Sol -- vet  Sol -- vet 
+    sae -- clum in fa -- vi -- lla
+    in fa -- vi -- lla
+  % bar 50
+  Di -- es ir -- ae  di -- es i -- lla 
+    Te -- ste Da -- vid cum Si -- by -- lla
+    cum Si -- by -- lla
+  % bar 55
+  Quan -- tus tre -- mor est fu -- tur -- us
+    Quan -- do ju -- dex est ven -- tu -- rus
+    Di -- es ir -- ae  di -- es i -- lla
+  % bar 61
+  Di -- es ir -- ae  di -- es i -- lla
+    Cunc -- ta stric -- te dis -- cu -- ssu -- rus
+  % bar 67
+  Di -- es ir -- ae  Di -- es i -- lla
+  % bar 75
+  Di -- es i -- lla
+  % bar 77
+  Re -- qui -- em  do -- na
+    Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
+    Re -- qui -- em 
+  % bar 82
+  do -- na  Re -- qui -- em  Re -- qui -- em  Re -- qui -- em
+
+} 
 
 "lyricsBas7" = \lyricmode {
   az
