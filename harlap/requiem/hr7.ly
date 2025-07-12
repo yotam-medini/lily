@@ -14,7 +14,7 @@
   d4.^\mpespress c8 c f |
   % bar 4
   d4. c8 c g |
-  % bar 5 
+  % bar 5
   bf4-> a4. ef8 |
   \break_orig
   % bar 6
@@ -297,7 +297,7 @@
   % bar 83
   r8\! e,4 e8
   <<
-    \new Dynamics \with { 
+    \new Dynamics \with {
       alignAboveContext = "solobar"
       % direction = #UP
     } {
@@ -310,7 +310,7 @@
       % bar 85
       e2-- fs2-- |
       % bar 86
-      g1--\fermata 
+      g1--\fermata
     }
   >>
   \bar "|."
@@ -393,12 +393,12 @@
   % bar 54
   \time 4/4
   <<
-    { 
+    {
       g8^\mpmoltoagitato g a8.^> a16 g8 g a a
     }
     \new Voice { \voiceTwo {
-      \stemDown 
-      e8 e f8. f16 e8 e f f 
+      \stemDown
+      e8 e f8. f16 e8 e f f
       \stemNeutral
     } }
   >> |
@@ -406,11 +406,11 @@
   r1
   % bar 56
   <<
-    { 
+    {
       e8^\mpmoltoagitato e fs8.-> fs16 e8 e fs fs
     }
     \new Voice { \voiceTwo {
-      \stemDown 
+      \stemDown
       cs8 cs d8. d16 cs8 cs d d
       \stemNeutral
     } }
@@ -519,10 +519,10 @@
   % bar 37
   fs4. g8 a[ b] |
   % bar 38
-  d4->\ff e!2\fermata  \bar "||" 
+  d4->\ff e!2\fermata  \bar "||"
   % bar 39
   \time 4/4
-  r1 | 
+  r1 |
   % bar 40
   g,8->^\mfagitato g fs fs g8.-> g16 e8 e |
   % bar 41
@@ -592,7 +592,7 @@
   a,8.->\fff bf16 d8-> e8-. r4*13\fermata |
   % bar 76
   \time 13/4
-  R4*13\fermata 
+  R4*13\fermata
   % bar 77
   \time 4/4
   a,4^\psempre g f2 |
@@ -648,21 +648,21 @@
   % bar 29
   r2 e8^\mfespress fs |
   % bar 30
-  g4. fs8 fs e |
+  g4. fs8 fs( e) |
   % bar 31
   c4. e8 g fs |
   % bar 32
   b4 as2~ |
   % bar 33
-  as4\< b as |
+  as4\< b( as) |
   % bar 34
   b4.->\! e,8 e4 |
   % bar 35
-  d2\< cs4 |
+  d2->\< cs4-> |
   % bar 36
-  c2. |
+  c!2.-> |
   % bar 37
-  b |
+  b2.-> |
   % bar 38
   as2.->\ff\fermata \bar "||"
   % bar 39
@@ -748,7 +748,7 @@
   d8->^\fff[ d d-> d-.] r4*13\fermata |
   % bar 76
   \time 13/4
-  R4*13\fermata 
+  R4*13\fermata
   % bar 77
   \time 4/4
   a4^\psempre g f2
@@ -880,13 +880,13 @@
      } }
   >>  |
   % bar 34
-  <g b e>2.->\< | 
+  <g b e>2.->\< |
   % bar 35
-  <g b e>2.-> | 
+  <g b e>2.-> |
   % bar 36
-  <g b e>2.-> | 
+  <g b e>2.-> |
   % bar 37
-  \after 2 \! <g b e fs>2.-> | 
+  \after 2 \! <g b e fs>2.-> |
   % bar 38
   <<
     { <cs f gs>2.->\fermata }
@@ -894,7 +894,7 @@
       s4\sfp \< s4 s8\! s8
     }
   >>
-    \bar "||" 
+    \bar "||"
   % bar 39-44
   \repeat percent 6 {
     { r16\f c!16[ e\> g] }
@@ -921,7 +921,7 @@
         r16 e,16[( gs b])
         r16 e,16[( gs b])
         r16 e,16[( gs b])
-      } 
+      }
     }
     \new Dynamics \with { alignAboveContext = "lower" } {
       s8\f s8\> s2 s8 s8\! | s1^\ppmaagitato | s1
@@ -941,7 +941,7 @@
       <g! b>4->( <a! d!>) <g b>4( <a! d!>) |
       % bar 54
       \time 4/4
-      <g b>( <a d>) <g b>( <a! d!>) 
+      <g b>( <a d>) <g b>( <a! d!>)
     }
     \new Dynamics \with { alignAboveContext = "lower" } {
       s4\f\> s2 s4\! | s4\mp s2 s4-\fsubito
@@ -970,12 +970,12 @@
       }
     }
     \new Dynamics \with { alignAboveContext = "lower" } {
-      s4\f\> s2 s4\! | s1^\ppmaagitato | s1 | s1 | s1 
+      s4\f\> s2 s4\! | s1^\ppmaagitato | s1 | s1 | s1
     }
   >> |
   % bar 63
   <<
-    \repeat unfold 4 { r16 fs,16[( as cs]) } 
+    \repeat unfold 4 { r16 fs,16[( as cs]) }
     \new Dynamics \with { alignAboveContext = "lower" } {
       s32\< s32 s16 s8 s2 s8 s8\!
     }
@@ -1011,7 +1011,7 @@
       % bar 73
       <a f' a>2.-> <bf e! f bf>4-> |
       % bar 74
-      <d f d'>2-> <e d'! e>2-> | 
+      <d f d'>2-> <e d'! e>2-> |
     }
     \new Dynamics \with { alignAboveContext = "lower" } {
       s1\f\< | s2. s8\! s8
@@ -1136,7 +1136,7 @@
   % bar 19
   <c c'>2.--\f |
   % bar 20
-  \repeat tremolo 16 { b!64.->( b'!64.) 
+  \repeat tremolo 16 { b!64.->( b'!64.)
     \tweak X-offset #-2 ^\fermata
   }
   \bar "||"
@@ -1214,7 +1214,7 @@
   % bar 37
   <b b'>2.-- |
   % bar 38
-  \repeat tremolo 16 { as!64.->( as'!64.) 
+  \repeat tremolo 16 { as!64.->( as'!64.)
     \tweak X-offset #-2 ^\fermata
   } \bar "||"
   % bar 39-44
@@ -1233,8 +1233,8 @@
   \time 6/4
   <<
     \new Voice { \voiceOne { cs8--[ b b--( as16)] r16 } }
-    \new Voice { \voiceTwo { 
-      <\parenthesize ds,, ds'>8-.[ <\parenthesize e e'>-.] 
+    \new Voice { \voiceTwo {
+      <\parenthesize ds,, ds'>8-.[ <\parenthesize e e'>-.]
       <\parenthesize gs gs'>4->
     } }
   >>
@@ -1253,7 +1253,7 @@
   cs4^\mp( d_) cs( d) |
   % bar 57
   <<
-    \new Voice { \voiceOne { 
+    \new Voice { \voiceOne {
       b8-.[^\fsubito a-.  a->( gs]) d'-.[ b-.] a[ g16] r16
     } }
     \new Voice { \voiceTwo { cs,8-. d-. fs4-> cs8-. d-. fs4-> } }
@@ -1268,8 +1268,8 @@
   \time 2/4
   <<
     \new Voice { \voiceOne { ds8--[ cs cs--( bs16)] r16 } }
-    \new Voice { \voiceTwo { 
-      <\parenthesize es,, es'>8-.[ <\parenthesize f f'>-.] 
+    \new Voice { \voiceTwo {
+      <\parenthesize es,, es'>8-.[ <\parenthesize f f'>-.]
       <\parenthesize as as'>4->
     } }
   >> |
@@ -1340,45 +1340,45 @@
 }
 
 "lyricsSoloBar7" = \lyricmode {
-  % bar 11 
+  % bar 11
   quan -- do cae -- li mo -- ven -- di sunt et te -- rra
   % bar 15
   dum ve -- ne -- ris iu -- di -- ca -- re sae -- cu -- lum per ig -- nem
   % bar 84
-  Re -- qui -- em  Re -- qui -- em 
+  Re -- qui -- em  Re -- qui -- em
 }
 
 
 "lyricsSop7" = \lyricmode {
   % bar 21
-  Li -- be -- ra me 
+  Li -- be -- ra me
   % bar 22
   Do -- mi -- ne de mor -- te ae -- ter -- na
     in di -- e i -- lla tre -- men -- da
-    li -- be -- ra me 
+    li -- be -- ra me
   % bar 35
   ju -- di -- ca -- re sae -- cu -- lum per ig -- nem
   % bar 40
-  Di -- es ir -- ae  di -- es i -- lla 
-    Di -- es ir -- ae  di -- es i -- lla 
-    Di -- es ir -- ae  di -- es i -- lla 
+  Di -- es i -- rae  di -- es i -- lla
+    Di -- es i -- rae  di -- es i -- lla
+    Di -- es i -- rae  di -- es i -- lla
   % bar 46
   Sol -- vet sae -- clum in fa -- vi -- lla
   % bar 50
-  Di -- es ir -- ae  di -- es i -- lla 
+  Di -- es i -- rae  di -- es i -- lla
   % bar 52
   cum Si -- by -- la
   % bar 54
   Quan -- tus tre -- mor est fu -- tu -- rus
   % bar 56
   quan -- do ju -- dex est ven -- tu -- rus
-    Di -- es ir -- ae  di -- es i -- lla 
+    Di -- es i -- rae  di -- es i -- lla
   % bar 60
   cunc -- ta stric -- te dis -- cu -- ssu -- rus
   % bar 67
-  Di -- es ir -- ae  Di -- es i -- lla 
+  Di -- es i -- rae  Di -- es i -- lla
   % bar 75
-  Di -- es i -- lla 
+  Di -- es i -- lla
   % bar 77
   Re -- qui -- em ae -- ter -- nam do -- na e -- is Do -- mi -- ne
   % bar 79
@@ -1386,20 +1386,20 @@
     Re -- qui -- em ae -- ter -- nam
   % bar 83
   do -- na e -- is Do -- mi -- ne
-    Re -- qui -- em  Re -- qui -- em  Re -- qui -- em 
+    Re -- qui -- em  Re -- qui -- em  Re -- qui -- em
 }
 
 "lyricsAlt7" = \lyricmode {
   % bar 22
-  Li -- be -- ra me Li -- be -- ra me Li -- be -- ra me Li -- be -- ra me 
-  % bar 30 
+  Li -- be -- ra me Li -- be -- ra me Li -- be -- ra me Li -- be -- ra me
+  % bar 30
   quan -- do cae -- li mo -- ven -- di sunt et te -- rra
-    dum ve -- ne -- ris ju -- di -- ca -- a -- re 
-  % bar 32
-  Di -- es ir -- ae  di -- es i -- lla 
-    Di -- es ir -- ae  di -- es i -- lla 
+    dum ve -- ne -- ris ju -- di -- ca -- a -- re
+  % bar 41
+  Di -- es i -- rae  di -- es i -- lla
+    Di -- es i -- rae  di -- es i -- lla
   % bar 46
-  Di -- es ir -- ae  di -- es i -- lla 
+  Di -- es i -- rae  di -- es i -- lla
     Sol -- vet sae -- clum in fa -- vi -- lla
   % bar 50
   Te -- ste Da -- vid cum Si -- by -- lla
@@ -1412,61 +1412,95 @@
   % bar 66
   Di -- es i -- rae di -- es il -- la  Di -- es i -- rae di -- es il -- la
   % bar 69
-  Di -- es i -- rae di -- es il -- la 
+  Di -- es i -- rae di -- es il -- la
   % bar 75
-  di -- es il -- la 
+  di -- es il -- la
   % bar 77
   Re -- qui -- em  do -- na
     Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
-    Re -- qui -- em 
+    Re -- qui -- em
   % bar 82
   do -- na  Re -- qui -- em  Re -- qui -- em  Re -- qui -- em
 }
 
 "lyricsTen7" = \lyricmode {
   % bar 21
-  Li -- be -- ra me 
+  Li -- be -- ra me
   % bar 22
-  Do -- mi -- ne de mor -- te 
-    di -- e i -- lla 
-    tre -- men -- da 
-    li -- be -- ra me  li -- be -- ra me 
+  Do -- mi -- ne de mor -- te
+    di -- e i -- lla
+    tre -- men -- da
+    li -- be -- ra me  li -- be -- ra me
   % bar 33
   ve -- ne -- ris ju -- di -- ca -- re sae -- cu -- lum per ig -- nem
   % bar 40
-  Di -- es ir -- ae  di -- es i -- lla 
-    Di -- es ir -- ae  di -- es i -- lla 
-    Di -- es ir -- ae  di -- es i -- lla 
+  Di -- es i -- rae  di -- es i -- lla
+    Di -- es i -- rae  di -- es i -- lla
+    Di -- es i -- rae  di -- es i -- lla
   % bar 46
-  Sol -- vet  Sol -- vet 
+  Sol -- vet  Sol -- vet
     sae -- clum in fa -- vi -- lla
     in fa -- vi -- lla
   % bar 50
-  Di -- es ir -- ae  di -- es i -- lla 
+  Di -- es i -- rae  di -- es i -- lla
     Te -- ste Da -- vid cum Si -- by -- lla
     cum Si -- by -- lla
   % bar 55
   Quan -- tus tre -- mor est fu -- tur -- us
     Quan -- do ju -- dex est ven -- tu -- rus
-    Di -- es ir -- ae  di -- es i -- lla
+    Di -- es i -- rae  di -- es i -- lla
   % bar 61
-  Di -- es ir -- ae  di -- es i -- lla
+  Di -- es i -- rae  di -- es i -- lla
     Cunc -- ta stric -- te dis -- cu -- ssu -- rus
   % bar 67
-  Di -- es ir -- ae  Di -- es i -- lla
+  Di -- es i -- rae  Di -- es i -- lla
   % bar 75
   Di -- es i -- lla
   % bar 77
   Re -- qui -- em  do -- na
     Et lux per -- pe -- tu -- a lu -- ce -- at e -- is
-    Re -- qui -- em 
+    Re -- qui -- em
   % bar 82
   do -- na  Re -- qui -- em  Re -- qui -- em  Re -- qui -- em
 
-} 
+}
 
 "lyricsBas7" = \lyricmode {
-  az
+  % bar 21
+  Li -- be -- ra
+  % bar 22
+  me   Li -- be -- ra me   Li -- be -- _ ra me   Li -- be -- ra me
+    quan -- do
+  % bar 30
+  cae -- li mo -- ven -- di sunt et te -- rra
+    dum ve -- ne -- ris ju -- di -- ca -- a -- re
+  % bar 41
+  Di -- es i -- rae  di -- es i -- lla
+    Di -- es
+    Di -- es i -- rae  di -- es i -- lla
+    Di -- es i -- lla
+  % bar 46
+  Di -- es i -- rae  di -- es i -- lla
+    Sol -- vet sae -- clum in fa -- vi -- lla
+  % bar 50
+  Te -- ste Da -- vid cum Si -- by -- lla
+  % bar 55
+  Quan -- tus tre -- mor est fu -- tur -- us
+    Quan -- do ju -- dex est ven -- tu -- rus
+  % bar 60
+  Di -- es i -- rae di -- es il -- la
+    cunc -- ta stric -- te dis -- cu -- ssu -- rus
+    dis -- cu -- ssu -- rus
+  % bar 66
+  Di -- es i -- rae di -- es il -- la  Di -- es i -- rae di -- es il -- la
+  % bar 69
+  Di -- es i -- rae di -- es il -- la  Di -- es i -- rae
+  % bar 75
+  di -- es il -- la
+  % bar 77
+  Re -- qui -- em   do -- na  Re -- qui -- em
+  % bar 82
+  do -- na  Re -- qui -- em  Re -- qui -- em  Re -- qui -- em
 }
 
 "score7" = \score {
@@ -1578,19 +1612,19 @@
       }
     >>
     \new PianoStaff \with {
-      instrumentName = "Pno." 
+      instrumentName = "Pno."
       shortInstrumentName = "Pno."
     } <<
-      \new Staff = "upper" { 
+      \new Staff = "upper" {
         \set countPercentRepeats = ##t
         \set repeatCountVisibility = #(every-nth-repeat-count-visible 4)
-        \clef treble \"pianoRight7" 
+        \clef treble \"pianoRight7"
         \"dummy"
       }
-      \new Staff = "lower" { 
+      \new Staff = "lower" {
         \set countPercentRepeats = ##t
         \set repeatCountVisibility = #(every-nth-repeat-count-visible 4)
-        \clef bass \"pianoLeft7" 
+        \clef bass \"pianoLeft7"
         \"dummy"
     }
     >>
