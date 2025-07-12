@@ -97,7 +97,7 @@
   % bar 11
   r2 f8^\mfespress g
   % bar 12
-  af4. g8 g f |
+  af4. g8 g( f) |
   \break_orig
   % bar 13
   df4. f8 g[ af] |
@@ -1340,8 +1340,14 @@
 }
 
 "lyricsSoloBar7" = \lyricmode {
-  az
+  % bar 11 
+  quan -- do cae -- li mo -- ven -- di sunt et te -- rra
+  % bar 15
+  dum ve -- ne -- ris iu -- di -- ca -- re sae -- cu -- lum per i -- gnem
+  % bar 84
+  Re -- qui -- em  Re -- qui -- em 
 }
+
 
 "lyricsSop7" = \lyricmode {
   az
