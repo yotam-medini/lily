@@ -53,10 +53,10 @@
   r1
   % bar 67
   \time 6/4
-  r1.
+  r1. |
   % bar 68-74
   \time 4/4
-  R1*7
+  R1*7 |
   \break_orig
   % bar 75
   \time 15/4
@@ -137,13 +137,13 @@
   \time 4/4
   r1
   % bar 66
-  r1
+  r1 |
   % bar 67
   \time 6/4
-  r1.
+  r1. |
   % bar 68-74
   \time 4/4
-  R1*7
+  R1*7 |
   % bar 75
   \time 15/4
   R4*15 |
@@ -274,7 +274,7 @@
   R1*7 |
   % bar 75
   \time 15/4
-  a,8.->^\fff^\moltespr bf16 d8-> e8-. r4*13\fermata |
+  { a,8.->^\fff^\moltespr bf16 d8-> e8-. r4*13\fermata }
   % bar 76
   \time 13/4
   R4*13\fermata |
@@ -295,24 +295,19 @@
   % bar 82
   b8[ b b\< b] d16[\> b b8] ~ b4 |
   % bar 83
-  r8\! e,4 e8
-  <<
-    \new Dynamics \with {
-      alignAboveContext = "solobar"
-      % direction = #UP
-    } {
-      s2\> | s1 | s1 | s2^\lunga s8 s16 s32 s32\ppp
+  r8\! e,4 e8 fs2^\mp\> |
+  % bar 84
+  r8 e4 g8 fs2 |
+  % bar 85
+  e2-- fs2-- |
+  % bar 86
+  \after 2. \ppp
+  g1--^\markup {
+    \column {
+      \italic "lunga"
+      \musicglyph "scripts.ufermata"
     }
-    {
-      fs2 |
-      % bar 84
-      r8 e4 g8 fs2 |
-      % bar 85
-      e2-- fs2-- |
-      % bar 86
-      g1--\fermata
-    }
-  >>
+  }
   \bar "|."
 }
 
@@ -465,21 +460,21 @@
   g4\!<>^\fsempre fs e2 |
   % bar 82
   g4( fs) e2 |
-  <<
-    \new Dynamics \with { alignAboveContext = "soprano" } {
-       s8\mp s4 s8\> s2 | s1 | s1 | s2^\lunga s8 s16 s32 s32\ppp
+  % bar 83
+  r8^\mp e4\> e8 fs2 |
+  % bar 84
+  r8 e4 e8 fs2 |
+  % bar 85
+  <b, e>2-- <b e>-- |
+  % bar 86
+  \after 2. \ppp
+  <b e>1--^\markup {
+    \column {
+      \italic "lunga"
+      \musicglyph "scripts.ufermata"
     }
-    {
-      % bar 83
-      r8 e4 e8 fs2 |
-      % bar 84
-      r8 e4 e8 fs2 |
-      % bar 85
-      <b, e>2-- <b e>-- |
-      % bar 86
-      <b e>1--\fermata \bar "|."
-    }
-  >>
+  }
+  \bar "|."
 }
 
 "tenor7" = \relative c {
@@ -606,21 +601,21 @@
   e4\!<>^\fsempre d c2 |
   % bar 82
   e4( d) c2 |
-  <<
-    \new Dynamics \with { alignAboveContext = "alto" } {
-       s8\mp s4 s8\> s2 | s1 | s1 | s2^\lunga s8 s16 s32 s32\ppp
+  % bar 83
+  g4\mp fs\> e2 |
+  % bar 84
+  g4 fs e2 |
+  % bar 85
+  e2-- fs2-- |
+  % bar 86
+  \after 2. \ppp
+  g1--^\markup {
+    \column {
+      \italic "lunga"
+      \musicglyph "scripts.ufermata"
     }
-    {
-      % bar 83
-      g4 fs e2 |
-      % bar 84
-      g4 fs e2 |
-      % bar 85
-      e2-- fs2-- |
-      % bar 86
-      g1--\fermata \bar "|."
-    }
-  >>
+  }
+  \bar "|."
 }
 
 "bass7" = \relative c {
@@ -760,21 +755,21 @@
   e'4^\fsempre d c2
   % bar 82
   e4( d) c2
-  <<
-    \new Dynamics \with { alignAboveContext = "tenor" } {
-       s8\mp s4 s8\> s2 | s1 | s1 | s2^\lunga s8 s16 s32 s32\ppp
+  % bar 83
+  e4\mp d\> c2
+  % bar 84
+  e4 d c2
+  % bar 85
+  <\parenthesize e, b'>2 <\parenthesize e b'>2 |
+  % bar 86
+  \after 2. \ppp
+  <\parenthesize e b'>1^\markup {
+    \column {
+      \italic "lunga"
+      \musicglyph "scripts.ufermata"
     }
-    {
-      % bar 83
-      e4 d c2
-      % bar 84
-      e4 d c2
-      % bar 85
-      <\parenthesize e, b'>2 <\parenthesize e b'>2 |
-      % bar 86
-      <\parenthesize e b'>1\fermata \bar "|."
-    }
-  >>
+  }
+  \bar "|."
 }
 
 "pianoRight7" = \relative c'' {
@@ -1291,7 +1286,7 @@
   % bar 73
   <a bf d>2.-> <bf! e>4-> |
   % bar 74
-  <d f>2-> <e f!>->
+  <d f>2-> <e f!>-> |
   % bar 75
   \time 15/4
   <d,,, d'>16->^\sfff r16 r8 r4  r4*13\fermata |
