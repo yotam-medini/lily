@@ -10,8 +10,11 @@
 "soloSoprano1" =  \relative c'' {
   \"global1"
   \"dummy"
-  R4 * 26
-  R1 * 9 |
+  \once \override Staff.TimeSignature.stencil = ##f
+  R4 * 26 |
+  \bar "|"
+  \break
+  R1 * 9 
   % bar 11
  \tempo "Andante dulce" 2 = 50
   r2 r4 a^\pdulce |
@@ -48,6 +51,7 @@
   % \omit Staff.TimeSignature  % Hide time signature
   % \set Score.checkBars = ##f
   % \override Staff.BarLine.stencil = ##f
+  \once \override Staff.TimeSignature.stencil = ##f
   g4\(^\pocosostenuto^\sempMarkup g
   g g g g\fermata
   g4 g g g bf g g\fermata\) r4
@@ -55,6 +59,7 @@
   g4\(^\rit f f ef d\fermata\)
   \undo \omit Staff.TimeSignature  % Restore time signature
 % \break
+  \bar "|"
   \time 4/4
   \tempo Larghetto 4 = 50
   % | bar 2
@@ -113,11 +118,13 @@
 "alto1" = \relative c' {
   \"global1"
   \"dummy"
+  \once \override Staff.TimeSignature.stencil = ##f
   g'4\(^\sempMarkup g
   g g g g\fermata
   g4 g g g bf g g\fermata\) r4
   g4\( g g ef' d g,\fermata\) r4
   g4\(^\rit f f ef d\fermata\)
+  \bar "|"
   \time 4/4
   % bar 2
   ef4^\psempre d c2 |
@@ -170,11 +177,13 @@
 "tenor1" = \relative c {
   \"global1"
   \"dummy"
+  \once \override Staff.TimeSignature.stencil = ##f
   g'4\(^\sempMarkup g
   g g g g\fermata
   g4 g g g bf g g\fermata\) r4
   g4\( g g ef' d g,\fermata\) r4
   g4\(^\rit f f ef d\fermata\)
+  \bar "|"
   \time 4/4
   % bar 2
   c'4^\psempre bf af2 |
@@ -227,11 +236,13 @@
 "bass1" = \relative c {
   \"global1"
   \"dummy"
+  \once \override Staff.TimeSignature.stencil = ##f
   g'4\(^\sempMarkup g
   g g g g\fermata
   g4 g g g bf g g\fermata\) r4
   g4\( g g ef d g\fermata\) r4
   g4\(^\rit f f ef d\fermata\)
+  \bar "|"
   \time 4/4
   % bar 2
   c4^\psempre bf af2 |
@@ -284,7 +295,10 @@
 "pianoRight1" = \relative c'' {
   \"global1"
   \"dummy"
+  \once \override Staff.TimeSignature.stencil = ##f
   R1 * 26/4
+  \bar "|"
+  \time 4/4
   % bar 2
   << { \voiceOne g1}
      \new Voice {
@@ -429,7 +443,10 @@
 "pianoLeft1" = \relative c {
  \"global1"
   \"dummy"
-  R1 * 26/4 |
+  \once \override Staff.TimeSignature.stencil = ##f
+  R1 * 26/4 
+  \bar "|"
+  \time 4/4
   % bar 2
    << { \voiceOne c'4( bf af2)}
       \new Voice {

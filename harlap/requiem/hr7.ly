@@ -59,11 +59,13 @@
   R1*7 |
   \break_orig
   % bar 75
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 15/4
   r4^\atempo r8 e8\(~ e4
     \tempo "poco sostenuto" 2=50
     e e e e e\fermata e e e e g e e\fermata\) |
   % bar 76
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 13/4
   r4 e,4\(^\mp\< e e c' b\! e,\fermata\) r4 e'4\( d d c^\moltorit b\fermata\) |
   % bar 77-81
@@ -145,9 +147,11 @@
   \time 4/4
   R1*7 |
   % bar 75
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 15/4
   R4*15 |
   % bar 76
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 13/4
   R4*13 |
   % bar 77-82
@@ -273,9 +277,11 @@
   \time 4/4
   R1*7 |
   % bar 75
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 15/4
   { a,8.->^\fff^\moltespr bf16 d8-> e8-. r4*13\fermata }
   % bar 76
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 13/4
   R4*13\fermata |
   \break_orig
@@ -442,9 +448,11 @@
   % bar 71-74
   r1 | r1 | r1 | r1 |
   % bar 75
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 15/4
   <e f>8->^\fff <e f> <d f>-> <d f>-. r4*13\fermata |
   % bar 76
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 13/4
   R4*13\fermata |
   % bar 77
@@ -583,9 +591,11 @@
   \time 4/4
   R1*7 |
   % bar 75
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 15/4
   a,8.->\fff bf16 d8-> e8-. r4*13\fermata |
   % bar 76
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 13/4
   R4*13\fermata
   % bar 77
@@ -739,9 +749,11 @@
   % bar 73-74
   R1 | R1 |
   % bar 75
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 15/4
   d8->^\fff[ d d-> d-.] r4*13\fermata |
   % bar 76
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 13/4
   R4*13\fermata
   % bar 77
@@ -1013,9 +1025,11 @@
     }
   >> |
   % bar 75
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 15/4
   <f d' e f>16-> r16 r8 r4  r4*13\fermata |
   % bar 76
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 13/4
   R4*13\fermata |
   % bar 77-78
@@ -1288,9 +1302,11 @@
   % bar 74
   <d f>2-> <e f!>-> |
   % bar 75
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 15/4
   <d,,, d'>16->^\sfff r16 r8 r4  r4*13\fermata |
   % bar 76
+  \once \override Staff.TimeSignature.stencil = ##f
   \time 13/4
   R4*13\fermata
     % _\markup { \override #'(padding . 2) \italic "attaca" }
