@@ -20,4 +20,4 @@ endef
 $(foreach n, 1 2 3 4 5 6 7,$(eval $(call mid2ly_rule,$(n))))
 
 harlap-requiem.pdf: ${LYS}
-	lilypond harlap-requiem.ly
+	lilypond  -dno-point-and-click harlap-requiem.ly
