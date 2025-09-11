@@ -626,7 +626,7 @@
   <<
     \new Voice { \voiceOne { bf8.[( df16])\! cf4.( g!8) | s1 } }
     \new Voice { \voiceTwo { af8.[( ef16]) <cs e>2->     | s1 } }
-    \new Voice { \voiceThree { s2.                      | g'4( af2) gf4-- } }
+    \new Voice { \voiceThree { s2.                      | g'4( af2) bf4-- } }
     \new Dynamics \with { alignBelowContext = "upper" } { 
       s4 s2\> | s2 s4 s4\!
     }
@@ -647,7 +647,7 @@
   % bar 13
   r2\< \clef "G" c!4(\> <c d!>4)\! |
   % bar 14
-  r4.\p c8 df4( <df f>4) |
+  r4.\p c8 df4( <ef f!>4) |
   % bar 15
   r4. e8 fs4( < g a!>4) |
   % bar 16

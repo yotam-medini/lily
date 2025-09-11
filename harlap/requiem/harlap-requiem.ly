@@ -2,6 +2,7 @@
 \include "english.ly"
 
 "dummy" = {} % sometimes needed to make emacs LilyPond-mode happy
+accel_bold = \markup { \bold "accel." }
 attaca = \markup { \italic "attaca" }
 atempo = \markup { \italic "(a tempo)" }
 atempo_bold = \markup { \bold "a tempo" }

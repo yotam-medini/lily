@@ -400,7 +400,7 @@
   >> |
   % bar 36
   <<
-    \new Voice { \voiceOne ef2. f8(\f gs) | af8([ bf) af( df]) ef,2 ~ | ef1 }
+    \new Voice { \voiceOne ef2. f8(\f gf) | af8([ bf) af( df]) ef,2 ~ | ef1 }
     \new Voice { \voiceTwo df2. r4      | <c f>2 df2~         | df1 }
   >> \bar "||"
   <<

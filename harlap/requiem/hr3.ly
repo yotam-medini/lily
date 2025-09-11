@@ -137,9 +137,9 @@
 "tenor3" = \relative c' {
   \"global3"
   \"dummy"
-  r4 df8\f df b4 bf
+  r4 df8\f df cf4 bf
   % bar 2
-  r df8 df b4 bf
+  r df8 df cf4 bf
   % bar 3
   r1
   % bar 4
@@ -228,7 +228,7 @@
       r8     \tuplet 3/2 {ef16[ af ef]}
         bf'8->[ \tuplet 3/2 {af16 df gf]}
         ef!8->[ \tuplet 3/2 {af,16 df gf]}
-        ef8->[ \tuplet 3/2 {af16 dff gf]} |
+        ef8->[ \tuplet 3/2 {af16 df gf]} |
     } }
     \new Dynamics \with { alignBelowContext = "upper" } {
       r8 s8\f\< s4 s4 s8 \tuplet 3/2 {s16 s\!\ff s]}

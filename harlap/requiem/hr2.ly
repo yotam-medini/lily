@@ -330,13 +330,13 @@
   \time 4/4
   r1 |
   % Bar 28
-  fs,8->^\mfagitato fs f f fs8.-> fs16 ds8 ds |
+  fs,8->^\mfagitato fs es es fs8.-> fs16 ds8 ds |
   % bar 29
   \time 6/4
   r1.
   % bar 30
   \time 4/4
-  fs8->^\mfagitato fs f f fs8.-> fs16 ds8 ds
+  fs8->^\mfagitato fs es es fs8.-> fs16 ds8 ds
   % bar 31
   r4 r4 fs8->^\p fs es es
   % bar 32
@@ -357,12 +357,14 @@
   \"global2"
   \"dummy"
   \repeat percent 6 { \repeat unfold 4 {r16 df,( f af) } }
+  % bar 7-10
   <<
-    { \repeat percent 4 { \repeat unfold 4 {r16 df,( f af) } } }
+    { \repeat percent 4 { \repeat unfold 4 {r16 a,( cs e) } } }
     \new Dynamics \with { alignAboveContext = "lower" } {
        s1 s16^\ppmaagitato 
     }
   >>
+  % bar 11-13
   \repeat percent 3 { \repeat unfold 4 { r16 f( a c) } }
   % bar 14
   \time 2/4
@@ -439,9 +441,10 @@
       s16\f\> s16 s8 s4 s4 s4\! | s16^\ppagitato
     }
   >>
+  % bar 7
   \clef "F"
   <<
-    { \repeat percent 4 { gs4 gs gs gs } }
+    { \repeat percent 4 { gs4-> gs gs gs } }
     \new Dynamics \with { alignAboveContext = "lower" } {
       s16^\f\> s16 s8 s4 s4.. s16\!
     }
@@ -449,10 +452,10 @@
   % bar 11-13
   \clef "G"
   <<
-    \new Voice { \voiceOne { \repeat percent 3 {e'4 e e e } } }
-    % \new Dynamics \with { alignAboveContext = "lower" } {
-    %   s16^\f\> s16 s8 s4 s4.. s16\! s1^\ppmaagitato s1
-    % }
+    \new Voice { \voiceOne { \repeat percent 3 {e'4-> e e e } } }
+    \new Dynamics \with { alignAboveContext = "lower" } {
+      s16^\f\> s16 s8 s4 s4.. s16\!
+    }
   >> |
   % bar 14
   \time 2/4

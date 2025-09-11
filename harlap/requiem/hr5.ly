@@ -121,7 +121,7 @@
   % bar 23
   a8[ b] gs4.\breathe c4( b!8) |
   % bar 24
-  c8[( d) b c] df[( ef) c df] |
+  c8[( d) b c] df[( ef) c^\accel_bold df] |
   % bar 25
   d!4\f( c)\< b( a) |
   % bar 26
@@ -747,7 +747,7 @@
   % bar 17
   <<
     \new Voice { \voiceOne { fs4( e) ds8[( e]) cs!4-- } }
-    \new Voice { \voiceTwo { ds4 cs bf-- bf-- } }
+    \new Voice { \voiceTwo { ds4 cs b-- b-- } }
   >> |
   % bar 18
   <<
@@ -1043,10 +1043,10 @@
   \"global5"
   \"dummy"
   \dynamicDown
-  % bar 1-3
+  % bar 1
   \repeat unfold 3 {
     <<
-      \new Voice { \voiceOne { g'4( a) g( a) } }
+      \new Voice { \voiceOne { g'4( a) f( g) } }
       \new Voice { \voiceTwo { c,1 } }
     >>
   } |
