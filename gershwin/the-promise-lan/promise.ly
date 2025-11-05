@@ -601,9 +601,23 @@ basMusic = \relative c {
 
 pianoRight = \relative c'' {
  \global
-  c1 |
   % 333
+  c1 |
   % 334
+  \repeat unfold 4 {
+    <<
+      \new Voice { \voiceOne {
+	   r4 <b d e a>4 
+	   r4 <bf d e af>4 
+	}
+      }
+      \new Voice { \voiceTwo {
+	   <b, d e a>2 
+	   <bf d e af>2 
+	}
+      }
+    >>
+  }
   % 335
   % 336
   % 337
