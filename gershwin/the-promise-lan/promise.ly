@@ -718,13 +718,32 @@ pianoRight = \relative c'' {
   % 366
   <g c ef>2 <bf df>2 |
   % 367
+  <<
+    \new Voice { \voiceTwo { <a c>4 <a c> <a c>8[ <a c> <a c> <a c>] } }
+    \new Voice { \voiceOne {
+      c8[ d e f] \tuplet 3/2 {g[ a bf]} \tuplet 3/2 {c[ <b! d> <bf ds>]}
+    } }
+  >> |
   % 368
+  <b,,! f' a a' e'>2 <bf e af af' ef'>2 |
   % 369
+  <<
+    \new Voice { \voiceTwo { a4 a4 a8[ a a a] } }
+    \new Voice { \voiceOne { <ef' g g' d'>1 } }
+  >> |
   % 370
+  r4 <d f c'>2( <f bf d>4) |
   % 371
-  % 372
-  % 373
-  % 374
+  <bf d f>2( <bf e a>2) |
+  % 372-374
+  <<
+    \new Voice { \voiceTwo { 
+      <a, c>4 <g bf ef>2 <g bf ef>4
+      <f a c>1 ~ <f a c>4
+    } }
+    \new Voice { \voiceOne { f'1 ~ f1 f4 } }
+  >>
+  r4 r2 |
   % 375
   % 376
   % 377
