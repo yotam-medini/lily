@@ -118,6 +118,7 @@ soloSoprano = \relative c'' {
   a1 |
   % 379
   d4 d2 bf4 |
+  \break
   % 380
   g1 |
   % 381
@@ -603,33 +604,37 @@ basMusic = \relative c {
   % 423
 }
 
+ChordBDMA = {
+  \relative c'' {
+  <<
+    \new Voice { \voiceTwo { <b, d e a>2     <bf d e af>2 } }
+    \new Voice { \voiceOne { r4 <b' d e a>4  r4 <bf d e af>4 } }
+  >>
+  }
+}
+
+ThreeChordBDMA = {
+  \repeat unfold 3 {
+    \ChordBDMA
+  } |
+}
+
+FourChordBDMA = {
+  \ThreeChordBDMA
+  <<
+    \new Voice { \voiceTwo { <a, df ef g>2   <a df ef g>2 } }
+    \new Voice { \voiceOne { r4 <a' df ef g>4 r4 <a df ef g>4 } }
+  >>
+}
+
 pianoRight = \relative c'' {
  \global
   % 333
   c1 |
   % 334-337
-  \repeat unfold 4 {
-    <<
-      \new Voice { \voiceOne {
-	   r4 <b d e a>4 
-	   r4 <bf d e af>4 
-	}
-      }
-      \new Voice { \voiceTwo {
-	   <b, d e a>2 
-	   <bf d e af>2 
-	}
-      }
-    >>
-  } |
+  \FourChordBDMA
   % 338
-  d'!8[ c d e] gf[ af bf c] |
-%%  <c' d g>4 
-%%  <<
-%%    \new Voice { \voiceOne { g'4( gf4) } }
-%%    \new Voice { \voiceTwo { <c, d>2 } }
-%%  >>
-%%  <c d gf>4 |
+  d!8[ c d e] gf[ af bf c] |
   % 339
   df1 |
 %%  <g df' f>1 |
@@ -638,23 +643,10 @@ pianoRight = \relative c'' {
   % 341
   f!2~ f8 r8 r4 |
   % 342-344
-  \repeat unfold 3 {
-    <<
-      \new Voice { \voiceOne {
-	   r4 <b, d e a>4 
-	   r4 <bf d e af>4 
-	}
-      }
-      \new Voice { \voiceTwo {
-	   <b, d e a>2 
-	   <bf d e af>2 
-	}
-      }
-    >>
-  } |
+  \ThreeChordBDMA |
   % 345
   <<
-    \new Voice { \voiceOne { r4  <a' df ef g> e'!( ef) } }
+    \new Voice { \voiceOne { r4  <a, df ef g> e'!( ef) } }
     \new Voice { \voiceTwo { <a,, df ef g>2 <fs' bf>2 } }
   >> |
   % 346
@@ -674,18 +666,17 @@ pianoRight = \relative c'' {
   <<
     \new Voice { \voiceThree { <a d>2 <g c> <a d> <af c> } }
     \new Voice { \voiceTwo { \appoggiatura e'8 f1 ~ f1  } }
-%    \new Voice { \voiceTwo { f'1 ~ f1  } }
     \new Voice { \voiceOne { d'2 d2 r4 f2 d4 } }
   >> |
   % 352-353
   <<
-    \new Voice { \voiceThree { <a! d>2( <g c>) <a d>( <af c>) } }
+    \new Voice { \voiceThree { <a,! d>2( <g c>) <a d>( <af c>) } }
     \new Voice { \voiceTwo   { \appoggiatura e'8 f1 ~ f1  } }
     \new Voice { \voiceOne   { c'2( d2) \appoggiatura g,8 af4 f2. } }
   >> |
   % 354-355
   <<
-    \new Voice { \voiceThree { <a,, d>2( <g c>) <a d>( <g c>) } }
+    \new Voice { \voiceThree { <a, d>2( <g c>) <a d>( <g c>) } }
     \new Voice { \voiceTwo   { \appoggiatura e'8 f1 ~ f1  } }
     \new Voice { \voiceOne   { d'4( c d ef) d2( c2) } }
   >> |
@@ -704,13 +695,13 @@ pianoRight = \relative c'' {
     \new Voice { \voiceOne { f''1 | f1 } }
   >> |
   % 360
-  \repeat unfold 4 { <d f bf>4 }
+  \repeat unfold 4 { <d, f bf>4 }
   % 361
   r4 <df f bf>2 <df f bf>4 |
   % 362
   <bf df bf'>4 <bf df bf'> <d gf bf> <d gf bf> |
   % 363
-  <f, bf df f>1 ~ |
+  <f bf df f>1 ~ |
   % 364
   <f bf df f>1 ~ |
   % 365
@@ -734,21 +725,20 @@ pianoRight = \relative c'' {
   % 370
   r4 <d f c'>2( <f bf d>4) |
   % 371
-  <bf d f>2( <bf e a>2) |
+  <bf, d f>2( <bf e a>2) |
   % 372-374
   <<
     \new Voice { \voiceTwo { 
-      <a, c>4 <g bf ef>2 <g bf ef>4
+      <a c>4 <g bf ef>2 <g bf ef>4
       <f a c>1 ~ <f a c>4
     } }
     \new Voice { \voiceOne { f'1 ~ f1 f4 } }
   >>
   r4 r2 |
-  % 375
-  % 376
-  % 377
-  % 378
+  % 375-378
+  \FourChordBDMA
   % 379
+  d!8[ c d e] gf[ af bf c] |
   % 380
   % 381
   % 382
@@ -889,6 +879,28 @@ pianoLeft = \relative c {
   % 421
   % 422
   % 423
+}
+
+\paper{
+  #(set-paper-size "a4")
+
+  % system-system-spacing.basic-distance = #8
+
+  oddFooterMarkup = \markup {
+    \hspace #20
+    % \onLastPage { LilyPond 2.25
+    \if \on-last-page {
+      (typeset via \italic "LilyPond"
+        by {\small\typewriter "yotam.medini@gmail.com"}
+      \small \typewriter
+      \hspace #2
+      \small
+      \simple #(strftime "%Y-%m-%d %H:%M:%S)" (localtime (current-time)))
+    } {
+      \with-dimensions #'(0 . 0) #'(0 . 0) \transparent " "
+    }
+  }
+  evenFooterMarkup = \oddFooterMarkup
 }
 
 \score {
