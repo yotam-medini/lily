@@ -641,6 +641,14 @@ RHgeef = {
   >> |
 }
 
+"bar348" = {
+  <<
+    \new Voice { \voiceOne { r8 e'8[( gs, a] b![ c e, f] gs[ a] c,) s4 c } }
+    \new Voice { \voiceTwo { f,1 ~ f8 r8 a2 s4 } }
+    \new Voice { \voiceThree { <a, d!>2 <g c>2 <a d>2 <g c>2 } }
+  >> |
+}
+
 pianoRight = \relative c'' {
  \global
   % 333
@@ -664,11 +672,7 @@ pianoRight = \relative c'' {
   % 347
   <bf d f g>2 <bf df e g>2
   % 348 - 349
-  <<
-    \new Voice { \voiceOne { r8 e'8[( gs, a] b![ c e, f] gs[ a] c,) s4 c } }
-    \new Voice { \voiceTwo { f,1 ~ f8 r8 a2 s4 } }
-    \new Voice { \voiceThree { <a, d!>2 <g c>2 <a d>2 <g c>2 } }
-  >> |
+  \"bar348" \dummy
   % 350- 351
   <<
     \new Voice { \voiceThree { <a d>2 <g c> <a d> <af c> } }
@@ -759,9 +763,14 @@ pianoRight = \relative c'' {
   % 387
   \"bar346" \dummy
   % 388
-  % 389
-  % 390
+  <bf d f g>2 <bf df e g>2
+  % 389-390
+  \"bar348" \dummy
   % 391
+  <<
+    \new Voice { \voiceTwo { <a d g>4 <g c f> <a d> <af c f> } }
+    \new Voice { \voiceOne { d'8[ c a f] g[ a c f] } }
+  >>
   % 392
   % 393
   % 394
