@@ -409,19 +409,22 @@ altMusic = \relative c' {
 
 tenMusic = \relative c {
  \global
-  R1 |
-  % 333
-  % 334
-  % 335
-  % 336
-  % 337
+  % 333-337
+  R1 | R1 | R1 | R1 | R1 |
   % 338
+  g'4 g( gf) gf |
   % 339
+  f1 |
   % 340
+  f4 f( e) e |
   % 341
-  % 342
+  f2~ f8 r8 r4 |
+  % 342-245
+  R1 | R1 | R1 | R1 |
   % 343
+  f4 e d f |
   % 344
+  f2 e2 |
   % 345
   % 346
   % 347
@@ -603,7 +606,7 @@ pianoRight = \relative c'' {
  \global
   % 333
   c1 |
-  % 334
+  % 334-337
   \repeat unfold 4 {
     <<
       \new Voice { \voiceOne {
@@ -617,21 +620,55 @@ pianoRight = \relative c'' {
 	}
       }
     >>
-  }
-  % 335
-  % 336
-  % 337
+  } |
   % 338
+  d'!8[ c d e] gf[ af bf c] |
+%%  <c' d g>4 
+%%  <<
+%%    \new Voice { \voiceOne { g'4( gf4) } }
+%%    \new Voice { \voiceTwo { <c, d>2 } }
+%%  >>
+%%  <c d gf>4 |
   % 339
+  df1 |
+%%  <g df' f>1 |
   % 340
+  c,8[ bf c d] e2 |
   % 341
-  % 342
-  % 343
-  % 344
+  f!2~ f8 r8 r4 |
+  % 342-344
+  \repeat unfold 3 {
+    <<
+      \new Voice { \voiceOne {
+	   r4 <b, d e a>4 
+	   r4 <bf d e af>4 
+	}
+      }
+      \new Voice { \voiceTwo {
+	   <b, d e a>2 
+	   <bf d e af>2 
+	}
+      }
+    >>
+  } |
   % 345
+  <<
+    \new Voice { \voiceOne { r4  <a' df ef g> e'!( ef) } }
+    \new Voice { \voiceTwo { <a,, df ef g>2 <fs' bf>2 } }
+  >> |
   % 346
+  <<
+    \new Voice { \voiceOne { d'8[( g bf c]) bf,[( d f a]) } }
+    \new Voice { \voiceTwo { <f,! bf>4 <e a c> <d g bf> <a' d> } }
+  >> |
   % 347
-  % 348
+  <bf d f g>2 <bf df e g>2
+  % 348 - 349
+  <<
+    \new Voice { \voiceOne { r8 e'8[( gs, a] b![ c e, f]) gs[ a] c, s4 c } }
+    \new Voice { \voiceTwo { f,1 ~ f8 r8 a2 s4 } }
+    \new Voice { \voiceThree { <a, d!>2 <g c>2 <a d>2 <g c>2 } }
+  >> |
   % 349
   % 350
   % 351
