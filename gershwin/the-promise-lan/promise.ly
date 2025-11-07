@@ -64,6 +64,7 @@ soloSoprano = \relative c'' {
   d'4 c d ef |
   % 355
   d2 c2 |
+  \break
   % 356
   b1 ~
   % 357
@@ -665,28 +666,57 @@ pianoRight = \relative c'' {
   <bf d f g>2 <bf df e g>2
   % 348 - 349
   <<
-    \new Voice { \voiceOne { r8 e'8[( gs, a] b![ c e, f]) gs[ a] c, s4 c } }
+    \new Voice { \voiceOne { r8 e'8[( gs, a] b![ c e, f] gs[ a] c,) s4 c } }
     \new Voice { \voiceTwo { f,1 ~ f8 r8 a2 s4 } }
     \new Voice { \voiceThree { <a, d!>2 <g c>2 <a d>2 <g c>2 } }
   >> |
-  % 349
-  % 350
-  % 351
-  % 352
-  % 353
-  % 354
-  % 355
-  % 356
-  % 357
-  % 358
-  % 359
+  % 350- 351
+  <<
+    \new Voice { \voiceThree { <a d>2 <g c> <a d> <af c> } }
+    \new Voice { \voiceTwo { \appoggiatura e'8 f1 ~ f1  } }
+%    \new Voice { \voiceTwo { f'1 ~ f1  } }
+    \new Voice { \voiceOne { d'2 d2 r4 f2 d4 } }
+  >> |
+  % 352-353
+  <<
+    \new Voice { \voiceThree { <a! d>2( <g c>) <a d>( <af c>) } }
+    \new Voice { \voiceTwo   { \appoggiatura e'8 f1 ~ f1  } }
+    \new Voice { \voiceOne   { c'2( d2) \appoggiatura g,8 af4 f2. } }
+  >> |
+  % 354-355
+  <<
+    \new Voice { \voiceThree { <a,, d>2( <g c>) <a d>( <g c>) } }
+    \new Voice { \voiceTwo   { \appoggiatura e'8 f1 ~ f1  } }
+    \new Voice { \voiceOne   { d'4( c d ef) d2( c2) } }
+  >> |
+  % 356-357
+  <<
+    \new Voice { \voiceTwo { <g, cs>2( <as b!>2) <g cs>2 } }
+    \new Voice { \voiceOne { <fs' b!>1 ~ <fs b>2 } }
+  >>
+    <bf, c! g' c>4 <a c e a>4 |
+  % 358-359
+  <<
+    \new Voice { \voiceTwo { 
+      <a c f>4 <a c f> <bf df gf> <a d f> 
+      <b! d! g!>4 <a c f> <c ef a> <a c f>
+    } }
+    \new Voice { \voiceOne { f''1 | f1 } }
+  >> |
   % 360
+  \repeat unfold 4 { <d f bf>4 }
   % 361
+  r4 <df f bf>2 <df f bf>4 |
   % 362
+  <bf df bf'>4 <bf df bf'> <d gf bf> <d gf bf> |
   % 363
+  <f, bf df f>1 ~ |
   % 364
+  <f bf df f>1 ~ |
   % 365
+  <f bf df f>4 r4 <g df' f>2 |
   % 366
+  <g c ef>2 <bf df>2 |
   % 367
   % 368
   % 369
