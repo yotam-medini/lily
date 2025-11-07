@@ -627,6 +627,20 @@ FourChordBDMA = {
   >>
 }
 
+RHgeef = {
+  <<
+    \new Voice { \voiceOne { r4  <a, df ef g> e'!( ef) } }
+    \new Voice { \voiceTwo { <a,, df ef g>2 <fs' bf>2 } }
+  >>
+}
+
+"bar346" = {
+  <<
+    \new Voice { \voiceOne { d'8[( g bf c]) bf,[( d f a]) } }
+    \new Voice { \voiceTwo { <f,! bf>4 <e a c> <d g bf> <a' d> } }
+  >> |
+}
+
 pianoRight = \relative c'' {
  \global
   % 333
@@ -637,7 +651,6 @@ pianoRight = \relative c'' {
   d!8[ c d e] gf[ af bf c] |
   % 339
   df1 |
-%%  <g df' f>1 |
   % 340
   c,8[ bf c d] e2 |
   % 341
@@ -645,15 +658,9 @@ pianoRight = \relative c'' {
   % 342-344
   \ThreeChordBDMA |
   % 345
-  <<
-    \new Voice { \voiceOne { r4  <a, df ef g> e'!( ef) } }
-    \new Voice { \voiceTwo { <a,, df ef g>2 <fs' bf>2 } }
-  >> |
+  \RHgeef |
   % 346
-  <<
-    \new Voice { \voiceOne { d'8[( g bf c]) bf,[( d f a]) } }
-    \new Voice { \voiceTwo { <f,! bf>4 <e a c> <d g bf> <a' d> } }
-  >> |
+  \"bar346" \dummy
   % 347
   <bf d f g>2 <bf df e g>2
   % 348 - 349
@@ -740,13 +747,17 @@ pianoRight = \relative c'' {
   % 379
   d!8[ c d e] gf[ af bf c] |
   % 380
+  df1 |
   % 381
+  c,8[ bf c d] e2 |
   % 382
-  % 383
-  % 384
-  % 385
+  f2 ~ f8 r8 r4 |
+  % 383-385
+  \ThreeChordBDMA |
   % 386
+  \RHgeef |
   % 387
+  \"bar346" \dummy
   % 388
   % 389
   % 390
