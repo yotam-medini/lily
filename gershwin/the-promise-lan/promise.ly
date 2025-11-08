@@ -843,6 +843,14 @@ pianoRight = \relative c'' {
   >>
   } |
   % 414
+  <<
+    \new Voice { \voiceTwo {  
+      \tuplet 3/2 { <e,, af bf! df>2 <e af bf df>2 <e af bf df>2}
+    } }
+    \new Voice { \voiceOne {  
+       e''!8[ gs, c fs,] r8 e16[( f] gs[ as cs d]) 
+    } }
+  >> |
   % 415
   % 416
   % 417
