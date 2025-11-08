@@ -185,25 +185,24 @@ soloSoprano = \relative c'' {
   \break
   % 408
   c4 c c8[ c c c] |
-  e2( ef |
   % 409
-  d1) |
+  e2( ef |
   % 410
-  r4 c2 d4 |
+  d1) |
   % 411
-  <f a>1~ |
+  r4 c2 d4 |
   \break
   % 412
-  <f a>1 |
+  <f a>1~ |
   % 413
-  <e af>1 ~ |
+  <f a>1 |
   % 414
-  <e af>1~ |
+  <e af>1 ~ |
   \break
   % 415
   <e af>1 |
   % 416
-  <d g>1~ |
+  <d g>1 |
   % 417
   <d g>1~ |
   % 418
@@ -877,10 +876,22 @@ pianoRight = \relative c'' {
     \new Voice { \voiceOne { f'8[( c d a] af8) r8 r4 } }
   >>
   % 419
+  <<
+    \new Voice { \voiceTwo { <d, g c>4 <e a d> <ef a d> <d g c> } }
+    \new Voice { \voiceOne { f'8[( c d a] a[ gf af bf]) } }
+  >>
   % 420
+  <<
+    \new Voice { \voiceTwo { <a d g>4 <g c f> <af d g> <af d g> } }
+    \new Voice { \voiceOne { f'8[( c d a] af8) r8 r4 } }
+  >>
   % 421
-  % 422
-  % 423
+  <<
+    \new Voice { \voiceTwo { <g c f>4 <a d g> <ef a d g> <g c f> } }
+    \new Voice { \voiceOne { f'8[ c d a] a[ gf af bf] } }
+  >>
+  % 422- 423
+  <a d g>1 ~ |  <a d g>4 r4 r2 \bar "||"
 }
 
 pianoLeft = \relative c {
