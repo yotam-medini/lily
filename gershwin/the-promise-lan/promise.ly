@@ -1077,15 +1077,16 @@ pianoRight = \relative c'' {
 
 pianoLeft = \relative c {
  \global
-  c1 |
   % 333
-  % 334
-  % 335
-  % 336
-  % 337
+  c1 |
+  % 334-337
+  R1*4
   % 338
+  <a' c d g>4 <a c d g> <af c d gf> <af c d gf> |
   % 339
+  <g b! df f>4 <g b df f> <g b df f> <g b df f>
   % 340
+  <g bf! c f>4 <g bf c f> <gf bf c f>4 <gf bf c f>4 |
   % 341
   % 342
   % 343
@@ -1209,7 +1210,7 @@ pianoLeft = \relative c {
 
       \new Staff = "sopran" \with {
 	instrumentName = "Sopran"
-        shortInstrumentName = "M"
+        shortInstrumentName = "S"
       } {
         \set Staff.midiInstrument = "Flute"
         \new Voice = "sopranos" {
