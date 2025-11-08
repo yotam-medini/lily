@@ -222,22 +222,22 @@ soloSoprano = \relative c'' {
 
 sopMusic = \relative c'' { 
  \global
-  R1 |
-  % 333
-  % 334
-  % 335
-  % 336
-  % 337
+  % 333-337
+  R1*5 |
   % 338
+  g'4 g( gf) gf |
   % 339
+  f1 |
   % 340
+  f4 f( e) e |
   % 341
-  % 342
-  % 343
-  % 344
-  % 345
+  <c f>2~ <c f>8 r8 r4 |
+  % 342-345
+  R1*4 |
   % 346
+  f4 e d f |
   % 347
+  f2 e2 |
   % 348
   % 349
   % 350
@@ -318,20 +318,18 @@ sopMusic = \relative c'' {
 
 MezzoMusic = \relative c'' { 
  \global
-  R1 | g4
-  % 333
-  % 334
-  % 335
-  % 336
-  % 337
+  % 333-337
+  R1*5 |
   % 338
+  d4 d2 c4 |
   % 339
+  df1 |
   % 340
+  c4 c2 c4 |
   % 341
-  % 342
-  % 343
-  % 344
-  % 345
+  a4 g f8 r8 r4
+  % 342-345
+  R1*4 |
   % 346
   % 347
   % 348
@@ -412,22 +410,20 @@ MezzoMusic = \relative c'' {
   % 423
 }
 
-altMusic = \relative c' {
+altMusic = \relative c'' {
   \global
-  R1 | g4
-  % 333
-  % 334
-  % 335
-  % 336
-  % 337
+  % 333-337
+  R1 | R1 | R1 | R1 | R1 |
   % 338
+  c4 c2 bf4 |
   % 339
+  g1 |
   % 340
+  bf4 bf2 a4 |
   % 341
-  % 342
-  % 343
-  % 344
-  % 345
+  f2 ~ f8 r8 r4 |
+  % 342-345
+  R1*4 |
   % 346
   % 347
   % 348
@@ -511,7 +507,7 @@ altMusic = \relative c' {
 tenMusic = \relative c {
  \global
   % 333-337
-  R1 | R1 | R1 | R1 | R1 |
+  R1*5 |
   % 338
   g'4 g( gf) gf |
   % 339
@@ -521,7 +517,7 @@ tenMusic = \relative c {
   % 341
   <c f>2~ <c f>8 r8 r4 |
   % 342-345
-  R1 | R1 | R1 | R1 |
+  R1*4 |
   % 346
   f4 e d f |
   % 347
@@ -604,12 +600,12 @@ tenMusic = \relative c {
   % 423
 }
 
-baritoneMusic = \relative c {
+baritoneMusic = \relative c' {
  \global
   % 333-337
-  R1 | R1 | R1 | R1 | R1 |
+  R1*5 |
   % 338
-  d d2 c |
+  d4 d2 c4 |
   % 339
   df1 |
   % 340
@@ -617,8 +613,7 @@ baritoneMusic = \relative c {
   % 341
   a4 g f8 r8 r4
   % 342-345
-  R1 | R1 | R1 | R1 |
-  % 345
+  R1*4 |
   % 346
   % 347
   % 348
@@ -699,7 +694,7 @@ baritoneMusic = \relative c {
   % 423
 }
 
-basMusic = \relative c {
+basMusic = \relative c' {
  \global
   % 333-337
   R1 | R1 | R1 | R1 | R1 |
@@ -711,10 +706,8 @@ basMusic = \relative c {
   bf4 bf2 a4 |
   % 341
   f2 ~ f8 r8 r4 |
-  % 342
-  % 343
-  % 344
-  % 345
+  % 342-345
+  R1*4 |
   % 346
   % 347
   % 348
@@ -1217,18 +1210,19 @@ pianoLeft = \relative c {
       \new Staff = "sopran" \with {
 	instrumentName = "Sopran"
         shortInstrumentName = "M"
-        % \set Staff.midiInstrument = "Flute"
       } {
-        \new Voice = "mezzos" {
-           \MezzoMusic
+        \set Staff.midiInstrument = "Flute"
+        \new Voice = "sopranos" {
+           \sopMusic
         }
       }
 
       \new Staff = "mezzo" \with {
 	instrumentName = "Mezzo"
         shortInstrumentName = "M"
-        % \set Staff.midiInstrument = "Flute"
-        \new Voice = "mezzzos" {
+      } {
+        \set Staff.midiInstrument = #"vibraphone"
+        \new Voice = "mezzos" {
            \MezzoMusic
         }
       }
@@ -1236,17 +1230,18 @@ pianoLeft = \relative c {
       \new Staff = "alt" \with {
 	instrumentName = "Alt"
         shortInstrumentName = "A"
+      } {
+        \set Staff.midiInstrument = #"marimba"
         \new Voice = "altos" {
            \altMusic
         }
       }
 
       \new Staff = "ten" \with {
-	% % \set Staff.midiInstrument = #"electric piano 1"
 	instrumentName = "Tenor"
         shortInstrumentName = "T"
-        % \set Staff.midiInstrument = #"electric piano 1"
       } {
+        \set Staff.midiInstrument = #"electric piano 1"
         \clef "G_8"
         \new Voice = "tenors" {
           \tenMusic
@@ -1257,6 +1252,7 @@ pianoLeft = \relative c {
 	instrumentName = "Baritone"
         shortInstrumentName = "B1"
       } {
+        \set Staff.midiInstrument = #"honky-tonk"
         \clef bass
         \new Voice = "basses" {
         \baritoneMusic
@@ -1267,6 +1263,7 @@ pianoLeft = \relative c {
 	instrumentName = "Bass"
         shortInstrumentName = "B2"
       } {
+        \set Staff.midiInstrument = #"honky-tonk"
         \clef bass
         \new Voice = "basses" {
           \basMusic
