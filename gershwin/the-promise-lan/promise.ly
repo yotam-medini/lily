@@ -192,13 +192,14 @@ soloSoprano = \relative c'' {
   r4 c2 d4 |
   % 411
   <f a>1~ |
+  \break
   % 412
   <f a>1 |
   % 413
   <e af>1 ~ |
-  \break
   % 414
   <e af>1~ |
+  \break
   % 415
   <e af>1 |
   % 416
@@ -651,6 +652,24 @@ RHgeef = {
   >> |
 }
 
+"bar367" = {
+  <<
+    \new Voice { \voiceTwo { <a c>4 <a c> <a c>8[ <a c> <a c> <a c>] } }
+    \new Voice { \voiceOne {
+      c8[ d e f] \tuplet 3/2 {g[ a bf]} \tuplet 3/2 {c[ <b! d> <bf ds>]}
+    } }
+  >> |
+}
+
+"bar368" = {
+  <b,,! f' a a' e'>2 <bf e af af' ef'>2 |
+  % 369
+  <<
+    \new Voice { \voiceTwo { a4 a4 a8[ a a a] } }
+    \new Voice { \voiceOne { <ef' g g' d'>1 } }
+  >> |
+}
+
 pianoRight = \relative c'' {
  \global
   % 333
@@ -722,19 +741,9 @@ pianoRight = \relative c'' {
   % 366
   <g c ef>2 <bf df>2 |
   % 367
-  <<
-    \new Voice { \voiceTwo { <a c>4 <a c> <a c>8[ <a c> <a c> <a c>] } }
-    \new Voice { \voiceOne {
-      c8[ d e f] \tuplet 3/2 {g[ a bf]} \tuplet 3/2 {c[ <b! d> <bf ds>]}
-    } }
-  >> |
-  % 368
-  <b,,! f' a a' e'>2 <bf e af af' ef'>2 |
-  % 369
-  <<
-    \new Voice { \voiceTwo { a4 a4 a8[ a a a] } }
-    \new Voice { \voiceOne { <ef' g g' d'>1 } }
-  >> |
+  \"bar367"
+  % 368-369
+  \"bar368"
   % 370
   r4 <d f c'>2( <f bf d>4) |
   % 371
@@ -807,15 +816,32 @@ pianoRight = \relative c'' {
   % 403
   <bf df bf'>4 <bf df bf'>4 <df gf bf> <df gf bf> |
   % 404
+  <f bf df f>1 ~ |
   % 405
-  % 406
-  % 407
+  <f bf df f>1 ~ |
+  % 406-407
+  <f bf df f>4 r4 
+  <<
+    \new Voice { \voiceTwo { g2 ~ g1 } }
+    \new Voice { \voiceOne { <df' f>2( <c ef>2 <bf df>2) } }
+  >> |
   % 408
-  % 409
-  % 410
+  \"bar367"
+  % 409-410
+  \"bar368"
   % 411
-  % 412
-  % 413
+  r4 <d f c'>2 <d f bf d>4 |
+  % 412-413
+  \repeat unfold 2 {
+  <<
+    \new Voice { \voiceTwo {
+      \tuplet 3/2 {<f a b! d>2 <f a b d>2 <f a b d>2 }
+    } }
+    \new Voice { \voiceOne {  
+       e''8[ a, b! f] \tuplet 6/2 { g8[( af bf c df ef]) }
+    } }
+  >>
+  } |
   % 414
   % 415
   % 416
