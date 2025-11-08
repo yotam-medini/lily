@@ -316,6 +316,102 @@ sopMusic = \relative c'' {
   % 423
 }
 
+MezzoMusic = \relative c'' { 
+ \global
+  R1 |
+  % 333
+  % 334
+  % 335
+  % 336
+  % 337
+  % 338
+  % 339
+  % 340
+  % 341
+  % 342
+  % 343
+  % 344
+  % 345
+  % 346
+  % 347
+  % 348
+  % 349
+  % 350
+  % 351
+  % 352
+  % 353
+  % 354
+  % 355
+  % 356
+  % 357
+  % 358
+  % 359
+  % 360
+  % 361
+  % 362
+  % 363
+  % 364
+  % 365
+  % 366
+  % 367
+  % 368
+  % 369
+  % 370
+  % 371
+  % 372
+  % 373
+  % 374
+  % 375
+  % 376
+  % 377
+  % 378
+  % 379
+  % 380
+  % 381
+  % 382
+  % 383
+  % 384
+  % 385
+  % 386
+  % 387
+  % 388
+  % 389
+  % 390
+  % 391
+  % 392
+  % 393
+  % 394
+  % 395
+  % 396
+  % 397
+  % 398
+  % 399
+  % 400
+  % 401
+  % 402
+  % 403
+  % 404
+  % 405
+  % 406
+  % 407
+  % 408
+  % 409
+  % 410
+  % 411
+  % 412
+  % 413
+  % 414
+  % 415
+  % 416
+  % 417
+  % 418
+  % 419
+  % 420
+  % 421
+  % 422
+  % 423
+}
+
 altMusic = \relative c' {
   \global
   R1 |
@@ -607,6 +703,102 @@ basMusic = \relative c {
   % 423
 }
 
+baritoneMusic = \relative c {
+ \global
+  R1 |
+  % 333
+  % 334
+  % 335
+  % 336
+  % 337
+  % 338
+  % 339
+  % 340
+  % 341
+  % 342
+  % 343
+  % 344
+  % 345
+  % 346
+  % 347
+  % 348
+  % 349
+  % 350
+  % 351
+  % 352
+  % 353
+  % 354
+  % 355
+  % 356
+  % 357
+  % 358
+  % 359
+  % 360
+  % 361
+  % 362
+  % 363
+  % 364
+  % 365
+  % 366
+  % 367
+  % 368
+  % 369
+  % 370
+  % 371
+  % 372
+  % 373
+  % 374
+  % 375
+  % 376
+  % 377
+  % 378
+  % 379
+  % 380
+  % 381
+  % 382
+  % 383
+  % 384
+  % 385
+  % 386
+  % 387
+  % 388
+  % 389
+  % 390
+  % 391
+  % 392
+  % 393
+  % 394
+  % 395
+  % 396
+  % 397
+  % 398
+  % 399
+  % 400
+  % 401
+  % 402
+  % 403
+  % 404
+  % 405
+  % 406
+  % 407
+  % 408
+  % 409
+  % 410
+  % 411
+  % 412
+  % 413
+  % 414
+  % 415
+  % 416
+  % 417
+  % 418
+  % 419
+  % 420
+  % 421
+  % 422
+  % 423
+}
+
 ChordBDMA = {
   \relative c'' {
   <<
@@ -708,16 +900,16 @@ pianoRight = \relative c'' {
   >> |
   % 354-355
   <<
-    \new Voice { \voiceThree { <a, d>2( <g c>) <a d>( <g c>) } }
+    \new Voice { \voiceThree { <a,! d>2( <g c>) <a d>( <g c>) } }
     \new Voice { \voiceTwo   { \appoggiatura e'8 f1 ~ f1  } }
     \new Voice { \voiceOne   { d'4( c d ef) d2( c2) } }
   >> |
   % 356-357
   <<
-    \new Voice { \voiceTwo { <g, cs>2( <as b!>2) <g cs>2 } }
+    \new Voice { \voiceTwo { <g, cs>2( <fs b!>2) <g cs>2 } }
     \new Voice { \voiceOne { <fs' b!>1 ~ <fs b>2 } }
   >>
-    <bf, c! g' c>4 <a c e a>4 |
+    <bf,! c! g' c>4 <a c e a>4 |
   % 358-359
   <<
     \new Voice { \voiceTwo { 
@@ -731,7 +923,7 @@ pianoRight = \relative c'' {
   % 361
   r4 <df f bf>2 <df f bf>4 |
   % 362
-  <bf df bf'>4 <bf df bf'> <d gf bf> <d gf bf> |
+  <bf df bf'>4 <bf df bf'> <df gf bf> <df gf bf> |
   % 363
   <f bf df f>1 ~ |
   % 364
@@ -1036,6 +1228,16 @@ pianoLeft = \relative c {
         }
       >>
 
+      \new Staff = "Mezzo" <<
+	\set Staff.midiInstrument = #"flute"
+        \new Voice = "sopranos" {
+          \set Staff.instrumentName = "M"
+          <<
+              \MezzoMusic
+          >>
+        }
+      >>
+
       \new Staff = "alt" <<
 	\set Staff.midiInstrument = #"oboe"
         \new Voice = "altos" {
@@ -1048,7 +1250,7 @@ pianoLeft = \relative c {
       >>
 
       \new Staff = "ten" <<
-	\set Staff.midiInstrument = #"cello"
+	\set Staff.midiInstrument = #"electric piano 1"
         \clef "G_8"
         \new Voice = "tenors" {
           \set Staff.instrumentName = "T"
@@ -1058,11 +1260,22 @@ pianoLeft = \relative c {
         }
       >>
 
+      \new Staff = "bar" <<
+	\set Staff.midiInstrument = #"bassoon"
+        \clef bass
+        \new Voice = "basses" {
+          \set Staff.instrumentName = "B1"
+          <<
+               \baritoneMusic
+          >>
+        }
+      >>
+
       \new Staff = "bas" <<
 	\set Staff.midiInstrument = #"bassoon"
         \clef bass
         \new Voice = "basses" {
-          \set Staff.instrumentName = "B"
+          \set Staff.instrumentName = "B2"
           <<
                \basMusic
           >>
