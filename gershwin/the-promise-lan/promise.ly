@@ -173,6 +173,7 @@ soloSoprano = \relative c'' {
   r4 bf2 bf4 |
   % 403
   bf4 bf bf bf |
+  \break
   % 404
   f'1~ |
   % 405
@@ -795,9 +796,16 @@ pianoRight = \relative c'' {
     \new Voice { \voiceOne { f''1 } }
   >>
   % 400
+  <<
+    \new Voice { \voiceTwo { <b,,! d! g!>4 <a c f> <c ef a> <a c f> } }
+    \new Voice { \voiceOne { f''1 } }
+  >> |
   % 401
+  <d, f bf>4 <d f bf>4 <d f bf>4 <d f bf>4 |
   % 402
+  r4 <df f bf>2 <cf ef bf'>4 |
   % 403
+  <bf df bf'>4 <bf df bf'>4 <df gf bf> <df gf bf> |
   % 404
   % 405
   % 406
