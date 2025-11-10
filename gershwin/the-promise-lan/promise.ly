@@ -245,20 +245,35 @@ sopMusic = \relative c'' {
   % 350-356
   R1*7
   % 357
+  r2 c4 a |
   % 358
+  f4 f gf d |
   % 359
+  g! f a f |
   % 360
+  bf4 bf bf bf |
   % 361
+  r4 bf2 bf4 |
   % 362
+  bf4 bf bf bf |
   % 363
+  f'1 ~
   % 364
+  f1 ~
   % 365
+  f4 r4 f2 |
   % 366
+  ef2 df2 |
   % 367
+  c4 c c8[ c c c] |
   % 368
+  e2( ef2 |
   % 369
+  d1) |
   % 370
+  e4 c2 d4 |
   % 371
+  f,2 a2 |
   % 372
   % 373
   % 374
@@ -338,20 +353,35 @@ MezzoMusic = \relative c'' {
   % 350-356
   R1*7
   % 357
+  r2 c4 a |
   % 358
+  f4 f gf d |
   % 359
+  g! f a f 
   % 360
+  f4 f f f |
   % 361
+  r4 f2 f4 |
   % 362
+  gf4 gf gf gf |
   % 363
+  df'1 ~
   % 364
+  df1 ~
   % 365
+  df4 r4 df2 |
   % 366
+  c2 bf2 |
   % 367
+  a4 a a8[ a a a] |
   % 368
+  a2 af2 |
   % 369
+  g1 |
   % 370
+  r4 f2 f4 |
   % 371
+  d2 <df ef>2 |
   % 372
   % 373
   % 374
@@ -431,20 +461,35 @@ altMusic = \relative c'' {
   % 350-356
   R1*7
   % 357
+  r2 c4 a |
   % 358
+  f4 f gf d |
   % 359
+  g! f a f 
   % 360
+  d4 d d d |
   % 361
+  r4 df2 df4 |
   % 362
+  df4 df df df |
   % 363
+  bf'1 ~ |
   % 364
+  bf1 ~ |
   % 365
+  bf4 r4 r2 |
   % 366
+  s1 |
   % 367
+  f4 f f8[ f f f] |
   % 368
+  f2( e! |
   % 369
+  ef1 ) |
   % 370
+  r4 d2 s4 |
   % 371
+  bf2 bf2 |
   % 372
   % 373
   % 374
@@ -524,20 +569,35 @@ tenMusic = \relative c {
   % 350-356
   R1*7
   % 357
+  r2 c'4 a |
   % 358
+  f4 f gf d |
   % 359
+  g! f a f 
   % 360
+  bf4 bf bf bf |
   % 361
+  r4 bf2 bf4 |
   % 362
+  bf4 bf bf bf |
   % 363
+  f'1 ~
   % 364
+  f1 ~
   % 365
+  f4 r4 f2 |
   % 366
+  ef2 df2 |
   % 367
+  c4 c c8[ c c c] |
   % 368
+  e2( ef2 |
   % 369
+  d1 ) |
   % 370
+  r4 c2 d4 |
   % 371
+  bf2 bf2 |
   % 372
   % 373
   % 374
@@ -617,20 +677,35 @@ baritoneMusic = \relative c' {
   % 350-356
   R1*7
   % 357
+  r2 c4 a |
   % 358
+  f4 f gf d |
   % 359
+  g! f a f 
   % 360
+  f4 f f f |
   % 361
+  r4 f2 f4 |
   % 362
+  gf4 gf gf gf |
   % 363
+  df'1 ~
   % 364
+  df1 ~
   % 365
+  df4 r4 df2 |
   % 366
+  c2 bf2 |
   % 367
+  a4 a a8[ a a a] |
   % 368
+  b!2( bf2 |
   % 369
+  a1 ) |
   % 370
+  r4 f2 bf4 |
   % 371
+  f2 d2 |
   % 372
   % 373
   % 374
@@ -710,20 +785,35 @@ basMusic = \relative c' {
   % 350-356
   R1*7
   % 357
+  r2 c4 a |
   % 358
+  f4 f gf d |
   % 359
+  g! f a f 
   % 360
+  d4 d d d |
   % 361
+  r4 df2 df4 |
   % 362
+  df4 df df df |
   % 363
+  bf'1 ~ |
   % 364
+  bf1 ~ |
   % 365
+  bf4 r4 r2 |
   % 366
+  s1 |
   % 367
+  f4 f f8[ f f f] |
   % 368
+  c2( c2 |
   % 369
+  f1 ) |
   % 370
+  bf,2. bf4 |
   % 371
+  c2 gf2 |
   % 372
   % 373
   % 374
