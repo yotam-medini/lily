@@ -307,13 +307,21 @@ sopMusic = \relative c'' {
   % 399
   f4 f gf f |
   % 400
+  g!4 f a f |
   % 401
+  bf4 bf bf bf |
   % 402
+  r4 bf2 bf4 |
   % 403
+  bf4 bf bf bf |
   % 404
+  f'1 ~ |
   % 405
+  f1 ~ |
   % 406
+  f4 r4 f2 |
   % 407
+  ef2 df2 |
   % 408
   % 409
   % 410
@@ -419,13 +427,21 @@ MezzoMusic = \relative c'' {
   % 399
   f4 f gf f |
   % 400
+  g!4 f a f |
   % 401
+  f4 f f f |
   % 402
+  r4 f2 f4 |
   % 403
+  gf4 gf gf gf |
   % 404
+  df'1 ~
   % 405
+  df1 ~
   % 406
+  df4 r4 df2 |
   % 407
+  c2 bf2 |
   % 408
   % 409
   % 410
@@ -531,13 +547,21 @@ altMusic = \relative c'' {
   % 399
   f4 f gf f |
   % 400
+  g!4 f a f |
   % 401
+  d4 d d d |
   % 402
+  r4 df2 df4 |
   % 403
+  df4 df df df |
   % 404
+  bf'1 ~
   % 405
+  bf1 ~
   % 406
+  bf8 r8 r4 r2
   % 407
+  r1 |
   % 408
   % 409
   % 410
@@ -643,13 +667,21 @@ tenMusic = \relative c {
   % 399
   f4 f gf f |
   % 400
+  g!4 f a f |
   % 401
+  bf4 bf bf bf |
   % 402
+  r4 bf2 bf4 |
   % 403
+  bf4 bf bf bf |
   % 404
+  f'1 ~ |
   % 405
+  f1 ~ |
   % 406
+  f4 r4 f2 |
   % 407
+  ef2 df2 |
   % 408
   % 409
   % 410
@@ -755,13 +787,21 @@ baritoneMusic = \relative c' {
   % 399
   f4 f gf f |
   % 400
+  g!4 f a f |
   % 401
+  f4 f f f |
   % 402
+  r4 f2 f4 |
   % 403
+  gf4 gf gf gf |
   % 404
+  df'1 ~
   % 405
+  df1 ~
   % 406
+  df4 r4 df2 |
   % 407
+  c2 bf2 |
   % 408
   % 409
   % 410
@@ -867,13 +907,21 @@ basMusic = \relative c' {
   % 399
   f4 f gf f |
   % 400
+  g!4 f a f |
   % 401
+  d4 d d d |
   % 402
+  r4 df2 df4 |
   % 403
+  df4 df df df |
   % 404
+  bf'1 ~
   % 405
+  bf1 ~
   % 406
+  bf8 r8 r4 r2
   % 407
+  r1 |
   % 408
   % 409
   % 410
