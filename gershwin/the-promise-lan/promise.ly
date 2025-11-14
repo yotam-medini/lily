@@ -111,7 +111,7 @@ soloSoprano = \relative c'' {
   e8[ e e e] e[ c d c] |
   \break
   % 376
-  e8[ e e e] e4 d8[ c] |
+  e8[ e e e] e4 c8[ d] |
   % 377
   e4 e2 c4 |
   % 378
@@ -1364,8 +1364,12 @@ pianoLeft = \relative c {
   <f c'>2( <a d>2 |
   % 349
   <f c'>2 <a d>2) |
-  % 350-355
-  \repeat unfold 6 {
+  % 350
+  <f c'>2( <a d>2) |
+  % 351
+  <f c'>2( <bf d>2) |
+  % 352-355
+  \repeat unfold 4 {
     <f c'>2( <a d>2) |
   }
   % 356
