@@ -1336,64 +1336,101 @@ pianoLeft = \relative c {
   % 340
   <g bf! c f>4 <g bf c f> <gf bf c f>4 <gf bf c f>4 |
   % 341
-  % 342
-  % 343
-  % 344
-  % 345
+  <f a c f>4 <c e g bf d>( <f, f' a c>8) r8 r4 |
+  % 342-345
+  R1*4 |
   % 346
+  <<
+    \new Voice { \voiceTwo { g1 } }
+    \new Voice { \voiceOne { bf'4 d, f b,! } }
+  >>
   % 347
+  <c, c'>1 |
   % 348
+  <f c'>2( <a d>2 |
   % 349
-  % 350
-  % 351
-  % 352
-  % 353
-  % 354
-  % 355
+  <f c'>2 <a d>2) |
+  % 350-355
+  \repeat unfold 6 {
+    <f c'>2( <a d>2) |
+  }
   % 356
+  <e b!>2( <f as>) |
   % 357
+  <e b'!>2 <c e'> |
   % 358
+  <f f'>4 r8 <f f'>8( <ef ef'>4) r8 <c c'>8( |
   % 359
+  d'4) r8 d8( c4) r8 c8( |
   % 360
+  bf4) r4 a8[( bf b c] |
   % 361
+  df4) r4 d!8[( ef e f] |
   % 362
+  gf4) r4 gf,8[( g af a]) |
   % 363
+  <b! g'>8[( <b gs'> <c a'> <df bf'>] <d b'!> <ef c'> <e! cs'> <f d'>]
   % 364
+  <g ds'>8[ <gs e'> <a f'> <bf fs>]
+     \clef "G" 
+     \tuplet 3/2 { <b! g'>8[ <c gs'> <cs a'>] }
+     \tuplet 3/2 { <d! bf'>8[ <ds b'!> <e c'>] } |
   % 365
+  <f df'>4) r4 <df f>2( |
   % 366
+  <c ef>2 <bf df>)
+  \clef bass
   % 367
+  <c, c'>2. <c c'>4 |
   % 368
+  c1 |
   % 369
+  <f, f'>4 <f f'> f'8[ f f f] |
   % 370
+  <<
+    \new Voice { \voiceTwo { bf,2( g2) } }
+    \new Voice { \voiceOne { f'1 } }
+  >>
   % 371
+  <c d>2( <gf df'> |
   % 372
+  <f c')>1 ~ |
   % 373
+  <f c'>1 ~ |
   % 374
-  % 375
-  % 376
-  % 377
-  % 378
+  <f c'>4 r4 r2 |
+  % 375-378
+  R1*4 |
   % 379
+  <a' c d g>4 <a c d g>4 <af c d gf> <af c d gf> |
   % 380
+  <g b! df f>4 <g b! df f> <g b! df f> <g b! df f> |
   % 381
+  <g bf c f>4 <g bf c f> <gf bf c f> <gf bf c f> |
   % 382
-  % 383
-  % 384
-  % 385
+  <f a c f>4 <c e g bf d>4( <f, f' a c>8) r8 r4 |
+  % 383-385
+  R1*3 |
   % 386
+  r2 <d' c'>2 |
   % 387
+  <<
+    \new Voice { \voiceTwo { g,1 } }
+    \new Voice { \voiceOne { bf'4 d, f b,! } }
+  >>
   % 388
+  <c, c'>1 |
   % 389
+  <f c'>2( <a d> |
   % 390
-  % 391
-  % 392
-  % 393
-  % 394
-  % 395
-  % 396
+  <f c'>2 <a d>) |
+  % 391-396
   % 397
+  <e b'!> <a cs> <e b'> <a c> |
   % 398
+  <e b'!>2 <c e'>2 |
   % 399
+  <f f'>4 r8 <f f'>( <ef ef'>4) r8 <e e'>8 |
   % 400
   % 401
   % 402
