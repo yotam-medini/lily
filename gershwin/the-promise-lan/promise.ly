@@ -335,16 +335,25 @@ sopMusic = \relative c'' {
   % 413
   <d a>1 |
   % 414
-  <e af>1 |
+  <e af>1 ( |
   % 415
+  <d af'>1 ) |
   % 416
+  <g c>1 ~ |
   % 417
+  <g c>1 ~ |
   % 418
+  <g c>1 ~ |
   % 419
+  <g c>1 ~ |
   % 420
+  <g c>1 ~ |
   % 421
+  <g c>1 ~ |
   % 422
+  <g c>1 ~ |
   % 423
+  <g c>4 r4 r2 \bar "||"
 }
 
 MezzoMusic = \relative c'' { 
