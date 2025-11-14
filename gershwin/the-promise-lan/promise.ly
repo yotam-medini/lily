@@ -471,16 +471,25 @@ MezzoMusic = \relative c'' {
   % 413
   b1 |
   % 414
-  bf1 |
+  bf1 ~ |
   % 415
+  bf1 |
   % 416
+  <c d>1 ~ |
   % 417
+  <c d>1 ~ |
   % 418
+  <c d>1( |
   % 419
+  d1) ~ |
   % 420
+  d1 ~ |
   % 421
+  d1 ~ |
   % 422
+  d1 ~ |
   % 423
+  d4 r4 r2 \bar "||"
 }
 
 altMusic = \relative c'' {
@@ -598,16 +607,25 @@ altMusic = \relative c'' {
   % 413
   f1 |
   % 414
-  e1 |
+  e1 ~ |
   % 415
+  e1 |
   % 416
+  a1 ~ |
   % 417
+  a1 ~ |
   % 418
+  a1( | %
   % 419
+  <f a>1) ~ |
   % 420
+  <f a>1 ~ |
   % 421
+  <f a>1 ~ |
   % 422
+  <f a>1 ~ |
   % 423
+  <f a>4 r4 r2 \bar "||"
 }
 
 tenMusic = \relative c {
@@ -725,16 +743,25 @@ tenMusic = \relative c {
   % 413
   <f a>1 |
   % 414
-  <ef af>1 |
+  <ef af>1 ~ |
   % 415
+  <ef af>1 |
   % 416
+  <f a>1 ~ |
   % 417
+  <f a>1 ~ |
   % 418
+  <f a>1 ~ |
   % 419
+  <f a>1 ~ |
   % 420
+  <f a>1 ~ |
   % 421
+  <f a>1 ~ |
   % 422
+  <f a>1 ~ |
   % 423
+  <f a>4 r4 r2 \bar "||"
 }
 
 baritoneMusic = \relative c' {
@@ -852,16 +879,25 @@ baritoneMusic = \relative c' {
   % 413
   b1 |
   % 414
-  df1 |
+  df1 ~ |
   % 415
+  df1 |
   % 416
+  c1 ~ |
   % 417
+  c1 ~ |
   % 418
+  c1 ~ |
   % 419
+  c1 ~ |
   % 420
+  c1 ~ |
   % 421
+  c1 ~ |
   % 422
+  c1 ~ |
   % 423
+  c4 r4 r2 \bar "||"
 }
 
 basMusic = \relative c' {
@@ -979,16 +1015,25 @@ basMusic = \relative c' {
   % 413
   g1) |
   % 414
-  bf1 |
+  bf1 ~ |
   % 415
+  bf1 |
   % 416
+  f1 ~ |
   % 417
+  f1 ~ |
   % 418
+  f1 ~ |
   % 419
+  f1 ~ |
   % 420
+  f1 ~ |
   % 421
+  f1 ~ |
   % 422
+  f1 ~ |
   % 423
+  f4 r4 r2 \bar "||"
 }
 
 ChordBDMA = {
