@@ -1323,6 +1323,20 @@ pianoRight = \relative c'' {
   <a d g>1 ~ |  <a d g>4 r4 r2 \bar "||"
 }
 
+
+"LHBar363" = {
+  <b! g'>8[( <b gs'> <c a'> <df bf'>] <d b'!> <ef c'> <e! cs'> <f d'>]
+  % 364
+  <g ds'>8[ <gs e'> <a f'> <bf fs>]
+     \clef "G" 
+     \tuplet 3/2 { <b! g'>8[ <c gs'> <cs a'>] }
+     \tuplet 3/2 { <d! bf'>8[ <ds b'!> <e c'>] } |
+  % 365
+  <f df'>4) r4 <df f>2( |
+  % 366
+  <c ef>2 <bf df>)
+}
+
 pianoLeft = \relative c {
  \global
   % 333
@@ -1368,17 +1382,8 @@ pianoLeft = \relative c {
   df4) r4 d!8[( ef e f] |
   % 362
   gf4) r4 gf,8[( g af a]) |
-  % 363
-  <b! g'>8[( <b gs'> <c a'> <df bf'>] <d b'!> <ef c'> <e! cs'> <f d'>]
-  % 364
-  <g ds'>8[ <gs e'> <a f'> <bf fs>]
-     \clef "G" 
-     \tuplet 3/2 { <b! g'>8[ <c gs'> <cs a'>] }
-     \tuplet 3/2 { <d! bf'>8[ <ds b'!> <e c'>] } |
-  % 365
-  <f df'>4) r4 <df f>2( |
-  % 366
-  <c ef>2 <bf df>)
+  % 363-366
+  \"LHBar363"
   \clef bass
   % 367
   <c, c'>2. <c c'>4 |
@@ -1431,31 +1436,52 @@ pianoLeft = \relative c {
   % 398
   <e b'!>2 <c e'>2 |
   % 399
-  <f f'>4 r8 <f f'>( <ef ef'>4) r8 <ef ef'>8 |
+  <f f'>4 r8 <f f'>( <ef ef'>4) r8 <ef ef'>8( |
   % 400
+  d'4) r8 d8( c4) r8 c8( |
   % 401
+  bf4) r4 a8[( bf b c] |
   % 402
+  df4) r4 d!8[( ef e! f] |
   % 403
-  % 404
-  % 405
-  % 406
-  % 407
+  gf4) r4 gf,8[ g! af a!] | 
+  % 404-407
+  \"LHBar363"  
+  \clef bass
   % 408
+  <c, c'>2. <c c'>4 |
   % 409
+  c1 |
   % 410
+  <f, f'>4 <f f'> <f f'>8[ <f f'> <f f'> <f f'>] |
   % 411
-  % 412
-  % 413
-  % 414
-  % 415
+  <<
+    \new Voice { \voiceTwo { bf2 g2 } }
+    \new Voice { \voiceOne { f'1 } }
+  >>
+  % 412-415
+  \repeat unfold 4 {
+    <<
+      \new Voice { \voiceTwo { <c, c'>4 r4 <c c'>4 <c c'>4  } }
+      \new Voice { \voiceOne { c'1 } }
+    >>
+  }
   % 416
+  <f, c' f>4 <a d> <f c' f> <f c' f> |
   % 417
+  <a d>4 <f c' f>  <f c' f>  <f c' f> |
   % 418
+  <f c' a'>4 <a d g> <f c' a'> <f c' a> |
   % 419
+  <a d g>4 <f c' a'> <f c' a'> <a d g> |
   % 420
+  <f c' a'>4 <a d g> <f c' a'> <f c' a> |
   % 421
+  <a d>4 <f c' f>  <f c' f>  <f c' f> |
   % 422
+  <f, f' c' a' d>1 ~ |
   % 423
+  <f f' c' a' d>4 r4 r2 \bar "||"
 }
 
 \paper{
