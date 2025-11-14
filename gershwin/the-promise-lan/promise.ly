@@ -1425,12 +1425,13 @@ pianoLeft = \relative c {
   % 390
   <f c'>2 <a d>) |
   % 391-396
+  \repeat unfold 6 { <f c'>4 <a d> <f c'> <bf d> } |
   % 397
-  <e b'!> <a cs> <e b'> <a c> |
+  <e, b'!> <a cs> <e b'> <a c> |
   % 398
   <e b'!>2 <c e'>2 |
   % 399
-  <f f'>4 r8 <f f'>( <ef ef'>4) r8 <e e'>8 |
+  <f f'>4 r8 <f f'>( <ef ef'>4) r8 <ef ef'>8 |
   % 400
   % 401
   % 402
