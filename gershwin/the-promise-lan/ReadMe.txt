@@ -26,3 +26,5 @@ promise-minus-sop2.mid
 promise-minus-ten.mid
 
 promise.zip: Convenient ZIP file containing all
+
+Typeset and compiled: yotam.medini@gmail.com
