@@ -1528,7 +1528,8 @@ pianoLeft = \relative c {
 	instrumentName = "Sopran"
         shortInstrumentName = "S"
       } {
-        \set Staff.midiInstrument = "Flute"
+        % \set Staff.midiInstrument = "Flute"
+        \set Staff.midiInstrument = #"honky-tonk"
         \new Voice = "sopranos" {
            \sopMusic
         }
@@ -1538,7 +1539,8 @@ pianoLeft = \relative c {
 	instrumentName = "Mezzo"
         shortInstrumentName = "M"
       } {
-        \set Staff.midiInstrument = #"vibraphone"
+        % \set Staff.midiInstrument = #"vibraphone"
+        \set Staff.midiInstrument = #"honky-tonk"
         \new Voice = "mezzos" {
            \MezzoMusic
         }
@@ -1548,7 +1550,8 @@ pianoLeft = \relative c {
 	instrumentName = "Alt"
         shortInstrumentName = "A"
       } {
-        \set Staff.midiInstrument = #"marimba"
+        % \set Staff.midiInstrument = #"marimba"
+        \set Staff.midiInstrument = #"honky-tonk"
         \new Voice = "altos" {
            \altMusic
         }
@@ -1558,7 +1561,8 @@ pianoLeft = \relative c {
 	instrumentName = "Tenor"
         shortInstrumentName = "T"
       } {
-        \set Staff.midiInstrument = #"electric piano 1"
+        % \set Staff.midiInstrument = #"electric piano 1"
+        \set Staff.midiInstrument = #"honky-tonk"
         \clef "G_8"
         \new Voice = "tenors" {
           \tenMusic
