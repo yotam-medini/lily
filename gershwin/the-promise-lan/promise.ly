@@ -783,9 +783,9 @@ baritoneMusic = \relative c' {
   % 347
   bf2 a2 |
   % 348
-  c1 ~ |
+  a1 ~ |
   % 349
-  c8 r8 r4 r2 |
+  a8 r8 r4 r2 |
   % 350-356
   R1*7
   % 357
@@ -919,13 +919,13 @@ basMusic = \relative c' {
   % 347
   g2 a2 |
   % 348
-  a1 ~ |
+  f1 ~ |
   % 349
-  a8 r8 r4 r2 |
+  f8 r8 r4 r2 |
   % 350-356
   R1*7
   % 357
-  r2 c4 a |
+  r2 c'4 a |
   % 358
   f4 f gf f |
   % 359
