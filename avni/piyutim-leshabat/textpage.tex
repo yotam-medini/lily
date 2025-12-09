@@ -1,0 +1,150 @@
+\documentclass[12pt,a4paper]{article}
+
+% \usepackage{underscore}
+\makeatletter
+\catcode`\_\active
+\DeclareRobustCommand{\myunderscore}{\ifmmode\sb\else
+  \leavevmode\nobreak\hskip\z@skip 
+  \_\-\nobreak\hskip\z@skip \fi}
+\let_\myunderscore
+\makeatother
+
+
+\usepackage{geometry}
+\geometry{left=2cm, right=2cm, top=1in, bottom=1in}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 1pt minus 1pt}
+
+% fonts before polyglossia
+\usepackage{fontspec}
+
+% array before polyglossia/bidi
+\usepackage{array}
+\usepackage{ragged2e}
+
+% multilingual RTL support
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{hebrew}
+
+% Hebrew font you requested
+\newfontfamily\hebrewfont[Script=Hebrew]{David CLM}
+
+% Column types
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}p{0.46\textwidth}}
+\newcolumntype{R}{>{\RaggedLeft\arraybackslash}p{0.46\textwidth}}
+
+\begin{document}
+
+\large
+
+\begin{center}
+\begin{hebrew}
+\textbf{
+יום השבת אין כמוהו / סימן מנצור
+}
+\end{hebrew}
+\end{center}
+
+\begin{tabular}{L@{\hspace{1em}}R}
+\begin{minipage}[t]{\linewidth}
+Yom hashabat ein kamohu \\
+Bercho elohim vaikadshehu. \\
+Miyom rishon ad yom shishi \\
+Likrat shabat nichsefa nafshi, \\
+Ki beshabat e'ese chofshi \\
+Vehi yom menucha ekra'ehu \\
+Bercho elohim vaikadshehu.
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\vspace*{-1.5ex}%
+\begin{hebrew}
+יוֹם הַשַּׁבָּת אֵין כָּמוֹהוּ
+\\
+ בֵּרְכוֹ אֱלֹהִים וַיְקַדְּשֵׁהוּ
+\\
+מִיּוֹם רִאשׁוֹן עַד יוֹם שִׁשִּׁי
+\\
+ לִקְרַאת שַׁבָּת נִכְסְפָה נַפְשִׁי
+\\
+כִּי בַשַּׁבָּת אֵצֵא חָפְשִׁי
+\\
+ וְכִי יוֹם מְנוּחָה אֶקְרָאֵהוּ
+\\
+ בֵּרְכוֹ אֱלֹהִים וַיְקַדְּשֵׁהוּ
+\\
+\end{hebrew}
+\end{minipage}
+\end{tabular}
+
+\vspace*{12pt}
+
+\begin{center}
+\begin{hebrew}
+\textbf{
+כי אשמרה שבת / אברהם אבן עזרא
+}
+\end{hebrew}
+\end{center}
+
+\begin{tabular}{L@{\hspace{1em}}R}
+\begin{minipage}[t]{\linewidth}
+Ki eshm'ra shabat -- el yishm'reni \\
+Ot hi le'olmei ad -- beino uveini.
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\vspace*{-1.5ex}%
+\begin{hebrew}
+כִּי אֶשְׁמְרָה שַׁבָּת 
+\textendash\ \vphantom{.} %
+ אֵל יִשְׁמְרֵנִי
+\\
+אוֹת הִיא לְעוֹלְמֵי עַד
+\textendash\ \vphantom{A} %
+ בֵּינוֹ וּבֵינִי
+\end{hebrew}
+\end{minipage}
+\end{tabular}
+
+\vspace*{12pt}
+
+\begin{center}
+\begin{hebrew}
+\textbf{
+אלי אליהו / אברהם אבן עזרא
+}
+\end{hebrew}
+\end{center}
+
+\begin{tabular}{L@{\hspace{1em}}R}
+\begin{minipage}[t]{\linewidth}
+Eli eliyahu -- bizchut eliyahu \\
+Hanavi have na. \\
+Bo yirtom richbo -- \\
+Na, bashevi, ki ba -- lo shachav libo \\
+Gam lo ra'ah shena.
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\vspace*{-1.5ex}%
+\begin{hebrew}
+אֵלי אֵלִיָּהוּ
+\textendash\ \vphantom{.} %-
+בִּזְכוּת אֵלִיָּהוּ \\
+ הַנָּבִיא הָבֵא נָא \\
+בּוֹ יִרְתּוֹם רִכְבּוֹ
+\\
+ נָע בַּשְּׁבִי כִּי בָּא
+\textendash\ \vphantom{.} %-
+לֹא שָׁכַב לִבּוֹ
+\\
+ גַּם לֹא רָאָה שֵׁנָה
+\end{hebrew}
+
+\end{minipage}
+\end{tabular}
+\end{document}
+
