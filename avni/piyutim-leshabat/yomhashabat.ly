@@ -15,6 +15,13 @@
 \include "yomhashabat_hebrew_lyrics.ly"
 \include "yomhashabat_latin_lyrics.ly"
 
+#(define (last-page? layout props)
+   (= (ly:page-number props)
+      (ly:page-count layout)))
+
+#(define (not-last-page? layout props)
+   (not (last-page? layout props)))
+
 \paper{
   #(set-paper-size "a4")
 
@@ -26,15 +33,15 @@
       (padding . 1)
       (stretchability . 12))
 
-  oddFooterMarkup = \markup \fill-line { 
-    \unless \on-last-page {
-      \line { \italic "All pages except last" }
-    }
-    \on-last-page {
-      \line { \italic "Only on the last page" }
-    }
-  }
-  evenFooterMarkup = \oddFooterMarkup
+%%   oddFooterMarkup = \markup \fill-line {
+%%     \on-the-fly #not-last-page?
+%%       \line { \italic "All pages except last" }
+%% 
+%%     \on-the-fly #last-page?
+%%       \line { \italic "Only on the last page" }
+%%   }
+%% 
+%%   evenFooterMarkup = \oddFooterMarkup
 }
 
 % \override  LyricHyphen #'minimum-distance = #0.8 
@@ -66,10 +73,10 @@
       \include "yomhashabat_soplyrics.ly"
 
       \new Staff = "alt" <<
-        \new Voice = "altos" {
+        \new Voice = "yomhashabat_alt" {
           \set Staff.instrumentName = "A"
           <<
-               \global \yomhashabat_altMusic
+               \global \yomhashabat_alt
           >>
         }
       >>
@@ -77,10 +84,10 @@
 
       \new Staff = "ten" <<
         \clef "G_8"
-        \new Voice = "tenors" {
+        \new Voice = "yomhashabat_ten" {
           \set Staff.instrumentName = "T"
           <<
-               \global \yomhashabat_tenMusic
+               \global \yomhashabat_ten
           >>
         }
       >>
@@ -88,10 +95,10 @@
 
       \new Staff = "bas" <<
         \clef bass
-        \new Voice = "basses" {
+        \new Voice = "yomhashabat_bas" {
           \set Staff.instrumentName = "B"
           <<
-               \global \yomhashabat_basMusic
+               \global \yomhashabat_bas
           >>
         }
       >>
@@ -121,7 +128,7 @@
 
       \new Staff = "sop" <<
 	\set Staff.midiInstrument = #"flute"
-        \new Voice = "yomhashabat" {
+        \new Voice = "yomhashabat_sop" {
           \set Staff.instrumentName = "S"
           <<
                \global \yomhashabat_sop
@@ -132,10 +139,10 @@
 
       \new Staff = "alt" <<
 	\set Staff.midiInstrument = #"oboe"
-        \new Voice = "altos" {
+        \new Voice = "yomhashabat_alt" {
           \set Staff.instrumentName = "A"
           <<
-               \global \yomhashabat_altMusic
+               \global \yomhashabat_alt
           >>
         }
       >>
@@ -144,10 +151,10 @@
       \new Staff = "ten" <<
 	\set Staff.midiInstrument = #"cello"
         \clef "G_8"
-        \new Voice = "tenors" {
+        \new Voice = "yomhashabat_ten" {
           \set Staff.instrumentName = "T"
           <<
-               \global \yomhashabat_tenMusic
+               \global \yomhashabat_ten
           >>
         }
       >>
@@ -156,10 +163,10 @@
       \new Staff = "bas" <<
 	\set Staff.midiInstrument = #"bassoon"
         \clef bass
-        \new Voice = "basses" {
+        \new Voice = "yomhashabat_bas" {
           \set Staff.instrumentName = "B"
           <<
-               \global \yomhashabat_basMusic
+               \global \yomhashabat_bas
           >>
         }
       >>

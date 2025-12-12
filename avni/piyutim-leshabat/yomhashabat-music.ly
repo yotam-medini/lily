@@ -17,19 +17,19 @@ yomhashabat_sop = \relative c' {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-yomhashabat_altMusic = \relative c' {
+yomhashabat_alt = \relative c' {
   R1 | R1
   % bar 3 
   fs4. fs8 e4( fs) |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-yomhashabat_tenMusic = \relative c {
+yomhashabat_ten = \relative c {
   a8( b) a8( b) cs( b) a4 |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-yomhashabat_basMusic = \relative c {
+yomhashabat_bas = \relative c {
   a8( b) a8( b) cs( b) a4 |
 }
 
