@@ -15,12 +15,12 @@
 \include "yomhashabat_hebrew_lyrics.ly"
 \include "yomhashabat_latin_lyrics.ly"
 
-#(define (last-page? layout props)
-   (= (ly:page-number props)
-      (ly:page-count layout)))
+#(define (my-last-page? layout props arg)
+   (= (ly:assoc-get 'page-number props)
+      (ly:assoc-get 'page-count props)))
 
-#(define (not-last-page? layout props)
-   (not (last-page? layout props)))
+#(define (my-not-last-page? layout props arg)
+   (not (my-last-page? layout props arg)))
 
 \paper{
   #(set-paper-size "a4")
@@ -33,15 +33,20 @@
       (padding . 1)
       (stretchability . 12))
 
-%%   oddFooterMarkup = \markup \fill-line {
-%%     \on-the-fly #not-last-page?
-%%       \line { \italic "All pages except last" }
-%% 
-%%     \on-the-fly #last-page?
-%%       \line { \italic "Only on the last page" }
-%%   }
-%% 
-%%   evenFooterMarkup = \oddFooterMarkup
+      oddFooterMarkup = \markup {
+        \if \on-last-page {
+          \line { \concat {
+               \hspace #20
+               "(typeset via " \italic "LilyPond" ")"
+               \hspace #2
+               \small
+               \typewriter yotam.medini@gmail.com
+               \hspace #2
+               #(strftime "%Y-%m-%d %H:%M:%S" (localtime (current-time)))
+          } }
+        }
+      }
+      evenFooterMarkup = \oddFooterMarkup
 }
 
 % \override  LyricHyphen #'minimum-distance = #0.8 

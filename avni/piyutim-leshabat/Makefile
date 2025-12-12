@@ -54,17 +54,17 @@ $(1)-hebrew.pdf $(1).midi: $(1)-hebrew.ly \
 		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS)
 	$(LILYPOND) -I hebrew $(1)-hebrew.ly
 	cp $(1)-hebrew.midi $(1).midi
-	ls -lG $@
+	ls -lG $(1)-hebrew.pdf $(1).midi
 
 $(1)-latin.pdf: $(1)-latin.ly \
 		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS) $$($(1)_LATIN_LYRICS)
 	$(LILYPOND) -dlatinonly -I latin $(1)-latin.ly
-	ls -lG $@
+	ls -lG $(1)-latin.pdf
 
 $(1)-hebrewlatin.pdf: $(1)-hebrewlatin.ly \
 		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS) $$($(1)_LATIN_LYRICS)
 	$(LILYPOND) -I hebrewlatin $(1)-hebrewlatin.ly
-	ls -lG $@
+	ls -lG $(1)-hebrewlatin.pdf
 
 endef
 
