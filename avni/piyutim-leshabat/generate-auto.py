@@ -43,11 +43,11 @@ def generate(lilypond_version, name):
 
         os.makedirs(lang, exist_ok=True)
 
-        f = open(f"{lang}/{name}_lyrics-context.ly", "w")
+        f = open(f"{lang}/{name}-lyrics-context.ly", "w")
         f.write(f"{autogen_header}\n")
-        for actual_lang in lang:
+        for actual_lang in ["hebrew", "latin"]:
             if actual_lang in lang:
-                f.write(f'\\include "{actual_lang}-ctx.ly"\n')
+                f.write(f'\\include "{name}-{actual_lang}-ctx.ly"\n')
         f.close()
         
         for voice in VOICES:
