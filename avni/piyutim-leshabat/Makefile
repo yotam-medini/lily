@@ -36,16 +36,20 @@ $(1)_HEBREWLATIN_LYRICS_AUTO := \
     $$($(1)_HEBREW_LYRICS_AUTO) $$($(1)_LATIN_LYRICS_AUTO)
 $(1)_HEBREWLATIN_LYRICS := $($(1)_HEBREW_LYRICS) $($(1)_LATIN_LYRICS)
 
-$(1)-hebrew.pdf $(1).midi: $(1)-hebrew.ly $(1)-music.ly $($(1)_HEBREW_LYRICS)
+$(1)_COMMON_LY := $(1).ly $(1)-music.ly
+
+$(1)-hebrew.pdf $(1).midi: $(1)-hebrew.ly \
+		$$($(1)_COMMON_LYS) $($(1)_HEBREW_LYRICS)
 	$(LILYPOND) -I hebrew $(1).ly
 	cp $(1)-hebrew.midi $(1).midi
 	ls -lG $@
 
-$(1)-latin.pdf: $(1)-latin.ly $(1)-music.ly $($(1)_LATIN_LYRICS)
+$(1)-latin.pdf: $(1)-latin.ly $$($(1)_COMMON_LYS) $($(1)_LATIN_LYRICS)
 	$(LILYPOND) -dlatinonly -I latin $(1).ly
 	ls -lG $@
 
-$(1)-hebrewlatin.pdf:(1)-hebrewlatin.ly $(1)-music.ly $($(1)_HEBREWLATIN_LYRICS)
+$(1)-hebrewlatin.pdf:(1)-hebrewlatin.ly \
+		$$(((1)_COMMON_LYS) $($(1)_HEBREWLATIN_LYRICS)
 	$(LILYPOND) -I hebrewlatin $(1).ly
 	ls -lG $@
 
@@ -66,9 +70,12 @@ $(foreach name,$(NAMES),$(eval $(call collect_auto,$(name))))
 
 $(info LYRICS_AUTO)
 
-generate-auto: $(LYRICS_AUTO)
-$(LYRICS_AUTO): generate-auto.py
-	./generate-auto.py ${NAMES}
+
+.PHONY:
+generate-auto: generate-auto.py
+	./generate-auto.py ${LILYPOND_VERSION} ${NAMES}
+
+$(LYRICS_AUTO): generate-auto
 
 clean-auto:
 	rm -f ${LYRICS_AUTO}
