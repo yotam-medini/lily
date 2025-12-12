@@ -12,7 +12,6 @@ textpage.pdf: textpage.tex
 
 NAMES = yomhashabat kieshmra elieliyahu
 # NAMES=yomhashabat
-# NAMES = foo bar
 LILYPOND_VERSION = 2.24.3
 VOICES=sop alt ten bas
 
@@ -57,25 +56,23 @@ endef
 
 $(foreach name,$(NAMES), $(eval $(call NAME_RULES,$(name))))
 
-# LATIN_LYRICS_AUTO_NAIVE = $(foo_LATIN_LYRICS_AUTO) $(bar_LATIN_LYRICS_AUTO)
-#LATIN_LYRICS_AUTO := $(foreach name,$(NAMES), $$($(name)_LATIN_LYRICS_AUTO))
- 
-# $(info NAIVE = $(LATIN_LYRICS_AUTO_NAIVE))
-# $(info LOOP  = $(LATIN_LYRICS_AUTO))
-
 define collect_auto
 LYRICS_AUTO += $$($(1)_HEBREWLATIN_LYRICS_AUTO)
 endef
 $(foreach name,$(NAMES),$(eval $(call collect_auto,$(name))))
 
-$(info LYRICS_AUTO)
+# $(info LYRICS_AUTO)
 
-
-.PHONY:
-generate-auto: generate-auto.py
+# .PHONY: generate-auto
+generate-auto-DONE: generate-auto.py
 	./generate-auto.py ${LILYPOND_VERSION} ${NAMES}
+	touch $@
 
-$(LYRICS_AUTO): generate-auto
+$(LYRICS_AUTO): generate-auto-DONE
+
+.PHONY: lyrics-auto
+lyrics-auto: $(LYRICS_AUTO)
+
 
 clean-auto:
 	rm -f ${LYRICS_AUTO}

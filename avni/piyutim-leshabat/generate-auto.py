@@ -28,7 +28,7 @@ def generate(lilypond_version, name):
         f.write(f'\\version "{lilypond_version}"\n')
         f.write(f'\\include  "{name}.ly"\n')
         f.close()
-    for lang in ["hebrew", "latin"]:
+
         f = open(f"{name}-{lang}-ctx.ly", "w")
         f.write(f"{autogen_header}\n")
         indent = 8*' '
@@ -40,7 +40,24 @@ def generate(lilypond_version, name):
             f'{indent}  {RB}\n'
             f'{indent}{RB}\n')
         f.close()
+
         os.makedirs(lang, exist_ok=True)
+
+        f = open(f"{lang}/{name}_lyrics-context.ly", "w")
+        f.write(f"{autogen_header}\n")
+        for actual_lang in lang:
+            if actual_lang in lang:
+                f.write(f'\\include "{actual_lang}-ctx.ly"\n')
+        f.close()
+        
+        for voice in VOICES:
+            f = open(f"{lang}/{name}_{voice}lyrics.ly", "w")
+            f.write(f"{autogen_header}\n")
+            if "hebrew" in lang:
+                f.write(f'\\new Lyrics = "{name}_{voice}lyrics"\n')
+            if "latin" in lang:
+                f.write(f'\\new Lyrics = "{name}_{voice}lyricsLatin"\n')
+            f.close()
 
 def generate_for_names(lilypond_version, names):
     for name in names:
