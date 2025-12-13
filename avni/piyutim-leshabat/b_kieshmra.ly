@@ -11,9 +11,9 @@
   % tagline = ##f
 }
 
-\include "kieshmra-music.ly"
-\include "kieshmra_hebrew_lyrics.ly"
-\include "kieshmra_latin_lyrics.ly"
+\include "b_kieshmra-music.ly"
+\include "b_kieshmra_hebrew_lyrics.ly"
+\include "b_kieshmra_latin_lyrics.ly"
 
 #(define (my-last-page? layout props arg)
    (= (ly:assoc-get 'page-number props)
@@ -62,48 +62,48 @@
     \new ChoirStaff <<
 
       \new Staff = "sop" <<
-        \new Voice = "kieshmra_sop" {
+        \new Voice = "b_kieshmra_sop" {
           \set Staff.instrumentName = "S"
           <<
-               \global \kieshmra_sop
+               \global \b_kieshmra_sop
           >>
         }
       >>
-      \include "kieshmra_soplyrics.ly"
+      \include "b_kieshmra_soplyrics.ly"
 
       \new Staff = "alt" <<
-        \new Voice = "kieshmra_alt" {
+        \new Voice = "b_kieshmra_alt" {
           \set Staff.instrumentName = "A"
           <<
-               \global \kieshmra_alt
+               \global \b_kieshmra_alt
           >>
         }
       >>
-      \include "kieshmra_altlyrics.ly"
+      \include "b_kieshmra_altlyrics.ly"
 
       \new Staff = "ten" <<
         \clef "G_8"
-        \new Voice = "kieshmra_ten" {
+        \new Voice = "b_kieshmra_ten" {
           \set Staff.instrumentName = "T"
           <<
-               \global \kieshmra_ten
+               \global \b_kieshmra_ten
           >>
         }
       >>
-      \include "kieshmra_tenlyrics.ly"
+      \include "b_kieshmra_tenlyrics.ly"
 
       \new Staff = "bas" <<
         \clef bass
-        \new Voice = "kieshmra_bas" {
+        \new Voice = "b_kieshmra_bas" {
           \set Staff.instrumentName = "B"
           <<
-               \global \kieshmra_bas
+               \global \b_kieshmra_bas
           >>
         }
       >>
-      \include "kieshmra_baslyrics.ly"
+      \include "b_kieshmra_baslyrics.ly"
 
-      \include "kieshmra-lyrics-context.ly"
+      \include "b_kieshmra-lyrics-context.ly"
     >>
   >>
 
@@ -127,51 +127,51 @@
 
       \new Staff = "sop" <<
 	\set Staff.midiInstrument = #"flute"
-        \new Voice = "kieshmra_sop" {
+        \new Voice = "b_kieshmra_sop" {
           \set Staff.instrumentName = "S"
           <<
-               \global \kieshmra_sop
+               \global \b_kieshmra_sop
           >>
         }
       >>
-      \include "kieshmra_soplyrics.ly"
+      \include "b_kieshmra_soplyrics.ly"
 
       \new Staff = "alt" <<
 	\set Staff.midiInstrument = #"oboe"
-        \new Voice = "kieshmra_alt" {
+        \new Voice = "b_kieshmra_alt" {
           \set Staff.instrumentName = "A"
           <<
-               \global \kieshmra_alt
+               \global \b_kieshmra_alt
           >>
         }
       >>
-      \include "kieshmra_altlyrics.ly"
+      \include "b_kieshmra_altlyrics.ly"
 
       \new Staff = "ten" <<
 	\set Staff.midiInstrument = #"cello"
         \clef "G_8"
-        \new Voice = "kieshmra_ten" {
+        \new Voice = "b_kieshmra_ten" {
           \set Staff.instrumentName = "T"
           <<
-               \global \kieshmra_ten
+               \global \b_kieshmra_ten
           >>
         }
       >>
-      \include "kieshmra_tenlyrics.ly"
+      \include "b_kieshmra_tenlyrics.ly"
 
       \new Staff = "bas" <<
 	\set Staff.midiInstrument = #"bassoon"
         \clef bass
-        \new Voice = "kieshmra_bas" {
+        \new Voice = "b_kieshmra_bas" {
           \set Staff.instrumentName = "B"
           <<
-               \global \kieshmra_bas
+               \global \b_kieshmra_bas
           >>
         }
       >>
-      \include "kieshmra_baslyrics.ly"
+      \include "b_kieshmra_baslyrics.ly"
 
-      \include "kieshmra-lyrics-context.ly"
+      \include "b_kieshmra-lyrics-context.ly"
     >>
   >>
   }

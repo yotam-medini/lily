@@ -7,19 +7,22 @@ global = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-kieshmra_sop = \relative c'' {
-   cs4 cs8[ cs] cs[( b]) |
+b_kieshmra_sop = \relative c'' {
+  \global
+  cs4 cs8[ cs] cs[( b]) |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-kieshmra_alt = \relative c' {
+b_kieshmra_alt = \relative c' {
+  \global
   a2 g4 ~ | 
   % bar 2
   g4 fs2 |  
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-kieshmra_ten = \relative c {
+b_kieshmra_ten = \relative c {
+  \global
   \repeat unfold 8 {
      r2.
   } |
@@ -27,6 +30,7 @@ kieshmra_ten = \relative c {
   \time 4/4
   R1 | R1 |
   % bar 11
+  \time 3/4
   r2. | r2. |
   % bar 13
   \time 4/4
@@ -39,7 +43,8 @@ kieshmra_ten = \relative c {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-kieshmra_bas = \relative c {
+b_kieshmra_bas = \relative c {
+  \global
   r2. | r2. |
 }
 

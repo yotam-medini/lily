@@ -1,22 +1,22 @@
-kieshmra_soplyricsText = \lyricmode {
+b_kieshmra_soplyricsText = \lyricmode {
 
   a b c
 
 }
 
-kieshmra_altlyricsText = \lyricmode {
+b_kieshmra_altlyricsText = \lyricmode {
 
   a b c
 
 }
 
-kieshmra_tenlyricsText = \lyricmode {
+b_kieshmra_tenlyricsText = \lyricmode {
 
   a b c
 
 }
 
-kieshmra_baslyricsText = \lyricmode {
+b_kieshmra_baslyricsText = \lyricmode {
 
   a b c
 
