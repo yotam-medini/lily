@@ -15,6 +15,12 @@
 \include "a_yomhashabat_hebrew_lyrics.ly"
 \include "a_yomhashabat_latin_lyrics.ly"
 
+% #(unless (defined? 'latinonly)
+%    (define-public latinonly #f))
+
+#(define-public latinonly #f)
+
+
 #(define (my-last-page? layout props arg)
    (= (ly:assoc-get 'page-number props)
       (ly:assoc-get 'page-count props)))
@@ -49,12 +55,6 @@
       evenFooterMarkup = \oddFooterMarkup
 }
 
-% \override  LyricHyphen #'minimum-distance = #0.8 
-% #(define latinonly (ly:get-option 'latinonly #f))
-#(define latinonly
-   (if (defined? 'latinonly)
-       (ly:get-option 'latinonly)
-       #f))
 \layout { 
   \context { 
     \Lyrics

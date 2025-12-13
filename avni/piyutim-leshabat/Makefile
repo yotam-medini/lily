@@ -62,7 +62,7 @@ $(call DIGIT_NAME,$(1))-hebrew.pdf $(call DIGIT_NAME,$(1)).midi: $(1)-hebrew.ly 
 
 $(call DIGIT_NAME,$(1))-latin.pdf: $(1)-latin.ly \
 		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS) $$($(1)_LATIN_LYRICS)
-	$(LILYPOND) -dlatinonly -I latin $(call DIGIT_NAME,$(1))-latin $(1)-latin.ly
+	$(LILYPOND) -dlatinonly=#t -I latin -o $(call DIGIT_NAME,$(1))-latin $(1)-latin.ly
 	ls -lG $(call DIGIT_NAME,$(1))-latin.pdf
 
 $(call DIGIT_NAME,$(1))-hebrewlatin.pdf: $(1)-hebrewlatin.ly \
