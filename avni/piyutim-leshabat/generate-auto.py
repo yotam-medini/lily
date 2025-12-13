@@ -26,8 +26,8 @@ def generate(lilypond_version, name):
         f = open(f"{name}-{lang}.ly", "w")
         f.write(f"{autogen_header}\n")
         f.write(f'\\version "{lilypond_version}"\n')
-        f.write(f'\\include  "common.ly"\n')
-        f.write(f'\\include  "{name}.ly"\n')
+        f.write(f'\\include "common.ly"\n')
+        f.write(f'\\include "{name}.ly"\n')
         f.close()
 
         f = open(f"{name}-{lang}-ctx.ly", "w")
