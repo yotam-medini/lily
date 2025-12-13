@@ -11,9 +11,9 @@
   % tagline = ##f
 }
 
-\include "yomhashabat-music.ly"
-\include "yomhashabat_hebrew_lyrics.ly"
-\include "yomhashabat_latin_lyrics.ly"
+\include "a_yomhashabat-music.ly"
+\include "a_yomhashabat_hebrew_lyrics.ly"
+\include "a_yomhashabat_latin_lyrics.ly"
 
 #(define (my-last-page? layout props arg)
    (= (ly:assoc-get 'page-number props)
@@ -68,48 +68,48 @@
     \new ChoirStaff <<
 
       \new Staff = "sop" <<
-        \new Voice = "yomhashabat_sop" {
+        \new Voice = "a_yomhashabat_sop" {
           \set Staff.instrumentName = "S"
           <<
-               \global \yomhashabat_sop
+               \global \a_yomhashabat_sop
           >>
         }
       >>
-      \include "yomhashabat_soplyrics.ly"
+      \include "a_yomhashabat_soplyrics.ly"
 
       \new Staff = "alt" <<
-        \new Voice = "yomhashabat_alt" {
+        \new Voice = "a_yomhashabat_alt" {
           \set Staff.instrumentName = "A"
           <<
-               \global \yomhashabat_alt
+               \global \a_yomhashabat_alt
           >>
         }
       >>
-      \include "yomhashabat_altlyrics.ly"
+      \include "a_yomhashabat_altlyrics.ly"
 
       \new Staff = "ten" <<
         \clef "G_8"
-        \new Voice = "yomhashabat_ten" {
+        \new Voice = "a_yomhashabat_ten" {
           \set Staff.instrumentName = "T"
           <<
-               \global \yomhashabat_ten
+               \global \a_yomhashabat_ten
           >>
         }
       >>
-      \include "yomhashabat_tenlyrics.ly"
+      \include "a_yomhashabat_tenlyrics.ly"
 
       \new Staff = "bas" <<
         \clef bass
-        \new Voice = "yomhashabat_bas" {
+        \new Voice = "a_yomhashabat_bas" {
           \set Staff.instrumentName = "B"
           <<
-               \global \yomhashabat_bas
+               \global \a_yomhashabat_bas
           >>
         }
       >>
-      \include "yomhashabat_baslyrics.ly"
+      \include "a_yomhashabat_baslyrics.ly"
 
-      \include "yomhashabat-lyrics-context.ly"
+      \include "a_yomhashabat-lyrics-context.ly"
     >>
   >>
 
@@ -133,51 +133,51 @@
 
       \new Staff = "sop" <<
 	\set Staff.midiInstrument = #"flute"
-        \new Voice = "yomhashabat_sop" {
+        \new Voice = "a_yomhashabat_sop" {
           \set Staff.instrumentName = "S"
           <<
-               \global \yomhashabat_sop
+               \global \a_yomhashabat_sop
           >>
         }
       >>
-      \include "yomhashabat_soplyrics.ly"
+      \include "a_yomhashabat_soplyrics.ly"
 
       \new Staff = "alt" <<
 	\set Staff.midiInstrument = #"oboe"
-        \new Voice = "yomhashabat_alt" {
+        \new Voice = "a_yomhashabat_alt" {
           \set Staff.instrumentName = "A"
           <<
-               \global \yomhashabat_alt
+               \global \a_yomhashabat_alt
           >>
         }
       >>
-      \include "yomhashabat_altlyrics.ly"
+      \include "a_yomhashabat_altlyrics.ly"
 
       \new Staff = "ten" <<
 	\set Staff.midiInstrument = #"cello"
         \clef "G_8"
-        \new Voice = "yomhashabat_ten" {
+        \new Voice = "a_yomhashabat_ten" {
           \set Staff.instrumentName = "T"
           <<
-               \global \yomhashabat_ten
+               \global \a_yomhashabat_ten
           >>
         }
       >>
-      \include "yomhashabat_tenlyrics.ly"
+      \include "a_yomhashabat_tenlyrics.ly"
 
       \new Staff = "bas" <<
 	\set Staff.midiInstrument = #"bassoon"
         \clef bass
-        \new Voice = "yomhashabat_bas" {
+        \new Voice = "a_yomhashabat_bas" {
           \set Staff.instrumentName = "B"
           <<
-               \global \yomhashabat_bas
+               \global \a_yomhashabat_bas
           >>
         }
       >>
-      \include "yomhashabat_baslyrics.ly"
+      \include "a_yomhashabat_baslyrics.ly"
 
-      \include "yomhashabat-lyrics-context.ly"
+      \include "a_yomhashabat-lyrics-context.ly"
     >>
   >>
   }

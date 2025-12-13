@@ -10,26 +10,26 @@ global = {
 break_orig = {}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-yomhashabat_sop = \relative c' {
+a_yomhashabat_sop = \relative c' {
   R1 | R1
   % bar 3
   a8[ b] a[ b] cs[ b] a4 |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-yomhashabat_alt = \relative c' {
+a_yomhashabat_alt = \relative c' {
   R1 | R1
   % bar 3 
   fs4. fs8 e4( fs) |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-yomhashabat_ten = \relative c {
+a_yomhashabat_ten = \relative c {
   a8( b) a8( b) cs( b) a4 |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-yomhashabat_bas = \relative c {
+a_yomhashabat_bas = \relative c {
   a8( b) a8( b) cs( b) a4 |
 }
 
