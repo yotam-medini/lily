@@ -45,7 +45,23 @@ b_kieshmra_ten = \relative c {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 b_kieshmra_bas = \relative c {
   \global
+  \repeat unfold 8 {
+     r2.
+  } |
+  % bar 9
+  \time 4/4
+  R1 | R1 |
+  % bar 11
+  \time 3/4
   r2. | r2. |
+  % bar 13
+  \time 4/4
+  R1 |
+  % bar 14 
+  \time 3/4
+  a2( g4 ~ |
+  % bar 15
+  g4) fs8[ fs] f4 |
 }
 
 
