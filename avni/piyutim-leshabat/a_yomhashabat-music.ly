@@ -6,9 +6,6 @@ global = {
   \tempo "Moderato e semplice" 4 = 100
 }
 
-% break_orig = \break
-break_orig = {}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 a_yomhashabat_sop = \relative c' {
   R1 | R1

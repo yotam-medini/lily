@@ -55,18 +55,20 @@ $(1)_HEBREWLATIN_LYRICS := \
 $(1)_COMMON_LYS := $(1).ly $(1)-music.ly
 
 $(call DIGIT_NAME,$(1))-hebrew.pdf $(call DIGIT_NAME,$(1)).midi: $(1)-hebrew.ly \
-		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS)
+		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS) common.ly
 	$(LILYPOND) -I hebrew -o $(call DIGIT_NAME,$(1))-hebrew $(1)-hebrew.ly
 	cp $(call DIGIT_NAME,$(1))-hebrew.midi $(call DIGIT_NAME,$(1)).midi
 	ls -lG $(call DIGIT_NAME,$(1))-hebrew.pdf $(call DIGIT_NAME,$(1)).midi
 
 $(call DIGIT_NAME,$(1))-latin.pdf: $(1)-latin.ly \
-		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS) $$($(1)_LATIN_LYRICS)
+		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS) $$($(1)_LATIN_LYRICS) \
+		common.ly
 	$(LILYPOND) -dlatinonly=#t -I latin -o $(call DIGIT_NAME,$(1))-latin $(1)-latin.ly
 	ls -lG $(call DIGIT_NAME,$(1))-latin.pdf
 
 $(call DIGIT_NAME,$(1))-hebrewlatin.pdf: $(1)-hebrewlatin.ly \
-		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS) $$($(1)_LATIN_LYRICS)
+		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS) $$($(1)_LATIN_LYRICS) \
+		common.ly
 	$(LILYPOND) -I hebrewlatin -o $(call DIGIT_NAME,$(1))-hebrewlatin $(1)-hebrewlatin.ly
 	ls -lG $(call DIGIT_NAME,$(1))-hebrewlatin.pdf
 

@@ -6,9 +6,6 @@ global = {
   \tempo "Dolce, lento espressivo" 4 = 60
 }
 
-% break_orig = \break
-break_orig = {}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 kieshmra_sop = \relative c'' {
    cs4 cs8[ cs] cs[( b]) |

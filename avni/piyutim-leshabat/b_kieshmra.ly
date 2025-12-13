@@ -49,12 +49,6 @@
       evenFooterMarkup = \oddFooterMarkup
 }
 
-% \override  LyricHyphen #'minimum-distance = #0.8 
-% #(define latinonly (ly:get-option 'latinonly #f))
-#(define latinonly
-   (if (defined? 'latinonly)
-       (ly:get-option 'latinonly)
-       #f))
 \layout { 
   \context { 
     \Lyrics
