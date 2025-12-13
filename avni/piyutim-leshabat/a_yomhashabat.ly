@@ -65,7 +65,7 @@
         \new Voice = "a_yomhashabat_sop" {
           \set Staff.instrumentName = "S"
           <<
-               \global \a_yomhashabat_sop
+             \a_yomhashabat_sop
           >>
         }
       >>
@@ -75,7 +75,7 @@
         \new Voice = "a_yomhashabat_alt" {
           \set Staff.instrumentName = "A"
           <<
-               \global \a_yomhashabat_alt
+             \a_yomhashabat_alt
           >>
         }
       >>
@@ -86,7 +86,7 @@
         \new Voice = "a_yomhashabat_ten" {
           \set Staff.instrumentName = "T"
           <<
-               \global \a_yomhashabat_ten
+             \a_yomhashabat_ten
           >>
         }
       >>
@@ -97,7 +97,7 @@
         \new Voice = "a_yomhashabat_bas" {
           \set Staff.instrumentName = "B"
           <<
-               \global \a_yomhashabat_bas
+             \a_yomhashabat_bas
           >>
         }
       >>
@@ -130,7 +130,7 @@
         \new Voice = "a_yomhashabat_sop" {
           \set Staff.instrumentName = "S"
           <<
-               \global \a_yomhashabat_sop
+             \a_yomhashabat_sop
           >>
         }
       >>
@@ -141,7 +141,7 @@
         \new Voice = "a_yomhashabat_alt" {
           \set Staff.instrumentName = "A"
           <<
-               \global \a_yomhashabat_alt
+             \a_yomhashabat_alt
           >>
         }
       >>
@@ -153,7 +153,7 @@
         \new Voice = "a_yomhashabat_ten" {
           \set Staff.instrumentName = "T"
           <<
-               \global \a_yomhashabat_ten
+             \a_yomhashabat_ten
           >>
         }
       >>
@@ -165,7 +165,7 @@
         \new Voice = "a_yomhashabat_bas" {
           \set Staff.instrumentName = "B"
           <<
-               \global \a_yomhashabat_bas
+             \a_yomhashabat_bas
           >>
         }
       >>

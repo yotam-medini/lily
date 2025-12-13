@@ -10,8 +10,8 @@ endif
 textpage.pdf: textpage.tex
 	xelatex $<
 
-NAMES = a_yomhashabat b_kieshmra c_elieliyahu d_yomhashabat
-# NAMES=yomhashabat
+# NAMES = a_yomhashabat b_kieshmra c_elieliyahu d_yomhashabat
+NAMES = a_yomhashabat b_kieshmra
 LILYPOND_VERSION = 2.24.3
 LILYPOND = lilypond
 VOICES=sop alt ten bas
@@ -44,9 +44,6 @@ $(1)_HEBREWLATIN_LYS_AUTO := \
 	hebrewlatin/$(1)-lyrics-context.ly \
 	$(foreach v,$(VOICES), hebrewlatin/$(1)_$(v)lyrics.ly)
 
-# $(1)_HEBREWLATIN_LYS_AUTO := \
-#     $$($(1)_HEBREW_LYS_AUTO) $$($(1)_LATIN_LYS_AUTO)
-# $(1)_HEBREWLATIN_LYRICS := $($(1)_HEBREW_LYRICS) $($(1)_LATIN_LYRICS)
 $(1)_HEBREWLATIN_LYRICS := \
 	$(1)_hebrew_lyrics.ly \
 	$(1)_latin_lyrics.ly \
@@ -80,6 +77,11 @@ define collect_auto
 LYS_AUTO += $$($(1)_HEBREW_LYS_AUTO)
 LYS_AUTO += $$($(1)_LATIN_LYS_AUTO)
 LYS_AUTO += $$($(1)_HEBREWLATIN_LYS_AUTO)
+LYS_HEBREW_AUTO += $$($(1)_HEBREW_LYS_AUTO)
+LYS_LATIN_AUTO += $$($(1)_LATIN_LYS_AUTO)
+LYS_HEBREWLATIN_AUTO += $$($(1)_HEBREWLATIN_LYS_AUTO)
+HEBREW_LYRICS += $(1)_hebrew_lyrics.ly
+LATIN_LYRICS += $(1)_latin_lyrics.ly
 endef
 $(foreach name,$(NAMES),$(eval $(call collect_auto,$(name))))
 
@@ -95,6 +97,22 @@ $(LYS_AUTO): generate-auto-DONE
 .PHONY: lyrics-auto
 lyrics-auto: $(LYS_AUTO)
 
+# The whole book
+piyutim_leshabat-hebrew.pdf: piyutim_leshabat-hebrew.ly piyutim_leshabat.ly \
+		$(LYS_HEBREW_AUTO) $(HEBREW_LYRICS) common.ly
+	$(LILYPOND) -I hebrew $<
+	ls -lG $@
+
+piyutim_leshabat-latin.pdf: piyutim_leshabat-latin.ly piyutim_leshabat.ly \
+		$(LYS_LATIN_AUTO) $(LATIN_LYRICS) common.ly
+	$(LILYPOND) -dlatinonly=#t -I latin $<
+	ls -lG $@
+
+piyutim_leshabat-hebrewlatin.pdf: piyutim_leshabat-hebrewlatin.ly \
+		piyutim_leshabat.ly \
+		$(LYS_HEBREWLATIN_AUTO) $(HEBREW_LYRICS) $(LATIN_LYRICS) common.ly
+	$(LILYPOND) -I hebrew $<
+	ls -lG $@
 
 clean-auto:
 	rm -f ${LYS_AUTO}
