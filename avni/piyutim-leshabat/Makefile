@@ -10,11 +10,15 @@ endif
 textpage.pdf: textpage.tex
 	xelatex $<
 
-NAMES = yomhashabat kieshmra elieliyahu
+NAMES = a_yomhashabat b_kieshmra c_elieliyahu d_yomhashabat
 # NAMES=yomhashabat
 LILYPOND_VERSION = 2.24.3
 LILYPOND = lilypond
 VOICES=sop alt ten bas
+
+define DIGIT_NAME
+$(shell ./digit_name.py $(1))
+endef
 
 define NAME_RULES
 
@@ -50,11 +54,18 @@ $(1)_HEBREWLATIN_LYRICS := \
 
 $(1)_COMMON_LYS := $(1).ly $(1)-music.ly
 
+$(call DIGIT_NAME,$(1)).pdf $(call DIGIT_NAME,$(1)).midi: $(1)-hebrew.ly \
+		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS)
+	$(LILYPOND) -I hebrew -o $(call DIGIT_NAME,$(1)) $(1)-hebrew.ly
+	cp $(call DIGIT_NAME,$(1))-hebrew.midi $(call DIGIT_NAME,$(1)).midi
+	ls -lG $(call DIGIT_NAME,$(1))-hebrew.pdf $(call DIGIT_NAME,$(1)).midi
+
 $(1)-hebrew.pdf $(1).midi: $(1)-hebrew.ly \
 		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS)
 	$(LILYPOND) -I hebrew $(1)-hebrew.ly
 	cp $(1)-hebrew.midi $(1).midi
 	ls -lG $(1)-hebrew.pdf $(1).midi
+
 
 $(1)-latin.pdf: $(1)-latin.ly \
 		$$($(1)_COMMON_LYS) $$($(1)_HEBREW_LYRICS) $$($(1)_LATIN_LYRICS)
