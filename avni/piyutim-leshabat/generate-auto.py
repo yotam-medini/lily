@@ -19,9 +19,11 @@ def strnow():
     ret = tnow.strftime('%Y-%m-%d%H:%M:%S')
     return ret
 
-def generate(lilypond_version, name):
-    autogen_header = (f"% Auto-generated on {strnow()} by {sys.argv[0]}."
-            " Do NOT edit")
+def get_autogen_header() :
+    return f"% Auto-generated on {strnow()} by {sys.argv[0]}. Do NOT edit"
+
+def generate_single(lilypond_version, name):
+    autogen_header = get_autogen_header() 
     for lang in ["hebrew", "latin", "hebrewlatin"]:
         f = open(f"{name}-{lang}.ly", "w")
         f.write(f"{autogen_header}\n")
@@ -60,9 +62,68 @@ def generate(lilypond_version, name):
                 f.write(f'\\new Lyrics = "{name}_{voice}lyricsLatin"\n')
             f.close()
 
+def generate_books(lilypond_version, names):
+    autogen_header = get_autogen_header()
+    for lang in ["hebrew", "latin", "hebrewlatin"]:
+        f = open(f"piyutim_leshabat-{lang}.ly", "w")
+        f.write(f"{autogen_header}\n")
+        f.write(f'\\version "{lilypond_version}"\n')
+        for name in names:
+            f.write("\n")
+            f.write(f'\\include "{name}-music.ly"\n')
+            for actual_lang in ["hebrew", "latin"]:
+                 if actual_lang in lang:
+                     f.write(f'\\include "{name}-{actual_lang}_lyrics.ly"\n')
+        f.write('\n\\include "piyutim_leshabat.ly"\n')
+        f.close()
+
+def generate_body(names):
+    f = open("piyutim_leshabat.ly", "w")
+    f.write(f"{get_autogen_header()}\n")
+    f.write('\n\\include "piyutim_leshabat-header.ly"\n')
+    title_map = {
+        "a_yomhashabat": "Yom haShabat יום השבת",
+        "b_kieshmra": "Ki Eshmra כי אשמרה",
+        "c_elieliyahu": "Eli Eliyahu אלי אליהו",
+        "d_yomhashabat": "Yom haShabat יום השבת",
+    }
+    voice_map = {
+       "sop": "Soprano",
+       "alt": "Alto",
+       "ten": "Tenor",
+       "bas": "Bass"
+    }
+    for name in names:
+        f.write("\n\\score {\n")
+        title = title_map[name]
+        f.write(f"""
+  \\header {LB}
+    title = "{title}"
+    subtitle = ##f
+    composer = ##f
+  {RB}
+
+""")
+        f.write("  \\new ChoirStaff <<\n")
+        for voice in ["sop", "alt", "ten", "bas"]:
+             f.write(f'    \\new Staff = "{voice}" <<\n')
+             f.write(f'      \\new Voice = "{voice_map[voice]}" {LB}\n')
+             f.write( "      <<\n")
+             f.write(f"        \\global \\{name}_{voice}\n")
+             f.write( "      >>\n")
+             f.write(f"      {RB}\n")
+             f.write( "    >>\n")
+             f.write(f'    \\include "{name}_{voice}lyrics.ly"\n\n')
+             
+        f.write("  >>\n") # ChoirStaff
+        f.write("}\n") # score
+    f.close()
+
 def generate_for_names(lilypond_version, names):
     for name in names:
-        generate(lilypond_version, name)
+        generate_single(lilypond_version, name)
+    generate_books(lilypond_version, names)
+    generate_body(names)
 
 if __name__ == "__main__":
    generate_for_names(sys.argv[1], sys.argv[2:])

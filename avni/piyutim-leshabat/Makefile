@@ -28,7 +28,7 @@ $(1)_HEBREW_LYS_AUTO := \
 	hebrew/$(1)-lyrics-context.ly \
 	$(foreach v,$(VOICES), hebrew/$(1)_$(v)lyrics.ly)
 
-$(1)_HEBREW_LYRICS := $(1)_hebrew_lyrics.ly $$($(1)_HEBREW_LYS_AUTO)
+$(1)_HEBREW_LYRICS := $(1)-hebrew_lyrics.ly $$($(1)_HEBREW_LYS_AUTO)
 
 $(1)_LATIN_LYS_AUTO := \
         $(1)-latin.ly \
@@ -36,7 +36,7 @@ $(1)_LATIN_LYS_AUTO := \
 	latin/$(1)-lyrics-context.ly \
 	$(foreach v,$(VOICES), latin/$(1)_$(v)lyrics.ly)
 
-$(1)_LATIN_LYRICS := $(1)_latin_lyrics.ly $$($(1)_LATIN_LYS_AUTO)
+$(1)_LATIN_LYRICS := $(1)-latin_lyrics.ly $$($(1)_LATIN_LYS_AUTO)
 
 $(1)_HEBREWLATIN_LYS_AUTO := \
         $(1)-hebrewlatin.ly \
@@ -45,8 +45,8 @@ $(1)_HEBREWLATIN_LYS_AUTO := \
 	$(foreach v,$(VOICES), hebrewlatin/$(1)_$(v)lyrics.ly)
 
 $(1)_HEBREWLATIN_LYRICS := \
-	$(1)_hebrew_lyrics.ly \
-	$(1)_latin_lyrics.ly \
+	$(1)-hebrew_lyrics.ly \
+	$(1)-latin_lyrics.ly \
 	$$($(1)_HEBREWLATIN_LYS_AUTO) \
 
 $(1)_COMMON_LYS := $(1).ly $(1)-music.ly
@@ -80,10 +80,14 @@ LYS_AUTO += $$($(1)_HEBREWLATIN_LYS_AUTO)
 LYS_HEBREW_AUTO += $$($(1)_HEBREW_LYS_AUTO)
 LYS_LATIN_AUTO += $$($(1)_LATIN_LYS_AUTO)
 LYS_HEBREWLATIN_AUTO += $$($(1)_HEBREWLATIN_LYS_AUTO)
-HEBREW_LYRICS += $(1)_hebrew_lyrics.ly
-LATIN_LYRICS += $(1)_latin_lyrics.ly
+HEBREW_LYRICS += $(1)-hebrew_lyrics.ly
+LATIN_LYRICS += $(1)-latin_lyrics.ly
 endef
 $(foreach name,$(NAMES),$(eval $(call collect_auto,$(name))))
+
+LYS_PIYUTIM_AUTO = $(foreach lang, hebrew latin hebrewlatin, \
+    piyutim_leshabat-$(lang).ly)
+LYS_PIYUTIM_AUTO += piyutim_leshabat.ly
 
 # $(info LYS_AUTO)
 
@@ -92,24 +96,27 @@ generate-auto-DONE: generate-auto.py
 	./generate-auto.py ${LILYPOND_VERSION} ${NAMES}
 	touch $@
 
-$(LYS_AUTO): generate-auto-DONE
+$(LYS_AUTO) $(LYS_PIYUTIM_AUTO): generate-auto-DONE
 
 .PHONY: lyrics-auto
 lyrics-auto: $(LYS_AUTO)
 
 # The whole book
 piyutim_leshabat-hebrew.pdf: piyutim_leshabat-hebrew.ly piyutim_leshabat.ly \
+		piyutim_leshabat-header.ly \
 		$(LYS_HEBREW_AUTO) $(HEBREW_LYRICS) common.ly
 	$(LILYPOND) -I hebrew $<
 	ls -lG $@
 
 piyutim_leshabat-latin.pdf: piyutim_leshabat-latin.ly piyutim_leshabat.ly \
+		piyutim_leshabat-header.ly \
 		$(LYS_LATIN_AUTO) $(LATIN_LYRICS) common.ly
 	$(LILYPOND) -dlatinonly=#t -I latin $<
 	ls -lG $@
 
 piyutim_leshabat-hebrewlatin.pdf: piyutim_leshabat-hebrewlatin.ly \
 		piyutim_leshabat.ly \
+		piyutim_leshabat-header.ly \
 		$(LYS_HEBREWLATIN_AUTO) $(HEBREW_LYRICS) $(LATIN_LYRICS) common.ly
 	$(LILYPOND) -I hebrew $<
 	ls -lG $@
