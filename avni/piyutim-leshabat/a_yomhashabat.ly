@@ -12,8 +12,8 @@
 }
 
 \include "a_yomhashabat-music.ly"
-\include "a_yomhashabat_hebrew_lyrics.ly"
-\include "a_yomhashabat_latin_lyrics.ly"
+\include "a_yomhashabat-hebrew_lyrics.ly"
+\include "a_yomhashabat-latin_lyrics.ly"
 
 #(define (my-last-page? layout props arg)
    (= (ly:assoc-get 'page-number props)

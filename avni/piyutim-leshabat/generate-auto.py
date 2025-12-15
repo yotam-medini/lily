@@ -32,18 +32,6 @@ def generate_single(lilypond_version, name):
         f.write(f'\\include "{name}.ly"\n')
         f.close()
 
-        f = open(f"{name}-{lang}-ctx.ly", "w")
-        f.write(f"{autogen_header}\n")
-        indent = 8*' '
-        for voice in VOICES:
-            f.write(
-            f'{indent}\\context Lyrics = "{name}_lyrics" {LB}\n'
-            f'{indent}  \\lyricsto "{name}_{voice}" {LB}\n'
-            f'{indent}    \\{name}_{voice}_lyrics_text\n'
-            f'{indent}  {RB}\n'
-            f'{indent}{RB}\n')
-        f.close()
-
         os.makedirs(lang, exist_ok=True)
 
         f = open(f"{lang}/{name}-lyrics-context.ly", "w")
@@ -61,6 +49,19 @@ def generate_single(lilypond_version, name):
             if "latin" in lang:
                 f.write(f'\\new Lyrics = "{name}_{voice}lyricsLatin"\n')
             f.close()
+
+    for lang in ["hebrew", "latin"]:
+        f = open(f"{name}-{lang}-ctx.ly", "w")
+        f.write(f"{autogen_header}\n")
+        indent = 8*' '
+        for voice in VOICES:
+            f.write(
+            f'{indent}\\context Lyrics = "{name}_lyrics" {LB}\n'
+            f'{indent}  \\lyricsto "{name}_{voice}" {LB}\n'
+            f'{indent}    \\{name}_{voice}_{lang}_lyrics_text\n'
+            f'{indent}  {RB}\n'
+            f'{indent}{RB}\n')
+        f.close()
 
 def generate_books(lilypond_version, names):
     autogen_header = get_autogen_header()
@@ -108,12 +109,14 @@ def generate_body(names):
         for voice in ["sop", "alt", "ten", "bas"]:
              f.write(f'    \\new Staff = "{voice}" <<\n')
              f.write(f'      \\new Voice = "{voice_map[voice]}" {LB}\n')
-             f.write( "      <<\n")
+             # f.write( "      <<\n")
              f.write(f"        \\global \\{name}_{voice}\n")
-             f.write( "      >>\n")
+             # f.write( "      >>\n")
              f.write(f"      {RB}\n")
              f.write( "    >>\n")
              f.write(f'    \\include "{name}_{voice}lyrics.ly"\n\n')
+
+        f.write(f'    \\include "{name}-lyrics-context.ly"\n')
              
         f.write("  >>\n") # ChoirStaff
         f.write("}\n") # score
