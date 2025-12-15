@@ -108,10 +108,8 @@ def generate_body(names):
         f.write("  \\new ChoirStaff <<\n")
         for voice in ["sop", "alt", "ten", "bas"]:
              f.write(f'    \\new Staff = "{voice}" <<\n')
-             f.write(f'      \\new Voice = "{voice_map[voice]}" {LB}\n')
-             # f.write( "      <<\n")
-             f.write(f"        \\global \\{name}_{voice}\n")
-             # f.write( "      >>\n")
+             f.write(f'      \\new Voice = "{name}_{voice}" {LB}\n')
+             f.write(f"        \\{name}_{voice}\n")
              f.write(f"      {RB}\n")
              f.write( "    >>\n")
              f.write(f'    \\include "{name}_{voice}lyrics.ly"\n\n')

@@ -1,6 +1,6 @@
 \include "english.ly"
 
-global = {
+b_kieshmra_global = {
   \key a \major
   \time 3/4
   \tempo "Dolce, lento espressivo" 4 = 60
@@ -8,13 +8,13 @@ global = {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 b_kieshmra_sop = \relative c'' {
-  \global
+  \b_kieshmra_global
   cs4 cs8[ cs] cs[( b]) |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 b_kieshmra_alt = \relative c' {
-  \global
+  \b_kieshmra_global
   a2 g4 ~ | 
   % bar 2
   g4 fs2 |  
@@ -22,7 +22,7 @@ b_kieshmra_alt = \relative c' {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 b_kieshmra_ten = \relative c {
-  \global
+  \b_kieshmra_global
   \repeat unfold 8 {
      r2.
   } |
@@ -44,7 +44,7 @@ b_kieshmra_ten = \relative c {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 b_kieshmra_bas = \relative c {
-  \global
+  \b_kieshmra_global
   \repeat unfold 8 {
      r2.
   } |
