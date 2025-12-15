@@ -44,10 +44,9 @@ def generate_single(lilypond_version, name):
         for voice in VOICES:
             f = open(f"{lang}/{name}_{voice}lyrics.ly", "w")
             f.write(f"{autogen_header}\n")
-            if "hebrew" in lang:
-                f.write(f'\\new Lyrics = "{name}_{voice}lyrics"\n')
-            if "latin" in lang:
-                f.write(f'\\new Lyrics = "{name}_{voice}lyricsLatin"\n')
+            for actual_lang in ["hebrew", "latin"]:
+                if actual_lang in lang:
+                    f.write(f'\\new Lyrics = "{name}_{voice}_lyrics_{lang}"\n')
             f.close()
 
     for lang in ["hebrew", "latin"]:
@@ -56,7 +55,7 @@ def generate_single(lilypond_version, name):
         indent = 8*' '
         for voice in VOICES:
             f.write(
-            f'{indent}\\context Lyrics = "{name}_lyrics" {LB}\n'
+            f'{indent}\\context Lyrics = "{name}_{voice}_lyrics_{lang}" {LB}\n'
             f'{indent}  \\lyricsto "{name}_{voice}" {LB}\n'
             f'{indent}    \\{name}_{voice}_{lang}_lyrics_text\n'
             f'{indent}  {RB}\n'
