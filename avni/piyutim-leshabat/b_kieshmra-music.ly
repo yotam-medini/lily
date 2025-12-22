@@ -4,6 +4,7 @@ b_kieshmra_global = {
   \key a \major
   \time 3/4
   \tempo "Dolce, lento espressivo" 4 = 60
+  \dynamicUp
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

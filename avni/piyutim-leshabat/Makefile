@@ -81,6 +81,7 @@ LYS_AUTO += $$($(1)_HEBREWLATIN_LYS_AUTO)
 LYS_HEBREW_AUTO += $$($(1)_HEBREW_LYS_AUTO)
 LYS_LATIN_AUTO += $$($(1)_LATIN_LYS_AUTO)
 LYS_HEBREWLATIN_AUTO += $$($(1)_HEBREWLATIN_LYS_AUTO)
+MUSICS += $(1)-music.ly
 HEBREW_LYRICS += $(1)-hebrew_lyrics.ly
 LATIN_LYRICS += $(1)-latin_lyrics.ly
 SONG_HEADERS += $(1)-header.ly
@@ -106,12 +107,14 @@ lyrics-auto: $(LYS_AUTO)
 # The whole book
 piyutim_leshabat-hebrew.pdf: piyutim_leshabat-hebrew.ly piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
+		$(MUSICS) \
 		$(LYS_HEBREW_AUTO) $(HEBREW_LYRICS) common.ly
 	$(LILYPOND) -I hebrew $<
 	ls -lG $@
 
 piyutim_leshabat-latin.pdf: piyutim_leshabat-latin.ly piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
+		$(MUSICS) \
 		$(LYS_LATIN_AUTO) $(LATIN_LYRICS) common.ly
 	$(LILYPOND) -dlatinonly=#t -I latin $<
 	ls -lG $@
@@ -119,6 +122,7 @@ piyutim_leshabat-latin.pdf: piyutim_leshabat-latin.ly piyutim_leshabat.ly \
 piyutim_leshabat-hebrewlatin.pdf: piyutim_leshabat-hebrewlatin.ly \
 		piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
+		$(MUSICS) \
 		$(LYS_HEBREWLATIN_AUTO) $(HEBREW_LYRICS) $(LATIN_LYRICS) common.ly
 	$(LILYPOND) -I hebrewlatin $<
 	ls -lG $@

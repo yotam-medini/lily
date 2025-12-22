@@ -70,6 +70,7 @@ def generate_books(lilypond_version, names):
         f = open(f"piyutim_leshabat-{lang}.ly", "w")
         f.write(f"{autogen_header}\n")
         f.write(f'\\version "{lilypond_version}"\n')
+        f.write(f'\n\\include "common.ly"\n')
         for name in names:
             f.write("\n")
             f.write(f'\\include "{name}-music.ly"\n')
@@ -94,7 +95,6 @@ def generate_body(names):
         header_fn = f"{name}-header.ly"
         song_header_raw = open(header_fn).read()
         song_header = textwrap.indent(song_header_raw, "  ")
-        vlog(f"name={name} header_fn={header_fn} #(song_header)={len(song_header)}\n")
         f.write(f"{song_header}")
         f.write("  \\new ChoirStaff <<\n")
         for voice in ["sop", "alt", "ten", "bas"]:
