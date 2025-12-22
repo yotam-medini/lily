@@ -49,7 +49,7 @@ a_yomhashabat_alt = \relative c' {
   \a_yomhashabat_global
   R1 | R1
   % bar 3 
-  fs4. fs8 e4( fs) |
+  fs4.\mp fs8 e4( fs) |
   % bar 4
   e4 ds8[( e]) fs2 |
   % bar 5-6
@@ -80,29 +80,44 @@ a_yomhashabat_alt = \relative c' {
 a_yomhashabat_ten = \relative c' {
   \a_yomhashabat_global
   % bar 1
-  a8( b) a8( b) cs( b) a4 |
+  a8(\mp b) a8( b) cs( b) a4 |
   % bar 2
   a8[ gs] fs[ gs] a2 |
   % bar 3
+  cs4 ds cs4( ds8[ cs]) |
   % bar 4
+  b4 cs cs2 |
   % bar 5
+  a8[( b]) a[( b]) cs[( b]) a4 |
   % bar 6
+  a8[( gs]) fs[ gs] a2 |
   % bar 7
+  cs4 ds cs ds8[( cs]) |
   % bar 8
+  b8[ b] b8[ a16b] cs2 |
   % bar 9
+  d!4 fs e8[( ds16 cs]) b4 |
   % bar 10
+  d4 cs8[( b]) e[( ds]) cs4 |
   % bar 11
+  r2 gs8[ a] fs[( gs]) |
   % bar 12
+  cs8[ b] a[( b] a2) |
   % bar 13
+  cs4 ds cs ds8[ cs] |
   % bar 14
+  b4 cs8[ cs] cs4 cs~ | 
   % bar 15
+  cs1 ~
+  % bar 16
+  cs1 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 a_yomhashabat_bas = \relative c' {
   \a_yomhashabat_global
   % bar 1
-  a8( b) a8( b) cs( b) a4 |
+  a8(\mp b) a8( b) cs( b) a4 |
   % bar 2
   a8[ gs] fs[ gs] a2 |
   % bar 3
