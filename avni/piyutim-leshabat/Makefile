@@ -40,7 +40,8 @@ $(1)_LATIN_LYRICS := $(1)-latin_lyrics.ly $$($(1)_LATIN_LYS_AUTO)
 
 $(1)_HEBREWLATIN_LYS_AUTO := \
         $(1)-hebrewlatin.ly \
-        $(1)-hebrewlatin-ctx.ly \
+        $(1)-hebrew-ctx.ly \
+        $(1)-latin-ctx.ly \
 	hebrewlatin/$(1)-lyrics-context.ly \
 	$(foreach v,$(VOICES), hebrewlatin/$(1)_$(v)lyrics.ly)
 
@@ -82,6 +83,7 @@ LYS_LATIN_AUTO += $$($(1)_LATIN_LYS_AUTO)
 LYS_HEBREWLATIN_AUTO += $$($(1)_HEBREWLATIN_LYS_AUTO)
 HEBREW_LYRICS += $(1)-hebrew_lyrics.ly
 LATIN_LYRICS += $(1)-latin_lyrics.ly
+SONG_HEADERS += $(1)-header.ly
 endef
 $(foreach name,$(NAMES),$(eval $(call collect_auto,$(name))))
 
@@ -92,7 +94,7 @@ LYS_PIYUTIM_AUTO += piyutim_leshabat.ly
 # $(info LYS_AUTO)
 
 # .PHONY: generate-auto
-generate-auto-DONE: generate-auto.py
+generate-auto-DONE: generate-auto.py $(SONG_HEADERS)
 	./generate-auto.py ${LILYPOND_VERSION} ${NAMES}
 	touch $@
 
@@ -118,7 +120,7 @@ piyutim_leshabat-hebrewlatin.pdf: piyutim_leshabat-hebrewlatin.ly \
 		piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
 		$(LYS_HEBREWLATIN_AUTO) $(HEBREW_LYRICS) $(LATIN_LYRICS) common.ly
-	$(LILYPOND) -I hebrew $<
+	$(LILYPOND) -I hebrewlatin $<
 	ls -lG $@
 
 clean-auto:

@@ -3,6 +3,7 @@
 import datetime
 import os
 import sys
+import textwrap
 
 VOICES = ["sop", "alt", "ten", "bas"]
 LB = '{'
@@ -16,7 +17,7 @@ def fatal(msg):
 
 def strnow():
     tnow = datetime.datetime.now()
-    ret = tnow.strftime('%Y-%m-%d%H:%M:%S')
+    ret = tnow.strftime('%Y-%m-%d %H:%M:%S')
     return ret
 
 def get_autogen_header() :
@@ -46,7 +47,8 @@ def generate_single(lilypond_version, name):
             f.write(f"{autogen_header}\n")
             for actual_lang in ["hebrew", "latin"]:
                 if actual_lang in lang:
-                    f.write(f'\\new Lyrics = "{name}_{voice}_lyrics_{lang}"\n')
+                    lname = f"{name}_{voice}_lyrics_{actual_lang}"
+                    f.write(f'\\new Lyrics = "{lname}"\n')
             f.close()
 
     for lang in ["hebrew", "latin"]:
@@ -81,32 +83,26 @@ def generate_body(names):
     f = open("piyutim_leshabat.ly", "w")
     f.write(f"{get_autogen_header()}\n")
     f.write('\n\\include "piyutim_leshabat-header.ly"\n')
-    title_map = {
-        "a_yomhashabat": "Yom haShabat יום השבת",
-        "b_kieshmra": "Ki Eshmra כי אשמרה",
-        "c_elieliyahu": "Eli Eliyahu אלי אליהו",
-        "d_yomhashabat": "Yom haShabat יום השבת",
-    }
     voice_map = {
-       "sop": "Soprano",
-       "alt": "Alto",
-       "ten": "Tenor",
-       "bas": "Bass"
+        "sop": "Soprano",
+        "alt": "Alto",
+        "ten": "Tenor",
+        "bas": "Bass"
     }
     for name in names:
         f.write("\n\\score {\n")
-        title = title_map[name]
-        f.write(f"""
-  \\header {LB}
-    title = "{title}"
-    subtitle = ##f
-    composer = ##f
-  {RB}
-
-""")
+        header_fn = f"{name}-header.ly"
+        song_header_raw = open(header_fn).read()
+        song_header = textwrap.indent(song_header_raw, "  ")
+        vlog(f"name={name} header_fn={header_fn} #(song_header)={len(song_header)}\n")
+        f.write(f"{song_header}")
         f.write("  \\new ChoirStaff <<\n")
         for voice in ["sop", "alt", "ten", "bas"]:
              f.write(f'    \\new Staff = "{voice}" <<\n')
+             if voice == "ten":
+                 f.write('      \\clef "G_8"\n')
+             elif voice == "bas":
+                 f.write('      \\clef bass\n')
              f.write(f'      \\new Voice = "{name}_{voice}" {LB}\n')
              f.write(f"        \\{name}_{voice}\n")
              f.write(f"      {RB}\n")
