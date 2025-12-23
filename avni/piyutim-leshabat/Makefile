@@ -127,6 +127,9 @@ piyutim_leshabat-hebrewlatin.pdf: piyutim_leshabat-hebrewlatin.ly \
 	$(LILYPOND) -I hebrewlatin $<
 	ls -lG $@
 
+PDFS = $(foreach lang, hebrew latin hebrewlatin, piyutim_leshabat-$(lang).pdf)
+pdfs: $(PDFS)
+
 clean-auto:
 	rm -f ${LYS_AUTO}
 
