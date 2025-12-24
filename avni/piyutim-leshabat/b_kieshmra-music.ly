@@ -59,15 +59,25 @@ b_kieshmra_sop = \relative c'' {
   % bar 19
   e8[( ds]) e[( d] cs4) |
   % bar 20
-  cs8[ cs] cs[( b]) a4 |
+  cs8[ cs] cs[( b]) a4( |
   \breakOrig
   % bar 21
+  cs8[ b]) a2 |
   % bar 22
+  \time 4/4
+  a4. gs8 a4. cs8 |
   % bar 23
+  b4.( a16[ gs]) fs4. cs'8 |
+  \breakOrig
   % bar 24
+  \time 3/4
+  cs4 cs8[( b]) b[( a] |
   % bar 25
+  cs8[ b]) a8( b4.) ~ |
   % bar 26
+  b2. ~
   % bar 27
+  b2. \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
