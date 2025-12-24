@@ -12,7 +12,7 @@ a_yomhashabat_sop = \relative c' {
   \a_yomhashabat_global
   R1 | R1
   % bar 3
-  a'8[\mp b] a[ b] cs[ b] a4 |
+  a'8[\mp b] a[( b]) cs[ b] a4 |
   \breakOrig
   % bar 4
   a8 gs fs gs a2 |
@@ -20,7 +20,7 @@ a_yomhashabat_sop = \relative c' {
   r1 | r1 |
   \breakOrig
   % bar 7
-  a8[( b]) a[( b]) cs[( b] a4) |
+  a8[( b]) a[( b]) cs[( b]) a4 |
   %bar 8
   a8[ gs] fs[ gs] a2 |
   \breakOrig
@@ -37,7 +37,7 @@ a_yomhashabat_sop = \relative c' {
   a8[ b] a[( b]) cs[ b] a4 |
   \breakOrig
   % bar 14
-  a8[ gs] fs[( gs]) a2~ |
+  a8[ gs] fs[ gs] a2~ |
   % bar 15
   a1~ |
   % bar 16
@@ -82,7 +82,7 @@ a_yomhashabat_ten = \relative c' {
   % bar 1
   a8(\mp b) a8( b) cs( b) a4 |
   % bar 2
-  a8[ gs] fs[ gs] a2 |
+  a8[ gs] fs[( gs]) a2 |
   % bar 3
   cs4 ds cs4( ds8[ cs]) |
   % bar 4
@@ -119,7 +119,7 @@ a_yomhashabat_bas = \relative c' {
   % bar 1
   a8(\mp b) a8( b) cs( b) a4 |
   % bar 2
-  a8[ gs] fs[ gs] a2 |
+  a8[ gs] fs[( gs]) a2 |
   % bar 3
   fs4 fs fs( e) |
   % bar 4

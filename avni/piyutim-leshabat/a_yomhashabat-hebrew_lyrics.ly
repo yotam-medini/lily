@@ -1,7 +1,16 @@
 a_yomhashabat_sop_hebrew_lyrics_text = \lyricmode {
   \override LyricText.font-name = #"David CLM"
 
-  א סופ ב ג
+
+ בֵּ -- רְ -- כוֹ אֱ -- לֹ -- הִים וַ -- יְ -- קַדְּ -- שֵׁ -- הוּ
+
+לִקְ -- רַאת שַׁ -- בָּת נִכְ -- סְ -- פָה נַפְ -- שִׁי
+
+כִּי בַ -- שַּׁ -- בָּת אֵ -- צֵא חָפְ -- שִׁי
+
+וְ -- כִי יוֹם מְ -- נוּ -- חָה אֶקְ -- רָ -- אֵ -- הוּ
+
+בֵּ -- רְ -- כוֹ אֱ -- לֹ -- הִים וַ -- יְ -- קַדְּ -- שֵׁ -- הוּ
 
 %LTR
 }
@@ -17,7 +26,8 @@ a_yomhashabat_alt_hebrew_lyrics_text = \lyricmode {
 a_yomhashabat_ten_hebrew_lyrics_text = \lyricmode {
   \override LyricText.font-name = #"David CLM"
 
-  א טנ
+יוֹם הַ -- שַּׁ -- בָּת אֵין כָּ -- מוֹ -- הוּ
+
 
 %LTR
 }
