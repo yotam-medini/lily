@@ -105,15 +105,26 @@ b_kieshmra_alt = \relative c'' {
   % bar 10
   a4 gs8[ e] fs4 e |
   % bar 11
+  d4 e fs |
   % bar 12
+  gs2 fs8[ e] |
   % bar 13
+  \time 4/4
+  fs4 gs a gs8 r8 |
   % bar 14
+  e2.\p ~ |
   % bar 15
+  e2 e8[ fs] |
   % bar 16
+  e2 d4 |
   % bar 17
+  e2. |
   % bar 18
+  e2. ~ |
   % bar 19
+  e2 e8[ fs] |
   % bar 20
+  gs2 ~ gs8[ fs] |
   % bar 21
   % bar 22
   % bar 23
