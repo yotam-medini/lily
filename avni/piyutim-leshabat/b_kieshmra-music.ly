@@ -209,19 +209,33 @@ b_kieshmra_bas = \relative c' {
   \time 3/4
   a2(\p gs4 ~ |
   % bar 15
-  gs4) fs8[ fs] fs4 |
+  gs4) fs8[ fs] fs4( |
   % bar 16
+  gs2.) ~ |
   % bar 17
+  gs4 ~ gs8[ fs] fs[( e]) |
   % bar 18
+  fs2( e4 ~ |
   % bar 19
+  e4 d!2) |
   % bar 20
+  e2.~ |
   % bar 21
+  e4 e8[ d] d[ e] |
   % bar 22
+  \time 4/4
+  fs4 e fs gs |
   % bar 23
+  a4( gs8[ e]) fs4 e |
   % bar 24
+  \time 3/4
+  d4( e) fs |
   % bar 25
+  gs2( fs8[ e]) |
   % bar 26
+  d4 e8[( fs]) fs[( d]) |
   % bar 27
+  e2. \bar "|."
 }
 
 
