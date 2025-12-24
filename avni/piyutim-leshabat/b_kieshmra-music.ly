@@ -2,6 +2,7 @@
 
 b_kieshmra_global = {
   \key a \major
+  \numericTimeSignature
   \time 3/4
   \tempo "Dolce, lento espressivo" 4 = 60
   \dynamicUp
@@ -13,9 +14,15 @@ b_kieshmra_sop = \relative c'' {
   % bar 1
   cs4 cs8[ cs] cs[( b]) |
   % bar 2
+  e8[( ds]) e[( d] cs4) |
   % bar 3
+  cs8[ cs] cs[ b] a4( |
+  \breakOrig
   % bar 4
+  cs8[ b]) a2 |
   % bar 5
+  \time 4/4
+  a4. gs8 a4. cs8 |
   % bar 6
   % bar 7
   % bar 8

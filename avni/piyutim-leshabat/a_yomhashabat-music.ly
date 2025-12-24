@@ -13,29 +13,29 @@ a_yomhashabat_sop = \relative c' {
   R1 | R1
   % bar 3
   a'8[\mp b] a[ b] cs[ b] a4 |
-  \break_orig
+  \breakOrig
   % bar 4
   a8 gs fs gs a2 |
   % bar 5-6
   r1 | r1 |
-  \break_orig
+  \breakOrig
   % bar 7
   a8[( b]) a[( b]) cs[( b] a4) |
   %bar 8
   a8[ gs] fs[ gs] a2 |
-  \break_orig
+  \breakOrig
   % bar 9
   b4\mf b e e |
   % bar 10
   b4 b8[ d] cs8[( b] a4) |
-  \break_orig
+  \breakOrig
   % bar 11
   a8[\mp b] a[( b]) cs[ b] a4 |
   % bar 12
   a8[ gs] fs[( gs]) a2 |
   % bar 13
   a8[ b] a[( b]) cs[ b] a4 |
-  \break_orig
+  \breakOrig
   % bar 14
   a8[ gs] fs[( gs]) a2~ |
   % bar 15
