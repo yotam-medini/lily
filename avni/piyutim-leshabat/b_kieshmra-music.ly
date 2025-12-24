@@ -84,17 +84,26 @@ b_kieshmra_sop = \relative c'' {
 b_kieshmra_alt = \relative c'' {
   \b_kieshmra_global
   % bar 1
-  a2\p gs4 ~ | 
+  a2\p_\bocaChiusa gs4 ~ |
   % bar 2
-  gs4 fs2 |  
+  gs4 fs2 |
   % bar 3
+  gs2. ~ |
   % bar 4
+  gs4 ~ gs8[ fs] fs[ e] |
   % bar 5
+  fs2 e4 ~ |
   % bar 6
+  e4 d!2 |
   % bar 7
+  e2. ~ |
   % bar 8
+  e4 ~ e8[ d] d[ e] |
   % bar 9
+  \time 4/4
+  fs4 e fs gs |
   % bar 10
+  a4 gs8[ e] fs4 e |
   % bar 11
   % bar 12
   % bar 13
@@ -129,7 +138,7 @@ b_kieshmra_ten = \relative c' {
   % bar 13
   \time 4/4
   R1 |
-  % bar 14 
+  % bar 14
   \time 3/4
   a2.\p ~ |
   % bar 15
@@ -163,7 +172,7 @@ b_kieshmra_bas = \relative c' {
   % bar 13
   \time 4/4
   R1 |
-  % bar 14 
+  % bar 14
   \time 3/4
   a2(\p gs4 ~ |
   % bar 15

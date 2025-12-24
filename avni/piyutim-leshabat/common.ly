@@ -3,6 +3,7 @@
 breakOrig = \break
 % breakOrig = {}
 
+bocaChiusa = \markup{ \italic "boca chiusa" }
 ThreeSoprani = \markup{"3 Soprani"}
 TuttiSoprani = \markup{"Tutti Soprani"}
 
