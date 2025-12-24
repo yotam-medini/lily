@@ -164,10 +164,15 @@ b_kieshmra_ten = \relative c' {
   % bar 15
   a2 b8[ a] |
   % bar 16
+  a2 b4 |
   % bar 17
+  a2. |
   % bar 18
+  a2. ~ |
   % bar 19
+  a2 b8[ a] |
   % bar 20
+  b4( cs d8[ cs]) |
   % bar 21
   % bar 22
   % bar 23
