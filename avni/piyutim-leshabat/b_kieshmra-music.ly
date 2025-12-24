@@ -21,13 +21,20 @@ b_kieshmra_sop = \relative c'' {
   % bar 4
   cs8[ b]) a2 |
   % bar 5
+  cs4 cs8[ cs] cs[( b]) |
+  % bar 6
+  e8[( ds]) e[( d] cs4) |
+  % bar 7
+  cs8[ cs] cs[( b]) a4( |
+  \breakOrig
+  % bar 8
+  cs8[ b]) a2 |
+  % bar 9
   \time 4/4
   a4. gs8 a4. cs8 |
-  % bar 6
-  % bar 7
-  % bar 8
-  % bar 9
   % bar 10
+  b4.( a16[ gs]) fs4. cs8 |
+  \breakOrig
   % bar 11
   % bar 12
   % bar 13
@@ -82,7 +89,7 @@ b_kieshmra_alt = \relative c'' {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-b_kieshmra_ten = \relative c {
+b_kieshmra_ten = \relative c' {
   \b_kieshmra_global
   \repeat unfold 8 {
      r2.
@@ -116,7 +123,7 @@ b_kieshmra_ten = \relative c {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-b_kieshmra_bas = \relative c {
+b_kieshmra_bas = \relative c' {
   \b_kieshmra_global
   \repeat unfold 8 {
      r2.
@@ -132,9 +139,9 @@ b_kieshmra_bas = \relative c {
   R1 |
   % bar 14 
   \time 3/4
-  a2( g4 ~ |
+  a2( gs4 ~ |
   % bar 15
-  g4) fs8[ fs] f4 |
+  gs4) fs8[ fs] fs4 |
   % bar 16
   % bar 17
   % bar 18
