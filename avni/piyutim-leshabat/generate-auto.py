@@ -91,6 +91,7 @@ def generate_body(names):
         "bas": "Bass"
     }
     for name in names:
+        f.write("\n\\markup \\vspace #1\n")
         f.write("\n\\score {\n")
         header_fn = f"{name}-header.ly"
         song_header_raw = open(header_fn).read()
@@ -112,6 +113,16 @@ def generate_body(names):
         f.write(f'    \\include "{name}-lyrics-context.ly"\n')
              
         f.write("  >>\n") # ChoirStaff
+        f.write(textwrap.indent("""
+\layout {
+  % indent = 2.0\cm
+  % short-indent = 1.0\cm
+  \context {
+    \Staff
+    \RemoveEmptyStaves
+  }
+}
+""", "  "))
         f.write("}\n") # score
     f.close()
 
