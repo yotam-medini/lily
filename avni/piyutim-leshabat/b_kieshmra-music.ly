@@ -126,12 +126,21 @@ b_kieshmra_alt = \relative c'' {
   % bar 20
   gs2 ~ gs8[ fs] |
   % bar 21
+  e2. |
   % bar 22
+  \time 4/4
+  e4 e2 e4~ |
   % bar 23
+  e4 e e( d) |
   % bar 24
+  \time 3/4
+  e4. fs8 e4 |
   % bar 25
+  e2 d4 |
   % bar 26
+  e2. ~
   % bar 27
+  e2. \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
