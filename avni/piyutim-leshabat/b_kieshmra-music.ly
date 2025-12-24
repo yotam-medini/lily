@@ -12,7 +12,7 @@ b_kieshmra_global = {
 b_kieshmra_sop = \relative c'' {
   \b_kieshmra_global
   % bar 1
-  cs4 cs8[ cs] cs[( b]) |
+  cs4\p^\ThreeSoprani cs8[ cs] cs[( b]) |
   % bar 2
   e8[( ds]) e[( d] cs4) |
   % bar 3
@@ -46,13 +46,21 @@ b_kieshmra_sop = \relative c'' {
   \breakOrig
   % bar 14
   \time 3/4
-  cs4 cs8[ cs] cs[( b]) |
+  cs4\p^\TuttiSoprani cs8[ cs] cs[( b]) |
   % bar 15
+  e8[( ds]) e[( d] cs4) |
   % bar 16
+  cs8[ cs] cs[( b]) a4( |
+  \breakOrig
   % bar 17
+  cs8[ b]) a2 |
   % bar 18
+  cs4 cs8[ cs] cs[( b]) |
   % bar 19
+  e8[( ds]) e[( d] cs4) |
   % bar 20
+  cs8[ cs] cs[( b]) a4 |
+  \breakOrig
   % bar 21
   % bar 22
   % bar 23
@@ -66,7 +74,7 @@ b_kieshmra_sop = \relative c'' {
 b_kieshmra_alt = \relative c'' {
   \b_kieshmra_global
   % bar 1
-  a2 gs4 ~ | 
+  a2\p gs4 ~ | 
   % bar 2
   gs4 fs2 |  
   % bar 3
@@ -113,7 +121,7 @@ b_kieshmra_ten = \relative c' {
   R1 |
   % bar 14 
   \time 3/4
-  a2. ~ |
+  a2.\p ~ |
   % bar 15
   a2 b8[ a] |
   % bar 16
@@ -147,7 +155,7 @@ b_kieshmra_bas = \relative c' {
   R1 |
   % bar 14 
   \time 3/4
-  a2( gs4 ~ |
+  a2(\p gs4 ~ |
   % bar 15
   gs4) fs8[ fs] fs4 |
   % bar 16
