@@ -174,12 +174,20 @@ b_kieshmra_ten = \relative c' {
   % bar 20
   b4( cs d8[ cs]) |
   % bar 21
+  b2( cs8[ b]) |
   % bar 22
+  \time 4/4
+  a4 a2 a4~ |
   % bar 23
+  a4 b cs8[( b] a[ b]) |
   % bar 24
+  a4. b8 a4 |
   % bar 25
+  a2 b4 |
   % bar 26
+  a2. ~
   % bar 27
+  a2. \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
