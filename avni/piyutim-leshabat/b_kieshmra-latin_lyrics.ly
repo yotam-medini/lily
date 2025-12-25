@@ -1,7 +1,10 @@
 b_kieshmra_sop_latin_lyrics_text = \lyricmode {
-
-  a b c
-
+  Ki esh -- me -- ra sha -- bat el yish -- me -- re -- ni
+  Ki esh -- me -- ra sha -- bat el yish -- me -- re -- ni
+  Ot hi le -- ol -- mei ad bei -- no u -- vei -- ni.
+  Ki esh -- me -- ra sha -- bat el yish -- me -- re -- ni
+  Ki esh -- me -- ra sha -- bat el yish -- me -- re -- ni
+  Ot hi le -- ol -- mei ad bei -- no u -- vei -- ni.
 }
 
 b_kieshmra_alt_latin_lyrics_text = \lyricmode {
