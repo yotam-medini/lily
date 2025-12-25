@@ -5,9 +5,8 @@ b_kieshmra_sop_latin_lyrics_text = \lyricmode {
 }
 
 b_kieshmra_alt_latin_lyrics_text = \lyricmode {
-
-  a b c
-
+\repeat unfold 33 { _ }
+Ki
 }
 
 b_kieshmra_ten_latin_lyrics_text = \lyricmode {

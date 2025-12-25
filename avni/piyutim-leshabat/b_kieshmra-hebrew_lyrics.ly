@@ -9,7 +9,9 @@ b_kieshmra_sop_hebrew_lyrics_text = \lyricmode {
 b_kieshmra_alt_hebrew_lyrics_text = \lyricmode {
   \override LyricText.font-name = #"David CLM"
 
-  א ב ג
+\repeat unfold 33 { _ }
+
+כִּי אֶשְׁ -- מְ -- רָה שַׁ -- בָּת 
 
 %LTR
 }
