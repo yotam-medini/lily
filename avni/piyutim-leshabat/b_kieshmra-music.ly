@@ -16,7 +16,7 @@ b_kieshmra_sop = \relative c'' {
   % bar 2
   e8[( ds]) e[( d] cs4) |
   % bar 3
-  cs8[ cs] cs[ b] a4( |
+  cs8[ cs] cs[( b]) a4( |
   \breakOrig
   % bar 4
   cs8[ b]) a2 |
