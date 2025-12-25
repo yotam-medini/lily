@@ -18,13 +18,21 @@ a_yomhashabat_alt_latin_lyrics_text = \lyricmode {
 }
 
 a_yomhashabat_ten_latin_lyrics_text = \lyricmode {
-
-  ten b c
-
+Yom ha -- sha  -- bat ein ka -- mo -- hu
+Be -- re -- cho e -- lo -- him 
+Mi -- yom ri -- shon ad yom shi -- shi
+Li -- krat sha -- bat nich -- se -- fa naf -- shi
+Ki be -- sha -- bat e -- tse chof -- shi
+Ve -- chi yom me -- nu -- cha
+Be -- re -- cho e -- lo -- him vai -- kad -- she -- hu
 }
 
 a_yomhashabat_bas_latin_lyrics_text = \lyricmode {
-
-  bas b c
-
+Yom ha -- sha  -- bat ein ka -- mo -- hu
+Be -- re -- cho e -- lo -- him 
+Mi -- yom ri -- shon ad yom shi -- shi
+Li -- krat sha -- bat nich -- se -- fa naf -- shi
+Ki be -- sha -- bat e -- tse chof -- shi
+Ve -- chi yom me -- nu -- cha
+Be -- re -- cho e -- lo -- him vai -- kad -- she -- hu
 }
