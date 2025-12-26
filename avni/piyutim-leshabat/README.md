@@ -1,4 +1,4 @@
-#  תִווּי פיוטים-לשבת / צבי אבני
+#  תִּווּי פיוטים-לשבת / צבי אבני
 # Music Typesetting of Piyuim leShabat
 
 ## Sources
