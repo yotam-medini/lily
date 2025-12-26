@@ -70,7 +70,7 @@ c_elieliyahu_alt = \relative c'' {
   % bar 6
   fs4 fs8[ fs] e[( d]) e4 |
   % bar 7
-  g8[ f] fs[ e] b'4 fs4~ |
+  g8[ g] fs[ e] b'4 fs4~ |
   % bar 8
   fs1 |
   % bar 9
@@ -103,25 +103,41 @@ c_elieliyahu_alt = \relative c'' {
 c_elieliyahu_ten = \relative c' {
   \c_elieliyahu_global
   % bar 1
-  b4
+  r2 b8\mf[ b] b[ a] | 
   % bar 2
+  b4 b b8[ b] b[ a] |
   % bar 3
+  d8[ d] d[ e] d4 d |
   % bar 4
+  d4 d8[ cs] d4 b |
   % bar 5
+  d8[ d] d( d]) d4 d |
   % bar 6
+  d4 d8[ d] b8[( a]) b4 |
   % bar 7
+  e8[ e] d[ cs] d4 d~ |
   % bar 8
+  d1 |
   % bar 9
+  b8[ b] b[ a] b4 b |
   % bar 10
+  b8[ b] b[ a] g[( fs]) e4 |
   % bar 11
+  b'8[ b] b[ a] b4 b |
   % bar 12
+  d4 d8[ cs] d4 b |
   % bar 13
+  b8[ b] b[ a16( b]) a4 g |
   % bar 14
+  a4 b8[ a] g[( fs]) e4 |
   % bar 15
+  b'8[ b] b[ a] d4 b~ |
   % bar 16
+  b1\fermata |
   % bar 17
+  b8[\pp b] b[ a] d4 b~ |
   % bar 18
-  % \bar "|."
+  \after 4\> \after 1\! b1 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
