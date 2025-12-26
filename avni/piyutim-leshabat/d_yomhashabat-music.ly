@@ -13,7 +13,7 @@ d_yomhashabat_sop = \relative c'' {
   \d_yomhashabat_global
   d8[(\f e]) d[( e]) fs[ e] d4 |
   % bar 2
-  d8[ cs] b[( cs] d2 |
+  d8[ cs] b[( cs]) d2 |
   \breakOrig
   % bar 3
   b4 cs d e |
@@ -35,6 +35,7 @@ d_yomhashabat_sop = \relative c'' {
   e4 e8[ g] fs[( e] d4) |
   % bar 11
   d8[( e]) d[( e]) fs[ e] d4 |
+  \breakOrig
   % bar 12
   d8[( e]) b[( cs]) d2 |
   % bar 13
@@ -46,21 +47,33 @@ d_yomhashabat_sop = \relative c'' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 d_yomhashabat_alt = \relative c'' {
   \d_yomhashabat_global
-  b
+  b4\f b8[ b] b2 |
   % bar 2
+  b8[ a] g[( a]) b2 |
   % bar 3
+  fs4 g a b |
   % bar 4
+  b4 a g8[ fs] g[ a] |
   % bar 5
+  b4 b8[ b] b2 |
   % bar 6
+  b8[( a]) g[ a] b2 |
   % bar 7
+  fs4 g a b |
   % bar 8
+  b4 a g8[ fs] g[ a] |
   % bar 9
+  <g b>4 <g b> <a e'> <a e'> |
   % bar 10
+  <a cs>4 <a cs>8[ <a cs>]  <a cs>4( b) |
   % bar 11
+  g8[ g] a4 g8[ g] fs4 |
   % bar 12
+  b4 b b8[( cs]) g[( a]) |
   % bar 13
+  b8[ b] b[( a]) b[ cs] d[( cs]) |
   % bar 14
-  % \bar "|."
+  b8[ e] d[ a] <b d>2\fermata \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
