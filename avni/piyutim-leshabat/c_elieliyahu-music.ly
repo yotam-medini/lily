@@ -4,6 +4,7 @@ c_elieliyahu_global = {
   \key b \minor
   \numericTimeSignature
   \time 4/4
+  \set Score.tempoHideNote = ##t
   \tempo "Allegro risoluto" 4 = 120
   \dynamicUp
 }

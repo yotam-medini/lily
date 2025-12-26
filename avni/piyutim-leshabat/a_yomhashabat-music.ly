@@ -3,6 +3,7 @@
 a_yomhashabat_global = {
   \key a \major
   \time 4/4
+  \set Score.tempoHideNote = ##t
   \tempo "Moderato e semplice" 4 = 100
   \dynamicUp
 }
@@ -48,7 +49,7 @@ a_yomhashabat_sop = \relative c' {
 a_yomhashabat_alt = \relative c' {
   \a_yomhashabat_global
   R1 | R1
-  % bar 3 
+  % bar 3
   fs4.\mp fs8 e4( fs) |
   % bar 4
   e4 ds8[( e]) fs2 |
@@ -106,7 +107,7 @@ a_yomhashabat_ten = \relative c' {
   % bar 13
   cs4 ds cs ds8[ cs] |
   % bar 14
-  b4 cs8[ cs] cs4 cs~ | 
+  b4 cs8[ cs] cs4 cs~ |
   % bar 15
   cs1 ~
   % bar 16
@@ -149,7 +150,3 @@ a_yomhashabat_bas = \relative c' {
   % bar 16
   a1 \bar "|."
 }
-
-
-
-

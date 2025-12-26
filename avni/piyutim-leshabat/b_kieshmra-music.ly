@@ -4,6 +4,7 @@ b_kieshmra_global = {
   \key a \major
   \numericTimeSignature
   \time 3/4
+  \set Score.tempoHideNote = ##t
   \tempo "Dolce, lento espressivo" 4 = 60
   \dynamicUp
 }
