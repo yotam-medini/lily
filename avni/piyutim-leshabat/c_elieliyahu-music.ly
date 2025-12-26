@@ -143,25 +143,41 @@ c_elieliyahu_ten = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 c_elieliyahu_bas = \relative c' {
   \c_elieliyahu_global
-  b4
+  r2 e8[ e] e[ d] |
   % bar 2
+  e4 e e8[ e] e[ d] |
   % bar 3
+  b,8[ b'] b[ c] b4 a |
   % bar 4
+  d4 d8[ cs] d4 b |
   % bar 5
+  g8[ g] g[ a] b4 c |
   % bar 6
+  b4 a8[ a] e8[( fs]) g4 |
   % bar 7
+  e8[ g] b[ cs] d4 b~ |
   % bar 8
+  b1 |
   % bar 9
+  b8[ b] b[ a] b4 b |
   % bar 10
+  b8[ b] b[ a] g[( fs]) e4 |
   % bar 11
+  b'8[ b] b[ a] b4 b |
   % bar 12
+  d4 d8[ cs] d4 b |
   % bar 13
+  b8[ b] b[ a16( b]) a4 g |
   % bar 14
+  a4 b8[ a] g[( fs]) e4 |
   % bar 15
+  b'8[ b] b[ a] d4 b~ |
   % bar 16
+  b1\fermata |
   % bar 17
+  b,8[\pp b] b[ a] d4 b~ |
   % bar 18
-  % \bar "|."
+  \after 4\> \after 1\! b1 \bar "|."
 }
 
 
