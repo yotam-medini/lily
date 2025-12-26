@@ -47,9 +47,7 @@ $(1)_HEBREWLATIN_LYRICS := \
 	$(1)-latin_lyrics.ly \
 	$$($(1)_HEBREWLATIN_LYS_AUTO) \
 
-$(1)_COMMON_LYS := $(1).ly $(1)-music.ly
-
-$(call DIGIT_NAME,$(1)).mid: $(1)-midi.ly $$($(1)_COMMON_LYS) common.ly
+$(call DIGIT_NAME,$(1)).mid: $(1)-midi.ly $(1)-music.ly common.ly
 	$(LILYPOND) -dmidi-extension=mid -o $(call DIGIT_NAME,$(1)) $(1)-midi.ly
 	ls -lG $(call DIGIT_NAME,$(1)).mid
 
