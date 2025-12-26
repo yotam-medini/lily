@@ -3,7 +3,7 @@
 
 ## Sources
 1. Hard copy marked with (C) 1971 by Merkaz Letarbut Ul'chinuch M.L.208.
-   It was lended to me by Stanley Sperber.
+   It was lent to me by Stanley Sperber.
 2. Yom haShabat ein kamohu  יום השבת אין כמוהו 
    <br>
    https://www.nli.org.il/he/piyut/Piyut1song_010015300000005171/NLI
