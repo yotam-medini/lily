@@ -82,11 +82,12 @@ c_elieliyahu_alt = \relative c'' {
   % bar 12
   <<
     \new Voice { \voiceTwo { g8[ fs] } }
-    \new Voice { \voiceOne { g4 } }
+    % \new Voice { \voiceOne { g4 } }
+    { g4 }
   >>
     <e g>4 <fs b>8[ <fs b>] <fs a>[( <a d>]) |
   % bar 13
-  <g b>[( <fs a>]) <g b>4 <a d>8[ <a d>] <b d>[( <a d>]) |
+  <g b>[( <fs a>]) <g b>4 <a d>8[ <a d>] <b d>[\( <a d>]\) |
   % bar 14
   <g b>[( <fs a>]) <g b>[( <a d>]) <b d>[ <b d>] <b d>[( <a d>]) |
   % bar 15
