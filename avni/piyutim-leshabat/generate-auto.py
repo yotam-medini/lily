@@ -23,6 +23,29 @@ def strnow():
 def get_autogen_header() :
     return f"% Auto-generated on {strnow()} by {sys.argv[0]}. Do NOT edit"
 
+def generate_single_midi(lilypond_version, name):
+    autogen_header = get_autogen_header() 
+    f = open(f"{name}-midi.ly", "w")
+    f.write(f"{autogen_header}\n")
+    f.write(f'\\version "{lilypond_version}"\n')
+    f.write(f'\\include "common.ly"\n')
+    f.write(f'\\include "{name}-music.ly"\n')
+    f.write("\\score {\n")
+    f.write("  <<\n")
+    f.write("    \\new ChoirStaff <<\n")
+    for voice in VOICES:
+        f.write(f'      \\new Staff = "{voice}" {LB}\n')
+        f.write(f'        \\set Staff.midiInstrument = #"honky-tonk"\n')
+        f.write(f'        \\new Voice {LB}\n')
+        f.write(f'           \\{name}_{voice}\n')
+        f.write(f'        {RB}\n')
+        f.write(f'      {RB}\n')
+    f.write("    >>\n")
+    f.write("  >>\n")
+    f.write("  \\midi {}\n")
+    f.write("}\n")
+    f.close()
+
 def generate_single(lilypond_version, name):
     autogen_header = get_autogen_header() 
     for lang in ["hebrew", "latin", "hebrewlatin"]:
@@ -114,12 +137,12 @@ def generate_body(names):
              
         f.write("  >>\n") # ChoirStaff
         f.write(textwrap.indent("""
-\layout {
-  % indent = 2.0\cm
-  % short-indent = 1.0\cm
-  \context {
-    \Staff
-    \RemoveEmptyStaves
+\\layout {
+  % indent = 2.0\\cm
+  % short-indent = 1.0\\cm
+  \\context {
+    \\Staff
+    \\RemoveEmptyStaves
   }
 }
 """, "  "))
@@ -129,6 +152,7 @@ def generate_body(names):
 def generate_for_names(lilypond_version, names):
     for name in names:
         generate_single(lilypond_version, name)
+        generate_single_midi(lilypond_version, name)
     generate_books(lilypond_version, names)
     generate_body(names)
 
