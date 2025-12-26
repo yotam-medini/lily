@@ -1,8 +1,8 @@
 #  תִּווּי פיוטים-לשבת / צבי אבני
-# Music Typesetting of Piyuim leShabat
+# Music Typesetting of Piyutim leShabat
 
 ## Sources
-1. Hard copy marked with (C) 1971 by Merkaz Letarbut Ul'chinuch M.L.208.
+1. Hard copy marked with © 1971 by Merkaz Letarbut Ul'chinuch M.L.208.
    It was lent to me by Stanley Sperber.
 2. Yom haShabat ein kamohu  יום השבת אין כמוהו 
    <br>
