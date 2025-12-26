@@ -112,7 +112,7 @@ c_elieliyahu_ten = \relative c' {
   % bar 4
   d4 d8[ cs] d4 b |
   % bar 5
-  d8[ d] d( d]) d4 d |
+  d8[ d] d\( d]\) d4 d |
   % bar 6
   d4 d8[ d] b8[( a]) b4 |
   % bar 7
