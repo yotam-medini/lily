@@ -11,7 +11,7 @@ textpage.pdf: textpage.tex
 	xelatex $<
 
 # NAMES = a_yomhashabat b_kieshmra c_elieliyahu d_yomhashabat
-NAMES = a_yomhashabat b_kieshmra
+NAMES = a_yomhashabat b_kieshmra c_elieliyahu
 LILYPOND_VERSION = 2.24.3
 LILYPOND = lilypond
 VOICES=sop alt ten bas
