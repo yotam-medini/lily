@@ -14,7 +14,7 @@
   title = "Piyutim leShabat פיוטים לשבת"
   pdftitle = "פִּיוּטִים לְשַׁבָּת"
   pdffooxx = "barxx"
-  poet = "סימן מנצור + אברהם אבן עזרא"
+  poet = \markup { \bold "Poets: " "Abraham ibn Ezra + Siman Manzur אברהם אבן עזרא + סימן מנצור" }
 
   % LTR
   composer = \markup { { \bold "Composer: "} "Tzvi Avni צבי אבני"}
