@@ -92,22 +92,23 @@ piyutim_leshabat-hebrew.pdf: piyutim_leshabat-hebrew.ly piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
 		$(MUSICS) \
 		$(LYS_HEBREW_AUTO) $(HEBREW_LYRICS) common.ly
-	$(LILYPOND) -I hebrew $<
+	$(LILYPOND) -dno-point-and-click -I hebrew $<
 	ls -lG $@
 
 piyutim_leshabat-latin.pdf: piyutim_leshabat-latin.ly piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
 		$(MUSICS) \
 		$(LYS_LATIN_AUTO) $(LATIN_LYRICS) common.ly
-	$(LILYPOND) -dlatinonly=#t -I latin $<
+	$(LILYPOND) -dno-point-and-click -dlatinonly=#t -I latin $<
 	ls -lG $@
 
 piyutim_leshabat-hebrewlatin.pdf: piyutim_leshabat-hebrewlatin.ly \
 		piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
 		$(MUSICS) \
-		$(LYS_HEBREWLATIN_AUTO) $(HEBREW_LYRICS) $(LATIN_LYRICS) common.ly
-	$(LILYPOND) -I hebrewlatin $<
+		$(LYS_HEBREWLATIN_AUTO) $(HEBREW_LYRICS) $(LATIN_LYRICS) \
+		common.ly
+	$(LILYPOND) -dno-point-and-click -I hebrewlatin $<
 	ls -lG $@
 
 PDFS = $(foreach lang, hebrew latin hebrewlatin, piyutim_leshabat-$(lang).pdf)
