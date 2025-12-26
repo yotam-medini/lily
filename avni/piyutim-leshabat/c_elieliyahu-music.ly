@@ -14,7 +14,7 @@ c_elieliyahu_sop = \relative c'' {
   % bar 1
   b8\mf[ b] b[ a] b4 b |
   % bar 2
-  b8[ b] b[ a] g[ fs] e4 |
+  b8[ b] b[ a] g[( fs]) e4 |
   \breakOrig
   % bar 3
   b'8[ b] b[ a] b4 b |
