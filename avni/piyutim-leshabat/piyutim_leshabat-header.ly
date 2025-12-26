@@ -14,10 +14,16 @@
   title = "Piyutim leShabat פיוטים לשבת"
   pdftitle = "פִּיוּטִים לְשַׁבָּת"
   pdffooxx = "barxx"
-  poet = \markup { \bold "Poets: " "Abraham ibn Ezra + Siman Manzur אברהם אבן עזרא + סימן מנצור" }
+  poet = \markup {
+    \bold "Poets: " \column {
+      "Abraham ibn Ezra אברהם אבן עזרא" 
+      "Siman Manzur סימן מנצור" 
+    }
+  }
 
   % LTR
-  composer = \markup { { \bold "Composer: "} "Tzvi Avni צבי אבני"}
+  composer = \markup \line { { \bold "Composer: "} "Tzvi Avni צבי אבני"
+  }
   arranger = \markup { "After Babylonian Jewish Tunes  על פי נעימות של יהודי בבל" }
   pdfauthor = "yotam.medini@gmail.com"
   % Do not display the tagline for this book
