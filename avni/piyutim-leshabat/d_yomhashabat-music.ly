@@ -113,19 +113,31 @@ d_yomhashabat_ten = \relative c' {
 d_yomhashabat_bas = \relative c' {
   \d_yomhashabat_global
   % bar 1
-  b
-   % bar 2
+  b2 a4. a8 |
+  % bar 2
+  g2 a8[ g] fs[ a] |
   % bar 3
+  b4 a g fs |
   % bar 4
+  e4 fs g2 |
   % bar 5
+  b2 a4. a8 |
   % bar 6
+  g4. g8 a[ g] fs[( a]) |
   % bar 7
+  b4 a g fs |
   % bar 8
+  e4 fs g2 |
   % bar 9
+  e4 e e8[( fs]) g4 |
   % bar 10
+  a4 b8[ b] cs4( d) |
   % bar 11
+  g,8[ g] fs4 e8[ e] d4 |
   % bar 12
+  b4 b'8[( a]) g4 fs |
   % bar 13
+  e8[ e] d4 cs8[ cs] b4 |
   % bar 14
- % bar "|."
+  e8[ e] fs[ e] d2\fermata \bar "|."
 }
