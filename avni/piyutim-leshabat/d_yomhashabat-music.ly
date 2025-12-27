@@ -30,7 +30,7 @@ d_yomhashabat_sop = \relative c'' {
   e4 d8[ cs] b2 |
   \breakOrig
   % bar 9
-  e4 e a a |
+  e4\f e a a |
   % bar 10
   e4 e8[ g] fs[( e] d4) |
   % bar 11
@@ -63,7 +63,7 @@ d_yomhashabat_alt = \relative c'' {
   % bar 8
   b4 a g8[ fs] g[ a] |
   % bar 9
-  <g b>4 <g b> <a e'> <a e'> |
+  <g b>4\f <g b> <a e'> <a e'> |
   % bar 10
   <a cs>4 <a cs>8[ <a cs>]  <a cs>4( b) |
   % bar 11
@@ -96,7 +96,7 @@ d_yomhashabat_ten = \relative c' {
   % bar 8
   d8[ cs] b[ cs] d2 |
   % bar 9
-  b4 cs d e |
+  b4\f cs d e |
   % bar 10
   e4 e8[ e] e[( g] fs4) |
   % bar 11
@@ -129,7 +129,7 @@ d_yomhashabat_bas = \relative c' {
   % bar 8
   e4 fs g2 |
   % bar 9
-  e4 e e8[( fs]) g4 |
+  e4\f e e8[( fs]) g4 |
   % bar 10
   a4 b8[ b] cs4( d) |
   % bar 11
