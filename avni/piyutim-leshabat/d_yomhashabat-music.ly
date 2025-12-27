@@ -80,21 +80,33 @@ d_yomhashabat_alt = \relative c'' {
 d_yomhashabat_ten = \relative c' {
   \d_yomhashabat_global
   % bar 1
-  fs
+  fs4 fs8[ e] d4.( cs8) |
   % bar 2
+  d4 e fs fs |
   % bar 3
+  d8[ e] d[( e]) fs[ e] d4 |
   % bar 4
+  d8[ cs] b[ cs] d2 |
   % bar 5
+  fs4 fs8[ e] d4.( cs8) |
   % bar 6
+  d4 e8[ e] fs2 |
   % bar 7
+  d8[ e] d[( e]) fs[ e] d4 |
   % bar 8
+  d8[ cs] b[ cs] d2 |
   % bar 9
+  b4 cs d e |
   % bar 10
+  e4 e8[ e] e[( g] fs4) |
   % bar 11
+  b,8[ b] b4 b8[ b] cs[( a]) |
   % bar 12
+  b4 b b8[( cs]) d[( cs]) |
   % bar 13
+  b8[ b] b[( a]) b[ cs] d[( cs]) |
   % bar 14
-  % \bar "|."
+  b8[ e] d[ a] <b d>2\fermata \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
