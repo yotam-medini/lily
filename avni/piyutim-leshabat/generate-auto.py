@@ -115,7 +115,9 @@ def generate_body(names):
         f.write(f"{song_header}")
         f.write("  \\new ChoirStaff <<\n")
         for voice in ["sop", "alt", "ten", "bas"]:
-             f.write(f'    \\new Staff = "{voice}" <<\n')
+             f.write(f'    \\new Staff = "{voice}" \\with {LB}\n')
+             f.write(f'      instrumentName = "{voice[0].upper()}"\n')
+             f.write(f"    {RB} <<\n")
              if voice == "ten":
                  f.write('      \\clef "G_8"\n')
              elif voice == "bas":
