@@ -7,6 +7,8 @@ endif
 
 .DELETE_ON_ERROR:
 
+SHELL := /bin/bash
+
 textpage.pdf: textpage.tex
 	xelatex $<
 
@@ -14,6 +16,7 @@ NAMES = a_yomhashabat b_kieshmra c_elieliyahu d_yomhashabat
 LILYPOND_VERSION = 2.24.3
 LILYPOND = lilypond
 VOICES=sop alt ten bas
+NO_VOICES=$(foreach v,${VOICES},no$(v))
 
 define DIGIT_NAME
 $(shell ./digit_name.py $(1))
@@ -114,11 +117,39 @@ PDFS = $(foreach lang, hebrew latin hebrewlatin, piyutim_leshabat-$(lang).pdf)
 pdfs: $(PDFS)
 midis: $(BASE_MIDIS)
 
+define NAME_VOICE_MIDI_RULES
+$(1)_VOICE_MIDIS = $(foreach v, $(VOICES),$(v)/$(call DIGIT_NAME,$(1))-$(v).mid)
+$(1)_VOICE_MINUS1 = $(foreach v, $(VOICES),no$(v)/$(call DIGIT_NAME,$(1))-no$(v).mid)
+VOICE_MIDIS += $$($(1)_VOICE_MIDIS) $$($(1)_VOICE_MINUS1)
+
+# to get midiconv : see https://github.com/yotam-medini/misc
+$$($(1)_VOICE_MIDIS) $$($(1)_VOICE_MINUS1): $(1)-voice-DONE
+$(1)-voice-DONE: $(call DIGIT_NAME,$(1)).mid
+	@mkdir -p $(VOICES) $(NO_VOICES)
+	vnum=0
+	for voice in $(VOICES); \
+	do \
+	  ((vnum=vnum+1)); \
+	  midiconv -tv $$$${vnum} 1.2 10 -tv -1 0.8 -10 \
+	    $(call DIGIT_NAME,$(1)).mid \
+	    $$$${voice}/$(call DIGIT_NAME,$(1))-$$$${voice}.mid; \
+	  midiconv -tv $$$${vnum} 0 0 \
+	    $(call DIGIT_NAME,$(1)).mid \
+	    no$$$${voice}/$(call DIGIT_NAME,$(1))-no$$$${voice}.mid; \
+	done
+
+VOICE_DONES += $(1)-voice-DONE
+endef
+
+$(foreach name,$(NAMES), $(eval $(call NAME_VOICE_MIDI_RULES,$(name))))
+voice-midis: $(VOICE_MIDIS)
+
 clean-auto:
 	rm -f $(LYS_AUTO)
 
 clean:
 	rm -f $(LYS_AUTO) $(PDFS) $(BASE_MIDIS)
+	rm -rf ${VOICES} ${NO_VOICES}
 
 help:
 	@echo no help
