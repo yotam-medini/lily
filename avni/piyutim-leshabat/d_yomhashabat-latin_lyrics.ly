@@ -1,10 +1,11 @@
 d_yomhashabat_sop_latin_lyrics_text = \lyricmode {
-  sop
-%%   Be -- re -- cho e -- lo -- him va -- ye -- kad -- she -- hu
-%%   Li -- krat sha -- bat nich -- se -- fa naf -- shi
-%%   Ki be -- sha -- bat e -- tse chof -- shi
-%%   Ve -- chi yom me -- nu -- cha ek -- ra -- e -- hu
-%%   Be -- re -- cho e -- lo -- him va -- ye -- kad -- she -- hu
+  Yom __ _ ha -- sha  -- bat ein ka -- mo -- hu
+  \repeat unfold 8 { pm }
+  Mi -- yom ri -- shon ad yom shi -- shi
+  \repeat unfold 8 { pm }
+  Ki be -- sha -- bat e -- tse chof -- shi
+  Ve -- chi yom me -- nu -- cha ek -- ra -- e -- hu
+  Be -- re -- cho e -- lo -- him va -- ye -- kad -- she -- hu
 }
 
 d_yomhashabat_alt_latin_lyrics_text = \lyricmode {
