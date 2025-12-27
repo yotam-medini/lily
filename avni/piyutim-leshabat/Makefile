@@ -137,12 +137,13 @@ $(1)-voice-DONE: $(call DIGIT_NAME,$(1)).mid
 	    $(call DIGIT_NAME,$(1)).mid \
 	    no$$$${voice}/$(call DIGIT_NAME,$(1))-no$$$${voice}.mid; \
 	done
+	touch $(1)-voice-DONE
 
 VOICE_DONES += $(1)-voice-DONE
 endef
 
 $(foreach name,$(NAMES), $(eval $(call NAME_VOICE_MIDI_RULES,$(name))))
-voice-midis: $(VOICE_MIDIS)
+voice-midis: $(VOICE_DONES)
 
 clean-auto:
 	rm -f $(LYS_AUTO)
