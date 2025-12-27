@@ -17,7 +17,7 @@
   poet = \markup {
     \bold "Poets: " \column {
       "Abraham ibn Ezra אברהם אבן עזרא" 
-      "Siman Manzur סימן מנצור" 
+      "Manzur מנצור" 
     }
   }
 

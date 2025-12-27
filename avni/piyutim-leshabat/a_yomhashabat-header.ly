@@ -1,6 +1,6 @@
 \header {
   title = "1. Yom haShabat א. יוֹם הַשַּׁבָּת"
-  poet = "Siman Manzur סימן מנצור"
+  poet = "Manzur מנצור"
   composer = ##f
   arranger = ##f
 }
