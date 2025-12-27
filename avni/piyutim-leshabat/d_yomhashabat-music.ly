@@ -20,7 +20,7 @@ d_yomhashabat_sop = \relative c'' {
   % bar 4
   e4 d8[ cs] b2 |
   % bar 5
-  d8[( e]) d[( e]) fs[ e] d4 |
+  d8[( e]) d[( e]) fs[( e]) d4 |
   \breakOrig
   % bar 6
   d8[( cs]) b[ cs] d2 |
@@ -34,14 +34,14 @@ d_yomhashabat_sop = \relative c'' {
   % bar 10
   e4 e8[ g] fs[( e] d4) |
   % bar 11
-  d8[( e]) d[( e]) fs[ e] d4 |
+  d8[ e] d[( e]) fs[ e] d4 |
   \breakOrig
   % bar 12
-  d8[( e]) b[( cs]) d2 |
+  d8[ e] b[( cs]) d2 |
   % bar 13
-  d8[( e]) d[( e]) fs[ e] d4 |
+  d8[ e] d[( e]) fs[ e] d4 |
   % bar 14
-  d8[( e]) b[( cs]) d2\fermata \bar "|."
+  d8[ e] b[ cs] d2\fermata \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
