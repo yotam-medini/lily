@@ -37,11 +37,11 @@ d_yomhashabat_sop = \relative c'' {
   d8[ e] d[( e]) fs[ e] d4 |
   \breakOrig
   % bar 12
-  d8[ e] b[( cs]) d2 |
+  d8[ cs] b[( cs]) d2 |
   % bar 13
   d8[ e] d[( e]) fs[ e] d4 |
   % bar 14
-  d8[ e] b[ cs] d2\fermata \bar "|."
+  d8[ cs] b[ cs] d2\fermata \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,11 +69,11 @@ d_yomhashabat_alt = \relative c'' {
   % bar 11
   g8[ g] a4 g8[ g] fs4 |
   % bar 12
-  b4 b b8[( cs]) g[( a]) |
+  fs8[( e]) d4 e8[( fs]) g[( a]) |
   % bar 13
-  b8[ b] b[( a]) b[ cs] d[( cs]) |
+  g8[ g] fs4 g8[ g] fs[( e]) |
   % bar 14
-  b8[ e] d[ a] <b d>2\fermata \bar "|."
+  g8[ a] a[ fs] b2\fermata \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
