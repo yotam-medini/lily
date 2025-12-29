@@ -14,7 +14,7 @@ textpage.pdf: textpage.tex
 
 NAMES = a_yomhashabat b_kieshmra c_elieliyahu d_yomhashabat
 LILYPOND_VERSION = 2.24.3
-LILYPOND = lilypond
+LILYPOND = lilypond -dno-point-and-click
 VOICES=sop alt ten bas
 NO_VOICES=$(foreach v,${VOICES},no$(v))
 
@@ -93,15 +93,19 @@ lyrics-auto: $(LYS_AUTO)
 piyutim_leshabat-hebrew.pdf: piyutim_leshabat-hebrew.ly piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
 		$(MUSICS) \
-		$(LYS_HEBREW_AUTO) $(HEBREW_LYRICS) common.ly
-	$(LILYPOND) -dno-point-and-click -I hebrew $<
+		$(LYS_HEBREW_AUTO) $(HEBREW_LYRICS) common.ly textpage.pdf
+	$(LILYPOND) -I hebrew -o pls-heb $<
+	qpdf pls-heb.pdf --pages pls-heb.pdf textpage.pdf -- $@
+	rm -f pls-heb.pdf
 	ls -lG $@
 
 piyutim_leshabat-latin.pdf: piyutim_leshabat-latin.ly piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
 		$(MUSICS) \
-		$(LYS_LATIN_AUTO) $(LATIN_LYRICS) common.ly
-	$(LILYPOND) -dno-point-and-click -dlatinonly=#t -I latin $<
+		$(LYS_LATIN_AUTO) $(LATIN_LYRICS) common.ly textpage.pdf
+	$(LILYPOND) -dlatinonly=#t -I latin -o pls-lat $<
+	qpdf pls-lat.pdf --pages pls-lat.pdf textpage.pdf -- $@
+	rm -f pls-lat.pdf
 	ls -lG $@
 
 piyutim_leshabat-hebrewlatin.pdf: piyutim_leshabat-hebrewlatin.ly \
@@ -109,8 +113,10 @@ piyutim_leshabat-hebrewlatin.pdf: piyutim_leshabat-hebrewlatin.ly \
 		piyutim_leshabat-header.ly \
 		$(MUSICS) \
 		$(LYS_HEBREWLATIN_AUTO) $(HEBREW_LYRICS) $(LATIN_LYRICS) \
-		common.ly
-	$(LILYPOND) -dno-point-and-click -I hebrewlatin $<
+		common.ly textpage.pdf
+	$(LILYPOND) -I hebrewlatin -o pls-heblat $<
+	qpdf pls-heblat.pdf --pages pls-heblat.pdf textpage.pdf -- $@
+	rm -f pls-heblat.pdf
 	ls -lG $@
 
 PDFS = $(foreach lang, hebrew latin hebrewlatin, piyutim_leshabat-$(lang).pdf)
@@ -151,6 +157,18 @@ clean-auto:
 clean:
 	rm -f $(LYS_AUTO) $(PDFS) $(BASE_MIDIS)
 	rm -rf ${VOICES} ${NO_VOICES}
+	rm -rf scores-midis
+
+release: $(PDFS) $(BASE_MIDIS) $(VOICE_DONES)
+	rm -rf scores-midis
+	mkdir scores-midis
+	cp $(PDFS) $(BASE_MIDIS) scores-midis
+	cp -r $(VOICES) $(NO_VOICES) scores-midis
+	rm -f scores-midis.zip
+	zip -r scores-midis.zip scores-midis
+	mv scores-midis.zip scores-midis/
+	ls -lG scores-midis/scores-midis.zip
+
 
 help:
 	@echo no help
