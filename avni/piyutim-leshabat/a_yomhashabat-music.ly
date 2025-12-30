@@ -97,7 +97,7 @@ a_yomhashabat_ten = \relative c' {
   % bar 8
   b8[ b] b8[ a16( b]) cs2 |
   % bar 9
-  d!4\mf fs e8[( ds16 cs]) b4 |
+  d!4\mf fs e8[( d16 cs]) b4 |
   % bar 10
   d4 cs8[( b]) e[( ds]) cs4 |
   % bar 11
@@ -134,9 +134,9 @@ a_yomhashabat_bas = \relative c' {
   % bar 8
   fs8[ fs] gs[ gs] fs[( gs] fs[ e]) |
   % bar 9
-  ds8[(\mf e]) ds[( e]) fs[( gs]) e4 |
+  d8[(\mf e]) d[( e]) fs[( gs]) e4 |
   % bar 10
-  a8[( b]) gs[( a]) fs[( gs]) b4 |
+  a8[( b]) gs[( a]) fs[( gs]) a4 |
   % bar 11
   r1 |
   % bar 12
