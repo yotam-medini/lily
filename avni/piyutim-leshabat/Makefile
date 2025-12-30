@@ -159,7 +159,7 @@ clean:
 	rm -rf ${VOICES} ${NO_VOICES}
 	rm -rf scores-midis
 
-release: $(PDFS) $(BASE_MIDIS) $(VOICE_DONES)
+release: $(PDFS) $(BASE_MIDIS) $(VOICE_DONES) $(VOICE_MIDIS)
 	rm -rf scores-midis
 	mkdir scores-midis
 	cp $(PDFS) $(BASE_MIDIS) scores-midis
