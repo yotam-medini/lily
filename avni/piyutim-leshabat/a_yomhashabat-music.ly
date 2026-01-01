@@ -99,7 +99,7 @@ a_yomhashabat_ten = \relative c' {
   % bar 9
   d!4\mf fs e8[( d16 cs]) b4 |
   % bar 10
-  d4 cs8[( b]) e[( ds]) cs4 |
+  d4 cs8[( b]) e[( d]) cs4 |
   % bar 11
   r2 gs8[ a] fs[( gs]) |
   % bar 12
