@@ -95,7 +95,7 @@ piyutim_leshabat-hebrew.pdf: piyutim_leshabat-hebrew.ly piyutim_leshabat.ly \
 		$(MUSICS) \
 		$(LYS_HEBREW_AUTO) $(HEBREW_LYRICS) common.ly textpage.pdf
 	$(LILYPOND) -I hebrew -o pls-heb $<
-	qpdf pls-heb.pdf --pages pls-heb.pdf textpage.pdf -- $@
+	qpdf pls-heb.pdf --pages textpage.pdf pls-heb.pdf -- $@
 	rm -f pls-heb.pdf
 	ls -lG $@
 
@@ -104,7 +104,7 @@ piyutim_leshabat-latin.pdf: piyutim_leshabat-latin.ly piyutim_leshabat.ly \
 		$(MUSICS) \
 		$(LYS_LATIN_AUTO) $(LATIN_LYRICS) common.ly textpage.pdf
 	$(LILYPOND) -dlatinonly=#t -I latin -o pls-lat $<
-	qpdf pls-lat.pdf --pages pls-lat.pdf textpage.pdf -- $@
+	qpdf pls-lat.pdf --pages textpage.pdf pls-lat.pdf -- $@
 	rm -f pls-lat.pdf
 	ls -lG $@
 
@@ -115,7 +115,7 @@ piyutim_leshabat-hebrewlatin.pdf: piyutim_leshabat-hebrewlatin.ly \
 		$(LYS_HEBREWLATIN_AUTO) $(HEBREW_LYRICS) $(LATIN_LYRICS) \
 		common.ly textpage.pdf
 	$(LILYPOND) -I hebrewlatin -o pls-heblat $<
-	qpdf pls-heblat.pdf --pages pls-heblat.pdf textpage.pdf -- $@
+	qpdf pls-heblat.pdf --pages textpage.pdf pls-heblat.pdf -- $@
 	rm -f pls-heblat.pdf
 	ls -lG $@
 

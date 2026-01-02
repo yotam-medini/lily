@@ -9,6 +9,7 @@ TuttiSoprani = \markup{"Tutti Soprani"}
 
 \paper{
   #(set-paper-size "a4")
+  first-page-number = #2
 
   system-system-spacing.basic-distance = #16
   % system-distance = 5mm
