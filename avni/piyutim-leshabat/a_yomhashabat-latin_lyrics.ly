@@ -33,5 +33,5 @@ a_yomhashabat_bas_latin_lyrics_text = \lyricmode {
   Li -- krat sha -- bat nich -- se -- fa naf -- shi
   Ki va -- sha -- bat e -- tse chof -- shi
   Ve -- chi yom me -- nu -- cha
-  Be -- re -- cho e -- lo -- him vai -- kad -- she -- hu
+  Be -- re -- cho e -- lo -- him va -- ye -- kad -- she -- hu
 }
