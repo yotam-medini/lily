@@ -11,7 +11,7 @@ d_yomhashabat_global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 d_yomhashabat_sop = \relative c'' {
   \d_yomhashabat_global
-  d8[(\f e]) d[( e]) fs[ e] d4 |
+  d8[(\f e]) d[( e]) fs[( e]) d4 |
   % bar 2
   d8[ cs] b[( cs]) d2 |
   \breakOrig
