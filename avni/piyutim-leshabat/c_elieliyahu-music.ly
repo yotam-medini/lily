@@ -75,7 +75,7 @@ c_elieliyahu_alt = \relative c'' {
   % bar 8
   fs1 |
   % bar 9
-  r2 <g b>8[ <g b>] <g b>8[ <fs a>] |
+  r2 <g b>8\f[ <g b>] <g b>8[ <fs a>] |
   % bar 10
   <g b>4 <a b> <e b'>8[ <fs! a>] <g b>8[ <fs a>] |
   % bar 11
@@ -121,7 +121,7 @@ c_elieliyahu_ten = \relative c' {
   % bar 8
   d1 |
   % bar 9
-  b8[ b] b[ a] b4 b |
+  b8\f[ b] b[ a] b4 b |
   % bar 10
   b8[ b] b[ a] g[( fs]) e4 |
   % bar 11
@@ -145,7 +145,7 @@ c_elieliyahu_ten = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 c_elieliyahu_bas = \relative c {
   \c_elieliyahu_global
-  r2 e8[ e] e[ d] |
+  r2 e8\mf[ e] e[ d] |
   % bar 2
   e4 e e8[ e] e[ d] |
   % bar 3
@@ -161,7 +161,7 @@ c_elieliyahu_bas = \relative c {
   % bar 8
   b1 |
   % bar 9
-  b8[ b] b[ a] b4 b |
+  b8\f[ b] b[ a] b4 b |
   % bar 10
   b8[ b] b[ a] g[( fs]) e4 |
   % bar 11
