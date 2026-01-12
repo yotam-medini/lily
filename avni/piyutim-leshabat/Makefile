@@ -13,8 +13,9 @@ textpage.pdf: textpage.tex
 	xelatex $<
 
 NAMES = a_yomhashabat b_kieshmra c_elieliyahu d_yomhashabat
+LILYPOND=lilypond
 LILYPOND_VERSION = 2.24.3
-LILYPOND = lilypond -dno-point-and-click
+LILYPOND_OPTIONS = -dno-point-and-click
 VOICES=sop alt ten bas
 NO_VOICES=$(foreach v,${VOICES},no$(v))
 
@@ -94,7 +95,7 @@ piyutim_leshabat-hebrew.pdf: piyutim_leshabat-hebrew.ly piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
 		$(MUSICS) \
 		$(LYS_HEBREW_AUTO) $(HEBREW_LYRICS) common.ly textpage.pdf
-	$(LILYPOND) -I hebrew -o pls-heb $<
+	$(LILYPOND) $(LILYPOND_OPTIONS) -I hebrew -o pls-heb $<
 	qpdf pls-heb.pdf --pages textpage.pdf pls-heb.pdf -- $@
 	rm -f pls-heb.pdf
 	ls -lG $@
@@ -103,7 +104,7 @@ piyutim_leshabat-latin.pdf: piyutim_leshabat-latin.ly piyutim_leshabat.ly \
 		piyutim_leshabat-header.ly \
 		$(MUSICS) \
 		$(LYS_LATIN_AUTO) $(LATIN_LYRICS) common.ly textpage.pdf
-	$(LILYPOND) -dlatinonly=#t -I latin -o pls-lat $<
+	$(LILYPOND) $(LILYPOND_OPTIONS) -dlatinonly=#t -I latin -o pls-lat $<
 	qpdf pls-lat.pdf --pages textpage.pdf pls-lat.pdf -- $@
 	rm -f pls-lat.pdf
 	ls -lG $@
@@ -114,7 +115,7 @@ piyutim_leshabat-hebrewlatin.pdf: piyutim_leshabat-hebrewlatin.ly \
 		$(MUSICS) \
 		$(LYS_HEBREWLATIN_AUTO) $(HEBREW_LYRICS) $(LATIN_LYRICS) \
 		common.ly textpage.pdf
-	$(LILYPOND) -I hebrewlatin -o pls-heblat $<
+	$(LILYPOND) $(LILYPOND_OPTIONS) -I hebrewlatin -o pls-heblat $<
 	qpdf pls-heblat.pdf --pages textpage.pdf pls-heblat.pdf -- $@
 	rm -f pls-heblat.pdf
 	ls -lG $@
